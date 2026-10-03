@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Directing Rainfall (Solution) — ACM ICPC World Finals 2019</title>
+<style>
+
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+<header>
+  <p class="kicker">ACM ICPC World Finals 2019</p>
+  <h1>Problem F: Directing Rainfall</h1>
+</header>
+<p>Solved by 3 teams.</p>
+<p>First solved after 168 minutes.</p>
+<p>Shortest team solution: 3309 bytes.</p>
+<p>Shortest judge solution: 3384 bytes.</p>
+<figure><img src="images/F-1.png" alt=""></figure>
+<p>The solution to the problem has two essentially independent components: a geometric one, where we translate the problem to a non-geometric data-structure problem, and a data structure one, where we actually solve the problem.</p>
+<p>The first, geometric part, consists of sorting the tarps in such a way that when water drops from one tarp I to another tarp J, tarp J appears before tarp I. Equivalently, we want a linear extension (a.k.a. topological ordering) of the following partial order (a.k.a. directed acyclic graph): I &lt; J if there exists some x such that ( x, y I ) is on I, ( x, y J ) is on J, and y I &lt; y J . This sorting can be done by a somewhat difficult, but standard, sweep-line algorithm. At any given x, we will maintain a set of the tarps that intersect the vertical line at x, ordered by the ycoordinate of the intersection. This set will also contain two artificial tarps, one for the earth, and one for the sky. Also, with each tarp I in the set we will maintain an ordered list of tarps that have already finished, and need to be before I, but after the predecessor of I in our set; this list will be in correct order. Thus, when we finish, we will be left only with the earth and the sky, and all the tarps will be in the correct order on the list attached to the sky. This can be maintained in amortized logarithmic time when moving to the next interesting x.</p>
+<p>Having sorted the tarps so that we know the order in which water flows between the tarps, the problem becomes a non-geometric data structure problem that happens on a onedimensional line. We will have directed intervals (pieces of tarp directed towards the lower end of the tarp) arriving one by one (from lower to higher), and an integer value V ( x ) at each point x of the line. The effect of an interval [ a, b] is to replace the value V ( x ) on each point x ∈ [ a, b] by V 0 ( x ) = min(V (b), minz∈[ x,b] 1 + V (z)) if it is directed towards b, or by V 0 ( x ) = min(V ( a), minz∈[a,x] 1 + V (z)) if it is directed towards a. We want a data structure that allows us to provide initial values for V, update V when intervals arrive, and query for the minimum of V on an interval.</p>
+<p>When applying this data structure to the tarps, we get the solution to the problem: we set the initial values V ( x ) to be 0 within our field [`, r ], and ∞ outside. When adding the intervals one by one in the order produced by the geometric sorting phase, this maintains the invariant that V ( x ) equals the minimum cost of getting water from the point ( x, ∞) to our field on the subinstance consisting only of the pieces of tarp added so far. Thus, after processing all the pieces of tarp, V will represent the cost of getting rain falling from the sky (and hitting the first thing on its path) to our field, and so the final output will be the minimum of V on the interval [`, r ].</p>
+<p>To implement the desired data structure, we use the following facts about the function V:</p>
+<ul>
+<li>Its values are all integers.</li>
+<li>It is piecewise constant (that is, the real numbers can be divided into a finite set of intervals, and V is constant on each interval).</li>
+<li>It is bitonic. That is, it is non-increasing up to some point, and then non-decreasing.</li>
+</ul>
+<p>This means that to represent and update V, we can use a simple data structure that contains all the points where V changes value and by how much the value changes. Storing this in two sets (one for the non-increasing part, one for the non-decreasing) will allow amortized logarithmic-time updates. At the end, we can perform a linear scan to obtain the final value. (The observation that the function is bitonic is not strictly necessary, but it simplifies the implementation.)</p>
+</body>
+</html>

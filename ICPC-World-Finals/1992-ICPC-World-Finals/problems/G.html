@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Urban Elevations — 1992 ACM Scholastic Programming Contest Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">1992 ACM Scholastic Programming Contest Finals · Problem G</p>
+  <h1>Urban Elevations</h1>
+</header>
+
+<p>An elevation of a collection of buildings is an orthogonal projection of the buildings onto a vertical plane. An external elevation of a city would show the skyline and the faces of the “visible” buildings of the city as viewed from outside the city from a certain direction. A southern elevation shows no sides; it shows the perfectly rectangular faces of buildings or parts of faces of buildings not obstructed on the south by taller buildings. For this problem, you must write a program that determines which buildings of a city are visible in a southern elevation.</p>
+<p>For simplicity, assume all the buildings for the elevation are perfect rectangular solids, each with two sides that run directly east-west and two running directly north-south. Your program will find the buildings that appear in a southern elevation based on knowing the positions and heights of each city building. That data can be illustrated by a map of the city as in the diagram on the left below. The southern elevation for that city is illustrated in the diagram on the right.</p>
+<figure>
+  <img src="images/G-1.png" alt="">
+  <figcaption>City map. Boldface numbers (in the upper left of each building) identify the buildings. Plain numbers (lower right) are the building heights. The shaded — Southern Elevation</figcaption>
+</figure>
+
+<h2>Input</h2>
+<p>Input for your program consists of the numeric description of maps of several cities. The first line of each map contains the number of buildings in the city (a non-negative integer less than 101). Each subsequent line of a map contains data for a single building — 5 real numbers separated by spaces in the following order:</p>
+<ul>
+  <li>x-coordinate of the southwest corner</li>
+  <li>y-coordinate of the southwest corner</li>
+  <li>width of the building (length of the south side)</li>
+  <li>depth of the building (length of the west side)</li>
+  <li>height of the building</li>
+</ul>
+<p>Each map is oriented on a rectangular coordinate system so that the positive x-axis points east and the positive y-axis points north. Assume that all input for each map corresponds to a legitimate map (the number of buildings is the same as the number of subsequent lines of input for the map; no two buildings in a single map overlap). Input is terminated by the number 0 representing a map with no buildings.</p>
+
+<h2>Output</h2>
+<p>Buildings are numbered according to where their data lines appear in the map’s input data — building #1 corresponding to the first line of building data, building #2 data to the next line, and building #n to the nth line of building data for that map. (Buildings on subsequent maps also begin their numbering with 1.)</p>
+<p>For each map, output begins with line identifying the map (map #1, map #2, etc.) On the next line the numbers of the visible buildings as they appear in the southern elevation, ordered south-to-north, west-to-east. This means that if building n and building m are visible buildings and if the southwest corner of building n is west of the southwest corner of building m, then number n is printed before number m. If building n and building m have the same x-coordinate for their southwest corners and if building n is south of building m, then the number n is printed before the number m. For this program, a building is considered visible whenever the part of its southern face that appears in the elevation has strictly positive area. One blank line must separate output from consecutive input records.</p>
+
+<h3>Sample Input</h3>
+<pre>14
+160 0 30 60 30
+125 0 32 28 60
+95 0 27 28 40
+70 35 19 55 90
+0 0 60 35 80
+0 40 29 20 60
+35 40 25 45 80
+0 67 25 20 50
+0 92 90 20 80
+95 38 55 12 50
+95 60 60 13 30
+95 80 45 25 50
+165 65 15 15 25
+165 85 10 15 35
+0</pre>
+<h3>Sample Output</h3>
+<pre>For map #1, the visible buildings are numbered as follows:
+5 9 4 3 10 2 1 14</pre>
+
+<footer>
+  1992 ACM Scholastic Programming Contest Finals · Problem G · Urban Elevations
+</footer>
+
+</body>
+</html>

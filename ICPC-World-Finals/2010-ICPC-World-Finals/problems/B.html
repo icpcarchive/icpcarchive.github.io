@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Barcodes &mdash; 34th ICPC World Finals (2010)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">34th ICPC World Finals · Problem B</p>
+  <h1>Barcodes</h1>
+  <p class="meta">Problem ID: barcodes</p>
+</header>
+
+<p>Code-11 is a barcode system for encoding characters used primarily in labeling telecommunications equipment.
+The characters encoded are limited to digits 0 through 9, the dash (“–”), and a special start/stop character which
+appears at the beginning and end of each Code-11 barcode.</p>
+
+<p>Code-11 is a discrete system, and each character is encoded independently. A character’s encoding is
+represented by five adjacent regions, or bars, that alternate between a dark color and a light color, starting with a
+dark bar. The width of each bar is either narrow or wide, according to the encoding scheme shown below, where
+0 represents a narrow bar and 1 represents a wide bar.</p>
+
+<table>
+  <tbody>
+    <tr><td>Character</td><td>Encoding</td></tr>
+    <tr><td>0</td><td>00001</td></tr>
+    <tr><td>1</td><td>10001</td></tr>
+    <tr><td>2</td><td>01001</td></tr>
+    <tr><td>3</td><td>11000</td></tr>
+    <tr><td>4</td><td>00101</td></tr>
+    <tr><td>5</td><td>10100</td></tr>
+    <tr><td>6</td><td>01100</td></tr>
+    <tr><td>7</td><td>00011</td></tr>
+    <tr><td>8</td><td>10010</td></tr>
+    <tr><td>9</td><td>10000</td></tr>
+    <tr><td>–</td><td>00100</td></tr>
+    <tr><td>Start/Stop</td><td>00110</td></tr>
+  </tbody>
+</table>
+
+<p>Thus the character 1 is encoded as a wide dark bar, a narrow light bar, a narrow dark bar, a narrow light bar, and
+finally a wide dark bar. The barcodes for the individual characters must be separated by a narrow light bar
+whose only function is to separate the characters.</p>
+
+<p>A two-width encoding like that used for Code-11 has the benefit of simplicity. Since it is necessary only to
+distinguish a narrow bar from a wide bar, Code-11 allows for a large level of print tolerance in lower-quality
+printing conditions.</p>
+
+<p>To enable detection of errors, the Code-11 barcodes we use will have two check characters, C and K, added at
+the end of the message (before the stop character). If the n characters to be encoded (left to right) are c<sub>1</sub> through
+c<sub>n</sub>, then the weight of the C check character is</p>
+
+<p>(Σ<sub>i=1</sub><sup>n</sup> ((i − 1) mod 10 + 1) × w(c<sub>i</sub>)) mod 11</p>
+
+<p>where w(c<sub>i</sub>) is the weight associated with character c<sub>i</sub>. The weights for the digits 0 through 9 are 0 through 9; the
+weight for the hyphen is 10. (Note that mod has higher precedence than +.)</p>
+
+<p>The weight of the K check character is</p>
+
+<p>(Σ<sub>i=1</sub><sup>n+1</sup> ((i − 1 + 1) mod 9 + 1) × w(c<sub>i</sub>)) mod 11</p>
+
+<p>where c<sub>n+1</sub> is the C check character. For example, suppose the message to be encoded is 123–45. Then the C
+check character is 5 and the K check character is 2. The barcodes for the eight characters 123–4552, preceded
+and followed by the barcode for the start/stop character, comprise the complete Code-11 barcode encoding of
+the message.</p>
+
+<p>Simple barcode readers measure the intensity of light reflected from a barcode to a linear array containing
+hundreds of tiny CCD sensors, each reporting light or dark. Light and dark regions are identified ,and the width
+of each region is used by the decoding software to validate the barcode and to obtain the encoded information.
+Since the orientation of the barcode is not fixed, the software must be able to decode the barcode whether it is
+scanned from left to right or from right to left.</p>
+
+<p>Your problem is to decode the information obtained by scanning a Code-11 barcode, given the widths of the
+light and dark regions detected by the reader. Assume a wide bar is intended to be twice as wide as a narrow bar.
+Due to inconsistencies among printers, the width of a bar can be up to 5 percent larger or smaller than intended.
+There are no zero-length messages (with barcodes containing only start/stop, check characters, and inter-character
+spacing).</p>
+
+<h2>Input</h2>
+
+<p>The input contains several test cases, each representing a single scanning attempt. The data for each case begins
+with an integer m ≤ 150 that specifies the number of regions detected by a barcode reader. This is followed by m
+integers d<sub>1</sub>…d<sub>m</sub> (1 ≤ d<sub>i</sub> ≤ 200) giving the number of sensors in each region (within a region, all sensors report the
+same light intensity). The data for each test case begins and ends with a dark bar (there is no leading or trailing
+white space).</p>
+
+<p>The last test case is followed by a single integer zero.</p>
+
+<h2>Output</h2>
+
+<p>For each input case, display a line containing the case number and the results of the decoding effort. If the
+barcode can be successfully decoded, then display the sequence of message characters (without its check
+characters). If the decoding is successful but the C check character is incorrect, then display “bad C”. If the
+decoding is successful and the C check character is correct but the K check character is incorrect, then display
+“bad K”. Display “bad code” if the barcode cannot be successfully decoded due to bar widths outside the
+allowable range, missing or invalid start/stop codes, or some other invalid condition. Follow the format of the
+sample output.</p>
+
+<h3>Sample Input 1</h3>
+<pre>59
+10 20 20 10 10 10 20 10 10 20
+10 10 10 10 20 10 20 10 10 10
+20 10 20 10 20 10 20 10 10 10
+10 10 20 10 10 10 10 10 10 20
+20 10 20 10 10 20 10 10 20 10
+10 10 20 10 10 20 20 10 10
+
+35
+10 10 10 10 10 10 10 10 10 10
+10 10 10 10 10 10 10 10 10 10
+10 10 10 10 10 10 10 10 10 10
+10 10 10 10 10
+
+35
+10 10 20 20 10 10 20 10 10 10
+20 10 10 20 10 10 20 10 10 10
+20 10 20 10 20 10 10 10 10 10
+10 10 20 20 10
+
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1: 123-45
+Case 2: bad code
+Case 3: bad K</pre>
+
+
+<footer>
+  34th ICPC World Finals Problem B: Barcodes
+</footer>
+
+</body>
+</html>

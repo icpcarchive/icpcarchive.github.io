@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: Pockets — The 30th Annual ACM International Collegiate Programming Contest World Finals (2006)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The 30th Annual ACM International Collegiate Programming Contest World Finals · Problem H</p>
+  <h1>Pockets</h1>
+  <p class="meta">Input file: pockets.in</p>
+</header>
+
+<p>Origami, or the art of paper folding, often makes use of &ldquo;pockets&rdquo; of paper, particularly in complicated models made from multiple pieces of paper where a tab on one piece of paper needs to fit into a pocket in another piece of paper. In this problem you must count pockets in a flat folded square of paper. A pocket is defined as any opening (lying between two surfaces of paper) that is accessible from the boundary of the folded piece of paper. Note that one accessible opening can account for several pockets since each open side contributes one pocket. Figure 1 shows an example. Observe that the &ldquo;middle&rdquo; opening (between the second and third layers of paper) contributes 3 to the total pocket count.</p>
+
+<figure>
+  <img src="images/H-1.png" alt="">
+  <figcaption>Figure 1: Pockets</figcaption>
+</figure>
+
+<p>Assume the paper is initially lying on a flat surface and is never completely lifted from the surface. All folds will be horizontal or vertical. Fold lines will fall only along equally-spaced crease lines, <i>N</i> in each direction. On the original unfolded square, creases and edges are numbered from top to bottom and from left to right as shown in Figure 2. Each fold reduces the boundary of the folded piece of paper to a smaller rectangle; the final fold results in a square one unit in each direction. Folds are described using a crease line and a direction. For instance, <code>2 U</code> means to fold the bottom edge up using horizontal crease 2; <code>1 L</code> means to fold the right edge to the left using crease 1. (See Figure 2.) After several folds, creases may be aligned (for instance, creases 1 and 3 in Figure 2). Either number may be used to specify a fold along that line (so, in Figure 2, <code>1 D</code> and <code>3 D</code> are equivalent instructions after the first fold). Pockets are to be counted for the boundary of the final one-unit square. Once a crease is made it cannot be undone. All creases go through every layer of paper from top to bottom; disregard paper thickness.</p>
+
+<figure>
+  <img src="images/H-2.png" alt="">
+  <figcaption>Figure 2: The sequence 2 U, 1 L.</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>Input is a sequence of test cases. Each test case begins with a line containing two integers, <i>N</i> and <i>K</i>. <i>N</i> is the number of horizontal crease lines (the same as the number of vertical crease lines) of the square. Creases are numbered 1, 2, ..., <i>N</i> from top to bottom and from left to right. <i>K</i> is the number of folds to be made. <i>N</i> and <i>K</i> are each less than or equal to 64.</p>
+
+<p>Following <i>N</i> and <i>K</i> are <i>K</i> fold descriptions. Each fold description consists of an integer crease number <i>C</i> and a direction, either U, D, L, or R (for up, down, left or right) separated by whitespace. Whitespace also precedes and follows each fold description.</p>
+
+<p>The final result for each test case will be a square one unit in size.</p>
+
+<p>The final test case is followed by a line containing two zeroes.</p>
+
+<h2>Output</h2>
+
+<p>For each input case, display the case number followed by the number of pockets in the final one-unit square. Use the format shown in the sample output.</p>
+
+<h3>Sample Input 1</h3>
+<pre>1 2
+1 R 1 U
+3 5
+2 U 1 L
+  3   D
+3 R 2 L
+0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1: 7 pockets
+Case 2: 17 pockets</pre>
+
+<footer>
+  The 30th Annual ACM International Collegiate Programming Contest World Finals &middot; Problem H &middot; Pockets
+</footer>
+
+</body>
+</html>

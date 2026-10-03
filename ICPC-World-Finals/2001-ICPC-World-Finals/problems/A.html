@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem A: Airport Configuration — 25th Annual ACM ICPC World Finals (2001)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">25th Annual ACM ICPC World Finals · Problem A</p>
+  <h1>Airport Configuration</h1>
+  <p class="meta">Input: airport.in</p>
+</header>
+
+<p>ACM Airlines is a regional airline with von Neumann Airport as its home port.
+For many passengers, von Neumann Airport is not the start of their trip, nor
+their final destination, so many transfer passengers pass through the airport.</p>
+
+<p>The von Neumann Airport has a corridor layout. Arrival gates are located,
+equally spaced, at the north side of the corridor. Departure gates are at the
+south side of the corridor, equally spaced as well. The distance between two
+adjacent gates equals the width of the corridor. Each arrival gate is assigned
+to exactly one city, and the same holds for the departure gates. Passengers
+arrive at the arrival gate assigned to their city of origin and exit the
+terminal or proceed to a connecting flight at a gate assigned to their
+destination city. For this problem, only passengers with connecting flights
+are considered.</p>
+
+<p>Transferring passengers generate a lot of traffic in the corridor. The
+average number of people traveling between cities is known beforehand. Using
+this information, it should be possible to reduce the traffic. If transfers
+from city C<sub>x</sub> to city C<sub>y</sub> occur very frequently, it may
+help to locate the gates assigned to these cities near or even directly
+opposite each other.</p>
+
+<p>Due to the presence of shops and gardens it is not possible to cross the
+corridor diagonally, so the distance between arriving gate G<sub>1</sub> and
+departing gate G<sub>3</sub> (see diagram) equals 1 + 2 = 3.</p>
+
+<p>You must assess total traffic load for several different configurations.
+The traffic load between an origin and destination gate is defined as the
+number of origin to destination passengers multiplied by the distance between
+the arriving and departing gate. The total traffic load is the sum of the
+traffic loads for all origin-destination pairs.</p>
+
+<figure>
+  <img src="images/A-1.png" alt="">
+  <figcaption>Corridor layout (see diagram)</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>The input file contains several test cases. The last test case in the input
+file is followed by a line containing the number 0.</p>
+
+<p>Each test case has two parts: first the traffic data, then the
+configuration section.</p>
+
+<p>The traffic data starts with an integer N (1 &lt; N &lt; 25), representing
+the number of cities. The following N lines each represent traffic data for
+one city. Each line with traffic data begins with an integer in the range 1..N
+identifying the city of origin. This is followed by k pairs of integers, one
+pair for every destination city. Each pair identifies the destination city and
+the number of passengers (at most 500) traveling from the city of origin to
+this destination city.</p>
+
+<p>The configuration section consists of one or more (at most 20)
+configurations and ends with a line containing the number 0.</p>
+
+<p>A configuration consists of 3 lines. The first line contains a positive
+number identifying the configuration. The next line contains a permutation of
+the cities, as they are assigned to the arrival gates: the first number
+represents the city assigned to the first gate, and so on. The next line in
+the same way represents the cities as they are assigned to the departure
+gates.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, the output contains a table presenting the
+configuration numbers and total traffic load, in ascending order of traffic
+load. If two configurations have the same traffic load, the one with the
+lowest configuration number should go first. Follow the output format shown in
+the sample below.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3
+1 2 2 10 3 15
+2 1 3 10
+3 2 1 12 2 20
+1
+1 2 3
+2 3 1
+2
+2 3 1
+3 2 1
+0
+2
+1 1 2 100
+2 1 1 200
+1
+1 2
+1 2
+2
+1 2
+2 1
+0
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Configuration           Load
+    2                   119
+    1                   122
+Configuration           Load
+    2                   300
+    1                   600</pre>
+
+<footer>
+  25th Annual ACM International Collegiate Programming Contest World Finals (2001) ·
+  Problem A: Airport Configuration · The 2001 ACM Programming Contest World Finals sponsored by IBM
+</footer>
+
+</body>
+</html>

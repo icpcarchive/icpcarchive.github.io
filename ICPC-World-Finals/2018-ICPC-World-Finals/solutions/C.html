@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem C: Conquer the World (Solution) — ACM ICPC World Finals 2018</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+<header>
+  <p class="kicker">ACM ICPC World Finals 2018</p>
+  <h1>Problem C: Conquer the World</h1>
+</header>
+<p>Shortest judge solution: 2510 bytes. Shortest team solution (during contest): N/A bytes.</p>
+<p>This was one of the two very hard problems in the set. What is not hard to see is that the problem is simply asking for a minimum cost maximum flow between a set of sources and a set of sinks in a flow graph. The flow graph in question has a special structure: most importantly, it is a tree (and in addition, all edge capacities are infinite – we can move as many armies as we like across an edge – only the source and sink vertices have limited capacities). However the tree can have around 250 000 vertices/edges, so running a general min cost max flow algorithm on this would time out rather badly. So to solve the problem we have to (unsurprisingly) exploit the structure of the graph.</p>
+<p>Let us without loss of generality make the following two assumptions:</p>
+<ol>
+  <li>There is no demand/supply on internal vertices of the input, or at the root in case that is also a leaf (for every internal node we can always connect it with an edge of cost 0 to a newly created child leaf which has the demand/supply).</li>
+  <li>The tree is binary (for every internal node with degree d ≥ 3, we can make a chain of d − 1 internal nodes connected by edges of cost 0).</li>
+</ol>
+<p>(Applying the transformations may blow up the size of the tree by a factor 4, so from an implementation point of view, one might want to unravel what the transformations mean in the context of the solution below and not actually do the transformations on the tree – the solution works without these assumptions an we have made them only to simplify the presentation.)</p>
+<p>Root the tree arbitrarily. A natural idea is to try to solve this by some form of dynamic programming on the tree, moving upwards from the leaves until we reach the root where we get the answer. But even so, it is not at all clear what state to keep in the dynamic program, or how to go up the tree efficiently.</p>
+<p>Let us first describe the state to use, and how to use it, without worrying too much about efficiency, and then we will later figure out how to actually make it efficient. For a rooted tree T (which you can think of for now as the subtree of the input below some vertex v), define a function c<sub>T</sub> : ℤ → ℤ, where c<sub>T</sub>(a) is the answer to the question “What is the minimum cost of movements within the tree T, assuming that exactly a new armies have been added to the root of T?” If we have this function computed for T the entire input tree, the answer to the problem is then simply c<sub>T</sub>(0). Note that c<sub>T</sub> is defined also for negative a, which is interpreted as an additional demand of a armies having been introduced at the root. Let ∆<sub>T</sub> denote the net demand within T (sum of y<sub>i</sub> values minus sum of x<sub>i</sub> values). Then c<sub>T</sub>(a) is a well-defined non-increasing function for a ≥ ∆<sub>T</sub>.</p>
+<p>We now use this setup to make a solution that is too slow, running in time Θ(nX) where X is the sum of all x<sub>i</sub> values in the graph. The idea is as mentioned above to build the functions c<sub>T</sub> for subtrees of the input starting at the leaves and moving upwards. For T being a single leaf node of the input, the function c<sub>T</sub> is trivial: c<sub>T</sub>(a) = 0 for all a (there can never be any costs from movement within a tree of a single node). In order to progress up the tree, we need to be able to do the following two operations:</p>
+<ol>
+  <li>Extend a tree T rooted at some vertex v upwards by adding the parent w of v from the input, and joining v and w so that w becomes the new root. Call this new tree T<sub>0</sub>. Then, ∆<sub>T₀</sub> = ∆<sub>T</sub> and c<sub>T</sub>(a) = min(c<sub>T</sub>(a − 1), c<sub>T₀</sub>(a) + |a| cost(v, w)). The min here is because when adding a new armies to the root we have two options: either we ignore at least one army (and get cost c<sub>T</sub>(a − 1)) or we transport all of them to v (and get cost c<sub>T₀</sub>(a − 1) + |a| cost(v, w)). For negative a one can see that the min is always achieved by the second option (which is good because in this setting we are moving some armies out of the tree, and do not have the option of ignoring any of them).</li>
+  <li>Join the the two subtrees of a vertex v. Suppose T<sub>L</sub> and T<sub>R</sub> are the left and right subtrees of v after doing the extend operation above (so that they are both rooted at v), and let T denote the entire subtree rooted at v. Then it is not hard to see that ∆<sub>T</sub> = ∆<sub>T_L</sub> + ∆<sub>T_R</sub> and c<sub>T</sub>(a) = min<sub>∆<sub>T_L</sub> ≤ a<sub>0</sub> ≤ a − ∆<sub>T_R</sub></sub> c<sub>T_L</sub>(a<sub>0</sub>) + c<sub>T_R</sub>(a − a<sub>0</sub>).</li>
+</ol>
+<p>To get the slow Ω(nX) solution, we can simply represent the functions c<sub>T</sub> as arrays of function values and implement the equations written above.</p>
+<p>In order to speed this up, the perhaps key observation is that the functions c<sub>T</sub> are not only non-increasing, they are also convex (proof omitted, it can be derived from the identies above, or more abstractly from properties of min cost max flows). I.e., there is a diminishing returns type of property – the savings in cost attained by moving in more armies decreases as we move in more armies. For this reason, instead of working with c<sub>T</sub> directly, it turns out to be more convenient to work with the function f<sub>T</sub> : ℤ<sub>≥0</sub> → ℤ defined by f<sub>T</sub>(a) = c<sub>T</sub>(∆<sub>T</sub> + a) − c<sub>T</sub>(∆<sub>T</sub> + a + 1) (i.e., f<sub>T</sub>(0) says how much the cost decreases when going from ∆<sub>T</sub> to ∆<sub>T</sub> + 1 armies moving out of T, and so on). So we will keep this function, and the value b<sub>T</sub> := c<sub>T</sub>(∆<sub>T</sub>), the base cost for the tree T if we only keep the bare minimum of soldiers inside it and move everyone else out of it. The fact that c<sub>T</sub> is non-increasing and convex then translates into the function f<sub>T</sub> being non-negative and non-increasing.</p>
+<p>How does this change of perspective affect the identites for c<sub>T</sub> above? The join operation becomes particularly nice in this new perspective: it follows from the convexity property that if we take all the f<sub>T_L</sub> and f<sub>T_R</sub> values and merge them into a big list sorted in non-increasing order, then that resulting list are the values of f<sub>T</sub> (abstractly, this is because the operation we are doing is taking the Minkowski sum of the two functions c<sub>T_L</sub> and c<sub>T_R</sub>, and the Minkowski sum of convex sets behaves nicely). This suggest the following way of representing the functions f<sub>T</sub>: keep the values as a sorted set, and when joining f<sub>T_L</sub> with f<sub>T_R</sub>, add the values from the smaller of the two sets to the larger of the two (and be careful not to do anything which takes linear time in the larger of the two sets). By a standard argument, this results in a total running time of O(n + X log<sub>2</sub> X) for doing all the joins.</p>
+<p>For the extend operation, the identity for c<sub>T</sub> above now becomes f<sub>T₀</sub>(a) = max(0, f<sub>T</sub>(a) − sgn(∆<sub>T</sub> + a) cost(v, w)) (where we define sgn(a) = +1 if a ≥ 0 and −1 if a &lt; 0). Computing this by updating each individual f<sub>T</sub>-value would be too costly. Ignoring for a moment the cap at 0 and focusing only on the second argument, we see that the transformation performed on f<sub>T</sub> is fairly simple: it gets increased by cost(v, w) for all a &lt; −∆<sub>T</sub> (which are none, if ∆<sub>T</sub> ≥ 0, i.e., if the subtree does not have more surplus than demand), and decreased by the same amount for all a ≥ −∆<sub>T</sub>.</p>
+<p>We can arrange for this by augmenting the set structure suggested above with a split point and two global shifts – everything below the split point has been shifted by the first shift, and everything above the split point has been shifted by the second split. When we do the extend operation, there may already be an existing split point and shifts, we then have to move the split point, which can be done in time which is O(d log d) where d is the distance between the two split points. This value might be as large as X, but in total over all extend operations done in the tree, the sum of these distances can never be more than 2X, so the total time we get from these moves of the split points is O(n + X log X). Coming back to the ignored max(0, ...) part from above, the easiest way to deal with that is to simply remove any negative values from the end of the set after having performed the operation above.</p>
+<p>We also need to revisit the join operation and see that this can still be done with the augmented data structure with shifts. Implementationwise, instead of keeping a single ordered set with a split point, it is probably easier (at least all our implementations seemed to feel so) to keep two separate sets corresponding to the part of values below and the part of values above the split point. Another implementation detail is that using complete ordered sets is not necessary, one can get away with two simple max-heaps.</p>
+</body>
+</html>

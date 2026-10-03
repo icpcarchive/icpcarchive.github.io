@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Marble Game &mdash; 2007 ICPC World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+
+<header>
+  <p class="kicker">2007 ICPC World Finals &middot; Problem F</p>
+  <h1>Marble Game</h1>
+  <p class="meta">Input file: marble.in</p>
+</header>
+
+<p>A Marble Game is played with M marbles on a square board. The board is divided into
+NxN unit squares, and M of those unit squares contain holes. Marbles and holes are
+numbered from 1 to M. The goal of the Marble game is to roll each marble into the hole
+that has the same number.</p>
+
+<p>A game board may contain walls. Each wall is one unit long and stands between two
+adjacent unit squares. Two squares are considered adjacent if and only if they share a
+side.</p>
+
+<p>At the beginning of the game, all marbles are placed on the board, each in a
+different square. A &ldquo;move&rdquo; consists of slightly lifting a side of the game
+board. Then all marbles on the board roll downward toward the opposite side, each one
+rolling until it meets a wall or drops into an empty hole, or until the next square is
+already occupied by another marble. Marbles roll subject to the following
+restrictions:</p>
+
+<ul>
+  <li>Marbles cannot jump over walls, other marbles, or empty holes.</li>
+  <li>Marbles cannot leave the board. (The edge of the board is a wall.)</li>
+  <li>A unit square can contain at most a single marble at any one time.</li>
+  <li>When a marble moves into a square with a hole, the marble drops into that hole.
+      The hole is then filled, and other marbles can subsequently roll over the hole.
+      A marble in a hole can never leave that hole.</li>
+</ul>
+
+<p>The game is over when each marble has dropped into a hole with the corresponding
+number.</p>
+
+<p>The figure below illustrates a solution for a game played on a 4x4 board with three
+blue marbles, three holes and a wall. The solution has five moves: lift the east side,
+lift the north side, lift the south side, lift the west side, lift the north side.</p>
+
+<figure>
+  <img src="images/F-1.png" alt="">
+  <figcaption>A solution for a 4x4 board with three blue marbles, three holes and a wall</figcaption>
+</figure>
+
+<p>Your program should determine the fewest number of moves to drop all the marbles
+into the correct holes &ndash; if such a move sequence is possible.</p>
+
+<h2>Input</h2>
+
+<p>The input file contains several test cases. The first line of each test case
+contains three numbers: the size N (2 &le; N &le; 4) of the board, the number M (M
+&gt; 0) of marbles, and the number W of walls. Each of the following 2M lines contains
+two integers. The first integer is a row location and the second is a column location.
+The first M of those lines represent the locations of the marbles, where marble#1 is on
+the first line, marble#2 on the second, and so on. The last M of those lines represent
+the locations of the holes, with the location of hole#1 coming first, hole#2 coming
+second, and so on. Finally, the next W lines represent the wall locations. Each of
+those lines contains four integers: the first pair are the row and column of the
+square on one side of the wall and the second pair are the row and column of the
+square on the other side of the wall. Rows and columns are numbered 0..N-1.</p>
+
+<p>The input file ends with a line containing three zeroes.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, print the case number (beginning with 1) and the minimal number
+of moves to win the game. If the game cannot be won, print the word
+&ldquo;impossible&rdquo;. Put a blank line after each test case. Use the format of the
+sample output below.</p>
+
+<h3>Sample Input 1</h3>
+<pre>4 3 1
+0 1
+1 0
+1 2
+2 3
+2 1
+3 2
+1 1 1 2
+3 2 2
+0 0
+0 1
+0 2
+2 0
+2 0 1 0
+2 0 2 1
+0 0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1: 5 moves
+
+Case 2: impossible</pre>
+
+<footer>
+  2007 ICPC World Finals Problem F: Marble Game &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

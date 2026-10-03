@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Contour Mapping &mdash; 34th ICPC World Finals (2010)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">34th ICPC World Finals · Problem F</p>
+  <h1>Contour Mapping</h1>
+  <p class="meta">Problem ID: contour</p>
+</header>
+
+<p>A contour map represents the topography of a given region. Lines on a contour map represent constant
+elevations. For example, a contour map might contain a line that represents points with an elevation of 100
+meters above mean sea level, another line representing 200 meters elevation, and so on.</p>
+
+<p>The Association for Contour Mapping (ACM) needs a program to produce contour maps from data files
+containing elevation measurements collected by a satellite. They are especially interested in the total length of
+all contour lines on each map. The elevation data is in the form of sequences of integers that represent elevations
+measured at regular intervals along scan lines that run from west to east. The spacing of the scan lines is such
+that each elevation measurement in the interior of the data set has six nearest neighbors and is equidistant from
+them (when elevation is ignored), as shown in Figure 5 and Figure 6.</p>
+
+<figure>
+  <img src="images/F-1.png" alt="">
+  <figcaption>Figure 5</figcaption>
+</figure>
+<figure>
+  <img src="images/F-2.png" alt="">
+  <figcaption>Figure 6</figcaption>
+</figure>
+
+<p>The policy of the ACM is to approximate the actual terrain by a set of triangles constructed by connecting each
+elevation measurement to its nearest neighbors by straight line segments. Each of these triangles is then treated
+as a planar surface, where the plane is determined by the coordinates, including elevation, of the vertices. If the
+triangles are projected onto the zero-elevation plane, they form a set of equilateral triangles.</p>
+
+<p>In the figures above, the black numbers represent elevation data and the red dashed lines and numbers represent
+contour lines. Figure 5 contains a single contour line at elevation 5. Figure 6 contains multiple contour lines at
+elevations 6 and 9. A contour line may pass through the interior of a triangle or run along an edge of a triangle.</p>
+
+<p>Because of the way the data points are interlaced, even-numbered scan lines contain one more data point than
+odd-numbered scan lines. In each figure, the first scan line is shown at the top.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of several test cases, each containing a set of elevation data. Each test case begins with a line
+containing four integers as follows:</p>
+
+<ul>
+  <li>s (2 ≤ s ≤ 100) is the number of scan lines of data in the test case.</li>
+  <li>p (1 ≤ p ≤ 100) is the number of elevation measurements on the odd numbered scan lines. The even-
+numbered scan lines contain p + 1 elevation measurements.</li>
+  <li>d (1 ≤ d ≤ 10) is the distance between each elevation measurement and its nearest neighbors when elevation
+is ignored (equals the side-length of the equilateral triangles in the figures.)</li>
+  <li>h (1 ≤ h ≤ 1000) is the elevation increment between contour lines in the desired map. The final contour map
+contains a contour line wherever the elevation is an exact multiple of h. Note that a map may contain
+multiple contour lines for a given elevation. Where a region is level, contour lines are shown only for the
+boundaries. (See for example the contour line of elevation 9 in Figure 6.)</li>
+</ul>
+
+<p>The first line of each test case is followed by additional lines containing elevation data as a sequence of non-
+negative integers no larger than 10<sup>6</sup>. The first p integers represent the elevation measurements on the first scan
+line, from left to right. The next p + 1 integers represent the elevation measurements on the second scan line,
+reading from left to right. The data continues in order, providing p integers for each odd-numbered scan line and
+p + 1 integers for each even-numbered scan line, until all the elevation data has been provided. Each test case
+ends with an empty line.</p>
+
+<p>The input is terminated with a line containing a single zero.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, display its case number followed by the total length of all the contour lines on the contour
+map, rounded to the nearest integer. Follow the format of the sample output.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3 2 5 5
+1 1
+1 9 1
+1 1
+
+4 4 5 3
+5 7 7 5
+5 9 9 9 5
+9 9 9 9
+7 9 9 9 7
+
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1: 15
+Case 2: 54</pre>
+
+
+<footer>
+  34th ICPC World Finals Problem F: Contour Mapping
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: Pachinko &mdash; ACM-ICPC World Finals 2014</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2014 &middot; Problem H</p>
+  <h1>Pachinko</h1>
+  <p class="meta">Time limit: 6 seconds</p>
+</header>
+
+<p>You have been hired by Addictive Coin Machines to help design the next hit in their line of eye-catching,
+coin-guzzling, just-one-more-try Pachinko machines for casinos around the world.</p>
+
+<p>Playing a Pachinko machine involves launching balls into a rectangular grid filled with pegs, obstacles,
+and targets. The ball bounces around the grid until it eventually hits one of the targets. The player earns
+a certain number of points depending on which target is hit.</p>
+
+<p>The grid pattern for the next Pachinko machine has already been designed, but point values for the targets
+have not been assigned. These must be set so that like all casino machines, the machine is profitable but
+not too profitable. Thus it is important to figure out the probability of a ball hitting any particular target.
+That&rsquo;s your job!</p>
+
+<p>For simplicity, the grid is modeled as a tall rectangle filled with mostly-open spaces (each represented
+by &lsquo;.&rsquo;), impassable obstacles (each represented by &lsquo;X&rsquo;), and targets (each represented by &lsquo;T&rsquo;).
+A ball is launched randomly with uniform probability into one of the mostly-open spaces on the top row
+of the grid. From that point on, collisions with pegs cause the ball to randomly bounce up, down, left, or
+right, with various given probabilities. For simplicity, assume these probabilities are the same for every
+space in the grid. If the ball bounces into an obstacle or attempts to move off the grid, it won&rsquo;t actually
+move from its current space. When the ball moves into a target it is removed from play.</p>
+
+<p>You can safely assume that the average number of spaces visited by a ball before hitting a target will not
+exceed 10<sup>9</sup>. It would not make for a very enjoyable game if the ball just bounces forever!</p>
+
+<p>For each target, calculate the probability that it is the one hit by a launched ball.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of a single test case. The first line contains integers <i>w</i> and <i>h</i>, which are the width and
+height of the Pachinko grid (1 &le; <i>w</i> &le; 20 and 2 &le; <i>h</i> &le; 10&thinsp;000). The next line contains four non-negative
+integers <i>u</i>, <i>d</i>, <i>l</i>, and <i>r</i>, which sum to 100 and are the percentage probabilities of the ball bouncing up,
+down, left, or right from any open space.</p>
+
+<p>Each of the next <i>h</i> lines contains <i>w</i> characters, each of which is &lsquo;.&rsquo;, &lsquo;X&rsquo;, or &lsquo;T&rsquo;. These lines describe the
+Pachinko grid. The first line, which describes the top row of the grid, contains at least one &lsquo;.&rsquo; and no
+&lsquo;T&rsquo;s.</p>
+
+<h2>Output</h2>
+
+<p>Display one line for each &lsquo;T&rsquo; in the grid, in order from top to bottom, breaking ties left to right. For each
+target, display the probability that a launched ball will hit it. Give the answer with an absolute error of
+at most 10<sup>&minus;6</sup>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3 2
+20 20 20 40
+X.X
+T.T</pre>
+
+<h3>Sample Output 1</h3>
+<pre>0.333333333
+0.666666667</pre>
+
+<h3>Sample Input 2</h3>
+<pre>4 5
+12 33 28 27
+....
+.XX.
+....
+T..T
+XTTX</pre>
+
+<h3>Sample Output 2</h3>
+<pre>0.435853889
+0.403753221
+0.081202502
+0.079190387</pre>
+
+
+<footer>
+  ACM-ICPC World Finals 2014 Problem H: Pachinko
+</footer>
+
+</body>
+</html>

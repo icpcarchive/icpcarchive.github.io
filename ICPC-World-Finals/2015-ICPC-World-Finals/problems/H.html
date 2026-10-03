@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: Qanat — ACM-ICPC World Finals 2015</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2015 · Problem H</p>
+  <h1>Qanat</h1>
+  <p class="meta">Time limit: 2 seconds</p>
+</header>
+
+<p>A qanat is an irrigation system widely used to deliver water in hot, arid climates. The technology
+was originally developed by Persians over 2000 years ago. In Morocco, qanats are known as khettara and
+are still used today in the southern part of the country.</p>
+
+<p>The basic feature of a qanat is an essentially horizontal channel that brings water from an
+underground water source to an outlet near a civilization. There is also a shaft known as a mother
+well that rises vertically from the underground water source to the surface of a mountain or hill.
+Creating such a system is extremely expensive, and was especially so in ancient times, since all of
+the materials excavated from the channel and mother well must be carried above ground, either through
+the channel outlet or the top of the mother well. To aid in the construction, there are often one or
+more additional vertical shafts placed at strategic locations above the underground channel. Although
+these shafts must also be excavated, they provide a means for lifting additional dirt from the
+horizontal channel as illustrated in Figure H.1.</p>
+
+<figure>
+  <img src="images/H-1.png" alt="">
+  <figcaption>Figure H.1: An illustration of a qanat.</figcaption>
+</figure>
+
+<p>For this problem, model the cross-section of a qanat as shown in Figure H.2, with the channel
+outlet at (0, 0), the water source at (<i>w</i>, 0), and the top of the mother well at
+(<i>w</i>, <i>h</i>) with <i>w</i> &gt; <i>h</i>. The surface of the mountain extends along a straight
+line from (<i>w</i>, <i>h</i>) to (0, 0).</p>
+
+<figure>
+  <img src="images/H-2.png" alt="">
+  <figcaption>Figure H.2: A simplified model of a qanat cross-section.</figcaption>
+</figure>
+
+<p>Every qanat must have a vertical mother well from the water source to the mountain surface above,
+along with <i>n</i> additional vertical shafts. The channel and all shafts are modeled as line
+segments. Your goal is to determine the placement for those additional shafts so as to minimize the
+overall excavation cost. This cost is equal to the sum of the distances that each piece of excavated
+dirt must be transported to reach the surface (using any combination of horizontal and vertical
+movement). For example, the cost of excavating a continuous section of dirt starting from the surface
+and going along a path of length &ell; (possibly including turns) is
+&int;<sub>0</sub><sup>&ell;</sup> <i>x</i> d<i>x</i> = &frac12; &ell;&sup2;.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of a single line containing three integers <i>w</i>
+(1 &le; <i>w</i> &le; 10&thinsp;000), <i>h</i> (1 &le; <i>h</i> &lt; <i>w</i>), and
+<i>n</i> (1 &le; <i>n</i> &le; 1&thinsp;000). The value <i>w</i> is the horizontal distance from the
+water source to the qanat outlet. The value <i>h</i> is the vertical distance from the water source to
+the mountain surface. The value <i>n</i> is the number of vertical shafts that must be used in addition
+to the mother well.</p>
+
+<h2>Output</h2>
+
+<p>First, display the minimum overall excavation cost. Next, display the <i>x</i>-coordinates, in
+increasing order, for <i>n</i> optimally placed vertical shafts. If <i>n</i> &gt; 10, display only the
+first 10 <i>x</i>-coordinates. Answers within an absolute or relative error of 10<sup>&minus;4</sup>
+will be accepted. You may assume that there is a unique solution. No test case will result in a shaft
+within 0.001 units from the outlet of the qanat channel or from another shaft.</p>
+
+<h3>Sample Input 1</h3>
+<pre>8 4 1</pre>
+
+<h3>Sample Output 1</h3>
+<pre>31.500000
+3.000000</pre>
+
+<h3>Sample Input 2</h3>
+<pre>195 65 2</pre>
+
+<h3>Sample Output 2</h3>
+<pre>12220.000000
+48.000000
+108.000000</pre>
+
+<h3>Sample Input 3</h3>
+<pre>10000 1 1000</pre>
+
+<h3>Sample Output 3</h3>
+<pre>30141.885677
+9.956721
+19.913443
+29.870164
+39.826887
+49.783610
+59.740334
+69.697060
+79.653786
+89.610515
+99.567245</pre>
+
+<footer>
+  ACM-ICPC World Finals 2015 Problem H: Qanat &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

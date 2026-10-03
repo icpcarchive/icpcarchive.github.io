@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Bullet Hole — 23rd Annual ACM International Collegiate Programming Contest World Finals (1999)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The 23rd Annual ACM International Collegiate Programming Contest World Finals · Problem B</p>
+  <h1>Bullet Hole</h1>
+  <p class="meta">Input: bullet.in</p>
+</header>
+
+<figure>
+  <img src="images/B-1.png" alt="">
+  <figcaption>The cube and coordinate system (in this example, n = 3)</figcaption>
+</figure>
+
+<p>A cube is suspended in space. A Cartesian coordinate system is defined with
+its origin at one of the bottom corners of the cube, as shown in the figure.
+The cube has side dimension d, so its opposite corners are at coordinates
+(0, 0, 0) and (d, d, d). The positive z-direction of the coordinate system is
+&ldquo;up&rdquo; with respect to gravity.</p>
+
+<p>The interior of the cube contains partitions with uniform spacing in each
+dimension, so that the cube is partitioned into n<sup>3</sup> mini-cubes of
+equal size. The partitions are thin and watertight, and each mini-cube is
+filled with water. The total volume of water in all the minicubes is
+d<sup>3</sup>.</p>
+
+<p>A gun fires a bullet which may hit the cube. The muzzle of the gun is at the
+point (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>). The point
+(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) is a point on the bullet&rsquo;s
+path that defines the direction of the bullet. The bullet does not shatter the
+cube, but wherever the bullet touches a side or interior partition of the
+cube, it makes a small hole. Bullet holes may be made in the sides, edges, or
+corners of the interior mini-cubes. Water, influenced by gravity, may leak
+through these small holes. All the water that leaks out of the large cube is
+collected and measured.</p>
+
+<h2>Input</h2>
+
+<p>The input data set consists of several trials. Each trial is described by
+eight integers. The first integer is n (n &le; 50), as described above. The
+second integer is d (d &le; 100). The remaining six integers&mdash;x<sub>1</sub>,
+y<sub>1</sub>, z<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>&mdash;represent
+the origin and a point on the path of the bullet (-100 &le; x<sub>1</sub>,
+y<sub>1</sub>, z<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub> &le;
+100). The origin and the point on the path of the bullet are not the same.
+After the last trial, the integer 0 terminates the data set.</p>
+
+<h2>Output</h2>
+
+<p>Your program must compute the total volume of water that leaks out of the
+large cube. For each trial, print the trial number, the notation Volume =, and
+the total volume of water accurate to two digits to the right of the decimal
+point. Print a blank line between trials.</p>
+
+<h2>Note</h2>
+
+<p>In this problem, two real numbers are considered equal if they are less than
+10<sup>&minus;6</sup> apart.</p>
+
+<h3>Sample Input <i>1</i></h3>
+<pre> 5   25      5 15     0    5 15 100
+ 3   30      0 -35    0    3 -25  3
+10   16      8 17    11   12 19   6
+ 0</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>Trial 1, Volume = 2500.00
+
+Trial 2, Volume = 1950.00
+
+Trial 3, Volume = 0.00</pre>
+
+<footer>
+  The 23rd Annual ACM International Collegiate Programming Contest World Finals · Problem B · Bullet Hole
+</footer>
+
+</body>
+</html>

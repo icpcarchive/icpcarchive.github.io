@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem C: Grand Prix &mdash; 2007 ICPC World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+
+<header>
+  <p class="kicker">2007 ICPC World Finals &middot; Problem C</p>
+  <h1>Grand Prix</h1>
+  <p class="meta">Input file: gp.in</p>
+</header>
+
+<p>You are the chief designer of a road race that will be held in a hilly area. The
+racecourse consists of N connected straight line segments; that is, the end of the
+kth segment coincides with the beginning of the (k+1)st segment. During planning,
+these segments are laid out on a planar surface, so 2-dimensional Cartesian
+coordinates identify the endpoints. The first segment begins at the origin. Figure 1
+shows the planar view of a racecourse with 6 segments.</p>
+
+<figure>
+  <img src="images/C-1.png" alt="">
+  <figcaption>Figure 1</figcaption>
+</figure>
+
+<p>The actual race is run on the side of a hill. For simplicity, assume the hill makes
+an angle &theta; with the horizontal plane, as illustrated in Figure 2.</p>
+
+<figure>
+  <img src="images/C-2.png" alt="">
+  <figcaption>Figure 2</figcaption>
+</figure>
+
+<p>The plane of the hill and the horizontal plane intersect in the y-axis. Each
+2-dimensional Cartesian coordinate (x<sub>i</sub>, y<sub>i</sub>) corresponds to a
+3-dimensional form (x<sub>i</sub>&prime;, y<sub>i</sub>&prime;, z<sub>i</sub>&prime;),
+with z<sub>i</sub>&prime; representing the height of the endpoint of the ith linear
+segment. The height of the origin is 0.</p>
+
+<p>This particular race is intended for novice drivers, so the racecourse must not
+include any segments that require downhill travel. That is, if the height of the
+endpoint of segment k is z<sub>k</sub>&prime;, then the height of the endpoint of each
+segment after segment k must not be less than z<sub>k</sub>&prime;. Formally we can
+write z<sub>k</sub>&prime; &le; z<sub>m</sub>&prime;, for m &ge; k.</p>
+
+<p>If a proposed racecourse includes downhill segments, it might be possible to
+transform it into a racecourse with no downhill segments by rotating the planar view
+of the entire course about the origin, without changing the angle between consecutive
+pairs of segments. However there may be proposed racecourses that cannot be made
+acceptable by such a rotation.</p>
+
+<p>In this problem you must determine if a proposed racecourse is acceptable (that is,
+if it does not contain any downhill segments). If it is not acceptable, you must
+determine the minimum angle through which the racecourse must be rotated to make it
+acceptable, if that is possible.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of multiple test cases. Each test case is a description of a
+proposed racecourse and the slope of the hillside on which it will be run. The first
+line of each description contains two integers N (1 &le; N &le; 10000) and &theta;
+(0&ordm; &le; &theta; &le; 45&ordm;). N denotes the number of segments in the course and
+&theta; denotes the angle (in degrees) that the hillside makes with the horizontal
+plane. Each of the next N lines contains a pair of integers (x<sub>i</sub>,
+y<sub>i</sub>), (1 &le; i &le; N), which are the endpoints of the linear segments
+comprising the racecourse. The first segment begins at the origin, and segment k+1
+begins at the endpoint of segment k. No segment has zero length.</p>
+
+<p>The last test case is followed by a line containing two zeroes.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, print a line containing the test case number (beginning with
+1). If the proposed course is acceptable without rotation, print &ldquo;Acceptable as
+proposed&rdquo;. If the course is not acceptable as proposed, but can be made
+acceptable by rotating it about the origin, print &ldquo;Acceptable after clockwise
+rotation of X degrees&rdquo; or &ldquo;Acceptable after counterclockwise rotation of
+X degrees&rdquo;. The value X should be an unsigned number. For our purposes, a
+clockwise rotation would rotate the positive y-axis toward the positive x-axis. If
+both a clockwise and a counterclockwise rotation can make the course acceptable,
+choose the one with the smaller angle. If both rotations have the same angle, then
+either a clockwise or counterclockwise rotation will be accepted. If the course cannot
+be made acceptable by any rotation, print &ldquo;Unacceptable&rdquo;. Display the
+angles of rotation rounded to two fractional digits.</p>
+
+<p>Print a blank line after the output for each test case. Use an output format
+similar to that shown in the sample output below.</p>
+
+<h3>Sample Input 1</h3>
+<pre>2 45
+10 10
+0 1
+2 0
+1 1
+2 0
+3 45
+10 10
+1 10
+5 6
+0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1: Acceptable after clockwise rotation of 131.99 degrees
+
+Case 2: Acceptable as proposed
+
+Case 3: Unacceptable</pre>
+
+<footer>
+  2007 ICPC World Finals Problem C: Grand Prix &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

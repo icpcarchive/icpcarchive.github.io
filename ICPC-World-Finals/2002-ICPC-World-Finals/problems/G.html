@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Partitions — The 2002 ACM Programming Contest World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">2002 ACM Programming Contest World Finals · Problem G</p>
+  <h1>Partitions</h1>
+  <p class="meta">Input: partitions.in</p>
+</header>
+<p>A partition of a rectangle is a subdivision of the rectangle into a set of smaller, non-overlapping sub-rectangles. Figure 1 shows several examples of partitions.</p>
+
+<figure>
+  <img src="images/G-1.png" alt="">
+  <figcaption>Figure 1</figcaption>
+</figure>
+
+<p>Figure 2 shows three equal sized rectangles, partitioned into sub-rectangles. Partition B is obtained from partition A by partitioning two of the sub-rectangles of A. Generally, if a partition B is obtained from A by partitioning one or more of its sub-rectangles, we say that B is finer than A, or that A is coarser than B. This relation is partial: partition C is neither coarser nor finer than A or B.</p>
+
+<figure>
+  <img src="images/G-2.png" alt="">
+  <figcaption>Figure 2</figcaption>
+</figure>
+
+<p>Given two partitions D and E of the same rectangle, infinitely many partitions exist that are finer than both D and E. In Figure 3 both F and G are finer than D and E. Among the partitions that are finer than both D and E, a unique one exists that is coarsest. This partition is called the infimum of D and E. In Figure 3, partition F is the infimum of D and E.</p>
+
+<figure>
+  <img src="images/G-3.png" alt="">
+  <figcaption>Figure 3</figcaption>
+</figure>
+
+<p>In Figure 4, both H and J are coarser than D and E. Here J is the finest partition that is coarser than D and E. Then J is the supremum of D and E.</p>
+
+<figure>
+  <img src="images/G-4.png" alt="">
+  <figcaption>Figure 4</figcaption>
+</figure>
+
+<p>Write a program that, given two partitions of the same rectangle, finds the infimum and the supremum of these partitions.</p>
+
+<h2>Input</h2>
+
+<p>The input file contains one or more test cases. The first line of each test case gives the width <i>w</i> and height <i>h</i> of the rectangle (0 &lt; <i>w</i>, <i>h</i> &le; 20). In the next <i>h</i>+1 lines the two partitions are given, as in the sample. Each of these lines contains 4*<i>w</i>+3 characters. The first 2*<i>w</i>+1 of these belong to the first partition; the last 2*<i>w</i>+1 of these belong to the second partition. A space separates the two partitions. Horizontal lines are created using underscores &lsquo;_&rsquo;, vertical lines using &lsquo;|&rsquo;.</p>
+
+<p>The input is terminated by a pair of zeroes.</p>
+
+<h2>Output</h2>
+
+<p>For every case in the input file the output contains a single line containing the case number (in the format shown in the sample), followed by the infimum and the supremum of the two partitions, using the same format as the input.</p>
+
+<p>Place a blank line after the output of each test case</p>
+
+<h3>Sample Input 1</h3>
+<pre>4 3
+ _ _ _ _   _ _ _ _ 
+|_ _ _ _| |_|_ _ _|
+|   |   | |        |
+|_|_ _| |_ _ _|
+3 4
+ _ _ _   _ _   
+| |   | | |   |
+| |   | |_|_ _|
+|_|_ _| |   | |
+|_ _|_| |_ _|_| 
+0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1:
+ _ _ _ _   _ _ _ _ 
+|_|_ _| |_ _ _|
+|   |   | |        |
+|_|_ _| |_ _ _|
+
+Case 2:
+ _ _ _   _ _   
+| |   | |      |
+|_|_ _| |      |
+|_|_|_  |      |
+|_ _|_| |_ _   </pre>
+
+<footer>
+  The 2002 ACM Programming Contest World Finals sponsored by IBM · Problem G: Partitions
+</footer>
+
+</body>
+</html>

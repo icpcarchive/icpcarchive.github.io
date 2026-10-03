@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Remember the A La Mode! — The 30th Annual ACM International Collegiate Programming Contest World Finals (2006)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The 30th Annual ACM International Collegiate Programming Contest World Finals · Problem B</p>
+  <h1>Remember the A La Mode!</h1>
+  <p class="meta">Input file: alamode.in</p>
+</header>
+
+<p>Hugh Samston owns the &ldquo;You Want It, Hugh Got It&rdquo; catering service, which has been asked to supply desserts for the participants in this year&rsquo;s ICPC World Finals. Hugh will provide pie slices topped with ice cream at the various social functions scheduled throughout the week. As with any other dedicated entrepreneur, Hugh would like to offer the best service possible, so he has ordered a wide variety of pies and ice creams to satisfy even the most eclectic tastes.</p>
+
+<p>Hugh plans to serve each pie slice with a single scoop of ice cream, leaving the exact combination up to the whim of the customer. But of course, as with any other dedicated entrepreneur, Hugh would also like to make as much profit as possible from this enterprise. He knows ahead of time how much profit he can make on each combination of pie slice and ice cream scoop, as well as which combinations of pie and ice cream should never be put together (example: Peppermint Banana Chunk ice cream on Key Lime pie).</p>
+
+<p>Given this information, along with the number of slices and scoops he has of each variety of pie and ice cream, Hugh figures he can determine both the minimum and maximum profits he can expect. Since he hopes to be the caterer at subsequent World Finals, he would like a general program to solve this and future problems.</p>
+
+<h2>Input</h2>
+
+<p>Input will consist of multiple problem instances. Each problem instance will start with a line containing two integers <i>P</i> (<i>P</i> &le; 50) and <i>I</i> (<i>I</i> &le; 50), indicating the number of types of pie and ice cream, respectively. The next line will contain <i>P</i> integers indicating the number of slices available for each of the pie types. The line after that will contain <i>I</i> integers indicating the number of scoops available for each of the ice cream types. The total number of pie slices will always equal the total number of ice cream scoops available, and it is assumed that all pie slices and ice cream scoops will be used.</p>
+
+<p>Each problem instance will end with <i>P</i> lines each containing <i>I</i> floating point numbers indicating the profit for each pie/ice cream combination: the first value indicates the profit if a slice of pie type 0 is topped with a scoop of ice cream type 0; the next value indicates the profit if a slice of pie type 0 is topped with a scoop of ice cream type 1, and so on. A profit value of -1 indicates that no combinations of that pie type and ice cream type should ever be sold. All other integers (number of slices for each type of pie and number of scoops for each type of ice cream) will be less than or equal to 100 and the profit on each one of the pie/ice cream combinations (other than -1) will be larger than 0 and less than or equal to 10, with at most two digits after the decimal point.</p>
+
+<p>The last problem instance is followed by a line containing two zeroes.</p>
+
+<h2>Output</h2>
+
+<p>For each problem instance, output the problem number (starting at 1) followed by the minimum and maximum profits, using the format shown in the sample output. Display all numbers with two fractional digits. All problem instances are guaranteed to have at least one solution using all of the pie slices and ice cream scoops.</p>
+
+<h3>Sample Input 1</h3>
+<pre>2 3
+40 50
+27 30 33
+1.11 1.27 0.70
+-1 2 0.34
+4 4
+10 10 10 10
+10 10 10 10
+1.01 -1 -1 -1
+-1 1.01 -1 -1
+-1 -1 1.01 -1
+-1 -1 -1 1.01
+0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Problem 1: 91.70 to 105.87
+Problem 2: 40.40 to 40.40</pre>
+
+<footer>
+  The 30th Annual ACM International Collegiate Programming Contest World Finals &middot; Problem B &middot; Remember the A La Mode!
+</footer>
+
+</body>
+</html>

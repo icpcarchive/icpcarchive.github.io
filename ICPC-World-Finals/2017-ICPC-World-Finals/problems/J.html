@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem J: Son of Pipe Stream — ACM-ICPC World Finals 2017</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2017 · Problem J</p>
+  <h1>Son of Pipe Stream</h1>
+  <p class="meta">Time limit: 5 seconds</p>
+</header>
+
+<p>Two years ago, you helped install the nation&rsquo;s very first Flubber pipe
+network in your hometown, to great success. Polls show that everyone loves
+having their own Flubber dispenser in their kitchen, and now a few
+enterprising citizens have discovered a use for it. Apparently Flubber, when
+mixed with water, can help extinguish fires! This is a very timely discovery,
+as out-of-control fires have lately been surprisingly common.</p>
+
+<p>Your hometown&rsquo;s city council would like to make use of this property of
+Flubber by creating the Flubber/water mixture at a centrally located station.
+This station, which is called the Flubber Department (FD) will also have
+specialized employees trained to travel to the locations of fires and make use
+of their processed Flubber to control the blazes.</p>
+
+<p>The pipes are already in place all around the city. You are given a layout of
+the pipes, and must determine how to route Flubber from the Flubber factory and
+water from a local source through the pipes to the FD. Note that both Flubber
+and water will be flowing through the same network of pipes, perhaps even the
+same pipe. All pipes are bidirectional, but Flubber and water cannot move in
+opposite directions through the same pipe. Furthermore, if both liquids are sent
+in the same direction through the same pipe, they will inevitably mix. Therefore
+the nodes in the network have been equipped with special membranes and filters
+that enable you to separate and reorganize all incoming mixtures as you see fit.
+The network is a closed system, so the total rate of each fluid going into a
+node must equal the total rate of that fluid going out, except at the source of
+that fluid and the destination (the FD).</p>
+
+<p>Each pipe has a certain capacity. Flubber, being somewhat sluggish, has a
+viscosity value <i>v</i>, so a pipe that can transport <i>v</i> liters/second of
+water can transport only 1 liter/second of Flubber. The pipe&rsquo;s capacity
+scales linearly for mixtures of the two. To be precise, if <i>c</i> denotes the
+water capacity of the pipe and <i>f</i> and <i>w</i> are the rates of Flubber
+and water moving through the pipe (all measured in liters/second), then the
+capacity constraint is given by the inequality <i>v</i> &middot; <i>f</i> +
+<i>w</i> &le; <i>c</i>.</p>
+
+<p>Your main concern is balancing the mixture that reaches the FD. You would
+like as much total liquid as possible, but you also need a sufficient amount of
+water – because undiluted Flubber is highly flammable – and a sufficient amount
+of Flubber – because it would not be much of a &ldquo;Flubber Department&rdquo;
+without Flubber! You have come up with a formula to measure the &ldquo;value&rdquo;
+of the final mixture: <i>F</i><sup><i>a</i></sup> &middot;
+<i>W</i><sup>1&minus;<i>a</i></sup>, where <i>F</i> is the rate of incoming
+Flubber in liters/second, <i>W</i> is the rate of incoming water in
+liters/second, and <i>a</i> is a given constant between 0 and 1.</p>
+
+<p>Determine the maximum value of <i>F</i><sup><i>a</i></sup> &middot;
+<i>W</i><sup>1&minus;<i>a</i></sup> that can be achieved and how to route the
+Flubber and water to achieve it.</p>
+
+<h2>Input</h2>
+
+<p>The input starts with a line containing the number of locations <i>n</i>
+(3 &le; <i>n</i> &le; 200), the number of pipes <i>p</i> (<i>n</i> &minus; 1
+&le; <i>p</i> &le; <i>n</i>(<i>n</i> &minus; 1)/2), and the real values
+<i>v</i> (1 &le; <i>v</i> &le; 10) and <i>a</i> (0.01 &le; <i>a</i>
+&le; 0.99). Locations are numbered from 1 to <i>n</i>; 1 is the Flubber
+factory, 2 is the water source, and 3 is the FD. The real values have at most
+10 digits after the decimal point.</p>
+
+<p>The following <i>p</i> lines each describe one pipe. Each line contains two
+integers <i>j</i> and <i>k</i> (1 &le; <i>j</i> &lt; <i>k</i> &le; <i>n</i>),
+giving the locations connected by the pipe, and an integer <i>c</i> (1
+&le; <i>c</i> &le; 10), giving the water capacity of the pipe in liters/second.
+No two pipes connect the same pair of locations. Furthermore, it is guaranteed
+that the network is connected.</p>
+
+<h2>Output</h2>
+
+<p>First, for each pipe (in the order given in the input), display two values:
+the rate of Flubber moving through it, and the rate of water moving through it
+(negative if the liquid is moving from <i>k</i> to <i>j</i>), such that
+<i>F</i><sup><i>a</i></sup> &middot; <i>W</i><sup>1&minus;<i>a</i></sup> is
+maximized. Then display that maximum value accurate to within an absolute error
+of 10<sup>&minus;4</sup>. If there are multiple solutions, any one will be
+accepted. All constraints (not sending Flubber and water in opposite directions
+along the same pipe, flow conservation, pipe capacities, and consistency between
+the constructed solution and its claimed value) must be satisfied within an
+absolute error of 10<sup>&minus;4</sup>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>6 6 3.0 0.66
+2 4 8
+4 6 1
+3 6 1
+4 5 5
+1 5 7
+3 5 3</pre>
+
+<h3>Sample Output 1</h3>
+<pre>0.000000000 1.360000000
+0.000000000 1.000000000
+0.000000000 -1.000000000
+0.000000000 0.360000000
+0.880000000 0.000000000
+-0.880000000 -0.360000000
+1.02037965897</pre>
+
+<h3>Sample Input 2</h3>
+<pre>5 5 1.0 0.5
+1 2 10
+2 3 10
+3 4 10
+4 5 10
+3 5 10</pre>
+
+<h3>Sample Output 2</h3>
+<pre>5 0
+5 5
+4.2 3.14159
+4.2 3.14159
+-4.2 -3.14159
+5</pre>
+
+<footer>
+  ACM-ICPC World Finals 2017 Problem J: Son of Pipe Stream
+</footer>
+
+</body>
+</html>

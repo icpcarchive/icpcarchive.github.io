@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem D: Eurodiffusion — The 27th Annual ACM International Collegiate Programming Contest World Finals (2003)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">The 27th Annual ACM International Collegiate Programming Contest World Finals sponsored by IBM · Problem D</p>
+  <h1>Eurodiffusion</h1>
+  <p class="meta">Input File: euro.in</p>
+</header>
+
+<p>On January 1, 2002, twelve European countries abandoned their national currency for a
+new currency, the euro. No more francs, marks, lires, guldens, kroner,... only euros, all
+over the eurozone. The same banknotes are used in all countries. And the same coins? Well,
+not quite. Each country has limited freedom to create its own euro coins:</p>
+
+<blockquote>
+  “Every euro coin carries a common European face. On the obverse, member states decorate
+  the coins with their own motif. No matter which motif is on the coin, it can be used
+  anywhere in the 12 Member States. For example, a French citizen is able to buy a hot dog
+  in Berlin using a euro coin with the imprint of the King of Spain.” (source:
+  http://europa.eu.int/euro/html/entry.html)
+</blockquote>
+
+<p>On January 1, 2002, the only euro coins available in Paris were French coins. Soon the
+first non-French coins appeared in Paris. Eventually, one may expect all types of coins to
+be evenly distributed over the twelve participating countries. (Actually this will not be
+true. All countries continue minting and distributing coins with their own motifs. So even
+in a stable situation, there should be an excess of German coins in Berlin.) So, how long
+will it be before the first Finnish or Irish coins are in circulation in the south of Italy?
+How long will it be before coins of each motif are available everywhere?</p>
+
+<p>You must write a program to simulate the dissemination of euro coins throughout Europe,
+using a highly simplified model. Restrict your attention to a single euro denomination.
+Represent European cities as points in a rectangular grid. Each city may have up to 4
+neighbors (one to the north, east, south and west). Each city belongs to a country, and a
+country is a rectangular part of the plane. The figure below shows a map with 3 countries
+and 28 cities. The graph of countries is connected, but countries may border holes that
+represent seas, or non-euro countries such as Switzerland or Denmark. Initially, each city
+has one million (1000000) coins in its country’s motif. Every day a representative portion
+of coins, based on the city’s beginning day balance, is transported to each neighbor of the
+city. A representative portion is defined as one coin for every full 1000 coins of a
+motif.</p>
+
+<figure>
+  <img src="images/D-1.png" alt="">
+</figure>
+
+<p>A city is complete when at least one coin of each motif is present in that city. A
+country is complete when all of its cities are complete. Your program must determine the
+time required for each country to become complete.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of several test cases. The first line of each test case is the number
+of countries (1 &le; <i>c</i> &le; 20). The next <i>c</i> lines describe each country. The
+country description has the format: <i>name xl yl xh yh</i>, where <i>name</i> is a single
+word with at most 25 characters; <i>xl</i>, <i>yl</i> are the lower left city coordinates of
+that country (most southwestward city ) and <i>xh</i>, <i>yh</i> are the upper right city
+coordinates of that country (most northeastward city). 1 &le; <i>xl</i> &le; <i>xh</i>
+&le; 10 and 1 &le; <i>yl</i> &le; <i>yh</i> &le; 10.</p>
+
+<p>The last case in the input is followed by a single zero.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, print a line indicating the case number, followed by a line for each
+country with the country name and number of days for that country to become complete. Order
+the countries by days to completion. If two countries have identical days to completion,
+order them alphabetically by name.</p>
+
+<p>Use the output format shown in the example.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3
+France  1 4 4 6
+Spain          3 1 6 3
+Portugal    1 1 2 2
+1
+Luxembourg  1 1 1 1
+2
+Netherlands 1 3 2 4
+Belgium     1 1 2 2
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case Number 1
+Spain   382
+Portugal   416
+France   1325
+Case Number 2
+Luxembourg   0
+Case Number 3
+Belgium   2
+Netherlands   2</pre>
+
+<footer>
+  The 2003 ACM Programming Contest World Finals sponsored by IBM
+</footer>
+
+</body>
+</html>

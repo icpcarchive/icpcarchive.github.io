@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem E: MIDI Preprocessing — 1993 ACM International Collegiate Programming Contest Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">1993 ACM International Collegiate Programming Contest Finals · Problem E</p>
+  <h1>MIDI Preprocessing</h1>
+</header>
+
+<p>MIDI (Musical Instrument Digital Interface) is a standard for communication involving computers and
+synthesized music instruments. Part of the standard defines commands, which when transmitted to a synthesizer,
+begin and end the sounding of a particular note. In this problem we will consider processing simple MIDI
+“programs.” In the following example, three simultaneous notes (a chord, with note numbers 60, 70 and 80) are
+played for 10 time units immediately followed by a single note (number 62) for 2 time units.</p>
+
+<pre>0 ON 60
+0 ON 70
+0 ON 80
+10 OFF 60
+10 OFF 80
+10 OFF 70
+10 ON 62
+12 OFF 62</pre>
+
+<p>Much existing music cannot be directly translated to this program form. Sometimes a note is already “on” when
+the written music indicates that it is to be sounded again. For example:</p>
+
+<pre>0 ON 60
+10 ON 60
+12 OFF 60
+20 OFF 60</pre>
+
+<p>A synthesizer will interpret this program to sound note 60 for 12 time units, not 20 as indicated. We will not hear
+the separate sounding of the note at time 10, since turning on a note that is already sounding will be ignored. By
+analogy, consider turning a light on and off. If it’s on, turning it on again is ineffective. Likewise, the first time
+that a light is turned off, it is off!</p>
+
+<p>When a note already on is to be sounded again, the program can be “fixed” by inserting an OFF command for that
+note 1 time unit before the second ON command. Since there are already at least two OFF commands in such
+circumstances, only the last of these should be retained; the other should be eliminated from the program. The
+“fixed” program will cause the synthesizer to behave as if the same note had been played twice in rapid
+succession.</p>
+
+<p>Another problem exists in programs that turn a note on and off at the same time. Depending on the ordering of the
+events in the program, either the note will be prematurely ended (if the OFF command appears after the ON), or
+the second sounding of the note will not be heard. For example:</p>
+
+<pre>0 ON 60
+10 ON 60
+10 OFF 60
+20 OFF 60</pre>
+
+<pre>0 ON 60
+10 OFF 60
+10 ON 60
+20 OFF 60</pre>
+
+<p>In the example on the left, the note will be turned off at time 10. The example on the right doesn’t leave the note
+off long enough to allow a human listener to detect the “punctuation” in the sound. In both cases the correction is
+the same: move the OFF command so it is executed by the synthesizer 1 time unit before the corresponding ON
+command.</p>
+
+<p>If an OFF command inserted 1 time unit before an ON as a result of the “fix” occurs at exactly the same time as
+the preceding ON, the second ON and the OFF that occurs at the same time should be eliminated.</p>
+
+<p>Write a program that will accept an arbitrary number of MIDI programs and “fix” them as described above.</p>
+
+<h2>Input</h2>
+
+<p>Each program contains an arbitrary number of lines. Each line contains, in order, the time that the command is
+sent to the synthesizer (a non-negative integer), a command (either ON or OFF), and a note (an integer in the
+range 1 to 127). These items are separated by one or more blanks. Each program except the last is terminated with
+a line containing only the integer -1. The last program is terminated by a line containing only the integer -2.</p>
+
+<h2>Output</h2>
+
+<p>The output is to be a “fixed” MIDI program in the same format as the input.</p>
+
+<p>Assumptions</p>
+<ol>
+  <li>The ON and OFF commands will always be in upper case letters.</li>
+  <li>The times associated with programs are in non-decreasing order.</li>
+  <li>All notes are initially OFF.</li>
+  <li>If different notes are to be turned on or off simultaneously, the order in which the corresponding commands
+      appear is unimportant.</li>
+  <li>Each ON command will have a matching OFF command following it in the program.</li>
+</ol>
+
+<h3>Sample Input <i>1</i></h3>
+<pre>0 ON 60
+10 ON 60
+12 OFF 60
+20 OFF 60
+-1
+0 ON 60
+5 ON 70
+10 ON 60
+10 OFF 60
+15 OFF 70
+15 ON 70
+20 OFF 60
+20 OFF 70
+-1
+0 ON 60
+1 OFF 60
+1 ON 60
+10 OFF 60
+-2</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>0 ON 60
+9 OFF 60
+10 ON 60
+20 OFF 60
+-1
+0 ON 60
+5 ON 70
+9 OFF 60
+10 ON 60
+14 OFF 70
+15 ON 70
+20 OFF 60
+20 OFF 70
+-1
+0 ON 60
+10 OFF 60
+-2</pre>
+
+<footer>
+  1993 ACM International Collegiate Programming Contest Finals · Problem E · MIDI Preprocessing
+</footer>
+
+</body>
+</html>

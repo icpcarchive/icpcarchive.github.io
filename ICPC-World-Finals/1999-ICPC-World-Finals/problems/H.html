@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: Flooded! — 23rd Annual ACM International Collegiate Programming Contest World Finals (1999)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The 23rd Annual ACM International Collegiate Programming Contest World Finals · Problem H</p>
+  <h1>Flooded!</h1>
+  <p class="meta">Input: water.in</p>
+</header>
+
+<p>To enable homebuyers to estimate the cost of flood insurance, a real-estate
+firm provides clients with the elevation of each 10-meter by 10-meter square
+of land in regions where homes may be purchased. Water from rain, melting
+snow, and burst water mains will collect first in those squares with the
+lowest elevations, since water from squares of higher elevation will run
+downhill. For simplicity, we also assume that storm sewers enable water from
+high-elevation squares in valleys (completely enclosed by still higher
+elevation squares) to drain to lower elevation squares, and that water will
+not be absorbed by the land.</p>
+
+<p>From weather data archives, we know the typical volume of water that
+collects in a region. As prospective homebuyers, we wish to know the
+elevation of the water after it has collected in low-lying squares, and also
+the percentage of the region&rsquo;s area that is completely submerged (that
+is, the percentage of 10-meter squares whose elevation is strictly less than
+the water level). You are to write the program that provides these results.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of a sequence of region descriptions. Each begins with a
+pair of integers, m and n, each less than 30, giving the dimensions of the
+rectangular region in 10-meter units. Immediately following are m lines of n
+integers giving the elevations of the squares in row-major order. Elevations
+are given in meters, with positive and negative numbers representing
+elevations above and below sea level, respectively. The final value in each
+region description is an integer that indicates the number of cubic meters of
+water that will collect in the region. A pair of zeroes follows the
+description of the last region.</p>
+
+<h2>Output</h2>
+
+<p>For each region, display the region number (1, 2, &hellip;), the water
+level (in meters above or below sea level) and the percentage of the
+region&rsquo;s area under water, each on a separate line. The water level and
+percentage of the region&rsquo;s area under water are to be displayed accurate
+to two fractional digits. Follow the output for each region with a blank
+line.</p>
+
+<h3>Sample Input <i>1</i></h3>
+<pre>3 3
+25 37 45
+51 12 34
+94 83 27
+10000
+0 0</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>Region 1
+Water level is 46.67 meters.
+66.67 percent of the region is under water.</pre>
+
+<footer>
+  The 23rd Annual ACM International Collegiate Programming Contest World Finals · Problem H · Flooded!
+</footer>
+
+</body>
+</html>

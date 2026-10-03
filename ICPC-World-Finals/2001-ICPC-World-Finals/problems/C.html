@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem C: Crossword Puzzle — 25th Annual ACM ICPC World Finals (2001)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">25th Annual ACM ICPC World Finals · Problem C</p>
+  <h1>Crossword Puzzle</h1>
+  <p class="meta">Input: crossword.in</p>
+</header>
+
+<p>Your brilliant but absent-minded uncle believes he has solved a difficult
+crossword puzzle but has misplaced the solution. He needs your help to
+reconstruct the solution from a list that contains all the words in the
+solution, plus one extra word that is not part of the solution. Your program
+must solve the puzzle and print the extra word.</p>
+
+<p>The crossword puzzle is represented by a grid with ten squares on each
+side. Figure 1 shows the top left corner of a puzzle. The puzzle has a certain
+number of &ldquo;slots&rdquo; where a word can be placed. Each slot is
+represented by the row and column number of the square where the slot begins,
+and the direction in which the slot extends from its initial square
+(&ldquo;across&rdquo; or &ldquo;down&rdquo;). The length of each slot is not
+specified. The puzzle has a list of candidate words, all but one of which is
+used in solving the puzzle.</p>
+
+<figure>
+  <img src="images/C-1.png" alt="">
+  <figcaption>Figure 1: Corner of Example Puzzle</figcaption>
+</figure>
+
+<p>Figure 2 shows a solution to the example puzzle in Figure 1. In a valid
+solution, each slot is filled with a candidate word. Every maximal horizontal
+or vertical sequence of two or more letters must be a word in the input. Any
+candidate word can be used in any slot as long as the word fits in the puzzle
+and does not conflict with any other word. In the example, all the candidate
+words are used except the word &ldquo;BOY&rdquo;.</p>
+
+<figure>
+  <img src="images/C-2.png" alt="">
+  <figcaption>Figure 2: Example Solution</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>The input data consist of one or more test cases each describing a puzzle
+trial. The first input line in each test case contains a positive integer N
+that represents the number of slots in the puzzle. This line is followed by N
+lines, each containing the row number and column number of a square where a
+slot begins, followed by the letter &lsquo;A&rsquo; (if the slot is
+&ldquo;Across&rdquo;) or &lsquo;D&rsquo; (if the slot is &ldquo;Down&rdquo;).
+The next N + 1 input lines contain candidate words that can be used in the
+puzzle solution.</p>
+
+<p>The final test case is followed by a line containing the number zero.</p>
+
+<h2>Output</h2>
+
+<p>For each trial, print the trial number followed by the word that is not
+used in the puzzle solution, using the format in the example output. Observe
+the following rules:</p>
+
+<ol>
+  <li>Print a blank line after each trial.</li>
+  <li>If your uncle has made a mistake and the puzzle has no solution using
+  the given words, print the word &ldquo;Impossible&rdquo;. For example, if
+  Trial 2 has no solution, you should print &ldquo;Trial 2:
+  Impossible&rdquo;.</li>
+  <li>If the puzzle can be solved in more than one way, print each word that
+  can be omitted from a valid solution. The words can be printed in any order
+  but each word must be printed only once. For example, if Trial 3 has a
+  solution that omits the word DOG and two solutions that omit the word CAT,
+  you should print &ldquo;Trial 3: DOG CAT&rdquo; or &ldquo;Trial 3: CAT
+  DOG&rdquo;.</li>
+</ol>
+
+<h3>Sample Input 1</h3>
+<pre>4
+1    1      D
+2    3      D
+3    1      A
+5    2      A
+SLOW
+AGAIN
+BOY
+TAIL
+BEAR
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Trial 1: BOY</pre>
+
+
+<footer>
+  25th Annual ACM International Collegiate Programming Contest World Finals (2001) ·
+  Problem C: Crossword Puzzle · The 2001 ACM Programming Contest World Finals sponsored by IBM
+</footer>
+
+</body>
+</html>

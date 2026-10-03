@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem E: Getting a Jump on Crime (Solution) — ACM ICPC World Finals 2018</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+<header>
+  <p class="kicker">ACM ICPC World Finals 2018</p>
+  <h1>Problem E: Getting a Jump on Crime</h1>
+</header>
+<p>Shortest judge solution: 1945 bytes. Shortest team solution (during contest): 2738 bytes.</p>
+<p>This was one of the last problems solved, and the judges were a bit surprised by how few teams solved it. While the problem requires a bit of work, the hard part of that work is pen and paper calculations without the computer, which is a nice type of work for a three person team with one computer.</p>
+<p>The problem has two parts – figuring out which jumps are possible, and then computing the shortest jump sequence from the starting position. The second part is easily solved with a breadth first search so let us focus on the first part. Given a horizontal jump distance d, and a height difference ∆h between the takeoff and landing positions, we need to figure out how to split the total speed v into horizontal speed v<sub>d</sub> and vertical speed v<sub>h</sub> such that when making a jump with these initial horizontal and vertical speeds, we end up at a height difference of exactly ∆h after having travelled d meters horizontally. From the equations in the problem statement we see that the time t it takes us to travel d meters horizontally is d/v<sub>d</sub>, and that after this time our vertical position (relative to where we started) will be v<sub>h</sub>t − gt<sup>2</sup>/2 (follows by integrating the identity for the velocity from 0 to t). Plugging in t = d/v<sub>d</sub> and v<sub>h</sub> = √(v<sup>2</sup> − v<sub>d</sub><sup>2</sup>), we thus need to solve the equation</p>
+<p>∆h = (d/v<sub>d</sub>) · √(v<sup>2</sup> − v<sub>d</sub><sup>2</sup>) − g·d<sup>2</sup>/(2v<sub>d</sub><sup>2</sup>) for v<sub>d</sub>.</p>
+<p>This may look like pretty nasty, but it can easily be transformed into a quadratic equation in v<sub>d</sub><sup>2</sup>: move the g·d<sup>2</sup>/(2v<sub>d</sub><sup>2</sup>) term to the left side, multiply both sides by v<sub>d</sub><sup>2</sup>, and then square both sides (this may potentially introduce spurious solutions since it throws away sign differences).</p>
+<p>The expression for the solution gets a bit messy (a tip to make things a bit cleaner is to parameterize v<sub>d</sub><sup>2</sup> = xv<sup>2</sup> and v<sub>h</sub><sup>2</sup> = (1 − x)v<sup>2</sup> for an unknown 0 ≤ x ≤ 1 and then solve for x instead) but can be found using only pen, paper, and patience; we do not want to spoil the joy of doing the math so leave the details of this to you. Solving this gives (up to) two solutions, one or both of which may be spurious due to the squaring trick above. We observe that if there are two real solutions, it is always better to take the one with higher value of v<sub>h</sub>, because that corresponds to making a higher jump. It also turns out that the solution with higher value of v<sub>h</sub> is never spurious so we can in fact take it without even checking if it is spurious.</p>
+<p>With the calculus out of the way: suppose we now want to check whether we can make a jump from the building at position (x<sub>1</sub>, y<sub>1</sub>), with height h<sub>1</sub> to the one at position (x<sub>2</sub>, y<sub>2</sub>), with height h<sub>2</sub>. This corresponds to making a jump with height difference ∆h = h<sub>2</sub> − h<sub>1</sub> and horizontal length d = √((x<sub>2</sub> − x<sub>1</sub>)<sup>2</sup> + (y<sub>2</sub> − y<sub>1</sub>)<sup>2</sup>), so we use what we figured out above to determine the jump parameters v<sub>d</sub> and v<sub>h</sub> (or we figure out that such a jump is impossible). Now that we have the jump parameters we know the exact parabola of the jump trajectory, we also need to check all buildings that lie between (x<sub>1</sub>, y<sub>1</sub>) and (x<sub>2</sub>, y<sub>2</sub>) to make sure that the jump trajectory goes above the building. To do this, it is sufficient to check the first and last times where we are over the building in question (because the parabola is concave). Finding the buildings to check can be done in O(d<sub>x</sub> + d<sub>y</sub>) time but it was OK (at least if the checks were done reasonably efficiently) to do it in O(d<sub>x</sub> · d<sub>y</sub>) time by simply iterating over all buildings and checking which ones the trajectory passes by. Overall, this leads to an O(d<sub>x</sub><sup>2</sup>d<sub>y</sub><sup>2</sup>(d<sub>x</sub> + d<sub>y</sub>)) or O(d<sub>x</sub><sup>3</sup>d<sub>y</sub><sup>3</sup>) running time for building the graph (because we have to do this for all O(d<sub>x</sub><sup>2</sup>d<sub>y</sub><sup>2</sup>) pairs of buildings).</p>
+</body>
+</html>

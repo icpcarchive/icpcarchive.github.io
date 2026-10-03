@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem J: Miniature Golf — ICPC World Finals 2019</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2019 · Problem J</p>
+  <h1>Miniature Golf</h1>
+  <p class="meta">Time limit: 6 seconds</p>
+</header>
+
+<p>A group of friends has just played a round of miniature golf. Miniature
+golf courses consist of a number of holes. Each player takes a turn to play each
+hole by hitting a ball repeatedly until it drops into the hole. A player’s score
+on that hole is the number of times they hit the ball. To prevent incompetent
+players slowing down the game too much, there is also an upper limit
+<i>&ell;</i> (a positive integer) on the score: if a player has hit the ball
+<i>&ell;</i> times without the ball dropping into the hole, the score for that
+hole is recorded as <i>&ell;</i> and that player’s turn is over. The total score
+of each player is simply the sum of their scores on all the holes. Naturally, a
+lower score is considered better.</p>
+
+<p>There is only one problem: none of the players can remember the value of the
+integer <i>&ell;</i>. They decide that they will not apply any upper limit while
+playing, allowing each player to keep playing until the ball drops into the
+hole. After the game they intend to look up the value of <i>&ell;</i> and adjust
+the scores, replacing any score on a hole that is larger than <i>&ell;</i> with
+<i>&ell;</i>.</p>
+
+<p>The game has just finished, but the players have not yet looked up
+<i>&ell;</i>. They wonder what their best possible ranks are. For this problem,
+the rank of a player is the number of players who achieved an equal or lower
+total score after the scores are adjusted with <i>&ell;</i>. For example, if the
+adjusted scores of the players are 3, 5, 5, 4, and 3, then their ranks are 2,
+5, 5, 3 and 2 respectively.</p>
+
+<p>Given the scores of the players on each hole, determine the smallest possible
+rank for each player.</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains two integers <i>p</i> and <i>h</i>, where
+<i>p</i> (2 &le; <i>p</i> &le; 500) is the number of players and <i>h</i>
+(1 &le; <i>h</i> &le; 50) is the number of holes. The next <i>p</i> lines each
+contain <i>h</i> positive integers. The <i>j</i>th number on the <i>i</i>th of
+these lines is the score for player <i>i</i> on hole <i>j</i>, and does not
+exceed 10<sup>9</sup>.</p>
+
+<h2>Output</h2>
+
+<p>Output a line with the minimum possible rank for each player, in the same
+order as players are listed in the input.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3 3
+2 2 2
+4 2 1
+4 4 1</pre>
+
+<h3>Sample Output 1</h3>
+<pre>1
+2
+2</pre>
+
+<h3>Sample Input 2</h3>
+<pre>6 4
+3 1 2 2
+4 3 2 2
+6 6 3 2
+7 3 4 3
+3 4 2 4
+2 3 3 5</pre>
+
+<h3>Sample Output 2</h3>
+<pre>1
+2
+5
+5
+4
+3</pre>
+
+<footer>
+  ICPC World Finals 2019 Problem J: Miniature Golf &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

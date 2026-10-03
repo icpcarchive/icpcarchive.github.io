@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Tilting Tiles (Solution) — 47th ICPC World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+<header>
+  <p class="kicker">47th ICPC World Finals</p>
+  <h1>Problem F: Tilting Tiles</h1>
+</header>
+<p>Problem authors: Paul Wild and Martin Kacer<br>
+Solved by 26 teams.<br>
+First solved after 90 minutes.<br>
+Shortest team solution: 3662 bytes.<br>
+Shortest judge solution: 2240 bytes.</p>
+<figure><img src="images/F-1.png" alt=""></figure>
+<p>Once we have made at least one horizontal and at least one vertical move, the tiles will always be flush in one of the corners of the grid. At this point, we are no longer able to change the outline the tiles to any other shape, other than changing which of the four corners the tiles are anchored in. The only change possible from here is to permute the labels by cycling through these four configurations using the moves right-down-left-up repeatedly. One repetition of these four moves induces a permutation on the tiles, and the configurations reachable from here are determined by the powers of that permutation, plus some extra moves if we want to anchor in another corner.</p>
+<p>In total, the reachable configurations are 1) some configurations reachable in 0 or 1 steps that are not anchored in a corner, and 2) some configurations that are all reachable along at most four long cycles that are each determined by a permutation.</p>
+<p>If we fix one of these permutations, we are now left with a string theory problem: Given strings s and t, and a permutation p, is there some number n such that after n-fold application of the permutation p to the string s we get the string t?</p>
+<p>To solve this problem, we decompose the permutation into disjoint cycles, and look at each cycle independently. Using a linear-time string matching algorithm we either find that no solution for that cycle exists, or obtain a requirement in the form of a linear congruence n ≡ a (mod m).</p>
+<p>Finally, we need to check whether the system of linear congruences has a solution. This is a somewhat standard application of the Chinese Remainder Theorem, but the solution may potentially be huge. Rather than constructing it directly, one can show that it is enough to check each pair of congruences for consistence. As there are only O(|s|) distinct moduli, this too can be done in linear time.</p>
+</body>
+</html>

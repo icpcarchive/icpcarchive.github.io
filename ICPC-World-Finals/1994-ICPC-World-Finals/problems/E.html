@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem E: Switching Channels — 1994 Eighteenth Annual International Collegiate Programming Contest Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">1994 Eighteenth Annual International Collegiate Programming Contest Finals · Problem E</p>
+  <h1>Switching Channels</h1>
+</header>
+
+<p>CPN (The Couch Potato Network) owns several cable channels. They would like to arrange the timing of programmes so viewers can switch channels without missing the end of one programme or the beginning of another. To do this they have identified certain times, called &ldquo;alignment points,&rdquo; where ideally one programme should end and another should begin. Some of these alignment points are more important than others. For example, the time when the nightly news begins is an important alignment point. Since many viewers watch the news, they would be less likely to watch a CPN programme whose ending time causes them to miss the beginning of the news, or which starts before the news finishes. Your task is to write a solution which determines the best order in which programmes can be shown on one channel.</p>
+
+<p>A &ldquo;miss&rdquo; time is the absolute value of the difference between the time of an alignment point and the nearest time of the beginning or end of a programme. The &ldquo;total miss time&rdquo; at a particular level of importance is the sum of all the miss times for alignment points at that level of importance. One programme order is better than another if it has a lower total miss time at some level of importance and the same total miss time at all higher levels of importance (if any).</p>
+
+<h2>Input</h2>
+
+<p>Your solution must accept multiple input data sets. Each set will begin with an integer, p (0&bull; p &bull;8), specifying the number of programmes to be ordered. When a data set beginning with 0 is encountered, your solution should terminate. Following p on the same line will be p integers specifying the lengths of the programmes in minutes. There is no significance to the order in which these are given.</p>
+
+<p>The next line of input specifies the alignment points. The total number of such points, a (0&bull; a &bull;8), appears first followed by a pairs of integers. The first integer in each pair, i (1&bull; i &bull;5), gives the importance of the alignment point. Alignment points marked 1 are most important; those marked 2 are of secondary importance, etc. The second integer in each pair, t, specifies the time when the alignment point occurs. No two alignment points in the same data set will have the same value of t.</p>
+
+<h2>Output</h2>
+
+<p>Your solution must output three lines for each data set. The first line identifies the data set being processed and should be in the form:</p>
+<pre>      Data set n</pre>
+<p>where n is the number of the data set (1 for the first data set, 2 for the second, etc.). On the following line, your solution should output the lengths of the programmes in the order in which they should be shown to achieve the best synchronization with the alignment points. On the third line, output the total number of minutes by which the alignment points were missed (the sum of all total miss times).</p>
+
+<p>There may be more than one best programme order for an input data set. Any one of these best orders is acceptable.</p>
+
+<h3>Sample Input</h3>
+<pre>4 30 45 45 15
+3 1 60 2 90 3 15
+6 10 15 13 18 25 33
+4 1 30 2 15 2 45 1 60
+0</pre>
+
+<h3>Output for the Sample Input</h3>
+<pre>Data set 1
+   Order: 15 45 30 45
+   Error: 0
+Data set 2
+   Order: 15 13 33 25 18 10
+   Error: 19</pre>
+
+<footer>
+  1994 Eighteenth Annual International Collegiate Programming Contest Finals · Problem E · Switching Channels
+</footer>
+
+</body>
+</html>

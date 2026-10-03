@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: According to Bartjens — The 2000 ACM Programming Contest World Finals sponsored by IBM (2000)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The 2000 ACM Programming Contest World Finals sponsored by IBM · Problem B</p>
+  <h1>According to Bartjens</h1>
+  <p class="meta">Input file: bartjens.in</p>
+</header>
+
+
+<p>The wide dissemination of calculators and computers has its disadvantages. Even students in technical disciplines
+tend to exhibit a surprising lack of calculating ability. Accustomed to the use of calculators and computers, many of
+them are unable to make calculations like 7* 8 mentally or like 13 * 17 using pencil and paper. We all know, but
+who cares?</p>
+
+<p>Professor Bartjens<sup>1</sup> cares. Professor Bartjens is a bit old fashioned. He decided to give his students some training in
+calculating without electronic equipment by creating a collection of calculation problems, (like 2100 – 100 =…). To
+simplify grading the problems, he constructed them so that almost all of them had 2000 as an answer. Not all of
+them, of course. His students would be smart enough to recognize the pattern, and fill in 2000 everywhere without
+further thinking.</p>
+
+<p>Unfortunately Professor Bartjens' printer driver turned out to be even more old-fashioned than the professor himself,
+and it could not interface with his new printer. Inspecting the printed problems, he soon recognized the pattern: none
+of the operations was transmitted to the printer. A problem like:</p>
+<pre>2100-100=</pre>
+<p>was printed as:</p>
+<pre>2100100=</pre>
+<p>Fortunately, all the digits and the equal sign were still printed.</p>
+
+<p>To make this bad situation much worse, Professor Bartjens’ source file had disappeared. So Professor Bartjens has
+another problem: what were his original problems? Given the fact that the answer (most likely) should be 2000, the
+line <code>2100100=</code> could have been any one of the lines:</p>
+<pre>2100-100=
+2*100*10+0=
+2*100*10-0=
+2*10*0100=
+2*-100*-10+0=</pre>
+
+<p>Professor Bartjens does remember a few things about how he wrote the problems:</p>
+<ul>
+  <li>He is sure that whenever he wrote down a number (other than 0), it would not start with a zero. So
+      <code>2*10*0100=</code> could not have been one of his problems.</li>
+  <li>He also knows he never wrote the number zero as anything but 0. So he would not have a problem like
+      <code>2*1000+000=</code>.</li>
+  <li>He used only binary operators, not the unary minus or plus, so <code>2*-100*-10+0=</code> was not an option either.</li>
+  <li>He used the operators +, - and * only, avoiding the operator / (after all, they were first year students).</li>
+  <li>He knew all problems followed the usual precedence and associativity rules.</li>
+</ul>
+
+<p>You are to help Professor Bartjens recover his problem set by writing a program that when given a row of digits,
+insert one or more of the operators +, - and * in such a way that the value of the resulting expression equals 2000.</p>
+
+<p style="font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: 0.75rem;">1
+Willem Bartjens (1569-1638) was the author of <i>Cijferinge</i>, a much used Dutch textbook on arithmetic. The phrase
+“…according to Bartjens” (uttered following a calculation) made his name immortal.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of one or more test cases. Each test case is a single line containing <i>n</i> digits ('0'…'9'),
+1 ≤ <i>n</i> ≤ 9, followed by an equal sign. There will not be any blanks embedded in the input, but there may be some
+after the equal sign.</p>
+
+<p>The last test case is followed by a line containing only the equal sign. This line should not be processed.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, print the word Problem, then the number of the case, then all possible ways of inserting
+operators in the row of digits such that the resulting expression has the value 2000, subject to Professor Bartjens’
+memory of how he wrote the problems. Use the format shown below. If there is more than one possible problem,
+they may be written in any order, but no problem may appear more than once in the list. Each possible problem
+should be on a new line, indented 2 spaces. If there is no solution the answer IMPOSSIBLE should be printed,
+indented 2 spaces.</p>
+
+<h3>Sample Input 1</h3>
+<pre>2100100=
+77=
+=</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Problem 1
+  2100-100=
+  2*100*10+0=
+  2*100*10-0=
+Problem 2
+  IMPOSSIBLE</pre>
+
+
+<footer>
+  The 2000 ACM Programming Contest World Finals sponsored by IBM · Problem B · According to Bartjens
+</footer>
+
+</body>
+</html>

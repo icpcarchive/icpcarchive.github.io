@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Trucking — The Twentieth Annual ACM International Collegiate Programming Contest Finals (1996)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The Twentieth Annual ACM International Collegiate Programming Contest Finals · Problem G</p>
+  <h1>Trucking</h1>
+  <p class="meta">Input file: truck.in</p>
+</header>
+
+<p>Allied Container Movers (ACM) is a trucking company that provides overnight freight delivery. ACM has a distribution network with several intermediate container processing centers (ICPCs). At an ICPC, an incoming trailer is unloaded at a stripping door. Freight destined for that centers is simply acknowledged as received. Onward shipments are distributed to relay doors based on their intermediate or final destination, where they are loaded onto waiting trailers.</p>
+
+<p>Each ICPC may have several stripping doors for unloading incoming trailers. When the number of trailers to be stripped exceeds the number of stripping doors, incoming trailers are queued until a door is available. A single trailer may have freight for several different ICPCs. Trailers with freight destined only for the local ICPC receive a lower priority for access to a stripping door than trailers with relay freight. In a similar fashion, trailers with relay freight having a closer final destination have lower priority than trailers with relay freight having a distant final destination. The time to unload a container and reload all its shipments onto one or more relay trailers is always 2 hours regardless of the size and number of shipments. A relay trailer is immediately routed to its next destination when it is full or when all shipments for the day expected for that destination have been loaded onto the trailer. Shipments are measured as a percent of a trailer volume and may be subdivided to the nearest percent in order to fill the trailer. There is no delay between a trailer departing and another trailer available at the relay or stripping doors. There is never a shortage of trailers for onward distribution.</p>
+
+<p>In order to help ACM assess the efficiency of their network, you must write a program to determine the average time a trailer waits for access to a stripping door and identify those shipments which will not arrive in their entirety at their intermediate or final destinations on time.</p>
+
+<h2>Input</h2>
+
+<p>The input describes a possibly disjoint subset of the network’s ICPCs and traffic patterns which must be analyzed.</p>
+
+<p>The first line of the input contains an integer n which specifies the number of ICPC descriptions to be processed, 1 ≤ n ≤ 100. This is followed by n descriptions, each describing one ICPC. Each description begins with a line containing three integers, c s d, where c is the center number, 0 ≤ c ≤ 99, s is the number of stripping doors at center c, 0 ≤ s ≤ 10, and d is the number of relay doors at center c, 0 ≤ d ≤ 10. There then follow d lines, one for each relay door. Each of these lines contains three integers, r v l, where r is the associated relay center's number, 0 ≤ r ≤ 99, v is the total volume of shipments to that center for the day, expressed as a percentage of trailer volume, 0 ≤ v ≤ 900 and l is the latest acceptable time for shipments to arrive at center r, expressed as minutes since the start of the day, 0 ≤ l ≤ 1440.</p>
+
+<p>The second part of the input describes some of the day’s traffic. This part begins with one integer m on a line by itself indicating the number of trailer arrival records that follow, 1 ≤ m ≤ 100. Each record begins with a line containing three integers, a c s, where a is the trailer’s arrival time expressed as minutes since the start of the day, 0 ≤ a ≤ 1440, at center number c, and s is the number of shipments in the trailer, 0 ≤ s ≤ 10. Then all s shipments are described by s lines of 5 integers, i o r v t, representing the shipment identification code i, 0 ≤ i ≤ 99, the origin and next relay center numbers o and r respectively, the volume of the shipment v as a percentage of trailer volume and the time t taken to travel from center c to destination r measured in minutes. t is zero if c equals r. Arrival records are in order of ascending values of a. No two records have the same pair (a,s). All center numbers used as values for c and r will have an appropriate corresponding definition in the first part of the input, though the center numbers used for o need not.</p>
+
+<h2>Output</h2>
+
+<p>For each of the n ICPCs, your program must write out a line describing the average wait time for stripping doors in the appropriate one of these two forms:</p>
+<pre>The average wait for a stripping door at ICPC c is ###.# minutes.
+There is no wait for a stripping door at ICPC c.</pre>
+<p>The average wait time is affected only by trailers which wait at least one minute for a stripping door.</p>
+
+<p>Your program should then list all the shipments any part of which will not arrive at their intermediate or final destinations by any of the latest arrival times given along the route. This report should appear in columns headed as shown:</p>
+<pre>The late shipments are:
+Id Origin Relay Volume</pre>
+
+<h3>Sample Input</h3>
+<pre>2
+0 1 1
+    8 40 600
+8 3 4
+    6 115 1200
+    2 95 1260
+   10 100 1440
+    4 55 1380
+7
+500 0 1
+   17 11 8 40     80
+700 8 3
+   24 11 8 45      0
+   17 11 6 40 120
+   23 11 10 15 600
+720 8 1
+   16 3 8 100 0
+750 8 2
+    4 15 2 50 180
+    7 15 6 50 120
+760 8 4
+   14    3 4 25 300
+   27    3 2 20 180
+   33    3 10 35 600
+   16    3 6 25 120
+780 8 2
+   12    9 2 25 180
+   15    9 4 35 300
+800 8 1
+   19 18 10 50 600</pre>
+
+<h3>Output for the Sample Input</h3>
+<pre>The average wait for a stripping door at ICPC 8 is 63.3 minutes.
+
+The late shipments are:
+Id Origin Relay Volume
+23     11    10     15
+33      3    10     35
+19     18    10     50</pre>
+
+<footer>
+  The Twentieth Annual ACM International Collegiate Programming Contest Finals · Problem G · Trucking
+</footer>
+
+</body>
+</html>

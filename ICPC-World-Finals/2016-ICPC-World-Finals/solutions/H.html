@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: Polygonal Puzzle (Solution) — ACM ICPC World Finals 2016</title>
+<style>
+
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2016</p>
+  <h1>Problem H: Polygonal Puzzle</h1>
+</header>
+
+<p>Shortest judge solution: 5282 bytes. Shortest team solution (during contest): N/A.</p>
+
+<p>This geometry problem was quite painful, even compared to other painful geometry problems, and there was a lot of discussion about whether to include it or whether it was simply too hard. The algorithm is conceptually not too hard to figure out, but the implementation is a bit of a nightmare.</p>
+<p>Let us call the two polygons P and Q. Suppose we are given an edge from P and an edge from Q that will overlap in the optimal placement (such edges always exist, unless the answer is 0, in which case we are done anyway). Let us rotate P and Q so that these two edges become horizontal with y = 0 and facing in opposite directions. Consider shifting (the rotated) P along the x-axis. The optimal placement is obtained by (at least) one such shift of P. Furthermore we may assume that in the optimal placement, either a vertex of P hits a (non-horizontal) edge of Q, a vertex of Q hits a (non-horizontal) edge of P, or a vertex of P coincides with a vertex of Q.</p>
+<p>This means that there are only O(n<sup>2</sup>) interesting shifts of P. For each such shift, we can in O(n<sup>2</sup>) time check if the resulting polygon placements intersect, and if not, what the boundary overlap is. This polygon-polygon intersection test is already quite messy to code, but is probably something several teams have in their code library. However, this will not be fast enough: we assumed that we are given an edge from P and an edge from Q that will overlap, but we are not, which means that we have to try all n<sup>2</sup> possibilities for this as well, resulting in an Ω(n<sup>6</sup>) time complexity overall.</p>
+<p>Adding several heuristics to the Ω(n<sup>6</sup>) was actually enough to make it run in time, but there is also a genuinely faster algorithm. The O(n<sup>4</sup>) time complexity for finding the best one-dimensional shift can be improved to O(n<sup>2</sup> log n) by a sweep-line style algorithm. As we shift P from −∞ to +∞, various interesting events happen:</p>
+<ol><li>A vertex of P enters or leaves the interior of Q</li><li>A vertex of Q enters or leaves the interior of P</li><li>An edge of P starts or stops crossing an edge from Q</li><li>Parallel edges of P and Q become overlapping</li></ol>
+<p>There are in total only O(n<sup>2</sup>) such events, which we can find in the same running time. We then sort the events by the x-shift at which they happen, and process them in order. At each event, we may have some obstructions causing the current shift to be invalid (because two edges cross, or a vertex is inside the other polygon, etc), or there may be no obstructions, and then we check the current overlap.</p>
+<p>Note that when two parallel horizontal edges of P and Q overlap, their contribution to the total overlap behaves like a piecewise linear function that starts at 0, then goes up, then stays constant for a while (unless the two segments were the same length), the goes down to 0 again, and we have to keep track of the sum of these piecewise linear functions while processing the events.</p>
+<p>Several implementation details are being swept under the rug in the above description (e.g. getting things right when a vertex of P travels along a horizontal segment of Q and vice versa), but this is the general principle. Overall one ends up with O(n<sup>4</sup> log n) time (where the bottleneck is sorting the O(n<sup>2</sup>) events for each of the n<sup>2</sup> choices of overlapping edges).</p>
+<p>One approach to make the problem more manageable is to first triangulate the polygons. This reduces the intersection tests to triangle-triangle intersection, which is much easier.</p>
+<p>Here are some cute test case pictures:</p>
+</body>
+</html>

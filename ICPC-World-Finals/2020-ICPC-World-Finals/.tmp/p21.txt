@@ -1,0 +1,31 @@
+                                           Problem K
+                                           Space Walls
+                                    Time limit: 15 seconds
+Place-Y Technology Corp. plans to launch a new space station soon. The company CEO is known for
+being obsessed with perfection. For example, he insists that all the outer surfaces of the space station are
+regularly polished and cleaned of what he calls “space debris,” mainly for the station to appear good in
+photos. The engineering team tried but failed to convince the CEO that this was not needed. So instead
+they developed an innovative technology to maintain the surfaces while minimizing human operations
+outside the station. The maintenance is performed by several small robots moving over the space station
+surface, just like robotic vacuum cleaners. Before their first flight, Place-Y needs to assess the risks of
+collision during the operation of the robots. And this is exactly where you step in.
+For the purposes of this problem, we model the space station as a collection of axis-aligned unit cubes
+(not necessarily connected). Each robot starts at time t = 0 in the center of an exposed face of one of the
+station’s unit cubes (that is, a face which is not shared by a second station cube). The robot is oriented in
+one of the four directions parallel to an edge of the cube face. Every time unit, the robot moves straight
+ahead to another cube face, possibly pivoting 90 degrees across the space station edges so that it always
+maintains contact with the station. Note that if two cubes share an edge, the robot cannot slip between
+them (there is no gap).
+
+
+
+
+       Figure K.1: Illustration of Sample Input 1. The dots denote starting points of two robots.
+
+Given the layout of the station and starting positions of all the cleaning robots, determine the time of the
+earliest collision (if any). The time a collision occurs is either the time unit when two or more robots
+are on the interior of the same cube face or the time unit when two robots attempt to swap locations (see
+Sample Input 3 for the latter case).
+
+ICPC World Finals 2020 Problem K: Space Walls                                                             21
+

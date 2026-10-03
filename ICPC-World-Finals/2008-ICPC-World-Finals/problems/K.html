@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem K: Steam Roller — ICPC World Finals (2008)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2008 · Problem K</p>
+  <h1>Steam Roller</h1>
+  <p class="meta">Input file: steam.in</p>
+</header>
+
+<p>Johnny drives a steam roller, which like all steam rollers is slow and takes a relatively long time to start moving, change direction, and brake to a full stop. Johnny has just finished his day’s work and is driving his steam roller home to see his wife. Your task is to find the fastest path for him and his steam roller.</p>
+
+<p>The city where Johnny lives has a regular structure (the streets form an orthogonal system). The city streets are laid out on a rectangular grid of intersections. Each intersection is connected to its neighbors (up to four of them) by a street. Each street is exactly one block long. When Johnny enters a street, he must always travel to the other end (continue to the next intersection). From that point, he can continue in any of the four possible directions to another intersection, and so on.</p>
+
+<p>By studying the road conditions of the streets, Johnny has calculated the time needed to go from one end to the other of every street in town. The time is the same for both directions. However, Johnny’s calculations hold only under the ideal condition that the steam roller is already in motion when it enters a street and does not need to accelerate or brake. Whenever the steam roller changes direction at a intersection directly before or after a street, the estimated ideal time for that street must be doubled. The same holds if the roller begins moving from a full stop (for example at the beginning of Johnny’s trip) or comes to a full stop (for example at the end of his trip).</p>
+
+<p>The following picture shows an example. The numbers show the “ideal” times needed to drive through the corresponding streets. Streets with missing numbers are unusable for steam rollers. Johnny wants to go from the top-left corner to the bottom-right one.</p>
+
+<figure><img src="images/K-1.png" alt=""><figcaption>An example grid of streets with the ideal travel times for each street</figcaption></figure>
+<p>The path consisting of streets labeled with 9’s seems to be faster at the first sight. However, due to the braking and accelerating restrictions, it takes double the estimated time for every street on the path, making the total time 108. The path along the streets labeled with 10’s is faster because Johnny can drive two of the streets at the full speed, giving a total time of 100.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of several test cases. Each test case starts with six positive integer numbers: R, C, r1, c1, r2, and c2. R and C describe the size of the city, r1, c1 are the starting coordinates, and r2, c2 are the coordinates of Johnny’s home. The starting coordinates are different from the coordinates of Johnny’s home. The numbers satisfy the following condition: 1 ≤ r1, r2 ≤ R ≤ 100, 1 ≤ c1, c2 ≤ C ≤ 100.</p>
+
+<p>After the six numbers, there are C-1 non-negative integers describing the time needed to drive on streets between intersections (1,1) and (1,2), (1,2) and (1,3), (1,3) and (1,4), and so on. Then there are C non-negative integers describing the time need to drive on streets between intersections (1,1) and (2,1), (1,2) and (2,2), and so on. After that, another C – 1 non-negative integers describe the next row of streets across the width of the city. The input continues in this way to describe all streets in the city. Each integer specifies the time needed to drive through the corresponding street (not higher than 10000), provided the steam roller proceeds straight through without starting, stopping, or turning at either end of the street. If any combination of one or more of these events occurs, the time is multiplied by two. Any of these integers may be zero, in which case the corresponding street cannot be used at all.</p>
+
+<p>The last test case is followed by six zeroes.</p>
+
+<p>All numbers are separated with at least one whitespace character (space, tab, or newline), but any amount of additional whitespace (including empty lines) may be present to improve readability.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, print the case number (beginning with 1) followed by the minimal time needed to go from intersection x1, y1 to x2, y2. If the trip cannot be accomplished (due to unusable streets), print the word Impossible instead.</p>
+
+
+<h3>Sample Input 1</h3>
+<pre>4 4 1 1 4 4
+ 10  10  10
+9  0  0  10
+  0  0  0
+9  0  0  10
+  9  0  0
+0  9  0  10
+  0  9  9
+
+2 2 1 1 2 2 0 1 1 0
+
+0 0 0 0 0 0</pre>
+<h3>Sample Output 1</h3>
+<pre>Case 1: 100
+Case 2: Impossible</pre>
+
+<footer>
+  ICPC World Finals 2008 — Problem K: Steam Roller
+</footer>
+
+</body>
+</html>

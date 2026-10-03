@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem I: A Safe Bet — ACM-ICPC World Finals 2012</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2012 · Problem I</p>
+  <h1>A Safe Bet</h1>
+  <p class="meta">Problem ID: safe</p>
+</header>
+
+
+<p>Safe Ltd. is a company that manufactures high-quality safes. Its latest
+invention is an optical closure mechanism that uses a laser beam passing through
+a rectangular grid with several mirrors.</p>
+
+<figure>
+  <img src="images/I-1.png" alt="">
+  <figcaption>Left: beam detected, safe open. Right: beam not detected, alarm raised.</figcaption>
+</figure>
+
+<p>When the laser is activated, a beam enters the top row of the grid
+horizontally from the left. The beam is reflected by every mirror that it hits.
+Each mirror has a 45 degree diagonal orientation, either / or &bsol;. If the
+beam exits the bottom row of the grid horizontally to the right, it is detected
+and the safe opens (see the left side of the figure above). Otherwise the safe
+remains closed and an alarm is raised.</p>
+
+<p>Each safe has a missing mirror, which prevents the laser beam from traveling
+successfully through the grid (see the right side of the figure above). The safe
+has a mechanism that enables the user to drop a single mirror into any empty
+grid cell. A legitimate user knows the correct position and orientation of the
+missing mirror (/ in row 4 column 3 above) and can thus open the safe. Without
+this knowledge the user has to guess correctly, which can be difficult for safes
+with large grids.</p>
+
+<p>Your job is to determine if particular safes are actually secure. A secure
+safe does not open right away without inserting a mirror, and there is at least
+one valid location and orientation for the missing mirror. There may indeed be
+multiple such locations and orientations.</p>
+
+<h2>Input</h2>
+
+<p>Each test case describes a single safe and starts with a line containing four
+integer numbers <i>r</i>, <i>c</i>, <i>m</i>, and <i>n</i> (1 &le;
+<i>r</i>, <i>c</i> &le; 1&thinsp;000&thinsp;000 and 0 &le; <i>m</i>,
+<i>n</i> &le; 200&thinsp;000). The mechanism’s grid has <i>r</i> rows and
+<i>c</i> columns.</p>
+
+<p>Each of the next <i>m</i> lines contains two integer numbers
+<i>r<sub>i</sub></i> and <i>c<sub>i</sub></i> (1 &le;
+<i>r<sub>i</sub></i> &le; <i>r</i> and 1 &le; <i>c<sub>i</sub></i> &le;
+<i>c</i>) specifying that there is a / mirror in row <i>r<sub>i</sub></i> column
+<i>c<sub>i</sub></i>. The following <i>n</i> lines specify the positions of the
+&bsol; mirrors in the same way. The <i>m</i> + <i>n</i> positions of the mirrors
+are pairwise distinct.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, display its case number followed by:</p>
+
+<ul>
+  <li>0 if the safe opens without inserting a mirror.</li>
+  <li><i>k r c</i> if the safe does not open without inserting a mirror, there
+  are exactly <i>k</i> positions where inserting a mirror opens the safe, and
+  (<i>r</i>, <i>c</i>) is the lexicographically smallest such row, column
+  position. A position where both a / and a &bsol; mirror open the safe counts
+  just once.</li>
+  <li><i>impossible</i> if the safe cannot be opened with or without inserting
+  a mirror.</li>
+</ul>
+
+<h3>Sample Input</h3>
+<pre>
+5 6 1 4
+2 3
+1 2
+2 5
+4 2
+5 5
+100 100 0 2
+1 77
+100 77
+100 100 0 0
+</pre>
+
+<h3>Output for Sample Input</h3>
+<pre>
+Case 1: 2 4 3
+Case 2: 0
+Case 3: impossible
+</pre>
+
+
+<footer>
+  ACM-ICPC World Finals 2012 Problem I: A Safe Bet
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem D: Gem Island — ACM-ICPC World Finals 2018</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2018 · Problem D</p>
+  <h1>Gem Island</h1>
+  <p class="meta">Time limit: 3 seconds</p>
+</header>
+
+<p>Gem Island is a tiny island in the middle of the Pacific Ocean. Until recently,
+it was known as one of the poorest, but also most peaceful, places on Earth.
+Today, it is neither poor nor peaceful. What happened? One sunny morning, not too
+long ago, all inhabitants of Gem Island woke up to a surprise. That morning, each
+of them suddenly held one sparkling gem in their hand. The gems had magically
+appeared overnight. This was cause for much rejoicing – everybody was suddenly
+rich, they could finally afford all the things they had ever dreamed of, and the
+name of their island made so much more sense now.</p>
+
+<p>The next morning, one of the inhabitants woke up to another surprise – her gem
+had magically split into two gems! The same thing happened on each of the
+following nights, when exactly one of the gems (apparently uniformly at random
+among all the gems on the island) would split into two.</p>
+
+<p>After a while, the inhabitants of Gem Island possessed a widely varying number
+of gems. Some had a lot and many had only a few. How come some inhabitants had
+more gems than others? Did they cheat, were they just lucky, or was something
+else at work?</p>
+
+<p>The island elders have asked for your help. They want you to determine if the
+uneven distribution of gems is explained by pure chance. If so, that would
+greatly reduce tensions on the island.</p>
+
+<p>The island has <i>n</i> inhabitants. You are to determine the gem distribution
+after <i>d</i> nights of gem splitting. In particular, you are interested in the
+expected number of gems collectively held by the <i>r</i> people with the largest
+numbers of gems. More formally, suppose that after <i>d</i> nights the numbers of
+gems held by the <i>n</i> inhabitants are listed in non-increasing order as
+<i>a</i><sub>1</sub> ≥ <i>a</i><sub>2</sub> ≥ . . . ≥ <i>a</i><sub><i>n</i></sub>.
+What is the expected value of <i>a</i><sub>1</sub> + · · · +
+<i>a</i><sub><i>r</i></sub>?</p>
+
+<h2>Input</h2>
+
+<p>The input consists of a single line containing the three integers <i>n</i>,
+<i>d</i>, and <i>r</i> (1 &le; <i>n</i>, <i>d</i> &le; 500, 1 &le; <i>r</i> &le;
+<i>n</i>), as described in the problem statement above.</p>
+
+<h2>Output</h2>
+
+<p>Display the expected number of gems that the top <i>r</i> inhabitants hold
+after <i>d</i> nights, with an absolute or relative error of at most
+10<sup>&minus;6</sup>.</p>
+
+<h3>Sample Input <i>1</i></h3>
+<pre>2 3 1</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>3.5</pre>
+
+
+<h3>Sample Input <i>2</i></h3>
+<pre>3 3 2</pre>
+
+<h3>Sample Output <i>2</i></h3>
+<pre>4.9</pre>
+
+
+<h3>Sample Input <i>3</i></h3>
+<pre>5 10 3</pre>
+
+<h3>Sample Output <i>3</i></h3>
+<pre>12.2567433</pre>
+
+
+
+<footer>
+  ACM-ICPC World Finals 2018 Problem D: Gem Island
+</footer>
+
+</body>
+</html>

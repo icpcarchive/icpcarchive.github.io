@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem A: Bee Breeding — 23rd Annual ACM International Collegiate Programming Contest World Finals (1999)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The 23rd Annual ACM International Collegiate Programming Contest World Finals · Problem A</p>
+  <h1>Bee Breeding</h1>
+  <p class="meta">Input: bees.in</p>
+</header>
+
+<p>Professor B. Heif is conducting experiments with a species of South American
+bees that he found during an expedition to the Brazilian rain forest. The honey
+produced by these bees is of superior quality compared to the honey from European
+and North American honey bees. Unfortunately, the bees do not breed well in
+captivity. Professor Heif thinks the reason is that the placement of the
+different maggots (for workers, queens, etc.) within the honeycomb depends on
+environmental conditions, which are different in his laboratory and the rain
+forest.</p>
+
+<p>As a first step to validate his theory, Professor Heif wants to quantify the
+difference in maggot placement. For this he measures the distance between the
+cells of the comb into which the maggots are placed. To this end, the professor
+has labeled the cells by marking an arbitrary cell as number 1, and then
+labeling the remaining cells in a clockwise fashion, as shown in the following
+figure.</p>
+
+<pre>                         __    __    __    __
+                      __/ \__/ \__/ \__/ \__
+                   __/ \__/ \__/53\__/ \__/ \__
+                  / \__/ \__/52\__/54\__/ \__/ \
+                  \__/ \__/51\__/31\__/55\__/ \__/
+                  / \__/50\__/30\__/32\__/56\__/ \
+                  \__/49\__/29\__/15\__/33\__/57\__/
+                  / \__/28\__/14\__/16\__/34\__/ \
+                  \__/48\__/13\__/ 5\__/17\__/58\__/
+                  /..\__/27\__/ 4\__/ 6\__/35\__/ \
+                  \__/47\__/12\__/ 1\__/18\__/59\__/
+                  /..\__/26\__/ 3\__/ 7\__/36\__/ \
+                  \__/46\__/11\__/ 2\__/19\__/60\__/
+                  /..\__/25\__/10\__/ 8\__/37\__/ \
+                  \__/45\__/24\__/ 9\__/20\__/61\__/
+                  /..\__/44\__/23\__/21\__/38\__/ \
+                  \__/70\__/43\__/22\__/39\__/62\__/
+                  / \__/69\__/42\__/40\__/63\__/ \
+                  \__/ \__/68\__/41\__/64\__/ \__/
+                  / \__/ \__/67\__/65\__/ \__/ \
+                  \__/ \__/ \__/66\__/ \__/ \__/
+                     \__/ \__/ \__/ \__/ \__/
+                        \__/ \__/ \__/ \__/</pre>
+
+<p>For example, two maggots in cells 19 and 30 are 5 cells apart. One of the
+shortest paths connecting the two cells is via the cells 19 - 7 - 6 - 5 - 15 -
+30, so you must move five times to adjacent cells to get from 19 to 30.</p>
+
+<p>Professor Heif needs your help to write a program that computes the distance,
+defined as the number of cells in a shortest path, between any pair of cells.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of several lines, each containing two integers D and E
+(D,E &le; 10000), denoting numbers of cells. The integers are always positive,
+except in the last line where D=E=0 holds. This last line terminates the input
+and should not be processed.</p>
+
+<h2>Output</h2>
+
+<p>For each pair of numbers (D,E) in the input file, output the distance between
+the cells labeled D and E. The distance is the minimum number of moves to get
+from D to E.</p>
+
+<h3>Sample Input <i>1</i></h3>
+<pre>19 30
+0 0</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>The distance between cells 19 and 30 is 5.</pre>
+
+<footer>
+  The 23rd Annual ACM International Collegiate Programming Contest World Finals · Problem A · Bee Breeding
+</footer>
+
+</body>
+</html>

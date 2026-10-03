@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Page Hopping — The 2000 ACM Programming Contest World Finals sponsored by IBM (2000)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The 2000 ACM Programming Contest World Finals sponsored by IBM · Problem F</p>
+  <h1>Page Hopping</h1>
+  <p class="meta">Input file: page.in</p>
+</header>
+
+
+<p>It was recently reported that, on the average, only 19 clicks are necessary to move from any page on the World Wide
+Web to any other page. That is, if the pages on the web are viewed as nodes in a graph, then the average path length
+between arbitrary pairs of nodes in the graph is 19.</p>
+
+<p>Given a graph in which all nodes can be reached from any starting point, your job is to find the average shortest path
+length between arbitrary pairs of nodes. For example, consider the following graph. Note that links are shown as
+directed edges, since a link from page <i>a</i> to page <i>b</i> does not imply a link from page <i>b</i> to page <i>a</i>.</p>
+
+<figure>
+  <img src="images/F-1.png" alt="">
+</figure>
+
+<p>The length of the shortest path from node 1 to nodes 2, 3, and 4 is 1,1, and 2 respectively. From node 2 to nodes 1, 3
+and 4, the shortest paths have lengths of 3, 2, and 1. From node 3 to nodes 1, 2, and 4, the shortest paths have
+lengths of 1, 2, and 3. Finally, from node 4 to nodes 1, 2, and 3 the shortest paths have lengths of 2, 3, and 1. The
+sum of these path lengths is 1 + 1 + 2 + 3 + 2 + 1 + 1 + 2 + 3 + 2 + 3 + 1 = 22. Since there are 12 possible pairs of
+nodes to consider, we obtain an average path length of 22/12, or 1.833 (accurate to three fractional digits).</p>
+
+<h2>Input</h2>
+
+<p>The input data will contain multiple test cases. Each test case will consist of an arbitrary number of pairs of integers,
+<i>a</i> and <i>b</i>, each representing a link from a page numbered <i>a</i> to a page numbered <i>b</i>. Page numbers will always be in the
+range 1 to 100. The input for each test case will be terminated with a pair of zeroes, which are not to be treated as
+page numbers. An additional pair of zeroes will follow the last test case, effectively representing a test case with no
+links, which is not to be processed. The graph will not include self-referential links (that is, there will be no direct
+link from a node to itself), and at least one path will exist from each node in the graph to every other node in the
+graph.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, determine the average shortest path length between every pair of nodes, accurate to three
+fractional digits. Display this length and the test case identifier (they’re numbered sequentially starting with 1) in a
+form similar to that shown in the sample output below.</p>
+
+<h3>Sample Input 1</h3>
+<pre>1 2   2 4   1 3   3 1   4 3   0 0
+1 2   1 4   4 2   2 7   7 1   0 0
+0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1: average length between pages = 1.833 clicks
+Case 2: average length between pages = 1.750 clicks</pre>
+
+
+<footer>
+  The 2000 ACM Programming Contest World Finals sponsored by IBM · Problem F · Page Hopping
+</footer>
+
+</body>
+</html>

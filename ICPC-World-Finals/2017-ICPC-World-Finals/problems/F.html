@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Posterize — ACM-ICPC World Finals 2017</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2017 · Problem F</p>
+  <h1>Posterize</h1>
+  <p class="meta">Time limit: 2 seconds</p>
+</header>
+
+<figure>
+  <img src="images/F-1.png" alt="">
+</figure>
+
+<p>Pixels in a digital picture can be represented with three integers in the
+range 0 to 255 that indicate the intensity of the red, green, and blue colors.
+To compress an image or to create an artistic effect, many photo-editing tools
+include a &ldquo;posterize&rdquo; operation which works as follows. Each color
+channel is examined separately; this problem focuses only on the red channel.
+Rather than allow all integers from 0 to 255 for the red channel, a
+posterized image allows at most <i>k</i> integers from this range. Each
+pixel&rsquo;s original red intensity is replaced with the nearest of the
+allowed integers. The photo-editing tool selects a set of <i>k</i> integers
+that minimizes the sum of the squared errors introduced across all pixels in
+the original image. If there are <i>n</i> pixels that have original red values
+<i>r</i><sub>1</sub>, &hellip;, <i>r</i><sub><i>n</i></sub>, and <i>k</i>
+allowed integers <i>v</i><sub>1</sub>, &hellip;, <i>v</i><sub><i>k</i></sub>,
+the sum of squared errors is defined as &sum;<sub><i>i</i>=1</sub><sup><i>n</i></sup>
+min<sub>1&le;<i>j</i>&le;<i>k</i></sub> (<i>r</i><sub><i>i</i></sub> &minus;
+<i>v</i><sub><i>j</i></sub>)<sup>2</sup>.</p>
+
+<p>Your task is to compute the minimum achievable sum of squared errors, given
+parameter <i>k</i> and a description of the red intensities of an
+image&rsquo;s pixels.</p>
+
+<h2>Input</h2>
+
+<p>The first line of the input contains two integers <i>d</i> (1 &le;
+<i>d</i> &le; 256), the number of distinct red values that occur in the
+original image, and <i>k</i> (1 &le; <i>k</i> &le; <i>d</i>), the number of
+distinct red values allowed in the posterized image. The remaining <i>d</i>
+lines indicate the number of pixels of the image having various red values.
+Each such line contains two integers <i>r</i> (0 &le; <i>r</i> &le; 255) and
+<i>p</i> (1 &le; <i>p</i> &le; 2<sup>26</sup>), where <i>r</i> is a red
+intensity value and <i>p</i> is the number of pixels having red intensity
+<i>r</i>. Those <i>d</i> lines are given in increasing order of red value.</p>
+
+<h2>Output</h2>
+
+<p>Display the sum of the squared errors for an optimally chosen set of
+<i>k</i> allowed integer values.</p>
+
+<h3>Sample Input 1</h3>
+<pre>2 1
+50 20000
+150 10000</pre>
+
+<h3>Sample Output 1</h3>
+<pre>66670000</pre>
+
+<h3>Sample Input 2</h3>
+<pre>2 2
+50 20000
+150 10000</pre>
+
+<h3>Sample Output 2</h3>
+<pre>0</pre>
+
+<h3>Sample Input 3</h3>
+<pre>4 2
+0 30000
+25 30000
+50 30000
+255 30000</pre>
+
+<h3>Sample Output 3</h3>
+<pre>37500000</pre>
+
+<footer>
+  ACM-ICPC World Finals 2017 Problem F: Posterize
+</footer>
+
+</body>
+</html>

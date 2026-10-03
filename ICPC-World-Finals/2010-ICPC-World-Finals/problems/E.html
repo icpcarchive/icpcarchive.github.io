@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem E: Channel &mdash; 34th ICPC World Finals (2010)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">34th ICPC World Finals · Problem E</p>
+  <h1>Channel</h1>
+  <p class="meta">Problem ID: channel</p>
+</header>
+
+<p>Joe, a former champion coder, has finally bought the farm. No, no, he’s alive and well; he merely made use of
+his vast programming competition winnings to purchase his ancestral farm. He hopes to retire and spend the rest
+of his days tending cows (for some reason, he now considers himself an expert on cows).</p>
+
+<p>Sadly, Farmer Joe’s simple bucolic ambitions are not to be. His farm is situated in a cold, northern climate - too
+cold for cows! What’s worse, the climate is dry and ill-suited for growing crops. Joe now realizes that he will
+have to set up an irrigation scheme for his field. This scheme involves diverting part of a river into a long,
+winding channel through his field. Since the crops nearest the channel will thrive, the longer the channel, the
+better.</p>
+
+<p>His field is a long rectangular strip of land divided into unit squares. Each square either has dirt, represented by
+‘.’, or an immovable rock, represented by ‘#’. The irrigation channel, which is one square wide, enters his land
+in the upper left corner and exits it in the lower right. The channel cannot pass through rocks, of course. It is
+important that this channel never touches itself, even at a corner (or else the water will seep through and take a
+shortcut). Figure 3 and Figure 4 contain examples of the channel touching itself.</p>
+
+<figure>
+  <pre>C.CCC           C...
+C.C.C           CCCC
+CCC.C           ..CC
+...CC           ..C.
+...C.           ..C.
+...CC           ..CC</pre>
+  <figcaption>Figure 3 Figure 4</figcaption>
+</figure>
+
+<p>Unfortunately, Joe’s best programming days are long behind him. He has a straightforward solution but it turns
+out to be far too time consuming. Can you help him figure out the optimal placement of this channel?</p>
+
+<h2>Input</h2>
+
+<p>Input consists of several test cases. Each test case starts with a line containing r, the number of rows in his field
+(2 ≤ r ≤ 20), and c, the number of columns (2 ≤ c ≤ 9). The next r lines each contain a string of length c,
+describing his field.</p>
+
+<p>The last test case is followed by a line containing two zeros.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, display the case number. On the following r lines show how to place the longest possible
+channel in the field, subject to the above restrictions. Use the character ‘C’ for the channel. There will always be
+a unique solution. Follow the format in the sample output. Print a blank line after the output for each test case.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3 3
+.#.
+...
+.#.
+6 7
+.......
+.......
+.......
+....#..
+.......
+.#.....
+0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1:
+C#.
+CCC
+.#C
+
+Case 2:
+CCCCCCC
+......C
+CCCCCCC
+C...#..
+CCC.CCC
+.#CCC.C</pre>
+
+
+<footer>
+  34th ICPC World Finals Problem E: Channel
+</footer>
+
+</body>
+</html>

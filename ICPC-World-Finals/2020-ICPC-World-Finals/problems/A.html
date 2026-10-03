@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem A: Cardiology — ICPC World Finals 2020</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">ICPC World Finals 2020 · Problem A</p>
+  <h1>Cardiology</h1>
+  <p class="meta">Time limit: 2 seconds</p>
+</header>
+
+<p>The Great Cardoni, Master Prestidigitator, has a deck of 21 numbered cards
+which he uses in a trick as follows:</p>
+
+<blockquote>A spectator secretly selects a number between 1 and 21, inclusive,
+after which Cardoni deals the 21 cards, face-up, row by row in order from 1 to
+21, into a 3-column grid. The spectator then indicates which of the three
+columns contains the selected card, at which point the magician picks up the
+cards by columns, picking up the specified column second (the order of
+collecting the other two columns is unimportant). Cards are collected face up,
+beginning with the top card in each column and placing each succeeding card
+immediately beneath the previously collected card. The cards are then redealt
+by rows into a 3-column grid, starting from the top of the face-up deck. The
+process is repeated two more times; each time, the column indicated by the
+spectator is the second column picked up by the magician. After three such
+iterations, Cardoni announces, &ldquo;I have penetrated to the heart of your
+mind; your card lies at the heart of this display.&rdquo; And it&rsquo;s
+true&mdash;the selected card is located at the &ldquo;heart&rdquo; of the
+array (row four, column two). Moreover, the selected card will always remain
+in this stable location for any further iterations of the column indication
+and card redealing process.</blockquote>
+
+<p>The process always works, no matter the number selected, provided that the
+column containing the secret number is the second column to be picked up and
+redealt.</p>
+
+<p>Cardoni would like to expand his trick to use different numbers of cards,
+rows, and columns, and to experiment with different orderings of picking up
+the columns after the spectator indicates a column. However, it is not a
+trivial problem. For instance, when using 24 cards in 8 rows and 3 columns,
+and always picking up the indicated column as the second one to redeal, the
+number 5 eventually ends up in stable location row 4, column 3, while the
+number 20 ends up in stable location row 5, column 1. Also, neither location
+is one of the two &ldquo;heart&rdquo; positions in column 2 of rows 4 or 5.
+Moreover, Cardoni is uncertain of how many iterations of the &ldquo;indicate
+column and redeal&rdquo; process are needed before a selected card reaches a
+stable location.</p>
+
+<p>Given the number of rows and columns of cards, help Cardoni set up his trick
+in such a way that there is a unique stable location that is as close to the
+center as possible.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of a single line with two integers <i>r</i> and
+<i>c</i> (2 &le; <i>r</i>, <i>c</i> &le; 10<sup>6</sup>), the number of rows
+and columns used in the trick. The cards are numbered from 1 to <i>r</i>&thinsp;&middot;&thinsp;<i>c</i>
+and are initially dealt row by row in increasing order.</p>
+
+<h2>Output</h2>
+
+<p>Output a line containing four integers <i>p</i>, <i>i</i>, <i>j</i>, and
+<i>s</i>, where:</p>
+
+<ul>
+  <li>the column indicated by the spectator should be picked up as the
+  <i>p</i><sup>th</sup> column,</li>
+  <li>using this value of <i>p</i> causes all cards to eventually end up in
+  the stable location at row <i>i</i> column <i>j</i>, and</li>
+  <li><i>s</i> is the maximum number of iterations required for any card to
+  reach the stable location.</li>
+</ul>
+
+<p>The value of <i>p</i> should be chosen so that the stable location
+(<i>i</i>, <i>j</i>) is as close as possible to any of the one, two or four
+central positions in the grid, where the distance between locations
+(<i>i</i>, <i>j</i>) and (<i>i</i><sub>0</sub>,
+<i>j</i><sub>0</sub>) is |<i>i</i> &minus; <i>i</i><sub>0</sub>| +
+|<i>j</i> &minus; <i>j</i><sub>0</sub>|. If more than one value of
+<i>p</i> results in the same minimum distance, choose the smallest such
+<i>p</i>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>7 3</pre>
+
+<h3>Sample Output 1</h3>
+<pre>2 4 2 3</pre>
+
+<h3>Sample Input 2</h3>
+<pre>8 3</pre>
+
+<h3>Sample Output 2</h3>
+<pre>1 1 1 3</pre>
+
+<footer>
+  ICPC World Finals 2020 Problem A: Cardiology
+</footer>
+
+</body>
+</html>

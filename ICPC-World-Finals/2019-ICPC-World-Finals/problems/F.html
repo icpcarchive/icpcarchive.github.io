@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Directing Rainfall — ICPC World Finals 2019</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2019 · Problem F</p>
+  <h1>Directing Rainfall</h1>
+  <p class="meta">Time limit: 15 seconds</p>
+</header>
+
+<p>Porto and the nearby Douro Valley are famous for producing port wine.
+Wine lovers from all over the world come here to enjoy this sweet wine where it
+is made. The International Consortium of Port Connoisseurs (ICPC) is organizing
+tours to the vineyards that are upstream on the Douro River. To make visits more
+pleasurable for tourists, the ICPC has recently installed sun tarps above the
+vineyards. The tarps protect tourists from sunburn when strolling among the
+vines and sipping on a vintage port.</p>
+
+<p>Unfortunately, there is a small problem with the tarps. Grapes need sunlight
+and water to grow. While the tarps let through enough sunlight, they are
+entirely waterproof. This means that rainwater might not reach the vineyards
+below. If nothing is done, this year’s wine harvest is in peril!</p>
+
+<p>The ICPC wants to solve their problem by puncturing the tarps so that they
+let rainwater through to the vineyards below. Since there is little time to
+waste before the rainy season starts, the ICPC wants to make the minimum number
+of punctures that achieve this goal.</p>
+
+<p>We will consider a two-dimensional version of this problem. The vineyard to
+be watered is an interval on the <i>x</i>-axis, and the tarps are modeled as
+line segments above the <i>x</i>-axis. The tarps are slanted, that is, not
+parallel to the <i>x</i>- or <i>y</i>-axes (see Figure F.1 for an example). Rain
+falls straight down from infinitely high. When any rain falls on a tarp, it
+flows toward the tarp’s lower end and falls off from there, unless there is a
+puncture between the place where the rain falls and the tarp’s lower end—in
+which case the rain will fall through the puncture instead. After the rain falls
+off a tarp, it continues to fall vertically. This repeats until the rain hits
+the ground (the <i>x</i>-axis).</p>
+
+<figure>
+  <img src="images/F-1.png" alt="">
+  <figcaption>Figure F.1: Illustration of Sample Input 1.</figcaption>
+</figure>
+
+<p>For legal reasons you have to ensure that at least some of the rain that
+reaches the vineyard originated from directly above the vineyard. This is to
+prevent any vineyard from stealing all their rain from neighboring vineyards
+(see the second sample input for an example).</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains three integers <i>&ell;</i>, <i>r</i> and
+<i>n</i>, where (<i>&ell;</i>, <i>r</i>) (0 &le; <i>&ell;</i> &lt; <i>r</i> &le;
+10<sup>9</sup>) is the interval representing the vineyard and <i>n</i> (0 &le;
+<i>n</i> &le; 5&middot;10<sup>5</sup>) is the number of tarps. Each of the
+following <i>n</i> lines describes a tarp and contains four integers
+<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>, <i>x</i><sub>2</sub>,
+<i>y</i><sub>2</sub>, where (<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>) is the
+position of the tarp’s lower end and (<i>x</i><sub>2</sub>,
+<i>y</i><sub>2</sub>) is the position of the higher end (0 &le;
+<i>x</i><sub>1</sub>, <i>x</i><sub>2</sub> &le; 10<sup>9</sup>,
+<i>x</i><sub>1</sub> &ne; <i>x</i><sub>2</sub>, and 0 &lt;
+<i>y</i><sub>1</sub> &lt; <i>y</i><sub>2</sub> &le; 10<sup>9</sup>). The
+<i>x</i>-coordinates given in the input (<i>&ell;</i>, <i>r</i>, and the values
+of <i>x</i><sub>1</sub> and <i>x</i><sub>2</sub> for all tarps) are all distinct.
+The tarps described in the input will not intersect, and no endpoint of a tarp
+will lie on another tarp.</p>
+
+<h2>Output</h2>
+
+<p>Output the smallest number of punctures that need to be made to get some rain
+falling from above the vineyard to the vineyard.</p>
+
+<h3>Sample Input 1</h3>
+<pre>10 20 5
+32 50 12 60
+30 60 8 70
+25 70 0 80
+15 30 28 40
+5 20 14 25</pre>
+
+<h3>Sample Output 1</h3>
+<pre>2</pre>
+
+<h3>Sample Input 2</h3>
+<pre>2 4 2
+3 2 0 3
+5 2 1 5</pre>
+
+<h3>Sample Output 2</h3>
+<pre>1</pre>
+
+<footer>
+  ICPC World Finals 2019 Problem F: Directing Rainfall &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

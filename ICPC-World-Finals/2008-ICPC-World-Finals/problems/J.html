@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem J: The Sky is the Limit — ICPC World Finals (2008)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2008 · Problem J</p>
+  <h1>The Sky is the Limit</h1>
+  <p class="meta">Input file: skyline.in</p>
+</header>
+
+<p>The city of Banff hired an advertising agency to promote the city’s attractions to potential visitors. One of the planned slogans stated that the mountain ranges around the city form the most beautiful skyline in Canada. But the Institute for Consumer Protection in Canada (ICPC) decided that “the most beautiful skyline” was a subjective and unverifiable claim, and could therefore be considered misleading.</p>
+
+<p>The advertising agency then came up with the slogan “Banff – the longest skyline in Canada.” Although not as catchy, it is hopefully verifiable, and therefore admissible under Canada’s tricky advertising laws.</p>
+
+<p>This is where you come in. What the advertising agency needs is a program that determines the length of a skyline. Consider each mountain as a two-dimensional triangle having two upper sides the same length. A skyline is the outline of one or more mountains. The skyline’s length is the total length of the outline. The left illustration below shows three mountains. The right illustration shows (with bold lines) the skyline and (with dashed lines) the portion of the mountains’ upper edges that are not part of the skyline. Note that parts of the horizon line that lie between mountains are not considered part of the skyline.</p>
+
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin:1.5rem 0;"><figure style="margin:0.5rem 0;flex:0 0 calc(48% - 1rem);width:calc(48% - 1rem);"><img src="images/J-1.png" alt="" style="width:100%;height:auto;"><figcaption>Three mountains</figcaption></figure><figure style="margin:0.5rem 0;flex:0 0 calc(48% - 1rem);width:calc(48% - 1rem);"><img src="images/J-2.png" alt="" style="width:100%;height:auto;"><figcaption>The skyline (bold lines) and the portion of the mountains’ upper edges not part of the skyline (dashed lines)</figcaption></figure></div>
+<h2>Input</h2>
+
+<p>Each input file contains one or more test cases, which are descriptions of mountain ranges. Each description starts with a line containing a positive integer N, which specifies the number of mountains in the range. Each of the next N lines describes a mountain with three integers X, H, and B, which specify the horizontal position of the mountain’s peak relative to some fixed point, the height of the peak, and the width of the base of the mountain, respectively. The base of each mountain coincides with a horizontal line. The values satisfy the conditions N ≤ 100, H &gt; 0, and B &gt; 0.</p>
+
+<p>The last test case is followed by a line containing a zero.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, print the case number (beginning with 1) and the length of the skyline. Print the length rounded to the nearest integer, with 0.5 rounded up. Print a blank line after the output of each test case. Use the format shown in the sample output below.</p>
+
+
+<h3>Sample Input 1</h3>
+<pre>1
+100 50 100
+3
+20  30  35
+37 24   29
+60 20 13
+0</pre>
+<h3>Sample Output 1</h3>
+<pre>Case 1: 141
+
+Case 2: 138</pre>
+
+<footer>
+  ICPC World Finals 2008 — Problem J: The Sky is the Limit
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem M: Window Manager — ACM-ICPC World Finals 2015</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2015 · Problem M</p>
+  <h1>Window Manager</h1>
+  <p class="meta">Time limit: 2 seconds</p>
+</header>
+
+<p>The past few years have seen a revolution in user interface technology. For many years, keyboards
+and mice were the tools used to interact with computers. But with the introduction of smart phones
+and tablets, people are increasingly using their computers by tapping and moving their fingers on the
+screen. Naturally this has led to new paradigms in user interface design. One important principle is
+that objects on the display obey &ldquo;physical&rdquo; laws. In this problem, you will see an example
+of this.</p>
+
+<p>You have been hired to build a simulator for the window manager to be used in the next generation
+of smart phones from Advanced Cellular Manufacturers (ACM). Each phone they produce will have a
+rectangular screen that fully displays zero or more rectangular windows. That is, no window exceeds
+the boundaries of the screen or overlaps any other window. The simulator must support the following
+commands.</p>
+
+<ul>
+  <li><code>OPEN x y w h</code> &mdash; open a new window with top-left corner coordinates
+    (<i>x</i>, <i>y</i>), width <i>w</i> pixels and height <i>h</i> pixels.</li>
+  <li><code>CLOSE x y</code> &mdash; close an open window that includes the pixel at
+    (<i>x</i>, <i>y</i>). This allows a user to tap anywhere on a window to close it.</li>
+  <li><code>RESIZE x y w h</code> &mdash; set the dimensions of the window that includes the pixel at
+    (<i>x</i>, <i>y</i>) to width <i>w</i> and height <i>h</i>. The top-left corner of the window does
+    not move.</li>
+  <li><code>MOVE x y dx dy</code> &mdash; move the window that includes the pixel at
+    (<i>x</i>, <i>y</i>). The movement is either <i>dx</i> pixels in the horizontal direction or
+    <i>dy</i> pixels in the vertical direction. At most one of <i>dx</i> and <i>dy</i> will be
+    non-zero.</li>
+</ul>
+
+<p>The <code>OPEN</code> and <code>RESIZE</code> commands succeed only if the resulting window does
+not overlap any other windows and does not extend beyond the screen boundaries. The
+<code>MOVE</code> command will move the window by as many of the requested pixels as possible. For
+example, if <i>dx</i> is 30 but the window can move only 15 pixels to the right, then it will move 15
+pixels.</p>
+
+<p>ACM is particularly proud of the <code>MOVE</code> command. A window being moved might
+&ldquo;bump into&rdquo; another window. In this case, the first window will push the second window in
+the same direction as far as appropriate, exactly as if the windows were physical objects. This
+behavior can cascade &ndash; a moving window might encounter additional windows which are also pushed
+along as necessary. Figure M.1 shows an example with three windows, where window A is moved to the
+right, pushing the other two along.</p>
+
+<figure>
+  <img src="images/M-1.png" alt="">
+  <figcaption>Figure M.1: MOVE example</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>The first line of input contains two positive integers <i>x</i><sub>max</sub> and
+<i>y</i><sub>max</sub>, the horizontal and vertical dimensions of the screen, measured in pixels. Each
+is at most 10<sup>9</sup> (ACM is planning on building displays with very high resolution). The
+top-left pixel of the screen has coordinates (0, 0). Each of the following lines contains a command as
+described above. One or more spaces separate the command name and the parameters from each other. The
+command parameters are integers that satisfy these conditions: 0 &le; <i>x</i> &lt;
+<i>x</i><sub>max</sub>, 0 &le; <i>y</i> &lt; <i>y</i><sub>max</sub>, 1 &le; <i>w</i>,
+<i>h</i> &le; 10<sup>9</sup>, and |<i>dx</i>|, |<i>dy</i>| &le; 10<sup>9</sup>. There will be at most
+256 commands.</p>
+
+<h2>Output</h2>
+
+<p>The output must follow the format illustrated in the sample output below. Simulate the commands in
+the order they appear in the input. If any errors are detected during a command&rsquo;s simulation,
+display the command number, command name, and the first appropriate message from the following list,
+and ignore the results of simulating that command (except as noted).</p>
+
+<ul>
+  <li><code>no window at given position</code> &mdash; for the <code>CLOSE</code>,
+    <code>RESIZE</code>, and <code>MOVE</code> commands &mdash; if there is no window that includes
+    the pixel at the specified position.</li>
+  <li><code>window does not fit</code> &mdash; for the <code>OPEN</code> and
+    <code>RESIZE</code> commands &mdash; if the resulting window would overlap another window or
+    extend beyond the screen boundaries.</li>
+  <li><code>moved d<sub>0</sub> instead of d</code> &mdash; for the <code>MOVE</code> command
+    &mdash; if the command asked to move a window <i>d</i> pixels, but it could only move
+    <i>d</i><sub>0</sub> pixels before requiring a window to move beyond the screen boundaries. The
+    values <i>d</i> and <i>d</i><sub>0</sub> are the absolute number of pixels requested and moved,
+    respectively. The window is still moved in this case, but only for the smaller distance.</li>
+</ul>
+
+<p>After all commands have been simulated and any error messages have been displayed, indicate the
+number of windows that are still open. Then for each open window, in the same order that they were
+opened, display the coordinates of the top-left corner (<i>x</i>, <i>y</i>), the width, and the
+height.</p>
+
+<h3>Sample Input 1</h3>
+<pre>320 200
+OPEN 50 50 10 10
+OPEN 70 55 10 10
+OPEN 90 50 10 10
+RESIZE 55 55 40 40
+RESIZE 55 55 15 15
+MOVE 55 55 40 0
+CLOSE 55 55
+CLOSE 110 60
+MOVE 95 55 0 -100</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Command 4: RESIZE - window does not fit
+Command 7: CLOSE - no window at given position
+Command 9: MOVE - moved 50 instead of 100
+2 window(s):
+90 0 15 15
+115 50 10 10</pre>
+
+<footer>
+  ACM-ICPC World Finals 2015 Problem M: Window Manager &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

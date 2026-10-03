@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Combining Images — The 27th Annual ACM International Collegiate Programming Contest World Finals (2003)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">The 27th Annual ACM International Collegiate Programming Contest World Finals sponsored by IBM · Problem F</p>
+  <h1>Combining Images</h1>
+  <p class="meta">Input File: images.in</p>
+</header>
+
+<p>As the exchange of images over computer networks becomes more common, the problem of
+image compression takes on increasing importance. Image compression algorithms are used to
+represent images using a relatively small number of bits.</p>
+
+<p>One image compression algorithm is based on an encoding called a “Quad Tree.” An image
+has a Quad Tree encoding if it is a square array of binary pixels (the value of each pixel
+is 0 or 1, called the “color” of the pixel), and the number of pixels on the side of the
+square is a power of two.</p>
+
+<p>If an image is homogeneous (all its pixels are of the same color), the Quad Tree encoding
+of the image is 1 followed by the color of the pixels. For example, the Quad Tree encoding
+of an image that contains pixels of color 1 only is 11, regardless of the size of the
+image.</p>
+
+<p>If an image is heterogeneous (it contains pixels of both colors), the Quad Tree encoding
+of the image is 0 followed by the Quad Tree encodings of its upper-left quadrant, its
+upper-right quadrant, its lower-left quadrant, and its lower-right quadrant, in order.</p>
+
+<p>The Quad Tree encoding of an image is a string of binary digits. For easier printing, a
+Quad Tree encoding can be converted to a Hex Quad Tree encoding by the following steps:
+<ol>
+  <li>Prepend a 1 digit as a delimiter on the left of the Quad Tree encoding.</li>
+  <li>Prepend 0 digits on the left as necessary until the number of digits is a multiple of
+  four.</li>
+  <li>Convert each sequence of four binary digits into a hexadecimal digit, using the digits
+  0 to 9 and capital A through F to represent binary patterns from 0000 to 1111.</li>
+</ol></p>
+
+<p>For example, the Hex Quad Tree encoding of an image that contains pixels of color 1 only
+is 7, which corresponds to the binary string 0111.</p>
+
+<p>You must write a program that reads the Hex Quad Tree encoding of two images, computes a
+new image that is the intersection of those two images, and prints its Hex Quad Tree
+encoding. Assume that both input images are square and contain the same number of pixels
+(although the lengths of their encodings may differ). If two images A and B have the same
+size and shape, their intersection (written as A &amp; B) also has the same size and shape.
+By definition, a pixel of A &amp; B is equal to 1 if and only if the corresponding pixels of
+image A and image B are both equal to 1.</p>
+
+<p>The following figure illustrates two input images and their intersection, together with
+the Hex Quad Tree encodings of each image. In the illustration, shaded squares represent
+pixels of color 1.</p>
+
+<figure>
+  <img src="images/F-1.png" alt="">
+</figure>
+
+<h2>Input</h2>
+
+<p>The input data set contains a sequence of test cases, each of which is represented by two
+lines of input. In each test case, the first input line contains the Hex Quad Tree encoding
+of the first image and the second line contains the Hex Quad Tree encoding of the second
+image. For each input image, the number of hexadecimal digits in its Hex Quad Tree encoding
+will not exceed 100.</p>
+
+<p>The last test case is followed by two input lines, each containing a single zero.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, print “Image” followed by its sequence number. On the next line,
+print the Hex Quad Tree encoding of the intersection of the two images for that test case.
+Separate the output for consecutive test cases with a blank line.</p>
+
+<h3>Sample Input 1</h3>
+<pre>2FA
+2BB
+2FB
+2EF
+7
+2FA
+0
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Image 1:
+2BA
+Image 2:
+2EB
+Image 3:
+2FA</pre>
+
+<footer>
+  The 2003 ACM Programming Contest World Finals sponsored by IBM
+</footer>
+
+</body>
+</html>

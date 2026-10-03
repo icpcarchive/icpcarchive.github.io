@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem D: Golygons — 1993 ACM International Collegiate Programming Contest Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">1993 ACM International Collegiate Programming Contest Finals · Problem D</p>
+  <h1>Golygons</h1>
+</header>
+
+<p>Imagine a country whose cities have all their streets laid out in a regular grid. Now suppose that a tourist with an
+obsession for geometry is planning expeditions to several such cities. Starting each expedition from the central
+cross-roads of a city, the intersection labelled (0,0), our mathematical visitor wants to set off north, south, east or
+west, travel one block, and view the sights at the intersection (0,1) after going north, (0,-1) after going south, (1,0)
+after going east or (-1,0) after going west. Feeling ever more enthused by the regularity of the city, our
+mathematician would like to walk a longer segment before stopping next, going two blocks. What’s more, our
+visitor doesn’t want to carry on in the same direction as before, nor wishes to double back, so will make a 90° turn
+either left or right. The next segment should be three blocks, again followed by a right-angle turn, then four, five,
+and so on with ever-increasing lengths until finally, at the end of the day, our weary traveller returns to the
+starting point, (0,0).</p>
+
+<p>The possibly self-intersecting figure described by these geometrical travels is called a golygon.</p>
+
+<p>Unfortunately, our traveller will making these visits in the height of summer when road works will disrupt the
+stark regularity of the cities’ grids. At some intersections there will be impassable obstructions. Luckily, however,
+the country’s limited budget means there will never be more than 50 road works blocking the streets of any
+particular city. In an attempt to gain accountability to its citizens, the city publishes the plans of road works in
+advance. Our mathematician has obtained a copy of these plans and will ensure that no golygonal trips get mired
+in molten tar.</p>
+
+<p>Write a program that constructs all possible golygons for a city.</p>
+
+<h2>Input</h2>
+
+<p>Since our tourist wants to visit several cities, the input file will begin with a line containing an integer specifying
+the number of cities to be visited.</p>
+
+<p>For each city there will follow a line containing a positive integer not greater than 20 indicating the length of the
+longest edge of the golygon. That will be the length of the last edge which returns the traveler to (0,0). Following
+this on a new line will be an integer from 0 to 50 inclusive which indicates how many intersections are blocked.
+Then there will be this many pairs of integers, one pair per line, each pair indicating the x and y coordinates of one
+blockage.</p>
+
+<h2>Output</h2>
+
+<p>For each city in the input, construct all possible golygons. Each golygon must be represented by a sequence of
+characters from the set {n,s,e,w} on a line of its own. Following the list of golygons should be a line indicating
+how many solutions were found. This line should be formatted as shown in the example output. A blank line
+should appear following the output for each city. Sample input and output are below.</p>
+
+<h3>Sample Input <i>1</i></h3>
+<pre>2
+8
+2
+-2 0
+6 -2
+8
+2
+2 1
+-2 0</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>wsenenws
+Found 1 golygon(s).
+
+Found 0 golygon(s).</pre>
+
+<figure>
+  <img src="images/D-1.png" alt="">
+  <figcaption>Diagram of the 1st City</figcaption>
+</figure>
+
+<footer>
+  1993 ACM International Collegiate Programming Contest Finals · Problem D · Golygons
+</footer>
+
+</body>
+</html>

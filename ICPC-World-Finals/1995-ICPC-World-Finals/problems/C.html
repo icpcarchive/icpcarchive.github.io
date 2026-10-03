@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem C: Variable Radix Huffman Encoding — The Nineteenth Annual ACM International Collegiate Programming Contest Finals (1995)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The Nineteenth Annual ACM International Collegiate Programming Contest Finals · Problem C</p>
+  <h1>Variable Radix Huffman Encoding</h1>
+  <p class="meta">Input File: coding.in</p>
+</header>
+
+<p>Huffman encoding is a method of developing an optimal encoding of the symbols in a source alphabet using symbols from a target alphabet when the frequencies of each of the symbols in the source alphabet are known. Optimal means the average length of an encoded message will be minimized. In this problem you are to determine an encoding of the first N uppercase letters (the source alphabet, S<sub>1</sub> through S<sub>N</sub>, with frequencies f<sub>1</sub> through f<sub>N</sub>) into the first R decimal digits (the target alphabet, T<sub>1</sub> through T<sub>R</sub>).</p>
+
+<p>Consider determining the encoding when R=2. Encoding proceeds in several passes. In each pass the two source symbols with the lowest frequencies, say S<sub>1</sub> and S<sub>2</sub>, are grouped to form a new “combination letter” whose frequency is the sum of f<sub>1</sub> and f<sub>2</sub>. If there is a tie for the lowest or second lowest frequency, the letter occurring earlier in the alphabet is selected. After some number of passes only two letters remain to be combined. The letters combined in each pass are assigned one of the symbols from the target alphabet. The letter with the lower frequency is assigned the code 0, and the other letter is assigned the code 1. (If each letter in a combined group has the same frequency, then 0 is assigned to the one earliest in the alphabet. For the purpose of comparisons, the value of a “combination letter” is the value of the earliest letter in the combination.) The final code sequence for a source symbol is formed by concatenating the target alphabet symbols assigned as each combination letter using the source symbol is formed. The target symbols are concatenated in the reverse order that they are assigned so that the first symbol in the final code sequence is the last target symbol assigned to a combination letter. The two illustrations below demonstrate the process for R=2.</p>
+
+<pre>             Symbol      Frequency                                   Symbol      Frequency
+                 A           5                                          A            7
+                 B           7                                          B            7
+                 C           8                                          C            7
+                 D           15                                         D            7
+             Pass 1: A and B grouped                                 Pass 1: A and B grouped
+           Pass 2: {A,B} and C grouped                               Pass 2: C and D grouped
+          Pass 3: {A,B,C} and D grouped                         Pass 3: {A,B} and {C,D} grouped
+   Resulting codes: A=110, B=111, C=10, D=0                 Resulting codes: A=00, B=01, C=10, D=11
+   Avg. length = (3*5+3*7+2*8+1*15)/35=1.91                 Avg. length = (2*7+2*7+2*7+2*7)/28=2.00</pre>
+
+<p>When R is larger than 2, R symbols are grouped in each pass. Since each pass effectively replaces R letters or combination letters by 1 combination letter, and the last pass must combine R letters or combination letters, the source alphabet must contain k*(R–1)+R letters, for some integer k. Since N may not be this large, an appropriate number of fictitious letters with zero frequencies must be included. These fictitious letters are not to be included in the output. In making comparisons, the fictitious letters are later than any of the letters in the alphabet.</p>
+
+<p>Now the basic process of determining the Huffman encoding is the same as for the R=2 case. In each pass, the R letters with the lowest frequencies are grouped, forming a new combination letter with a frequency equal to the sum of the letters included in the group. The letters that were grouped are assigned the target alphabet symbols 0 through R–1. 0 is assigned to the letter in the combination with the lowest frequency, 1 to the next lowest frequency, and so forth. If several of the letters in the group have the same frequency, the one earliest in the alphabet is assigned the smaller target symbol, and so forth. The illustration below demonstrates the process for R=3.</p>
+
+<pre>               Symbol      Frequency
+                  A            5
+                  B            7
+                  C            8
+                  D            15
+   Pass 1: ? (fictitious symbol), A and B are grouped
+         Pass 2: {?,A,B}, C and D are grouped
+       Resulting codes: A=11, B=12, C=0, D=2
+     Avg. length = (2*5+2*7+1*8+1*15)/35=1.34</pre>
+
+<h2>Input</h2>
+
+<p>The input will contain one or more data sets, one per line. Each data set consists of an integer value for R (between 2 and 10), an integer value for N (between 2 and 26), and the integer frequencies f<sub>1</sub> through f<sub>N</sub>, each of which is between 1 and 999. The end of data for the entire input is the number 0 for R; it is not considered to be a separate data set.</p>
+
+<h2>Output</h2>
+
+<p>For each data set, display its number (numbering is sequential starting with 1) and the average target symbol length (rounded to two decimal places) on one line. Then display the N letters of the source alphabet and the corresponding Huffman codes, one letter and code per line. The examples below illustrate the required output format.</p>
+
+<h3>Sample Input</h3>
+<pre>2 5 5 10 20 25 40
+2 5 4 2 2 1 1
+3 7 20 5 8 5 12 6 9
+4 6 10 23 18 25 9 12
+0</pre>
+
+<h3>Output for the Sample Input</h3>
+<pre>Set 1; average length 2.10
+    A: 1100
+    B: 1101
+    C: 111
+    D: 10
+    E: 0
+
+Set 2; average length 2.20
+    A: 11
+    B: 00
+    C: 01
+    D: 100
+    E: 101
+
+Set 3; average length 1.69
+    A: 1
+    B: 00
+    C: 20
+    D: 01
+    E: 22
+    F: 02
+    G: 21
+
+Set 4; average length 1.32
+    A: 32
+    B: 1
+    C: 0
+    D: 2
+    E: 31
+    F: 33</pre>
+
+<footer>
+  The Nineteenth Annual ACM International Collegiate Programming Contest Finals · Problem C · Variable Radix Huffman Encoding
+</footer>
+
+</body>
+</html>

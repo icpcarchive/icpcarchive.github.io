@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Tiling the Plane &mdash; ICPC World Finals 2005</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2005 &middot; Problem G</p>
+  <h1>Tiling the Plane</h1>
+  <p class="meta">Input file: tiling.in</p>
+</header>
+
+
+<p>A polygon is said to &ldquo;tile the plane&rdquo; if a collection of identical copies of the polygon can be assembled to fill an unbounded two-dimensional plane without any gaps or overlap. For example, Figure 1 shows an L-shaped polygon, and Figure 2 shows how a portion of the plane can be tiled with copies of the polygon. You must write a program to determine whether a given polygon can tile the plane.</p>
+
+<figure>
+  <img src="images/G-1.png" alt="">
+  <figcaption>Figure 1. An L-shaped polygon. Figure 2. A portion of the plane tiled with copies of the polygon.</figcaption>
+</figure>
+
+<p>Each test case consists of a closed polygon in which every vertex is at a right angle and the length of every side is an integer multiple of a unit length. You may make as many copies of the polygon as you like, and you may move them over the plane, but you may not rotate or reflect any polygon.</p>
+
+<p>You might find the following information useful: It is known that there are only two fundamentally different tilings of the plane, the regular tiling by squares (chessboard tiling) and the tiling by regular hexagons (honeycomb tiling). A polygon can therefore tile the plane if and only if it satisfies one of the following two conditions:</p>
+<ol>
+  <li>There are points A, B, C, D in order on the polygon boundary (the points are not necessarily vertices of the polygon) such that the polygon boundaries from A to B and from D to C are congruent and the boundaries from B to C and from A to D are congruent. This leads to a tiling equivalent to the square tiling.</li>
+  <li>There are points A, B, C, D, E, F in order on the polygon boundary, such that the boundary pairs AB and ED, BC and FE, CD and AF are congruent. This leads to a tiling equivalent to the hexagon tiling.</li>
+</ol>
+
+<h2>Input</h2>
+
+<p>The input contains the descriptions of several polygons, each description consisting of one input line. Each description begins with an integer n (4 &le; n &le; 50) that represents the number of sides of the polygon. This number is followed by descriptions of n line segments which (taken in order) form a counterclockwise traversal of the perimeter of the polygon. Each line segment description consists of a letter followed by an integer. The letter is &ldquo;N&rdquo;, &ldquo;E&rdquo;, &ldquo;S&rdquo;, or &ldquo;W&rdquo;, representing the direction of the line segment as North, East, South, or West, respectively. The integer represents the length of the line segment as a multiple of the unit length. The described polygon will not touch or intersect itself.</p>
+
+<p>The input is terminated by a line consisting of the integer zero.</p>
+
+<h2>Output</h2>
+
+<p>For each polygon in the input, print one output line. Print the number of the polygon in the input, followed by the word &ldquo;Possible&rdquo; if it is possible to tile the plane with the test polygon, or &ldquo;Impossible&rdquo; otherwise. Follow the format of the sample output.</p>
+
+<h3>Sample Input 1</h3>
+<pre>6 N 3 W 1 S 4 E 4 N 1 W 3
+8 E 5 N 1 W 3 N 3 E 2 N 1 W 4 S 5
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Polygon 1: Possible
+Polygon 2: Impossible</pre>
+
+
+<footer>
+  ICPC World Finals 2005 &mdash; Problem G: Tiling the Plane
+</footer>
+
+</body>
+</html>

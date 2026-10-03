@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Building a Clock — The 30th Annual ACM International Collegiate Programming Contest World Finals (2006)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The 30th Annual ACM International Collegiate Programming Contest World Finals · Problem F</p>
+  <h1>Building a Clock</h1>
+  <p class="meta">Input file: clock.in</p>
+</header>
+
+<p>In Old Town Square in the city of Prague, there is a beautiful Astronomical Clock, constructed in the year 1410. For centuries, the clockmaker&rsquo;s art consisted of using gears to connect a shaft, turning at a known rate, to other shafts until, by the proper combination of gears, two shafts could be made to turn at the correct rates to represent minutes and hours.</p>
+
+<figure class="hero">
+  <img src="images/F-1.png" alt="">
+</figure>
+
+<p>You must write a program that, given an input shaft speed and a collection of gears, computes how the gears can be connected to create a clock with an hour hand and a minute hand. You may use as many shafts as you like, but each shaft may have a maximum of three gears. All the gears on a shaft turn at the same rate. If a gear having T&#8321; teeth turning at a rate R&#8321; is engaged with another gear having T&#8322; teeth, the turning rate of the second gear is &ndash;R&#8321;(T&#8321;/T&#8322;). Your solution must include two shafts, a minute shaft that turns clockwise at the rate of one revolution per hour, and an hour shaft that turns clockwise at the rate of one revolution per twelve hours. Your solution is not required to use all the available gears.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of several trials, each described by one line of input. Each input line begins with an integer <i>N</i> (3 &le; <i>N</i> &le; 6), the number of gears available for building a clock. <i>N</i> is followed by another integer <i>R</i> (-3600 &le; <i>R</i> &le; 3600, <i>R</i> &ne; 0), the turning rate of the input shaft, which is the number of revolutions made by the shaft in 24 hours. (A positive number represents clockwise rotation, and a negative number represents counter-clockwise rotation.) <i>R</i> is followed by <i>N</i> gear descriptions. Each gear description is a pair: a one-character name that identifies the gear, followed by an integer <i>T</i> (6 &le; <i>T</i> &le; 120), that is the number of teeth on the gear. The names and numbers on each input line are separated by spaces, as shown in the sample input.</p>
+
+<p>The last trial is followed by a line containing a single zero.</p>
+
+<h2>Output</h2>
+
+<p>For each trial, print a line containing the trial number, as shown in the sample output. If it is possible to construct a clock using the given set of gears, the line containing the trial number must be followed by two more output lines, one for the minute hand and one for the hour hand. Otherwise, the line containing the trial number must end with the words IS IMPOSSIBLE as shown in the sample output.</p>
+
+<p>The line for the minute hand starts with Minutes: followed by a plan that shows how the input shaft is connected by a sequence of gears to the minute shaft. The plan consists of a sequence of shafts, separated by hyphens. Each shaft is represented by one or two characters. The first character is the name of the driven gear&mdash;the gear on the shaft that is engaged with a gear on the previous shaft. For the input shaft, use an asterisk (*) to represent the absence of a driven gear. The second character describing a shaft is the name of the driving gear&mdash;the gear on the shaft that is engaged with a gear on the next shaft. The driven gear and the driving gear can be the same gear, in which case the shaft is described by a single character which is the name of this gear. The last shaft in the plan is the minute shaft, described by a single letter which is the name of its driven gear.</p>
+
+<p>The line for the hour hand starts with Hours: followed by a plan for connecting the input shaft to the hour shaft. Use the same format as the minute plan.</p>
+
+<p>Each gear may occur only once in the clock. The minute plan and the hour plan may have an initial part in common, however. A gear in a common initial part will occur both in the minute plan and the hour plan. For the same reason, a given shaft can be used in both the hour plan and the minute plan. If a shaft is used in both plans, it may or may not have the same description in both plans. For example, a shaft containing a single gear named A will be represented as A in both plans. On the other hand, a shaft containing three gears named A, B, and C might be represented as AB in the minute plan (if B is the driving gear in that plan) and as AC in the hour plan (if C is the driving gear in that plan).</p>
+
+<p>The following lines represent valid output lines:</p>
+
+<pre>Hours:       *A-BC-D</pre>
+<p>An input shaft having one gear, engaged with an intermediate shaft having two gears, engaged with an hour shaft having one gear.</p>
+
+<pre>Minutes: *A-B-C</pre>
+<p>An input shaft having one gear, engaged with an intermediate shaft having one gear, engaged with a minute shaft having one gear.</p>
+
+<pre>Minutes: *</pre>
+<p>A plan in which no gears are needed because the input shaft is turning at the correct rate for the minute shaft.</p>
+
+<p>If there are multiple ways to build a clock using the given gears, print the solution that uses the minimum number of shafts. In case of a tie for the minimum number of shafts, print the solution that uses the minimum number of gears. In case of a tie for both the minimum numbers of shafts and gears, print the solution whose string description is alphabetically first. The string description of a solution is its minute plan, followed by its hour plan, concatenated together with asterisks and hyphens removed. For example, a solution in which the minute plan is *A-B and the hour plan is *A-BC-D-E has the string description ABABCDE.</p>
+
+<p>Print one blank line between trials.</p>
+
+<h3>Sample Input 1</h3>
+<pre>6 40 P 7 Q 84 R 50 A 40 B 30 C 14
+6 40 P 7 Q 84 R 45 A 40 B 30 C 14
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Trial 1
+Minutes: *B-A-R
+Hours:   *B-A-RP-C-Q
+
+Trial 2 IS IMPOSSIBLE</pre>
+
+<footer>
+  The 30th Annual ACM International Collegiate Programming Contest World Finals &middot; Problem F &middot; Building a Clock
+</footer>
+
+</body>
+</html>

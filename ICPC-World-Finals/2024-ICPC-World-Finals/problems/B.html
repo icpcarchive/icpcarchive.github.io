@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Bingo for the Win! — 48th ICPC World Championship (2024)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">48th ICPC World Championship · Problem B</p>
+  <h1>Bingo for the Win!</h1>
+  <p class="meta">Time limit: 1 second</p>
+</header>
+
+<p>Bingo is a game of chance for multiple players. Each player receives a sheet with
+some numbers, and a game master then calls out these numbers in a random order. Players
+cross off the numbers that they have heard, and the first player to cross off all their
+numbers wins the game. This basic version of the game has a reputation for being, well,
+a bit sedate. No particular action is required of the players except for not falling
+asleep.</p>
+
+<p>In this problem we will analyze a more dynamic version of Bingo that requires quick
+thinking. In our version, called Speed Bingo, the game master also calls out the numbers
+from the sheets in a random order. However, whenever a number is called out, only the
+first player to signal that he or she has the number is allowed to cross it off their
+sheet. If a player has the same number multiple times, only one copy may be crossed off
+at a time. When multiple players have the same number(s) on their sheets, whoever has
+the fastest reaction time has an advantage in winning Speed Bingo. But how big an
+advantage? That&rsquo;s what we need your help to find out.</p>
+
+<p>Formally, there are <i>n</i> players, each receiving a (possibly) different sheet of
+<i>k</i> (not necessarily distinct) numbers. Player 1 is faster to react than player 2,
+who in turn is faster than player 3, and so on, with player <i>n</i> being the slowest.
+Consider the following example, corresponding to the first sample input, where three
+players receive four numbers each:</p>
+
+<pre>1 2         1 2        3 4
+3 4         5 6        7 8
+Player 1    Player 2   Player 3</pre>
+
+<p>When number &ldquo;1&rdquo; is called for the first time, player 1&mdash;being
+faster&mdash;will get to cross it off their sheet. The second time &ldquo;1&rdquo; is
+called, player 2 will get to cross it off. So on average, we would expect player 1 to
+do better than players 2 and 3, since both of them will need some numbers that player 1
+will get to first. However, since players 2 and 3 have no numbers in common, their
+performances will be independent of each other, even though player 2 is faster than
+player 3.</p>
+
+<p>Suppose the game is played until all players have crossed off all of their numbers,
+that is, until all <i>n</i> &middot; <i>k</i> numbers on all of the sheets (including
+appropriate repetitions) have been read. Assuming the order of the numbers is uniformly
+random, how likely is it for each player to finish last?</p>
+
+<h2>Input</h2>
+
+<p>The input describes a single game of Speed Bingo. The first line contains two
+integers <i>n</i> and <i>k</i>, the number of players and number of numbers on each
+sheet (1 &le; <i>n</i> &le; 100, 1 &le; <i>k</i> &le; 1&thinsp;000). This is followed by
+<i>n</i> lines containing <i>k</i> integers each, where the <i>i</i>th line gives the
+numbers on the sheet for the <i>i</i>th player. All those numbers are between 1 and
+10<sup>9</sup>, inclusive.</p>
+
+<h2>Output</h2>
+
+<p>Output <i>n</i> lines, one for each player. The <i>i</i>th line should contain the
+probability that player <i>i</i> finishes last. All values must be accurate to an
+absolute error of at most 10<sup>&minus;6</sup>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3 4
+1 2 3 4
+1 2 5 6
+3 4 7 8</pre>
+
+<h3>Sample Output 1</h3>
+<pre>0.000000000
+0.500000000
+0.500000000</pre>
+
+<h3>Sample Input 2</h3>
+<pre>4 2
+1 2
+3 4
+10 5
+7 8</pre>
+
+<h3>Sample Output 2</h3>
+<pre>0.250000000
+0.250000000
+0.250000000
+0.250000000</pre>
+
+<footer>
+  48th ICPC World Championship Problem B: Bingo for the Win! &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

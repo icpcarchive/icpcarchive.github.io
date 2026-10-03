@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Map Tiles (Solution) — ACM ICPC World Finals 2013</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2013</p>
+  <h1>Problem G: Map Tiles</h1>
+</header>
+
+<p>Shortest judge solution: 3798 bytes. Shortest team solution (during contest): N/A.</p>
+
+<p>This was probably the hardest problem in the set (at least it was the one I struggled the most with). The basic idea, which is completely standard, is to simply try “all” possible grid placements and see which one gives the best result.</p>
+
+<p>Let us write m ≤ 10 for the maximum number of grid tiles in any row/column of the grid (well, in some cases 11 tiles might be needed but never mind).</p>
+
+<p>To execute this idea, we first have to find a reasonably small set of candidate grid placements. Consider an optimal grid placement. By shifting it to the left as far as possible, we may assume that one of the following two cases occur.</p>
+
+<ul>
+<li><strong>Case 1:</strong> a vertex of the polygon lies on a vertical line L of the grid. In this case, consider shifting the polygon upwards, keeping the vertex on the vertical line. By a similar argument, one of the following two happens:
+<ul>
+<li><strong>Case 1a:</strong> a vertex of the polygon lies on a horizontal line of the grid. There are only n<sup>2</sup> grid placements of this type: specifying which vertex lies on a vertical line and which vertex lies on a horizontal line completely specifies the grid.</li>
+<li><strong>Case 1b:</strong> a vertex of the grid lies on an edge e of the polygon (and the edge is not vertical). Suppose this grid vertex is t steps horizontally away from L. Then the grid vertex can be found by moving L horizontally a distance of t · x<sub>s</sub> and intersecting it with the polygon edge. Trying all possible values of the polygon vertex that lies on L (n choices), the polygon edge e (n choices), and the offset t (m choices), this gives a total of at most n<sup>2</sup> m candidate placements.</li>
+</ul>
+</li>
+<li><strong>Case 2:</strong> a vertex of the grid lies on an edge of the polygon. Consider shifting the grid along the edge of the polygon (so that the vertex of the grid remains on that edge) as far as possible. Again, there are two possible outcomes:
+<ul>
+<li><strong>Case 2a:</strong> a vertex of the polygon lies on a horizontal or vertical line of the grid. This case is analogous to case 1b (but possibly with a horizontal instead of a vertical line).</li>
+<li><strong>Case 2b:</strong> another vertex of the grid lies on some edge of the polygon, and this second polygon edge is not parallel to the first one. This case is somewhat similar to cases 1b and 2a, but now we need to guess both a vertical and a horizontal offset and then do intersection of the two polygon edges. This gives a total of at most n<sup>2</sup> m<sup>2</sup> candidate placements. The three test cases illustrated on the last page of this document were designed to trigger as many candidates of this form as possible.</li>
+</ul>
+</li>
+</ul>
+
+<p>This gives a set of O(n<sup>2</sup> m<sup>2</sup> ) candidate grid placements. It turns out that many of these candidates are the same, and one should take care to remove duplicates. I don’t have a good estimate for how much this saves, but on the judge data it tends to be around a factor 3-5, which might be sorely needed depending on how one solves the second part of the problem, described next. In the worst cases we had found, there are always less than 50 000 candidate grid placements after removing duplicates.</p>
+
+<p>Given a candidate grid placement, we then need to figure out how many grid tiles it uses. The simplest way to do it would be to simply check for each grid tile whether it intersects the polygon. This is however too slow (time Ω(m<sup>2</sup> n) with pretty lousy constants), so something faster is needed. I went for a pretty messy flood-fill variant. The basic idea is to first trace through the polygon and mark the tiles that it passes through (in time O(mn) with pretty reasonable constants) and then do flood-fill to discover the rest of the tiles. Unfortunately this simple idea needs a bit of refinement to work correctly since one has to deal with polygon edges that run along the grid lines. This can be dealt with by also including the grid lines and grid vertices in the graph of tiles that we are flood-filling and with some careful coding one gets a correct (well, at least it passes the judge data) but somewhat sluggish solution.</p>
+
+<p>A different (and faster!) approach is to do something reminiscent of a point-in-polygon test. For each row of tiles, find all x-coordinates where the polygon enters/exits the top of the row and all x-coordinates where it enters/exits the bottom of the row. Those tiles where the polygon either goes into the interior of the tile or has entered/exit the top/bottom an odd number of times will be used.</p>
+
+<h3>The last three test cases for Map Tiles</h3>
+<p>x<sub>s</sub> = 100, y<sub>s</sub> = 50.</p>
+<p>x<sub>s</sub> = 97, y<sub>s</sub> = 93.</p>
+<p>x<sub>s</sub> = 97, y<sub>s</sub> = 93.</p>
+</body>
+</html>

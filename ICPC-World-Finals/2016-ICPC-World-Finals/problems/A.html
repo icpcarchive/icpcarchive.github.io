@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem A: Balanced Diet — ACM-ICPC World Finals (2016)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2016 &middot; Problem A</p>
+  <h1>Balanced Diet</h1>
+  <p class="meta">Time limit: 2 seconds</p>
+</header>
+
+<p>Every day, Danny buys one sweet from the candy store and eats it. The store has <i>m</i> types of sweets, numbered from 1 to <i>m</i>. Danny knows that a balanced diet is important and is applying this concept to his sweet purchasing. To each sweet type <i>i</i>, he has assigned a target fraction, which is a real number <i>f</i><sub><i>i</i></sub> (0 &lt; <i>f</i><sub><i>i</i></sub> &le; 1). He wants the fraction of sweets of type <i>i</i> among all sweets he has eaten to be roughly equal to <i>f</i><sub><i>i</i></sub>. To be more precise, let <i>s</i><sub><i>i</i></sub> denote the number of sweets of type <i>i</i> that Danny has eaten, and let <i>n</i> = &sum;<sub><i>i</i>=1</sub><sup><i>m</i></sup> <i>s</i><sub><i>i</i></sub>. We say the set of sweets is balanced if for every <i>i</i> we have <i>n</i><i>f</i><sub><i>i</i></sub> &minus; 1 &lt; <i>s</i><sub><i>i</i></sub> &lt; <i>n</i><i>f</i><sub><i>i</i></sub> + 1.</p>
+
+<p>Danny has been buying and eating sweets for a while and during this entire time the set of sweets has been balanced. He is now wondering how many more sweets he can buy while still fulfilling this condition. Given the target fractions <i>f</i><sub><i>i</i></sub> and the sequence of sweets he has eaten so far, determine how many more sweets he can buy and eat so that at any time the set of sweets is balanced.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of three lines. The first line contains two integers <i>m</i> (1 &le; <i>m</i> &le; 10<sup>5</sup>), which is the number of types of sweets, and <i>k</i> (0 &le; <i>k</i> &le; 10<sup>5</sup>), which is the number of sweets Danny has already eaten.</p>
+
+<p>The second line contains <i>m</i> positive integers <i>a</i><sub>1</sub>, &hellip;, <i>a</i><sub><i>m</i></sub>. These numbers are proportional to <i>f</i><sub>1</sub>, &hellip;, <i>f</i><sub><i>m</i></sub>, that is, <i>f</i><sub><i>i</i></sub> = <i>a</i><sub><i>i</i></sub> / &sum;<sub><i>j</i>=1</sub><sup><i>m</i></sup> <i>a</i><sub><i>j</i></sub>. It is guaranteed that the sum of all <i>a</i><sub><i>j</i></sub> is no larger than 10<sup>5</sup>.</p>
+
+<p>The third line contains <i>k</i> integers <i>b</i><sub>1</sub>, &hellip;, <i>b</i><sub><i>k</i></sub> (1 &le; <i>b</i><sub><i>i</i></sub> &le; <i>m</i>), where each <i>b</i><sub><i>i</i></sub> denotes the type of sweet Danny bought and ate on the <i>i</i>-th day. It is guaranteed that every prefix of this sequence (including the whole sequence) is balanced.</p>
+
+<h2>Output</h2>
+
+<p>Display the maximum number of additional sweets that Danny can buy and eat while keeping his diet continuously balanced. If there is no upper limit on the number of sweets, display the word <i>forever</i>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>6 5
+2 1 6 3 5 3
+1 2 5 3 5</pre>
+
+<h3>Sample Output 1</h3>
+<pre>1</pre>
+
+<h3>Sample Input 2</h3>
+<pre>6 4
+2 1 6 3 5 3
+1 2 5 3</pre>
+
+<h3>Sample Output 2</h3>
+<pre>forever</pre>
+
+<footer>
+  ACM-ICPC World Finals 2016 Problem A: Balanced Diet &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

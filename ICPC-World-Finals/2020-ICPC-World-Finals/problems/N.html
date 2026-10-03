@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem N: What’s Our Vector, Victor? — ICPC World Finals 2020</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">ICPC World Finals 2020 · Problem N</p>
+  <h1>What&rsquo;s Our Vector, Victor?</h1>
+  <p class="meta">Time limit: 6 seconds</p>
+</header>
+
+<figure class="hero">
+  <img src="images/N-1.png" alt="">
+  <figcaption>Image from pxfuel</figcaption>
+</figure>
+
+<p>Vector embeddings are a common tool in machine learning systems. Complex
+real-world concepts (for instance, words in a dictionary) are mapped onto
+vectors of real numbers. If embeddings are trained properly, related concepts
+remain close together in the vector space, so questions like &ldquo;are these
+two words synonyms?&rdquo; can be reduced to straightforward mathematical
+tests.</p>
+
+<p>You have been hired by Ye Olde Ice Cream Shoppe to create an embedding
+model for flavors, so that when they are out of an ice cream flavor they can
+recommend related flavors to customers. After training your embedding on six
+cloud datacenters for four months, you finally had the perfect flavor model!
+You were ready to revolutionize the ice cream industry on your street and,
+dare we say it, your neighborhood! Well, until you accidentally dripped some
+free ice cream on your keyboard and deleted half the data. The Shoppe cannot
+afford the 30 billion rubles needed to retrain the model, so you are in
+trouble.</p>
+
+<p>Fortunately, you still have various training results lying around. For a
+given deleted vector, the training data tells you how close it was to some
+known flavor vectors. The closeness of vectors A and B is just the standard
+Euclidean distance metric (that is, the length of the vector A &minus; B).
+Write a tool that reconstructs embeddings which are consistent with the
+training results.</p>
+
+<h2>Input</h2>
+
+<p>The first line contains two integers <i>d</i> and <i>n</i>, where
+<i>d</i> (1 &le; <i>d</i> &le; 500) is the number of dimensions of the
+vectors, and <i>n</i> (1 &le; <i>n</i> &le; 500) is the number of training
+results for a deleted embedding vector you want to reconstruct. Each of the
+next <i>n</i> lines describes a training result using <i>d</i> + 1 numbers
+<i>x</i><sub>1</sub>, &hellip;, <i>x</i><sub><i>d</i></sub> and
+<i>e</i>. In a training result, <i>x</i><sub>1</sub>, &hellip;,
+<i>x</i><sub><i>d</i></sub> (&minus;100 &le;
+<i>x</i><sub><i>i</i></sub> &le; 100) are the coordinates of a known vector,
+and <i>e</i> (0 &le; <i>e</i> &le; 5&thinsp;000) is the Euclidean distance
+from that vector to the deleted one.</p>
+
+<p>Your submission will be tested only with the sample inputs given below and
+inputs generated according to the following procedure. First, <i>d</i> and
+<i>n</i> are chosen. Then, <i>n</i> input vectors and 1 output vector, each
+with dimension <i>d</i>, are chosen at random. The
+<i>d</i>&thinsp;&middot;&thinsp;(<i>n</i> + 1) coordinates are independent and
+uniformly distributed in the interval [&minus;100, 100]. Next, the Euclidean
+distance from each input vector to the output vector is computed. Finally, the
+output vector is discarded. Calculations use double-precision floating-point
+numbers. Numbers obtained using this procedure appear in the input with 17
+digits after the decimal point.</p>
+
+<h2>Output</h2>
+
+<p>Output <i>d</i> values, the coordinates of any vector that has the given
+distance to each training vector with an absolute or relative error of at most
+10<sup>&minus;5</sup>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>2 3
+0 0 2.5
+3 0 2.5
+1.5 0.5 2.5</pre>
+
+<h3>Sample Output 1</h3>
+<pre>1.5 -2</pre>
+
+<h3>Sample Input 2</h3>
+<pre>2 2
+0 0 2
+4 -4 6</pre>
+
+<h3>Sample Output 2</h3>
+<pre>1.414213562373 1.414213562373</pre>
+
+<h3>Sample Input 3</h3>
+<pre>4 3
+0 1 2 3 2
+1 2 -1 7 5
+1 0.3 3.4 1.2 3.3</pre>
+
+<h3>Sample Output 3</h3>
+<pre>1 2 3 4</pre>
+
+<footer>
+  ICPC World Finals 2020 Problem N: What&rsquo;s Our Vector, Victor?
+</footer>
+
+</body>
+</html>

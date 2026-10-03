@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem I: Robots on Ice &mdash; 34th ICPC World Finals (2010)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">34th ICPC World Finals · Problem I</p>
+  <h1>Robots on Ice</h1>
+  <p class="meta">Problem ID: robots</p>
+</header>
+
+<p>Inspired by the ice sculptures in Harbin, the members of the programming team from Arctic University of
+Robotics and Automata have decided to hold their own ice festival when they return home from the contest.
+They plan to harvest blocks of ice from a nearby lake when it freezes during the winter. To make it easier to
+monitor the thickness of the ice, they will lay out a rectangular grid over the surface of the lake and have a lightweight robot travel from square to square to measure ice thickness at each square in the grid. Three locations in
+the grid are specified as “check-in” points and the robot is supposed to radio a progress report from these points
+when it is one-fourth, one-half, and three-fourths of the way through its tour of inspection. To avoid unnecessary
+wear and tear on the surface of the ice, the robot must begin its tour of the grid from the lower left corner,
+designated in (row,column) coordinates as (0,0), visiting every other grid location exactly once and ending its
+tour in row 0, column 1. Moreover, if there are multiple tours that the robot can follow, then a different one is to
+be used each day. The robot is able to move only one square per time step in one of the four compass directions:
+north, south, east, or west.</p>
+
+<p>You are to design a program that determines how many different tours are possible for a given grid size and a
+sequence of three check-in points. For example, suppose the lake surface is marked off in a 3 × 6 grid and that
+the check-in points, in order of visitation, are (2,1), (2,4), and (0,4). Then the robot must start at (0,0) and end at
+(0,1) after visiting all 18 squares. It must visit location (2,1) on step 4 (= ⎣18/4⎦), location (2,4) on step 9
+(= ⎣18/2⎦), and location (0,4) on step 13 (= ⎣3×18/4⎦). There are just two ways to do this (see Figure 8). Note
+that when the size of the grid is not divisible by 4, truncated division is used to determine the three check-in
+times.</p>
+
+<figure>
+  <img src="images/I-1.png" alt="">
+  <figcaption>Figure 8</figcaption>
+</figure>
+
+<p>Note that some configurations may not permit any valid tours at all. For example, in a 4 × 3 grid with check-in
+sequence (2,0), (3,2), and (0,2), there is no tour of the grid that begins at (0,0) and ends at (0,1).</p>
+
+<h2>Input</h2>
+
+<p>The input contains several test cases. Each test case begins with a line containing two integers m and n, where
+2 ≤ m,n ≤ 8, specifying the number of rows and columns, respectively, in the grid. This is followed by a line
+containing six integer values r<sub>1</sub>, c<sub>1</sub>, r<sub>2</sub>, c<sub>2</sub>, and r<sub>3</sub>, c<sub>3</sub>, where 0 ≤ r<sub>i</sub> &lt; m and 0 ≤ c<sub>i</sub> &lt; n for i = 1, 2, 3.</p>
+
+<p>Following the last test case is a line containing two zeros.</p>
+
+<h2>Output</h2>
+
+<p>Display the case number, beginning at 1, followed by the number of possible tours that begin at row 0, column
+0, end at row 0, column 1, and visit row r<sub>i</sub>, column c<sub>i</sub> at time ⎣ i × m × n / 4⎦ for i = 1, 2, 3. Follow the format of
+the sample output.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3 6
+2 1 2 4 0 4
+4 3
+2 0 3 2 0 2
+0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1: 2
+Case 2: 0</pre>
+
+
+<footer>
+  34th ICPC World Finals Problem I: Robots on Ice
+</footer>
+
+</body>
+</html>

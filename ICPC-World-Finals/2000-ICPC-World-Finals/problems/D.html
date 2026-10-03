@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem D: Gifts Large and Small — The 2000 ACM Programming Contest World Finals sponsored by IBM (2000)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The 2000 ACM Programming Contest World Finals sponsored by IBM · Problem D</p>
+  <h1>Gifts Large and Small</h1>
+  <p class="meta">Input file: gifts.in</p>
+</header>
+
+
+<p>WrapIt.com specializes in wrapping gifts. Started several years ago as a service offered to local department stores
+and malls, today WrapIt serves customers world-wide and boasts that it can package anything from half-carat
+diamonds to whole apartment blocks.</p>
+
+<p>WrapIt has found that some customers prefer their gifts to be wrapped in the smallest possible packages, whereas
+others prefer large packages that make their gifts seem larger than they really are. The company needs a program
+that computes the smallest and largest rectangular package into which a gift can be “tightly” wrapped. Since this is a
+difficult problem, the company will initially settle for a two-dimensional version of the program.</p>
+
+<p>Each gift is approximated as a simple polygon, and all packages are represented by rectangles. A gift is said to
+“fit tightly” in a package if the gift touches all four sides of the package. The figure below shows how a triangular gift
+might fit tightly in two packages of different sizes. For each gift, your program must compute the areas of the
+smallest and largest packages into which the gift can fit tightly.</p>
+
+<figure>
+  <img src="images/D-1.png" alt="">
+</figure>
+
+<h2>Input</h2>
+
+<p>The input contains several gift descriptions. Each description begins with a line containing an integer <i>n</i>
+(3 ≤ <i>n</i> ≤ 100), which is the number of vertices in the polygon that represents the gift. The following <i>n</i> lines contain
+pairs of integers that represent the coordinates of the polygon vertices, in clockwise order. Each polygon will have a
+non-zero area and will not intersect itself.</p>
+
+<p>The input is terminated by a line containing the integer 0.</p>
+
+<h2>Output</h2>
+
+<p>For each gift, first print the number of the gift. Then on separate lines, print the minimum and maximum areas of the
+packages into which the gift fits tightly, using the format in the sample output. Print a blank line after each test case.
+The computed areas should be exact to three digits to the right of the decimal point.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3
+-3  5
+7   9
+17  5
+4
+10 10
+10 20
+20 20
+20 10
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Gift 1
+Minimum area = 80.000
+Maximum area = 200.000
+
+Gift 2
+Minimum area = 100.000
+Maximum area = 200.000</pre>
+
+
+<footer>
+  The 2000 ACM Programming Contest World Finals sponsored by IBM · Problem D · Gifts Large and Small
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Net Loss — ICPC World Finals (2008)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2008 · Problem G</p>
+  <h1>Net Loss</h1>
+  <p class="meta">Input file: netloss.in</p>
+</header>
+
+<p>Rose N. Blatt is designing an embedded neural network to place inside a cell phone. When trained by the phone’s owner, the neural network will enable the user to dictate text messages in a hands-free way. The key idea in Rose’s design is the use of complicated polynomial response functions in each of the nodes of the network (rather than the more traditional thresholding functions used in many other neural nets). Figure 1 shows a portion of such a neural network (the polynomials are not accurately graphed).</p>
+
+<figure><img src="images/G-1.png" alt=""><figcaption>Figure 1</figcaption></figure>
+<p>When Rose was ready to select her polynomials, she discovered a problem. Due to the limited amount of memory available, she did not have enough space to store all of the coefficients of the polynomials in her network. She has decided to use an approximation to each polynomial in the form of a continuous polygonal curve with two segments, y = a1x + a0 and y = b1x + b0. The segments meet at a point whose x-coordinate, c, is between -1 and +1. Rose wants the approximation to be the best in the sense that the distance between p and the approximation function g is minimal. We define the distance between p and g as the integral of the square of their difference:</p>
+
+<p style="text-align:center">d(p, g) = ∫<sub>−1</sub><sup>1</sup> (p(x) − g(x))<sup>2</sup> dx</p>
+
+<p>For instance, if the polynomial is x<sup>2</sup> − 0.2, then the best polygonal approximation, with lines meeting at c = 0, is shown in Figure 2 (the dotted line shows the graph of the polygonal approximation).</p>
+
+<pre>g(x) = ⎧ -x - 0.367,  -1 ≤ x ≤ 0
+       ⎨
+       ⎩  x - 0.367,   0 ≤ x ≤ 1</pre>
+
+<figure><img src="images/G-2.png" alt=""><figcaption>Figure 2</figcaption></figure>
+<p>In the few bytes that are available for each node, Rose can store the values of a1, a0, b1, b0, and c as signed numbers. Fortunately Rose has a program that supplies her with a good guess for the value of c. Given this value, you are asked to help Rose find the optimal values for a1, a0, b1, and b0 in the approximations to her polynomials.</p>
+
+<h2>Input</h2>
+
+<p>The input file contains multiple test cases. Each test case consists of three lines. The first line contains a positive integer n, 1 ≤ n ≤ 10, representing the degree of the polynomial p(x). This is followed by a line containing n +1 numbers between -1 and 1 inclusive, which are the coefficients of p(x) from highest order term down to the constant term, expressed with at most three places after the decimal point. The last line for each test case contains the value for c, -1 &lt; c &lt; 1, expressed with at most three places after the decimal point.</p>
+
+<p>A line containing the integer zero follows the last test case.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, print the case number (beginning with 1) and the four optimal values, displaying each with exactly three places after the decimal point. The first and second values are the parameters a1 and a0 of the line segment y = a1x + a0 defining g in the range -1 ≤ x ≤ c. The third and fourth values are the parameters b1 and b0 of the line segment y = b1x + b0 defining g in the range c ≤ x ≤ 1. The distance d(p,g) between p and g (as defined earlier) should be the minimum over all such choices for a1, a0, b1, and b0.</p>
+
+
+<h3>Sample Input 1</h3>
+<pre>2
+1.0 0.0 -0.2
+0.0
+3
+1 0 -1 0
+0.707
+0</pre>
+<h3>Sample Output 1</h3>
+<pre>Case 1: -1.000 -0.367 1.000 -0.367
+Case 2: -0.499 -0.036 1.198 -1.236</pre>
+
+<footer>
+  ICPC World Finals 2008 — Problem G: Net Loss
+</footer>
+
+</body>
+</html>

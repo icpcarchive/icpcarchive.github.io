@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem J: Son of Pipe Stream (Solution) — ACM ICPC World Finals 2017</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2017</p>
+  <h1>Problem J: Son of Pipe Stream</h1>
+</header>
+
+<p>Shortest judge solution: 1649 bytes. Shortest team solution (during contest): 5492 bytes.</p>
+<p>Python solutions by the judges: only Pypy</p>
+
+<p>Even though the problem does its best to avoid using the word “flow”, it should be pretty clear that this is in fact a maximum flow problem, though it has a few twists to resolve. First, the viscosity parameter v is a red herring that is pretty much irrelevant to the problem and we will ignore it here.</p>
+
+<p>A first small observation is that the desired flow will be a maximum flow from the water and Flubber sources to the destination. Let Z be that total maximum flow. Assume for the moment that it was possible to distribute this arbitrarily between Flubber and water, so that it was possible to route any amount F of Flubber between 0 and Z and W = Z − F water. Then a bit of calculus (left as an exercise) shows that the maximum flow would pick F = a · Z.</p>
+
+<p>There are two different reasons why the assumption made above might not hold. One is a “trivial” one: the maximum amount of Flubber routable from Flubber source to destination might be less than a · Z, or the amount of water routable might be less than (1 − a) · Z. If this is the case, we should simply set the desired amount of Flubber F to value nearest to a · Z in the interval [Z − W<sub>max</sub>, F<sub>max</sub>]. Let us refer to the resulting potentially optimal values of F and W as F ∗ and W ∗ = Z − F ∗.</p>
+
+<p>The second reason is a bit more subtle – it is not clear whether it is the case that we can simultaneously achieve Flubber F ∗ and water W ∗. Let ~f<sub>1</sub> be a flow which routes F<sub>max</sub> Flubber and Z − F<sub>max</sub> water, and let ~f<sub>2</sub> be a flow which routes Z − W<sub>max</sub> Flubber and W<sub>max</sub> water. Then for α ∈ [0, 1], α ~f<sub>1</sub> + (1 − α) ~f<sub>2</sub> is a flow of fluids in which αF<sub>max</sub> + (1 − α)(Z − W<sub>max</sub>) of the fluid originates at the Flubber source, and we can set α appropriately to a constant so that this equals F ∗. However, there is a snag with this: there might be pipes where ~f<sub>1</sub> and ~f<sub>2</sub> route fluids in opposite directions, so it is not clear that we can achieve this flow while satisfying the “water and Flubber must not go in opposite directions” constraint. Phrased a bit more abstractly, the “no opposing flows” constraint is not a convex constraint.</p>
+
+<p>It turns out that this second reason is actually a non-reason – it is always possible to achieve Flubber F ∗ and water W ∗. But we now have to construct the actual Flubber and water flows. One way of doing that is to take the mixed flow ~f<sup>∗</sup> := α ~f<sub>1</sub> + (1 − α) ~f<sub>2</sub> from above. This tells us how much fluid we would like to send (and in which direction) along each pipe, but it doesn’t tell us how much of that fluid should be Flubber, and how much should be water. To figure that out, we make a new flow graph where we set the (directed) capacity of each edge to be the (directed) flow in ~f<sup>∗</sup> along that edge. We then compute the maximum flow from the Flubber source in the new graph. This gives the Flubber flow, and the unused capacity gives the water flow. An issue here is that the new graph has non-integer capacities, so one may have to be a bit careful when computing the maxflows.</p>
+</body>
+</html>

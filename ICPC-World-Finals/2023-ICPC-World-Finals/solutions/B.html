@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Schedule (Solution) — 47th ICPC World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+<header>
+  <p class="kicker">47th ICPC World Finals</p>
+  <h1>Problem B: Schedule</h1>
+</header>
+<p>Problem authors: The World Finals judges and Bob Roos<br>
+Solved by 7 teams.<br>
+First solved after 153 minutes.<br>
+Shortest team solution: 1059 bytes.<br>
+Shortest judge solution: 532 bytes.</p>
+<figure><img src="images/B-1.png" alt=""></figure>
+<p>Suppose we have some schedule with isolation k. Then during the first k weeks, every pair of individuals on different teams meet at least once, and if we repeat the schedule for these first k weeks indefinitely, we get a periodic schedule for arbitrarily many weeks with the same separation. This means that the problem is equivalent to finding the smallest k such that all people can meet at least once in k weeks. If k ≤ w then we take that schedule and repeat it to get a full schedule of w weeks, and if k > w then the answer is infinity.</p>
+<p>We can view a k-day schedule for one team as a binary string x of length k, with x<sub>i</sub> = 0 indicating that the first team member comes to work on day i, and x<sub>i</sub> = 1 indicating that the second team member comes to work on day i. Two binary strings x and y are compatible if for all four combinations c ∈ {00, 01, 10, 11} there is some i such that x<sub>i</sub>y<sub>i</sub> = c. A schedule for n teams is then a list of n binary strings that are pairwise compatible.</p>
+<p>We claim such a schedule exists if n ≤ (⌈k/2⌉)<sup>k−1</sup>. To see this, consider enumerating all binary strings of length k with a 0 in the first bit, followed by some binary string of length k − 1 with ⌈k/2⌉ ones. It is not hard to see that any pair of such strings are pairwise compatible: since they both have the same number of ones and are different strings, there must be some index where we see the combinations 01 and 10; since they both start with 0 there is an index where we see the combination 00; and since they both have more than (k − 1)/2 ones among the last k − 1 bits, there must be some index where we see the combination 11.</p>
+<p>We also claim that such a schedule cannot exist if n > (⌈k/2⌉)<sup>k−1</sup>. To see this, note first that without loss of generality we can assume that all strings in a schedule start with 0 (because if we flip 0 and 1 in a string, it remains compatible with the same strings). Also, since there must both be some i such that x<sub>i</sub>y<sub>i</sub> = 01 and some j such that x<sub>j</sub>y<sub>j</sub> = 10, any list of pairwise compatible schedules must be an antichain in the Boolean lattice, which by Sperner's Theorem implies that there can be at most <span style="white-space:nowrap">(
+<span style="display:inline-block;vertical-align:middle;text-align:center;line-height:1.15">
+<span style="display:block">k−1</span>
+<span style="display:block;border-top:1px solid #666;padding-top:1px">⌈(k−1)/2⌉</span>
+</span>)</span> such schedules. If k is even this matches the claimed bound. If on the other hand k is an odd number, this only gives a bound of <span style="white-space:nowrap">(
+<span style="display:inline-block;vertical-align:middle;text-align:center;line-height:1.15">
+<span style="display:block">k−1</span>
+<span style="display:block;border-top:1px solid #666;padding-top:1px">(k−1)/2</span>
+</span>)</span> whereas the claimed bound is <span style="white-space:nowrap">(
+<span style="display:inline-block;vertical-align:middle;text-align:center;line-height:1.15">
+<span style="display:block">k−1</span>
+<span style="display:block;border-top:1px solid #666;padding-top:1px">(k+1)/2</span>
+</span>)</span>. The last step here, the details of which we leave for the reader to fill in, is to improve the bound using the fact that if we pick some string x with exactly (k − 1)/2 ones, we cannot also pick the complement of x (by which we mean the string where we keep the first position 0 and flip the remaining k − 1 bits). Of course, figuring out the details of this is not necessary during the contest: coming up with the construction above, and confidently guessing that it is optimal, is sufficient to solve the problem.</p>
+<p>This leads to the following simple algorithm: given n, find the smallest k such that (⌈k/2⌉)<sup>k−1</sup> ≥ n, enumerate n different binary strings of length k with ⌈k/2⌉ ones (and starting with zeros), and use these as the schedule.</p>
+</body>
+</html>

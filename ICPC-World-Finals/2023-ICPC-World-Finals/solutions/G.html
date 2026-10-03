@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Turning Red (Solution) — 47th ICPC World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+<header>
+  <p class="kicker">47th ICPC World Finals</p>
+  <h1>Problem G: Turning Red</h1>
+</header>
+<p>Problem authors: Jakub Onufry Wojtaszczyk and Arnav Sastry<br>
+Solved by 117 teams.<br>
+First solved after 21 minutes.<br>
+Shortest team solution: 1733 bytes.<br>
+Shortest judge solution: 1341 bytes.</p>
+<figure><img src="images/G-1.png" alt=""></figure>
+<p>This was a relatively easy problem. Let us model the three colors as red = 0, green = 1, and blue = 2. Then the effect of pressing a button is that all the lights controlled by the button are incremented by 1 modulo 3.</p>
+<p>Let x<sub>i</sub> be the (unknown) number of times we press button i. Then the requirement that a light ℓ controlled by buttons i and j must turn red becomes the equation c<sub>ℓ</sub> + x<sub>i</sub> + x<sub>j</sub> = 0 (mod 3), where c<sub>ℓ</sub> denotes the initial color of this light. Note that if either x<sub>i</sub> or x<sub>j</sub> is known, then this equation lets us immediately calculate the value of the other one. This means that if we consider the implied graph where two buttons i and j are connected if they control the same light, then based on the value x<sub>i</sub> for one button we can propagate and calculate the values within the entire connected component of that button.</p>
+<p>This leads to the following linear-time algorithm: for each connected component of the graph, pick an arbitrary button i, try all 3 possible values x<sub>i</sub> = 0, 1, 2, and propagate the result. If an inconsistency is found (some equation is not satisfied), then this value of x<sub>i</sub> is invalid. Otherwise, check the total number of button presses (sum of x<sub>i</sub>'s in the component). If all 3 possible choices of x<sub>i</sub> are invalid then there is no solution, otherwise pick the one that leads to the smallest number of button presses within this component.</p>
+<p>In the problem there could also be some lights that were controlled by a single button, leading to an equation of the form c<sub>ℓ</sub> + x<sub>i</sub> = 0 (mod 3) which immediately determines x<sub>i</sub>. One could special-case the handling of these and propagate their values first, but it is probably less error-prone to simply include them in the inconsistency check in the above algorithm instead.</p>
+</body>
+</html>

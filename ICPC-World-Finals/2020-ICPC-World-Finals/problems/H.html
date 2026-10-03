@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: QC QC — ICPC World Finals 2020</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">ICPC World Finals 2020 · Problem H</p>
+  <h1>QC QC</h1>
+  <p class="meta">Time limit: 10 seconds</p>
+</header>
+
+<p>Innovative Computable Quality Control (ICQC) has developed a
+ground-breaking new machine for performing, well, quality control. Thanks to
+its novel Deep Intelligence technology, an ICQC quality control (QC) machine
+can automatically, with 100% accuracy, detect manufacturing errors in any
+machine in existence, whether it is a coffee machine, an intergalactic space
+ship, or a quantum computer.</p>
+
+<p>ICQC is now setting up its factory for producing these QC machines. Like any
+other manufacturing process, some fraction of the produced machines will suffer
+from malfunctions and these need to be found and discarded. Fortunately, ICQC
+has just the product for detecting malfunctioning machines! Obviously, ICQC
+should not simply use a QC machine on itself, since a malfunctioning machine
+might incorrectly classify itself as working correctly. Instead, ICQC will take
+each batch of <i>n</i> machines produced during a day and have them test each
+other overnight. In particular, during every hour of the night, each of the
+<i>n</i> QC machines can run a check on one of the other QC machines, and
+simultaneously be checked by one other QC machine.</p>
+
+<p>If the machine running the check is correct, it will correctly report
+whether the tested machine is correct or malfunctioning, but if the machine
+running the check is malfunctioning, it may report either result. If a machine
+A is used to test a machine B multiple times it will return the same result
+every time, even if machine A is malfunctioning. The exact testing schedule
+does not have to be fixed in advance, so the choice of which machines should
+check which other machines during the second hour of the night may be based on
+the result of the tests from the first hour, and so on.</p>
+
+<p>ICQC are 100% confident that strictly more than a half of the <i>n</i> QC
+machines in each batch are working correctly, but the night is only 12 hours
+long, so there is only time to do a small number of test rounds. Can you help
+ICQC determine which QC machines are malfunctioning?</p>
+
+<p>For example, consider Sample Interaction 1 below. After the fourth hour,
+every machine has tested every other machine. For machine 1, only one other
+machine claimed that it was malfunctioning, and if it was truly malfunctioning
+then at least 3 of the other machines would claim this.</p>
+
+<p>For machine 4, only one other machine claims that it is working, which
+implies that machine 2 must be malfunctioning since more than half of the
+machines are supposed to be working. Note that even though machine 4 is
+malfunctioning, it still happened to produce the correct responses in these
+specific test rounds.</p>
+
+<h2>Interaction</h2>
+
+<p>The first line of input contains a single integer <i>b</i> (1 &le;
+<i>b</i> &le; 500), the number of batches to follow. Each batch is independent.
+You should process each batch interactively, which means the input you receive
+will depend on the previous output of your program.</p>
+
+<p>The first line of input for each batch contains a single integer
+<i>n</i> (1 &le; <i>n</i> &le; 100), the number of QC machines in the batch.
+The interaction then proceeds in rounds. In each round, your program can
+schedule tests for the next hour, by writing a line of the form
+&ldquo;<i>test x</i><sub>1</sub> <i>x</i><sub>2</sub> &hellip;
+<i>x</i><sub><i>n</i></sub>&rdquo; indicating that each machine
+<i>i</i> should run a test on machine <i>x</i><sub><i>i</i></sub>. If
+<i>x</i><sub><i>i</i></sub> = 0, then machine <i>i</i> is idle in that round
+and performs no test. All positive numbers in the sequence must be distinct.</p>
+
+<p>After writing this line, there will be a result to read from the input. The
+result is one line containing a string of length <i>n</i>, having a
+&rsquo;1&rsquo; in position <i>i</i> if machine <i>i</i> says that machine
+<i>x</i><sub><i>i</i></sub> is working correctly, &rsquo;0&rsquo; if machine
+<i>i</i> says that machine <i>x</i><sub><i>i</i></sub> is malfunctioning, and
+&rsquo;-&rsquo; (dash) if machine <i>i</i> was idle in the round.</p>
+
+<p>When your program has determined which machines are malfunctioning, but no
+later than after 12 rounds of tests, it must write a line of the form
+&ldquo;<i>answer S</i>&rdquo; where <i>S</i> is a binary string of length
+<i>n</i>, having a &rsquo;1&rsquo; in position <i>i</i> if machine
+<i>i</i> is working correctly, and a &rsquo;0&rsquo; if it is malfunctioning.</p>
+
+<p>After writing the answer line, your program should start processing the next
+batch by reading its number <i>n</i>. When all <i>b</i> batches have been
+processed, the interaction ends and your program should exit.</p>
+
+<p>Notes on interactive judging:</p>
+
+<ul>
+  <li>The evaluation is non-adversarial, meaning that the result of each
+  machine testing each other machine is chosen in advance rather than in
+  response to your queries.</li>
+  <li>Do not forget to flush output buffers after writing. See the Addendum to
+  Judging Notes for details.</li>
+  <li>You are provided with a command-line tool for local testing, together
+  with input files corresponding to the sample interactions. The tool has
+  comments at the top to explain its use.</li>
+</ul>
+
+<h3>Sample Interaction 1</h3>
+<p><i>Read</i></p>
+<pre>1
+5
+11011
+00110
+01011
+10100</pre>
+<p><i>Write</i></p>
+<pre>test 5 4 2 1 3
+test 4 5 1 3 2
+test 2 3 4 5 1
+test 3 1 5 2 4
+answer 10101</pre>
+
+<h3>Sample Interaction 2</h3>
+<p><i>Read</i></p>
+<pre>2
+4
+1111
+7
+0001100
+----11-</pre>
+<p><i>Write</i></p>
+<pre>test 2 3 4 1
+answer 1111
+test 2 3 4 5 6 7 1
+test 0 0 0 0 2 4 0
+answer 0101110</pre>
+
+<footer>
+  ICPC World Finals 2020 Problem H: QC QC
+</footer>
+
+</body>
+</html>

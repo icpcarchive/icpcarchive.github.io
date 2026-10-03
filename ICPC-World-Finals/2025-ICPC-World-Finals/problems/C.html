@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem C: Bride of Pipe Stream — 49th ICPC World Championship (2025)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">49th ICPC World Championship · Problem C</p>
+  <h1>Bride of Pipe Stream</h1>
+  <p class="meta">Time limit: 12 seconds</p>
+</header>
+
+<p>The story continues! For several years now, your town has been gifted with an
+abundance of Flubber, the adorable-but-slightly-flammable-and-toxic-and-acidic-and-sentient-and-mischievous
+man-made chemical. The search continues for more (or, well, any) uses for the
+substance. But in the meantime, the Flubber factory continues to produce it at
+full capacity. Efforts to shut it down have failed, partly because nobody is sure
+who is actually running the factory.</p>
+
+<p>You&rsquo;ve been tasked with storing the perpetually-flowing Flubber in various
+Flubber reservoirs for future use (or, at least, to get it out of everyone&rsquo;s
+hair &ndash; literally). To accomplish this, you have access to a complicated
+network of Flubber ducts, connecting up various Flubber stations and reservoirs.</p>
+
+<p>Every Flubber station has one or more Flubber ducts leading from it, and has
+various gates that may be raised or lowered so that incoming Flubber will drain
+into the output Flubber ducts in any desired proportion. For instance, you can
+send all the Flubber down one duct, or split it between two ducts 25&ndash;75, etc.</p>
+
+<p>In contrast, a Flubber duct flows down to one or more lower stations or
+reservoirs, but the Flubber drains into them in a fixed proportion that you do
+not control. It is possible that some of the Flubber is lost to the environment
+as well, but that is a problem for your successor, not you.</p>
+
+<p>You would like to fill all the reservoirs as quickly as possible. That is, you
+want to maximize the minimum amount of Flubber flowing into any of the
+reservoirs, among all possible configurations of station drainage.</p>
+
+<p>Figure C.1 illustrates the two sample inputs. Stations and reservoirs are
+shown as numbered nodes, colored green for stations and blue for reservoirs.
+Ducts are depicted as white nodes. For example, in the first sample input
+(left), Flubber can be sent from station 1 in any proportion to its two
+downstream ducts, but each duct will distribute its inflow according to the
+percentages printed on its outgoing edges.</p>
+
+<figure>
+  <img src="images/C-1.png" alt="">
+  <figcaption>Figure C.1: Illustrations of the two sample inputs.</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>The first line of input contains three integers <i>s</i>, <i>r</i>, and
+<i>d</i>, where <i>s</i> (1 &le; <i>s</i> &le; 10&thinsp;000) is the number of
+stations, <i>r</i> (1 &le; <i>r</i> &le; 3) is the number of reservoirs, and
+<i>d</i> (<i>s</i> &le; <i>d</i> &le; 20&thinsp;000) is the number of ducts. The
+stations are numbered from 1 to <i>s</i> and the reservoirs are numbered from
+<i>s</i> + 1 to <i>s</i> + <i>r</i>, in decreasing order of altitude. The
+factory&rsquo;s Flubber initially flows into station 1.</p>
+
+<p>Each of the remaining <i>d</i> lines starts with two integers <i>i</i> and
+<i>n</i>, where <i>i</i> (1 &le; <i>i</i> &le; <i>s</i>) is the station that can
+drain into this duct, and <i>n</i> (1 &le; <i>n</i> &le; 10) is the number of
+outputs of this duct. The remainder of the line contains <i>n</i> pairs of
+integers <i>o</i> and <i>p</i>, where <i>o</i> (<i>i</i> &lt; <i>o</i> &le;
+<i>s</i> + <i>r</i>) is a station or reservoir to which this duct drains, and
+<i>p</i> (1 &le; <i>p</i> &le; 100) is the percentage of the Flubber entering
+the duct that will drain to <i>o</i>. The <i>o</i> values for a given duct are
+distinct. Every station has at least one duct that it can drain into. The
+percentages for a given duct&rsquo;s outputs will sum to at most 100.</p>
+
+<h2>Output</h2>
+
+<p>Output a single percentage <i>f</i>, which is the highest possible percentage
+such that, for some configuration of station drainage, all reservoirs receive at
+least <i>f</i> % of the factory&rsquo;s produced Flubber. Your answer should have
+an absolute error of at most 10<sup>&minus;6</sup>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>2 3 3
+1 2 3 80 4 10
+1 2 2 40 4 30
+2 1 5 100</pre>
+
+<h3>Sample Output 1</h3>
+<pre>24.0</pre>
+
+<h3>Sample Input 2</h3>
+<pre>1 2 3
+1 1 2 50
+1 1 3 50
+1 2 2 40 3 60</pre>
+
+<h3>Sample Output 2</h3>
+<pre>42.8571428571</pre>
+
+<footer>
+  49th ICPC World Championship Problem C: Bride of Pipe Stream &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

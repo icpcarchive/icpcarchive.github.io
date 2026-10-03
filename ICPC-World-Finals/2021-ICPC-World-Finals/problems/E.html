@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem E: Hand of the Free Marked — ICPC World Finals 2021</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2021 · Problem E</p>
+  <h1>Hand of the Free Marked</h1>
+  <p class="meta">Time limit: 2 seconds</p>
+</header>
+
+<p>There is a fairly well-known mentalism trick known as the Fitch Cheney
+trick. From a deck of <i>n</i> playing cards, <i>k</i> are selected uniformly at
+random and given to an assistant while the magician is out of the room. The
+assistant places <i>k</i> &minus; 1 of the selected cards on a table, face up,
+and the single remaining card face down. The cards are placed in a single row
+with the face-down card at the end (see the picture for an example). The
+magician enters the room, looks at the cards on the table, and announces what
+the <i>k</i><sup>th</sup> card is, although its face is hidden. The trick is
+typically done with <i>n</i> = 52 and <i>k</i> = 5.</p>
+
+<figure class="hero">
+  <img src="images/E-1.png" alt="">
+  <figcaption>Example placement of cards for k = 5</figcaption>
+</figure>
+
+<p>The assistant uses two ways of passing information to the magician. First,
+they can pick which one of the <i>k</i> cards to keep hidden. Second, they can
+rearrange the other <i>k</i> &minus; 1 cards in a specific way. For the case
+<i>n</i> = 52 and <i>k</i> = 5 both techniques are needed, since there are only
+24 ways of rearranging four cards, which is not enough to reliably signal the
+fifth card. It is an interesting exercise to come up with a simple,
+easy-to-remember strategy for executing this trick, but right now you have
+another concern.</p>
+
+<p>You were planning to perform this trick today, but just now you have learned
+that the deck has more cards than you expected. The trick may be impossible! In
+desperation, you have decided to cheat a little. You have <i>m</i>
+distinguishable ways of marking the backs of the playing cards. You have marked
+the backs of all <i>n</i> cards, allowing you to narrow down the possibilities
+for the <i>k</i><sup>th</sup> card. For example, if there are 6 cards marked
+with a particular method, and you see that the back of the
+<i>k</i><sup>th</sup> card is marked with that method, you know it must be one
+of those 6 cards.</p>
+
+<p>Determine the probability that you will successfully guess the
+<i>k</i><sup>th</sup> card, assuming you and the assistant execute an optimal
+(but likely very complicated!) strategy.</p>
+
+<h2>Input</h2>
+
+<p>The input contains one line with several integers. The first integer gives
+<i>k</i> (2 &le; <i>k</i> &le; 10), the number of cards that will be selected.
+The second integer gives <i>m</i> (1 &le; <i>m</i> &le; 10), the number of ways
+of marking the cards. The line is completed by <i>m</i> positive integers,
+giving the number of cards marked with each distinct method. The sum of these
+<i>m</i> integers is <i>n</i> (<i>k</i> &le; <i>n</i> &le; 10<sup>9</sup>),
+which is the size of the deck.</p>
+
+<h2>Output</h2>
+
+<p>Output the highest possible probability of guessing the
+<i>k</i><sup>th</sup> card correctly, accurate up to an absolute error of
+10<sup>&minus;9</sup>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>4 1 28</pre>
+
+<h3>Sample Output 1</h3>
+<pre>0.96</pre>
+
+<h3>Sample Input 2</h3>
+<pre>3 3 5 12 3</pre>
+
+<h3>Sample Output 2</h3>
+<pre>0.854385964912</pre>
+
+<footer>
+  ICPC World Finals 2021 Problem E: Hand of the Free Marked &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Go with the Flow — ACM-ICPC World Finals 2018</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2018 · Problem F</p>
+  <h1>Go with the Flow</h1>
+  <p class="meta">Time limit: 12 seconds</p>
+</header>
+
+<p>In typesetting, a “river” is a string of spaces formed by gaps between words
+that extends down several lines of text. For instance, Figure F.1 shows several
+examples of rivers highlighted in red (text is intentionally blurred to make the
+rivers more visible).</p>
+
+<figure>
+  <img src="images/F-1.png" alt="">
+  <figcaption>Figure F.1: Examples of rivers in typeset text.</figcaption>
+</figure>
+
+<p>Celebrated river authority Flo Ng wants her new book on rivers of the world to
+include the longest typographic rivers possible. She plans to set the text in a
+mono-spaced font (all letters and spaces have equal width) in a left-aligned
+column of some fixed width, with exactly one space separating words on each line
+(the text is not aligned on the right). For Flo, a “river” is defined as a
+sequence of spaces lying in consecutive lines in which the position of each space
+in the sequence (except the first) differs by at most 1 from the position of the
+space in the line above it. Trailing white space cannot appear in a river. Words
+must be packed as tightly as possible on lines; no words may be split across
+lines. The line width used must be at least as long as the longest word in the
+text. For instance, Figure F.2 shows the same text set with two different line
+widths.</p>
+
+<figure>
+  <img src="images/F-2.png" alt="">
+  <figcaption>Figure F.2: Longest rivers (*) for two different line widths.</figcaption>
+</figure>
+
+<p>Given a text, you have been tasked with determining the line width that
+produces the longest river of spaces for that text.</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains an integer <i>n</i> (2 &le; <i>n</i> &le;
+2 500) specifying the number of words in the text. The following lines of input
+contain the words of text. Each word consists only of lowercase and uppercase
+letters, and words on the same line are separated by a single space. No word
+exceeds 80 characters.</p>
+
+<h2>Output</h2>
+
+<p>Display the line width for which the input text contains the longest possible
+river, followed by the length of the longest river. If more than one line width
+yields this maximum, display the shortest such line width.</p>
+
+<h3>Sample Input <i>1</i></h3>
+<pre>21
+The Yangtze is the third longest
+river in Asia and the longest in
+the world to flow
+entirely in one country</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>15 5</pre>
+
+
+<h3>Sample Input <i>2</i></h3>
+<pre>25
+When two or more rivers meet at
+a confluence other than the sea
+the resulting merged river takes
+the name of one of those rivers</pre>
+
+<h3>Sample Output <i>2</i></h3>
+<pre>21 6</pre>
+
+
+
+<footer>
+  ACM-ICPC World Finals 2018 Problem F: Go with the Flow
+</footer>
+
+</body>
+</html>

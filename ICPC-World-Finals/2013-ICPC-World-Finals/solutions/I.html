@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem I: Pirate Chest (Solution) — ACM ICPC World Finals 2013</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2013</p>
+  <h1>Problem I: Pirate Chest</h1>
+</header>
+
+<p style="text-align: center"><strong><em>Writeup by Onufry</em></strong></p>
+<p>Shortest judge solution: 1443 bytes. Shortest team solution (during contest): 1224 bytes.</p>
+
+<p>This proved to be one of the tougher problems in the competition. The most naive solution to this problem would take Ω(n<sup>6</sup> ) time. With very little effort, this can be improved to a Θ(n<sup>4</sup> ) solution, but this is still too slow. Fortunately, yet another factor of n can be shaved off in the running time.</p>
+
+<p>It is instructive to first consider a 1-dimensional variant of the problem. Given an array x<sub>0</sub> , . . . , x<sub>n−1</sub> , and a subsequence [ j, k) of it (that is, x<sub>j</sub> , . . . , x<sub>k−1</sub> ), we are interested in the values V (k, j) := (k − j) · min<sub>j≤i&lt;k</sub> x<sub>i</sub> . In particular, we are interested in sequences that maximize this value.</p>
+
+<p>Consider a subsequence [k, j), assume that x<sub>i</sub> is the minimal value of the elements of this subsequence. If V (k, j) is a candidate to be the largest value, this means x<sub>k−1</sub> &lt; x<sub>i</sub> and x<sub>j</sub> &lt; x<sub>i</sub> — otherwise we could extend the interval to get a higher V value. So now, for each i, we will calculate the longest subsequence that has its minimum at x<sub>i</sub> .</p>
+
+<p>To do this, we will do a single run through the x<sub>i</sub> sequence and a use stack. We will go through the sequence, and for each element x<sub>i</sub> we will first pop all elements that are larger or equal to it from the stack, and then push x<sub>i</sub> onto the stack. This way, the elements on the stack will always be in increasing order (since we never add an element that’s smaller or equal to the one before it). When we pop an element x<sub>i</sub> from the stack, we can actually calculate the longest segment with the minimum at x<sub>i</sub> . Since we’re popping x<sub>i</sub> , the element we’re inserting (call it x<sub>k</sub> ) is necessarily smaller than x<sub>i</sub> ; and since we didn’t pop it so far, x<sub>k</sub> is the first element smaller than x<sub>i</sub> . Similarly, the element directly preceding x<sub>i</sub> in the stack (call it x<sub>j</sub> ) has to be the last element smaller than x<sub>i</sub> — if there was something between them, it wouldn’t have been popped. Thus, when we pop x<sub>i</sub> from the stack, we can add x<sub>i</sub> · (k − j − 1) as a candidate for the largest V (k, j) value. Thus, in O(n) time, we can get all candidate values for the largest V (k, j).</p>
+
+<p>Now to solving the full problem. For a fixed column c, and each 1 ≤ r, t ≤ m, we can calculate min<sub>r≤s&lt;t</sub> x<sub>c,s</sub> in O(m<sup>2</sup> ) time, in a number of ways (like DP, incrementally increasing interval length). Let’s do it for all columns, in O(m<sup>2</sup> n).</p>
+
+<p>Now, fix the vertical dimension of the chest d, and fix the top row z in which the chest begins. Then we are interested in the highest value of d · (k − j) · min<sub>z≤s&lt;z+d</sub> min<sub>j≤i&lt;k</sub> x<sub>i,s</sub> . We have already precalculated what the lowest value of x<sub>i,s</sub> is for any fixed i over z ≤ s &lt; z + d, let’s call it m(i ) (it depends on z and d as well, but we’re treating these as fixed). So, we’re interested in d · (k − j) · min<sub>z≤s&lt;z+d</sub> m(i ) — but this is exactly the one-dimensional problem we know how to solve in linear time! Thus, we solve it for all z and d values, and obtain an O(mn max(m, n)) algorithm for the whole problem.</p>
+</body>
+</html>

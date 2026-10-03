@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem L: Where Am I Now? — 48th ICPC World Championship (2024)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">48th ICPC World Championship · Problem L</p>
+  <h1>Where Am I Now?</h1>
+  <p class="meta">Time limit: 5 seconds</p>
+</header>
+
+<p>Who am I? What am I? Why am I? These are all difficult questions that have
+kept philosophers reliably busy over the past millennia. But when it comes to
+“Where am I?”, then, well, modern smartphones and GPS satellites have pretty much
+taken the excitement out of that question.</p>
+
+<p>But what if you have no GPS at hand? In one of the World Finals 2021 problems,
+the Instant Cartographic Positioning Company (ICPC) demonstrated a way to
+determine your current location using spiral movements and observing your
+surroundings. Unfortunately, their method can only be used in open areas where
+you can move freely without any obstacles. What if you need to locate your exact
+position in a closed space? How can you do it? Well, now is the time to find
+out.</p>
+
+<p>You are given a map of an area consisting of unit squares, where each square
+is either open or occupied by a wall. At the beginning, you are placed in one of
+the open unit squares, but you do not know which square it is or what direction
+you face. Any two individual open spaces are indistinguishable, and likewise for
+walls. You may walk around the area, at each step observing the distance to the
+next wall in the direction you face. The goal is to determine your exact
+position on the map.</p>
+
+<h2>Interaction</h2>
+
+<p>The first line of input contains two integers <i>r</i> and <i>c</i>
+(1 &le; <i>r</i>, <i>c</i> &le; 100) specifying the size of the map. This is
+followed by <i>r</i> lines, each containing <i>c</i> characters. Each of these
+characters is either a dot (.) denoting an open square, or a number sign (#)
+denoting a square occupied by a wall.</p>
+
+<p>At least one of the squares is open. You know you start in one of the open
+squares on the map, facing one of the four cardinal directions, but your
+position and direction is not given in the input. All squares outside the map
+area are considered walls.</p>
+
+<p>Interaction then proceeds in rounds. In each round, one line becomes
+available, containing a single integer <i>d</i> (0 &le; <i>d</i> &le; 99)
+indicating that you see a wall in front of you at distance <i>d</i>. This means
+there are exactly <i>d</i> open squares between your square and the closest wall
+in the current direction. You should then output a line containing one of the
+following:</p>
+
+<ul>
+  <li><b>left</b> to turn 90 degrees to the left,</li>
+  <li><b>right</b> to turn 90 degrees to the right,</li>
+  <li><b>step</b> to move one square forward in your current direction,</li>
+  <li><b>yes</b> <i>i</i> <i>j</i> to claim that your current position is row <i>i</i>, column <i>j</i> (1 &le; <i>i</i> &le; <i>r</i>, 1 &le; <i>j</i> &le; <i>c</i>),</li>
+  <li><b>no</b> to claim that no matter what you do, it will not be possible to reliably determine your position.</li>
+</ul>
+
+<p>If you output <b>yes</b> or <b>no</b>, interaction stops and your program
+should terminate. Otherwise, a new interaction round begins. In order to be
+accepted, your solution must never step into a wall, and can run for at most
+100 000 interaction rounds (the final round where you only report <b>yes</b> or
+<b>no</b> counts towards this limit).</p>
+
+<h3>Sample Interaction 1</h3>
+<p><i>Read</i></p>
+<pre>3 3
+##.
+#..
+...
+1
+1
+0
+0
+0
+1</pre>
+<p><i>Write</i></p>
+<pre>right
+step
+left
+right
+right
+yes 2 2</pre>
+
+<h3>Sample Interaction 2</h3>
+<p><i>Read</i></p>
+<pre>3 5
+##.##
+###.#
+.#.##
+0
+0</pre>
+<p><i>Write</i></p>
+<pre>left
+no</pre>
+
+<h3>Sample Interaction 3</h3>
+<p><i>Read</i></p>
+<pre>2 1
+#
+.
+0</pre>
+<p><i>Write</i></p>
+<pre>yes 2 1</pre>
+
+<footer>
+  48th ICPC World Championship Problem L: Where Am I Now? &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

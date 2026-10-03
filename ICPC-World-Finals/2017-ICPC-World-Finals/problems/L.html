@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem L: Visual Python++ — ACM-ICPC World Finals 2017</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2017 · Problem L</p>
+  <h1>Visual Python++</h1>
+  <p class="meta">Time limit: 5 seconds</p>
+</header>
+
+<p>In the recently proposed Visual Python++ programming language, a block of
+statements is represented as a rectangle of characters with top-left corner in
+row <i>r</i><sub>1</sub> and column <i>c</i><sub>1</sub>, and bottom-right
+corner in row <i>r</i><sub>2</sub> and column <i>c</i><sub>2</sub>. All
+characters at locations (<i>r</i>, <i>c</i>) with <i>r</i><sub>1</sub>
+&le; <i>r</i> &le; <i>r</i><sub>2</sub> and <i>c</i><sub>1</sub> &le; <i>c</i>
+&le; <i>c</i><sub>2</sub> are then considered to belong to that block. Among
+these locations, the ones with <i>r</i> = <i>r</i><sub>1</sub> or
+<i>r</i> = <i>r</i><sub>2</sub> or <i>c</i> = <i>c</i><sub>1</sub> or
+<i>c</i> = <i>c</i><sub>2</sub> are called a border.</p>
+
+<p>Statement blocks can be nested (rectangles contained in other rectangles) to
+an arbitrary level. In a syntactically correct program, every two statement
+blocks are either nested (one contained in the other) or disjoint (not
+overlapping). In both cases, their borders may not overlap.</p>
+
+<p>Programmers are not expected to draw the many rectangles contained in a
+typical program – this takes too long, and Visual Python++ would not have a
+chance to become the next ICPC programming language. So a programmer only has to
+put one character &lsquo;p&rsquo; in the top-left corner of the rectangle and one
+character &lsquo;y&rsquo; in the bottom-right corner. The parser will
+automatically match up the appropriate corners to obtain the nesting structure
+of the program.</p>
+
+<p>Your team has just been awarded a five-hour contract to develop this part of
+the parser.</p>
+
+<h2>Input</h2>
+
+<p>The first line of the input contains an integer <i>n</i> (1 &le;
+<i>n</i> &le; 10<sup>5</sup>), the number of corner pairs. Each of the next
+<i>n</i> lines contains two integers <i>r</i> and <i>c</i> (1 &le; <i>r</i>,
+<i>c</i> &le; 10<sup>9</sup>), specifying that there is a top-left corner in row
+<i>r</i> and column <i>c</i> of the program you are parsing. Following that are
+<i>n</i> lines specifying the bottom-right corners in the same way. All corner
+locations are distinct.</p>
+
+<h2>Output</h2>
+
+<p>Display <i>n</i> lines, each containing one integer. A number <i>j</i> in
+line <i>i</i> means that the <i>i</i>th top-left corner and the <i>j</i>th
+bottom-right corner form one rectangle. Top-left and bottom-right corners are
+each numbered from 1 to <i>n</i> in the order they appear in the input. The
+output must be a permutation of the numbers from 1 to <i>n</i> such that the
+matching results in properly nested rectangles. If there is more than one valid
+matching, any one will be accepted. If no such matching exists, display
+<i>syntax error</i>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>2
+4 7
+9 8
+14 17
+19 18</pre>
+
+<h3>Sample Output 1</h3>
+<pre>2
+1</pre>
+
+<h3>Sample Input 2</h3>
+<pre>2
+4 7
+14 17
+9 8
+19 18</pre>
+
+<h3>Sample Output 2</h3>
+<pre>1
+2</pre>
+
+<h3>Sample Input 3</h3>
+<pre>2
+4 8
+9 7
+14 18
+19 17</pre>
+
+<h3>Sample Output 3</h3>
+<pre>syntax error</pre>
+
+<h3>Sample Input 4</h3>
+<pre>3
+1 1
+4 8
+8 4
+10 6
+6 10
+10 10</pre>
+
+<h3>Sample Output 4</h3>
+<pre>syntax error</pre>
+
+<footer>
+  ACM-ICPC World Finals 2017 Problem L: Visual Python++
+</footer>
+
+</body>
+</html>

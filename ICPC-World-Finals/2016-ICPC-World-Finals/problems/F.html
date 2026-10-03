@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Longest Rivers — ACM-ICPC World Finals (2016)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2016 &middot; Problem F</p>
+  <h1>Longest Rivers</h1>
+  <p class="meta">Time limit: 10 seconds</p>
+</header>
+
+<p>The Chao Phraya River System is the main river system of Thailand. Its six longest rivers listed by decreasing length are:</p>
+
+<ol>
+<li>Tha Chin (765 km)</li>
+<li>Nan (740 km)</li>
+<li>Yom (700 km)</li>
+<li>Ping (658 km)</li>
+<li>Pa Sak (513 km)</li>
+<li>Wang (335 km)</li>
+</ol>
+
+<figure class="hero">
+  <img src="images/F-1.png" alt="">
+  <figcaption>The Chao Phraya River System. Picture from Wikimedia Commons.</figcaption>
+</figure>
+
+<p>A simplified model of this river system is shown in Figure F.1, where the smaller red numbers indicate the lengths of various sections of each river. The point where two or more rivers meet as they flow downstream is called a confluence. Confluences are labeled with the larger black numbers. In this model, each river either ends at a confluence or flows into the sea, which is labeled with the special confluence number 0. When two or more rivers meet at a confluence (other than confluence 0), the resulting merged river takes the name of one of those rivers. For example, the Ping and the Wang meet at confluence 1 with the resulting merged river retaining the name Ping. With this naming, the Ping has length 658 km while the Wang is only 335 km. If instead the merged river had been named Wang, then the length of the Wang would be 688 km while the length of the Ping would be only 305 km.</p>
+
+<figure>
+  <img src="images/F-2.png" alt="">
+  <figcaption>Figure F.1: The river system in Sample Input 1. Same-colored edges indicate a river.</figcaption>
+</figure>
+
+<p>The raised awareness of this phenomenon causes bitter rivalries among the towns along the rivers. For example, the townspeople along the Wang protest that maybe with a proper naming scheme, their river could actually be the longest, or maybe the second longest (or at least not last!). To end all the guessing, your task is to validate all such claims.</p>
+
+<p>The rank of a river is its position in a list of all rivers ordered by decreasing length, where the best rank is 1 for the longest river. For each river, determine its best possible rank over all naming schemes. At any confluence, the name of a new, larger river in any naming scheme must be one of the names of the smaller rivers which join at that confluence. If two or more rivers have equal lengths in a naming scheme, all the tied rivers are considered to have the best possible ranking. For example, if one river is the longest and all other rivers are equal, those rivers all have rank 2.</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains two integers <i>n</i> (1 &le; <i>n</i> &le; 500 000), which is the number of river sources in the system, and <i>m</i> (0 &le; <i>m</i> &le; <i>n</i> &minus; 1), which is the number of confluences with positive labels. These confluences are numbered from 1 to <i>m</i>.</p>
+
+<p>The next <i>n</i> lines describe the rivers. Each of these lines consists of a string, which is the name of the river at the source, and two integers <i>c</i> (0 &le; <i>c</i> &le; <i>m</i>) and <i>d</i> (1 &le; <i>d</i> &le; 10<sup>9</sup>), where <i>c</i> is the identifier of the nearest confluence downstream, and <i>d</i> is the distance from the source to that confluence in kilometers. River names use only lowercase and uppercase letters a&ndash;z, and consist of between 1 and 10 characters, inclusive.</p>
+
+<p>The final <i>m</i> lines describe confluences 1 to <i>m</i> in a similar fashion. The <i>k</i><sup>th</sup> of these lines describes the confluence with identifier <i>k</i> and contains two integers: the identifier of the nearest confluence downstream and the distance from confluence <i>k</i> to this confluence in kilometers.</p>
+
+<p>It is guaranteed that each confluence 1 through <i>m</i> appears as &ldquo;the nearest downstream&rdquo; at least twice, confluence 0 appears at least once, and all sources are connected to confluence 0.</p>
+
+<h2>Output</h2>
+
+<p>Display one river per line in the same order as in the input. On that line, display the name of the river and its best possible rank.</p>
+
+<h3>Sample Input 1</h3>
+<pre>6 2
+PaSak 0 513
+Nan 2 675
+Yom 2 700
+Wang 1 335
+Ping 1 305
+ThaChin 0 765
+0 353
+0 65</pre>
+
+<h3>Sample Output 1</h3>
+<pre>PaSak 5
+Nan 2
+Yom 1
+Wang 3
+Ping 4
+ThaChin 1</pre>
+
+<footer>
+  ACM-ICPC World Finals 2016 Problem F: Longest Rivers &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

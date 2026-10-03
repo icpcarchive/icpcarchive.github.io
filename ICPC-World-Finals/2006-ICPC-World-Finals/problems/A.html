@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem A: Low Cost Air Travel — The 30th Annual ACM International Collegiate Programming Contest World Finals (2006)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The 30th Annual ACM International Collegiate Programming Contest World Finals · Problem A</p>
+  <h1>Low Cost Air Travel</h1>
+  <p class="meta">Input file: air.in</p>
+</header>
+
+<p>Air fares are crazy! The cost of a ticket is determined by numerous factors, and is usually not directly related to the distance traveled. Many travelers try to be creative, sometimes using only parts of tickets with stops in various cities to achieve lower-cost travel. However, the airlines are aware of this behavior, and usually require that the travel covered by a ticket be completed in order and without intervening travel. For example, if you have a ticket for travel from City-1 to City-2 then to City-3, you are not allowed to use only the portion of the ticket for travel from City-2 to City-3. You must always start at the first city on the ticket. In addition, you are not allowed to travel from City-1 to City-2, fly elsewhere and return, and then continue your journey from City-2 to City-3.</p>
+
+<p>Let&rsquo;s consider an example. Suppose you are allowed to purchase three types of tickets:</p>
+
+<pre>Ticket #1:        City-1 to City-3 to City-4          $225.00
+Ticket #2:        City-1 to City-2                    $200.00
+Ticket #3:        City-2 to City-3                    $50.00</pre>
+
+<p>Suppose you wanted to travel from City-1 to City-3. There are two ways to get there using only the available ticket choices:</p>
+
+<p>Purchase Ticket #1 for $225.00 and use only the first leg of the ticket.</p>
+
+<p>Purchase Ticket #2 for $200.00 and Ticket #3 for $50.</p>
+
+<p>The first choice is the cheapest.</p>
+
+<p>Given a set of airline ticket offers, and one or more trip itineraries, you must determine how to purchase tickets in order to minimize the cost of travel. Each trip will be possible.</p>
+
+<h2>Input</h2>
+
+<p>Input consists of multiple test cases, each describing a set of ticket offers and a set of trip itineraries.</p>
+
+<p>Each case begins with a line containing <i>NT</i>, the number of ticket offers, followed by <i>NT</i> offer descriptions, one to a line. Each description consists of a positive integer specifying the price of the ticket, the number of cities in the ticket&rsquo;s route, and then that many cities. Each city in a case has an arbitrary, but unique, integer identification number. Note that several tickets may be purchased from the same offer.</p>
+
+<p>The next line contains <i>NI</i>, the number of trips that are to have their cost minimized. <i>NI</i> lines follow, giving the itineraries for each trip. Each line consists of the number of cities in the itinerary (including the starting city), followed by that many city identification numbers, given in the order they are to be visited.</p>
+
+<p>There will be no more than 20 ticket offers or 20 itineraries in a test case. Each offer and itinerary lists from 2 to 10 cities. No ticket price exceeds $10,000. Adjacent cities in a route or itinerary will be distinct. Tickets and trips are numbered sequentially in each set, starting with 1.</p>
+
+<p>The last case is followed by a line containing a zero.</p>
+
+<h2>Output</h2>
+
+<p>For each trip, output two lines containing the case number, the trip number, the minimum cost of the trip, and the numbers of the tickets used for the trip, in the order they will be used. Follow the output format shown below. The output will always be unique.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3
+225 3 1 3 4
+200 2 1 2
+50 2 2 3
+1
+2 1 3
+3
+100 2 2 4
+100 3 1 4 3
+200 3 1 2 3
+2
+3 1 4 3
+3 1 2 4
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1, Trip 1: Cost = 225
+  Tickets used: 1
+Case 2, Trip 1: Cost = 100
+  Tickets used: 2
+Case 2, Trip 2: Cost = 300
+  Tickets used: 3 1</pre>
+
+<footer>
+  The 30th Annual ACM International Collegiate Programming Contest World Finals &middot; Problem A &middot; Low Cost Air Travel
+</footer>
+
+</body>
+</html>

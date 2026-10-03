@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem Z: Archaeological Recovery — 46th ICPC World Championship (2022)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">46th ICPC World Championship · Problem Z</p>
+  <h1>Archaeological Recovery</h1>
+  <p class="meta">Time limit: 1 second</p>
+</header>
+
+<p>Renowned professor of Egyptology Z Mummer is exploring a newly discovered
+tomb in Luxor where she finds a mysterious construction. On a wall, there is a
+row of <i>k</i> pyramid-shaped stone slabs. Each stone features three
+hieroglyphs: an ankh (top), an eye of Horus (bottom left), and an ibis (bottom
+right). Next to the wall there are <i>n</i> levers. Cautiously experimenting
+with these, wary of potential traps, the professor realizes that each lever
+rotates some of the pyramids clockwise or counter-clockwise so that another
+hieroglyph is pointing upwards on them. Flipping back a lever rotates the same
+pyramids in the opposite direction back to their original position. The levers
+operate completely independently of each other, so flipping or unflipping a
+lever has the same effect regardless of what states the other levers are in.
+See Figure Z.1 for an illustration.</p>
+
+<figure>
+  <img src="images/Z-1.png" alt="">
+  <figcaption>Figure Z.1: Illustration of a wall with k = 3 pyramids and n = 2 levers. The first lever rotates the first pyramid clockwise, the second pyramid counterclockwise, and leaves the third pyramid unchanged. The second lever rotates all three pyramids clockwise. This corresponds to Sample Input 1.</figcaption>
+</figure>
+
+<p>Intrigued, Professor Mummer records the individual effect of each lever.
+Back at her university after the expedition, she assigns one of her students
+the laborious task of figuring out all 2<sup>n</sup> possible pyramid
+configurations (some of which may be identical) that can be achieved by
+flipping some subset of the levers, so that these can be studied further.</p>
+
+<p>After many nights of careful calculations, the student is finally done and
+starts gathering his papers. But then disaster strikes: he accidentally spills
+some ink and completely destroys the professor&rsquo;s original notes, which
+contained the only record of the individual effects of each lever.</p>
+
+<p>The only chance to escape Professor Mummer&rsquo;s wrath is to reconstruct
+the original notes from the list of possible pyramid configurations. This
+cannot be done completely unambiguously (for example, there is no way of
+distinguishing between different orderings of the same set of levers). But as
+long as the levers still result in the calculated list of pyramid
+configurations, this error is unlikely to be noticed (at least not until after
+the student has graduated).</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains three integers <i>n</i>, <i>k</i> and
+<i>t</i>, where <i>n</i> (1 &le; <i>n</i> &le; 40) and <i>k</i> (1 &le;
+<i>k</i> &le; 5) are the number of levers and pyramids, respectively, and
+<i>t</i> (1 &le; <i>t</i> &le; 3<sup>k</sup>) is the number of different
+pyramid configurations. Then follow <i>t</i> lines describing the distinct
+possible pyramid configurations. Each such line consists of a string of length
+<i>k</i> describing the configuration and an integer <i>f</i> (1 &le;
+<i>f</i> &le; 2<sup>n</sup>) indicating the number of different lever settings
+which result in this configuration. The configuration is described using the
+letters &lsquo;A&rsquo;, &lsquo;E&rsquo;, and &lsquo;I&rsquo;. The
+<i>j</i><sup>th</sup> character indicates the hieroglyph facing upwards on the
+<i>j</i><sup>th</sup> pyramid: &lsquo;A&rsquo; for ankh, &lsquo;E&rsquo; for
+eye of Horus, and &lsquo;I&rsquo; for ibis.</p>
+
+<p>The <i>t</i> configurations given are pairwise distinct, the sum of
+<i>f</i>-values over all <i>t</i> lines equals 2<sup>n</sup>, and the input is
+such that at least one list of levers results in the given multiset of
+configurations.</p>
+
+<h2>Output</h2>
+
+<p>Output <i>n</i> lines describing a possible set of levers that gives rise to
+the given multiset of pyramid configurations. Each line describes one lever
+using a string of length <i>k</i> consisting of the symbols &lsquo;+&rsquo;,
+&lsquo;-&rsquo;, or &lsquo;0&rsquo;. In each such string, the
+<i>j</i><sup>th</sup> symbol describes the action of this lever on the
+<i>j</i><sup>th</sup> pyramid: &lsquo;+&rsquo; if the lever moves the pyramid
+clockwise, &lsquo;-&rsquo; if the lever moves it counterclockwise, and
+&lsquo;0&rsquo; if the lever does not move this pyramid.</p>
+
+<p>If there is more than one possible solution, any one will be accepted.</p>
+
+<h3>Sample Input 1</h3>
+<pre>2 3 4
+EEE 1
+EIA 1
+IAE 1
+AAA 1</pre>
+
+<h3>Sample Output 1</h3>
+<pre>+-0
++++</pre>
+
+<h3>Sample Input 2</h3>
+<pre>3 2 2
+IA 4
+AA 4</pre>
+
+<h3>Sample Output 2</h3>
+<pre>-0
+00
+00</pre>
+
+<footer>
+  46th ICPC World Championship Problem Z: Archaeological Recovery &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

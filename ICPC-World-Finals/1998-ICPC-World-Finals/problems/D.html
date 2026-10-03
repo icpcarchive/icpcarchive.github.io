@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem D: Page Selection by Keyword Matching &mdash; The 22nd Annual ACM International Collegiate Programming Contest World Finals (1998)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+<header>
+  <p class="kicker">The 22nd Annual ACM International Collegiate Programming Contest World Finals &middot; Problem D</p>
+  <h1>Page Selection by Keyword Matching</h1>
+  <p class="meta">Input file: page.in</p>
+</header>
+
+<p>Anyone who has used the World Wide Web is familiar with search engines used to find pages matching a user-generated query. Many of these engines are quite sophisticated, using advanced algorithms and parallel searching techniques to provide fast, accurate responses.</p>
+
+<p>This problem is somewhat simpler. A group of web pages has been classified by associating a list of keywords, given in decreasing order of relevance, with each page (i.e., the order of keywords is from the most specific keyword to the least specific). For example, a page on programming in Smalltalk has the keywords Smalltalk, programming, and computers in that order; the most relevant keyword is Smalltalk.</p>
+
+<p>Queries also include a list of keywords, again from most to least relevant. For example, in a query consisting of the keyword Smalltalk followed by the keyword computers, Smalltalk is more important than computers.</p>
+
+<p>In this problem you are to determine the top five (or fewer) pages that match each of an arbitrary number of queries. To determine the strength of the relationship between a query and a web page, assume the keywords for each page and each query are assigned integer weights, in descending order, starting with <i>N</i>, where <i>N</i> is the maximum number of keywords allowed for a web page and query. The strength of the relationship is the sum of the products of the weights associated with each keyword that appears both in the web page list and the query list. For example, assume the following web pages and keyword lists:</p>
+
+<pre>Page 1: Smalltalk, programming, computers
+Page 2: computers, programming
+Page 3: computers, Smalltalk</pre>
+
+<p>For <i>N</i> equal 8, a query with keywords Smalltalk and programming in that order yields a strength rating of 113 for Page 1 (8*8 + 7*7), 49 for Page 2 (7*7), and 56 for Page 3 (8*7). A query with keywords Smalltalk and computers yields a strength rating of 106 for Page 1 (8*8 + 7*6), 56 for Page 2 (7*8), and 112 for Page 3 (8*7 + 7*8).</p>
+
+<h2>Input</h2>
+
+<p>Input data consist of one line for each web page and query. A line consists of a code letter followed by a list of keywords. Code letters P, Q, and E denote a page, a query, and the end of file respectively. Code letters and keywords are separated by at least one space. Ps and Qs may occur in any order. Pages are added sequentially starting with one. Each page has at least one but no more than 8 keywords. Each word consists of no more than 20 alphabetic characters. The case of characters in the keywords is not significant. There will be a maximum of 25 pages in the input.</p>
+
+<p>Each query also has of a list of between one and eight keywords. Again, a keyword has no more than 20 alphabetic characters, case being insignificant. Number the queries sequentially starting with one.</p>
+
+<h2>Output</h2>
+
+<p>For each query, identify the 5 (or fewer) pages read so far that are most relevant to the query. Print a single line containing the query identifier, a colon, and the page identifiers of the five most relevant pages in the decreasing order of relevance. Page identifiers consist of the letter &ldquo;P&rdquo; followed by the page number. Query identifiers consist of the letter &ldquo;Q&rdquo; followed by the query number. If several pages have the same relevance, list them by increasing page number. Do not list pages that have no relationship (zero strength), even if fewer than five pages are identified.</p>
+
+<h3>Sample Input</h3>
+
+<pre>P Smalltalk programming computers
+P computers programming
+P computers Smalltalk
+P FORTRAN programming
+P COBOL programming
+P programming
+Q Smalltalk
+Q programming
+Q computers
+Q Smalltalk computers
+Q Smalltalk programming
+Q cooking French
+E</pre>
+
+<h3>Output for the Sample Input</h3>
+
+<pre>Query   Pages
+Q1:     P1 P3
+Q2:     P6 P1   P2   P4   P5
+Q3:     P2 P3   P1
+Q4:     P3 P1   P2
+Q5:     P1 P3   P6   P2   P4
+Q6:</pre>
+
+<footer>
+  The 22nd Annual ACM International Collegiate Programming Contest World Finals &middot; Problem D &middot; Page Selection by Keyword Matching
+</footer>
+
+</body>
+</html>

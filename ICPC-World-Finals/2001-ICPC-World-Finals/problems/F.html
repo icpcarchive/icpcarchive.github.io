@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: A Major Problem — 25th Annual ACM ICPC World Finals (2001)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">25th Annual ACM ICPC World Finals · Problem F</p>
+  <h1>A Major Problem</h1>
+  <p class="meta">Input File: major.in</p>
+</header>
+
+<p>In western music, the 12 notes used in musical notation are identified with
+the capital letters A through G, possibly followed by a sharp &lsquo;#&rsquo;
+or flat &lsquo;b&rsquo; character, and are arranged cyclically as shown below.
+A slash is used to identify alternate notations of the same note.</p>
+
+<pre>C/B# C#/Db D D#/Eb E/Fb F/E# F#/Gb G G#/Ab A A#/Bb B/Cb C/B# &hellip;</pre>
+
+<p>Any two adjacent notes in the above list are known as a semitone. Any two
+notes that have exactly one note separating them in the above list are known as
+a tone. A major scale is composed of eight notes; it begins on one of the above
+notes and follows the progression tone-tone-semitone-tone-tone-tone-semitone.
+For example, the major scales starting on C and Db, respectively, are made up
+of the following notes:</p>
+
+<pre>CDEFGABC
+Db Eb F Gb Ab Bb C Db</pre>
+
+<p>The following rules also apply to major scales:</p>
+
+<ol>
+  <li>The scale will contain each letter from A to G once and only once, with
+  the exception of the first letter of the scale, which is repeated as the last
+  letter of the scale.</li>
+  <li>The scale may not contain a combination of both flat and sharp notes.</li>
+</ol>
+
+<p>The note that begins a major scale is referred to as the key of the scale.
+For example, the scales above are the scales for the major keys of C and Db,
+respectively. Transposing notes from one scale to another is a simple matter of
+replacing a note in one scale with the note in the corresponding position of
+another scale. For example, the note F in the major key of C would transpose to
+the note Gb in the major key of Db since both notes occupy the same position in
+their respective scales.</p>
+
+<p>You must write a program to transpose notes from one major scale to another.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of multiple test cases, with one test case per line. Each
+line starts with a source key, followed by a target key, and then followed by a
+list of notes to be transposed from the major scale of the source key to the
+major scale of the target key. Each list is terminated by a single asterisk
+character. All notes on a line and the terminating asterisk are delimited by a
+single space.</p>
+
+<p>The final line of the input contains only a single asterisk which is not to
+be processed as a test case.</p>
+
+<h2>Output</h2>
+
+<p>Each test case produces one or more lines of output. If the source and
+target keys are valid, then the first output line for each input line should
+read &ldquo;Transposing from X to Y:&rdquo; where X is the source key and Y is
+the target key. If either the source or target key is not valid a line which
+reads &ldquo;Key of X/Y is not a valid major key&rdquo;, where X/Y is the key
+that is not valid, should be output and the remainder of the input for that
+line skipped. If both the source and target key are not valid, report only the
+source key.</p>
+
+<p>For test cases that contain valid source and target keys, the first output
+line will be followed by one output line for each note to be transposed. If the
+note is a valid note in the major scale of the source key then the output line
+should read &ldquo;M transposes to N&rdquo; where M is the note in the source
+key and N is the corresponding note in the target key. If the input note is not
+a valid note in the major scale of the source key then the output line should
+read &ldquo;M is not a valid note in the X major scale&rdquo; where M is the
+input note and X is the source key. For either valid or non-valid notes, the
+output line should be indented in a consistent manner.</p>
+
+<p>The output data for each input line should be delimited by a single blank
+line. The format of your output should be similar to the output shown below.</p>
+
+<h3>Sample Input 1</h3>
+<pre>C Db F *
+Db C Gb *
+C B# A B *
+C D A A# B Bb C *
+A# Bb C *
+*</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Transposing from C to Db:
+  F transposes to Gb
+
+Transposing from Db to C:
+  Gb transposes to F
+
+Key of B# is not a valid major key
+
+Transposing from C to D:
+  A transposes to B
+  A# is not a valid note in the C major scale
+  B transposes to C#
+  Bb is not a valid note in the C major scale
+  C transposes to D
+
+Key of A# is not a valid major key</pre>
+
+
+<footer>
+  25th Annual ACM International Collegiate Programming Contest World Finals (2001) ·
+  Problem F: A Major Problem · The 2001 ACM Programming Contest World Finals sponsored by IBM
+</footer>
+
+</body>
+</html>

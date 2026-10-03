@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem A: Budget Travel — 1993 ACM International Collegiate Programming Contest Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">1993 ACM International Collegiate Programming Contest Finals · Problem A</p>
+  <h1>Budget Travel</h1>
+</header>
+
+<p>An American travel agency is sometimes asked to estimate the minimum cost of traveling from one city to
+another by automobile. The travel agency maintains lists of many of the gasoline stations along the popular routes.
+The list contains the location and the current price per gallon of gasoline for each station on the list.</p>
+
+<p>In order to simplify the process of estimating this cost, the agency uses the following rules of thumb about the
+behavior of automobile drivers.</p>
+
+<ul>
+  <li>A driver never stops at a gasoline station when the gasoline tank contains more than half of its capacity
+      unless the car cannot get to the following station (if there is one) or the destination with the amount of
+      gasoline in the tank.</li>
+  <li>A driver always fills the gasoline tank completely at every gasoline station stop.</li>
+  <li>When stopped at a gasoline station, a driver will spend $2.00 on snacks and goodies for the trip.</li>
+  <li>A driver needs no more gasoline than necessary to reach a gasoline station or the city limits of the
+      destination. There is no need for a “safety margin.”</li>
+  <li>A driver always begins with a full tank of gasoline.</li>
+  <li>The amount paid at each stop is rounded to the nearest cent (where 100 cents make a dollar).</li>
+</ul>
+
+<p>You must write a program that estimates the minimum amount of money that a driver will pay for gasoline and
+snacks to make the trip.</p>
+
+<h2>Input</h2>
+
+<p>Program input will consist of several data sets corresponding to different trips. Each data set consists of several
+lines of information. The first 2 lines give information about the origin and destination. The remaining lines of the
+data set represent the gasoline stations along the route, with one line per gasoline station. The following shows the
+exact format and meaning of the input data for a single data set.</p>
+
+<p>Line 1: One real number — the distance from the origin to the destination</p>
+
+<p>Line 2: Three real numbers followed by an integer</p>
+
+<ul>
+  <li>The first real number is the gallon capacity of the automobile’s fuel tank.</li>
+  <li>The second is the miles per gallon that the automobile can travel.</li>
+  <li>The third is the cost in dollars of filling the automobile’s tank in the origination city.</li>
+  <li>The integer (less than 51) is the number of gasoline stations along the route.</li>
+</ul>
+
+<p>Each remaining line: Two real numbers</p>
+
+<ul>
+  <li>The first is the distance in miles from the origination city to the gasoline station.</li>
+  <li>The second is the price (in cents) per gallon of gasoline sold at that station.</li>
+</ul>
+
+<p>All data for a single data set are positive. Gasoline stations along a route are arranged in nondescending order of
+distance from the origin. No gasoline station along the route is further from the origin than the distance from the
+origin to the destination There are always enough stations appropriately placed along the each route for any car to
+be able to get from the origin to the destination.</p>
+
+<p>The end of data is indicated by a line containing a single negative number.</p>
+
+<h2>Output</h2>
+
+<p>For each input data set, your program must print the data set number and a message indicating the minimum total
+cost of the gasoline and snacks rounded to the nearest cent. That total cost must include the initial cost of filling
+the tank at the origin. Sample input data for 2 separate data sets and the corresponding correct output follows.</p>
+
+<h3>Sample Input <i>1</i></h3>
+<pre>475.6
+11.9 27.4 14.98 6
+102.0 99.9
+220.0 132.9
+256.3 147.9
+275.0 102.9
+277.6 112.9
+381.8 100.9
+516.3
+15.7 22.1 20.87 3
+125.4 125.9
+297.9 112.9
+345.2 99.9
+-1</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>Data Set #1
+minimum cost = $27.31
+Data Set #2
+minimum cost = $38.09</pre>
+
+<footer>
+  1993 ACM International Collegiate Programming Contest Finals · Problem A · Budget Travel
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem D: Money for Nothing (Solution) — ACM ICPC World Finals 2017</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2017</p>
+  <h1>Problem D: Money for Nothing</h1>
+</header>
+
+<p>Shortest judge solution: 1552 bytes. Shortest team solution (during contest): 1178 bytes.</p>
+<p>Python solutions by the judges: only Pypy</p>
+
+<p>First, observe that this is at heart a geometry problem. We are given a set of lower-left and upper-right vertices, and we’re asked for the area of the largest rectangle (with sides parallel to the axes) between some two chosen corners. One observation we make is that we can prune the input set. If there are two lower-left corners, (x<sub>1</sub>, y<sub>1</sub>) and (x<sub>2</sub>, y<sub>2</sub>), with x<sub>1</sub> ≤ x<sub>2</sub> and y<sub>1</sub> ≤ y<sub>2</sub>, then we can remove (x<sub>2</sub>, y<sub>2</sub>) from the set. After this pruning, the set of lower-left corners forms a sequence L<sub>1</sub>, L<sub>2</sub>, L<sub>3</sub>, . . . , L<sub>n</sub>, with L<sub>i</sub> = (x<sub>i</sub>, y<sub>i</sub>), and x<sub>i</sub> &lt; x<sub>i+1</sub>, y<sub>i</sub> &gt; y<sub>i+1</sub>. We can perform similar pruning on the upper-right corner set, getting the sequence U<sub>1</sub>, U<sub>2</sub>, . . . , U<sub>m</sub>, with U<sub>i</sub> = (p<sub>i</sub>, q<sub>i</sub>), and again p<sub>i</sub> &lt; p<sub>i+1</sub> and q<sub>i</sub> &gt; q<sub>i+1</sub>.</p>
+
+<p>We’ll cover two solutions to the problem. The first one is less geometric. Define u(i) to be the index of the optimum upper-right corner for L<sub>i</sub> – that is, the rectangle L<sub>i</sub>, U<sub>u(i)</sub> has area no smaller than any other L<sub>i</sub>, U<sub>j</sub>. In the case of ties, choose the rightmost one. We’re claiming that u(i) is non-decreasing. A geometric proof is to draw out the picture, and notice that for any i &lt; j, k &lt; l, the sum of areas of L<sub>i</sub> U<sub>k</sub> and L<sub>j</sub> U<sub>l</sub> is larger than the sum of areas L<sub>i</sub> U<sub>l</sub> and L<sub>j</sub> U<sub>k</sub>. You can also just write out the areas and see the inequality holds.</p>
+
+<p>This allows a divide-and-conquer solution. Take the middle of all the L<sub>i</sub>s, and find u(i) (through a linear scan). Then, for all j &lt; i, we can consider only the upper right corners up to u(i), and for all the j &gt; i we can consider only the upper corners starting from u(i), and recurse into both branches. Since we’re halving the set of Ls at each pass, we will have log n levels of branching, and in each of the levels each of the Us is getting considered only for one interval (with the exception of the boundaries, but these sum up to O(n log n) as well), so the runtime will be O((m + n) log n).</p>
+
+<p>The other solution is geometric. For any two points U<sub>i</sub>, U<sub>j</sub>, let us consider the set of points L for which U<sub>i</sub> gives a larger rectangle than U<sub>j</sub>. The boundary of this set is a straight line, so the set of points L for which U<sub>i</sub> is the best choice is an intersection of half-planes, i.e., a convex polygon which is possibly unbounded in some directions. The division of the plane into these polygons contains a total of O(n) vertices, and so we can run a sweep-line algorithm, with the events being a point from L appears, or the set of regions changes. This will run in O((m + n) log(m)) time.</p>
+</body>
+</html>

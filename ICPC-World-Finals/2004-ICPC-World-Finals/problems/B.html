@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Heliport — The 2004 28th Annual ICPC World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">The 2004 28th Annual ICPC World Finals · Problem B</p>
+  <h1>Heliport</h1>
+  <p class="meta">Input File: heliport.in</p>
+</header>
+
+<p>In these fast-paced times, companies are investing in heliports to reduce travel time for their busy executives.
+The heliports are typically circular landing pads, constructed on the roofs of the companies&rsquo; headquarters.</p>
+
+<p>You must write a program that finds the largest radius for a circular heliport that can be constructed on the flat
+roof of a building that is in the form of a simple polygon. Since this is merely the design phase of the
+construction effort, your program must find only the radius of the heliport. The maximum radius for a heliport in
+the diagram shown is 10.</p>
+
+<figure>
+  <img src="images/B-1.png" alt="">
+  <figcaption>The maximum radius for a heliport in the diagram shown is 10</figcaption>
+</figure>
+
+<h2>Input File</h2>
+
+<p>The input file contains several test cases. Each test case consists of two lines. The first line consists of an even
+integer <i>n</i> (4 &le; <i>n</i> &le; 20), which is the number of the sides of the building. The second line consists
+of <i>n</i> pairs of the form (<i>m</i>, <i>d</i>), where <i>m</i> is an integer (1 &le; <i>m</i> &le; 50) and
+<i>d</i> is a letter (U, R, D, L). Assuming the roof is drawn on the Cartesian plane, <i>m</i> is the length of a
+roof boundary segment and <i>d</i> is the direction of that segment as you travel counterclockwise around the roof.
+U, R, D, and L mean &ldquo;Up,&rdquo; &ldquo;Right,&rdquo; &ldquo;Down,&rdquo; and &ldquo;Left&rdquo; respectively.
+The boundary segments of the roof, which are parallel to the <i>x</i> and <i>y</i> axes, are given in
+counterclockwise order. The starting position is the origin (0, 0).</p>
+
+<p>Input for the last test case is followed by a line consisting of the number 0.</p>
+
+<h2>Output File</h2>
+
+<p>For each test case, the output consists of a separate line containing the case number (starting with 1) and a real
+number (rounded to two digits after the decimal point) representing the radius of the heliport. Print a blank line
+between cases as shown in the sample output.</p>
+
+<h3>Sample Input 1</h3>
+<pre>4
+2 R 2 U 2 L 2 D
+10
+10 R 10 U 10 L 10 U 10 R 5 U 30 L 20 D 20 R 5 D
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case Number 1 radius is: 1.00
+
+Case Number 2 radius is: 10.00</pre>
+
+<footer>
+  The 2004 ACM Programming Contest World Finals · Problem B: Heliport · sponsored by IBM
+</footer>
+
+</body>
+</html>

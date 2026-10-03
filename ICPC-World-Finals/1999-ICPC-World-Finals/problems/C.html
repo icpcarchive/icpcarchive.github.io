@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem C: A Dicey Problem — 23rd Annual ACM International Collegiate Programming Contest World Finals (1999)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The 23rd Annual ACM International Collegiate Programming Contest World Finals · Problem C</p>
+  <h1>A Dicey Problem</h1>
+  <p class="meta">Input: dicemaze.in</p>
+</header>
+
+<p>The three-by-three array in Figure 1 is a maze. A standard six-sided die is
+needed to traverse the maze (the layout of a standard six-sided die is shown
+in Figure 2). Each maze has an initial position and an initial die
+configuration. In Figure 1, the starting position is row 1, column
+2&mdash;the &ldquo;2&rdquo; in the top row of the maze&mdash;and the initial
+die configuration has the &ldquo;5&rdquo; on top of the die and the
+&ldquo;1&rdquo; facing the player (assume the player is viewing the maze from
+the bottom edge of the figure).</p>
+
+<figure>
+  <img src="images/C-1.png" alt="">
+  <figcaption>Figure 1: Sample Dice Maze</figcaption>
+</figure>
+
+<figure>
+  <img src="images/C-2.png" alt="">
+  <figcaption>Figure 2: Standard Layout of Six-Sided Die</figcaption>
+</figure>
+
+<p>To move through the maze you must tip the die over on an edge to land on an
+adjacent square, effecting horizontal or vertical movement from one square to
+another. However, you can only move onto a square that contains the same
+number as the number displayed on the top of the die before the move, or onto
+a &ldquo;wild&rdquo; square which contains a star. Movement onto a wild square
+is always allowed regardless of the number currently displayed on the top of
+the die. The goal of the maze is to move the die off the starting square and
+to then find a way back to that same square.</p>
+
+<p>For example, at the beginning of the maze there are two possible moves.
+Since the 5 is on top of the die, it is possible to move down one square, and
+since the square to the left of the starting position is wild it is also
+possible to move left. If the first move chosen is to move down, this brings
+the 6 to the top of the die and moves are now possible both to the right and
+down. If the first move chosen is instead to the left, this brings the 3 to
+the top of the die and no further moves are possible.</p>
+
+<p>If we consider maze locations as ordered pairs of row and column numbers
+(row, column) with row indexes starting at 1 for the top row and increasing
+toward the bottom, and column indexes starting at 1 for the left column and
+increasing to the right, the solution to this simple example maze can be
+specified as: (1,2), (2,2), (2,3), (3,3), (3,2), (3,1), (2,1), (1,1), (1,2).
+A bit more challenging example maze is shown in Figure 3.</p>
+
+<p>The goal of this problem is to write a program to solve dice mazes. The
+input file will contain several mazes for which the program should search for
+solutions. Each maze will have either a unique solution or no solution at all.
+That is, each maze in the input may or may not have a solution, but those with
+a solution are guaranteed to have only one unique solution. For each input
+maze, either a solution or a message indicating no solution is possible will
+be sent to the output.</p>
+
+<figure>
+  <img src="images/C-3.png" alt="">
+  <figcaption>Figure 3: Start at (2,6) with the 3 on top and the 6 facing you.</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>The input file begins with a line containing a string of no more than 20
+non-blank characters that names the first maze. The next line contains six
+integers delimited by single spaces. These integers are, in order, the number
+of rows in the maze (an integer from 1 to 10, call this value R), the number
+of columns in the maze (an integer from 1 to 10, call this value C), the
+starting row, the starting column, the number that should be on top of the die
+at the starting position, and finally the number that should be facing you on
+the die at the starting position. The next R lines contain C integers each,
+again delimited by single spaces. This R &times; C array of integers defines
+the maze. A value of zero indicates an empty location in the maze (such as the
+two empty squares in the center column of the maze in Figure 3), and a value
+of -1 indicates a wild square. This input sequence is repeated for each maze
+in the input. An input line containing only the word &ldquo;END&rdquo;
+(without the quotes) as the name of the maze marks the end of the input.</p>
+
+<h2>Output</h2>
+
+<p>The output should contain the name of each maze followed by its solution or
+the string &ldquo;No Solution Possible&rdquo; (without the quotes). All lines
+in the output file except for the maze names should be indented exactly two
+spaces. Maze names should start in the leftmost column. Solutions should be
+output as a comma-delimited sequence of the consecutive positions traversed in
+the solution, starting and ending with the same square (the starting square as
+specified in the input). Positions should be specified as ordered pairs
+enclosed in parentheses. The solution should list 9 positions per line (with
+the exception of the last line of the solution for which there may not be a
+full 9 positions to list), and no spaces should be present within or between
+positions.</p>
+
+<h3>Sample Input <i>1</i></h3>
+<pre>DICEMAZE1
+3 3 1 2 5 1
+-1 2 4
+5 5 6
+6 -1 -1
+DICEMAZE2
+4 7 2 6 3 6
+6 4 6 0 2 6 4
+1 2 -1 5 3 6 1
+5 3 4 5 6 4 2
+4 1 2 0 3 -1 6
+DICEMAZE3
+3 3 1 1 2 4
+2 2 3
+4 5 6
+-1 -1 -1
+END</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>DICEMAZE1
+  (1,2),(2,2),(2,3),(3,3),(3,2),(3,1),(2,1),(1,1),(1,2)
+DICEMAZE2
+  (2,6),(2,5),(2,4),(2,3),(2,2),(3,2),(4,2),(4,1),(3,1),
+  (2,1),(2,2),(2,3),(2,4),(2,5),(1,5),(1,6),(1,7),(2,7),
+  (3,7),(4,7),(4,6),(3,6),(2,6)
+DICEMAZE3
+  No Solution Possible</pre>
+
+<footer>
+  The 23rd Annual ACM International Collegiate Programming Contest World Finals · Problem C · A Dicey Problem
+</footer>
+
+</body>
+</html>

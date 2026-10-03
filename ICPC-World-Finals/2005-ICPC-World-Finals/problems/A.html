@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem A: Eyeball Benders &mdash; ICPC World Finals 2005</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2005 &middot; Problem A</p>
+  <h1>Eyeball Benders</h1>
+  <p class="meta">Input file: eyeball.in</p>
+</header>
+
+
+<p>&ldquo;Eyeball benders&rdquo; are a popular kind of puzzle in which the reader must identify a common object based on a close-up view of a part of that object. For instance, an image that looks like a regular array of colored cones might be a view of an open box of new crayons. Figure 1 shows an example where the puzzle is on the left and the solution is on the right.</p>
+
+<figure>
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-end;gap:1rem;">
+    <img src="images/A-1.png" alt="" style="width:130px;height:auto;">
+    <img src="images/A-2.png" alt="" style="width:205px;height:auto;">
+  </div>
+  <figcaption>Figure 1. A sample eyeball-bender puzzle and solution image (a floppy disk).</figcaption>
+</figure>
+
+<p>You must verify solutions to a simplified version of the &ldquo;eyeball bender&rdquo; puzzle. You will be given a number of pairs of images, each one a collection of line segments. All line segments will be either horizontal or vertical, and they include their endpoints. Figure 2 shows an example.</p>
+
+<p>You must determine whether the images form a valid pair in which the first image is a magnified view of some portion of the second image. Lines are assumed to have zero thickness in both images. At least one endpoint in the puzzle image of a valid pair must be an endpoint of a line segment in the solution image.</p>
+
+<figure>
+  <img src="images/A-3.png" alt="">
+  <figcaption>Figure 2. The left image is the portion of the right image inside the dotted rectangle, magnified 3 times.</figcaption>
+</figure>
+
+<p>Coordinates describe relative positions and scale within a single image. The coordinates in one image do not necessarily use the same origin or scale as those in the other image. The magnification of the puzzle image relative to the solution image is required to be greater than or equal to 1. For Figure 2, your program should determine that this is a valid puzzle/solution image pair.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of multiple cases. The input for each case begins with two positive integers M and N, (1 &le; M,N &le; 50). M is the number of line segments in the puzzle image. N is the number of line segments in the proposed solution image. The following lines contain M + N pairs of points. The first M pairs of points are the endpoints of the line segments in the puzzle image; the remaining N pairs of points are the endpoints of the proposed solution image. The x and y coordinates for each pair satisfy &ndash;100 &le; x, y &le; 100 and are given to at most three decimal places of precision. All input values are separated by white space (blanks or new line characters).</p>
+
+<p>No pair of distinct points in a given image will be closer than .005 to another (relative to the scale of the image) and all segments will have length at least .005. No two horizontal segments overlap and no two vertical segments overlap. However, horizontal segments may intersect vertical segments either internally or at segment endpoints.</p>
+
+<p>The input data for the last case is followed by a line consisting of the integers 0 0.</p>
+
+<h2>Output</h2>
+
+<p>For each input case, display the case number (1, 2, &hellip;) followed by the words &ldquo;valid puzzle&rdquo; if the proposed solution image matches a closed rectangular sub-region of the puzzle image (including at least one endpoint), magnified by a factor of one or greater, and possibly translated by some amount. Line segments that are not included in the puzzle image will be at least 0.005 distant from the rectangle.</p>
+
+<p>If the match condition fails to hold, print &ldquo;impossible&rdquo;. Follow the format of the sample output.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3 12
+9 8 7.5 8 1.5 8 1.5 3.5
+0 5 9 5
+4 2 8 2 5 7 2 7 10 6 8 6 8 7 8 4
+1 9 8 9
+9 3 7 3 4 10 4 5
+4 2 4 4 5 8 5 7 3 6 6 6 0 3 3 3 5 1 5 3
+4 12
+-50 -5 50 -5 0 10 0 -10 50 5 -50 5 -50 0 50 0
+4 2 8 2 5 7 2 7 10 6 8 6 8 7 8 4
+1 9 8 9
+9 3 7 3 4 10 4 5
+4 2 4 4 5 8 5 7 3 6 6 6 0 3 3 3 5 1 5 3
+0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1: valid puzzle
+Case 2: impossible</pre>
+
+
+<footer>
+  ICPC World Finals 2005 &mdash; Problem A: Eyeball Benders
+</footer>
+
+</body>
+</html>

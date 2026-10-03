@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Get a Clue! — ACM-ICPC World Finals 2017</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2017 · Problem B</p>
+  <h1>Get a Clue!</h1>
+  <p class="meta">Time limit: 4 seconds</p>
+</header>
+
+<p>Developed in the 1940s in the United Kingdom, the game of Cluedo is one of
+the most popular board games in the world. The object of the game is to
+determine who murdered Mr. Body, which weapon was used to murder him, and where
+the murder took place. The game uses a set of cards representing six persons
+(labeled A, B, &hellip;, F), six weapons (labeled G, H, &hellip;, L) and nine
+rooms (labeled M, N, &hellip;, U). At the start of the game, one person card,
+one weapon card, and one room card are selected at random and removed from the
+deck so no one can see them – they represent the murderer, the murder weapon,
+and the murder location. The remaining 18 cards are shuffled and dealt to the
+players, starting with player 1, then to her right player 2, and so on. Some
+players may end up with one more card than others. For the purposes of this
+problem there are four players, so the person to the right of player 4 is
+player 1.</p>
+
+<p>The rest of the game is spent searching for clues. Players take turns,
+starting with player 1 and moving to the right. A turn consists of making a
+suggestion (consisting of a murder suspect, a weapon, and a room) and asking
+other players if they have any evidence that refutes the suggestion. For
+example, you might say to another player &ldquo;I believe the murderer was
+person A, using weapon L, in room T.&rdquo; If the other player is holding
+exactly one of these cards, that player must show you (and only you) that card.
+If they have more than one such card, they can show you any one of them.</p>
+
+<p>When making a suggestion, you must first ask the person to your right for
+any evidence. If they have none, you continue with the person on their right,
+and so on, until someone has evidence, or no one has any of the cards in your
+suggestion.</p>
+
+<p>Many times you can gain information even if you are not the person making
+the suggestion. Suppose, in the above example, you are the third player and
+have cards A and T. If someone else shows evidence to the suggester, you know
+that it must be weapon card L. Keeping track of suggestions and who gave
+evidence at each turn is an important strategy when playing the game.</p>
+
+<p>To win the game, you must make an accusation, where you state your final
+guess of the murderer, weapon, and room. After stating your accusation, you
+check the three cards that were set aside at the start of the game – if they
+match your accusation, you win! Needless to say, you want to be absolutely sure
+of your accusation before you make it.</p>
+
+<p>Here is your problem. You are player 1. Given a set of cards dealt to you
+and a history of suggestions and evidence, you need to decide how close you are
+to being able to make an accusation.</p>
+
+<h2>Input</h2>
+
+<p>The input starts with an integer <i>n</i> (1 &le; <i>n</i> &le; 50), the
+number of suggestions made during the game. Following this is a line containing
+the five cards you are dealt, all uppercase letters in the range &lsquo;A&rsquo;
+&hellip; &lsquo;U&rsquo;. The remaining <i>n</i> lines contain one suggestion
+per line. Each of these lines starts with three characters representing the
+suggestion (in the order person, weapon, room), followed by the responses of up
+to three players, beginning with the player to the right of the player making
+the suggestion. If a player presents no evidence, a &lsquo;-&rsquo; (dash) is
+listed; otherwise an &ldquo;evidence character&rdquo; is listed. If the specific
+evidence card is seen by you (either because you provided it or you were the
+person receiving the evidence) then the evidence character identifies that card;
+otherwise the evidence character is &lsquo;*&rsquo;. Note that only the last
+response can be an evidence character. All characters are separated by single
+spaces. Only valid suggestion/response sequences appear in the input.</p>
+
+<h2>Output</h2>
+
+<p>Display a three character string identifying the murderer, the murder weapon,
+and the room. If the murderer can be identified, use the appropriate letter for
+that person; otherwise use &lsquo;?&rsquo;. Do the same for the murder weapon
+and the room.</p>
+
+<h3>Sample Input 1</h3>
+<pre>1
+B I P C F
+A G M - - -</pre>
+
+<h3>Sample Output 1</h3>
+<pre>AGM</pre>
+
+<h3>Sample Input 2</h3>
+<pre>2
+A B C D H
+F G M M
+F H M - *</pre>
+
+<h3>Sample Output 2</h3>
+<pre>E??</pre>
+
+<h3>Sample Input 3</h3>
+<pre>3
+A C M S D
+B G S - G
+A H S - - S
+C J S *</pre>
+
+<h3>Sample Output 3</h3>
+<pre>???</pre>
+
+<footer>
+  ACM-ICPC World Finals 2017 Problem B: Get a Clue!
+</footer>
+
+</body>
+</html>

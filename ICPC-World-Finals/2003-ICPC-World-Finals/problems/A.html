@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem A: Building Bridges — The 27th Annual ACM International Collegiate Programming Contest World Finals (2003)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">The 27th Annual ACM International Collegiate Programming Contest World Finals sponsored by IBM · Problem A</p>
+  <h1>Building Bridges</h1>
+  <p class="meta">Input File: bridges.in</p>
+</header>
+
+<p>The City Council of New Altonville plans to build a system of bridges connecting all of its
+downtown buildings together so people can walk from one building to another without going
+outside. You must write a program to help determine an optimal bridge configuration.</p>
+
+<p>New Altonville is laid out as a grid of squares. Each building occupies a connected set of
+one or more squares. Two occupied squares whose corners touch are considered to be a single
+building and do not need a bridge. Bridges may be built only on the grid lines that form the
+edges of the squares. Each bridge must be built in a straight line and must connect exactly
+two buildings.</p>
+
+<p>For a given set of buildings, you must find the minimum number of bridges needed to
+connect all the buildings. If this is impossible, find a solution that minimizes the number of
+disconnected groups of buildings. Among possible solutions with the same number of bridges, choose the one
+that minimizes the sum of the lengths of the bridges, measured in multiples of the grid size. Two
+bridges may cross, but in this case they are considered to be on separate levels and do not
+provide a connection from one bridge to the other.</p>
+
+<p>The figure below illustrates four possible city configurations. City 1 consists of five
+buildings that can be connected by four bridges with a total length of 4. In City 2, no bridges
+are possible, since no buildings share a common grid line. In City 3, no bridges are needed
+because there is only one building. In City 4, the best solution uses a single bridge of length
+1 to connect two buildings, leaving two disconnected groups (one containing two buildings and
+one containing a single building).</p>
+
+<figure>
+  <img src="images/A-1.png" alt="">
+</figure>
+
+<h2>Input</h2>
+
+<p>The input data set describes several rectangular cities. Each city description begins with a
+line containing two integers <i>r</i> and <i>c</i>, representing the size of the city on the
+north-south and east-west axes measured in grid lengths (1 &le; <i>r</i> &le; 50 and 1 &le;
+<i>c</i> &le; 50). These numbers are followed by exactly <i>r</i> lines, each consisting of
+<i>c</i> hash (“#”) and dot (“.”) characters. Each character corresponds to one square of the
+grid. A hash character corresponds to a square that is occupied by a building, and a dot
+character corresponds to a square that is not occupied by a building.</p>
+
+<p>The input data for the last city will be followed by a line containing two zeros.</p>
+
+<h2>Output</h2>
+
+<p>For each city description, print two or three lines of output as shown below. The first line
+consists of the city number. If the city has fewer than two buildings, the second line is the
+sentence “No bridges are needed.” If the city has two or more buildings but none of them can be
+connected by bridges, the second line is the sentence “No bridges are possible.” Otherwise, the
+second line is “N bridges of total length L” where N is the number of bridges and L
+is the sum of the lengths of the bridges of the best solution. (If N is 1, use the word “bridge”
+rather than “bridges.”) If the solution leaves two or more disconnected groups of buildings, print a
+third line containing the number of disconnected groups.</p>
+
+<p>Print a blank line between cases. Use the output format shown in the example.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3 5
+#...#
+..#..
+#...#
+3 5
+##...
+.....
+....#
+3 5
+#.###
+#.#.#
+###.#
+3 5
+#.#..
+.....
+....#
+0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>City 1
+4 bridges of total length 4
+
+City 2
+No bridges are possible.
+2 disconnected groups
+
+City 3
+No bridges are needed.
+
+City 4
+1 bridge of total length 1
+2 disconnected groups</pre>
+
+<footer>
+  The 2003 ACM Programming Contest World Finals sponsored by IBM
+</footer>
+
+</body>
+</html>

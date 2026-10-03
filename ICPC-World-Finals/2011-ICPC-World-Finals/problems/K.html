@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem K: Trash Removal — ICPC 2011 World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC 2011 World Finals · Problem K</p>
+  <h1>Trash Removal</h1>
+  <p class="meta">Problem ID: trash</p>
+</header>
+
+
+<p>Allied Chute Manufacturers is a company that builds trash chutes. A trash
+chute is a hollow tube installed in buildings so that trash dropped in at the top
+will fall down and be collected in the basement. Designing trash chutes is
+actually highly nontrivial. Depending on what kind of trash people are expected
+to drop into them, the trash chute needs to have an appropriate size. And since
+the cost of manufacturing a trash chute is proportional to its size, the company
+always would like to build a chute that is as small as possible. Choosing the
+right size can be tough though.</p>
+
+<p>We will consider a 2-dimensional simplification of the chute design problem.
+A trash chute points straight down and has a constant width. Objects that will be
+dropped into the trash chute are modeled as polygons. Before an object is dropped
+into the chute it can be rotated so as to provide an optimal fit. Once dropped,
+it will travel on a straight path downwards and will not rotate in flight. The
+following figure shows how an object is first rotated so it fits into the trash
+chute.</p>
+
+<figure>
+  <img src="images/K-1.png" alt="">
+</figure>
+
+<p>Your task is to compute the smallest chute width that will allow a given
+polygon to pass through.</p>
+
+<h2>Input</h2>
+
+<p>The input contains several test cases. Each test case starts with a line
+containing an integer n (3 ≤ n ≤ 100), the number of points in the polygon that
+models the trash item.</p>
+
+<p>The next n lines then contain pairs of integers x<sub>i</sub> and y<sub>i</sub>
+(0 ≤ x<sub>i</sub>, y<sub>i</sub> ≤ 10<sup>4</sup>), giving the coordinates of
+the polygon vertices in order. All points in one test case are guaranteed to be
+mutually distinct and the polygon sides will never intersect. (Technically, there
+is one inevitable exception of two neighboring sides sharing their common vertex.
+Of course, this is not considered an intersection.)</p>
+
+<p>The last test case is followed by a line containing a single zero.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, display its case number followed by the width of the
+smallest trash chute through which it can be dropped. Display the minimum width
+with exactly two digits to the right of the decimal point, rounding up to the
+nearest multiple of 1/100. Answers within 1/100 of the correct rounded answer
+will be accepted.</p>
+
+<p>Follow the format of the sample output.</p>
+
+<h3>Sample input</h3>
+<pre>3
+0 0
+3 0
+0 4
+4
+0 10
+10 0
+20 10
+10 20
+0</pre>
+
+<h3>Output for the Sample Input</h3>
+<pre>Case 1: 2.40
+Case 2: 14.15</pre>
+
+
+<footer>
+  ICPC 2011 World Finals Problem K: Trash Removal
+</footer>
+
+</body>
+</html>

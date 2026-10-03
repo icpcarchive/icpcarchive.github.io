@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Messenger &mdash; ACM-ICPC World Finals 2014</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2014 &middot; Problem F</p>
+  <h1>Messenger</h1>
+  <p class="meta">Time limit: 4 seconds</p>
+</header>
+
+<p>Misha needs to send packages to his friend Nadia. Both of them often travel across Russia, which is
+very large. So they decide to hire a messenger. Since the cost of the messenger service depends on the
+time it takes to deliver the package, they need your help to optimize a little bit.</p>
+
+<p>Assume Misha and Nadia move on a two-dimensional plane, each visiting a sequence of places and
+moving along straight line segments from place to place. Your task is to find the shortest possible
+delivery time given their two paths.</p>
+
+<p>Misha hands the package to the messenger at some point along his path. The messenger moves without
+delay along a straight line from the pick-up to intercept Nadia, who is traveling along her path. Misha,
+Nadia and the messenger move with a constant speed of 1 distance unit per time unit. The delivery time
+is the time between Misha handing over the package and Nadia receiving it.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of a single test case. The test case contains two path descriptions, the first for Misha
+and the second for Nadia. Each path description starts with a line containing an integer <i>n</i>, the number of
+places visited (2 &le; <i>n</i> &le; 50&thinsp;000). This is followed by <i>n</i> lines, each with two integers <i>x</i><sub><i>i</i></sub> and <i>y</i><sub><i>i</i></sub> specifying
+the coordinates of a place (0 &le; <i>x</i><sub><i>i</i></sub>, <i>y</i><sub><i>i</i></sub> &le; 30&thinsp;000). Coordinates of the places are listed in the order in
+which they are to be visited, and successive places do not have the same coordinates.</p>
+
+<p>Misha and Nadia start their journeys at the same time, visiting the places along their paths without
+stopping. The length of each path is at most 10<sup>6</sup>. The package must be picked up at the latest when
+Misha reaches his final place and it must be delivered at the latest when Nadia reaches her final place.</p>
+
+<h2>Output</h2>
+
+<p>Display the minimal time needed for delivery. Give the answer with an absolute error of at most 10<sup>&minus;3</sup>
+or a relative error of at most 10<sup>&minus;5</sup>. If the package cannot be delivered, display <i>impossible</i> instead.</p>
+
+<h3>Sample Input 1</h3>
+<pre>2
+0 0
+0 10
+2
+4 10
+4 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>4.00000</pre>
+
+<h3>Sample Input 2</h3>
+<pre>2
+0 0
+1 0
+3
+2 0
+3 0
+3 10</pre>
+
+<h3>Sample Output 2</h3>
+<pre>5.00000</pre>
+
+
+<footer>
+  ACM-ICPC World Finals 2014 Problem F: Messenger
+</footer>
+
+</body>
+</html>

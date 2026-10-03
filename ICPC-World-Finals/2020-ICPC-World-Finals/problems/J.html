@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem J: ’S No Problem — ICPC World Finals 2020</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">ICPC World Finals 2020 · Problem J</p>
+  <h1>’S No Problem</h1>
+  <p class="meta">Time limit: 3 seconds</p>
+</header>
+
+<p>The Yllihc Engineering and Technological Institute (YETI), located in
+northern Snowblovia, has two problems: snow and money. Specifically, they have
+too much of the former and not enough of the latter. Every winter (and fall
+and spring, for that matter) the campus is covered with blankets of snow, and
+the sidewalks connecting campus buildings become impassable. To continue
+functioning, YETI needs to clear the snow from the sidewalks connecting the
+buildings of the campus. Since budget is an issue, these sidewalks are a
+minimal set that allow a path to exist between any two buildings.</p>
+
+<p>With the money saved by not building more sidewalks, YETI bought two snow
+blowers. To clear the snow with them, two staff members take the two snow
+blowers out of the buildings (or building) they are stored in, and push them
+along the sidewalks, clearing the snow. Each sidewalk must be traversed at
+least once. Each snow blower, after it has finished, is stored in the building
+it is currently next to (and, during the next snowfall, the snow blowers will
+be pushed in the reverse direction&mdash;and so on, throughout the eleven
+months of the snow season).</p>
+
+<p>The YETI maintenance crew want to choose the storage buildings of the snow
+blowers and design the routes along which they will be pushed, so that they
+minimize the total distance the two machines will travel out in the cold (to
+protect both the precious equipment and the staff members from freezing). Note
+that the routes might involve pushing along already-cleared sidewalks, as seen
+in Figure J.1, which shows an optimal solution for the sidewalk layout of
+Sample Input 1.</p>
+
+<figure>
+  <img src="images/J-1.png" alt="">
+  <figcaption>Figure J.1: Illustration of Sample Input 1 showing one possible pair of optimal routes.</figcaption>
+</figure>
+
+<p>YETI would ask their Computer Science Department to figure this out, but it
+was wiped out in the Great Blizzard of &rsquo;06, so they have come to you for
+help.</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains an integer <i>n</i> (4 &le; <i>n</i> &le;
+100&thinsp;000), the number of buildings on the YETI campus. Buildings are
+numbered from 1 to <i>n</i>. Each of the remaining <i>n</i> &minus; 1 lines
+contains three integers <i>a</i>, <i>b</i>, and <i>d</i> indicating that a
+sidewalk exists between buildings <i>a</i> and <i>b</i> (1 &le; <i>a</i>,
+<i>b</i> &le; <i>n</i>; <i>a</i> &ne; <i>b</i>) of length <i>d</i>
+(1 &le; <i>d</i> &le; 500).</p>
+
+<h2>Output</h2>
+
+<p>Output the minimum total distance the snow blowers must travel to remove
+snow from all sidewalks.</p>
+
+<h3>Sample Input 1</h3>
+<pre>7
+1 4 2
+2 4 3
+3 4 1
+4 5 1
+5 6 2
+5 7 4</pre>
+
+<h3>Sample Output 1</h3>
+<pre>15</pre>
+
+<h3>Sample Input 2</h3>
+<pre>4
+1 2 1
+2 3 2
+3 4 3</pre>
+
+<h3>Sample Output 2</h3>
+<pre>6</pre>
+
+<footer>
+  ICPC World Finals 2020 Problem J: &rsquo;S No Problem
+</footer>
+
+</body>
+</html>

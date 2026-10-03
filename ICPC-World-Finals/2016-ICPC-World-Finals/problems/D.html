@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem D: Clock Breaking — ACM-ICPC World Finals (2016)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2016 &middot; Problem D</p>
+  <h1>Clock Breaking</h1>
+  <p class="meta">Time limit: 5 seconds</p>
+</header>
+
+<p>After numerous unfortunate freak fatalities and the lawsuits, settlements, protests, and boycotts that naturally followed, the beleaguered executives at ACME Clock Manufacturers have decided they need to finally fix their disastrous quality control issues. It has been known for years that the digital clocks they manufacture have an unacceptably high ratio of faulty liquid-crystal display (LCD) screens, and yet these heartless souls have repeatedly failed to address the issue, or even warn their hapless consumers! You have been called in as a quality consultant to finally put a stop to the madness. Your job is to write an automated program that can test a clock and find faults in its display.</p>
+
+<p>These clocks use a standard 7-segment LCD display for all digits (shown on the left in Figure D.1), plus two small segments for the &rsquo;:&rsquo;, and show all times in a 24-hour format. The minute before midnight is 23:59, and midnight is 0:00. The &rsquo;:&rsquo; segments of a working clock are on at all times. The representation of each digit using the seven segments is shown on the right in Figure D.1.</p>
+
+<figure>
+  <img src="images/D-1.png" alt="">
+  <figcaption>Figure D.1: LCD display of each digit.</figcaption>
+</figure>
+
+<p>Your program will be given the display of a clock at several consecutive minutes, although you do not know exactly what time these displays start. Some of the LCD segments are burnt out (permanently off) and some are burnt in (permanently on). Your program must determine, where possible, which segments are definitely malfunctioning and which are definitely in working order.</p>
+
+<h2>Input</h2>
+
+<p>The first input line contains a single integer <i>n</i> (1 &le; <i>n</i> &le; 100), which is the number of consecutive minutes of a clock&rsquo;s display. The next 8<i>n</i> &minus; 1 lines contain <i>n</i> ASCII images of these clock displays of size 7 &times; 21, with a single blank line separating the representations.</p>
+
+<p>All digit segments are represented by two characters, and each colon segment is represented by one character. The character &rsquo;X&rsquo; indicates a segment that is on. The character &rsquo;.&rsquo; indicates anything else (segments that are off or non-segment portions of the display). See the sample input/output for details; the first output shows every possible LCD segment along with the smaller segments used to represent the &rsquo;:&rsquo;. No clock representation has an &rsquo;X&rsquo; in a non-segment position or only half of a segment showing.</p>
+
+<h2>Output</h2>
+
+<p>Display a 7 &times; 21 ASCII image with a &rsquo;0&rsquo; for every segment that is burnt out, a &rsquo;1&rsquo; for every segment that is burnt in, a &rsquo;W&rsquo; for every segment that is definitely working, and a &rsquo;?&rsquo; for every segment for which the status cannot be determined. Use &rsquo;.&rsquo; for non-segments. If the given displays cannot come from consecutive minutes, display <i>impossible</i>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3
+......XX.....XX...XX.
+.....X..X...X..X....X
+.....X..X.X.X..X....X
+.............XX...XX.
+.....X..X......X.X..X
+.....X..X......X.X..X
+......XX.....XX...XX.
+
+......XX.....XX...XX.
+.....X..X...X..X....X
+.....X..X.X.X..X....X
+.............XX...XX.
+.....X..X......X.X..X
+.....X..X......X.X..X
+......XX.....XX...XX.
+
+.............XX...XX.
+........X...X..X....X
+........X.X.X..X....X
+.............XX......
+........X...X..X.X..X
+........X...X..X.X..X
+......XX.....XX...XX.</pre>
+
+<h3>Sample Output 1</h3>
+<pre>.??...WW.....??...??.
+?..?.W..?...?..1.0..?
+?..?.W..?.?.?..1.0..?
+.??...??.....11...WW.
+?..?.W..?.0.W..?.1..?
+?..?.W..?...W..?.1..?
+.??...11.....??...??.</pre>
+
+<h3>Sample Input 2</h3>
+<pre>2
+......XX.....XX...XX.
+...X....X...X..X.X..X
+...X....X.X.X..X.X..X
+......XX..........XX.
+...X.X....X.X..X.X..X
+...X.X......X..X.X..X
+......XX.....XX...XX.
+
+......XX.....XX......
+...X....X...X..X.....
+...X....X.X.X..X.....
+......XX.............
+...X.X....X.X..X.....
+...X.X......X..X.....
+......XX.....XX......</pre>
+
+<h3>Sample Output 2</h3>
+<pre>impossible</pre>
+
+<footer>
+  ACM-ICPC World Finals 2016 Problem D: Clock Breaking &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

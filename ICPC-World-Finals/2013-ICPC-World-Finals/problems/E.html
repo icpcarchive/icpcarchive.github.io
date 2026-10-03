@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem E: Harvard — ACM-ICPC World Finals 2013</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2013 · Problem E</p>
+  <h1>Harvard</h1>
+  <p class="meta">Time limit: 10 seconds</p>
+</header>
+
+<p>The term &ldquo;Harvard architecture&rdquo; applies to a computer that has
+physically separate memories for instructions and data. The term originated
+with the Harvard Mark I computer, delivered by IBM in 1944, which used paper
+tape for instructions and relays for data.</p>
+
+<figure class="hero">
+  <img src="images/E-1.png" alt="">
+  <figcaption>Picture from Wikimedia Commons</figcaption>
+</figure>
+
+<p>Some modern microcontrollers use the Harvard architecture &ndash; but not
+paper tape and relays!</p>
+
+<p>Data memory is organized in banks, each containing the same number of data
+items. Each data-referencing instruction has a byte offset <i>f</i> to a bank,
+and a bit <i>a</i> that is used to select the bank to be referenced. If
+<i>a</i> is 0, then bank 0 is referenced. If <i>a</i> is 1, then the value in
+a bank select register (BSR) identifies the bank to be used. Assume each
+instruction takes the same time to execute, and there is an instruction that
+can set the BSR&rsquo;s value.</p>
+
+<p>For example, suppose there are 4 banks of 8 bytes each. To access location
+5, either use a single instruction with <i>a</i> = 0 and <i>f</i> = 5, or set
+the BSR to 0 in one instruction and then use an instruction with <i>a</i> = 1
+and <i>f</i> = 5. The first approach is faster since it does not require
+setting the BSR.</p>
+
+<p>Now suppose (with the same memory) the location to access is 20. Only one
+approach will work here: execute an instruction that sets the BSR to 2 (unless
+the BSR already has the value 2) and then use an instruction with <i>a</i> = 1
+and <i>f</i> = 4.</p>
+
+<p>A program is a sequence of operations. Each operation is either</p>
+
+<ul>
+  <li>a variable reference, written as V<sub><i>i</i></sub>, where <i>i</i> is
+  a positive integer, or</li>
+  <li>a repetition, written as R<sub><i>n</i></sub> &lt;program&gt; E, where
+  <i>n</i> is a positive integer and &lt;program&gt; is an arbitrary program.
+  This operation is equivalent to <i>n</i> sequential occurrences of
+  &lt;program&gt;.</li>
+</ul>
+
+<p>Your problem is to determine the minimum running time of programs. In
+particular, given the number and size of the memory banks and a program to be
+executed, find the minimum number of instructions (which reference memory
+location and possibly set the BSR) that must be executed to run the program.
+To do this you must identify a mapping of variables to memory banks that
+yields the smallest execution time, and report that execution time &ndash;
+that is, the number of memory references and BSR register settings required.
+The BSR&rsquo;s value is initially undefined, and changes only when an
+instruction explicitly sets its value.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of a single test case. A test case consists of two
+lines. The first line contains two integers <i>b</i> and <i>s</i>, where
+1 &le; <i>b</i> &le; 13 is the number of memory banks and 1 &le; <i>s</i>
+&le; 13 is the number of variables that can be stored in each memory bank. The
+second line contains a non-empty program with at most 1 000 space-separated
+elements (each R<sub><i>n</i></sub>, V<sub><i>i</i></sub>, and E counts as one
+element).</p>
+
+<p>You may assume the following:</p>
+
+<ul>
+  <li>In a repetition R<sub><i>n</i></sub>, the number of repetitions
+  satisfies 1 &le; <i>n</i> &le; 10<sup>6</sup>.</li>
+  <li>In a loop operation R<sub><i>n</i></sub> &lt;program&gt; E, the loop body
+  &lt;program&gt; is not empty.</li>
+  <li>In a variable reference V<sub><i>i</i></sub>, the variable index
+  satisfies 1 &le; <i>i</i> &le; min(<i>b</i> &middot; <i>s</i>, 13).</li>
+  <li>The total number of variable references performed by an execution of the
+  program is at most 10<sup>12</sup>.</li>
+</ul>
+
+<h2>Output</h2>
+
+<p>Display the minimum number of instructions that must be executed to
+complete the program.</p>
+
+<h3>Sample Input 1</h3>
+<pre>1 2
+V1 V2 V1 V1 V2</pre>
+
+<h3>Sample Output 1</h3>
+<pre>5</pre>
+
+<h3>Sample Input 2</h3>
+<pre>2 1
+V1 V2 V1 V1 V2</pre>
+
+<h3>Sample Output 2</h3>
+<pre>6</pre>
+
+<h3>Sample Input 3</h3>
+<pre>1 2
+R10 V1 V2 V1 E</pre>
+
+<h3>Sample Output 3</h3>
+<pre>30</pre>
+
+<h3>Sample Input 4</h3>
+<pre>4 1
+V1 R2 V2 V4 R2 V1 E V3 E</pre>
+
+<h3>Sample Output 4</h3>
+<pre>17</pre>
+
+
+<footer>
+  ACM-ICPC World Finals 2013 Problem E: Harvard &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: Hobson’s Trains (Solution) — ACM ICPC World Finals 2019</title>
+<style>
+
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+<header>
+  <p class="kicker">ACM ICPC World Finals 2019</p>
+  <h1>Problem H: Hobson’s Trains</h1>
+</header>
+<p>Solved by 81 teams.</p>
+<p>First solved after 28 minutes.</p>
+<p>Shortest team solution: 1165 bytes.</p>
+<p>Shortest judge solution: 1814 bytes.</p>
+<figure><img src="images/H-1.png" alt=""></figure>
+<p>The problem can be solved in linear time. The structure of this type of graph is well-known: a collection of rings with trees hanging off the vertices. Call a node a “ring node” if it is part of a ring, otherwise a “tree node”. We will solve the problem separately for ring nodes and tree nodes (identifying the rings in linear time is also a standard problem).</p>
+<p>First we solve the problem for tree nodes. Since tree nodes can only be reached from their subtree, we can solve this independently for each tree rooted at a ring node (the answer we get for the root will be wrong since it ignores the ring, but we fix that later). Firstly, we can identify the kth ancestor of every node: during a recursive walk of the tree, keep a stack of ancestors, and look back k entries when visiting a node to find its kth ancestor (it might not exist if the node is too shallow). From these pointers one can trivially compute f i , the number of kth -level descendants of i, that is, those that can reach i in exactly k legs. We actually want gi , the number of descendants at most k legs away. But we can compute this recursively by summing gi over the children, subtracting the sum of f i over the children (which will be k + 1 legs away), and adding 1 for the node itself.</p>
+<p>This ignores journeys from a node in one tree to a ring node other than the root. From each node, the reachable ring nodes form a contiguous arc of the ring. Thus, if we encode the number of such journeys to each ring node as a set of adjacent differences, we can update this structure in O(1) per source node.</p>
+<p>The problem can also be solved using mergable heaps. For each vertex i, the program maintains a heap of nodes which can reach vertex i in k or less steps. The heap is sorted by distance from i to allow easy removal after incrementing the distances of vertices in the heap. By sweeping from the leaves of the “tree nodes” one can update the parent node by incrementing all values in the heap by 1 and then merging its heap with its parent’s heap. The merge can be done in O(log n) with a mergable heap (e.g., a leftist tree or a binomial heap) or in amortized O(log2 n) by merging the smaller heap into the larger one. After solving the trees, one can do the same calculation for the cycle. However, this approach overcounts nodes that traverse the entire cycle once before reaching vertex i. This can be resolved by spinning around the cycle a second time to calculate the overcounted nodes and removing them from the total. The resulting runtime is O(n log n) for mergable heaps and O(n log2 n) for a binary heap. Both solutions have a comparable empirical runtime to the linear time solution.</p>
+</body>
+</html>

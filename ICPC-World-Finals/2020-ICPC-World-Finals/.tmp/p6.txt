@@ -1,0 +1,41 @@
+Input
+
+The first line of input contains three integers dx , dy , and n, where dx and dy (2 ≤ dx , dy ≤ 105 ) are the
+dimensions of Red Square, and n (1 ≤ n ≤ 100) is the number of domes. The bottom-left corner of
+Red Square is at the origin (0, 0) and the top-right corner is at coordinate (dx , dy ).
+Each of the next n lines contains two integers xi and yi (0 < xi < dx , 0 < yi < dy ), giving the locations
+(xi , yi ) of the domes. The ith line describes dome number i. No two domes are in the same location.
+The last line contains a permutation of the numbers {1, . . . , n} specifying the desired left-to-right view-
+ing order of the domes in the picture.
+
+
+Output
+
+Output the area of the region within Red Square from which one can take a photo that shows the domes
+in the requested order. Note that the area may be 0 if there is no position from which to take the requested
+photo. Your answer should have an absolute or relative error of at most 10−3 .
+
+ Sample Input 1                                        Sample Output 1
+ 100 100 5                                             450.000000
+ 30 70
+ 50 60
+ 50 40
+ 30 30
+ 20 50
+ 4 3 5 2 1
+
+
+ Sample Input 2                                        Sample Output 2
+ 100 100 5                                             0.000000
+ 30 70
+ 50 60
+ 50 40
+ 30 30
+ 20 50
+ 1 2 5 4 3
+
+
+
+
+ICPC World Finals 2020 Problem C: Domes                                                                    6
+

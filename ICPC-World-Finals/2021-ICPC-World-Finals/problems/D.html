@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem D: Guardians of the Gallery — ICPC World Finals 2021</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2021 · Problem D</p>
+  <h1>Guardians of the Gallery</h1>
+  <p class="meta">Time limit: 5 seconds</p>
+</header>
+
+<p>Your local art gallery is about to host an exciting new exhibition of
+sculptures by world-renowned artists, and the gallery expects to attract
+thousands of visitors. Unfortunately, the exhibition might also attract the
+wrong kind of visitors, namely burglars who intend to steal the works of art.
+In the past, the gallery directors did not worry much about this problem, since
+their permanent collection is, to be honest, not really worth stealing.</p>
+
+<p>The gallery consists of rooms, and each sculpture in the new exhibition will
+be placed in a different room. Each room has a security guard and an alarm to
+monitor the artwork. When an alarm sounds, the guard will run (without leaving
+the room) from their post to a position where they can see the sculpture
+directly. This is to check whether the sculpture has in fact been stolen, or
+whether this is yet another false alarm.</p>
+
+<p>To figure out where to best station the security guard, the gallery directors
+would like to know how long it takes for the guard to see a given sculpture.
+They hope that you can help!</p>
+
+<p>Every room is on a single floor, and the layout of the walls can be
+approximated by a simple polygon. The locations of the guard and the sculpture
+are distinct points strictly inside the polygon. The sculpture is circular,
+with a negligibly small (but positive) radius. To verify that the sculpture is
+still present, the guard needs to be able to see at least half of it.</p>
+
+<p>Figure D.1 illustrates two examples. In each case, the guard starts at the
+blue square on the left, and the sculpture is located at the red circle on the
+right. The dotted blue line shows the optimal path for the guard to move. Once
+the guard reaches the location marked by the green diamond, half of the
+sculpture can be seen.</p>
+
+<figure>
+  <img src="images/D-1.png" alt="">
+  <figcaption>Figure D.1: Illustration of sample inputs.</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>The first line of input contains an integer <i>n</i> (3 &le; <i>n</i> &le;
+100), the number of vertices that describe the polygon. This is followed by
+<i>n</i> lines each containing two integers <i>x</i> and <i>y</i>
+(0 &le; <i>x</i>, <i>y</i> &le; 1&thinsp;000), giving the coordinates of the
+polygon vertices in counterclockwise order. The next line contains two integers
+<i>x</i><sub><i>g</i></sub> and <i>y</i><sub><i>g</i></sub>, which specify the
+location of the guard. Finally, the last line contains two integers
+<i>x</i><sub><i>s</i></sub> and <i>y</i><sub><i>s</i></sub>, which specify the
+location of the center of the sculpture. The polygon is simple, that is, its
+vertices are distinct and no two edges of the polygon intersect or touch, other
+than consecutive edges which touch at their common vertex. In addition, no two
+consecutive edges are collinear.</p>
+
+<h2>Output</h2>
+
+<p>Output the minimum distance that the guard has to move to be able to see at
+least half the sculpture. Your answer must have an absolute or relative error
+of at most 10<sup>&minus;6</sup>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>8
+0 0
+20 0
+20 30
+60 30
+60 0
+80 0
+80 50
+0 50
+10 10
+70 10</pre>
+
+<h3>Sample Output 1</h3>
+<pre>58.137767414994535</pre>
+
+<h3>Sample Input 2</h3>
+<pre>11
+0 0
+4 0
+4 1
+5 1
+5 0
+7 0
+7 2
+3 2
+3 1
+2 2
+0 2
+1 1
+6 1</pre>
+
+<h3>Sample Output 2</h3>
+<pre>2.0</pre>
+
+<footer>
+  ICPC World Finals 2021 Problem D: Guardians of the Gallery &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

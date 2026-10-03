@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem M: Trailing Digits — ICPC World Finals 2020</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">ICPC World Finals 2020 · Problem M</p>
+  <h1>Trailing Digits</h1>
+  <p class="meta">Time limit: 1 second</p>
+</header>
+
+<p>A large shipment of doodads has just arrived, and each doodad has a
+suggested retail price of <i>b</i> cents. You&rsquo;ve noticed that consumers
+are much more likely to purchase goods when most of the trailing digits are
+the same. For example, items are more likely to be priced at 99 cents rather
+than 57 cents. So to make your goods more appealing, you&rsquo;ve decided to
+sell your goods in bundles. To make a bundle, you choose a positive integer
+<i>k</i>, and sell <i>k</i> doodads for <i>k</i> &times; <i>b</i> cents. With
+an appropriate choice of <i>k</i> you can have a more pleasing price. For
+example, selling 57-cent doodads in bundles of size 7 means that each bundle
+sells for 399 cents, which has two trailing 9s, rather than no trailing 9s of
+57. This idea of trailing 9s can be generalized to any other trailing digit:
+bundles of 692 57-cent doodads sell for 39&thinsp;444 cents (three trailing
+4s) and bundles of one million doodads sell for 57&thinsp;000&thinsp;000 cents
+(six trailing 0s).</p>
+
+<p>After a little thought, you realize that you do not want to make your
+bundles too large&mdash;not only can the price be excessive, but who really
+needs several million doodads? For any type of doodad, your marketing
+department has a maximum bundle price of <i>a</i>.</p>
+
+<p>Given the price of a doodad, the desired trailing digit, and the maximum
+price of a bundle, write a program that optimizes the trailing digits.</p>
+
+<h2>Input</h2>
+
+<p>Input consists of a single line containing three integers <i>b</i>,
+<i>d</i>, and <i>a</i>, where <i>b</i> (1 &le; <i>b</i> &lt; 10<sup>6</sup>)
+is the price of a doodad in cents, <i>d</i> (0 &le; <i>d</i> &le; 9) is the
+desired trailing digit, and <i>a</i> (<i>b</i> &le; <i>a</i> &lt;
+10<sup>10&thinsp;000</sup>) is the maximum price of a bundle.</p>
+
+<h2>Output</h2>
+
+<p>Output the maximum number of consecutive occurrences of <i>d</i> that can
+appear at the end of a bundle price, given that the price of the bundle cannot
+exceed <i>a</i>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>57 9 1000</pre>
+
+<h3>Sample Output 1</h3>
+<pre>2</pre>
+
+<h3>Sample Input 2</h3>
+<pre>57 4 40000</pre>
+
+<h3>Sample Output 2</h3>
+<pre>3</pre>
+
+<h3>Sample Input 3</h3>
+<pre>57 4 39000</pre>
+
+<h3>Sample Output 3</h3>
+<pre>2</pre>
+
+<footer>
+  ICPC World Finals 2020 Problem M: Trailing Digits
+</footer>
+
+</body>
+</html>

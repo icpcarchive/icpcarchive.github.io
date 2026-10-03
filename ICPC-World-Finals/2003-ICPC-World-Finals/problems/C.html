@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem C: Riding the Bus — The 27th Annual ACM International Collegiate Programming Contest World Finals (2003)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">The 27th Annual ACM International Collegiate Programming Contest World Finals sponsored by IBM · Problem C</p>
+  <h1>Riding the Bus</h1>
+  <p class="meta">Input File: bus.in</p>
+</header>
+
+<p>The latest research in reconfigurable multiprocessor chips focuses on the use of a
+single bus that winds around the chip. Processor components, which can be anywhere on the
+chip, are attached to connecting points on the bus so that they can communicate with each
+other.</p>
+
+<p>Some research involves bus layout that uses recursively-defined “SZ” curves, also known
+as “S-shaped Peano curves.” Two examples of these curves are shown below. Each curve is
+drawn on the unit square. The order-1 curve, shown on the left, approximates the letter
+“S” and consists of line segments connecting the points (0,0), (1,0), (1,0.5), (0,0.5),
+(0,1), and (1,1) in order. Each horizontal line in an “S” or “Z” curve is twice as long as
+each vertical line. For the order-1 curve, the length of a vertical line, <i>len</i>, is
+0.5.</p>
+
+<figure>
+  <img src="images/C-1.png" alt="">
+</figure>
+
+<p>The order-2 curve, shown on the right, contains 9 smaller copies of the order-1 curve
+(4 of which are reversed left to right to yield “Z” curves). These copies are connected by
+line segments of length <i>len</i>, shown as dotted lines. Since the width and height of the
+order-2 curve is 8 &times; <i>len</i>, and the curve is drawn on the unit square,
+<i>len</i> = 0.125 for the order-2 curve.</p>
+
+<p>The order-3 curve contains 9 smaller copies of the order-2 curve (with 4 reversed left
+to right), connected by line segments, as described for the order-2 curve. Higher order
+curves are drawn in a similar manner. The connecting points to which processor components
+attach are evenly spaced every <i>len</i> units along the bus. The first connecting point is
+at (0,0) and the last is at (1,1). There are 9<sup>k</sup> connecting points along the
+order-<i>k</i> curve, and the total bus length is (9<sup>k</sup>–1) &times; <i>len</i>
+units.</p>
+
+<p>You must write a program to determine the total distance that signals must travel
+between two processor components. Each component’s coordinates are given as an <i>x</i>,
+<i>y</i> pair, 0 &le; <i>x</i> &le; 1 and 0 &le; <i>y</i> &le; 1, where <i>x</i> is the
+distance from the left side of the chip, and <i>y</i> is the distance from the lower edge of
+the chip. Each component is attached to the closest connecting point by a straight line. If
+multiple connecting points are equidistant from a component, the one with the smallest
+<i>x</i> coordinate and smallest <i>y</i> coordinate is used. The total distance a signal
+must travel between two components is the sum of the length of the lines connecting the
+components to the bus, and the length of the bus between the two connecting points. For
+example, the distance between components located at (0.5, 0.25) and (1.0, 0.875) on a chip
+using the order-1 curve is 3.8750 units.</p>
+
+<h2>Input</h2>
+
+<p>The input contains several cases. For each case, the input consists of an integer that
+gives the order of the SZ curve used as the bus (no larger than 8), and then four real
+numbers <i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>, <i>x</i><sub>2</sub>,
+<i>y</i><sub>2</sub> that give the coordinates of the processor components to be connected.
+While each processor component should actually be in a unique location not on the bus, your
+program must correctly handle all possible locations.</p>
+
+<p>The last case in the input is followed by a single zero.</p>
+
+<h2>Output</h2>
+
+<p>For each case, display the case number (starting with 1 for the first case) and the
+distance between the processor components when they are connected as described. Display the
+distance with 4 digits to the right of the decimal point.</p>
+
+<p>Use the same format as that shown in the sample output shown below. Leave a blank line
+between the output lines for consecutive cases.</p>
+
+<h3>Sample Input 1</h3>
+<pre>1 0.5 .25 1 .875
+1 0 0 1 1
+2 .3 .3 .7 .7
+2 0 0 1 1
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1.  Distance is 3.8750
+
+Case 2.  Distance is 4.0000
+
+Case 3.  Distance is 8.1414
+
+Case 4.  Distance is 10.0000</pre>
+
+<footer>
+  The 2003 ACM Programming Contest World Finals sponsored by IBM
+</footer>
+
+</body>
+</html>

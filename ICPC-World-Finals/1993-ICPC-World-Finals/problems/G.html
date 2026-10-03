@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Resource Allocation — 1993 ACM International Collegiate Programming Contest Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">1993 ACM International Collegiate Programming Contest Finals · Problem G</p>
+  <h1>Resource Allocation</h1>
+</header>
+
+<p>A software development firm is willing to hire new programmers and to spend more money for hardware and
+software systems in order to increase productivity in its programming divisions. For lack of a better idea,
+management has defined increased productivity for a division as “incremental lines of code” that the division
+produces. The company needs a resource allocation model to determine how the money and new programmers
+should be divided among the divisions in order to maximize the total productivity increase.</p>
+
+<p>Each programming division is limited in how effectively it can utilize any new resources. For example, one
+particular division will be able to use 0, 3, 5, or 6 new programmers effectively. (The personnel organization
+within that division prevents it from being able to use 1, 2, 4, 7 or more new programmers.) This gives 4 options
+for allocating new programmers to that division. There are only 3 different options for allocation of additional
+money to that division. Therefore, there are 12 possible allocation scenarios in this example. For each scenario,
+the company has estimated the incremental lines of code that would be produced by that division.</p>
+
+<p>You must write a program that recommends a precise allocation of resources among the divisions. For each
+division, your program must determine how many new programmers and how much money should be allocated.
+Allocation of new programmers and money must be made to maximize the total productivity increase—the sum of
+incremental lines of code over all divisions. The total number of programmers allocated cannot exceed the total
+number of programmers that the company is willing to hire. The total amount of money cannot exceed the total
+amount budgeted for the entire company. In the case where there are multiple optimal solutions, your program
+may recommend any one of them.</p>
+
+<h2>Input</h2>
+
+<p>Input for your program consists of several allocation problems. All input data are non-negative integers. The first
+3 lines of input for each problem consists of:</p>
+
+<pre>d     number of programming divisions (0 &lt; d ≤ 20 except when d is the end-of-file sentinel)
+p     total number of new programmers
+b     total amount of money budgeted for new computing resources</pre>
+
+<p>Following those 3 lines are input records for each programming division. The first record is for division #1, the
+second for division #2, etc. Each division record is organized as follows:</p>
+
+<pre>n                   number of new programmer options (0 ≤ n ≤ 10)
+x₁ x₂…xₙ            list of new programmer options (numbers are separated by blanks)
+k                   number of new budget options (0 ≤ k ≤ 10)
+b₁ b₂…bₖ            cost of each new budget option (separated by blanks)
+n × k table of integers   the (i, j) table entry is the incremental lines of code produced for allocation of xᵢ new
+                           programmers and bⱼ additional budget</pre>
+
+<p>It is possible to allocate 0 new programmers to any division and $0 for new hardware and software—resulting in
+no increase in productivity for that division. This “null” allocation will be explicitly shown.</p>
+
+<p>Each allocation problem begins on a new line. The end of input is signified by an allocation “problem” with 0
+divisions. No input lines follow that line.</p>
+
+<h2>Output</h2>
+
+<p>Output for each problem begins with a line identifying the problem that is solved (problem #1, problem #2, etc.).
+This is followed by a blank line then 3 lines that tell the total amount of money to be spent, the total number of
+new programmer to be hired, and the total anticipated new productivity for an optimal resource allocation.</p>
+
+<p>Output for each division comes next. The first line identifies the division by number. The remaining 3 lines
+indicate the division’s budget, the number of new programmers for the division, and the expected incremental
+lines of code to be produced. One blank line appears between output for successive divisions. Two blank lines
+appear between output for successive problems. The exact formatting of the output is not critical, but all output
+must be easy to read and well-identified.</p>
+
+<p>A sample input file which contains one complete allocation problem is shown below. In this problem, there are 3
+programming divisions. The company is willing to hire up to 10 new programmers and spend up to $90,000 on
+new computing resources. For division #1, the expenditure of $50,000 on new computing resources and allocation
+of 6 new programmers would result in the production of 40,000 incremental lines of code.</p>
+
+<h3>Sample Input <i>1</i></h3>
+<pre>3
+10
+90000
+4
+0 2 5 6
+4
+0 20000 50000 70000
+    0   10000    20000    50000
+60000   20000    10000    40000
+20000   10000    30000    40000
+30000   10000    40000    30000
+5
+0 1 3 4 8
+3
+0 40000 80000
+    0   50000   30000
+50000   40000   60000
+20000   30000   50000
+80000   90000   50000
+30000   40000   70000
+3
+0  4  6
+5
+0  50000  30000  40000  50000
+    0  30000  50000  60000  30000
+10000  20000  30000  40000  50000
+20000  30000  40000  50000  60000
+0</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>Optimal resource allocation problem #1
+
+Total budget: $80000
+Total new programmers: 6
+Total productivity increase: 210000
+
+Division #1 resource allocation:
+Budget:  $0
+Programmers: 2
+Incremental lines of code: 60000
+
+Division #2 resource allocation:
+Budget:  $40000
+Programmers: 4
+Incremental lines of code: 90000
+
+Division #3 resource allocation:
+Budget:  $40000
+Programmers: 0
+Incremental lines of code: 60000</pre>
+
+<footer>
+  1993 ACM International Collegiate Programming Contest Finals · Problem G · Resource Allocation
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Branch Assignment — ACM-ICPC World Finals (2016)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2016 &middot; Problem B</p>
+  <h1>Branch Assignment</h1>
+  <p class="meta">Time limit: 3 seconds</p>
+</header>
+
+<p>The Innovative Consumer Products Company (ICPC) is planning to start a top-secret project. This project consists of <i>s</i> subprojects. There will be <i>b</i> &ge; <i>s</i> branches of ICPC involved in this project and ICPC wants to assign each branch to one of the subprojects. In other words, the branches will form <i>s</i> disjoint groups, with each group in charge of a subproject.</p>
+
+<p>At the end of each month, each branch will send a message to every other branch in its group (a different message to each branch). ICPC has a particular protocol for its communications. Each branch <i>i</i> has a secret key <i>k</i><sub><i>i</i></sub> known only to the branch and the ICPC headquarters. Assume branch <i>i</i> wants to send a message to branch <i>j</i>. Branch <i>i</i> encrypts its message with its key <i>k</i><sub><i>i</i></sub>. A trusted courier picks up this message from this branch and delivers it to the ICPC headquarters. Headquarters decrypts the message with key <i>k</i><sub><i>i</i></sub> and re-encrypts it with key <i>k</i><sub><i>j</i></sub>. The courier then delivers this newly encrypted message to branch <i>j</i>, which decrypts it with its own key <i>k</i><sub><i>j</i></sub>. For security reasons, a courier can carry only one message at a time.</p>
+
+<p>Given a road network and the locations of branches and the headquarters in this network, your task is to determine the minimum total distance that the couriers will need to travel to deliver all the end-of-month messages, over all possible assignments of branches to subprojects.</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains four integers <i>n</i>, <i>b</i>, <i>s</i>, and <i>r</i>, where <i>n</i> (2 &le; <i>n</i> &le; 5 000) is the number of intersections, <i>b</i> (1 &le; <i>b</i> &le; <i>n</i> &minus; 1) is the number of branches, <i>s</i> (1 &le; <i>s</i> &le; <i>b</i>) is the number of subprojects, and <i>r</i> (1 &le; <i>r</i> &le; 50 000) is the number of roads. The intersections are numbered from 1 through <i>n</i>. The branches are at intersections 1 through <i>b</i>, and the headquarters is at intersection <i>b</i> + 1. Each of the next <i>r</i> lines contains three integers <i>u</i>, <i>v</i>, and &ell;, indicating a one-way road from intersection <i>u</i> to a different intersection <i>v</i> (1 &le; <i>u</i>, <i>v</i> &le; <i>n</i>) of length &ell; (0 &le; &ell; &le; 10 000). No ordered pair (<i>u</i>, <i>v</i>) appears more than once, and from any intersection it is possible to reach every other intersection.</p>
+
+<h2>Output</h2>
+
+<p>Display the minimum total distance that the couriers will need to travel.</p>
+
+<h3>Sample Input 1</h3>
+<pre>5 4 2 10
+5 2 1
+2 5 1
+3 5 5
+4 5 0
+1 5 1
+2 3 1
+3 2 5
+2 4 5
+2 1 1
+3 4 2</pre>
+
+<h3>Sample Output 1</h3>
+<pre>13</pre>
+
+<h3>Sample Input 2</h3>
+<pre>5 4 2 10
+5 2 1
+2 5 1
+3 5 5
+4 5 10
+1 5 1
+2 3 1
+3 2 5
+2 4 5
+2 1 1
+3 4 2</pre>
+
+<h3>Sample Output 2</h3>
+<pre>24</pre>
+
+<footer>
+  ACM-ICPC World Finals 2016 Problem B: Branch Assignment &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

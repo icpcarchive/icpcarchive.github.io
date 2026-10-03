@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: Window Frames — The Twenty-first Annual ACM International Collegiate Programming Contest Finals (1997)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The Twenty-first Annual ACM International Collegiate Programming Contest Finals · Problem H</p>
+  <h1>Window Frames</h1>
+  <p class="meta">Input file window.in</p>
+</header>
+
+<p>Elements of graphical user interfaces include such things as buttons, text boxes, scroll bars, drop-down menus and scrollable list boxes. Each is considered to be a special kind of object called a widget. Where these widgets are placed, how much space they are allocated, and how they change size constitutes the geometry of a window.</p>
+
+<p>One geometry management scheme uses special rectangular widgets called frames to contain and thus group other widgets. A frame is a parent if some or all of its own space is allocated to additional frames, which are its children. The frame which has no parent is called the root frame; its size is specified by the user (in the input data). This problem requires that you determine the allocation of space to, and the position of frames placed in root frames of various sizes.</p>
+
+<p>The cavity in a frame is the space in the frame that is not occupied by its children. When a new child frame is created, it is allocated an entire horizontal strip along the top or bottom edge of the cavity (this is called a horizontal child) or an entire vertical strip along the right or left edge of the cavity (this is called a vertical child). Thus, as a result of creating a new child, the cavity becomes smaller, but it remains rectangular. The process of placing children inside the enclosing frame is called packing. Children are positioned in the cavity according to the order in which they are packed.</p>
+
+<p>The figure below shows the child frames of a parent frame. Frame 1 along the right edge was packed first, then frame 2 along the bottom edge, frame 3 along the left edge, and finally frame 4 along the right edge. The cavity, shown in white, contains available space for packing subsequent child frames.</p>
+
+<figure>
+  <img src="images/H-1.png" alt="">
+  <figcaption>The child frames of a parent frame. The cavity (shown in white) contains available space for packing subsequent child frames.</figcaption>
+</figure>
+
+<p>Each frame covers a rectangular grid of pixels. If the root frame covers <i>c</i> columns and <i>r</i> rows of pixels, then the pixel in the top left corner is at coordinate (0,0) and the pixel in the lower right corner is at coordinate (<i>c</i>−1, <i>r</i>−1). The position of a frame is specified by the coordinates of its upper left corner pixel and its lower right corner pixel.</p>
+
+<p>Each frame has minimum dimensions determined by an input parameter <i>d</i> and the minimum dimensions of its children. A frame must be at least large enough to pack all of its children. The minimum dimensions of each frame are determined as follows:</p>
+
+<table>
+  <tr><th>Packing Side</th><th>Frame Type</th><th>Minimum Width</th><th>Minimum Height</th></tr>
+  <tr>
+    <td>Right or left</td>
+    <td>Vertical</td>
+    <td>Maximum of <i>d</i> and the width necessary for the frame’s children</td>
+    <td>Maximum of 1 and the height necessary for the frame’s children</td>
+  </tr>
+  <tr>
+    <td>Bottom or top</td>
+    <td>Horizontal</td>
+    <td>Maximum of 1 and the width necessary for the frame’s children</td>
+    <td>Maximum of <i>d</i> and the height necessary for the frame’s children</td>
+  </tr>
+</table>
+
+<p>When a frame is larger than the minimum dimensions just specified, the additional interior space is apportioned to its children and/or its cavity. Each frame has an expansion flag (which is an input parameter) that, when set, indicates a vertical frame can grow wider or a horizontal frame can grow taller. For example, a frame with its expansion flag set, allocated space along the top of the cavity, can grow taller, with the extra height extending downward.</p>
+
+<p>The distribution of additional horizontal space in a frame is handled as follows. Let <i>x</i> be the number of horizontal pixels by which the parent frame exceeds its minimum width. If <i>n</i>, the number of the vertical children in the frame with their expansion flags set, is non-zero, then the <i>x</i> pixels are distributed among the <i>n</i> vertical children. If <i>q</i> is the quotient of <i>x</i> divided by <i>n</i> and <i>r</i> is the remainder, then each of the <i>n</i> vertical frames grows wider by <i>q</i> pixels and the first <i>r</i> of them that were packed in the frame grow wider by 1 pixel in addition to the <i>q</i>. If <i>n</i> is zero, then none of the vertical children grow wider, and the <i>x</i> pixels are added to the width of the cavity. In either case, the horizontal children in the enlarged frame become wider, if necessary, in such a manner as to ensure the single cavity remains rectangular.</p>
+
+<p>The distribution of additional vertical space in a parent frame to its children and/or its cavity is handled in a manner similar to that used to distribute additional horizontal space, with the appropriate change in direction of growth. Only the horizontal children with their expansion flags set grow taller to utilize the additional vertical pixels, and if none of the horizontal children have their expansion flags set, the additional pixels are added to the height of the cavity. As expected, the vertical children also become taller, if necessary, to ensure the rectangular and uniqueness properties of the cavity.</p>
+
+<p>In the next illustration, the root frame on the left has been enlarged to yield the one on the right. Frames 6 and 7 are horizontal and vertical children, respectively, of frame 5. Only frames 4, 6 and 7 have their expansion flags set. In the frame on the right, the additional horizontal and vertical space has been distributed to the children so as to result in the growth indicated by the arrows. Note that frame 7 does not change size because no room is available for expansion in its parent, frame 5. Frame 6 does not change size for the same reason.</p>
+
+<figure>
+  <img src="images/H-2.png" alt="">
+  <figcaption>The root frame on the left has been enlarged to yield the one on the right.</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>The input consists of a sequence of root frames, their descendants, and different potential root frame sizes. Each item in the sequence corresponding to a single root has the following format:</p>
+
+<pre>M N</pre>
+
+<p><i>M</i> is the total number of frames excluding the root. <i>N</i> is the number of different root sizes (both are positive integers). followed by <i>M</i> lines of the form:</p>
+
+<pre>n p s d e</pre>
+
+<p>where: <i>n</i> is the name of the frame (a positive integer); <i>p</i> is the name of the parent (where 0 is the root frame); <i>s</i> is one of the characters “L”, “R”, “T”, and “B” indicating packing side; <i>d</i> is the minimum dimension (a positive integer); and <i>e</i> is 0 or 1, where 0 means the expansion flag is cleared, 1 means it is set; followed by <i>N</i> lines of the form:</p>
+
+<pre>c r</pre>
+
+<p>where <i>c</i> is the number of columns of pixels, and <i>r</i> is the number of rows of pixels in the root frame (both positive integers).</p>
+
+<p>Root frames are not listed. Frame numbers for a given root are distinct. Children of a frame will not appear in the input before their parents. Frames are packed in the order in which they appear in the input. The end of input is signified by a line with <i>M</i> and <i>N</i> both 0.</p>
+
+<h2>Output</h2>
+
+<p>Begin the output of each root by writing its record number (1 for the first, 2 for the second, etc.). For each size corresponding to that root, write the size (rows × columns) and then list the name of each frame along with the coordinates of its upper left and lower right corners. List the frames in the order in which they are packed in their parents, with the root’s first child and its descendants first, the second child and its descendants second, and so on. If the root size is too small to pack its frames, print the message “is too small” instead of attempting to list the frames. Separate output for different root sizes by a line of dashes.</p>
+
+<h3>Sample Input 1</h3>
+<pre>7 1
+1 0 R 50 0
+2 0 B 10 0
+3 0 L 40 0
+4 0 R 20 1
+5 0 T 30 0
+6 5 R 20 0
+7 5 L 10 1
+1000 1000
+2 2
+1 0 R 100 1
+2 0 T 30 1
+100 50
+200 100
+0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Root Frame #1
+--------------------------------------------
+  Display: 1000 X 1000
+   Frame: 1  (950,0)  (999,999)
+   Frame: 2  (0,990)  (949,999)
+   Frame: 3  (0,0)  (39,989)
+   Frame: 4  (70,0)  (949,989)
+   Frame: 5  (40,0)  (69,29)
+   Frame: 6  (50,0)  (69,29)
+   Frame: 7  (40,0)  (49,29)
+--------------------------------------------
+
+
+Root Frame #2
+--------------------------------------------
+  Display: 100 X 50 is too small
+--------------------------------------------
+  Display: 200 X 100
+   Frame: 1  (1,0)  (199,99)
+   Frame: 2  (0,0)  (0,99)
+--------------------------------------------</pre>
+
+<footer>
+  The Twenty-first Annual ACM International Collegiate Programming Contest Finals · Problem H · Window Frames
+</footer>
+
+</body>
+</html>

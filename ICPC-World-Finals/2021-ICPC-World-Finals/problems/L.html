@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem L: Where Am I? — ICPC World Finals 2021</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2021 · Problem L</p>
+  <h1>Where Am I?</h1>
+  <p class="meta">Time limit: 2 seconds</p>
+</header>
+
+<p>Who am I? What am I? Why am I? These are all difficult questions that have
+kept philosophers reliably busy over the past millennia. But when it comes to
+&ldquo;Where am I?&rdquo;, then, well, modern smartphones and GPS satellites
+have pretty much taken the excitement out of that question.</p>
+
+<p>To add insult to the injury of newly unemployed spatial philosophers formerly
+pondering the &ldquo;where&rdquo; question, the Instant Cartographic
+Positioning Company (ICPC) has decided to run a demonstration of just how much
+more powerful a GPS is compared to old-fashioned maps. Their argument is that
+maps are useful only if you already know where you are, but much less so if you
+start at an unknown location.</p>
+
+<p>For this demonstration, the ICPC has created a test area that is arranged as
+an unbounded Cartesian grid. Most grid cells are empty, but a finite number of
+cells have a marker at their center (see Figure L.1(a) for an example with five
+marked cells). All empty grid cells look the same, and all cells with markers
+look the same. Suppose you are given a map of the test area (that is, the
+positions of all the markers), and you are placed at an (unknown to you) grid
+cell. How long will it take you to find out where you actually are?
+ICPC&rsquo;s answer is clear: potentially a very, very long time, while a GPS
+would give you the answer instantly. But how long exactly?</p>
+
+<figure>
+  <img src="images/L-1.png" alt="">
+  <figcaption>Figure L.1: Sample grid and the order in which test subjects explore the grid. (a) Grid with markers (&times;) corresponding to the first sample input. (b) The order in which a test subject visits grid cells, relative to starting cell 0.</figcaption>
+</figure>
+
+<p>In the trial, test subjects will explore their environment by following an
+expanding clockwise spiral whose first few steps are shown in Figure L.1(b).
+The starting cell is labeled &ldquo;0&rdquo;, and the numbers show the order in
+which other cells are visited. The test subjects can see a marker only if they
+are at its grid cell, and they will stop their exploration as soon as they know
+where they are based on the grid cells that they have seen so far. That means
+that the observed sequence of empty and marked grid cells could have begun only
+at a single possible starting position. The grid is unbounded, but the
+exploration will be finite since once a test subject has seen all markers on the
+grid, they&rsquo;ll definitely know where they are.</p>
+
+<p>Having hundreds of test subjects literally running in circles can be
+expensive, so the ICPC figures that writing a simulation will be cheaper and
+faster. Maybe you can help?</p>
+
+<h2>Input</h2>
+
+<p>The input describes a single grid. It starts with a line containing two
+integers <i>d</i><sub><i>x</i></sub>, <i>d</i><sub><i>y</i></sub> (1 &le;
+<i>d</i><sub><i>x</i></sub>, <i>d</i><sub><i>y</i></sub> &le; 100). The
+following <i>d</i><sub><i>y</i></sub> lines contain
+<i>d</i><sub><i>x</i></sub> characters each, and describe part of the test grid.
+The <i>i</i><sup>th</sup> character of the <i>j</i><sup>th</sup> line of this
+grid description specifies the contents of the grid cell at coordinate
+(<i>i</i>, <i>d</i><sub><i>y</i></sub> &minus; <i>j</i> + 1). The character is
+either &lsquo;.&rsquo; or &lsquo;X&rsquo;, meaning that the cell is either
+empty, or contains a marker, respectively. The total number of markers in the
+grid will be between 1 and 100, inclusive. All grid cells outside the range
+described by the input are empty.</p>
+
+<h2>Output</h2>
+
+<p>In ICPC&rsquo;s experiment, a test subject knows they will start at some
+position (<i>x</i>, <i>y</i>) with 1 &le; <i>x</i> &le;
+<i>d</i><sub><i>x</i></sub>, 1 &le; <i>y</i> &le; <i>d</i><sub><i>y</i></sub>.</p>
+
+<p>Output three lines. The first line should have the expected number of steps
+needed to identify the starting position, assuming that the starting position
+is chosen uniformly at random. This number needs to be exact to within an
+absolute error of 10<sup>&minus;3</sup>. The second line should have the maximum
+number of steps necessary until one can identify the starting position. The
+third line should list all starting coordinates (<i>x</i>, <i>y</i>) that
+require that maximum number of steps. The coordinates should be sorted by
+increasing <i>y</i>-coordinates, and then (if the <i>y</i>-coordinates are the
+same) by increasing <i>x</i>-coordinates.</p>
+
+<h3>Sample Input 1</h3>
+<pre>5 5
+....X
+.X...
+.....
+X..X.
+..X..</pre>
+
+<h3>Sample Output 1</h3>
+<pre>9.960
+18
+(1,4) (4,5)</pre>
+
+<h3>Sample Input 2</h3>
+<pre>5 1
+..XX.</pre>
+
+<h3>Sample Output 2</h3>
+<pre>4.600
+7
+(1,1) (5,1)</pre>
+
+<footer>
+  ICPC World Finals 2021 Problem L: Where Am I? &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

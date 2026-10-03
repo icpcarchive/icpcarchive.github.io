@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem A: Billboards — 48th ICPC World Championship (2024)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">48th ICPC World Championship · Problem A</p>
+  <h1>Billboards</h1>
+  <p class="meta">Time limit: 6 seconds</p>
+</header>
+
+<p>Each year, the ICPC (International Collegiate Programming Contest) has many
+sponsors. Since happy sponsors means happy contest, we plan to add a long
+billboard on one side of the contest area, so that our lovely sponsors can put
+their advertisements on it.</p>
+
+<p>There are <i>n</i> wonderful sponsors in total, so to be fair, we would like
+to give each of them 1/<i>n</i> of the total area of the billboard. However, this
+is complicated by the fact that each marvelous sponsor potentially values
+sections of the billboard differently.</p>
+
+<figure class="hero">
+  <img src="images/A-1.png" alt="">
+  <figcaption>Billboards in the contest area</figcaption>
+</figure>
+
+<p>For example, some sponsors want to put their ads near the entrance of the
+contest area, which may be at the corner where all contestants are guaranteed to
+see them when they enter. On the other hand, some sponsors may just want to put
+their ads in the middle, which is more likely to be broadcast in the live stream.
+(Don&rsquo;t ask us what happens if the entrance is at the middle! It&rsquo;s just an
+example.)</p>
+
+<p>After talking with all of our delightful sponsors, the ICPC staff finds that
+the preference values of each sponsor can be modeled as a continuous piecewise
+linear function, where the domain of each of these value functions is the length
+of the billboard. Given this information, the ICPC staff wants to split the
+billboard into <i>n</i> sections, and give them to our <i>n</i> sponsors so that
+each magnificent sponsor gets at least 1/<i>n</i> of the value of the billboard
+from their point of view. That is, the area of the value function under the
+section that each sponsor gets must be at least 1/<i>n</i> of the total area of
+their own value function.</p>
+
+<p>Figure A.1 shows a simple example. The billboard length is 10 and there are
+two sponsors, Orakle Software and Hal++, both of them having a value function
+with only one piece. Orakle&rsquo;s value function indicates that the company
+increasingly prefers sections of the billboard as you move left to right, while
+Hal++&rsquo;s value function indicates the opposite. The area under each function
+is the total value of the billboard from each sponsor&rsquo;s perspective. The
+blue and the green areas shown are both larger than half of each total area, so
+cutting the billboard in the middle (the dashed line) is a valid solution,
+resulting in the billboard shown in Figure A.2. Note that there are many other
+divisions of the billboard that work as well (for example, cuttings at 4 or 6
+are also valid solutions, if the sections of billboards are given to the correct
+sponsor).</p>
+
+<figure>
+  <img src="images/A-2.png" alt="">
+  <figcaption>Figure A.1: Sample Input 1</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>The first line contains two integers: <i>n</i> (1 &le; <i>n</i> &le; 5&thinsp;000),
+the number of glorious sponsors that the ICPC has (numbered 1 to <i>n</i>), and
+<i>l</i> (1 &le; <i>l</i> &le; 10<sup>6</sup>), the length of the billboard.</p>
+
+<p>Each of the remaining <i>n</i> lines starts with an integer <i>m</i>
+(2 &le; <i>m</i> &le; 5&thinsp;000), the number of points specifying this esteemed
+sponsor&rsquo;s value function. The remainder of the line contains <i>m</i> pairs of
+integers (<i>a</i><sub>1</sub>, <i>b</i><sub>1</sub>), &hellip;,
+(<i>a</i><sub><i>m</i></sub>, <i>b</i><sub><i>m</i></sub>)
+(0 = <i>a</i><sub>1</sub> &lt; <i>a</i><sub>2</sub> &lt; &hellip; &lt;
+<i>a</i><sub><i>m</i></sub> = <i>l</i>, 0 &le; <i>b</i><sub><i>i</i></sub> &le; 100),
+where each pair represents an endpoint of one section of the piecewise linear
+function. The sum of all <i>m</i>&rsquo;s is at most 500&thinsp;000 and it is
+guaranteed that at least one <i>b</i><sub><i>i</i></sub> is positive for each
+sponsor.</p>
+
+<figure>
+  <img src="images/A-3.png" alt="">
+  <figcaption>Figure A.2: Final Billboard corresponding to Sample Output 1</figcaption>
+</figure>
+
+<h2>Output</h2>
+
+<p>Output <i>n</i> pairs of numbers (<i>l</i><sub><i>i</i></sub>,
+<i>f</i><sub><i>i</i></sub>) (1 &le; <i>i</i> &le; <i>n</i>), which indicate that
+the billboard section in the range [<i>l</i><sub><i>i</i>&minus;1</sub>,
+<i>l</i><sub><i>i</i></sub>] is given to sponsor <i>f</i><sub><i>i</i></sub>
+(where <i>l</i><sub>0</sub> = 0 is assumed, <i>l</i><sub>0</sub> &lt;
+<i>l</i><sub>1</sub> &lt; <i>l</i><sub>2</sub> &lt; &hellip; &lt;
+<i>l</i><sub><i>n</i></sub>, and <i>l</i><sub><i>n</i></sub> must be equal to
+<i>l</i>). The <i>f</i><sub><i>i</i></sub> values must be integers in the range
+[1, <i>n</i>] where each integer appears exactly once, but the
+<i>l</i><sub><i>i</i></sub> can be real numbers. If there are multiple solutions,
+output any of them. If there is no solution, output <i>impossible</i>.</p>
+
+<p>Note that you don&rsquo;t need to optimize anything else, as long as each sponsor
+gets at least 1/<i>n</i> of their total area. Each sponsor&rsquo;s allocated area may be
+below 1/<i>n</i> of their total area if the absolute or relative difference is at
+most 10<sup>&minus;8</sup>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>2 10
+2 0 0 10 5
+2 0 10 10 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>5 2
+10 1</pre>
+
+<h3>Sample Input 2</h3>
+<pre>5 100
+5 0 0 10 0 20 1 30 0 100 0
+5 0 0 10 0 20 1 30 0 100 0
+5 0 0 10 0 20 1 30 0 100 0
+5 0 0 10 0 20 1 30 0 100 0
+5 0 0 10 0 20 1 30 0 100 0</pre>
+
+<h3>Sample Output 2</h3>
+<pre>16.3245553203 1
+18.9442719100 2
+21.0557280900 3
+23.6754446797 4
+100 5</pre>
+
+<footer>
+  48th ICPC World Championship Problem A: Billboards &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

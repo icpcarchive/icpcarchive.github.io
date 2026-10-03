@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem I: Spider Walk — ICPC World Finals 2021</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2021 · Problem I</p>
+  <h1>Spider Walk</h1>
+  <p class="meta">Time limit: 6 seconds</p>
+</header>
+
+<p>Charlotte the spider sits at the center of her spiderweb, which consists of
+a series of silken straight strands that go from the center to the outer
+boundary of the web. Charlotte&rsquo;s web also has bridges, each of which
+connects two adjacent strands. The two endpoints of a bridge always have the
+same distance to the center of the spiderweb.</p>
+
+<figure class="hero">
+  <img src="images/I-1.png" alt="">
+  <figcaption>Image by FBR</figcaption>
+</figure>
+
+<p>When Charlotte has finished a late-night feasting in the center and wants to
+retreat to some corner, she walks to the edge on autopilot. To do this, she
+picks a starting strand, and walks along it until she meets the first bridge on
+that strand. She will cross the bridge and go to the other strand, and then
+keeps walking outwards until she meets another bridge. Then she will cross that
+bridge, and repeat this process, until there are no more bridges on the current
+strand, and then she will walk to the end of the current strand. Note that
+Charlotte must cross all the bridges that she meets. Figure I.1 illustrates one
+path Charlotte could take.</p>
+
+<p>Charlotte&rsquo;s favorite corner to sleep in during the daytime is at the
+end of strand <i>s</i>. For each possible starting strand, she wants to know
+the minimum number of bridges to add to the original web in order to end at
+<i>s</i>. Charlotte can add a bridge at any point along the strand, as long as
+the added bridge does not touch any other bridge. The two endpoints of any added
+bridge must have the same distance to the center of the spiderweb, and the
+bridge must connect two adjacent strands.</p>
+
+<figure>
+  <img src="images/I-2.png" alt="">
+  <figcaption>Figure I.1: The path starting from strand 4 on the spiderweb in Sample Input 1.</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>The first line of input has three integers <i>n</i>, <i>m</i>, and
+<i>s</i>, where <i>n</i> (3 &le; <i>n</i> &le; 200&thinsp;000) is the number of
+strands, <i>m</i> (0 &le; <i>m</i> &le; 500&thinsp;000) is the number of
+bridges, and <i>s</i> (1 &le; <i>s</i> &le; <i>n</i>) is Charlotte&rsquo;s
+favorite strand. Strands are labeled from 1 to <i>n</i> in counterclockwise
+order. Each of the remaining <i>m</i> lines contains two integers <i>d</i> and
+<i>t</i> describing a bridge, where <i>d</i> (1 &le; <i>d</i> &le; 10<sup>9</sup>)
+is the bridge&rsquo;s distance from the center of the spiderweb and
+<i>t</i> (1 &le; <i>t</i> &le; <i>n</i>) is the first strand of the bridge in
+counterclockwise order. Specifically, if 1 &le; <i>t</i> &lt; <i>n</i>, then
+the bridge connects strands <i>t</i> and <i>t</i>+1. If <i>t</i> =
+<i>n</i>, then the bridge connects strands 1 and <i>n</i>. All bridge
+distances <i>d</i> are distinct.</p>
+
+<h2>Output</h2>
+
+<p>Output <i>n</i> lines, where the <i>i</i><sup>th</sup> line is the minimum
+number of bridges Charlotte needs to add in order to end at strand
+<i>s</i> after walking on autopilot from strand <i>i</i>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>7 5 6
+2 1
+4 3
+6 3
+8 7
+10 5</pre>
+
+<h3>Sample Output 1</h3>
+<pre>2
+1
+1
+1
+0
+1
+2</pre>
+
+<h3>Sample Input 2</h3>
+<pre>4 4 2
+1 1
+2 2
+3 3
+4 4</pre>
+
+<h3>Sample Output 2</h3>
+<pre>1
+1
+0
+1</pre>
+
+<footer>
+  ICPC World Finals 2021 Problem I: Spider Walk &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

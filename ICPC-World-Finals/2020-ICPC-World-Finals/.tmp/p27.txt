@@ -1,0 +1,49 @@
+                                           Problem N
+                              What’s Our Vector, Victor?
+                                     Time limit: 6 seconds
+Vector embeddings are a common tool in machine learning systems. Complex
+real-world concepts (for instance, words in a dictionary) are mapped onto vec-
+tors of real numbers. If embeddings are trained properly, related concepts remain
+close together in the vector space, so questions like “are these two words syn-
+onyms?” can be reduced to straightforward mathematical tests.
+You have been hired by Ye Olde Ice Cream Shoppe to create an embedding model
+for flavors, so that when they are out of an ice cream flavor they can recommend
+related flavors to customers. After training your embedding on six cloud datacen-
+ters for four months, you finally had the perfect flavor model! You were ready
+                                                                                             Image from pxfuel
+to revolutionize the ice cream industry on your street and, dare we say it, your
+neighborhood! Well, until you accidentally dripped some free ice cream on your
+keyboard and deleted half the data. The Shoppe cannot afford the 30 billion rubles needed to retrain the
+model, so you are in trouble.
+Fortunately, you still have various training results lying around. For a given deleted vector, the training
+data tells you how close it was to some known flavor vectors. The closeness of vectors A and B is
+just the standard Euclidean distance metric (that is, the length of the vector A − B). Write a tool that
+reconstructs embeddings which are consistent with the training results.
+
+
+Input
+
+The first line contains two integers d and n, where d (1 ≤ d ≤ 500) is the number of dimensions of
+the vectors, and n (1 ≤ n ≤ 500) is the number of training results for a deleted embedding vector you
+want to reconstruct. Each of the next n lines describes a training result using d + 1 numbers x1 , . . . , xd
+and e. In a training result, x1 , . . . , xd (−100 ≤ xi ≤ 100) are the coordinates of a known vector, and e
+(0 ≤ e ≤ 5 000) is the Euclidean distance from that vector to the deleted one.
+Your submission will be tested only with the sample inputs given below and inputs generated according
+to the following procedure. First, d and n are chosen. Then, n input vectors and 1 output vector, each
+with dimension d, are chosen at random. The d · (n + 1) coordinates are independent and uniformly
+distributed in the interval [−100, 100]. Next, the Euclidean distance from each input vector to the output
+vector is computed. Finally, the output vector is discarded. Calculations use double-precision floating-
+point numbers. Numbers obtained using this procedure appear in the input with 17 digits after the
+decimal point.
+
+
+Output
+
+Output d values, the coordinates of any vector that has the given distance to each training vector with an
+absolute or relative error of at most 10−5 .
+
+
+
+
+ICPC World Finals 2020 Problem N: What’s Our Vector, Victor?                                               27
+

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Asteroids — ACM-ICPC World Finals 2015</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2015 · Problem B</p>
+  <h1>Asteroids</h1>
+  <p class="meta">Time limit: 2 seconds</p>
+</header>
+
+<p>The year is 2115. The asteroid communication relay system was set up a decade ago by the Asteroid
+Communication Ministry. It is running fine except for one small problem &ndash; there are too many asteroids!
+The smaller ones not only keep interfering with the signals from the relay stations but they are also
+a danger to all the maintenance aircrafts that fly between the stations. These small asteroids must be
+destroyed! The Interplanetary Coalition to Prevent Catastrophes (ICPC) has been charged with removing
+these dangerous asteroids and has hired an elite team of hot-shot pilots for the job. Han Duo is the captain
+of this team of asteroid destroyers. Armed with his missiles, Han flies through the asteroid belt blowing
+up any asteroid that the ICPC deems a nuisance.</p>
+
+<p>The ICPC is having some unfortunate budgetary problems. One result of this is that Han and his team
+do not have as many missiles as they would like, so they cannot blow up all the troublesome asteroids.
+But the asteroids are small and the missiles are powerful. So if two asteroids are near each other and
+line up properly, it is possible to take out both with a single missile.</p>
+
+<p>Han&rsquo;s screen displays asteroids as non-rotating two-dimensional simple convex polygons, each of which
+moves at a fixed velocity. He has decided that the best time to hit two asteroids is when the overlap of
+the two polygons is at a maximum. For example, Figure B.1, which illustrates Sample Input 1, shows
+two asteroids and snapshots of their subsequent positions at 1-second intervals. The two asteroids start
+touching after 3 seconds and the maximum overlap area occurs between 4 and 5 seconds.</p>
+
+<figure>
+  <img src="images/B-1.png" alt="">
+  <figcaption>Figure B.1: Sample Input 1. Two asteroids with crossing paths.</figcaption>
+</figure>
+
+<p>Calculating when the maximum overlap occurs for two asteroids requires a bit of programming, but
+unfortunately Han slept through most of his coding classes at the flight academy. This is where you
+come in.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of two asteroid specifications. Each has the form <i>n</i>
+<i>x</i><sub>1</sub> <i>y</i><sub>1</sub> <i>x</i><sub>2</sub> <i>y</i><sub>2</sub> &hellip;
+<i>x</i><sub><i>n</i></sub> <i>y</i><sub><i>n</i></sub> <i>v</i><sub>x</sub> <i>v</i><sub>y</sub>
+where <i>n</i> (3 &le; <i>n</i> &le; 10) is the number of vertices, each
+<i>x</i><sub><i>i</i></sub>, <i>y</i><sub><i>i</i></sub> (&minus;10&thinsp;000 &le;
+<i>x</i><sub><i>i</i></sub>, <i>y</i><sub><i>i</i></sub> &le; 10&thinsp;000) are the
+coordinates of a vertex of the asteroid on Han&rsquo;s screen given in clockwise order, and
+<i>v</i><sub>x</sub>, <i>v</i><sub>y</sub> (&minus;100 &le; <i>v</i><sub>x</sub>,
+<i>v</i><sub>y</sub> &le; 100) are the <i>x</i> and <i>y</i> velocities (in units/second) of the
+asteroid. The <i>x</i><sub><i>i</i></sub>, <i>y</i><sub><i>i</i></sub> values specify the
+location of each asteroid at time <i>t</i> = 0, and the polygons do not intersect or touch at this
+time. The maximum length of any side of an asteroid is 500. All numbers in the input are integers.</p>
+
+<h2>Output</h2>
+
+<p>Display the time in seconds when the two polygons have maximum intersection, using the earliest such
+time if there is more than one. If the two polygons never overlap but touch each other, treat it as an
+intersection where the common area is zero and display the earliest such time. If the polygons never
+overlap or touch, display <i>never</i> instead. You should consider positive times only. Your output should
+have an absolute or relative error of at most 10<sup>&minus;3</sup>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>6 3 2 2 4 3 6 6 6 7 4 6 2 2 2
+4 18 5 22 9 26 5 22 1 -2 1</pre>
+
+<h3>Sample Output 1</h3>
+<pre>4.193518</pre>
+
+<h3>Sample Input 2</h3>
+<pre>4 0 0 0 2 2 2 2 0 -1 1
+4 10 0 10 2 12 2 12 0 1 1</pre>
+
+<h3>Sample Output 2</h3>
+<pre>never</pre>
+
+<footer>
+  ACM-ICPC World Finals 2015 Problem B: Asteroids &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem C: Lead or Gold &mdash; The 22nd Annual ACM International Collegiate Programming Contest World Finals (1998)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+<header>
+  <p class="kicker">The 22nd Annual ACM International Collegiate Programming Contest World Finals &middot; Problem C</p>
+  <h1>Lead or Gold</h1>
+  <p class="meta">Input file: leadgold.in</p>
+</header>
+
+<p>How to make gold from lead has baffled alchemists for centuries. At the last Alchemists Club Meeting (ACM), a sensational breakthrough was announced. By mixing the three chemicals Algolene, Basicine and Cobolase in the correct ratio, one can create a mixture that transforms lead into gold. Since Algolene, Basicine and Cobolase (or A, B, C for short) are generally not sold individually, but rather mixed into solutions, this may not be easy as it seems.</p>
+
+<p>Consider the following example. Two mixtures of Algolene, Basicine and Cobolase are available, in ratios of 1:2:3 and 3:7:1, respectively. By mixing these solutions in a ratio of 1:2 we obtain a solution of A, B, C with ratio 7:16:5. But there is no way to combine these mixtures into a new one with ratio 3:4:5. If we additionally had a solution of ratio 2:1:2, then a 3:4:5 mixture would be possible by combining eight parts of 1:2:3, one part of 3:7:1 and five parts of 2:1:2.</p>
+
+<p>Determining which mixing ratios we can obtain from a given set of solutions is no trivial task. But, as the ACM has shown, it is possibly a very profitable one. You must write a program to find mixing ratios.</p>
+
+<h2>Input</h2>
+
+<p>The input file contains several test cases. The first line of each test case contains an integer <i>n</i> (0 &le; <i>n</i> &lt; 100) that represents the number of mixtures in the test case. The next <i>n</i> lines each contain three non-negative integers <i>a</i><sub>i</sub>, <i>b</i><sub>i</sub>, <i>c</i><sub>i</sub>, specifying the ratio <i>a</i><sub>i</sub>:<i>b</i><sub>i</sub>:<i>c</i><sub>i</sub> in which A, B, C occur in the <i>i</i><sup>th</sup> mixture. At least one of these integers is positive for each mixture.</p>
+
+<p>Finally, there is one line containing three non-negative integers <i>a</i>, <i>b</i>, <i>c</i>, which specify the ratio <i>a</i>:<i>b</i>:<i>c</i> in the desired solution. At least one of these integers is positive.</p>
+
+<p>The input file is terminated with the integer 0 on a line by itself following the last test case.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, output the word &ldquo;Mixture&rdquo;, followed by the ordinal number of the test case. On the next line, if it is possible to obtain the desired solution by mixing the input solutions, output the word &ldquo;Possible&rdquo;. Otherwise, output the word &ldquo;Impossible&rdquo;.</p>
+
+<h3>Sample Input</h3>
+
+<pre>2
+1 2 3
+3 7 1
+3 4 5
+3
+1 2 3
+3 7 1
+2 1 2
+3 4 5
+0</pre>
+
+<h3>Output for the Sample Input</h3>
+
+<pre>Mixture 1
+Impossible
+
+Mixture 2
+Possible</pre>
+
+<footer>
+  The 22nd Annual ACM International Collegiate Programming Contest World Finals &middot; Problem C &middot; Lead or Gold
+</footer>
+
+</body>
+</html>

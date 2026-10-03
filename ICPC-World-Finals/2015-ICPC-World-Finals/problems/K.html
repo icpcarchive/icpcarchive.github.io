@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem K: Tours — ACM-ICPC World Finals 2015</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2015 · Problem K</p>
+  <h1>Tours</h1>
+  <p class="meta">Time limit: 3 seconds</p>
+</header>
+
+<p>The Arca Carania Mountain national park is opening up for tourist traffic. The national park has a
+number of sites worth seeing and roads that connect pairs of sites. The park commissioners have put
+together a set of round tours in the park in which visitors can ride buses to view various sites. Each
+round tour starts at some site (potentially different sites for different tours), visits a number of
+other sites without repeating any, and then returns to where it started. At least 3 different sites
+are visited in each round tour. At least one round tour is possible in the national park.</p>
+
+<p>The park commissioners have decided that, for any given road, all buses will be operated by a
+single company. The commissioners do not want to be accused of favoritism, so they want to be sure
+that each possible round tour in the park has exactly the same number of roads assigned to each bus
+company. They realize this may be difficult to achieve. Thus, they want to learn what numbers of bus
+companies allow for a valid assignment of companies to roads.</p>
+
+<p>Consider Sample Input 1, which is illustrated in Figure K.1. There are a total of three round tours
+for these sites. Some company is assigned road 1-3. It must also be assigned some road on the round
+tour 1-2-3-4-1, say 2-3. But then it is assigned to two of the three roads on the round tour 1-2-3-1,
+and no other company can match this &ndash; so there can be no other companies. In Sample Input 2 there
+is only one round tour, so it is enough to assign the roads of this tour equally between
+companies.</p>
+
+<figure>
+  <img src="images/K-1.png" alt="">
+  <figcaption>Figure K.1: Sample Input 1.</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>The first line of input contains two integers <i>n</i> (1 &le; <i>n</i> &le; 2&thinsp;000), which is
+the number of sites in the park, and <i>m</i> (1 &le; <i>m</i> &le; 2&thinsp;000), which is the number
+of roads between the sites. Following that are <i>m</i> lines, each containing two integers
+<i>a</i><sub><i>i</i></sub> and <i>b</i><sub><i>i</i></sub>
+(1 &le; <i>a</i><sub><i>i</i></sub> &lt; <i>b</i><sub><i>i</i></sub> &le; <i>n</i>), meaning the sites
+<i>a</i><sub><i>i</i></sub> and <i>b</i><sub><i>i</i></sub> are connected by a bidirectional road. No
+pair of sites is listed twice.</p>
+
+<h2>Output</h2>
+
+<p>Display all integers <i>k</i> such that it is possible to assign the roads to <i>k</i> companies in
+the desired way. These integers should be in ascending order.</p>
+
+<h3>Sample Input 1</h3>
+<pre>4 5
+1 2
+2 3
+3 4
+1 4
+1 3</pre>
+
+<h3>Sample Output 1</h3>
+<pre>1</pre>
+
+<h3>Sample Input 2</h3>
+<pre>6 6
+1 2
+2 3
+1 3
+1 4
+2 5
+3 6</pre>
+
+<h3>Sample Output 2</h3>
+<pre>1 3</pre>
+
+<footer>
+  ACM-ICPC World Finals 2015 Problem K: Tours &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

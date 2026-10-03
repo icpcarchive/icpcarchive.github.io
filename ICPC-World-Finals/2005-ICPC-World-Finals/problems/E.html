@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem E: Lots of Sunlight &mdash; ICPC World Finals 2005</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2005 &middot; Problem E</p>
+  <h1>Lots of Sunlight</h1>
+  <p class="meta">Input file: sunlight.in</p>
+</header>
+
+
+<p>The Apartment Construction Management (ACM) has several new high-rise apartment buildings in suburban Shanghai. With the booming economy, ACM expects a considerable profit on apartment leases. Because their apartments receive more direct sunlight, the company claims that these are nicer than others in the area. No other buildings obstruct the sunlight path to apartments in ACM&rsquo;s tall buildings.</p>
+
+<p>ACM wants to verify this claim by telling potential residents exactly how much sunlight a given apartment receives. To offer customers a representative sample of sunlight hours, the company wants to advertise the sunlight hours for April 6, 2005. On that day in Shanghai, the sun rises at 5:37 am, and sets at 6:17 pm.</p>
+
+<figure>
+  <img src="images/E-1.png" alt="">
+</figure>
+
+<p>As shown above, apartments are in a series of buildings aligned east to west. The last two digits of the apartment number identify the building, starting with 01 for the east-most building. The other digits encode the apartment floor, with 1 as the ground floor.</p>
+
+<p>The sun rises in the east and travels at a constant radial speed across the sky, until setting in the west. The only shadows are created by buildings (i.e. each building can cast a shadow on one or more other buildings). An apartment is considered to receive sunlight when either its eastern or western exterior wall is fully covered in sunlight or when the sun is directly overhead.</p>
+
+<h2>Input</h2>
+
+<p>The input file contains a series of descriptions of apartment complexes. Each description starts with a line containing a single integer n (1 &le; n &lt; 100) that is the number of apartment buildings in the complex. The next line has two integers w, the width (in east-west direction), and h, each apartment&rsquo;s height in meters. Next is a list of integers m(1), d(1), m(2), d(2), &hellip;, d(n-1), m(n), where m(i) is the number of apartments in apartment building i, and d(i) is the distance, in meters, between the apartment building i and apartment building i+1.</p>
+
+<p>The apartment complex description is followed by an integer list of apartments to query for sunlight hours and is terminated by a zero. The input file is terminated by a line consisting of the integer zero.</p>
+
+<h2>Output</h2>
+
+<p>For each apartment complex description, output its number in the sequence of descriptions. Then for each query, output the corresponding sunlight hours, using the 24-hour time format. Truncate all times down to the nearest second. If the query refers to an apartment that does not exist, indicate that the apartment does not exist. Follow the format shown in the sample output.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3
+6 4
+5 6 3 3 4
+302 401 601 303 0
+4
+5 3
+4 5 7 8 5 4 3
+101 302 503 0
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Apartment Complex: 1
+Apartment 302: 10:04:50 - 13:23:47
+Apartment 401: 05:37:00 - 17:13:57
+Apartment 601: Does not exist
+Apartment 303: 09:21:19 - 18:17:00
+Apartment Complex: 2
+Apartment 101: 05:37:00 - 12:53:32
+Apartment 302: 09:08:55 - 14:52:47
+Apartment 503: 09:01:12 - 18:17:00</pre>
+
+
+<footer>
+  ICPC World Finals 2005 &mdash; Problem E: Lots of Sunlight
+</footer>
+
+</body>
+</html>

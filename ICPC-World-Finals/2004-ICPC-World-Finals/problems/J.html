@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">The 2004 28th Annual ICPC World Finals · Problem J</p>
+  <h1>Air Traffic Control</h1>
+  <p class="meta">Input File: traffic.in</p>
+</header>
+
+
+<p>In order to avoid midair collisions, most commercial flights are monitored by ground-based air traffic control
+centers that track their position using radar. For this problem, you will be given information on a set of airplanes
+and a set of control centers, and you must compute how monitoring of the airplanes is distributed among the
+control centers. The position of each airplane is represented by a unique (<i>x</i>, <i>y</i>) coordinate pair. For the
+purpose of this problem, the height (altitude) of the airplanes can be ignored.</p>
+
+<p>The number of airplanes that can be monitored by a given control center varies from time to time due to changes
+in staff and equipment. At any given time, each control center monitors as many planes as it can, choosing the
+airplanes to be monitored according to the following priorities: (1) it will prefer to monitor planes that are closer
+to the control center rather than ones that are farther away; (2) if two airplanes are equally distant from the
+center and the center can monitor only one of them, it will choose the one that is farther to the north (positive
+<i>y</i>-axis); (3) if two airplanes are equally distant and have the same <i>y</i>-coordinate, the center will give
+preference to the airplane that is farther to the east (positive <i>x</i>-axis).</p>
+
+<p>At any given moment, each control center has a circular &ldquo;span of control&rdquo; whose radius is the distance to the
+farthest airplane being monitored by the control center. All airplanes inside the span of control are monitored by
+the control center. Airplanes on the boundary of the span of control may or may not be monitored by the control
+center, depending on its capacity and on the priorities listed above.</p>
+
+<p>You will not be given the positions of the control centers. Instead, for each control center, you will be given the
+number of airplanes that it is currently monitoring, and two points that are on the boundary of its current span of
+control. With this information, you can compute the position of the control center and decide which airplanes it
+is monitoring. If the data is consistent with more than one possible span of control, you should choose the span
+that includes the airplane that is farthest to the north, breaking ties by choosing the airplane that is farthest to the
+north then to the east.</p>
+
+<p>The figure below, which shows four airplanes and two control centers, illustrates the problem. Each control
+center is represented by a circular span of control and by two points on the boundary of this span, labeled A and
+B. P1, P2, P3, and P4 label the four airplanes. In this example, airplanes P1 and P4 are each being monitored by
+a single control center, airplane P3 is being monitored by two control centers, and airplane P2 is not being
+monitored by either control center.</p>
+
+<figure>
+  <img src="images/J-1.png" alt="">
+  <figcaption>Four airplanes (P1, P2, P3, P4) and two control centers, each shown as a circular span of control with two boundary points A and B</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>The input consists of several trial data sets. The first line of input in each trial data set contains two integers NP
+(0 &lt; NP &lt; 100) and NC (0 &lt; NC &lt; 10), which represent the number of airplanes and the number of control
+centers, respectively. Each of the next NP lines contains two floating-point numbers that represent the (<i>x</i>, <i>y</i>)
+coordinates of one airplane. Each of the next NC lines describes one control center. Each contains an integer
+between 0 and NP (inclusive) indicating the number of airplanes monitored by the control center, followed by
+two pairs of floating point numbers that represent the (<i>x</i>, <i>y</i>) coordinates of two points on the boundary of its
+span of control (neither of which is the position of an airplane). If two distances differ by less than 0.00001, you
+should treat them as the same distance.</p>
+
+<p>The last data set is followed by a line containing two zeros.</p>
+
+<h2>Output</h2>
+
+<p>For each trial, compute the number of airplanes that are monitored by zero control centers, the number of
+airplanes that are monitored by one control center, and so on up to the number of airplanes that are monitored by
+NC control centers. Print the trial number followed by a sequence of NC + 1 integers, where the <i>i</i>th integer in
+the sequence represents the number of airplanes that are monitored by <i>i</i>-1 control centers. If data for one of
+the control centers is inconsistent, print &ldquo;Impossible&rdquo; instead of the sequence of integers for that trial. Use the
+format shown in the example output, and print a blank line after each trial.</p>
+
+<h3>Sample Input 1</h3>
+<pre>4 2
+3.0 0.0
+0.0 0.0
+1.6 2.8
+2.0 1.0
+2 1.0 2.0 2.0 0.0
+2 2.0 2.0 4.0 2.0
+2 1
+0.0 0.5
+0.0 -0.5
+0 -1.0 0.0 1.0 0.0
+0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Trial 1:       1   2    1
+
+Trial 2:       Impossible</pre>
+
+
+<footer>
+  The 2004 ACM Programming Contest World Finals · Problem J: Air Traffic Control · sponsored by IBM
+</footer>
+
+</body>
+</html>

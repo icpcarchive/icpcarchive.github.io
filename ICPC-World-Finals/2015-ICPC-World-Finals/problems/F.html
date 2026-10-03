@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Keyboarding — ACM-ICPC World Finals 2015</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2015 · Problem F</p>
+  <h1>Keyboarding</h1>
+  <p class="meta">Time limit: 4 seconds</p>
+</header>
+
+<p>How many keystrokes are necessary to type a text message? You may think that it is equal to the number
+of characters in the text, but this is correct only if one keystroke generates one character. With
+pocket-size devices, the possibilities for typing text are often limited. Some devices provide only a few
+buttons, significantly fewer than the number of letters in the alphabet. For such devices, several strokes
+may be needed to type a single character. One mechanism to deal with these limitations is a virtual
+keyboard displayed on a screen, with a cursor that can be moved from key to key to select characters. Four
+arrow buttons control the movement of the cursor, and when the cursor is positioned over an appropriate
+key, pressing the fifth button selects the corresponding character and appends it to the end of the text.
+To terminate the text, the user must navigate to and select the Enter key. This provides users with an
+arbitrary set of characters and enables them to type text of any length with only five hardware
+buttons.</p>
+
+<p>In this problem, you are given a virtual keyboard layout and your task is to determine the minimal
+number of strokes needed to type a given text, where pressing any of the five hardware buttons constitutes
+a stroke. The keys are arranged in a rectangular grid, such that each virtual key occupies one or more
+connected unit squares of the grid. The cursor starts in the upper left corner of the keyboard and moves
+in the four cardinal directions, in such a way that it always skips to the next unit square in that
+direction that belongs to a different key. If there is no such unit square, the cursor does not
+move.</p>
+
+<figure>
+  <img src="images/F-1.png" alt="">
+  <figcaption>Figure F.1: Sample Input 1. An example virtual keyboard and hardware buttons.</figcaption>
+</figure>
+
+<p>Figure F.1, illustrating Sample Input 1, shows a possible way to type CONTEST using 30 strokes on an
+example virtual keyboard. The red dots represent the virtual keys where the select button was
+pressed.</p>
+
+<h2>Input</h2>
+
+<p>The first line of the input contains two integers <i>r</i> and <i>c</i> (1 &le; <i>r</i>,
+<i>c</i> &le; 50), giving the number of rows and columns of the virtual keyboard grid. The virtual
+keyboard is specified in the next <i>r</i> lines, each of which contains <i>c</i> characters. The
+possible values of these characters are uppercase letters, digits, a dash, and an asterisk
+(representing Enter). There is only one key corresponding to any given character. Each key
+is made up of one or more grid squares, which will always form a connected region. The last line of
+the input contains the text to be typed. This text is a non-empty string of at most 10&thinsp;000
+of the available characters other than the asterisk.</p>
+
+<h2>Output</h2>
+
+<p>Display the minimal number of strokes necessary to type the whole text, including the Enter key at the
+end. It is guaranteed that the text can be typed.</p>
+
+<h3>Sample Input 1</h3>
+<pre>4 7
+ABCDEFG
+HIJKLMN
+OPQRSTU
+VWXYZ**
+CONTEST</pre>
+
+<h3>Sample Output 1</h3>
+<pre>30</pre>
+
+<h3>Sample Input 2</h3>
+<pre>5 20
+12233445566778899000
+QQWWEERRTTYYUUIIOOPP
+-AASSDDFFGGHHJJKKLL*
+--ZZXXCCVVBBNNMM--**
+--------------------
+ACM-ICPC-WORLD-FINALS-2015</pre>
+
+<h3>Sample Output 2</h3>
+<pre>160</pre>
+
+<h3>Sample Input 3</h3>
+<pre>2 19
+ABCDEFGHIJKLMNOPQZY
+X*****************Y
+AZAZ</pre>
+
+<h3>Sample Output 3</h3>
+<pre>19</pre>
+
+<h3>Sample Input 4</h3>
+<pre>6 4
+AXYB
+BBBB
+KLMB
+OPQB
+DEFB
+GHI*
+AB</pre>
+
+<h3>Sample Output 4</h3>
+<pre>7</pre>
+
+<footer>
+  ACM-ICPC World Finals 2015 Problem F: Keyboarding &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

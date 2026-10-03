@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem L: Takeover Wars — ACM-ICPC World Finals 2012</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2012 · Problem L</p>
+  <h1>Takeover Wars</h1>
+  <p class="meta">Problem ID: takeover</p>
+</header>
+
+
+<p>You are studying a takeover war between two large corporations, Takeover
+Incorporated and Buyout Limited. Each of these corporations controls a number of
+subsidiaries. The aim in this war is simply to drive the competition out of the
+market. There are <i>N</i> subsidiaries of Takeover Incorporated and
+<i>M</i> subsidiaries of Buyout Limited, and you know the market value of each
+subsidiary.</p>
+
+<p>Each company can designate one of its subsidiaries to perform a takeover. The
+takeover can either be friendly or hostile. A friendly takeover means a
+subsidiary of a corporation merges with a different subsidiary of the same
+corporation. The market value of the merged subsidiary is the sum of the market
+values of the constituent subsidiaries. There is no constraint on the relative
+sizes of the subsidiaries participating in a friendly takeover.</p>
+
+<p>A hostile takeover means a subsidiary A of a corporation attempts to take
+over a subsidiary B of the other corporation. For this to succeed, the market
+value of A has to be greater than the market value of B. After this move,
+B disappears from the market. The market value of A does not change (the gain of
+incorporating B’s assets is offset by the monetary cost of the takeover). For
+simplicity we assume that no sequence of moves leads to two subsidiaries of
+different corporations having the same market value.</p>
+
+<p>The companies take turns making moves in this takeover war, with Takeover
+Incorporated going first. A company will do nothing on its turn only if it
+cannot make a takeover. A company loses the takeover war if all its
+subsidiaries are taken over.</p>
+
+<p>Your aim is to learn which company can guarantee a victory from this war. In
+the first case of the sample data, Takeover Incorporated can simply take over
+one of the companies of Buyout Limited in its first move with the 7-value
+subsidiary. Then it will lose one of its small (1-value) subsidiaries to a
+hostile takeover, and then it will take over the second subsidiary of Buyout
+Limited. In the second case, Takeover has to make a friendly takeover in its
+first move. Buyout Limited will join its two subsidiaries into a single company
+with market value 10. Takeover will have to make a friendly takeover again (as
+again it will not have a large enough subsidiary to take over Buyout’s giant).
+Now Takeover will have two subsidiaries, valued either 9 and 3 or 6 and 6. In
+either case, Buyout takes over one of these subsidiaries, Takeover has to pass,
+and Buyout takes over the other one.</p>
+
+<h2>Input</h2>
+
+<p>Each test case is described by three lines of input. The first line contains
+two numbers 1 &le; <i>N</i> &le; 10<sup>5</sup> and 1 &le; <i>M</i> &le;
+10<sup>5</sup> denoting respectively the number of subsidiaries of Takeover
+Incorporated and Buyout Limited. The next line lists the <i>N</i> sizes
+<i>a<sub>i</sub></i> of the subsidiaries of Takeover Incorporated
+(1 &le; <i>a<sub>i</sub></i> &le; 10<sup>12</sup>), and the third line lists the
+<i>M</i> sizes <i>b<sub>j</sub></i> of the subsidiaries of Buyout Limited
+(1 &le; <i>b<sub>j</sub></i> &le; 10<sup>12</sup>).</p>
+
+<h2>Output</h2>
+
+<p>For each test case, display the case number and either the phrase
+<i>Takeover Incorporated</i> or the phrase <i>Buyout Limited</i> depending on
+who wins the takeover war if both corporations act optimally.</p>
+
+<h3>Sample Input</h3>
+<pre>
+3 2
+7 1 1
+5 5
+4 2
+3 3 3 3
+5 5
+</pre>
+
+<h3>Output for Sample Input</h3>
+<pre>
+Case 1: Takeover Incorporated
+Case 2: Buyout Limited
+</pre>
+
+
+<footer>
+  ACM-ICPC World Finals 2012 Problem L: Takeover Wars
+</footer>
+
+</body>
+</html>

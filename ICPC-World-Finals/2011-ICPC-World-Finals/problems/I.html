@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem I: Mummy Madness — ICPC 2011 World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC 2011 World Finals · Problem I</p>
+  <h1>Mummy Madness</h1>
+  <p class="meta">Problem ID: mummy</p>
+</header>
+
+
+<p>During an excursion to the desert at the 2011 ACM-ICPC World Finals, you come
+across an old Egyptian tomb. Unfortunately, opening the tomb turns out to be a bad
+idea: all of a sudden, what was just a few moments ago an empty desert has now
+become a desert crawling with grumpy mummies (you would be grumpy too if you were
+suddenly awakened after a few thousand years of peaceful sleep).<sup>2</sup></p>
+
+<p>Faced with this murderous mass of mad mummies, your only chance is to run for
+it and try to escape before they catch you. The question is: how long will it
+take before a mummy catches you, assuming neither you nor the mummies ever get
+tired?</p>
+
+<p>We model the desert as a grid of squares. You and the mummies take turns
+making moves on the grid. You make the first move. In your turns, you can move to
+any of the eight squares adjacent to your current location, or you can choose to
+stand still. In the mummies’ turns, each mummy simply moves to the adjacent
+square that brings it closest to you (measured by Euclidean distance, assuming
+that you and all the mummies stand in the centers of their respective squares).
+It is possible for two mummies to occupy the same square.</p>
+
+<p>A time step consists of your move followed by the mummies’ moves. A mummy
+catches you if it moves to the square where you are located, or if you move to
+the square occupied by the mummy. Of course, you try to avoid being caught for as
+long as possible. After how many time steps will you be caught?</p>
+
+<figure>
+  <img src="images/I-1.png" alt="">
+  <figcaption>Figure I.1: A mummy chase</figcaption>
+</figure>
+
+<p>The figure illustrates what might happen if you are being chased by four
+mummies. The square labeled H is your initial position, and the squares labeled
+M are the initial positions of mummies. After four time steps, you are caught by
+the mummy whose initial position was (3, 4) with respect to your initial
+position.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of several test cases. Each test case begins with an
+integer n (0 ≤ n ≤ 10<sup>5</sup>) giving the number of mummies in the desert.
+The following n lines each contain two integers x and y, indicating that there is
+initially a mummy at coordinates (x, y) of the desert, where x and y are both
+bounded by 10<sup>6</sup> in absolute value. Your starting position is (0, 0),
+and no mummy starts at this position.</p>
+
+<p>The last test case is followed by a line containing the number −1.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, display its test case number followed by the maximum
+number of time steps until you are caught (measured as the total number of turns
+that you get), or the word “never” if you can avoid capture indefinitely.</p>
+
+<p>Follow the format of the sample output.</p>
+
+<h3>Sample input</h3>
+<pre>4
+-3 5
+3 4
+-6 -2
+1 -5
+1
+0 -1
+-1</pre>
+
+<h3>Output for the Sample Input</h3>
+<pre>Case 1: 4
+Case 2: never</pre>
+
+<p><sup>2</sup> Fortunately, after solving this problem, you woke up safe and
+sound in a hotel room in Florida. The enraged mummies had just been a dream. Or
+had they?</p>
+
+
+<footer>
+  ICPC 2011 World Finals Problem I: Mummy Madness
+</footer>
+
+</body>
+</html>

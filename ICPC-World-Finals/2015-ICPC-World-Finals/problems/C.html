@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem C: Catering — ACM-ICPC World Finals 2015</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2015 · Problem C</p>
+  <h1>Catering</h1>
+  <p class="meta">Time limit: 4 seconds</p>
+</header>
+
+<figure class="hero">
+  <img src="images/C-1.png" alt="">
+  <figcaption>Picture from Wikimedia Commons</figcaption>
+</figure>
+
+<p>Paul owns a catering company and business is booming. The company has <i>k</i> catering teams, each in
+charge of one set of catering equipment. Every week, the company accepts <i>n</i> catering requests for
+various events. For every request, they send a catering team with their equipment to the event location.
+The team delivers the food, sets up the equipment, and instructs the host on how to use the equipment and
+serve the food. After the event, the host is responsible for returning the equipment back to
+Paul&rsquo;s company.</p>
+
+<p>Unfortunately, in some weeks the number of catering teams is less than the number of requests, so some
+teams may have to be used for more than one event. In these cases, the company cannot wait for the host to
+return the equipment and must keep the team on-site to move the equipment to another location. The company
+has an accurate estimate of the cost to move a set of equipment from any location to any other location.
+Given these costs, Paul wants to prepare an Advance Catering Map to service the requests while minimizing
+the total moving cost of equipment (including the cost of the first move), even if that means not using all
+the available teams. Paul needs your help to write a program to accomplish this task. The requests are
+sorted in ascending order of their event times and they are chosen in such a way that for any
+<i>i</i> &lt; <i>j</i>, there is enough time to transport the equipment used in the <i>i</i>th request to
+the location of the <i>j</i>th request.</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains two integers <i>n</i> (1 &le; <i>n</i> &le; 100) and
+<i>k</i> (1 &le; <i>k</i> &le; 100) which are the number of requests and the number of catering teams,
+respectively. Following that are <i>n</i> lines, where the <i>i</i>th line contains <i>n</i> &minus;
+<i>i</i> + 1 integers between 0 and 1&thinsp;000&thinsp;000 inclusive. The <i>j</i>th number in the
+<i>i</i>th line is the cost of moving a set of equipment from location <i>i</i> to location <i>i</i> +
+<i>j</i>. The company is at location 1 and the <i>n</i> requests are at locations 2 to <i>n</i> + 1.</p>
+
+<h2>Output</h2>
+
+<p>Display the minimum moving cost to service all requests. (This amount does not include the cost of
+moving the equipment back to the catering company.)</p>
+
+<h3>Sample Input 1</h3>
+<pre>3 2
+40 30 40
+50 10
+50</pre>
+
+<h3>Sample Output 1</h3>
+<pre>80</pre>
+
+<h3>Sample Input 2</h3>
+<pre>3 2
+10 10 10
+20 21
+21</pre>
+
+<h3>Sample Output 2</h3>
+<pre>40</pre>
+
+<footer>
+  ACM-ICPC World Finals 2015 Problem C: Catering &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

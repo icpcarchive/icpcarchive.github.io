@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem I: A Vexing Problem — 25th Annual ACM ICPC World Finals (2001)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">25th Annual ACM ICPC World Finals · Problem I</p>
+  <h1>A Vexing Problem</h1>
+  <p class="meta">Input: vexing.in</p>
+</header>
+
+<p>The game Vexed is a Tetris -like game created by James McCombe. The game
+consists of a board and blocks that are arranged in stacks. If the space to the
+immediate left or right of a block is open (that is, it contains no other block
+nor any part of the game board &ldquo;wall&rdquo;), then that block can be moved
+in that direction. Only blocks that are not part of the game board wall can be
+moved; &ldquo;wall&rdquo; blocks are stationary in all events. After a block is
+moved, if it or any other block no longer has anything under it, those blocks
+fall until they land on another block. After all blocks have landed, if any two
+or more identically-marked pieces are in contact horizontally and/or
+vertically, then those blocks are removed as a group. If multiple such groups
+result, then all groups are removed simultaneously. After all such groups are
+removed, all blocks again fall to resting positions (again, wall blocks do not
+move). This might then result in more groups being removed, more blocks
+falling, and so on, until a stable state is reached. The goal of the game is to
+remove all the movable blocks from the board.</p>
+
+<p>Consider the simple example shown here. For reference purposes, number the
+rows of the board from top to bottom starting with an index value of zero, and
+number the columns from the left to right, also with a starting index value of
+zero. Board positions can be therefore be referenced as ordered (row, column)
+pairs. By additionally using an &ldquo;L&rdquo; or &ldquo;R&rdquo; to refer to a
+left or right push respectively, we can also use the ordered triple (row,
+column, direction) to indicate moves.</p>
+
+<figure>
+  <img src="images/I-1.png" alt="">
+  <figcaption>Example moves (A)&ndash;(H)</figcaption>
+</figure>
+
+<p>In (A) we have two choices for moves as shown in (B). These moves are
+(0,1,R) and (1,3,L) using the identification scheme defined above. Note that if
+we try (0,1,R), the resulting board state as shown in (C) is a dead end; no
+further moves are possible and blocks still remain on the board. If we choose
+the other move, however, the blocks at (1,2) and (2,2) are now in vertical
+contact, so they form a group that should be removed as shown by (D). The
+resulting board state is shown in (E), leaving the two moves shown by (F). Note
+that either move would eventually allow a solution, but (0,1,R) leads to a two
+move solution, whereas (2,1,R) leads to a three move solution. (G) and (H) show
+the final steps if we choose (0,1,R).</p>
+
+<p>There are often many ways to solve a particular Vexed puzzle. For this
+problem, only solutions with a minimum number of moves are of interest. The
+minimum number of moves can sometimes be surprising. Consider another example.</p>
+
+<figure>
+  <img src="images/I-2.png" alt="">
+  <figcaption>Minimum-move example (A)&ndash;(D)</figcaption>
+</figure>
+
+<p>In this example there are ten possible first moves, and there are in fact
+several ways to arrive at a solution. There is only one move in (A), however,
+that allows us to achieve a solution with the minimum number of moves. Observe
+the sequence of events shown if (3,1,R) is chosen as the first move.</p>
+
+<h2>Input</h2>
+
+<p>The input will consist of several puzzles. Each begins with a line containing
+integers giving the number of rows (NR) and columns (NC) in the puzzle, and a
+string of characters (terminated by the end of line) giving the name of the
+puzzle; these items are separated by one or more spaces. This line is followed
+by an NR by NC array of characters defining the puzzle itself; an end of line
+will follow the last character in each row. NR and NC will each be no larger than
+9. The &ldquo;outer walls&rdquo; (in addition to &ldquo;inner wall&rdquo;
+blocks) on the left, right, and bottom will always be included as part of the
+puzzle input, and are represented as hash mark (#) characters. Moveable blocks
+are represented by capital letters which indicate the marking on the block. To
+avoid possible ambiguities, open spaces in the puzzle are represented in the
+input by a hyphen (&ndash;) rather than by spaces. Other than the outer walls,
+wall blocks and moveable blocks may be arranged in any stable pattern. Every
+input puzzle is guaranteed to have a solution requiring 11 or fewer moves.</p>
+
+<p>A puzzle with zero dimensions marks the end of the input and should not be
+processed.</p>
+
+<h2>Output</h2>
+
+<p>For each input puzzle, display a minimum length solution formatted as shown
+in the sample output. In the event that there are multiple solutions of minimum
+length, display one of them.</p>
+
+<h3>Sample Input 1</h3>
+<pre>4 5 SAMPLE-01
+#A--#
+##-B#
+#AB##
+#####
+6 7 SAMPLE-02
+#--Y--#
+#-ZX-X#
+#-##-##
+#-XZ--#
+####YZ#
+#######
+0 0 END</pre>
+
+<h3>Sample Output 1</h3>
+<pre>SAMPLE-01: Minimum solution length = 2
+(B,1,3,L) (A,0,1,R)
+
+SAMPLE-02: Minimum solution length = 9
+(Y,0,3,R) (Z,4,5,L) (X,1,3,R) (Z,1,2,R)
+(Z,1,3,R) (X,3,4,R) (X,3,2,R) (X,4,5,L)
+(X,1,5,L)</pre>
+
+
+<footer>
+  25th Annual ACM International Collegiate Programming Contest World Finals (2001) ·
+  Problem I: A Vexing Problem · The 2001 ACM Programming Contest World Finals sponsored by IBM
+</footer>
+
+</body>
+</html>

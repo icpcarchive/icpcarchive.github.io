@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: Single Cut of Failure — ACM-ICPC World Finals 2018</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2018 · Problem H</p>
+  <h1>Single Cut of Failure</h1>
+  <p class="meta">Time limit: 6 seconds</p>
+</header>
+
+<p>The Intrusion and Crime Prevention Company (ICPC) builds intrusion detection
+systems for homes and businesses. The International Collegiate Programming
+Contest (in a strange coincidence also known as ICPC) is considering hiring the
+company to secure the room that contains the problem set for next year’s World
+Finals.</p>
+
+<p>The contest staff wants to prevent the intrusion attempts that were made in
+past years, such as rappelling down the outside of the building to enter through
+a window, crawling through air ducts, impersonating Bill Poucher, and the
+creative use of an attack submarine. For that reason, the problems will be stored
+in a room that has a single door and no other exits.</p>
+
+<p>ICPC (the company) proposes to install sensors on the four sides of the door,
+where pairs of sensors are connected by wires. If somebody opens the door, any
+connected sensor pair will detect this and cause an alarm to sound.</p>
+
+<p>The system has one design flaw, however. An intruder might cut the wires before
+opening the door. To assess the security of the system, you need to determine the
+minimum number of line segments that cut all wires. Figure H.1 shows two
+configurations of wires on the door (corresponding to the two sample inputs), and
+minimum-size cuts that intersect all wires.</p>
+
+<figure>
+  <img src="images/H-1.png" alt="">
+  <figcaption>Figure H.1: Illustrations of Sample Inputs 1 and 2.</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>The input starts with a line containing three integers <i>n</i>, <i>w</i>, and
+<i>h</i>, which represent the number of wires installed (1 &le; <i>n</i> &le;
+10<sup>6</sup>) and the dimensions of the door (1 &le; <i>w</i>, <i>h</i> &le;
+10<sup>8</sup>). This is followed by <i>n</i> lines, each describing a wire
+placement. Each of these lines contains four integers <i>x</i><sub>1</sub>,
+<i>y</i><sub>1</sub>, <i>x</i><sub>2</sub>, and <i>y</i><sub>2</sub>
+(0 &le; <i>x</i><sub>1</sub>, <i>x</i><sub>2</sub> &le; <i>w</i>, 0 &le;
+<i>y</i><sub>1</sub>, <i>y</i><sub>2</sub> &le; <i>h</i>), meaning that a wire
+goes from (<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>) to
+(<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>). Each wire connects different sides
+of the door. No wire is anchored to any of the four corners of the door. All
+locations in the input are distinct.</p>
+
+<h2>Output</h2>
+
+<p>Display a minimum-size set of straight line cuts that intersect all wires.
+First, display the number of cuts needed. Then display the cuts, one per line in
+the format <i>x</i><sub>1</sub> <i>y</i><sub>1</sub> <i>x</i><sub>2</sub>
+<i>y</i><sub>2</sub> for the cut between (<i>x</i><sub>1</sub>,
+<i>y</i><sub>1</sub>) and (<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>). Each cut
+has to start and end on different sides of the door. Cuts cannot start or end
+closer than 10<sup>&minus;6</sup> to any wire anchor location or any corner of the
+door.</p>
+
+<p>Cuts may be displayed in any order. The start and end locations of each cut may
+be displayed in either order. If there are multiple sets of cuts with the same
+minimum size, display any of them.</p>
+
+<h3>Sample Input <i>1</i></h3>
+<pre>4 4 6
+0 1 4 4
+0 5 2 0
+0 3 3 6
+2 6 4 2</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>1
+0 4 4 3</pre>
+
+
+<h3>Sample Input <i>2</i></h3>
+<pre>5 4 6
+0 2 2 0
+0 3 2 6
+1 6 3 0
+1 0 4 4
+3 6 4 2</pre>
+
+<h3>Sample Output <i>2</i></h3>
+<pre>2
+0 4 4 4.5
+0 1 4 1</pre>
+
+
+
+<footer>
+  ACM-ICPC World Finals 2018 Problem H: Single Cut of Failure
+</footer>
+
+</body>
+</html>

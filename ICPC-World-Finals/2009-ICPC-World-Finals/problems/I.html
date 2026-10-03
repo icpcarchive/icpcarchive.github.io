@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem I: Struts and Springs — 2009 ICPC World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">2009 ICPC World Finals · Problem I</p>
+  <h1>Struts and Springs</h1>
+  <p class="meta">Input file: springs.in</p>
+</header>
+
+<p>Struts and springs are devices that determine the way in which rectangular windows on a screen are resized or repositioned when the enclosing window is resized. A window occupies a rectangular region of the screen, and it can enclose other windows to yield a hierarchy of windows. When the outermost window is resized, each of the immediately enclosed windows may change position or size (based on the placement of struts and springs); these changes may then affect the position and/or size of the windows they enclose.</p>
+
+<p>A strut is conceptually a fixed length rod placed between the horizontal or vertical edges of a window, or between an edge of a window and the corresponding edge of the immediately enclosing window. When a strut connects the vertical or horizontal edges of a window, then the height or width of that window is fixed. Likewise, when a strut connects an edge of a window to the corresponding edge of the immediately enclosing window, then the distance between those edges is fixed. Springs, however, may be compressed or stretched, and may be used in place of struts.</p>
+
+<p>Each window except the outermost has six struts or springs associated with it. One connects the vertical edges of the window, and another connects the horizontal edges of the window. Each of the other four struts or springs connects an edge of the window with the corresponding edge of the enclosing window. The sum of the lengths of the three vertical struts or springs equals the height of the enclosing window; similarly, the sum of the lengths of the three horizontal struts or springs equals the width of the enclosing window. When the enclosing window’s width changes, any horizontal springs connected to the window are stretched or compressed in equal proportion, so that the new total length of struts and springs equals the new width. A similar action takes place for a change in the enclosing window’s height. If all three vertical or horizontal components are struts, then the top or rightmost strut, respectively, is effectively replaced by a spring.</p>
+
+<p>You must write a program that takes the initial sizes and positions of a set of windows (with one window guaranteed to enclose all others), the placement of struts and springs, and requests to resize the outermost window and then determines the modified size and position of each window for each size request.</p>
+
+<h2>Input</h2>
+<p>Input consists of multiple test cases corresponding to different sets of windows. Each test case begins with a line containing four integers nwin, nresize, owidth, and oheight. nwin is the number of windows (excluding the outer window which encloses all others), nresize is the number of outer window resize requests, and owidth and oheight are the initial width and height of the outer window.</p>
+<p>Each of the next nwin lines contains 10 non-negative integers and describes a window. The first two integers give the initial x and y displacement of the upper left corner of the window with respect to the upper left corner of the outermost window. The next two integers give the initial width and height of the window. Each of the final six integers is either 0 (for a strut) or 1 (for a spring). The first two specify whether a strut or spring connects the vertical and horizontal edges of the window respectively, and the last four specify whether a strut or spring connects the tops, bottoms, left sides and right sides of the window and its immediately enclosing window.</p>
+<p>Each of the last nresize lines in a test gives a new width and height for the outermost window – a resize operation. For each of these, your program must determine the size and placement of each of the nwin inner windows. The test data is such that, after every resizing operation, every strut and spring has a positive integral length, and different window boundaries do not touch. Also, resizing never causes one window to jump inside another.</p>
+<p>There are at most 100 windows and 100 resize operations in a test case, and the outermost window’s width and height never exceed 1,000,000. The last test case is followed by a line with four zeros.</p>
+
+<h2>Output</h2>
+<p>For each resize operation in a test case, print the test case number (starting with 1) followed by the resize operation number (1, 2, …) on a line by itself. Then on each of the next nwin lines, print the window number, position (x and y) and size (width and height) of each of the inner windows of the test case as a result of resizing the outer window. Windows in each test case are numbered sequentially (1, 2, …) to match their position in the input, and should be output in that order. Follow the format shown in the sample output.</p>
+
+<h3>Sample Input 1</h3>
+<pre>1 1 50 100
+10 10 30 10 1 0 0 0 0 0
+70 150
+2 1 50 100
+10 10 30 10 1 0 0 0 0 0
+10 80 20 10 1 1 0 0 0 0
+70 150
+1 2 60 60
+10 10 20 30 1 0 1 1 1 1
+90 90
+120 120
+0 0 0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1, resize operation 1:
+    Window 1, x = 10, y = 60, width = 50, height = 10
+Case 2, resize operation 1:
+    Window 1, x = 10, y = 60, width = 50, height = 10
+    Window 2, x = 10, y = 80, width = 40, height = 60
+Case 3, resize operation 1:
+    Window 1, x = 15, y = 20, width = 30, height = 30
+Case 3, resize operation 2:
+    Window 1, x = 20, y = 30, width = 40, height = 30</pre>
+<footer>
+  2009 ICPC World Finals Problem I: Struts and Springs © ICPC Foundation
+</footer>
+
+</body>
+</html>

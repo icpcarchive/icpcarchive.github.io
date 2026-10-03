@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: Polygonal Puzzle — ACM-ICPC World Finals (2016)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2016 &middot; Problem H</p>
+  <h1>Polygonal Puzzle</h1>
+  <p class="meta">Time limit: 20 seconds</p>
+</header>
+
+<p>During last year&rsquo;s ACM ICPC World Finals in Marrakesh, one of the judges bought a pretty wooden puzzle depicting a camel and palm trees (see Figure H.1). Unlike traditional jigsaw puzzles, which are usually created by cutting up an existing rectangular picture, all the pieces of this puzzle have been cut and painted separately. As a result, adjacent pieces often do not share common picture elements or colors. Moreover, the resulting picture itself is irregularly shaped. Given these properties, the shape of individual pieces is often the only possible way to tell where each piece should be placed.</p>
+
+<figure>
+  <img src="images/H-1.png" alt="">
+  <figcaption>Figure H.1: The judge&rsquo;s wooden puzzle.</figcaption>
+</figure>
+
+<p>The judge has been wondering ever since last year whether it is possible to write a program to solve this puzzle. An important part of such a program is a method to evaluate how well two puzzle pieces &ldquo;match&rdquo; each other. The better the match, the more likely it is that those pieces are adjacent in the puzzle. Pieces are modeled as simple polygons. Your task is to find a placement of two given polygons such that their interiors do not overlap but the polygons touch with their boundaries and the length of the common boundary is maximized. For this placement, polygons can be translated and rotated, but not reflected or resized. Figure H.2 illustrates the optimal placement for Sample Input 1.</p>
+
+<h2>Input</h2>
+
+<p>The input contains the description of two polygons, one after the other. Each polygon description starts with a line containing an integer <i>n</i> (3 &le; <i>n</i> &le; 50) denoting the number of vertices of the polygon. This is followed by <i>n</i> lines, each containing two integer coordinates <i>x</i>, <i>y</i> of a polygon vertex (|<i>x</i>|, |<i>y</i>| &le; 100). The vertices of each polygon are given in clockwise order, and no three consecutive vertices are collinear. The input data is chosen so that even if the vertices were moved by a distance of up to 10<sup>&minus;7</sup>, the answer would not increase by more than 10<sup>&minus;4</sup>.</p>
+
+<figure>
+  <img src="images/H-2.png" alt="">
+  <figcaption>Figure H.2: Sample Input 1 and its optimal placement.</figcaption>
+</figure>
+
+<h2>Output</h2>
+
+<p>Display the maximum possible length of the common boundary of these polygons when they are optimally placed. Your answer should have an absolute or relative error of less than 10<sup>&minus;3</sup>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>8
+0 0
+0 10
+10 10
+15 15
+24 6
+24 10
+30 10
+30 0
+7
+-5 0
+-5 10
+10 10
+15 5
+20 10
+35 10
+35 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>30.142135624</pre>
+
+<h3>Sample Input 2</h3>
+<pre>3
+1 0
+0 30
+40 0
+3
+1 0
+0 30
+40 0</pre>
+
+<h3>Sample Output 2</h3>
+<pre>50</pre>
+
+<footer>
+  ACM-ICPC World Finals 2016 Problem H: Polygonal Puzzle &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

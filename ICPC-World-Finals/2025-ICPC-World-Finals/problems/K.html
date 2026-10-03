@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem K: Treasure Map — 49th ICPC World Championship (2025)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">49th ICPC World Championship · Problem K</p>
+  <h1>Treasure Map</h1>
+  <p class="meta">Time limit: 4 seconds</p>
+</header>
+
+<p>After years of searching you have come across Captain Blackbeard&rsquo;s
+old map showing where his long-lost treasure is hidden, deep on the ocean
+floor. The map was once a hypsometric map &ndash; that is, it showed the ocean
+depth for the region around the treasure &ndash; but many of the elevation
+marks have faded away over time and are no longer legible.</p>
+
+<p>Specifically, the map covers a rectangular part of the ocean, subdivided
+into an (<i>n</i> &minus; 1) &times; (<i>m</i> &minus; 1) rectangular grid of
+unit squares. The map originally showed the ocean depth <i>d</i>(<i>p</i>) for
+each point <i>p</i> = (<i>x</i>, <i>y</i>) with integer coordinates 1 &le;
+<i>x</i> &le; <i>n</i> and 1 &le; <i>y</i> &le; <i>m</i>. There are no islets in
+the region. In other words, it is known that <i>d</i>(<i>p</i>) &ge; 0 for all
+points.</p>
+
+<p>Preparing the map must have been quite a struggle for Blackbeard, since
+there is no unique natural way to interpolate the depths of points with
+non-integer coordinates. Consider a unit square on the grid, with corners at
+the grid points <i>A</i>, <i>B</i>, <i>C</i>, and <i>D</i> in clockwise order,
+and some depth <i>d</i>(<i>p</i>) stored for each <i>p</i> &isin;
+{<i>A</i>, <i>B</i>, <i>C</i>, <i>D</i>}. One natural way is to interpolate the
+depth in the triangle <i>ABC</i> linearly, and likewise in <i>CDA</i>. Another
+equally natural way is to interpolate linearly within <i>BCD</i>, and likewise
+within <i>DAB</i>. Usually, the results of those two interpolations are
+different. For example, if <i>d</i>(<i>A</i>) = <i>d</i>(<i>B</i>) =
+<i>d</i>(<i>C</i>) = 0 and <i>d</i>(<i>D</i>) = 1, the first method results in
+depths across all of <i>ABC</i> being equal to zero (Figure K.1 left), while
+the second method results in the depths being positive in the whole interior of
+the square (right).</p>
+
+<figure>
+  <img src="images/K-1.png" alt="">
+  <figcaption>Figure K.1: Two ways of interpolating depths within a unit
+  square.</figcaption>
+</figure>
+
+<p>However, Blackbeard was as stubborn as he was cruel and would not let such
+pesky ambiguities stop him. To find the perfect hiding spot for his treasure,
+he scoured the seven seas for a region of the ocean where the two methods
+described above yield the same results for each unit square (or maybe he forced
+some of his pirates to do a bit of terraforming work to achieve this &ndash;
+scholars disagree).</p>
+
+<p>Back in the present, you are preparing an expedition to retrieve the
+treasure, and would like to figure out at what depth the treasure could be
+buried. Specifically, given the remaining depth data of the map, you should
+calculate the smallest possible depth at the treasure location.</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains five integers <i>n</i>, <i>m</i>, <i>k</i>,
+<i>t<sub>x</sub></i>, and <i>t<sub>y</sub></i>, where <i>n</i> and <i>m</i>
+(2 &le; <i>n</i>, <i>m</i> &le; 3&middot;10<sup>5</sup>) denote the maximum
+coordinates of the grid, <i>k</i> (1 &le; <i>k</i> &le;
+3&middot;10<sup>5</sup>) is the number of known depths, and
+(<i>t<sub>x</sub></i>, <i>t<sub>y</sub></i>) is the location of the treasure
+(1 &le; <i>t<sub>x</sub></i> &le; <i>n</i>; 1 &le; <i>t<sub>y</sub></i> &le;
+<i>m</i>). Each of the next <i>k</i> lines contains three integers <i>x</i>,
+<i>y</i>, and <i>d</i> (1 &le; <i>x</i> &le; <i>n</i>; 1 &le; <i>y</i> &le;
+<i>m</i>; 0 &le; <i>d</i> &le; 10<sup>9</sup>), indicating that the depth at
+coordinate (<i>x</i>, <i>y</i>) of the grid equals <i>d</i>. Each pair
+(<i>x</i>, <i>y</i>) appears in the input at most once.</p>
+
+<h2>Output</h2>
+
+<p>If the provided data points can be extended to a valid map (that is, a map
+where, for each unit square, the two methods of interpolation yield the same
+results, and all points have non-negative depth), output one integer: the
+smallest possible depth of (<i>t<sub>x</sub></i>, <i>t<sub>y</sub></i>) &ndash;
+it can be shown that this is always an integer. Otherwise, output
+<i>impossible</i>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3 3 5 1 1
+1 3 1
+3 3 2
+2 3 3
+2 2 4
+2 1 5</pre>
+
+<h3>Sample Output 1</h3>
+<pre>3</pre>
+
+<h3>Sample Input 2</h3>
+<pre>3 5 4 3 4
+2 4 1
+2 2 2
+1 1 4
+3 1 5</pre>
+
+<h3>Sample Output 2</h3>
+<pre>1</pre>
+
+<h3>Sample Input 3</h3>
+<pre>3 3 3 3 3
+2 3 1
+2 1 2
+1 2 4</pre>
+
+<h3>Sample Output 3</h3>
+<pre>0</pre>
+
+<h3>Sample Input 4</h3>
+<pre>3 3 4 3 2
+2 1 2
+2 3 3
+1 3 4
+1 1 5</pre>
+
+<h3>Sample Output 4</h3>
+<pre>impossible</pre>
+
+<h3>Sample Input 5</h3>
+<pre>3 3 3 2 2
+3 2 0
+2 2 1
+2 3 0</pre>
+
+<h3>Sample Output 5</h3>
+<pre>impossible</pre>
+
+<p>Explanation of Sample 5: Even though the depth of (2, 2) is given in the
+input, the provided data points cannot be extended to a valid map, so the
+correct answer is <i>impossible</i>.</p>
+
+<footer>
+  49th ICPC World Championship Problem K: Treasure Map &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

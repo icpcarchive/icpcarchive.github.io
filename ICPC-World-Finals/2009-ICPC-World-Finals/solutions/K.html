@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem K: Suffix-Replacement Grammars (Solution) — ACM ICPC World Finals 2009</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2009</p>
+  <h1>Problem K: Suffix-Replacement Grammars</h1>
+</header>
+
+<p>Let L be the length of the starting and target strings, and consider a directed graph G = (V, E) on strings of length L, where there is an edge from a string x to a string y if x can be transformed to y using one of the suffix-replacement rules. The problem asks for the shortest path from S to T in this graph—however, the graph has 52 L vertices and hence finding a shortest path by a standard BFS is not feasible.</p>
+
+<p>What saves us is the fact that the graph in question has a very special structure. Consider a path from S to T. Some of the transformation rules used involve suffixes of length L, and the remaining transformation rules used involve shorter suffixes. The basic idea is to precompute shortest paths in the subgraph of G which only uses transformation rules involving shorter suffixes.</p>
+
+<p>Specifically, let Gl be the analogue of the graph G defined above on strings of length l (note that the edges of this graph correspond to the transformation rules involving suffixes of length at most l), and let Dl ( x, y) be the length of a shortest path from a string x to a string y (both of length l) in Gl . Consider a weighted directed graph Hl consisting of strings of length l, where the edges are as follows:</p>
+
+<ul>
+<li>There is an edge from x to y of cost 1 if there is a transformation rule transforming x to y</li>
+<li>There is an edge from x to y of cost Dl −1 ( x 0 , y0 ) if the first two charactes of x and y are equal and x 0 , y0 denote the suffixes of x and y obtained by removing the first character.</li>
+</ul>
+
+<p>Then, the shortest path lengths in Hl are exactly the same as those in Gl . In other words, Dl ( x, y) is given by the length of a shortest path from x to y in Hl . So, one (seemingly awkward) way of computing the shortest path from S to T in G (i.e., DL (S, T )) is to iteratively compute the shortest path lengths in Hl for l from 1 to L (since the definition of Hl involve the shortest path lengts in Hl −1 ).</p>
+
+<p>Now, how does this help? The number of vertices of Hl is still 52l ! Recall that the quantity that we are actually interested in is DL (S, T ). Note that to compute this, the only vertices of HL which are relevant, apart from S and T themselves, are those which occur as either lefthand or righthand side of some transformation rule. More generally, unwinding the definitions, one sees that the only vertices in Hl (i.e., the only strings of length l) that one has to consider are those which are suffixes of one of the 2R + 2 input strings. With this good bound on the effective sizes of the graphs, computing all the relevant shortest paths lengths in Hl can be done using e.g. Floyd-Warshall. A somewhat tricky point in this problem is that the length of a path can be exponentially large in the length of a string, so it may be the case that an answer does not fit in a 32-bit integer.</p>
+</body>
+</html>

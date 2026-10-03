@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Map Tiles — ACM-ICPC World Finals 2013</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2013 · Problem G</p>
+  <h1>Map Tiles</h1>
+  <p class="meta">Time limit: 20 seconds</p>
+</header>
+
+<p>Publishing maps is not an easy task. First you need some appropriate
+transformation to display the earth&rsquo;s spherical shape in a
+two-dimensional plane. Then another issue arises &ndash; most high-quality
+maps are too large to be printed on a single page of paper. To cope with that,
+map publishers often split maps into several rectangular tiles, and print each
+tile on one page. In this problem, you will examine this &ldquo;tiling&rdquo;
+process.</p>
+
+<p>The International Cartographic Publishing Company (ICPC) needs to cut their
+printing costs by minimizing the number of tiles used for their maps. Even
+with a fixed tile size (determined by the page size) and map scale, you can
+still optimize the situation by adjusting the tile grid.</p>
+
+<p>The left side of Figure G.1 shows 14 map tiles covering a region. The right
+side shows how you can cover the same region with only 10 tiles, without
+changing the tile sizes or orientation.</p>
+
+<figure>
+  <img src="images/G-1.png" alt="">
+  <figcaption>Figure G.1: Two possible ways of tiling Texas.</figcaption>
+</figure>
+
+<p>Your task is to help the ICPC find the minimum number of tiles needed to
+cover a given region. For simplicity, the region will be given as a closed
+polygon that does not intersect itself.</p>
+
+<p>Note that the tiles must be part of a rectangular grid aligned with the
+<i>x</i>-axis and <i>y</i>-axis. That is, they touch each other only with
+their whole sides and cannot be rotated. Also note that although all input
+coordinates are integers, tiles may be located at non-integer coordinates.</p>
+
+<p>The polygon may touch the edges of marginal lines (as in Sample Input 2).
+However, to avoid floating-point issues, you may assume the optimal answer
+will not change even if the polygon is allowed to go outside the map tiles by
+a distance of 10<sup>&minus;6</sup>.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of a single test case. The first line of a test case
+contains three integers: <i>n</i>, <i>x</i><sub><i>s</i></sub>, and
+<i>y</i><sub><i>s</i></sub>. The number of polygon vertices is <i>n</i>
+(3 &le; <i>n</i> &le; 50), and <i>x</i><sub><i>s</i></sub> and
+<i>y</i><sub><i>s</i></sub> (1 &le; <i>x</i><sub><i>s</i></sub>,
+<i>y</i><sub><i>s</i></sub> &le; 100) are the dimensions of each tile. Each of
+the next <i>n</i> lines contains two integers <i>x</i> and <i>y</i> (0 &le;
+<i>x</i> &le; 10<i>x</i><sub><i>s</i></sub>, 0 &le; <i>y</i> &le;
+10<i>y</i><sub><i>s</i></sub>), specifying the vertices of the polygon
+representing the region (in either clockwise or counter-clockwise order).</p>
+
+<h2>Output</h2>
+
+<p>Display the minimal number of tiles necessary to cover the whole interior
+of the polygon.</p>
+
+<h3>Sample Input 1</h3>
+<pre>12 9 9
+1 8
+1 16
+6 16
+9 29
+19 31
+23 24
+30 23
+29 18
+20 12
+22 8
+14 0
+14 8</pre>
+
+<h3>Sample Output 1</h3>
+<pre>10</pre>
+
+<h3>Sample Input 2</h3>
+<pre>4 5 7
+10 10
+15 10
+15 17
+10 17</pre>
+
+<h3>Sample Output 2</h3>
+<pre>1</pre>
+
+
+<footer>
+  ACM-ICPC World Finals 2013 Problem G: Map Tiles &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

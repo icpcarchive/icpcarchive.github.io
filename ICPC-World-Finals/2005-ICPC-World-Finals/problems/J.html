@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem J: Zones &mdash; ICPC World Finals 2005</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2005 &middot; Problem J</p>
+  <h1>Zones</h1>
+  <p class="meta">Input file: zones.in</p>
+</header>
+
+
+<p>Telephone poles are part of an outdated technology. Cell phones nowadays allow us to call whoever we want, wherever we want, independent of any wire. There is one problem &mdash; without a service tower nearby a cell phone is useless.</p>
+
+<p>In the absence of hills and mountains, a service tower will provide coverage for a circular area. Instead of planning where to place the wires, a wireless telephone company has to plan where to build its service towers. Building the towers too far apart causes holes in the coverage and increases complaints. Building the towers too close to each other results in large areas covered by more than one service tower, which is redundant and inefficient.</p>
+
+<p>International Cell Phone Company is developing a network strategy to determine the optimal placement of service towers. Since most customers have replaced their old wired home phones by cell phones, the strategy for planning service towers is therefore to cover as many homes of customers as possible.</p>
+
+<p>The figure below shows the service areas for the five towers ICPC's strategic department planned to build this year. Tower 5 will serve 24 customers, 6 of which are also served by tower 4. Towers 1, 2 and 3 have a common service area containing 3 customers.</p>
+
+<figure>
+  <img src="images/J-1.png" alt="">
+</figure>
+
+<p>Shortly after the plans for these five towers had been published, higher management issued a stop on all tower building. Protesting customers forced them to weaken this decree, and allow the building of three towers out of the five planned. These three towers should serve as many customers as possible, of course. Finding the best possible choice for the towers to build is not trivial (the best choice in this case is towers 2, 4 and 5, serving 68 customers).</p>
+
+<p>You must write a program to help ICPC choose which towers to build in cases like these. If several choices of towers serve the same number of customers, choices including tower 1 are preferable. If this rule still leaves room for more than one solution, solutions including tower 2 are preferable, and so on.</p>
+
+<h2>Input</h2>
+
+<p>The input file contains several test cases. The first line of each test case contains two positive integers: the number n (n &le; 20) of towers planned, and the number of towers to be actually built. The next line contains n numbers, each giving the number of customers served by a planned tower. (The first number refers to the first tower, and so on.) No tower serves more than a million people. The next line contains the number m (m &le; 10) of common service areas. Each of the next m lines contains the description of a common service area. Such a line starts with the number t (t &gt; 1) of towers for which this is a common service area, followed by the t numbers of the towers. The last number on the line is the number of customers in the common service area. The last line of the input file consists of the two integers 0 0.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, display the number of customers served and the best choice for the location of the towers. Follow the format of the sample output.</p>
+
+<h3>Sample Input 1</h3>
+<pre>5  3
+15 20 25 30 24
+5
+2  1 2     7
+3  1 2 3   3
+2  2 3     2
+2  3 4     5
+2  4 5     6
+5  3
+25 25 25 25 25
+4
+2  1 2     5
+2  2 3     5
+2  3 4     5
+2  4 5     5
+5  3
+25 25 25 25 25
+0
+0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case Number  1
+Number of Customers: 68
+Locations recommended: 2 4 5
+Case Number  2
+Number of Customers: 75
+Locations recommended: 1 3 5
+Case Number  3
+Number of Customers: 75
+Locations recommended: 1 2 3</pre>
+
+
+<footer>
+  ICPC World Finals 2005 &mdash; Problem J: Zones
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Classifying Lots in a Subdivision — 1993 ACM International Collegiate Programming Contest Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">1993 ACM International Collegiate Programming Contest Finals · Problem B</p>
+  <h1>Classifying Lots in a Subdivision</h1>
+</header>
+
+<p>A subdivision consists of plots of land with each plot having a polygonal boundary. A surveyor has surveyed the
+plots, and has given the location of all boundary lines. That is the only information available, however, and more
+information is desired about the plots in the subdivision. Specifically, planners wish to classify the lots by the
+number of boundary line segments (B=3,4,5,…) on the perimeter of the lots.</p>
+
+<p>Write a program that will take as input the surveyor’s data and produce as output the desired information about
+the nature of the lots in the subdivision.</p>
+
+<h2>Input</h2>
+
+<p>The input file consists of several data sets. Each data set begins with a line containing the number of line segments
+(4 ≤ N ≤ 200) in the survey. The following N lines each contain four integers representing the Cartesian (x,y)
+coordinate pairs for the N points of a boundary line segment. The input file is terminated with a 0.</p>
+
+<h2>Output</h2>
+
+<p>For each data set, provide output listing the number of lots in each classification of boundary line segment counts
+(B=3,4,5,…). Do not include in your output those cases in which the classification has no members. The output for
+each data set will begin with a line containing an appropriately labeled data set number. Output for successive
+data sets will be separated by a blank line.</p>
+
+<p>Assumptions:</p>
+<ol>
+  <li>Each data set corresponds to a rectangular subdivision (as in Figures 1 and 2). The boundaries of the
+      rectangular subdivision are parallel to the x and y axes.</li>
+  <li>All coordinates in the input file are positive integers in the range 1 to 10000.</li>
+  <li>Boundary line segments in the input file do not extend past corners of lots. For example, in Figure 1 the
+      surveyor must survey from the point (10,41) to (15,41) and from (15,41) to (20,41) rather than surveying the
+      entire line (10,41) to (20,41).</li>
+  <li>At least one boundary line segment in each lot lies on the subdivision’s bounding rectangle.</li>
+</ol>
+
+<p>Figures 1 and 2 show two hypothetical subdivisions. In Figure 1 there are 12 boundary line segments, and in
+Figure 2 there are 27. The sample input file below contains the data for these two test cases. The plot in the upper
+left hand corner of Figure 2 has one line running from (16,16) to (17,18) and another from (17,18) to (19,22). Thus
+this lot has a perimeter comprised of 5 boundary line segments, though geometrically the lot is a 4-sided region.
+Similarly the perimeter of the plot in the upper left hand corner of Figure 1 is comprised of 6 boundary line
+segments, though the lot is pentagonal in shape.</p>
+
+<figure>
+  <img src="images/B-1.png" alt="">
+  <figcaption>Figure 1</figcaption>
+</figure>
+
+<figure>
+  <img src="images/B-2.png" alt="">
+  <figcaption>Figure 2</figcaption>
+</figure>
+
+<h3>Sample Input <i>1</i></h3>
+<pre>12
+10 41 15 41
+15 41 20 41
+10 36 15 36
+15 36 17 36
+10 31 15 31
+15 31 20 31
+10 41 10 36
+10 36 10 31
+15 41 17 34
+17 34 17 36
+15 36 15 31
+20 41 20 31
+27
+10 22 19 22
+19 22 23 22
+23 22 28 22
+28 22 37 22
+10 16 16 16
+17 16 23 16
+23 16 24 16
+24 15 28 15
+28 15 31 15
+10 10 17 10
+17 10 24 10
+24 10 31 10
+31 10 37 10
+10 22 10 16
+10 16 10 10
+17 18 17 16
+17 16 17 10
+24 16 24 15
+24 15 24 10
+23 22 23 16
+28 22 28 15
+31 15 31 10
+37 22 37 17
+37 17 37 10
+16 16 17 18
+17 18 19 22
+31 15 37 17
+0</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>Case 1
+Number of lots with perimeter consisting of 4 surveyor’s lines = 1
+Number of lots with perimeter consisting of 6 surveyor’s lines = 1
+Number of lots with perimeter consisting of 7 surveyor’s lines = 1
+Total number of lots = 3
+
+Case 2
+Number of lots with perimeter consisting of 4 surveyor’s lines = 1
+Number of lots with perimeter consisting of 5 surveyor’s lines = 4
+Number of lots with perimeter consisting of 6 surveyor’s lines = 3
+Total number of lots = 8</pre>
+
+<footer>
+  1993 ACM International Collegiate Programming Contest Finals · Problem B · Classifying Lots in a Subdivision
+</footer>
+
+</body>
+</html>

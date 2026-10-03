@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem Z: Archeological Recovery (Solution) — 46th ICPC World Finals</title>
+<style>
+
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+<header>
+  <p class="kicker">46th ICPC World Finals</p>
+  <h1>Problem Z: Archeological Recovery</h1>
+</header>
+<p>Problem authors:<br>Federico Glaudo and Per Austrin<br>Solved by 0 teams.<br>Shortest judge solution: 2537 bytes.</p>
+<figure><img src="images/Z-1.png" alt=""></figure>
+<p>This was, in the judges’ opinion, the hardest problem in this set.</p>
+<p>Each pyramid position corresponds to a vector in Z<sup>3</sup>, with the ankh corresponding to 0, the eye to 1, and the ibis to 2. Similarly, each lever corresponds to a vector in Z<sup>3k</sup>, with not moving a pyramid corresponding to 0, moving it clockwise corresponding to 1, and counterclockwise — to 2. Moving a lever corresponding to a vector u corresponds to adding the vector representing the lever to the vector representing the pyramids.</p>
+<p>So, in the backstory, we had n ≤ 40 lever vectors in Z<sup>3k</sup>. We took all possible 2<sup>n</sup> sums of some of those vectors, and in each case got some vector describing the positions of all the n pyramids; call those vectors (s<sub>i</sub>)<sub>i=1</sub><sup>2ⁿ</sup>. We are asked to find some possible sequence of vectors (u<sub>j</sub>)<sub>j=1</sub><sup>n</sup> that would generate the observed s<sub>i</sub>. This is a hard problem, and we will solve it in parts.</p>
+<p><strong>Part 1: k = 1</strong> First, let us make an observation about the problem in dimension 1. In this case, (u<sub>j</sub>) is just a multiset of numbers in Z<sup>3</sup>, and similarly (s<sub>i</sub>) — so (s<sub>i</sub>) is just a zeroes, b ones, and c twos. Let’s see what are the effects on the multiset (s<sub>i</sub>) of appending a single number to (u<sub>j</sub>). If we append a zero, then a, b, and c get multiplied by two. If we append a 1, then a, b, c := a + c, b + a, c + b (and the results of appending a 2 are similar). If we first append all the 1s and 2s, we can see that the multiplicities (a, b, c) are always either {x, x + 1, x + 1} or {x, x, x + 1}, in some order. The important part is that at least one of the numbers a, b, c is always odd if we only add levers corresponding to one and two. So, the number of levers corresponding to zero is the largest power of two dividing all of a, b, c.</p>
+<p><strong>Part 2: Summing over a linear subspace</strong> Now, let’s try to use the reasoning for k = 1 in the more general case. Consider any vector x ∈ Z<sup>3k</sup>, and take the scalar product of everything with that vector. More precisely, consider the set of numbers (u<sub>j</sub> · x)<sub>j=1</sub><sup>n</sup>; then the multiset of all possible sums of those numbers is (s<sub>i</sub> · x)<sub>i=1</sub><sup>2ⁿ</sup>, because scalar products commute with addition. So, from Part 1, we can find out how many u<sub>j</sub>s satisfy u<sub>j</sub> · x = 0, for any x. Let us denote f(x) = |{j : u<sub>j</sub> · x = 0}|. There are only 3<sup>k</sup> possible x’s, and up to 3<sup>k</sup> possible values of s<sub>i</sub>, so we can calculate f(x) for all possible x in O(k 3<sup>2k</sup>), which is easily fast enough.</p>
+<p>This means that for any linear subspace of dimension k − 1, we can find out how many of the u<sub>j</sub>s are in that subspace. We can use this in a number of ways to narrow it down.</p>
+<p>For example, consider an arbitrary-dimension subspace H, and G = H<sup>⊥</sup>, and look at the ∑<sub>x∈H</sub> f(x). This is</p>
+<pre>∑<sub>x∈H</sub> f(x) = ∑<sub>j=1</sub><sup>n</sup> ∑<sub>x∈H</sub> [x ⊥ u<sub>j</sub>] = ∑<sub>x∈H</sub> ∑<sub>j=1</sub><sup>n</sup> [x ⊥ u<sub>j</sub>] = ∑<sub>j=1</sub><sup>n</sup> |H ∩ u<sub>j</sub><sup>⊥</sup>|,</pre>
+<p>which is the size of the intersection of H and u<sub>j</sub><sup>⊥</sup>, summed over j. How much does a single u<sub>j</sub> contribute to that sum? If u<sub>j</sub> ∈ G, then u<sub>j</sub> is orthogonal to every vector in H, and so it contributes |H|. Otherwise, the intersection of H and u<sub>j</sub><sup>⊥</sup> will be a subspace of dimension one smaller, and so u<sub>j</sub> will contribute |H|/3. So, just by counting, for any G we can calculate how many u<sub>j</sub>s are in G — it is</p>
+<pre>( (1/2) (3/|G⊥|) ∑<sub>x∈G⊥</sub> f(x) − n )</pre>
+<p>Having previously calculated f(x) for any x, we can calculate the value above in O(|G⊥|) for any G.</p>
+<p><strong>Part 3: Flipping signs</strong> First, take G = {0} — the zero-dimensional subspace. We find out how many all-zero levers are in the set {u<sub>j</sub>}. Then, take G = {0, x, −x} for any x. We find how many of the u<sub>j</sub>s are in G — and, since we already know how many u<sub>j</sub>s are zero, how many are in the set {x, −x} for any x ∈ Z<sup>3k</sup>. Calculating this for all (3<sup>k</sup> − 1)/2 values of x takes O(3<sup>2k</sup>). So, we know all the u<sub>j</sub> up to the selection of signs; we now need one last idea.</p>
+<p>We potentially have up to 2<sup>n</sup> possibilities to assign the signs to check (possibly less, if we had any zero vectors, or if any group of {x, −x} is larger than one element). We need to find one that works. Notice that if we calculate the sums s<sub>i</sub> for some u<sub>1</sub>, . . ., u<sub>n</sub>, then the sums s<sub>i</sub>′ for u<sub>1</sub>, . . ., u<sub>n−1</sub>, −u<sub>n</sub> are going to be the multiset {s<sub>i</sub> − u<sub>n</sub>} (the bijection is that we map any set of indices containing n to the same set without n, and vice versa). So, we do the following:</p>
+<ol>
+<li>We pick any set of signs for u<sub>i</sub>, and calculate the multiset s<sub>i</sub>.</li>
+<li>While doing this, for any element of the multiset s<sub>i</sub> also remember any one way of reaching it as a sum of some u<sub>i</sub>s.</li>
+<li>For any vector v in Z<sup>3k</sup>, look at the multiset {s<sub>i</sub> − v}, and check if it is equal to the multiset given on the input.</li>
+<li>For any v that worked, see if it can be represented as a sum of some u<sub>i</sub>s, and how (this is what we stored the ways of reaching elements for in point 2).</li>
+<li>If we do find one, then we flip the signs of the u<sub>i</sub>s that are used to reach v, leave the rest alone, and output that as a solution.</li>
+<li>If none of the v’s that lead to the input multiset can be represented as a sum of some u<sub>i</sub>s, output impossible.</li>
+</ol>
+<p>You can also see this paper or this paper for a detailed examination of a more generic problem.</p>
+</body>
+</html>

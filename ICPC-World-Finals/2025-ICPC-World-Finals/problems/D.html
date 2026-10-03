@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem D: Buggy Rover — 49th ICPC World Championship (2025)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">49th ICPC World Championship · Problem D</p>
+  <h1>Buggy Rover</h1>
+  <p class="meta">Time limit: 2 seconds</p>
+</header>
+
+<figure class="hero">
+  <img src="images/D-1.png" alt="">
+  <figcaption>Mars rover being tested near the Paranal Observatory.</figcaption>
+</figure>
+
+<p>The International Center for Planetary Cartography (ICPC) uses
+rovers to explore the surfaces of other planets. As we all know,
+other planets are flat surfaces which can be perfectly and evenly
+discretized into a rectangular grid structure. Each cell in this grid
+is either flat and can be explored by the rover, or rocky and cannot.
+Today marks the launch of their brand-new Hornet rover. The
+rover is set to explore the planet using a simple algorithm.
+Internally, the rover maintains a direction ordering, a permutation of
+the directions north, east, south, and west. When the rover makes
+a move, it goes through its direction ordering, chooses the first
+direction that does not move it off the face of the planet or onto
+an impassable rock, and makes one step in that direction.</p>
+
+<p>Between two consecutive moves, the rover may be hit by a cosmic ray, replacing its direction ordering
+with a different one. ICPC scientists have a log of the rover&rsquo;s moves, but it is difficult to determine by
+hand if and when the rover&rsquo;s direction ordering changed. Given the moves that the rover has made, what
+is the smallest number of times that it could have been hit by cosmic rays?</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains two integers <i>r</i> and <i>c</i>, where <i>r</i>
+(1 &le; <i>r</i> &le; 200) is the number of rows on the planet, and <i>c</i>
+(1 &le; <i>c</i> &le; 200) is the number of columns. The rows run north to south,
+while the columns run west to east.</p>
+
+<p>The next <i>r</i> lines each contain <i>c</i> characters, representing the layout
+of the planet. Each character is either &lsquo;#&rsquo;, a rocky space;
+&lsquo;.&rsquo;, a flat space; or &lsquo;S&rsquo;, a flat space that marks the
+starting position of the rover. There is exactly one &lsquo;S&rsquo; in the grid.</p>
+
+<p>The following line contains a string <i>s</i>, where each character of <i>s</i>
+is &lsquo;N&rsquo;, &lsquo;E&rsquo;, &lsquo;S&rsquo;, or &lsquo;W&rsquo;,
+representing the sequence of the moves performed by the rover. The string
+<i>s</i> contains between 1 and 10&thinsp;000 characters, inclusive. All of the
+moves lead to flat spaces.</p>
+
+<h2>Output</h2>
+
+<p>Output the minimum number of times the rover&rsquo;s direction ordering could
+have changed to be consistent with the moves it made.</p>
+
+<h3>Sample Input 1</h3>
+<pre>5 3
+#..
+...
+...
+...
+.S.
+NNEN</pre>
+
+<h3>Sample Output 1</h3>
+<pre>1</pre>
+
+<p>Explanation of Sample 1: The rover&rsquo;s direction ordering could be as follows.
+In the first move, it either prefers to go north, or it prefers to go south and
+then north. Note that in the latter case, it cannot move south as it would fall
+from the face of the planet. In the second move, it must prefer to go north. In
+the third move, it must prefer to go east. In the fourth move, it can either
+prefer to go north, or east and then north. It is therefore possible that it
+was hit by exactly one cosmic ray between the second and third move, changing
+its direction ordering from N??? to EN?? where &lsquo;?&rsquo; stands for any
+remaining direction.</p>
+
+<h3>Sample Input 2</h3>
+<pre>3 5
+.###.
+....#
+.S...
+NEESNS</pre>
+
+<h3>Sample Output 2</h3>
+<pre>0</pre>
+
+<p>Explanation of Sample 2: It is possible the rover began with the direction
+ordering NESW, which is consistent with all moves it makes.</p>
+
+<h3>Sample Input 3</h3>
+<pre>3 3
+...
+...
+S#.
+NEESNNWWSENESS</pre>
+
+<h3>Sample Output 3</h3>
+<pre>4</pre>
+
+<footer>
+  49th ICPC World Championship Problem D: Buggy Rover &copy; ICPC Foundation<br>
+  Image credits: CC BY-SA 4.0 by ESO/G. Hudepohl on Wikimedia Commons
+</footer>
+
+</body>
+</html>

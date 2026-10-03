@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem X: Quartets &mdash; 46th ICPC World Championship (2022)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">46th ICPC World Championship &middot; Problem X</p>
+  <h1>Quartets</h1>
+  <p class="meta">Time limit: 2 seconds</p>
+</header>
+
+<p>You are watching a group of kids playing a friendly game of Quartets and
+having fun. At one moment, you started being suspicious that some of the kids
+may be cheating. It seems the kids themselves are not bothered by that at all.
+Quite the contrary, this brings them even more fun, especially when someone
+gets caught cheating. As a programmer, you immediately started to think about
+ways to detect cheating by just observing their game.</p>
+
+<p>Quartets is a 4-player card game that uses a deck of 32 cards divided into
+8 sets of 4 cards each. Actual cards often contain educational images, which
+helps players to learn not only individual objects but also their
+classification. For example, the cards may display animals while the sets
+correspond to various groups of animals (mammals, reptiles, etc.).</p>
+
+<p>At the beginning of a Quartets game, every player is dealt 8 cards and
+player 1 starts their turn. In each turn, a player asks another player whether
+they have one particular card. If the asked player has that card, they must
+give it to the requester, and the requester continues their turn by asking
+any of the players for another card. If the asked player does not possess the
+requested card, the requesting player loses the turn and the asked player
+starts their turn. An important rule states that the requesting player must
+already have at least one card from the same set as the card they ask for.</p>
+
+<figure class="hero">
+  <img src="images/X-1.png" alt="">
+  <figcaption>Four cards of a set, from a German Quartets deck by Wilhelm Busch via Wikimedia Commons, public domain</figcaption>
+</figure>
+
+<p>If, during their turn, a player holds a full set (&ldquo;quartet&rdquo;) in
+their hand, the player may show the quartet to the other players, put it
+aside and gain one point. The four cards of the quartet are permanently
+removed from the current game. If at any point a player has no cards left,
+that player leaves the game. If it was that player&rsquo;s turn, the turn
+passes to the next player in sequence (player 1-2-3-4-1-&hellip;) who still
+has any cards. If no players have any cards, the game ends and the player with
+the most points is declared the winner.</p>
+
+<p>Players are not allowed to ask for cards that have been removed from the
+game, and they cannot ask for a card from a player who has left the game.</p>
+
+<p>Cheating in the game of Quartets is conceivable in two situations where a
+player falsely claims to have (or not have) some card. Specifically, the
+cheating occurs if</p>
+
+<ul>
+  <li>a player asks for a card although they have no card of the corresponding
+  set, or</li>
+  <li>a player being asked claims not to have the requested card although they
+  have it.</li>
+</ul>
+
+<p>Needless to say, cheating is often discovered later. Theoretically, a
+watchful opponent can eventually find out about any cheating, as all cards are
+finally revealed at some point before the game ends. Note that asking for a
+card that the asked player cannot possibly have (for example, because the
+requester has it in their own hand) is not exactly a smart move but is not
+considered cheating by itself.</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains an integer <i>n</i> (1 &le; <i>n</i> &le;
+1000), the number of consecutive actions in one game of Quartets, starting
+from the beginning of a game. The next <i>n</i> lines each contain a
+description of an action. Each action is described by one line and may be one
+of the following:</p>
+
+<ul>
+  <li><i>x</i> A <i>y</i> <i>s</i><i>k</i> yes &mdash; player <i>x</i> asks
+  player <i>y</i> for the card <i>s</i><i>k</i>, and player <i>y</i> hands
+  that card to player <i>x</i>;</li>
+  <li><i>x</i> A <i>y</i> <i>s</i><i>k</i> no &mdash; player <i>x</i> asks
+  player <i>y</i> for the card <i>s</i><i>k</i>, player <i>y</i> claims not to
+  have it, and starts their turn;</li>
+  <li><i>x</i> Q <i>s</i> &mdash; player <i>x</i> puts aside a quartet
+  <i>s</i>.</li>
+</ul>
+
+<p>In all actions, <i>x</i> and <i>y</i> (1 &le; <i>x</i>, <i>y</i> &le; 4,
+<i>x</i> &ne; <i>y</i>) are integers denoting the players, <i>s</i>
+(1 &le; <i>s</i> &le; 8) is a one-digit integer corresponding to one of the
+sets/quartets, and <i>k</i> &isin; {A, B, C, D} is a character identifying
+the four cards within a set. Thus the cards <i>s</i><i>k</i> are labeled
+1A, 1B, 1C, 1D, 2A, 2B, &hellip;, 8C, 8D. The four cards that share the same
+first digit form a single set.</p>
+
+<p>The given sequence describes a valid game being played among 4 players.
+That is, except for the two possible ways of cheating mentioned above, all
+actions satisfy all the rules.</p>
+
+<h2>Output</h2>
+
+<p>If there is a possible initial distribution of the cards such that the
+sequence of actions corresponds to a (possibly partial) game with all players
+following the rules, output yes. Otherwise, output no, followed by a line
+giving the number of the first action after which it is certain that some
+player must have cheated. Actions are numbered sequentially starting with 1,
+the actions of putting quartets aside are also counted.</p>
+
+<h2>Explanation of Sample Input 1</h2>
+
+<p>Players 1 and 2 both claim not having 3C, and neither of them had 3A or
+3D. So one of them either lied about not having 3C, or asked for 3C without
+having 3B (the only remaining card from set 3).</p>
+
+<h3>Sample Input 1</h3>
+<pre>4
+1 A 2 3C no
+2 A 3 3A yes
+2 A 4 3D yes
+2 A 1 3C no</pre>
+
+<h3>Sample Output 1</h3>
+<pre>no
+4</pre>
+
+<h3>Sample Input 2</h3>
+<pre>6
+1 A 2 3C no
+2 A 3 3A yes
+2 A 4 3D yes
+2 A 1 3B no
+1 A 4 5B yes
+1 Q 5</pre>
+
+<h3>Sample Output 2</h3>
+<pre>yes</pre>
+
+<footer>
+  46th ICPC World Championship Problem X: Quartets &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

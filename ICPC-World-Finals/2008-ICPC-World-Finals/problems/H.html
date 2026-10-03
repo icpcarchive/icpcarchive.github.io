@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: Painter — ICPC World Finals (2008)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2008 · Problem H</p>
+  <h1>Painter</h1>
+  <p class="meta">Input file: painter.in</p>
+</header>
+
+<p>You probably never heard of the painter Peer. He is not well known, much to his regret. Peer was one of the inventors of monochromy, which means that each of his paintings has a single color, but in different shades. He also believed in the use of simple geometric forms.</p>
+
+<p>During his triangle period, Peer drew triangles on a rectangular canvas, making sure their borders did not intersect. He would then choose a color, and fill the regions. Peer would paint the outermost region (the canvas itself) with the lightest shade of the color chosen. Then step by step, he would fill more inner regions with a darker shade of the same color. The image below is one of his “Forms in Green” paintings.</p>
+
+<figure><img src="images/H-1.png" alt=""><figcaption>One of Peer’s “Forms in Green” paintings</figcaption></figure>
+<p>In a way the process was quite mechanical. The only thing Peer considered difficult was to decide, after drawing the triangles, how many different shades he would need. You must write a program to do that calculation for him.</p>
+
+<p>Your program will have a collection of triangles as its input. It should calculate the number of different shades needed to paint the regions according to the given rule.</p>
+
+<p>Your program must also detect the rare times that Peer makes a mistake and draws triangles that intersect. Two triangles are considered intersecting if the edges of one triangle have at least one point in common with the edges of the other. In that case, the collection of triangles is invalid.</p>
+
+<h2>Input</h2>
+
+<p>The input file contains multiple test cases. The first line of each test case contains a single non-negative integer n (n ≤ 100000), which is the number of triangles in the test case. The following n lines of the test case contain the descriptions of triangles in the format x1 y1 x2 y2 x3 y3, where xi, yi are integers (-100000 &lt; xi, yi &lt; 100000) that are the coordinates of the vertices of the triangles. The three points are guaranteed not to be collinear.</p>
+
+<p>The last test case is followed by -1 on a line by itself.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, print the case number (beginning with 1) and the number of shades needed to fill the regions if the test case is valid. Print the word ERROR if the test case is invalid (two or more triangles in the test case intersect).</p>
+
+
+<h3>Sample Input 1</h3>
+<pre>8
+8 3 8 4 7 4
+14 13 -1 9 9 0
+1 8 7 7 4 10
+5 10 11 8 13 12
+9 10 11 10 11 9
+2 7 9 1 10 6
+5 5 5 6 8 6
+9 2 9 5 6 4
+2
+0 0 1 0 0 1
+2 0 1 1 1 -1
+-1</pre>
+<h3>Sample Output 1</h3>
+<pre>Case 1: 5 shades
+Case 2: ERROR</pre>
+
+<footer>
+  ICPC World Finals 2008 — Problem H: Painter
+</footer>
+
+</body>
+</html>

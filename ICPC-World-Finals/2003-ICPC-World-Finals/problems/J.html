@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem J: Toll — The 27th Annual ACM International Collegiate Programming Contest World Finals (2003)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">The 27th Annual ACM International Collegiate Programming Contest World Finals sponsored by IBM · Problem J</p>
+  <h1>Toll</h1>
+  <p class="meta">Input File: toll.in</p>
+</header>
+
+<p>Sindbad the Sailor sold 66 silver spoons to the Sultan of Samarkand. The selling was
+quite easy; but delivering was complicated. The items were transported over land, passing
+through several towns and villages. Each town and village demanded an entry toll. There were
+no tolls for leaving. The toll for entering a village was simply one item. The toll for
+entering a town was one piece per 20 items carried. For example, to enter a town carrying 70
+items, you had to pay 4 items as toll. The towns and villages were situated strategically
+between rocks, swamps and rivers, so you could not avoid them.</p>
+
+<figure>
+  <img src="images/J-1.png" alt="">
+  <figcaption>Figure 1: To reach Samarkand with 66 spoons, traveling through a town followed
+  by two villages, you must start with 76 spoons.</figcaption>
+</figure>
+
+<figure>
+  <img src="images/J-2.png" alt="">
+  <figcaption>Figure 2: The best route to reach X with 39 spoons, starting from A, is
+  A&rarr;b&rarr;c&rarr;X, shown with arrows in the figure on the left. The best route to
+  reach X with 10 spoons is A&rarr;D&rarr;X, shown in the figure on the right. The figures
+  display towns as squares and villages as circles.</figcaption>
+</figure>
+<figure>
+  <img src="images/J-3.png" alt="">
+</figure>
+
+<p>Predicting the tolls charged in each village or town is quite simple, but finding the best
+route (the cheapest route) is a real challenge. The best route depends upon the number of
+items carried. For numbers up to 20, villages and towns charge the same. For large numbers
+of items, it makes sense to avoid towns and travel through more villages, as illustrated in
+Figure 2.</p>
+
+<p>You must write a program to solve Sindbad’s problem. Given the number of items to be
+delivered to a certain town or village and a road map, your program must determine the total
+number of items required at the beginning of the journey that uses a cheapest route.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of several test cases. Each test case consists of two parts: the
+roadmap followed by the delivery details.</p>
+
+<p>The first line of the roadmap contains an integer <i>n</i>, which is the number of roads
+in the map (0 &le; <i>n</i>). Each of the next <i>n</i> lines contains exactly two letters
+representing the two endpoints of a road. A capital letter represents a town; a lower case
+letter represents a village. Roads can be traveled in either direction.</p>
+
+<p>Following the roadmap is a single line for the delivery details. This line consists of
+three things: an integer <i>p</i> (0 &lt; <i>p</i> &le; 1000) for the number of items that
+must be delivered, a letter for the starting place, and a letter for the place of delivery.
+The roadmap is always such that the items can be delivered.</p>
+
+<p>The last test case is followed by a line containing the number -1.</p>
+
+<h2>Output</h2>
+
+<p>The output consists of a single line for each test case. Each line displays the case
+number and the number of items required at the beginning of the journey. Follow the output
+format in the example given below.</p>
+
+<h3>Sample Input 1</h3>
+<pre>1
+a Z
+19 a Z
+5
+A D
+D X
+A b
+b c
+c X
+39 A X
+-1</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1: 20
+Case 2: 44</pre>
+
+<footer>
+  The 2003 ACM Programming Contest World Finals sponsored by IBM
+</footer>
+
+</body>
+</html>

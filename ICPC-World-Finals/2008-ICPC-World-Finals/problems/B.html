@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Always an Integer — ICPC World Finals (2008)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2008 · Problem B</p>
+  <h1>Always an Integer</h1>
+  <p class="meta">Input file: always.in</p>
+</header>
+
+<p>Combinatorics is a branch of mathematics chiefly concerned with counting discrete objects. For instance, how many ways can you pick two people out of a crowd of n people? Into how many regions can you divide a circular disk by connecting n points on its boundary with one another? How many cubes are in a pyramid with square layers ranging from 1 × 1 to n × n cubes?</p>
+
+<figure><img src="images/B-1.png" alt=""><figcaption>Figure 1: If we connect six points on the boundary of a circle, at most 31 regions are created.</figcaption></figure>
+<p>Many questions like these have answers that can be reduced to simple polynomials in n. The answer to the first question above is n(n-1)/2, or (n^2-n)/2. The answer to the second is (n^4-6n^3+23n^2-18n+24)/24. The answer to the third is n(n+1)(2n+1)/6, or (2n^3+3n^2+n)/6. We write these polynomials in a standard form, as a polynomial with integer coefficients divided by a positive integer denominator.</p>
+
+<p>These polynomials are answers to questions that can have integer answers only. But since they have fractional coefficients, they look as if they could produce non-integer results! Of course, evaluating these particular polynomials on a positive integer always results in an integer. For other polynomials of similar form, this is not necessarily true. It can be hard to tell the two cases apart. So that, naturally, is your task.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of multiple test cases, each on a separate line. Each test case is an expression in the form (P)/D, where P is a polynomial with integer coefficients and D is a positive integer denominator. P is a sum of terms of the form Cn^E, where the coefficient C and the exponent E satisfy the following conditions:</p>
+
+<ol>
+<li>E is an integer satisfying 0 ≤ E ≤ 100. If E is 0, then Cn^E is expressed as C. If E is 1, then Cn^E is expressed as Cn, unless C is 1 or -1. In those instances, Cn^E is expressed as n or -n.</li>
+<li>C is an integer. If C is 1 or -1 and E is not 0 or 1, then the Cn^E will appear as n^E or -n^E.</li>
+<li>Only non-negative C values that are not part of the first term in the polynomial are preceded by +.</li>
+<li>Exponents in consecutive terms are strictly decreasing.</li>
+<li>C and D fit in a 32-bit signed integer.</li>
+</ol>
+
+<p>See the sample input for details. Input is terminated by a line containing a single period.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, print the case number (starting with 1). Then print Always an integer if the test case polynomial evaluates to an integer for every positive integer n. Print Not always an integer otherwise. Print the output for separate test cases on separate lines. Your output should follow the same format as the sample output.</p>
+
+
+<h3>Sample Input 1</h3>
+<pre>(n^2-n)/2
+(2n^3+3n^2+n)/6
+(-n^14-11n+1)/3
+.</pre>
+<h3>Sample Output 1</h3>
+<pre>Case 1: Always an integer
+Case 2: Always an integer
+Case 3: Not always an integer</pre>
+
+<footer>
+  ICPC World Finals 2008 — Problem B: Always an Integer
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Islands from the Sky — ICPC World Finals 2021</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2021 · Problem F</p>
+  <h1>Islands from the Sky</h1>
+  <p class="meta">Time limit: 2 seconds</p>
+</header>
+
+<p>You might never have heard of the island group of Iceepeecee, but that suits
+their inhabitants just fine. Located in a remote part of the South Pacific,
+they are truly off the beaten track, without any regular air or sea traffic,
+and they have remained a tropical paradise with unspoiled local fauna and
+flora.</p>
+
+<p>Being off the map is great when you don&rsquo;t want to be overrun by hordes
+of tourists, but not so ideal when you actually do need a map for some reason.
+One such reason came up recently: Iceepeecee&rsquo;s central government needs an
+exact map of the islands to apportion government funds. Even tropical paradises
+need money, so Iceepeecee needs a map!</p>
+
+<p>The easiest way to create a map would be an aerial survey. After dismissing
+chartering planes as too expensive, building an air balloon as too dangerous,
+and fitting carrier pigeons with cameras as too cruel to animals, they had a
+brilliant idea. Even with its remote location, there are still plenty of
+commercial airplanes crossing the skies above Iceepeecee. What if one mounted
+cameras on flights that are already scheduled to fly anyway? That would be a
+cheap solution to the problem!</p>
+
+<p>Iceepeecee&rsquo;s plan is to install line-scan cameras on the planes. These
+cameras point straight downwards and collect images one line segment at a time,
+orthogonal to the flight path. The photographed line segment will be determined
+by the altitude that the plane is flying at, and the camera&rsquo;s aperture
+angle &theta; (see Figure F.1). Greater angles &theta; mean that the camera can
+see more, but also that the camera is more expensive.</p>
+
+<p>Moreover, Iceepeecee wants to make sure that each island is observed in its
+entirety by at least one flight. That means it is not sufficient that an island
+is only partially photographed by multiple flights, even if the combination of
+the photographs covers the whole island.</p>
+
+<p>Flight paths follow straight line segments in three-dimensional space, that
+is, (<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>, <i>z</i><sub>1</sub>) &minus;
+(<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>, <i>z</i><sub>2</sub>) (see Figure
+F.2), where the <i>z</i>-coordinates give the altitude of the plane.
+Photographs are taken only along these line segments.</p>
+
+<p>Given the location of their islands and flights, Iceepeecee wants to find
+the smallest aperture angle &theta; that allows for a successful survey. Can
+you help?</p>
+
+<figure>
+  <img src="images/F-1.png" alt="">
+  <figcaption>Figure F.1: A view of the plane, shown head-on. Its camera points downward and can see the part of the ground underneath the plane that is shown in green. How much is visible depends on the aperture angle &theta;.</figcaption>
+</figure>
+
+<figure>
+  <img src="images/F-2.png" alt="">
+  <figcaption>Figure F.2: Surveying three islands via two flight paths. This corresponds to the first sample input. (a) Three islands (shown in black) and two flight paths (red and green). Altitudes are not shown. (b) The shaded areas represent the ground visible on the two flight paths for an optimally chosen &theta;.</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>The input describes a set of islands and flight paths. It starts with a line
+containing two integers <i>n</i> and <i>m</i>, the number <i>n</i> of islands,
+and the number <i>m</i> of flight paths, respectively (1 &le; <i>n</i>,
+<i>m</i> &le; 100). This is followed by descriptions of the <i>n</i> islands.
+Each island description starts with a line containing a single integer
+<i>n</i><sub><i>i</i></sub>, the number of vertices of the polygon describing
+the <i>i</i><sup>th</sup> island (3 &le; <i>n</i><sub><i>i</i></sub> &le; 100).
+It is followed by <i>n</i><sub><i>i</i></sub> lines, each containing two
+integers <i>x</i><sub><i>ij</i></sub>, <i>y</i><sub><i>ij</i></sub>
+(|<i>x</i><sub><i>ij</i></sub>|, |<i>y</i><sub><i>ij</i></sub>| &le;
+10<sup>6</sup>), specifying the vertices for the <i>i</i><sup>th</sup> island in
+counterclockwise order. Each island&rsquo;s polygon is simple, that is, its
+vertices are distinct and no two edges of the polygon intersect or touch, other
+than consecutive edges which touch at their common vertex. Different islands do
+not intersect or touch.</p>
+
+<p>The input concludes with another <i>m</i> lines, each describing a flight
+path. Each such line contains six integers <i>x</i><sub>1</sub>,
+<i>y</i><sub>1</sub>, <i>z</i><sub>1</sub>, <i>x</i><sub>2</sub>,
+<i>y</i><sub>2</sub>, <i>z</i><sub>2</sub> (|<i>x</i><sub><i>i</i></sub>|,
+|<i>y</i><sub><i>i</i></sub>|, |<i>z</i><sub><i>i</i></sub>| &le; 10<sup>6</sup>,
+<i>z</i><sub><i>i</i></sub> &gt; 0 and (<i>x</i><sub>1</sub>,
+<i>y</i><sub>1</sub>) &ne; (<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>)). They
+specify that a flight takes place from (<i>x</i><sub>1</sub>,
+<i>y</i><sub>1</sub>, <i>z</i><sub>1</sub>) to (<i>x</i><sub>2</sub>,
+<i>y</i><sub>2</sub>, <i>z</i><sub>2</sub>).</p>
+
+<h2>Output</h2>
+
+<p>Output the smallest angle &theta; (in degrees) that allows for a complete
+survey of the islands with the given flights. The answer should be exact to an
+absolute or relative error of 10<sup>&minus;6</sup>. If there is no such angle,
+then output <i>impossible</i>. The input is chosen such that if the coordinates
+of the island vertices are changed by at most &plusmn;10<sup>&minus;8</sup>,
+then the answer will not change more than the allowed rounding error.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3 2
+3
+20 30
+50 50
+10 50
+4
+40 20
+60 10
+75 20
+60 30
+4
+45 60
+55 55
+60 60
+55 65
+0 30 20 78 70 5
+55 0 20 70 60 10</pre>
+
+<h3>Sample Output 1</h3>
+<pre>48.031693036</pre>
+
+<h3>Sample Input 2</h3>
+<pre>1 1
+4
+0 0
+10 0
+10 10
+0 10
+5 5 10 15 5 10</pre>
+
+<h3>Sample Output 2</h3>
+<pre>impossible</pre>
+
+<footer>
+  ICPC World Finals 2021 Problem F: Islands from the Sky &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

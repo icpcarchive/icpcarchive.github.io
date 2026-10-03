@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem J: Spin Doctor — ACM-ICPC World Finals (2016)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2016 &middot; Problem J</p>
+  <h1>Spin Doctor</h1>
+  <p class="meta">Time limit: 5 seconds</p>
+</header>
+
+<p>As an employee of the world&rsquo;s most respected political polling corporation, you must take complex, real-world issues and simplify them down to a few numbers. It isn&rsquo;t always easy. A big election is coming up and, at the request of Candidate X, you have just finished polling <i>n</i> people. You have gathered three pieces of information from each person, with the values for the <i>i</i><sup>th</sup> person recorded as:</p>
+
+<ul>
+<li><i>a</i><sub><i>i</i></sub> &ndash; the number of digits of &pi; they have memorized</li>
+<li><i>b</i><sub><i>i</i></sub> &ndash; the number of hairs on their head</li>
+<li><i>c</i><sub><i>i</i></sub> &ndash; whether they will vote for Candidate X</li>
+</ul>
+
+<p>Unfortunately, you are beginning to wonder if these are really the most relevant questions to ask. In fact, you cannot see any correlation between <i>a</i>, <i>b</i>, and <i>c</i> in the data. Of course, you cannot just contradict your customer &ndash; that is a good way to lose your job!</p>
+
+<p>Perhaps the answer is to find some weighting formula to make the results look meaningful. You will pick two real values <i>S</i> and <i>T</i>, and sort the poll results (<i>a</i><sub><i>i</i></sub>, <i>b</i><sub><i>i</i></sub>, <i>c</i><sub><i>i</i></sub>) by the measure <i>a</i><sub><i>i</i></sub> &middot; <i>S</i> + <i>b</i><sub><i>i</i></sub> &middot; <i>T</i>. The sort will look best if the results having <i>c</i><sub><i>i</i></sub> true are clustered as close to each other as possible. More precisely, if <i>j</i> and <i>k</i> are the indices of the first and last results with <i>c</i><sub><i>i</i></sub> true, you want to minimize the cluster size which is <i>k</i> &minus; <i>j</i> + 1. Note that some choices of <i>S</i> and <i>T</i> will result in ties among the (<i>a</i><sub><i>i</i></sub>, <i>b</i><sub><i>i</i></sub>, <i>c</i><sub><i>i</i></sub>) triples. When this happens, you should assume the worst possible ordering occurs (that which maximizes the cluster size for this (<i>S</i>, <i>T</i>) pair).</p>
+
+<h2>Input</h2>
+
+<p>The input starts with a line containing <i>n</i> (1 &le; <i>n</i> &le; 250 000), which is the number of people polled. This is followed by one line for each person polled. Each of those lines contains integers <i>a</i><sub><i>i</i></sub> (0 &le; <i>a</i><sub><i>i</i></sub> &le; 2 000 000), <i>b</i><sub><i>i</i></sub> (0 &le; <i>b</i><sub><i>i</i></sub> &le; 2 000 000), and <i>c</i><sub><i>i</i></sub>, where <i>c</i><sub><i>i</i></sub> is 1 if the person will vote for Candidate X and 0 otherwise. The input is guaranteed to contain at least one person who will vote for Candidate X.</p>
+
+<h2>Output</h2>
+
+<p>Display the smallest possible cluster size over all possible (<i>S</i>, <i>T</i>) pairs.</p>
+
+<h3>Sample Input 1</h3>
+<pre>6
+0 10 0
+10 0 1
+12 8 1
+5 5 0
+11 2 1
+11 3 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>4</pre>
+
+<h3>Sample Input 2</h3>
+<pre>10
+6 1 1
+0 2 0
+2 1 1
+6 1 1
+8 2 0
+4 4 0
+4 0 0
+2 3 1
+6 1 0
+6 3 1</pre>
+
+<h3>Sample Output 2</h3>
+<pre>8</pre>
+
+<h3>Sample Input 3</h3>
+<pre>5
+5 7 0
+3 4 0
+5 7 0
+5 7 1
+9 4 0</pre>
+
+<h3>Sample Output 3</h3>
+<pre>1</pre>
+
+<footer>
+  ACM-ICPC World Finals 2016 Problem J: Spin Doctor &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

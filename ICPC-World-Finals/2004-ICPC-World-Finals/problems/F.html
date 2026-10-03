@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">The 2004 28th Annual ICPC World Finals · Problem F</p>
+  <h1>Merging Maps</h1>
+  <p class="meta">Input File: maps.in</p>
+</header>
+
+
+<p>Pictures taken from an airplane or satellite of an area to be mapped are often of sufficiently high resolution to
+uniquely identify major features. Since a single picture can cover only a small portion of the earth, mapping
+larger areas requires taking pictures of smaller overlapping areas, and then merging these to produce a map of a
+larger area.</p>
+
+<p>For this problem you are given several maps of rectangular areas, each represented as an array of single-
+character cells. A cell contains an uppercase alphabetic character (&lsquo;A&rsquo; to &lsquo;Z&rsquo;) if its corresponding area contains
+an identifiable major feature. Different letters correspond to different features, but the same major feature (such
+as a road) may be identified in multiple cells. A cell contains a hyphen (&lsquo;-&rsquo;) if no identifiable feature is located
+in the cell area. Merging two maps means overlaying them so that one or more common major features are
+aligned. A cell containing a major feature in one map can be overlaid with a cell not containing a major feature
+in the other. However, different major features (with different letters) cannot be overlaid in the same cell.</p>
+
+<pre>            --A-C              C----           C----          ----D           -D--C
+            ----D              D---F           -----          -E--B           ----G
+            ----B              B----           B-A-C          -----           ----B
+      Map #   1                  2               3              4               5</pre>
+
+<p>Consider the five 3-row, 5-column maps shown above. The rightmost column of map 1 perfectly matches the
+leftmost column of map 2, so those maps could be overlaid to yield a 3-row, 9-column map. But map 1 could
+also overlay map 3 as well, since the C and B features in the rightmost column of map 1 match those in the
+leftmost column of map 3; the D does not perfectly match the &lsquo;-&rsquo; in the center of the column, but there is no
+conflict. In a similar manner, the top row of map 1 could also overlay the bottom row of map 3.</p>
+
+<p>The &ldquo;score&rdquo; of a pair of maps indicates the extent to which the two maps match. The score of an overlay of a
+pair of maps is the number of cells containing major features that coincide in the overlay that gives the best
+match. The score for the map pair is the maximum score for the possible overlays of the maps. Thus, the score
+for a pair of maps each having 3 rows and 5 columns must be in the range 0 to 15.</p>
+
+<p>An &ldquo;offset&rdquo; is a pair of integers (<i>r</i>,<i>c</i>) that specifies how two maps, <i>a</i> and <i>b</i>, are overlaid. The value of
+<i>r</i> gives the offset of rows in <i>b</i> relative to rows in <i>a</i>; similarly, <i>c</i> gives the offset of columns in <i>b</i>
+relative to columns in <i>a</i>. For example, the overlay of map 1 and map 2 shown above has the offset (0,4) and
+a score of 3. The two overlays of map 1 and map 3 yielding scores of 2 have offsets of (0,4) and (-2,0).</p>
+
+<p>The following steps describe how to merge a sequence of maps:</p>
+
+<ol>
+  <li>Merge the pair of maps in the sequence that yield the highest positive score (resolving ties by choosing
+      pair that has the map with the lowest sequence number).</li>
+  <li>Remove the maps that were merged from the sequence.</li>
+  <li>Add the resulting merged map to the sequence, giving it the next larger sequence number.</li>
+</ol>
+
+<p>In the example above, maps 1 and 2 would be merged to produce map 6, and maps 1 and 2 would be removed
+from the sequence. Steps 1, 2 and 3 are repeated until only a single map remains in the sequence, or until none
+of the maps in the sequence can be merged (that is, until the overlay score for each possible map pair is zero).
+If two maps can be merged in several ways to yield the same score, then merge them using the smallest row
+offset. If the result is still ambiguous, use the smallest row offset and the smallest column offset.</p>
+
+<h2>Input</h2>
+
+<p>The input will contain one or more sets of data, each containing between 2 and 10 maps. Each set of data begins
+with an integer specifying the number of maps in the sequence. The maps follow, each beginning with a line
+containing two integers NR and NC (1 &le; NR, NC &le; 10) that specify the number of rows and columns in the map
+that immediately follows on the next NR lines. The first NC characters on each of these NR lines are the map
+data, and any trailing characters on such lines are to be ignored.</p>
+
+<p>Input for the last test case is followed by a line consisting of the number 0.</p>
+
+<h2>Output</h2>
+
+<p>For each set of data, display the input case number (1, 2, &hellip;) and the merged maps, each identified with its
+sequence number and enclosed by a border. The output should be formatted as shown in the samples below. No
+merged map will have more than 70 columns.</p>
+
+<h3>Sample Input 1</h3>
+<pre>5
+3 5
+--A-C
+----D
+----B
+3 5
+C----
+D---F
+B----
+3 5
+C----
+-----
+B-A-C
+3 5
+----D
+-E--B
+-----
+3 5
+-D--C
+----G
+----B
+2
+3 5
+----A
+----B
+----C
+3 5
+A----
+B----
+D----
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1
+   MAP 9:
++-------------+
+|-D--C--------|
+|----G--------|
+|----B-A-C----|
+|--------D---F|
+|-----E--B----|
+|-------------|
++-------------+
+Case 2
+   MAP 1:
++-----+
+|----A|
+|----B|
+|----C|
++-----+
+   MAP 2:
++-----+
+|A----|
+|B----|
+|D----|
++-----+</pre>
+
+
+<footer>
+  The 2004 ACM Programming Contest World Finals · Problem F: Merging Maps · sponsored by IBM
+</footer>
+
+</body>
+</html>

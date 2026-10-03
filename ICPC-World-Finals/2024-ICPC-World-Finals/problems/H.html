@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: Maxwell's Demon — 48th ICPC World Championship (2024)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">48th ICPC World Championship · Problem H</p>
+  <h1>Maxwell&rsquo;s Demon</h1>
+  <p class="meta">Time limit: 6 seconds</p>
+</header>
+
+<p>Relax: No knowledge of thermodynamics is needed to solve this problem.</p>
+
+<p>Maxwell&rsquo;s demon sits in a container of height <i>h</i> and width
+2<i>w</i>. The container is divided into two adjacent chambers, each of height
+<i>h</i> and width <i>w</i>. An impenetrable wall separates the two chambers,
+and the demon sits at a fixed position on this center wall.</p>
+
+<p>The chambers contain particles, each particle having a position, a velocity,
+and a color. When a particle strikes the wall of a chamber, it reflects off the
+wall with perfect elasticity. Figure H.1 shows a container with two particles, a
+blue one in the left chamber and a red one in the right chamber.</p>
+
+<figure class="hero">
+  <img src="images/H-1.png" alt="">
+  <figcaption>Figure H.1: The first sample input. The demon is shown enlarged in gray, while in reality it is infinitesimally small (and does not have a face).</figcaption>
+</figure>
+
+<p>Maxwell&rsquo;s demon seeks to reduce entropy by sorting the particles. It
+wants all red particles to be in the left chamber and all blue particles to be
+in the right chamber. To achieve this, it has a special power: it can allow
+particles to pass through the center wall when they hit the demon&rsquo;s
+position.</p>
+
+<p>The chamber bottoms lie on the x-axis, and their dividing center wall runs
+along the positive y-axis. At any time of the demon&rsquo;s choosing, all
+particles at the demon&rsquo;s position (0, <i>d</i>) will not reflect off the
+center wall but will instead pass through to the other chamber, maintaining
+their velocity. The demon can do this whenever and as often as it wants and can
+also choose not to allow a particle through even though it hits the
+demon&rsquo;s position. However, if multiple particles are at position
+(0, <i>d</i>) simultaneously, either all such particles pass through the center
+wall or all particles are reflected.</p>
+
+<p>Help the demon sort the particles and reduce entropy! What is the earliest
+time when it is possible for all red particles to be in the left chamber and all
+blue particles to be in the right chamber?</p>
+
+<h2>Input</h2>
+
+<p>The first line consists of five integers <i>w</i>, <i>h</i>, <i>d</i>,
+<i>r</i>, <i>b</i>, where <i>w</i> and <i>h</i> (2 &le; <i>w</i>,
+<i>h</i> &le; 200) are the width and the height of each chamber, <i>d</i>
+(0 &le; <i>d</i> &le; <i>h</i>) is the y-coordinate of the demon&rsquo;s
+position on the container&rsquo;s center wall, and <i>r</i> and <i>b</i>
+(0 &le; <i>r</i>, <i>b</i> and 1 &le; <i>r</i> + <i>b</i> &le; 200) are the
+number of red and blue particles, respectively.</p>
+
+<p>This is followed by <i>r</i> + <i>b</i> lines, each describing a single
+particle using four integers <i>p</i><sub><i>x</i></sub>,
+<i>p</i><sub><i>y</i></sub>, <i>v</i><sub><i>x</i></sub>,
+<i>v</i><sub><i>y</i></sub>, where (<i>p</i><sub><i>x</i></sub>,
+<i>p</i><sub><i>y</i></sub>) (0 &lt; |<i>p</i><sub><i>x</i></sub>| &lt;
+<i>w</i>, 0 &lt; <i>p</i><sub><i>y</i></sub> &lt; <i>h</i>) is the initial
+position of the particle, and (<i>v</i><sub><i>x</i></sub>,
+<i>v</i><sub><i>y</i></sub>) (|<i>v</i><sub><i>x</i></sub>| &lt;
+<i>w</i>, |<i>v</i><sub><i>y</i></sub>| &lt; <i>h</i>,
+(<i>v</i><sub><i>x</i></sub>, <i>v</i><sub><i>y</i></sub>) &ne; (0, 0)) is the
+initial velocity of the particle. The first <i>r</i> particles described are red
+while the remaining are blue.</p>
+
+<h2>Output</h2>
+
+<p>Output the least amount of time needed for all red particles to be in the
+left chamber and all blue particles to be in the right chamber. Your answer
+should have an absolute or relative error of at most 10<sup>&minus;6</sup>. If
+it is impossible for all red particles to be in the left chamber and all blue
+particles to be in the right chamber within a finite amount of time, output
+<i>impossible</i>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>7 4 1 1 1
+2 1 4 1
+-3 1 2 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>24.0</pre>
+
+<h3>Sample Input 2</h3>
+<pre>4 4 1 2 2
+3 1 2 2
+-2 3 -2 -1
+3 2 1 -2
+-2 2 2 2</pre>
+
+<h3>Sample Output 2</h3>
+<pre>impossible</pre>
+
+<footer>
+  48th ICPC World Championship Problem H: Maxwell&rsquo;s Demon &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

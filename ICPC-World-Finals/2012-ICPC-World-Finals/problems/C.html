@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem C: Bus Tour — ACM-ICPC World Finals 2012</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2012 · Problem C</p>
+  <h1>Bus Tour</h1>
+  <p class="meta">Problem ID: bustour</p>
+</header>
+
+
+<p>Imagine you are a tourist in Warsaw and have booked a bus tour to see some
+amazing attraction just outside of town. The bus first drives around town for a
+while (a long while, since Warsaw is a big city) picking up people at their
+respective hotels. It then proceeds to the amazing attraction, and after a few
+hours goes back into the city, again driving to each hotel, this time to drop
+people off.</p>
+
+<p>For some reason, whenever you do this, your hotel is always the first to be
+visited for pickup, and the last to be visited for dropoff, meaning that you
+have to suffer through two not-so-amazing sightseeing tours of all the local
+hotels. This is clearly not what you want to do (unless for some reason you are
+really into hotels), so let’s fix it. We will develop some software to enable
+the sightseeing company to route its bus tours more fairly—though it may
+sometimes mean longer total distance for everyone, but fair is fair, right?</p>
+
+<p>For this problem, there is a starting location (the sightseeing company
+headquarters), <i>h</i> hotels that need to be visited for pickups and dropoffs,
+and a destination location (the amazing attraction). We need to find a route
+that goes from the headquarters, through all the hotels, to the attraction,
+then back through all the hotels again (possibly in a different order), and
+finally back to the headquarters. In order to guarantee that none of the
+tourists (and, in particular, you) are forced to suffer through two full tours
+of the hotels, we require that every hotel that is visited among the first
+&lfloor;<i>h</i>/2&rfloor; hotels on the way to the attraction is also visited
+among the first &lfloor;<i>h</i>/2&rfloor; hotels on the way back. Subject to
+these restrictions, we would like to make the complete bus tour as short as
+possible. Note that these restrictions may force the bus to drive past a hotel
+without stopping there (this is not considered visiting) and then visit it
+later, as illustrated in the first sample input.</p>
+
+<h2>Input</h2>
+
+<p>The first line of each test case consists of two integers <i>n</i> and
+<i>m</i> satisfying 3 &le; <i>n</i> &le; 20 and 2 &le; <i>m</i>, where
+<i>n</i> is the number of locations (hotels, headquarters, attraction) and
+<i>m</i> is the number of pairs of locations between which the bus can travel.</p>
+
+<p>The <i>n</i> different locations are numbered from 0 to <i>n</i> − 1, where
+0 is the headquarters, 1 through <i>n</i> − 2 are the hotels, and
+<i>n</i> − 1 is the attraction. Assume that there is at most one direct
+connection between any pair of locations and it is possible to travel from any
+location to any other location (but not necessarily directly).</p>
+
+<p>Following the first line are <i>m</i> lines, each containing three integers
+<i>u</i>, <i>v</i>, and <i>t</i> such that 0 &le; <i>u</i>, <i>v</i> &le;
+<i>n</i> − 1, <i>u</i> &ne; <i>v</i>, 1 &le; <i>t</i> &le; 3600, indicating
+that the bus can go directly between locations <i>u</i> and <i>v</i> in
+<i>t</i> seconds (in either direction).</p>
+
+<h2>Output</h2>
+
+<p>For each test case, display the case number and the time in seconds of the
+shortest possible tour.</p>
+
+<h3>Sample Input</h3>
+<pre>
+5 4
+0 1 10
+1 2 20
+2 3 30
+3 4 40
+4 6
+0 1 1
+0 2 1
+0 3 1
+1 2 1
+1 3 1
+2 3 1
+</pre>
+
+<h3>Output for Sample Input</h3>
+<pre>
+Case 1: 300
+Case 2: 6
+</pre>
+
+
+<footer>
+  ACM-ICPC World Finals 2012 Problem C: Bus Tour
+</footer>
+
+</body>
+</html>

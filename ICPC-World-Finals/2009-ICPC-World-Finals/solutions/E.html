@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem E: Fare and Balanced (Solution) — ACM ICPC World Finals 2009</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2009</p>
+  <h1>Problem E: Fare and Balanced</h1>
+</header>
+
+<p>This problem may at first look like some sort of max flow problem, but even if the large size of the graph does not scare you away from this approach, I am not aware of any way of modeling the problem this way.</p>
+
+<p>Consider instead the following approach. Let U (u, v) be true if every path from intersection u to intersection v has a unique cost. If U (1, N ) is true it is clear that no tolls need to be added, so assume from now on that U (1, N ) is not true. Now, suppose there is some vertex v such that both U (1, v) and U (v, N ) is false. In this case, no solution can possibly exist, since such a solution would have to incur a toll both on some road “before” v and on some road “after” v in order to ensure that all paths have unique costs.</p>
+
+<p>Let us then suppose that no such vertex v exists, i.e., that either U (1, v) or U (v, N ) is true for every v. In this case, a solution can be constructed as follows: Let us say that an edge (u, v, c) from u to v of cost c is pivotal if it has the property that U (1, u) is true but U (1, v) is false. Pivotal edges have the following nice properties:</p>
+
+<ul>
+<li>The fact that U (1, 1) is true but U (1, N ) is false, together with the fact that if U (1, u) is false and there is an edge from u to v, then U (1, v) is also false implies that every route from 1 to N contains exactly one pivotal edge.</li>
+<li>The fact that U (1, v) is false implies that U (v, N ) is true.</li>
+</ul>
+
+<p>Let C (1, N ) denote the maximum length of a path from 1 to N Now consider adding a toll of C (1, N ) − C (1, u) − C (v, N ) − c to every pivotal edge (u, v, c), if this number is positive (note that it can not be negative). By the two properties above, it is now easily shown that every route from 1 to N has at most one toll and a total cost of exactly C (1, N ).</p>
+
+<p>To make an efficient solution out of this, note that the only quantities we actually need are those of the form U (1, v), U (v, N ), C (1, v) and C (v, N ), and all such values can be computed in linear time using dynamic programming.</p>
+</body>
+</html>

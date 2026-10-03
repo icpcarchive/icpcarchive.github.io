@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem C: The Traveling Judges Problem &mdash; ICPC World Finals 2005</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2005 &middot; Problem C</p>
+  <h1>The Traveling Judges Problem</h1>
+  <p class="meta">Input file: judges.in</p>
+</header>
+
+
+<p>A group of judges must get together to judge a contest held in a particular city, and they need to figure out the cheapest way of renting cars in order to get everyone to the contest. They observed that it might be cheaper if several judges share a rental car during all or part of the trip, thus reducing the overall cost. Your task is to identify the routes the judges should take in order to minimize the total cost of their car rentals.</p>
+
+<p>We will make the following assumptions:</p>
+<ul>
+  <li>The cost of a rental car is proportional to the distance it is driven. There are no charges for more than one occupant in the car, fuel, insurance, or leaving the car in a city other than that in which it was rented.</li>
+  <li>All rental cars are billed at the same rate per mile.</li>
+  <li>A rental car can accommodate any number of passengers.</li>
+  <li>At most one road directly connects any pair of cities. Each road is two-way and has an integer length greater than zero.</li>
+  <li>There is at least one route from every judge&rsquo;s starting city to the city in which the contest is held.</li>
+  <li>All judges whose routes to the contest take them from or through the same city travel from that city to the contest together. (A judge might arrive at a city in one car and leave that city in a different car.)</li>
+</ul>
+
+<h2>Input</h2>
+
+<p>The input contains several test cases. Each test case includes a route map, the destination city where the contest is being held, and the cities where the judges are initially located.</p>
+
+<p>Each case appears in the input as a list of integers separated by blanks and/or ends of lines. The order and interpretation of the integers in each case is as follows:</p>
+<ul>
+  <li>NC &ndash; the number of cities that appear in the route map; this will be no larger than 20.</li>
+  <li>DC &ndash; the number of the destination city, assuming the cities are numbered 1 to NC.</li>
+  <li>NR &ndash; the number of roads in the route map. Each road connects a distinct pair of cities.</li>
+  <li>For each of the NR roads, three integers C<sub>1</sub>, C<sub>2</sub>, and DIST. C<sub>1</sub> and C<sub>2</sub> identify two cities connected by a road, and DIST gives the distance between these cities along that road.</li>
+  <li>NJ &ndash; the number of judges. This number will be no larger than 10.</li>
+  <li>NJ integers, one for each judge &ndash; each of these is a city number identifying the initial location of that judge.</li>
+</ul>
+
+<p>The data for the last case will be followed by a line consisting of the integer &ndash;1.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, display the case number (1, 2, &hellip;) and the shortest total distance traveled by the rental cars conveying the judges to the contest. Then display the list of routes used by the judges, each route on a separate line, in the same order as the ordering of starting cities given in the input. Each route consists of the cities that the corresponding judge must visit, listed in the order in which they are visited, starting with the judge&rsquo;s starting city and ending with the contest city. Any other cities along the route are listed in the order in which they are visited during the judge&rsquo;s travels. Separate the numbers in the route with &ldquo;&ndash;&rdquo;, and precede each route by three spaces.</p>
+
+<p>If multiple sets of routes have the same minimum distance, choose a set that requires the fewest number of cities. If several sets of cities of the same cardinality may be used, choose the set that comes lexicographically first when ordered by city number (e.g., (2, 3, 6) rather than (2, 10, 5)). If multiple routes are still available, output any set of routes that meets the requirements.</p>
+
+<p>Follow the format of the sample output.</p>
+
+<h3>Sample Input 1</h3>
+<pre>5
+3
+5
+1 2 1
+2 3 2
+3 4 3
+4 5 1
+2 4 2
+2
+5 1
+4
+4
+3
+1 3 1
+2 3 2
+3 4 2
+2
+1 2
+
+3 3 3
+1 2 2
+1 3 3
+2 3 1
+2 2 1
+
+-1</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1: distance = 6
+   5-4-2-3
+   1-2-3
+Case 2: distance = 5
+   1-3-4
+   2-3-4
+Case 3: distance = 3
+   2-3
+   1-2-3</pre>
+
+
+<footer>
+  ICPC World Finals 2005 &mdash; Problem C: The Traveling Judges Problem
+</footer>
+
+</body>
+</html>

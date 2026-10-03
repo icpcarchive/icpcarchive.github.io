@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Flight Planning &mdash; The 22nd Annual ACM International Collegiate Programming Contest World Finals (1998)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+<header>
+  <p class="kicker">The 22nd Annual ACM International Collegiate Programming Contest World Finals &middot; Problem B</p>
+  <h1>Flight Planning</h1>
+  <p class="meta">Input file: flight.in</p>
+</header>
+
+<p>Your job is to write a program that plans airplane flights. Each flight consists of a series of one or more legs. Your program must choose the best altitude for each leg to minimize the amount of fuel consumption during the trip.</p>
+
+<p>The airplane has a fixed airspeed, given by the constant <i>VCRUISE</i>, and a most-efficient cruising altitude, <i>AOPT</i>. When flying at altitude <i>AOPT</i>, fuel consumption in gallons per hour is given by <i>GPHOPT</i>. When flying at an altitude that is different from <i>AOPT</i>, fuel consumption increases by <i>GPHEXTRA</i> for each 1000 feet above or below <i>AOPT</i>. The flight starts and finishes at an altitude of 0. Each 1000 foot climb burns an extra amount of fuel given by <i>CLIMBCOST</i> (there is no reduction in fuel consumption when you descend). Make the approximation that all climbing and descending is done in zero time at the beginning of each flight leg. Thus each leg is flown at a constant airspeed and altitude. For this problem, the airplane characteristics are given by the following constants:</p>
+
+<pre>AOPT. The flight starts and finishes at an altitude of 0. Each 1000 foot climb burns an extra amount of fuel given by
+CLIMBCOST (there is no reduction in fuel consumption when you descend). Make the approximation that all
+VCRUISE      400 knots (a knot is one nautical mile per hour)
+AOPT      30,000 feet
+GPHOPT      2000 gallons per hour
+GPHEXTRA      10 gallons per hour for each 1000 feet
+CLIMBCOST     50 gallons per 1000 feet of climb</pre>
+
+<p>Before each flight, you are given the length of each leg and the tailwind expected for each leg. A positive tailwind increases the airplane&rsquo;s speed over the ground, and a negative tailwind decreases its speed over the ground. For example, if airspeed is 400 knots and the tailwind is -50 knots, speed over the ground is 350 knots.</p>
+
+<p>By policy, altitude for each leg must be some integer multiple of 1000 feet, between 20,000 and 40,000 feet, inclusive. Your program must compute the best altitude for each leg to minimize overall fuel consumption for the trip, and must compute the fuel required for the trip.</p>
+
+<h2>Input</h2>
+
+<p>The first line contains an integer <i>N</i>, representing the number of flights you are required to plan. Each flight consists of the following input lines:</p>
+
+<ul>
+<li>The first input line in a flight contains an integer <i>K</i> (0 &lt; <i>K</i> &lt; 10), representing the number of legs in the flight.</li>
+<li>The next <i>K</i> input lines each contain the following three integers:
+<ul>
+<li>(1) The length of the leg, in nautical miles</li>
+<li>(2) The expected tailwind at 20,000 feet, in knots</li>
+<li>(3) The expected tailwind at 40,000 feet, in knots</li>
+</ul></li>
+</ul>
+
+<p>The expected tailwind at altitudes between 20,000 and 40,000 feet is computed by linear interpolation. For example, the expected tailwind at 30,000 feet is halfway between the expected tailwind at 20,000 feet and the expected tailwind at 40,000 feet.</p>
+
+<h2>Output</h2>
+
+<p>Your program must produce one output line for each flight. The output line must contain the flight number (counting from the beginning of the problem), the chosen altitude for each leg (in thousands of feet), and the fuel required for the trip (in gallons, to the nearest gallon).</p>
+
+<h3>Sample Input</h3>
+
+<pre>2
+2
+1500 -50 50
+1000 0 0
+3
+1000 50 0
+2000 0 20
+1800 -50 100</pre>
+
+<h3>Output for the Sample Input</h3>
+
+<pre>Flight 1: 35 30 13985
+Flight 2: 20 30 40 23983</pre>
+
+<footer>
+  The 22nd Annual ACM International Collegiate Programming Contest World Finals &middot; Problem B &middot; Flight Planning
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem K: Alea Iacta Est (Solution) — 47th ICPC World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+<header>
+  <p class="kicker">47th ICPC World Finals</p>
+  <h1>Problem K: Alea Iacta Est</h1>
+</header>
+<p>Problem authors: Martin Kacer and Arnav Sastry<br>
+Solved by 11 teams.<br>
+First solved after 113 minutes.<br>
+Shortest team solution: 1459 bytes.<br>
+Shortest judge solution: 1511 bytes.</p>
+<figure><img src="images/K-1.png" alt=""></figure>
+<p>This problem can be viewed as a graph problem and solved with either Dijkstra's algorithm or Bellman-Ford. Alternatively, it may be solved with a value iteration algorithm (which, as far as we could tell, was the approach taken by every single team solving this problem). Here we describe the first approach.</p>
+<p>Consider a system with 7<sup>d</sup> states, where each state is a vector v ∈ {1, 2, 3, 4, 5, 6, ∗}<sup>d</sup>, where v<sub>i</sub> ∈ {1, 2, 3, 4, 5, 6} means that the i'th dice is currently showing its v<sub>i</sub>'th side, and v<sub>i</sub> = ∗ means that we are currently re-rolling the i'th dice. Let us refer to states containing ∗'s as undetermined states, and the remaining states as fixed states.</p>
+<p>Initially, we are in the undetermined state (∗, ∗, . . . , ∗) corresponding to our first roll, and our goal is to reach one of the fixed states that correspond to a word in the dictionary (after possibly permuting the coordinates).</p>
+<p>From a fixed state, we can for a cost of 0 choose to replace any non-empty subset of the coordinates by ∗ and move to that undetermined state, indicating which dice we choose to reroll. From an undetermined state, the ∗'s will be replaced uniformly at random by digits 1-6 and we will move to that fixed state for a cost of 1 (corresponding to the re-rolling of the dice).</p>
+<p>Now we want to make the right choices at all the fixed states in such a way that we reach one of the goal states with minimum possible total expected cost. We can do this by running a variant of Dijkstra's algorithm backwards from the goal nodes. Initially, all states x have a distance of dist[x] = ∞, except the goal states which have a distance of 0, and we process the states in increasing order of distance.</p>
+<p>Whenever we process a fixed state x, we have to update the distance of all undetermined states y that match x. Suppose that y has a total of s > 1 ∗'s, and let D be the set of fixed states matching y that have been processed. Then we can update dist[y] to <span style="white-space:nowrap">
+<span style="display:inline-block;vertical-align:middle;text-align:center;line-height:1.15">
+<span style="display:block">6<sup>s</sup> + ∑<sub>z∈D</sub>dist[z]</span>
+<span style="display:block;border-top:1px solid #666;padding-top:1px">|D|</span>
+</span></span> (if this is better than the current distance for y); this corresponds to the strategy “keep rerolling these ∗'s until we get to one of the states in D – it takes in expectation 6<sup>s</sup>/|D| re-rolls to reach a state in D, and since this will be uniformly random its expected distance will be (1/|D|)∑<sub>x∈D</sub>dist[z].</p>
+<p>To make this fast, we should keep track of |D| and ∑<sub>x∈D</sub>dist[z] for each y and not recompute them every time.</p>
+<p>Whenever we process an undetermined state x, the situation is simpler and we can simply update each fixed state y that matches x, updating dist[y] to dist[x] (if this is better than current distance for y); this corresponds to the strategy which given y moves to x by changing the corresponding coordinates to ∗.</p>
+<p>After running this, the distance for (∗, ∗, . . . , ∗) contains the answer.</p>
+</body>
+</html>

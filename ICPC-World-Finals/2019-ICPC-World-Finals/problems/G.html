@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: First of Her Name — ICPC World Finals 2019</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2019 · Problem G</p>
+  <h1>First of Her Name</h1>
+  <p class="meta">Time limit: 10 seconds</p>
+</header>
+
+<p>In the Royal Family, names are very important! As the Royal Historian
+you have been charged with analyzing the patterns in the names of the Royal
+Ladies in the realm.</p>
+
+<p>There have been <i>n</i> Royal Ladies, for convenience numbered from 1 to
+<i>n</i>. The name of each Lady is an uppercase letter concatenated with the
+name of her mother. The exception is the Lady numbered 1, the founder of the
+Royal Family, whose name is just a single uppercase letter.</p>
+
+<p>For example, ENERYS could be the mother of AENERYS (as the name AENERYS
+consists of the single uppercase letter ‘A’ concatenated with ENERYS, which is
+her mother’s name). Similarly, AENERYS could be the mother of DAENERYS and
+YAENERYS.</p>
+
+<p>You are given the description of all the Royal Ladies. Your task is to
+determine, for certain interesting strings <i>s</i>, the number of Royal Ladies
+for whom <i>s</i> is a prefix of their name.</p>
+
+<p>For example, consider Sample Input 1 below, with a Royal Line that goes
+straight from the founder S to AENERYS (through YS, RYS, ERYS, NERYS and
+ENERYS), with each Lady having exactly one daughter. Then AENERYS has two
+daughters—DAENERYS and YAENERYS, with the latter having one daughter,
+RYAENERYS.</p>
+
+<p>In such a family, RY is a prefix of the names of two ladies: RYS and
+RYAENERYS. E is a prefix of the names of ERYS and ENERYS. N is a prefix only of
+NERYS’s name, while S is a prefix only of the name of the founder, S. AY is not
+a prefix of any Royal Lady’s name.</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains two integers <i>n</i> and <i>k</i>, where
+<i>n</i> (1 &le; <i>n</i> &le; 10<sup>6</sup>) is the total number of Royal
+Ladies and <i>k</i> (1 &le; <i>k</i> &le; 10<sup>6</sup>) is the number of query
+strings.</p>
+
+<p>Then follow <i>n</i> lines describing the Royal Ladies. The <i>i</i>th of
+these lines describes the Royal Lady numbered <i>i</i>, and contains an uppercase
+letter <i>c</i><sub><i>i</i></sub> (‘A’–‘Z’) and an integer
+<i>p</i><sub><i>i</i></sub>, where <i>c</i><sub><i>i</i></sub> is the first
+letter of the name of Lady <i>i</i>, and <i>p</i><sub><i>i</i></sub>
+(<i>p</i><sub>1</sub> = 0 and 1 &le; <i>p</i><sub><i>i</i></sub> &lt;
+<i>i</i> for <i>i</i> &gt; 1) is the number of her mother (or 0, in the case of
+the First Lady). All the names are unique.</p>
+
+<p>The remaining <i>k</i> lines each contain one nonempty query string,
+consisting only of uppercase letters. The sum of the lengths of the query
+strings is at most 10<sup>6</sup>.</p>
+
+<h2>Output</h2>
+
+<p>Output <i>k</i> lines, with the <i>i</i>th line containing the number of
+Royal Ladies who have the <i>i</i>th query string as a prefix of their name.</p>
+
+<h3>Sample Input 1</h3>
+<pre>10 5
+S 0
+Y 1
+R 2
+E 3
+N 4
+E 5
+A 6
+D 7
+Y 7
+R 9
+RY
+E
+N
+S
+AY</pre>
+
+<h3>Sample Output 1</h3>
+<pre>2
+2
+1
+1
+0</pre>
+
+<footer>
+  ICPC World Finals 2019 Problem G: First of Her Name &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

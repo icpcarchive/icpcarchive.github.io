@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem E: Trade on Verweggistan — 23rd Annual ACM International Collegiate Programming Contest World Finals (1999)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The 23rd Annual ACM International Collegiate Programming Contest World Finals · Problem E</p>
+  <h1>Trade on Verweggistan</h1>
+  <p class="meta">Input: prul.in</p>
+</header>
+
+<p>Since the days of Peter Stuyvesant and Abel Tasman, Dutch merchants have
+been traveling all over the world to buy and sell goods. Once there was some
+trade on Verweggistan, but it ended after a short time. After reading this
+story you will understand why.</p>
+
+<p>At that time Verweggistan was quite popular, because it was the only place
+in the world where people knew how to make a &lsquo;prul&rsquo;. The end of
+the trade on Verweggistan meant the end of the trade in pruls (or
+&lsquo;prullen&rsquo;, as the Dutch plural said), and very few people
+nowadays know what a prul actually is.</p>
+
+<p>Pruls were manufactured in workyards. Whenever a prul was finished it was
+packed in a box, which was then placed on top of the pile of previously
+produced pruls. On the side of each box the price was written. The price
+depended on the time it took to manufacture the prul. If all went well, a prul
+would cost one or two florins, but on a bad day the price could easily rise to
+15 florins or more. This had nothing to do with quality; all pruls had the
+same value.</p>
+
+<p>In those days pruls sold for 10 florins each in Holland. Transportation
+costs were negligible since the pruls were taken as extra on ships that would
+sail anyway. When a Dutch merchant went to Verweggistan, he had a clear
+purpose: buy pruls, sell them in Holland, and maximize his profits.
+Unfortunately, the Verweggistan way of trading pruls made this more
+complicated than one would think.</p>
+
+<p>One would expect that merchants would simply buy the cheapest pruls, and
+the pruls that cost more than 10 florins would remain unsold. Unfortunately,
+all workyards on Verweggistan sold their pruls in a particular order. The box
+on top of the pile was sold first, then the second one from the top, and so
+on. So even if the fifth box from the top was the cheapest one, a merchant
+would have to buy the other four boxes above to obtain it.</p>
+
+<p>As you can imagine, this made it quite difficult for the merchants to
+maximize their profits by buying the right set of pruls. Not having computers
+to help with optimization, they quickly lost interest in trading pruls at
+all.</p>
+
+<p>In this problem, you are given the description of several workyard piles.
+You have to calculate the maximum profit a merchant can obtain by buying pruls
+from the piles according to the restrictions given above. In addition, you
+have to determine the number of pruls he has to buy to achieve this profit.</p>
+
+<h2>Input</h2>
+
+<p>The input describes several test cases. The first line of input for each
+test case contains a single integer w, the number of workyards in the test
+case (1 &le; w &le; 50).</p>
+
+<p>This is followed by w lines, each describing a pile of pruls. The first
+number in each line is the number b of boxes in the pile (0 &le; b &le; 20).
+Following it are b positive integers, indicating the prices (in florins) of
+the pruls in the stack, given from top to bottom.</p>
+
+<p>The input is terminated by a description starting with w = 0. This
+description should not be processed.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, print the case number (1, 2, &hellip;). Then print two
+lines, the first containing the maximum profit the merchant can achieve. The
+second line should specify the number of pruls the merchant has to buy to
+obtain this profit. If this number is not uniquely determined, print the
+possible values in increasing order. If there are more than ten possible
+values, print only the 10 smallest.</p>
+
+<p>Display a blank line between test cases.</p>
+
+<h3>Sample Input <i>1</i></h3>
+<pre>1
+6 12 3 10 7 16 5
+2
+5 7 3 11 9 10
+9 1 2 3 4 10 16 10 4 16
+0</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>Workyards 1
+Maximum profit is 8.
+Number of pruls to buy: 4
+
+Workyards 2
+Maximum profit is 40.
+Number of pruls to buy: 6 7 8 9 10 12 13</pre>
+
+<footer>
+  The 23rd Annual ACM International Collegiate Programming Contest World Finals · Problem E · Trade on Verweggistan
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem E: A Recurring Problem (Solution) — 47th ICPC World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+<header>
+  <p class="kicker">47th ICPC World Finals</p>
+  <h1>Problem E: A Recurring Problem</h1>
+</header>
+<p>Problem authors: Derek Kisman and Matthias Ruhl<br>
+Solved by 0 teams.<br>
+Shortest judge solution: 2987 bytes.</p>
+<figure><img src="images/E-1.png" alt=""></figure>
+<p>This was, in the judges' opinion, the hardest problem in this set. It can be solved using fairly complicated dynamic programming.</p>
+<p>You can start by thinking about how to get the first few elements of the generated sequence. The first one is actually quite easy: the number of sequences that start with t is the number of ways of writing t as <span style="white-space:nowrap">∑<span style="display:inline-block;vertical-align:middle;text-align:center;line-height:1.1"><span style="display:block">k</span><span style="display:block">i=1</span></span>&thinsp;c<sub>i</sub>a<sub>i</sub></span> for some positive integers k, c<sub>i</sub>, a<sub>i</sub>.</p>
+<p>Figuring out the extensions of this is considerably trickier, because now the c<sub>i</sub>'s and a<sub>i</sub>'s interact with each other. In general, suppose you want to count how many ways an order-k sequence can start with (a<sub>k+1</sub>, a<sub>k+2</sub>, . . . , a<sub>k+ℓ</sub>). If you know the values of c<sub>k</sub> and a<sub>k</sub>, then you can essentially subtract the contribution of these and try to continue from there; but you still need to remember the original values of a<sub>k</sub>, . . . , a<sub>k+ℓ−2</sub> because these will be make a contribution multiplied by c<sub>k−1</sub>.</p>
+<p>After some thought, a useful function to compute is the following. For a vector x = (x<sub>1</sub>, . . . , x<sub>ℓ</sub>) of length ℓ and a vector a = (a<sub>1</sub>, . . . , a<sub>ℓ−1</sub>) of length ℓ − 1, define f(x, a) to be the number of possible choices of r and positive integers a<sub>0</sub>, a<sub>−1</sub>, . . . , a<sub>−(r−1)</sub> and c<sub>1</sub>, . . . , c<sub>r</sub> such that, for all 1 ≤ i ≤ ℓ it holds that</p>
+<pre>          r
+x  i  =   ∑     a −r + i + j −1 · c j
+          j =1</pre>
+<p>Note that, if a = (x<sub>1</sub>, . . . , x<sub>ℓ−1</sub>), then f(x, a) counts exactly how many generated sequences start with x. Furthermore, we can define a nice recurrence for f:</p>
+<pre>                 
+                  1
+                 
+f (x, a)   =     
+                  0
+                 
+                  ∑ a0,c  f (x − c · (a0 , a1 , . . . , aℓ−1), (a0 , . . . , aℓ−2))
+
+                     if x is identically 0
+                     if x has any negative entries
+                     otherwise</pre>
+<p>In the sum, a<sub>0</sub> and c range over “all” positive integers, but can clearly be limited to those such that x − c · (a<sub>0</sub>, . . . , a<sub>ℓ−1</sub>) is a non-negative vector.</p>
+<p>Ok, so implementing this function f (and adding memoization), we have a way of counting the number of sequences with a given start, but this is still very slow, because as written there are lots of dead-end paths explored, that never lead to us reaching the all-zero vector (and therefore do not contribute anything to the count).</p>
+<p>From here, there are at least two approaches for making the solution fast enough:</p>
+<ol>
+  <li>
+    <p>One useful idea for computing f faster is that if f(x, a) > 0 then f(x', a') > 0 where x' and a' are the vectors of length ℓ − 1 and ℓ − 2 where we remove the last element. So when computing f(x, a), we can add a pruning step which first computes f(x', a') and checks that this is positive. This improves the running time dramatically and makes the solution fast enough.</p>
+    <p>Furthermore, we can relatively easily change f so that we instead count, given y = (y<sub>1</sub>, . . . , y<sub>ℓ</sub>), the number of generated sequences with a prefix of the form (y<sub>1</sub>, . . . , y<sub>ℓ−1</sub>, ≤ y<sub>ℓ</sub>). With that in hand we can binary search for the next extension.</p>
+    <p>One last idea here is that, once we have honed in on a prefix where there are relatively few (say, less than 500 000 different sequences generating that prefix, we can create all of those sequences and then iteratively evolve them until we find the right one.</p>
+  </li>
+  <li>
+    <p>A cleaner idea is to change the function f to not only count the number of sequences with the given prefix, but also all possible extensions, together with their counts. That way, there is no need to binary search for the next entry and we can generate the prefix one step at a time until we are at the right one.</p>
+  </li>
+</ol>
+</body>
+</html>

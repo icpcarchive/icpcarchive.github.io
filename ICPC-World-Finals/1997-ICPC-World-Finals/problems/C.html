@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem C: Morse Mismatches — The Twenty-first Annual ACM International Collegiate Programming Contest Finals (1997)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The Twenty-first Annual ACM International Collegiate Programming Contest Finals · Problem C</p>
+  <h1>Morse Mismatches</h1>
+  <p class="meta">Input file: morse.in</p>
+</header>
+
+<p>Samuel F. B. Morse is best known for the coding scheme that carries his name. Morse code is still used in international radio communication. The coding of text using Morse code is straightforward. Each character (case is insignificant) is translated to a predefined sequence of dits and dahs (the elements of Morse code). Dits are represented as periods (“.”) and dahs are represented as hyphens or minus signs (“–”). Each element is transmitted by sending a signal for some period of time. A dit is rather short, and a dah is, in perfectly formed code, three times as long as a dit. A short silent space appears between elements, with a longer space between characters. A still longer space separates words. This dependence on the spacing and timing of elements means that Morse code operators sometimes do not send perfect code. This results in difficulties for the receiving operator, but frequently the message can be decoded depending on context.</p>
+
+<p>In this problem we consider reception of words in Morse code without spacing between letters. Without the spacing, it is possible for multiple words to be coded the same. For example, if the message “dit dit dit” were received, it could be interpreted as “EEE”, “EI”, “IE” or “S” based on the coding scheme shown in the sample input. To decide between these multiple interpretations, we assume a particular context by expecting each received word to appear in a dictionary.</p>
+
+<p>For this problem your program will read a table giving the encoding of letters and digits into Morse code, a list of expected words (context), and a sequence of words encoded in Morse code (morse). These morse words may be flawed. For each morse word, your program is to determine the matching word from context, if any. If multiple words from context match morse, or if no word matches perfectly, your program will display the best matching word and a mismatch indicator.</p>
+
+<p>If a single word from context matches morse perfectly, it will be displayed on a single line, by itself. If multiple context words match morse perfectly, then select the matching word with the fewest characters. If this still results in an ambiguous match, any of these matches may be displayed. If multiple context words exist for a given morse, the matching word will be displayed followed by an exclamation point (“!”).</p>
+
+<p>We assume only a simple case of errors in transmission in which elements may be either truncated from the end of a morse word or added to the end of a morse word. When no perfect matches for morse are found, display the word from context that matches the longest prefix of morse, or has the fewest extra elements beyond those in morse. If multiple words in context match using these rules, any of these matches may be displayed. Words that do not match perfectly are displayed with a question mark (“?”) suffixed.</p>
+
+<p>The input data will only contain cases that fall within the preceding rules.</p>
+
+<h2>Input</h2>
+
+<p>The Morse code table will appear first and consists of lines each containing an uppercase letter or a digit <i>C</i>, zero or more blanks, and a sequence of no more than six periods and hyphens giving the Morse code for <i>C</i>. Blanks may precede or follow the items on the line. A line containing a single asterisk (“*”), possibly preceded or followed by blanks, terminates the Morse code table. You may assume that there will be Morse code given for every character that appears in the context section.</p>
+
+<p>The context section appears next, with one word per line, possibly preceded and followed by blanks. Each word in context will contain no more than ten characters. No characters other than upper case letters and digits will appear. Thered will be at most 100 context words. A line containing only a single asterisk (“*”), possibly preceded or followed by blanks, terminates the context section.</p>
+
+<p>The remainder of the input contains morse words separated by blanks or end-of-line characters. A line containing only a single asterisk (“*”), possibly preceded or followed by blanks, terminates the input. No morse word will have more than eighty (80) elements.</p>
+
+<h2>Output</h2>
+
+<p>For each input morse word, display the appropriate matching word from context followed by an exclamation mark (“!”) or question mark (“?”) if appropriate. Each word is to appear on a separate line starting in column one.</p>
+
+<h3>Sample Input 1</h3>
+<pre>A       .-
+B       -...
+C       -.-.
+D       -..
+E       .
+F       ..-.
+G       --.
+H       ....
+I       ..
+J       .---
+K       -.-
+L       .-..
+M       --
+N       -.
+O       ---
+P       .--.
+Q       --.-
+R       .-.
+S       ...
+T       -
+U       ..-
+V       ...-
+W       .--
+X       -..-
+Y       -.--
+Z       --..
+0       ------
+1       .-----
+2       ..---
+3       ...--
+4       ....-
+5       .....
+6       -....
+7       --...
+8       ---..
+9       ----.
+*
+AN
+EARTHQUAKE
+EAT
+GOD
+HATH
+IM
+READY
+TO
+WHAT
+WROTH
+*
+.--.....--   .....--....
+--.----..   .--.-.----..
+.--.....--   .--.
+..-.-.-....--.-..-.--.-.
+..--   .-...--..-.--
+----        ..--
+*</pre>
+
+<h3>Sample Output 1</h3>
+<pre>WHAT
+HATH
+GOD
+WROTH?
+WHAT
+AN
+EARTHQUAKE
+IM!
+READY
+TO
+IM!</pre>
+
+<footer>
+  The Twenty-first Annual ACM International Collegiate Programming Contest Finals · Problem C · Morse Mismatches
+</footer>
+
+</body>
+</html>

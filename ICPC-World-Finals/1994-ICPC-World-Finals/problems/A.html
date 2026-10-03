@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem A: Borrowers — 1994 Eighteenth Annual International Collegiate Programming Contest Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">1994 Eighteenth Annual International Collegiate Programming Contest Finals · Problem A</p>
+  <h1>Borrowers</h1>
+</header>
+
+<blockquote style="margin: 0 0 1rem 2rem; color: var(--muted); font-style: italic;">
+  <p style="margin: 0 0 0.5rem;">
+    I mean your borrowers of books&mdash;those mutilators of collections, spoilers of
+    the symmetry of shelves, and creators of odd volumes.<br>
+    &mdash;Charles Lamb, <i>Essays of Elia</i> (1823) &lsquo;The Two Races of Men&rsquo;
+  </p>
+</blockquote>
+
+<p>Like Mr. Lamb, librarians have their problems with borrowers too. People don&rsquo;t put books back where they should. Instead, returned books are kept at the main desk until a librarian is free to replace them in the right places on the shelves. Even for librarians, putting the right book in the right place can be very time-consuming. But since many libraries are now computerized, you can write a program to help.</p>
+
+<p>When a borrower takes out or returns a book, the computer keeps a record of the title. Periodically, the librarians will ask your program for a list of books that have been returned so the books can be returned to their correct places on the shelves. Before they are returned to the shelves, the returned books are sorted by author and then title using the ASCII collating sequence. Your program should output the list of returned books in the same order as they should appear on the shelves. For each book, your program should tell the librarian which book (including those previously shelved) is already on the shelf before which the returned book should go.</p>
+
+<h2>Input</h2>
+
+<p>First, the stock of the library will be listed, one book per line, in no particular order. Initially, they are all on the shelves. No two books have the same title. The format of each line will be:</p>
+<pre>      "title" by author</pre>
+<p>The end of the stock listing will be marked by a line containing only the word:</p>
+<pre>      END</pre>
+<p>Following the stock list will be a series of records of books borrowed and returned, and requests from librarians for assistance in restocking the shelves. Each record will appear on a single line, in one of the following formats:</p>
+<pre>      BORROW "title"
+      RETURN "title"
+      SHELVE</pre>
+<p>The list will be terminated by a line containing only the word:</p>
+<pre>      END</pre>
+
+<h2>Output</h2>
+
+<p>Each time the SHELVE command appears, your program should output a series of instructions for the librarian, one per line, in the format:</p>
+<pre>      Put "title1" after "title2"</pre>
+<p>or, for the special case of the book being the first in the collection:</p>
+<pre>      Put "title" first</pre>
+<p>After the set of instructions for each SHELVE, output a line containing only the word:</p>
+<pre>      END</pre>
+
+<h2>Assumptions &amp; Limitations</h2>
+
+<ol>
+  <li>A title is at most 80 characters long.</li>
+  <li>An author is at most 80 characters long.</li>
+  <li>A title will not contain the double quote (") character.</li>
+</ol>
+
+<h3>Sample Input</h3>
+<pre>"The Canterbury Tales" by Chaucer, G.
+"Algorithms" by Sedgewick, R.
+"The C Programming Language" by Kernighan, B. and Ritchie, D.
+END
+BORROW "Algorithms"
+BORROW "The C Programming Language"
+RETURN "Algorithms"
+RETURN "The C Programming Language"
+SHELVE
+END</pre>
+
+<h3>Output for the Sample Input</h3>
+<pre>Put "The C Programming Language" after "The Canterbury Tales"
+Put "Algorithms" after "The C Programming Language"
+END</pre>
+
+<footer>
+  1994 Eighteenth Annual International Collegiate Programming Contest Finals · Problem A · Borrowers
+</footer>
+
+</body>
+</html>

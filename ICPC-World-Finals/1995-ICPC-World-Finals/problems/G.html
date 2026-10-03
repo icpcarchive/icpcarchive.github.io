@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Train Time — The Nineteenth Annual ACM International Collegiate Programming Contest Finals (1995)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The Nineteenth Annual ACM International Collegiate Programming Contest Finals · Problem G</p>
+  <h1>Train Time</h1>
+  <p class="meta">Input File: train.in</p>
+</header>
+
+<p>City transportation planners are developing a light rail transit system to carry commuters between the suburbs and the downtown area. Part of their task includes scheduling trains on different routes between the outermost stations and the metro center hub.</p>
+
+<p>Part of the planning process consists of a simple simulation of train travel. A simulation consists of a series of scenarios in which two trains, one starting at the metro center and one starting at the outermost station of the same route, travel toward each other along the route. The transportation planners want to find out where and when the two trains meet. You are to write a program to determine those results.</p>
+
+<p>This model of train travel is necessarily simplified. All scenarios are based on the following assumptions.</p>
+<ol>
+  <li>All trains spend a fixed amount of time at each station.</li>
+  <li>All trains accelerate and decelerate at the same constant rate. All trains have the same maximum possible velocity.</li>
+  <li>When a train leaves a station, it accelerates (at a constant rate) until it reaches its maximum velocity. It remains at that maximum velocity until it begins to decelerate (at the same constant rate) as it approaches the next station. Trains leave stations with an initial velocity of zero (0.0) and they arrive at stations with terminal velocity zero. Adjacent stations on each route are far enough apart to allow a train to accelerate to its maximum velocity before beginning to decelerate.</li>
+  <li>Both trains in each scenario make their initial departure at the same time.</li>
+  <li>There are at most 30 stations along any route.</li>
+</ol>
+
+<h2>Input</h2>
+
+<p>All input values are real numbers. Data for each scenario are in the following format.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td style="font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; white-space: nowrap; padding-right: 2rem; vertical-align: top;">d<sub>1</sub> d<sub>2</sub> &hellip; d<sub>n</sub> 0.0</td>
+      <td>For a single route, the list of distances (in miles—there are 5,280 feet in a mile) from each station to the metro center hub, separated by one or more spaces. Stations are listed in ascending order, starting with the station closest to the metro center hub (station 1) and continuing to the outermost station. All distances are greater than zero. The list is terminated by the sentinel value 0.0.</td>
+    </tr>
+    <tr>
+      <td style="font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; white-space: nowrap; padding-right: 2rem; vertical-align: top;">v</td>
+      <td>The maximum train velocity, in feet/minute.</td>
+    </tr>
+    <tr>
+      <td style="font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; white-space: nowrap; padding-right: 2rem; vertical-align: top;">s</td>
+      <td>The constant train acceleration rate in feet/minute<sup>2</sup>.</td>
+    </tr>
+    <tr>
+      <td style="font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; white-space: nowrap; padding-right: 2rem; vertical-align: top;">m</td>
+      <td>The number of minutes a train stays in a station.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The series of runs is terminated by a data set which begins with the number –1.0.</p>
+
+<h2>Output</h2>
+
+<p>For each scenario, output consists of the following labeled data.</p>
+<ol>
+  <li>The number of the scenario (numbered consecutively, starting with scenario #1).</li>
+  <li>The time when the two trains meet in terms of minutes from starting time. All times must be displayed to one decimal place. Also, if the trains meet in a station, output the station number where they meet.</li>
+  <li>The distance in miles between the metro center hub and the place where the two trains meet. Distances must be displayed to three decimal places.</li>
+</ol>
+
+<h3>Sample Input</h3>
+<pre>15.0 0.0
+5280.0
+10560.0
+5.0
+3.5 7.0 0.0
+5280.0
+10560.0
+2.0
+3.4 7.0 0.0
+5280.0
+10560.0
+2.0
+-1.0</pre>
+
+<h3>Output for the Sample Input</h3>
+<pre>Scenario #1:
+   Meeting time: 7.8 minutes
+   Meeting distance: 7.500 miles from metro center hub
+
+Scenario #2:
+   Meeting time: 4.0 minutes
+   Meeting distance: 3.500 miles from metro center hub, in station 1
+
+Scenario #3:
+   Meeting time: 4.1 minutes
+   Meeting distance: 3.400 miles from metro center hub, in station 1</pre>
+
+<footer>
+  The Nineteenth Annual ACM International Collegiate Programming Contest Finals · Problem G · Train Time
+</footer>
+
+</body>
+</html>

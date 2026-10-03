@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem U: Toy Train Tracks &mdash; 46th ICPC World Championship (2022)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">46th ICPC World Championship &middot; Problem U</p>
+  <h1>Toy Train Tracks</h1>
+  <p class="meta">Time limit: 1 second</p>
+</header>
+
+<figure class="hero">
+  <img src="images/U-1.png" alt="">
+  <figcaption>Model railroad by Marshman via Wikimedia Commons, cc by-sa</figcaption>
+</figure>
+
+<p>Every little child, and quite a number of adults, are fascinated by
+toy trains. From a toddler&rsquo;s choo-choo train to a hobbyist&rsquo;s
+elaborate model railroad filling an entire basement, they are a profitable
+business. The Toy Train Tracks Construction Company (TTTCC) manufactures
+train tracks for all ages and skill levels. To keep their existing customers
+busy and maybe attract some new ones, the TTTCC has recently started
+publishing maps for how to connect their train tracks into elaborate layouts.
+Usually, this starts with a designer coming up with an interesting track
+layout, and then publishing both the layout and the required number of
+different track segments (say, curves and straight parts) needed to construct
+it. But the TTTCC has recently learned that many customers are looking for
+the reverse: they already have train track segments lying around (maybe found
+in grandma&rsquo;s attic), and would like to use them to create a large train
+course. How difficult might that be?</p>
+
+<p>To study the feasibility of automating the layout-creation process, TTTCC
+is interested in constructing train courses using two different shapes:
+straight line segments, and 90-degree turns (see Figure U.1).</p>
+
+<figure>
+  <img src="images/U-2.png" alt="">
+  <figcaption>Figure U.1: A straight track segment and a curved track
+  segment.</figcaption>
+</figure>
+
+<p>Valid layouts are created by placing these shapes on a square grid, with
+each track piece taking up exactly one grid cell. Both types of pieces can be
+rotated in 90-degree increments. A &ldquo;proper&rdquo; train track needs to
+be connected, and should form a single closed loop. Given a set of straight
+and curved track segments, what is the longest closed loop that one can
+construct?</p>
+
+<figure>
+  <img src="images/U-3.png" alt="">
+  <figcaption>Figure U.2: A sample track using four straight track segments
+  and twelve curves. This corresponds to Sample Output 1.</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>The input consists of a single line containing two integers <i>s</i> and
+<i>c</i>, the number of straight and curved track segments available,
+respectively (0 &le; <i>s</i> &le; 10<sup>5</sup>, 4 &le; <i>c</i> &le;
+10<sup>5</sup>).</p>
+
+<h2>Output</h2>
+
+<p>Output a train loop using at most <i>s</i> straight segments and <i>c</i>
+curved segments, that has the longest length (in number of track segments
+used) under this restriction. The loop must be closed and cannot intersect
+itself. If there are multiple loops of maximal length, any one of them will
+be accepted.</p>
+
+<p>If the loop is of length <i>n</i>, then print a single string of length
+<i>n</i>, where the characters represent the loop&rsquo;s segments as
+encountered in a single traversal. The character &rsquo;S&rsquo; stands for a
+straight-line segment, &rsquo;L&rsquo; for a curved segment that is a left
+turn, and &rsquo;R&rsquo; for a curved segment that is a right turn.</p>
+
+<h3>Sample Input 1</h3>
+<pre>4 12</pre>
+
+<h3>Sample Output 1</h3>
+<pre>LSRLLRLSLSRLLSRL</pre>
+
+<h3>Sample Input 2</h3>
+<pre>1 5</pre>
+
+<h3>Sample Output 2</h3>
+<pre>LLLL</pre>
+
+<footer>
+  46th ICPC World Championship Problem U: Toy Train Tracks &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem K: Stacking Plates — ACM-ICPC World Finals 2012</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2012 · Problem K</p>
+  <h1>Stacking Plates</h1>
+  <p class="meta">Problem ID: stacking</p>
+</header>
+
+
+<p>The Plate Shipping Company is an Internet retailer that, as their name
+suggests, exclusively sells plates. They pride themselves in offering the
+widest selection of dinner plates in the universe from a large number of
+manufacturers.</p>
+
+<p>In a recent cost analysis the company has discovered that they spend a large
+amount of money on packing the plates for shipment. Part of the reason is that
+plates have to be stacked before being put into shipping containers. And
+apparently, this is taking more time than expected. Maybe you can help.</p>
+
+<p>A shipment of plates consists of plates from several manufacturers. The
+plates from each manufacturer come stacked, that is, each arranged in a single
+stack with plates ordered by size (the smallest at the top, the largest at the
+bottom). We will call such a stack properly ordered. To ship all these plates,
+you must combine them into a single stack, again properly ordered. To join the
+manufacturers’ stacks into a single stack, two kinds of operations are allowed:</p>
+
+<ul>
+  <li><i>Split</i>: a single stack can be split into two stacks by lifting any
+  top portion of the stack and putting it aside to form a new stack.</li>
+  <li><i>Join</i>: two stacks can be joined by putting one on top of the other.
+  This is allowed only if the bottom plate of the top stack is no larger than
+  the top plate of the bottom stack, that is, the joined stack has to be
+  properly ordered.</li>
+</ul>
+
+<p>Note that a portion of any stack may never be put directly on top of another
+stack. It must first be split and then the split portion must be joined with the
+other stack. Given a collection of stacks, you have to find the minimum number
+of operations that transforms them into a single stack. The following example
+corresponds to the sample input, and shows how two stacks can be transformed to
+a single stack in five operations:</p>
+
+<figure>
+  <img src="images/K-1.png" alt="">
+  <figcaption>How two stacks can be transformed to a single stack in five operations (first sample input)</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>Each test case starts with a line containing a single integer <i>n</i>
+(1 &le; <i>n</i> &le; 50), the number of stacks that have to be combined for a
+shipment. This is followed by <i>n</i> lines, each describing a stack. These
+lines start with an integer <i>h</i> (1 &le; <i>h</i> &le; 50), the height of
+the stack. This number is followed by <i>h</i> positive integers that give the
+diameters of the plates, from top to bottom. All diameters are at most
+10&thinsp;000. These numbers will be in non-decreasing order.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, display the case number and the minimum number of
+operations (splits and joins) that have to be performed to combine the given
+stacks into a single stack.</p>
+
+<h3>Sample Input</h3>
+<pre>
+2
+3 1 2 4
+2 3 5
+3
+4 1 1 1 1
+4 1 1 1 1
+4 1 1 1 1
+</pre>
+
+<h3>Output for Sample Input</h3>
+<pre>
+Case 1: 5
+Case 2: 2
+</pre>
+
+
+<footer>
+  ACM-ICPC World Finals 2012 Problem K: Stacking Plates
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem J: Spin Doctor (Solution) — ACM ICPC World Finals 2016</title>
+<style>
+
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2016</p>
+  <h1>Problem J: Spin Doctor</h1>
+</header>
+
+<p>Shortest judge solution: 3195 bytes. Shortest team solution (during contest): 5540 bytes.</p>
+
+<p>This problem is a geometry problem in disguise. For each person i, let us view (a<sub>i</sub>, b<sub>i</sub>) as the Cartesian coordinates of a 2-dimensional point. We then have two (multi-)sets of points P<sub>1</sub> (the set of people with c<sub>i</sub> = 1) and P<sub>0</sub> (the set of people with c<sub>i</sub> = 0).</p>
+<p>For a choice of the parameters S and T, the set of points (a<sub>i</sub>, b<sub>i</sub>) with S · a<sub>i</sub> + T · b<sub>i</sub> = v for some v forms a line in the plane, with (S, T) as the normal vector. This means that the points that fall in between the first and the last point from P<sub>1</sub> are those which are contained in a stripe between the two tangents of the convex hull of P<sub>1</sub> with direction (−T, S) (including points exactly on the tangents).</p>
+<p>Here is an illustration of a small case, where the green points represent P<sub>1</sub> (which happen to form a circle in this test case), the dashed black lines are the two tangents with direction (−T, S) in the optimal solution, the red points are the points of P<sub>0</sub>, and the red points with a blue dot in them are the points in P<sub>0</sub> that fall inside the stripe.</p>
+<p>In order to find the best possible (S, T), we have to try rotating the tangents and keep track of how many points from P<sub>0</sub> fall between them. The only time a count changes is when one of the two tangents hits a point from P<sub>0</sub>. Since we only care about the convex hull of P<sub>1</sub>, we can find the tangents from any point q to the hull of P<sub>1</sub> in O(log n) time using binary search – this is needed since there can be a lot of points. Once we have all the tangents, we can apply the sweep-line methodology to try all relevant rotations in O(n log n) time.</p>
+<p>There was one very tricky special case, which is the case when |P<sub>1</sub>| = 1. In this case the answer is always 1, even if there are points from P<sub>0</sub> that coincide with the point in P<sub>1</sub>. Since the judges are such nice and friendly people, this special case was included in the sample data. In addition to this, usual geometry caveats with collinear and duplicate points apply.</p>
+</body>
+</html>

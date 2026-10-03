@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem O: Which Planet is This?! — ICPC World Finals 2020</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">ICPC World Finals 2020 · Problem O</p>
+  <h1>Which Planet is This?!</h1>
+  <p class="meta">Time limit: 6 seconds</p>
+</header>
+
+<figure class="hero">
+  <img src="images/O-1.png" alt="">
+</figure>
+
+<p>It&rsquo;s the year 2521, and interstellar probes have reached planets in
+distant solar systems. The Interstellar Consortium of Planet Cartographers
+(ICPC) has created detailed maps of these planets, and they seem to indicate
+the existence of alien life! On each map, the ICPC has recorded the locations
+of what appear to be alien dwellings.</p>
+
+<p>The ICPC was planning to release this exciting news to the public, but at
+the last moment, disaster struck. One of the ICPC&rsquo;s interns deleted all
+meta-data associated with the maps. So while the maps themselves are safe, the
+ICPC does not know which maps belong to which planets. For this, they have
+come back in time to ask for your help. Given two maps, can you determine
+whether they describe the same planet? Hopefully, a 500-year head start will
+be enough time to solve this important problem!</p>
+
+<p>The planetary maps consist of sets of points on the (spherical) planet
+surface. They are specified in terms of latitude (the angle north or south of
+the equator) and longitude (the angle west or east of the noon meridian, which
+is the location of the sun when the map&rsquo;s data was collected). Two maps
+for the same planet always agree on the latitudes of the points, since the
+planet&rsquo;s axis does not change. However, the longitudes of the points
+might differ, because the planet rotates between measurements.</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains an integer <i>n</i> (1 &le; <i>n</i> &le;
+400&thinsp;000), the number of points in each of the two maps to be compared.
+Then follow <i>n</i> lines describing the first map. Each of these lines
+contains two real numbers <i>a</i> and <i>b</i>, where <i>a</i> (&minus;90
+&lt; <i>a</i> &lt; 90) is the latitude and <i>b</i> (&minus;180 &lt;
+<i>b</i> &le; 180) is the longitude. Coordinates are expressed in degrees and
+have at most four digits after the decimal point. No two points on the map
+will have the same coordinates. The remaining <i>n</i> lines describe the
+second map in the same format as the first.</p>
+
+<h2>Output</h2>
+
+<p>Output Same if there is a rotation around the planet&rsquo;s axis that
+transforms one map into the other. Otherwise, output Different.</p>
+
+<h3>Sample Input 1</h3>
+<pre>4
+0.0000 0.0000
+30.0000 90.0000
+-45.0000 -30.0000
+30.0000 60.0000
+30.0000 150.0000
+30.0000 120.0000
+0.0000 60.0000
+-45.0000 30.0000</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Same</pre>
+
+<h3>Sample Input 2</h3>
+<pre>3
+0.0000 0.0000
+30.0000 0.0000
+30.0000 90.0000
+0.0000 0.0000
+30.0000 0.0000
+30.0000 -90.0000</pre>
+
+<h3>Sample Output 2</h3>
+<pre>Different</pre>
+
+<footer>
+  ICPC World Finals 2020 Problem O: Which Planet is This?!
+</footer>
+
+</body>
+</html>

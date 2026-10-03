@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem D: Jacquard Circuits &mdash; 2007 ICPC World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+
+<header>
+  <p class="kicker">2007 ICPC World Finals &middot; Problem D</p>
+  <h1>Jacquard Circuits</h1>
+  <p class="meta">Input file: jacquard.in</p>
+</header>
+
+<p>The eccentric sculptor Albrecht Caravaggio Mondrian has been inspired by the history
+of the computer to create works of art that he calls &ldquo;Jacquard circuits.&rdquo;
+Each of his works of art consists of a series of polygonal circuit boards (defined
+below), all having the same shape but at different scales, joined together with wire
+or string into a three-dimensional tiered structure. Figure 1 below shows an example
+with two levels and a pentagonal shape.</p>
+
+<figure>
+  <img src="images/D-1.png" alt="">
+  <figcaption>Figure 1</figcaption>
+</figure>
+
+<p>A.C.M. (as he is known to his friends) bases his art upon the punched hole cards of
+the Jacquard loom (that were later adapted by Charles Babbage for his analytical
+engine) and upon the regular grid layout approach often used in circuit interfacing
+(for instance, Pin Grid Arrays).</p>
+
+<p>The circuit boards used in the sculptures are in the shapes of lattice polygons. A
+lattice polygon is defined as any closed, non-self-intersecting cycle of straight line
+segments that join points with integer coordinates, with no two consecutive line
+segments parallel. For any given lattice polygon P, there is a smallest lattice
+polygon with the same shape and orientation as P &ndash; call this the origin. Smaller
+polygons of the same shape and orientation as P are called its predecessors and
+polygons larger than P are its successors. (See Figure 2 on the following page.)</p>
+
+<p>To build one of his sculptures, A.C.M. begins by randomly selecting N lattice points
+and then drawing a pattern by connecting these points. (Note that not all of the N
+points are necessarily vertices of a lattice polygon. This may happen, for example, if
+three or more consecutive points are collinear.) Let P be the lattice polygon
+determined by the pattern. Then he determines the origin corresponding to P, selects
+the number of levels, M, he wishes to use, and constructs the first M polygonal
+circuit boards in the series (that is, the origin and its first M-1 successors). Each
+lattice point lying strictly within the boundary of any of these polygons is a hole
+where strings or wires meet.</p>
+
+<p>The hard part of creating the sculpture is tying together all the strings or wires
+that meet at a given hole. Furthermore, some of A.C.M.&rsquo;s famous miniaturized
+sculptures, built using nano-engineering techniques, involve hundreds of thousands of
+levels. Mondrian would like a way to determine, given a polygonal shape and the number
+of levels, how many holes there will be in the final sculpture. You must write a
+program to help him. (For example, the sculpture in Figure 1 above has 15 holes.)
+Assume holes have zero diameter.</p>
+
+<figure>
+  <img src="images/D-2.png" alt="">
+  <figcaption>Figure 2</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>The input consists of one or more test cases. Each case begins with a line
+containing two positive integers N (3 &le; N &le; 1000) and M (1 &le; M &le; 1000000).
+N is the number of lattice points Mondrian selected and M is the number of levels in
+the completed sculpture. Each of the next N lines contains two integers x, y (|x|,
+|y| &le; 1000000) which denote the coordinates of one of Mondrian&rsquo;s points.
+Points are listed in either clockwise or counterclockwise order.</p>
+
+<p>The last test case is followed by a line containing two zeroes.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, print a line containing the test case number (beginning with
+1) followed by the number of holes in an M-level sculpture starting from the origin
+polygon of the given pattern. In no case will this value exceed the maximum possible
+value of a 64-bit signed integer.</p>
+
+<h3>Sample Input 1</h3>
+<pre>5 2
+0 0
+8 0
+12 4
+8 8
+0 8
+3 2
+-1 -1
+3 1
+5 -1
+0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1: 15
+Case 2: 2</pre>
+
+<footer>
+  2007 ICPC World Finals Problem D: Jacquard Circuits &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

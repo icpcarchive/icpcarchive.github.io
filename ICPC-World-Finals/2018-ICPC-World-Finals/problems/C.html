@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem C: Conquer The World — ACM-ICPC World Finals 2018</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2018 · Problem C</p>
+  <h1>Conquer The World</h1>
+  <p class="meta">Time limit: 8 seconds</p>
+</header>
+
+<p>Bwahahahahaha!!! Your nemesis, the dashingly handsome spy Waco Powers, has at
+last fallen to your secret volcano base’s deathtraps (or so you assume, being a
+little too busy to witness it firsthand). At long last, you are all set to
+CONQUER THE WORLD!</p>
+
+<p>Nothing will stand in your way! Well, nothing except a minor problem of
+logistics. Your evil armies have announced that they will not continue carving
+their relentless path of destruction across the puny nations of the world without
+being paid. And unfortunately you are running low on cash – a volcano lair has
+many wonderful qualities, but “reasonably affordable” is not one of them. You
+have had to pull funds from the travel budget to pay your ungrateful underlings.
+Now you are not sure how you will actually get your armies into position to
+CONQUER THE WORLD.</p>
+
+<p>You have a map of the nations of the world and all your available transport
+routes between them. Each route connects two nations and has a fixed cost per
+army that uses it. The routes are laid out such that there is exactly one way to
+travel between any two nations. You know the current position of each of your
+armies and how many you will need to place permanently in each nation in order to
+subjugate it. How can you move the armies into place as cheaply as possible so
+you can CONQUER THE WORLD?</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains an integer <i>n</i> (1 &le; <i>n</i> &le;
+250 000), the number of nations. This is followed by <i>n</i> − 1 lines, each
+containing three integers <i>u</i>, <i>v</i>, and <i>c</i> (1 &le; <i>u</i>,
+<i>v</i> &le; <i>n</i>, 1 &le; <i>c</i> &le; 10<sup>6</sup>), indicating that
+there is a bidirectional route connecting nations <i>u</i> and <i>v</i>, which
+costs <i>c</i> per army to use.</p>
+
+<p>Finally, another <i>n</i> lines follow, the <i>i</i><sup>th</sup> of which
+contains two non-negative integers <i>x</i><sub><i>i</i></sub> and
+<i>y</i><sub><i>i</i></sub>, indicating that there are currently
+<i>x</i><sub><i>i</i></sub> armies in nation <i>i</i>, and you need at least
+<i>y</i><sub><i>i</i></sub> armies to end up in that nation in the final
+configuration. The total number of armies (the sum of the <i>x</i><sub><i>i</i></sub>
+values) is at least the sum of the <i>y</i><sub><i>i</i></sub> values, and no
+more than 10<sup>6</sup>.</p>
+
+<h2>Output</h2>
+
+<p>Display the minimum cost to move your armies such that there are at least
+<i>y</i><sub><i>i</i></sub> armies in nation <i>i</i> for all <i>i</i>.</p>
+
+<h3>Sample Input <i>1</i></h3>
+<pre>3
+1 2 5
+3 1 5
+2 1
+5 0
+1 3</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>15</pre>
+
+
+<h3>Sample Input <i>2</i></h3>
+<pre>6
+1 2 2
+1 3 5
+1 4 1
+2 5 5
+2 6 1
+0 0
+1 0
+2 1
+2 1
+0 1
+0 1</pre>
+
+<h3>Sample Output <i>2</i></h3>
+<pre>9</pre>
+
+
+
+<footer>
+  ACM-ICPC World Finals 2018 Problem C: Conquer The World
+</footer>
+
+</body>
+</html>

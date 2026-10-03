@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solution sketches — ACM ICPC World Finals 2012</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+  table.problems {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.05rem;
+  }
+  table.problems td {
+    padding: 0.7rem 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  table.problems td:first-child a {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  table.problems tr:hover { background: #f5f8fc; }
+  table.problems .title a {
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+  }
+  table.problems .title a:hover { color: var(--accent); text-decoration: underline; }
+  table.problems .tl {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  header .meta { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+  .testdata { margin: 0; }
+  .testdata a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.2rem 0.5rem; font-size: 1.1rem; white-space: nowrap; }
+  .testdata a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="../problems/index.html">← Problem set</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2012</p>
+  <h1>Solution sketches</h1>
+  <p class="meta">12 solutions (A–L)</p>
+</header>
+
+<p><strong>Disclaimer</strong> This is an unofficial analysis of some possible ways to solve the problems of the ACM ICPC World Finals 2012. Any error in this text is my error. Should you find such an error, I would be happy to hear about it at austrin@kth.se.</p>
+<p>Also, note that these sketches are just that—sketches. They are not intended to give a complete solution, but rather to outline some approach that can be used to solve the problem. If some of the terminology or algorithms mentioned below are not familiar to you, your favorite search engine should be able to help.</p>
+<p>Finally, I want to stress that while I’m the one who has written this document, I do not take credit for the ideas behind these solutions—they come from many different people.</p>
+<p>— Per Austrin</p>
+
+<table class="problems">
+  <tbody>
+    <tr><td><a href="A.html">A</a></td><td class="title"><a href="A.html">Asteroid Rangers</a></td></tr>
+    <tr><td><a href="B.html">B</a></td><td class="title"><a href="B.html">Curvy Little Bottles</a></td></tr>
+    <tr><td><a href="C.html">C</a></td><td class="title"><a href="C.html">Bus Tour</a></td></tr>
+    <tr><td><a href="D.html">D</a></td><td class="title"><a href="D.html">Fibonacci Words</a></td></tr>
+    <tr><td><a href="E.html">E</a></td><td class="title"><a href="E.html">Infiltration</a></td></tr>
+    <tr><td><a href="F.html">F</a></td><td class="title"><a href="F.html">Keys</a></td></tr>
+    <tr><td><a href="G.html">G</a></td><td class="title"><a href="G.html">Minimum Cost Flow</a></td></tr>
+    <tr><td><a href="H.html">H</a></td><td class="title"><a href="H.html">Room Service</a></td></tr>
+    <tr><td><a href="I.html">I</a></td><td class="title"><a href="I.html">A Safe Bet</a></td></tr>
+    <tr><td><a href="J.html">J</a></td><td class="title"><a href="J.html">Shortest Flight Path</a></td></tr>
+    <tr><td><a href="K.html">K</a></td><td class="title"><a href="K.html">Stacking Plates</a></td></tr>
+    <tr><td><a href="L.html">L</a></td><td class="title"><a href="L.html">Takeover Wars</a></td></tr>
+  </tbody>
+</table>
+
+<h2>Summary</h2>
+
+<p>My guesstimated order for the problems to be solved was BKECLGDAFIHJ. The actual order in which the problems were solved was BDKLCEGIFA, with HJ left unsolved, which means I was less off than usual though I certainly overestimated problem D and underestimated problem E. In terms of number of teams that ended up solving each problem, the numbers were:</p>
+
+<table class="problems">
+<tr><td>Problem</td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td>I</td><td>J</td><td>K</td><td>L</td></tr>
+<tr><td>Solved</td><td>2</td><td>110</td><td>76</td><td>96</td><td>31</td><td>2</td><td>8</td><td>0</td><td>11</td><td>0</td><td>67</td><td>16</td></tr>
+<tr><td>Submissions</td><td>51</td><td>202</td><td>251</td><td>278</td><td>300</td><td>29</td><td>45</td><td>12</td><td>113</td><td>0</td><td>289</td><td>90</td></tr>
+</table>
+
+<p>In total there were 419 Accepted submissions, 924 Wrong Answer submissions, 243 Time Limit Exceeded submissions and 74 Run Time Errors. The most popular language was C++ by a wide margin: 1459 submissions compared to 220 for Java. There was also one single submission made in C (which was accepted, on problem B).</p>
+
+<p>Congratulations to St. Petersburg State University of IT, Mechanics and Optics, the 2012 ICPC World Champions!</p>
+
+<footer>
+  © ICPC Foundation — solution sketches converted from the official PDF.
+</footer>
+</body>
+</html>

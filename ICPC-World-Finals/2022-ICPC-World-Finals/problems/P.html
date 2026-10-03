@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem P: Turning Red &mdash; 46th ICPC World Championship (2022)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">46th ICPC World Championship &middot; Problem P</p>
+  <h1>Turning Red</h1>
+  <p class="meta">Time limit: 3 seconds</p>
+</header>
+
+<p>Mei&rsquo;s parents have spent the last year remodeling their house, but
+their lighting system is quite complex! Each room in the house has an LED
+light, which can be set to red, green, or blue, as seen in Figure P.1.</p>
+
+<figure>
+  <img src="images/P-1.png" alt="">
+  <figcaption>Figure P.1: The initial state of the lights in Sample Input 1.
+  Buttons and wires not shown.</figcaption>
+</figure>
+
+<p>Throughout the house are various buttons which are each connected to one or
+more lights. When a button is pressed, any red lights connected to that button
+become green, any green lights connected to that button become blue, and any
+blue lights connected to that button become red. Each button can be pressed
+multiple times. Because the house was built prior to the invention of crossbar
+wiring, each light is controlled by at most two buttons.</p>
+
+<p>Mei&rsquo;s favorite color is red, so she wants to turn all of the lights
+red. Her parents, fearing the buttons will wear out, have asked her to
+minimize the total number of button presses.</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains two positive integers <i>l</i> and
+<i>b</i>, where <i>l</i> (1 &le; <i>l</i> &le; 2 &middot; 10<sup>5</sup>) is the
+number of lights and <i>b</i> (0 &le; <i>b</i> &le; 2 &middot; <i>l</i>) is the
+number of buttons. The second line of input is a string of <i>l</i>
+characters, all either R, G, or B, where the <i>i</i>th character is the
+initial color of the <i>i</i>th light. The next <i>b</i> lines describe the
+buttons. Each of these lines begins with an integer <i>k</i> (1 &le;
+<i>k</i> &le; <i>l</i>), the number of lights controlled by this button. Then
+<i>k</i> distinct integers follow, the lights controlled by this button. The
+lights are indexed from 1 to <i>l</i>, inclusive. Each light appears at most
+twice across all buttons.</p>
+
+<h2>Output</h2>
+
+<p>Output the minimum number of button presses Mei needs to turn all the
+lights red. If it is impossible for Mei to turn all of the lights red, output
+<i>impossible</i>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>8 6
+GBRBRRRG
+2 1 4
+1 2
+4 4 5 6 7
+3 5 6 7
+1 8
+1 8</pre>
+
+<h3>Sample Output 1</h3>
+<pre>8</pre>
+
+<h3>Sample Input 2</h3>
+<pre>4 3
+RGBR
+2 1 2
+2 2 3
+2 3 4</pre>
+
+<h3>Sample Output 2</h3>
+<pre>impossible</pre>
+
+<h3>Sample Input 3</h3>
+<pre>4 4
+GBRG
+2 1 2
+2 2 3
+2 3 4
+1 4</pre>
+
+<h3>Sample Output 3</h3>
+<pre>6</pre>
+
+<h3>Sample Input 4</h3>
+<pre>3 3
+RGB
+1 1
+1 2
+1 3</pre>
+
+<h3>Sample Output 4</h3>
+<pre>3</pre>
+
+<footer>
+  46th ICPC World Championship Problem P: Turning Red &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

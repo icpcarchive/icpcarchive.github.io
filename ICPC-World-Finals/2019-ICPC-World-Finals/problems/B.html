@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Beautiful Bridges — ICPC World Finals 2019</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2019 · Problem B</p>
+  <h1>Beautiful Bridges</h1>
+  <p class="meta">Time limit: 10 seconds</p>
+</header>
+
+<p>What connects us all? Well, it is often bridges. Since ancient times, people
+have been building bridges for roads, for trains, for pedestrians, and as
+aqueducts to transport water. It is humanity’s way of not taking inconvenient
+geography for an answer.</p>
+
+<figure class="hero">
+  <img src="images/B-1.png" alt="">
+  <figcaption>Example of a Roman arch bridge. Source: Wikimedia Commons</figcaption>
+</figure>
+
+<p>The company Arch Bridges Construction (ABC) specializes in—you guessed it—the
+construction of arch bridges. This classical style of bridge is supported by
+pillars that extend from the ground below the bridge. Arches between pillars
+distribute the bridge’s weight onto the adjacent pillars.</p>
+
+<p>The bridges built by ABC often have pillars spaced at irregular intervals.
+For aesthetic reasons, ABC’s bridges always have semicircular arches, as
+illustrated in Figure B.1. However, while a bridge arch can touch the ground, it
+cannot extend below the ground. This makes some pillar placements impossible.</p>
+
+<figure>
+  <img src="images/B-2.png" alt="">
+  <figcaption>Figure B.1: Bridge examples.</figcaption>
+</figure>
+
+<p>Given a ground profile and a desired bridge height <i>h</i>, there are
+usually many ways of building an arch bridge. We model the ground profile as a
+piecewise-linear function described by <i>n</i> key points (<i>x</i><sub>1</sub>,
+<i>y</i><sub>1</sub>), (<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>), &hellip;,
+(<i>x</i><sub><i>n</i></sub>, <i>y</i><sub><i>n</i></sub>), where the
+<i>x</i>-coordinate of a point is the position along the bridge, and the
+<i>y</i>-coordinate is the elevation of the ground above sea level at this
+position along the bridge. The first and last pillars must be built at the first
+and last key points, and any intermediate pillars can be built only at these key
+points. The cost of a bridge is the cost of its pillars (which is proportional
+to their heights) plus the cost of its arches (which is proportional to the
+amount of material used). So a bridge with <i>k</i> pillars of heights
+<i>h</i><sub>1</sub>, &hellip;, <i>h</i><sub><i>k</i></sub> that are separated by
+horizontal distances <i>d</i><sub>1</sub>, &hellip;,
+<i>d</i><sub><i>k</i>&minus;1</sub> has a total cost of
+<i>&alpha;</i>&middot;&sum;<sub><i>i</i>=1</sub><sup><i>k</i></sup>
+<i>h</i><sub><i>i</i></sub> + <i>&beta;</i>&middot;&sum;<sub><i>i</i>=1</sub><sup><i>k</i>&minus;1</sup>
+<i>d</i><sub><i>i</i></sub><sup>2</sup>
+for some given constants <i>&alpha;</i> and <i>&beta;</i>. ABC wants to
+construct each bridge at the lowest possible cost.</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains four integers <i>n</i>, <i>h</i>,
+<i>&alpha;</i>, and <i>&beta;</i>, where <i>n</i> (2 &le; <i>n</i> &le;
+10<sup>4</sup>) is the number of points describing the ground profile, <i>h</i>
+(1 &le; <i>h</i> &le; 10<sup>5</sup>) is the desired height of the bridge above
+sea level, and <i>&alpha;</i>, <i>&beta;</i> (1 &le; <i>&alpha;</i>,
+<i>&beta;</i> &le; 10<sup>4</sup>) are the cost factors as described earlier.
+Then follow <i>n</i> lines, the <i>i</i>th of which contains two integers
+<i>x</i><sub><i>i</i></sub>, <i>y</i><sub><i>i</i></sub> (0 &le;
+<i>x</i><sub>1</sub> &lt; <i>x</i><sub>2</sub> &lt; &hellip; &lt;
+<i>x</i><sub><i>n</i></sub> &le; 10<sup>5</sup> and 0 &le;
+<i>y</i><sub><i>i</i></sub> &lt; <i>h</i>), describing the ground profile.</p>
+
+<h2>Output</h2>
+
+<p>Output the minimum cost of building a bridge from horizontal position
+<i>x</i><sub>1</sub> to <i>x</i><sub><i>n</i></sub> at height <i>h</i> above sea
+level. If it is impossible to build any such bridge, output
+<i>impossible</i>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>5 60 18 2
+0 0
+20 20
+30 10
+50 30
+70 20</pre>
+
+<h3>Sample Output 1</h3>
+<pre>6460</pre>
+
+<h3>Sample Input 2</h3>
+<pre>4 10 1 1
+0 0
+1 9
+9 9
+10 0</pre>
+
+<h3>Sample Output 2</h3>
+<pre>impossible</pre>
+
+<footer>
+  ICPC World Finals 2019 Problem B: Beautiful Bridges &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

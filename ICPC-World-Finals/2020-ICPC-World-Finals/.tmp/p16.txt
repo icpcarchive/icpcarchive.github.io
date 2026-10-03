@@ -1,0 +1,43 @@
+a string of length n, having a ‘1’ in position i if machine i says that machine xi is working correctly, ‘0’
+if machine i says that machine xi is malfunctioning, and ‘-’ (dash) if machine i was idle in the round.
+When your program has determined which machines are malfunctioning, but no later than after 12
+rounds of tests, it must write a line of the form “answer S” where S is a binary string of length n,
+having a ‘1’ in position i if machine i is working correctly, and a ‘0’ if it is malfunctioning.
+After writing the answer line, your program should start processing the next batch by reading its number
+n. When all b batches have been processed, the interaction ends and your program should exit.
+Notes on interactive judging:
+   • The evaluation is non-adversarial, meaning that the result of each machine testing each other
+      machine is chosen in advance rather than in response to your queries.
+   • Do not forget to flush output buffers after writing. See the Addendum to Judging Notes for details.
+   • You are provided with a command-line tool for local testing, together with input files correspond-
+      ing to the sample interactions. The tool has comments at the top to explain its use.
+
+ Read                                    Sample Interaction 1                                      Write
+ 1
+ 5
+                                               test 5 4 2 1 3
+ 11011
+                                               test 4 5 1 3 2
+ 00110
+                                               test 2 3 4 5 1
+ 01011
+                                               test 3 1 5 2 4
+ 10100
+                                               answer 10101
+
+
+ Read                                    Sample Interaction 2                                      Write
+ 2
+ 4
+                                               test 2 3 4 1
+ 1111
+                                               answer 1111
+ 7
+                                               test 2 3 4 5 6 7 1
+ 0001100
+                                               test 0 0 0 0 2 4 0
+ ----11-
+                                               answer 0101110
+
+ICPC World Finals 2020 Problem H: QC QC                                                                  16
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Pipe Stream (Solution) — ACM ICPC World Finals 2015</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2015</p>
+  <h1>Problem G: Pipe Stream</h1>
+</header>
+
+<p>Shortest judge solution: 568 bytes. Shortest team solution (during contest): 1432 bytes.</p>
+
+<p>Effectively, every knock on the pipe answers the question “did the Flubber already get to this point”, which tells us “is the velocity of the Flubber greater or equal to the minimum speed needed to get to this point.” So, the problem would be very easy if the pipe had infinite length.</p>
+
+<p>For an infinitely long pipe, we would simply run a binary search on the velocity, and return the answer in ⌈log<sub>2</sub>((v<sub>2</sub>−v<sub>1</sub>)/t)⌉ knocks. However, due to the finite length of the pipe, some velocity queries are impossible to make after some points in time. This may cause the whole binary search to be impossible to perform (as in sample input 3), or it may cause us to have to adapt the search, possibly using more queries (as in sample input 2).</p>
+
+<p>Notice that the effect of the flubber moving out of the pipe is that some queries about the last parts of the velocity interval become illegal. This means that if the velocity is in some final part of the possible interval, and we have not determined what it is yet, we will not be able to determine it in the future. So, our knocking plan must be able to tell these velocities apart before the flubber flows out.</p>
+
+<p>Let us describe how we will construct a good strategy of knocking at the pipe. We will always knock as soon as we can (that is, at s, 2s, 3s, etc. seconds) After k knocks, our strategy will have already adapted to determine the velocity (within a t error range) in some final range of the velocity interval, and we are still searching in the range [v<sub>1</sub>, v(k)]. If not for the need to determine some answers fast, we would have, at this point, divided the range of velocities into 2<sup>k</sup> intervals, and the strategy would tell us in which of these intervals the real answer is. However, some of these potential intervals might have been used up – so, the range of [v<sub>1</sub>, v(k)] is only divided into some smaller number n(k) ≤ 2<sup>k</sup> intervals, and our strategy will tell us in which of these intervals the answer is. If t · n(k) ≥ v(k) − v<sub>1</sub>, we can just let these intervals be an equidivision of the velocity range, and k is going to be the number of knocks our strategy uses.</p>
+
+<p>The initial values are easy: v(0) = v<sub>2</sub> and n(0) = 1 – before knocking, we are searching the [v<sub>1</sub>, v<sub>2</sub>] range, and the range is “divided” into a single interval. Let’s see what happens when we add another knock. Before we do this, we need to determine what range of velocities becomes impossible to query (if any) — the higest velocity that’s possible to query at time k is simply v<sub>f</sub>(k) = l/(s(k+1)). We need to determine the velocity of the Flubber for velicities above v<sub>f</sub>(k) + t in the first k steps. In other words, if v(k) &gt; v<sub>f</sub>(k) + t, then we need to “use up” n<sub>f</sub>(k) = ⌈(v(k)−v<sub>f</sub>(k)−t)/t⌉ intervals out of our n(k) intervals to make sure we cover the high velocities with sufficient accuracy before it is too late. For the remaining n(k) − n<sub>f</sub>(k) intervals, we do not decide yet what are they going to be, but whatever they are, we ask a new query to split them in two. Thus, n(k + 1) = 2(n(k) − n<sub>f</sub>(k)), and v(k + 1) = v(k) − n<sub>f</sub>(k) · t.</p>
+
+<p>This analysis allows us to solve the problem. We will iterate over k, keeping track of v(k) and n(k). Once t · n(k) ≥ v(k) − v<sub>1</sub>, we can answer k. If n(k) drops to zero or below at any point, we answer “impossible”. becomes how big k can become? It’s pretty difficult to get an accurate estimate, but after getting some intuition for the problem, it is relatively easy to believe that it’s not going to be very high. The worst test case we found (subject to the input bounds in the problem) had an answer of 74. If you can beat this, please let us know!</p>
+</body>
+</html>

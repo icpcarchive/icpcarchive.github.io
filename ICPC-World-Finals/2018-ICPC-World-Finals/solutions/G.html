@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Panda Preserve (Solution) — ACM ICPC World Finals 2018</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+<header>
+  <p class="kicker">ACM ICPC World Finals 2018</p>
+  <h1>Problem G: Panda Preserve</h1>
+</header>
+<p>Shortest judge solution: 4669 bytes. Shortest team solution (during contest): 4372 bytes.</p>
+<p>This was the only computational geometry problem in the set. We are given a polygon, and asked to find the point inside (or on the boundary of) the polygon that is furthest away from any vertex of the polygon (or rather, we are only asked to find this furthest distance, but we don’t know of any way of finding that without also finding a furthest point). The key conceptual observation to make is the following: the furthest point will lie either (i) on a vertex of the Voronoi diagram of the set of polygon vertices, or (ii) on the intersection of a Voronoi edge with a polygon edge. Here are two examples (the second one being the first sample input, and the first one being one of the secret test cases) illustrating these two possibilities (the blue lines show the Voronoi diagram and the little red asterisk marks the furthest point):</p>
+<p>With this easy theory sorted out, it is time to buckle up for the less easy implementation. There are two parts: first we need to compute the Voronoi diagram, and then we have to find the furthest point.</p>
+<p>For the first part, there are well-known O(n log n) algorithms for Voronoi diagram, and if you have one of those in your team notebook then you can just go with that, but these algorithms are quite difficult to implement correctly and if you do not happen to have such an implementation available, the input bounds (n ≤ 2000) do allow for something slower and easier. For instance, one can take e.g. Fortune’s O(n log n) algorithm and simplify some steps while keeping it O(n<sup>2</sup>), or one can take a more direct approach and compute the Voronoi diagram in O(n<sup>2</sup> log n) time (but in this case one has to be a bit careful with the constant factors in the implementation) by taking each polygon vertex and computing the cell around it in O(n log n) time using a relatively simple circular sweep algorithm similar to the Graham scan algorithm for convex hulls. We make sure to store in our Voronoi diagram which polygon vertices define each Voronoi vertex/edge, so that we can evaluate the distance for each candidate point in O(1) time.</p>
+<p>The second part is easier (again owing to the fact that the polygon is relatively small), assuming one has access to basic geometric primitives such as point in polygon and line segment intersection (and if one does not, one should probably have stayed away from this problem in the first place). We simply go over every vertex of the Voronoi diagram, and check if it is inside the polygon (in which case it is a candidate furthest point). Similarly for every edge of the Voronoi diagram we compute all intersections with the polygon edges (and these are also candidate furthest points). This then takes O(n<sup>2</sup>) time, because there are O(n) Voronoi vertices and edges, and both point in polygon tests and “compute intersection with every polygon edge” also take O(n) time.</p>
+<p>Fun fact: this problem was originally proposed with much larger polygons, requiring O(n log n) time, but we felt that this was just too hard, even for the World Finals. In this version, computing the Voronoi diagram in O(n log n) time is actually not the hardest part – the second part of finding the furthest point in the Voronoi diagram is even harder (it can be done using a complicated sweepline algorithm, but one has to be very careful, because the number of intersections between polygon edges and Voronoi edges can be quadratically large, so even enumerating all of them would be too costly).</p>
+<p>Another approach than the one described above is to do a binary search on the answer and then try to determine efficiently whether a given circle radius covers the polygon or not. That task can be done in O(n<sup>2</sup> log n) with a sweepline approach. We also saw at least one team solving the problem with a direct sweepline approach without binary search or explicitly computing the Voronoi diagram, but our impression was that this solution was in some sense implicitly computing the Voronoi diagram and incorporated the second part into it.</p>
+</body>
+</html>

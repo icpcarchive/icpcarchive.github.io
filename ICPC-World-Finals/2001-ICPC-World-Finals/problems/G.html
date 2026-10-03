@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Fixed Partition Memory Management — 25th Annual ACM ICPC World Finals (2001)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">25th Annual ACM ICPC World Finals · Problem G</p>
+  <h1>Fixed Partition Memory Management</h1>
+  <p class="meta">Input file: memory.in</p>
+</header>
+
+<p>A technique used in early multiprogramming operating systems involved
+partitioning the available primary memory into a number of regions with each
+region having a fixed size, different regions potentially having different
+sizes. The sum of the sizes of all regions equals the size of the primary
+memory.</p>
+
+<p>Given a set of programs, it was the task of the operating system to assign
+the programs to different memory regions, so that they could be executed
+concurrently. This was made difficult due to the fact that the execution time
+of a program might depend on the amount of memory available to it. Every
+program has a minimum space requirement, but if it is assigned to a larger
+memory region its execution time might increase or decrease.</p>
+
+<p>In this program, you have to determine optimal assignments of programs to
+memory regions. Your program is given the sizes of the memory regions available
+for the execution of programs, and for each program a description of how its
+running time depends on the amount of memory available to it. Your program has
+to find the execution schedule of the programs that minimizes the average
+turnaround time for the programs. An execution schedule is an assignment of
+programs to memory regions and times, such that no two programs use the same
+memory region at the same time, and no program is assigned to a memory region
+of size less than its minimum memory requirement. The turnaround time of the
+program is the difference between the time when the program was submitted for
+execution (which is time zero for all programs in this problem), and the time
+that the program completes execution.</p>
+
+<h2>Input</h2>
+
+<p>The input data will contain multiple test cases. Each test case begins with a
+line containing a pair of integers m and n. The number m specifies the number
+of regions into which primary memory has been partitioned (1 &le; m &le; 10),
+and n specifies the number of programs to be executed (1 &le; n &le; 50).</p>
+
+<p>The next line contains m positive integers giving the sizes of the m memory
+regions. Following this are n lines, describing the time-space tradeoffs for
+each of the n programs. Each line starts with a positive integer k (k &le; 10),
+followed by k pairs of positive integers s<sub>1</sub>,t<sub>1</sub>,
+s<sub>2</sub>,t<sub>2</sub>,&hellip;,s<sub>k</sub>,t<sub>k</sub>, that satisfy
+s<sub>i</sub> &lt; s<sub>i+1</sub> for 1 &le; i &lt; k. The minimum space
+requirement of the program is s<sub>1</sub>, i.e. it cannot run in a partition
+of size less than this number. If the program runs in a memory partition of size
+s, where s<sub>i</sub> &le; s &lt; s<sub>i+1</sub> for some i, then its
+execution time will be t<sub>i</sub>. Finally, if the programs runs in a memory
+partition of size s<sub>k</sub> or more, then its execution time will be
+t<sub>k</sub>.</p>
+
+<p>A pair of zeroes will follow the input for the last test case.</p>
+
+<p>You may assume that each program will execute in exactly the time specified
+for the given region size, regardless of the number of other programs in the
+system. No program will have a memory requirement larger than that of the
+largest memory region.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, first display the case number (starting with 1 and
+increasing sequentially). Then print the minimum average turnaround time for
+the set of programs with two digits to the right of the decimal point. Follow
+this by the description of an execution schedule that achieves this average
+turnaround time. Display one line for each program, in the order they were
+given in the input, that identifies the program number, the region in which it
+was executed (numbered in the order given in the input), the time when the
+program started execution, and the time when the program completed execution.
+Follow the format shown in the sample output, and print a blank line after each
+test case.</p>
+
+<p>If there are multiple program orderings or assignments to memory regions
+that yield the same minimum average turnaround time, give one of the schedules
+with the minimum average turnaround time.</p>
+
+<h3>Sample Input 1</h3>
+<pre>2 4
+40 60
+1 35 4
+1 20 3
+1 40 10
+1 60 7
+3 5
+10 20 30
+2 10 50 12 30
+2 10 100 20 25
+1 25 19
+1 19 41
+2 10 18 30 42
+0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1
+Average turnaround time = 7.75
+Program 1 runs in region 1 from 0 to 4
+Program 2 runs in region 2 from 0 to 3
+Program 3 runs in region 1 from 4 to 14
+Program 4 runs in region 2 from 3 to 10
+
+Case 2
+Average turnaround time = 35.40
+Program 1 runs in region 2 from 25 to 55
+Program 2 runs in region 2 from 0 to 25
+Program 3 runs in region 3 from 0 to 19
+Program 4 runs in region 3 from 19 to 60
+Program 5 runs in region 1 from 0 to 18</pre>
+
+
+<footer>
+  25th Annual ACM International Collegiate Programming Contest World Finals (2001) ·
+  Problem G: Fixed Partition Memory Management · The 2001 ACM Programming Contest World Finals sponsored by IBM
+</footer>
+
+</body>
+</html>

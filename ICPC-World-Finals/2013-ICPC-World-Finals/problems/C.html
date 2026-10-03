@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem C: Surely You Congest — ACM-ICPC World Finals 2013</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2013 · Problem C</p>
+  <h1>Surely You Congest</h1>
+  <p class="meta">Time limit: 10 seconds</p>
+</header>
+
+<p>You are in charge of designing an advanced centralized traffic management
+system for smart cars. The goal is to use global information to instruct
+morning commuters, who must drive downtown from the suburbs, how best to get
+to the city center while avoiding traffic jams.</p>
+
+<p>Unfortunately, since commuters know the city and are selfish, you cannot
+simply tell them to travel routes that take longer than normal (otherwise they
+will just ignore your directions). You can only convince them to change to
+different routes that are equally fast.</p>
+
+<p>The city&rsquo;s network of roads consists of intersections that are
+connected by bidirectional roads of various travel times. Each commuter
+starts at some intersection, which may vary from commuter to commuter. All
+commuters end their journeys at the same place, which is downtown at
+intersection 1. If two commuters attempt to start travelling along the same
+road in the same direction at the same time, there will be congestion; you
+must avoid this. However, it is fine if two commuters pass through the same
+intersection simultaneously or if they take the same road starting at
+different times.</p>
+
+<p>Determine the maximum number of commuters who can drive downtown without
+congestion, subject to all commuters starting their journeys at exactly the
+same time and without any of them taking a suboptimal route.</p>
+
+<figure>
+  <img src="images/C-1.png" alt="">
+  <figcaption>Figure C.1: Illustration of Sample Input 2.</figcaption>
+</figure>
+
+<p>In Figure C.1, cars are shown in their original locations. One car is
+already downtown. Of the cars at intersection 4, one can go along the dotted
+route through intersection 3, and another along the dashed route through
+intersection 2. But the remaining two cars cannot reach downtown while
+avoiding congestion. So a maximum of 3 cars can reach downtown with no
+congestion.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of a single test case. The first line contains three
+integers <i>n</i>, <i>m</i>, and <i>c</i>, where <i>n</i> (1 &le; <i>n</i>
+&le; 25 000) is the number of intersections, <i>m</i> (0 &le; <i>m</i>
+&le; 50 000) is the number of roads, and <i>c</i> (0 &le; <i>c</i> &le;
+1 000) is the number of commuters. Each of the next <i>m</i> lines contains
+three integers <i>x</i><sub><i>i</i></sub>, <i>y</i><sub><i>i</i></sub>, and
+<i>t</i><sub><i>i</i></sub> describing one road, where
+<i>x</i><sub><i>i</i></sub> and <i>y</i><sub><i>i</i></sub> (1 &le;
+<i>x</i><sub><i>i</i></sub>, <i>y</i><sub><i>i</i></sub> &le; <i>n</i>) are
+the distinct intersections the road connects, and <i>t</i><sub><i>i</i></sub>
+(1 &le; <i>t</i><sub><i>i</i></sub> &le; 10 000) is the time it takes to
+travel along that road in either direction. You may assume that downtown is
+reachable from every intersection. The last line contains <i>c</i> integers
+listing the starting intersections of the commuters.</p>
+
+<h2>Output</h2>
+
+<p>Display the maximum number of commuters who can reach downtown without
+congestion.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3 3 2
+1 2 42
+2 3 1
+2 3 1
+2 3</pre>
+
+<h3>Sample Output 1</h3>
+<pre>2</pre>
+
+<h3>Sample Input 2</h3>
+<pre>4 4 5
+1 2 5
+1 3 4
+4 2 5
+4 3 6
+4 4 4 4 1</pre>
+
+<h3>Sample Output 2</h3>
+<pre>3</pre>
+
+
+<footer>
+  ACM-ICPC World Finals 2013 Problem C: Surely You Congest &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

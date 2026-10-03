@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem K: Treasure Map (Solution) — ICPC World Finals 2025</title>
+<style>
+:root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ICPC World Finals 2025</p>
+  <h1>Problem K: Treasure Map</h1>
+</header>
+<p>Solved by 72 teams.</p>
+<p>First solved after 69 minutes.</p>
+<p>Shortest judge solution: 1366 bytes.</p>
+<p>The solution consists of two parts. First, we need to understand what the condition of “each unit square has the two evaluations coincide” actually means. It turns out that it means that there are some values r<sub>i</sub> for 1 ≤ i ≤ n and c<sub>j</sub> for 1 ≤ j ≤ m such that h(i, j) = r<sub>i</sub> + c<sub>j</sub>. This is not hard to prove (or guess).</p>
+<p>Now, let’s construct a bipartite graph where we have an edge between x and y if the point (x, y) is one of the points for which we have the height provided. A connected component in this graph determines a set of rows and columns; and we need to assign r<sub>i</sub> and c<sub>j</sub> values to all those rows and columns in a way that matches the points in this component. First, let’s assign in any way that makes the point heights match up; we’ll worry about making sure that all heights are positive and minimizing the height in (t<sub>x</sub>, t<sub>y</sub>) later.</p>
+<p>How to deal with this graph? Notice that we can assign one value arbitrarily – if we increase all the c<sub>j</sub> and decrease all the r<sub>i</sub> by the same value, the resulting heights will not change, and so the first assignment can be arbitrary. Once we assign one c<sub>j</sub> value, all other values will be forced, so we can continue assigning them by BFS or DFS. If we arrive at a contradiction, we can immediately answer impossible. If not, we store the values we found.</p>
+<p>Now, the requirement of all heights being non-negative is equivalent to us being able to choose non-negative r<sub>i</sub>s and c<sub>j</sub>s. One direction is obvious. The other direction follows from the adjustment above – we can move the minimum r<sub>i</sub> to zero, and if now the minimum c<sub>j</sub> is negative, then the height at (i, j) is negative. So, we’ll be seeking a solution with non-negative r<sub>i</sub> and c<sub>j</sub> that minimizes the height at (t<sub>x</sub>, t<sub>y</sub>).</p>
+<p>Now, to minimize the height at (t<sub>x</sub>, t<sub>y</sub>), we have to consider several cases.</p>
+<ul>
+  <li>If (t<sub>x</sub>, t<sub>y</sub>) is an element of some component, we’ve already assigned a height to it, and we cannot change it. Done.</li>
+  <li>If row t<sub>x</sub> is an element of some component, and the column t<sub>y</sub> is an element of a different component, we want to minimize r<sub>tx</sub> in the first component, and c<sub>ty</sub> in the second. This means bringing the minimum r<sub>i</sub> in the first component to zero, and the minimum c<sub>j</sub> in the second component to zero.</li>
+  <li>If either row t<sub>x</sub> or column t<sub>y</sub> is not the element of any component, we can just set the relevant r<sub>tx</sub> or c<sub>ty</sub> to zero.</li>
+</ul>
+</body>
+</html>

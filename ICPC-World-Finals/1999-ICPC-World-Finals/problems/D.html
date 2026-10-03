@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem D: The Fortified Forest — 23rd Annual ACM International Collegiate Programming Contest World Finals (1999)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The 23rd Annual ACM International Collegiate Programming Contest World Finals · Problem D</p>
+  <h1>The Fortified Forest</h1>
+  <p class="meta">Input: forest.in</p>
+</header>
+
+<p>Once upon a time, in a faraway land, there lived a king. This king owned a
+small collection of rare and valuable trees, which had been gathered by his
+ancestors on their travels. To protect his trees from thieves, the king
+ordered that a high fence be built around them. His wizard was put in charge
+of the operation.</p>
+
+<p>Alas, the wizard quickly noticed that the only suitable material available
+to build the fence was the wood from the trees themselves. In other words, it
+was necessary to cut down some trees in order to build a fence around the
+remaining trees. Of course, to prevent his head from being chopped off, the
+wizard wanted to minimize the value of the trees that had to be cut. The
+wizard went to his tower and stayed there until he had found the best possible
+solution to the problem. The fence was then built and everyone lived happily
+ever after.</p>
+
+<p>You are to write a program that solves the problem the wizard faced.</p>
+
+<h2>Input</h2>
+
+<p>The input contains several test cases, each of which describes a
+hypothetical forest. Each test case begins with a line containing a single
+integer n, 2 &le; n &le; 15, the number of trees in the forest. The trees are
+identified by consecutive integers 1 to n. Each of the subsequent n lines
+contains 4 integers x<sub>i</sub>, y<sub>i</sub>, v<sub>i</sub>, l<sub>i</sub>
+that describe a single tree. (x<sub>i</sub>, y<sub>i</sub>) is the position of
+the tree in the plane, v<sub>i</sub> is its value, and l<sub>i</sub> is the
+length of fence that can be built using the wood of the tree. v<sub>i</sub>
+and l<sub>i</sub> are between 0 and 10,000.</p>
+
+<p>The input ends with an empty test case (n = 0).</p>
+
+<h2>Output</h2>
+
+<p>For each test case, compute a subset of the trees such that, using the wood
+from that subset, the remaining trees can be enclosed in a single fence. Find
+the subset with minimum value. If more than one such minimum-value subset
+exists, choose one with the smallest number of trees. For simplicity, regard
+the trees as having zero diameter.</p>
+
+<p>Display, as shown below, the test case numbers (1, 2, &hellip;), the
+identity of each tree to be cut, and the length of the excess fencing
+(accurate to two fractional digits).</p>
+
+<p>Display a blank line between test cases.</p>
+
+<h3>Sample Input <i>1</i></h3>
+<pre>6
+    0    0   8   3
+    1    4   3   2
+    2    1   7   1
+    4    1   2   3
+    3    5   4   6
+    2    3   9   8
+3
+    3 0 10 2
+    5 5 20 25
+    7 –3 30 32
+0</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>Forest 1
+Cut these trees: 2 4 5
+Extra wood: 3.16
+
+Forest 2
+Cut these trees: 2
+Extra wood: 15.00</pre>
+
+<footer>
+  The 23rd Annual ACM International Collegiate Programming Contest World Finals · Problem D · The Fortified Forest
+</footer>
+
+</body>
+</html>

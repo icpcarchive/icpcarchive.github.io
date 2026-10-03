@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: The Letter Carrier’s Rounds — 23rd Annual ACM International Collegiate Programming Contest World Finals (1999)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The 23rd Annual ACM International Collegiate Programming Contest World Finals · Problem G</p>
+  <h1>The Letter Carrier&rsquo;s Rounds</h1>
+  <p class="meta">Input: smtp.in</p>
+</header>
+
+<p>For an electronic mail application you are to describe the SMTP-based
+communication that takes place between pairs of MTAs. The sender&rsquo;s User
+Agent gives a formatted message to the sending Message Transfer Agent (MTA).
+The sending MTA communicates with the receiving MTA using the Simple Mail
+Transfer Protocol (SMTP). The receiving MTA delivers mail to the
+receiver&rsquo;s User Agent. After a communication link is initialized, the
+sending MTA transmits command lines, one at a time, to the receiving MTA,
+which returns a three-digit coded response after each command is processed.
+The sender commands are shown below in the order sent for each message. There
+is more than one RCPT TO line when the same message is sent to several users
+at the same MTA. A message to users at different MTAs requires separate SMTP
+sessions.</p>
+
+<pre>     HELO myname                     Identifies the sender to the receiver (yes, there is only one L)
+     MAIL FROM:&lt;sender&gt;              Identifies the message sender
+     RCPT TO:&lt;user&gt;                  Identifies one recipient of the message
+     DATA                            Followed by an arbitrary number of lines of text comprising the message
+                                     body, ending with a line containing a period in column one.
+     QUIT                            Terminates the communication.</pre>
+
+<p>The following response codes are sent by the receiving MTA:</p>
+
+<pre>   221 Closing connection (after QUIT)
+   250 Action was okay (after MAIL FROM and RCPT TO specifying an acceptable user, or completion of a message)
+   354 Start sending mail (after DATA)
+   550 Action not taken; no such user here (after RCPT TO with unknown user)</pre>
+
+<h2>Input</h2>
+
+<p>The input contains descriptions of MTAs followed by an arbitrary number of
+messages. Each MTA description begins with the MTA designation and its name
+(1 to 15 alphanumeric characters). Following the MTA name is the number of
+users that receive mail at that MTA and a list of the users (1 to 15
+alphanumeric characters each). The MTA description is terminated by an
+asterisk in column 1. Each message begins with the sending user&rsquo;s name
+and is followed by a list of recipient identifiers. Each identifier has the
+form user@mtaname. The message (each line containing no more than 72
+characters) begins and terminates with an asterisk in column 1. A line with an
+asterisk in column 1 instead of a sender and recipient list indicates the end
+of the entire input.</p>
+
+<h2>Output</h2>
+
+<p>For each message, show the communication between the sending and receiving
+MTAs. Every MTA mentioned in a message is a valid MTA; however, message
+recipients may not exist at the destination MTA. The receiving MTA rejects
+mail for those users by responding to the RCPT TO command with the 550 code.
+A rejection will not affect delivery to authorized users at the same MTA. If
+there is not at least one authorized recipient at a particular MTA, the DATA
+is not sent. Only one SMTP session is used to send a message to users at a
+particular MTA. For example, a message to 5 users at the same MTA will have
+only one SMTP session. Also a message is addressed to the same user only
+once. The order in which receiving MTAs are contacted by the sender is
+unspecified. As shown in the sample output, prefix the communication with the
+communicating MTA names, and indent each communication line.</p>
+
+<h3>Sample Input <i>1</i></h3>
+<pre>MTA London 4 Fiona Paul Heather Nevil
+MTA SanFrancisco 3 Mario Luigi Shariff
+MTA Paris 3 Jacque Suzanne Maurice
+MTA HongKong 3 Chen Jeng Hee
+MTA MexicoCity 4 Conrado Estella Eva Raul
+MTA Cairo 3 Hamdy Tarik Misa
+*
+Hamdy@Cairo Conrado@MexicoCity Shariff@SanFrancisco Lisa@MexicoCity
+*
+Congratulations on your efforts !!
+--Hamdy
+*
+Fiona@London Chen@HongKong Natasha@Paris
+*
+Thanks for the report! --Fiona
+*
+*</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>Connection between Cairo and MexicoCity
+     HELO Cairo
+     250
+     MAIL FROM:&lt;Hamdy@Cairo&gt;
+     250
+     RCPT TO:&lt;Conrado@MexicoCity&gt;
+     250
+     RCPT TO:&lt;Lisa@MexicoCity&gt;
+     550
+     DATA
+     354
+     Congratulations on your efforts !!
+     --Hamdy
+     .
+     250
+     QUIT
+     221
+Connection between Cairo and SanFrancisco
+     HELO Cairo
+     250
+     MAIL FROM:&lt;Hamdy@Cairo&gt;
+     250
+     RCPT TO:&lt;Shariff@SanFrancisco&gt;
+     250
+     DATA
+     354
+     Congratulations on your efforts !!
+     --Hamdy
+     .
+     250
+     QUIT
+     221
+Connection between London and HongKong
+     HELO London
+     250
+     MAIL FROM:&lt;Fiona@London&gt;
+     250
+     RCPT TO:&lt;Chen@HongKong&gt;
+     250
+     DATA
+     354
+     Thanks for the report! --Fiona
+     .
+     250
+     QUIT
+     221
+Connection between London and Paris
+     HELO London
+     250
+     MAIL FROM:&lt;Fiona@London&gt;
+     250
+     RCPT TO:&lt;Natasha@Paris&gt;
+     550
+     QUIT
+     221</pre>
+
+<footer>
+  The 23rd Annual ACM International Collegiate Programming Contest World Finals · Problem G · The Letter Carrier&rsquo;s Rounds
+</footer>
+
+</body>
+</html>

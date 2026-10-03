@@ -1,0 +1,28 @@
+Output
+
+Output a line containing four integers p, i, j, and s, where:
+
+    • the column indicated by the spectator should be picked up as the pth column,
+
+    • using this value of p causes all cards to eventually end up in the stable location at row i column j,
+      and
+
+    • s is the maximum number of iterations required for any card to reach the stable location.
+
+The value of p should be chosen so that the stable location (i, j) is as close as possible to any of the
+one, two or four central positions in the grid, where the distance between locations (i, j) and (i0 , j 0 ) is
+|i − i0 | + |j − j 0 |. If more than one value of p results in the same minimum distance, choose the smallest
+such p.
+
+ Sample Input 1                                         Sample Output 1
+ 7 3                                                    2 4 2 3
+
+
+ Sample Input 2                                         Sample Output 2
+ 8 3                                                    1 1 1 3
+
+
+
+
+ICPC World Finals 2020 Problem A: Cardiology                                                                2
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem C: Mission Improbable (Solution) — ACM ICPC World Finals 2017</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2017</p>
+  <h1>Problem C: Mission Improbable</h1>
+</header>
+
+<p>Shortest judge solution: 818 bytes. Shortest team solution (during contest): 1178 bytes.</p>
+<p>Python solutions by the judges: both Pypy and CPython</p>
+
+<p>If not for the top-down view, this problem would be really straightforward. Since solving easy problems is easier than solving harder problems, let’s go over that first.</p>
+
+<p>Consider the highest stack of crates in the input, and assume it has height H<sub>1</sub>. It has to appear both in the front view and the side view at least once. Assume that it appears m<sub>1</sub> times in the front view, and n<sub>1</sub> times in the side view, and without loss of generality, assume n<sub>1</sub> ≤ m<sub>1</sub>. In that case, we will need at least m<sub>1</sub> stacks of height H<sub>1</sub>, and we can achieve the correct side and front view by arranging m<sub>1</sub> stacks so that there is at least one in each of the m<sub>1</sub> columns and n<sub>1</sub> rows.</p>
+
+<p>Then, proceed to the next height, H<sub>2</sub>. Again, we have m<sub>2</sub> columns and n<sub>2</sub> rows that have to contain a stack with height H<sub>2</sub>. The one thing that is different here is that it is possible for, say, m<sub>2</sub> to be zero – in which case we will put the stacks of height H<sub>2</sub> in the column(s) already containing stacks of height H<sub>1</sub>. Following this pattern, we will use up a total of</p>
+
+<p style="text-align: center">∑ H<sub>i</sub> · max(m<sub>i</sub>, n<sub>i</sub>)</p>
+
+<p>crates. After placing all the crates for all the heights, the side and front views are already correct, so (disregarding the existence of the top view) we can just leave the remaining spaces empty.</p>
+
+<p>Now, the existence of the top view changes two things in that strategy. First, at the end, we might have to leave a single crate (instead of zero crates) in some of the remaining spaces, to prevent the top view from noticing the spaces are empty. This is easy – we just keep track of how many spaces we filled, and then add to the final answer the number of spaces seen in the top view minus the number of spaces already filled.</p>
+
+<p>The more tricky part is that due to the top view seeing empty spaces in some spots, it might be impossible to put a stack of height H<sub>i</sub> in each of the m<sub>i</sub> columns and n<sub>1</sub> rows using just max(m<sub>i</sub>, n<sub>i</sub>) stacks. We want to have as many stacks as possible to cover both a row and a column, and then we can make the remaining columns and rows covered by just putting a stack of height H<sub>i</sub> wherever it was in the original input. Notice that this is a bipartite matching problem – we have a set of rows and a set of columns, and we can connect a row to a column when the top view shows a non-empty stack. So, for each height H<sub>i</sub> appearing in the input, we run bipartite matching to find out how many stacks can cover both a row and a column, and then replace max(m<sub>i</sub>, n<sub>i</sub>) with m<sub>i</sub> + n<sub>i</sub> − Bipartite(i). Note that this formula works fine even if one of the sides is zero. Since the runtime of bipartite matching is super-linear, the worst-case for this problem is if all the columns and rows in the front and side views are of the same height. With r, c ≤ 100, this will easily run in time.</p>
+</body>
+</html>

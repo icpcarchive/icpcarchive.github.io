@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem L: Wire Crossing &mdash; ACM-ICPC World Finals 2014</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2014 &middot; Problem L</p>
+  <h1>Wire Crossing</h1>
+  <p class="meta">Time limit: 2 seconds</p>
+</header>
+
+<p>Moore&rsquo;s Law states that the number of transistors on a chip will double every two years. Amazingly, this
+law has held true for over half a century. Whenever current technology no longer allowed more growth,
+researchers have come up with new manufacturing technologies to pack circuits even denser. In the near
+future, this might mean that chips are constructed in three dimensions instead two. But for this problem,
+two dimensions will be enough.</p>
+
+<p>A problem common to all two-dimensional hardware design (for example chips, graphics cards,
+motherboards, and so on) is wire placement. Whenever wires are routed on the hardware, it is
+problematic if they have to cross each other. When a crossing occurs special gadgets have to be used
+to allow two electrical wires to pass over each other, and this makes manufacturing more expensive.</p>
+
+<p>Our problem is the following: you are given a hardware design with several wires already in place (all
+of them straight line segments). You are also given the start and end points for a new wire connection
+to be added. You will have to determine the minimum number of existing wires that have to be crossed
+in order to connect the start and end points. This connection need not be a straight line. The only
+requirement is that it cannot cross at a point where two or more wires already meet or intersect.</p>
+
+<figure>
+  <img src="images/L-1.png" alt="">
+  <figcaption>Figure L.1: First sample input</figcaption>
+</figure>
+
+<p>Figure L.1 shows the first sample input. Eight existing wires form five squares. The start and end points
+of the new connection are in the leftmost and rightmost squares, respectively. The black dashed line
+shows that a direct connection would cross four wires, whereas the optimal solution crosses only two
+wires (the curved blue line).</p>
+
+<h2>Input</h2>
+
+<p>The input consists of a single test case. The first line contains five integers <i>m</i>, <i>x</i><sub>0</sub>, <i>y</i><sub>0</sub>, <i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>, which are
+the number of pre-existing wires (<i>m</i> &le; 100) and the start and end points that need to be connected.
+This is followed by <i>m</i> lines, each containing four integers <i>x</i><sub><i>a</i></sub>, <i>y</i><sub><i>a</i></sub>, <i>x</i><sub><i>b</i></sub>, <i>y</i><sub><i>b</i></sub> describing an existing wire of
+non-zero length from (<i>x</i><sub><i>a</i></sub>, <i>y</i><sub><i>a</i></sub>) to (<i>x</i><sub><i>b</i></sub>, <i>y</i><sub><i>b</i></sub>). The absolute value of each input coordinate is less than 10<sup>5</sup>.
+Each pair of wires has at most one point in common, that is, wires do not overlap. The start and end
+points for the new wire do not lie on a pre-existing wire.</p>
+
+<h2>Output</h2>
+
+<p>Display the minimum number of wires that have to be crossed to connect the start and end points.</p>
+
+<h3>Sample Input 1</h3>
+<pre>8 3 3 19 3
+0 1 22 1
+0 5 22 5
+1 0 1 6
+5 0 5 6
+9 0 9 6
+13 0 13 6
+17 0 17 6
+21 0 21 6</pre>
+
+<h3>Sample Output 1</h3>
+<pre>2</pre>
+
+<h3>Sample Input 2</h3>
+<pre>1 0 5 10 5
+0 0 10 10</pre>
+
+<h3>Sample Output 2</h3>
+<pre>0</pre>
+
+
+<footer>
+  ACM-ICPC World Finals 2014 Problem L: Wire Crossing
+</footer>
+
+</body>
+</html>

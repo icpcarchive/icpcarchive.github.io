@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Simplified GSM Network &mdash; ICPC World Finals 2005</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2005 &middot; Problem B</p>
+  <h1>Simplified GSM Network</h1>
+  <p class="meta">Input file: gsm.in</p>
+</header>
+
+
+<p>Mobile phones have changed our lifestyle dramatically in the last decade. Mobile phones have a variety of protocols to connect with one another. One of the most popular networks for mobile phones is the GSM (Global System for Mobile Communication) network.</p>
+
+<p>In a typical GSM network, a mobile phone connects with the nearest BTS (Base Transceiver Station). A BSC (Base Station Center) controls several BTSs. Several BSCs are controlled by one MSC (Mobile Services Switching Center), and this MSC maintains a connection with several other MSCs, a PSTN (Public Switched Telecom Network) and an ISDN (Integrated Services Digital Network).</p>
+
+<p>This problem uses a simplified model of the conventional GSM network. Our simplified network is composed of up to fifty BTS towers. When in use, a mobile phone always connects to its nearest BTS tower. The area covered by a single BTS tower is called a cell. When an active mobile phone is in motion, as it crosses cell boundaries it must seamlessly switch from one BTS to another. Given the description of a map consisting of cities, roads and BTS towers, you must determine the minimum number of BTS switches required to go from one city to another.</p>
+
+<figure>
+  <img src="images/B-1.png" alt="">
+  <figcaption>Figure: Cities here are represented by squares and BTS towers by trapezoids. Solid lines are roads. The dotted lines show 9 different cells. The minimum number of switches required to go from city 1 to city 6 is (2+1+0)=3. Note that city 7 is isolated and cannot be reached.</figcaption>
+</figure>
+
+<p>Each tower and each city location is to be considered as a single point in a two-dimensional Cartesian coordinate system. If there is a road between two cities, assume that the road is a straight line segment connecting these two cities. For example, in the figure, traveling on the road from city 1 to city 2 will cross two cell boundaries and thus requires two switches. Traveling from city 2 to city 5 crosses one cell boundary and traveling from city 5 to city 6 requires no switch. Traveling this route from city 1 to city 6 requires three total switches. Note than any other path from city 1 to city 6 requires more than three switches. If there is more than one possible way to get from one city to another, your program must find the optimal route.</p>
+
+<h2>Input</h2>
+
+<p>The input file contains several test cases. The first line of each test case contains four integers: B (1 &le; B &le; 50), the number of BTS towers; C (1 &le; C &le; 50), the number of cities; R (0 &le; R &le; 250), the number of roads; and Q (1 &le; Q &le; 10), the number of queries. Each of the next B lines contains two floating-point numbers x and y, the Cartesian coordinates of a BTS tower. Each of the next C lines contains two floating-point numbers x<sub>i</sub>, y<sub>i</sub> that indicate the Cartesian coordinates of the ith city (1 &le; i &le; C). Each of the next R lines contains two integers m and n (1 &le; m,n &le; C), which indicate that there is a road between the mth and the nth city. Each of the next Q lines contains two integers s and d (1 &le; s,d &le; C), the source and destination cities.</p>
+
+<p>No coordinate will have an absolute value greater than 1000. No two towers will be at the same location. No two cities will be at the same location, and no city will lie on a cell boundary. No road will be coincident with a cell boundary, nor contain a point lying on the boundary of three or more cells.</p>
+
+<p>The input will end with a line containing four zeros.</p>
+
+<h2>Output</h2>
+
+<p>For each input set, you should produce Q+1 lines of output, as shown below. The first line should contain the number of the test case. Q lines should follow, one for each query, each containing an integer indicating the minimum number of switches required to go from city s to city d. If it is not possible to go from city s to city d, print the line &ldquo;Impossible&rdquo; instead.</p>
+
+<h3>Sample Input 1</h3>
+<pre>9 7 6 2
+5 5
+15 5
+25 5
+5 15
+15 15
+25 15
+5 25
+15 25
+25 25
+8 2
+22 3
+8 12
+18 18
+22 12
+28 16
+28 8
+1 2
+1 3
+2 5
+3 4
+4 5
+5 6
+1 6
+1 7
+0 0 0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1:
+3
+Impossible</pre>
+
+
+<footer>
+  ICPC World Finals 2005 &mdash; Problem B: Simplified GSM Network
+</footer>
+
+</body>
+</html>

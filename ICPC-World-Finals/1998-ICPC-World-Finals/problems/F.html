@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Polygon Intersections &mdash; The 22nd Annual ACM International Collegiate Programming Contest World Finals (1998)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+<header>
+  <p class="kicker">The 22nd Annual ACM International Collegiate Programming Contest World Finals &middot; Problem F</p>
+  <h1>Polygon Intersections</h1>
+  <p class="meta">Input file: poly.in</p>
+</header>
+
+<p>Most drawing or illustration programs have simple tools for creating polygon objects. The better ones can find the regions that are the intersections of two polygons. The picture below shows two polygons, one is a pentagon and the other is a triangle. Their intersection consists of the two dark regions.</p>
+
+<figure>
+  <img src="images/F-1.png" alt="">
+</figure>
+
+<p>IBM has just hired you as a member of a programming team that will create a very sophisticated drawing/illustration program. Your task is to write the part of the program that deals with polygon intersections. Your boss has told you to delay work on the user interface and focus only on the geometric representations of the intersections.</p>
+
+<p>A polygon in the Cartesian plane can be represented by a sequence of points that are its vertices. The vertices in the sequence appear in the order in which they are visited when traveling clockwise around the polygon&rsquo;s boundary; so any two adjacent vertices in the sequence are the endpoints of a line segment that is one of the polygon&rsquo;s sides. The last and the first vertices in the sequence are also endpoints of a side. Vertices are identified by their x- and y-coordinates. Assume the following about each polygon.</p>
+
+<ul>
+<li>No point will occur as a vertex (on the same polygon) more than once.</li>
+<li>Two sides can intersect only at a common endpoint (vertex).</li>
+<li>The angle between any two sides with a common vertex has a measure that is greater than 0 and less than 360.</li>
+<li>The polygon has at least 3 vertices.</li>
+</ul>
+
+<p>The intersection of two polygons consists of 0 or more connected regions. Your problem is to take two polygons and determine the regions of their intersection that are polygons satisfying the criteria above.</p>
+
+<h2>Input</h2>
+
+<p>The input contains several data sets, each consisting of two polygons. Each polygon appears as a sequence of numbers:</p>
+
+<pre>n x₁ y₁ x₂ y₂ ... xₙ yₙ</pre>
+
+<p>where the integer <i>n</i> is the number of vertices of the polygon, and the real coordinates (<i>x</i><sub>1</sub>,<i>y</i><sub>1</sub>) through (<i>x</i><sub>n</sub>, <i>y</i><sub>n</sub>) are the boundary vertices. The end of input is indicated by two 0&rsquo;s for the values of <i>n</i>. These two 0&rsquo;s merely mark the end of data and should not be treated as an additional data set.</p>
+
+<h2>Output</h2>
+
+<p>For each data set, your program should output its number (Data set 1, Data set 2, etc.), and the number of regions in the intersection of its two polygons. Label each region in the data set (Region 1, Region 2, etc.) and list its vertices in the order they appear when they are visited going either clockwise or counterclockwise around the boundary of the region. The first vertex printed should be the vertex with the smallest x-coordinate (to break ties, use the smallest y-coordinate). No region may include degenerate parts (consisting of adjacent sides whose angle of intersection is 0). If the three endpoints of two adjacent sides are collinear, the two sides should be merged into a single side. Print each vertex in the standard form (x,y), where <i>x</i> and <i>y</i> have two digits to the right of the decimal.</p>
+
+<p>The following sample input contains exactly one data set. (The data set corresponds to the illustration at the beginning of this problem description.)</p>
+
+<h3>Sample Input</h3>
+
+<pre>3   2 1 0.5 3.5 8 5
+5   1.5 3 2 7 6.5 6.5                6.5 3.25       4 4.5
+
+0
+0</pre>
+
+<h3>Output for the Sample Input</h3>
+
+<pre>Data Set 1
+Number of intersection regions: 2
+Region 1:(1.50,3.00)(1.59,3.72)(3.25,4.05)
+Region 2:(4.43,4.29)(6.50,4.70)(6.50,4.00)(5.86,3.57)</pre>
+
+<footer>
+  The 22nd Annual ACM International Collegiate Programming Contest World Finals &middot; Problem F &middot; Polygon Intersections
+</footer>
+
+</body>
+</html>

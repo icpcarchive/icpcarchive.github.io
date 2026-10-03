@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem V: Three Kinds of Dice — 46th ICPC World Championship (2022)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">46th ICPC World Championship · Problem V</p>
+  <h1>Three Kinds of Dice</h1>
+  <p class="meta">Time limit: 1 second</p>
+</header>
+
+<figure class="hero">
+  <img src="images/V-1.png" alt="">
+  <figcaption>Image from rawpixel, CC0</figcaption>
+</figure>
+
+<p>See how they roll! According to a famous story, Warren Buffett once
+challenged Bill Gates to a simple game of dice. He had three dice; the first
+player could examine them and choose one of the three. The second player would
+then choose one of the remaining dice, and both players would roll their dice
+against each other, aiming for the highest numbers. Warren offered to let Bill
+go first, but this made Bill suspicious so he opted to go second. It turned out
+to be a wise choice: these were intransitive dice. The first die had an
+advantage when rolling against the second, the second had an advantage when
+rolling against the third, but the first did not have an advantage when
+rolling against the third!</p>
+
+<p>To formalize this: define a &ldquo;die&rdquo; as any shape with at least one
+face such that each face shows a positive integer. When a die is rolled, one of
+its faces is selected uniformly at random. When two dice roll against each
+other, the die whose selected face shows a higher number earns 1 point; if both
+numbers are equal, each die earns 1/2 points. For dice <i>D</i> and
+<i>D</i><sup>0</sup>, define score(<i>D</i>, <i>D</i><sup>0</sup>) as the
+expected number of points <i>D</i> earns from a single roll against
+<i>D</i><sup>0</sup>. If score(<i>D</i>, <i>D</i><sup>0</sup>) &gt; 1/2, we say
+that <i>D</i> has an advantage over <i>D</i><sup>0</sup>; if
+score(<i>D</i>, <i>D</i><sup>0</sup>) = 1/2, the two dice are tied. For example,
+if <i>D</i> is the first die in the sample input and <i>D</i><sup>0</sup> is the
+second, score(<i>D</i>, <i>D</i><sup>0</sup>) = 4/9 and score(<i>D</i><sup>0</sup>,
+<i>D</i>) = 5/9, so <i>D</i><sup>0</sup> has an advantage over <i>D</i>.</p>
+
+<p>Given two dice <i>D</i><sub>1</sub> and <i>D</i><sub>2</sub> such that
+<i>D</i><sub>1</sub> has an advantage over <i>D</i><sub>2</sub>, you want a
+third die <i>D</i><sub>3</sub> that forms an intransitive trio with the other
+two. Among all <i>D</i><sub>3</sub> that have an advantage over or tie with
+<i>D</i><sub>1</sub>, compute the lowest possible score(<i>D</i><sub>3</sub>,
+<i>D</i><sub>2</sub>). If this is less than 1/2, you can make an intransitive
+trio! Similarly, among all <i>D</i><sub>3</sub> such that <i>D</i><sub>2</sub>
+has an advantage over or ties with <i>D</i><sub>3</sub>, compute the highest
+possible score(<i>D</i><sub>3</sub>, <i>D</i><sub>1</sub>).</p>
+
+<h2>Input</h2>
+
+<p>The input contains two lines, each describing one die. One of the dice (the
+first or the second) has an advantage over the other. The die with the advantage
+is <i>D</i><sub>1</sub> and the other is <i>D</i><sub>2</sub>.</p>
+
+<p>The first integer on a line gives <i>n</i> (1 &le; <i>n</i> &le;
+10<sup>5</sup>), the number of faces on the die. Then follow <i>n</i> integers
+<i>f</i><sub><i>i</i></sub> (1 &le; <i>f</i><sub><i>i</i></sub> &le;
+10<sup>9</sup> for each 1 &le; <i>i</i> &le; <i>n</i>), giving the integer on
+each face.</p>
+
+<h2>Output</h2>
+
+<p>Output one line containing the lowest score(<i>D</i><sub>3</sub>,
+<i>D</i><sub>2</sub>) and the highest score(<i>D</i><sub>3</sub>,
+<i>D</i><sub>1</sub>) under the above conditions. The two scores do not need to
+use the same die <i>D</i><sub>3</sub>. Your answer should have an absolute error
+of at most 10<sup>&minus;6</sup>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>6 1 1 6 6 8 8
+3 2 4 9</pre>
+
+<h3>Sample Output 1</h3>
+<pre>0.291666667 0.750000000</pre>
+
+<h3>Sample Input 2</h3>
+<pre>4 9 3 7 5
+3 4 2 3</pre>
+
+<h3>Sample Output 2</h3>
+<pre>0.500000000 0.500000000</pre>
+
+<footer>
+  46th ICPC World Championship Problem V: Three Kinds of Dice &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

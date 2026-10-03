@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem A: Self-Assembly — ACM-ICPC World Finals 2013</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2013 · Problem A</p>
+  <h1>Self-Assembly</h1>
+  <p class="meta">Time limit: 3 seconds</p>
+</header>
+
+<p>Automatic Chemical Manufacturing is experimenting with a process called
+self-assembly. In this process, molecules with natural affinity for each other
+are mixed together in a solution and allowed to spontaneously assemble
+themselves into larger structures. But there is one problem: sometimes
+molecules assemble themselves into a structure of unbounded size, which gums
+up the machinery.</p>
+
+<p>You must write a program to decide whether a given collection of molecules
+can be assembled into a structure of unbounded size. You should make two
+simplifying assumptions: 1) the problem is restricted to two dimensions, and
+2) each molecule in the collection is represented as a square. The four edges
+of the square represent the surfaces on which the molecule can connect to
+other compatible molecules.</p>
+
+<p>In each test case, you will be given a set of molecule descriptions. Each
+type of molecule is described by four two-character connector labels that
+indicate how its edges can connect to the edges of other molecules. There are
+two types of connector labels:</p>
+
+<ul>
+  <li>An uppercase letter (A, . . . , Z) followed by + or &minus;. Two edges are
+  compatible if their labels have the same letter but different signs. For
+  example, A+ is compatible with A&minus; but is not compatible with A+ or
+  B&minus;.</li>
+  <li>Two zero digits 00. An edge with this label is not compatible with any
+  edge (not even with another edge labeled 00).</li>
+</ul>
+
+<p>Assume there is an unlimited supply of molecules of each type, which may be
+rotated and reflected. As the molecules assemble themselves into larger
+structures, the edges of two molecules may be adjacent to each other only if
+they are compatible. It is permitted for an edge, regardless of its connector
+label, to be connected to nothing (no adjacent molecule on that edge).</p>
+
+<p>Figure A.1 shows an example of three molecule types and a structure of
+bounded size that can be assembled from them (other bounded structures are
+also possible with this set of molecules).</p>
+
+<figure>
+  <img src="images/A-1.png" alt="">
+  <figcaption>Figure A.1: Illustration of Sample Input 1.</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>The input consists of a single test case. A test case consists of two
+lines. The first contains an integer <i>n</i> (1 &le; <i>n</i> &le; 40 000)
+indicating the number of molecule types. The second line contains
+<i>n</i> eight-character strings, each describing a single type of molecule,
+separated by single spaces. Each string consists of four two-character
+connector labels representing the four edges of the molecule in clockwise
+order.</p>
+
+<h2>Output</h2>
+
+<p>Display the word <i>unbounded</i> if the set of molecule types can generate
+a structure of unbounded size. Otherwise, display the word <i>bounded</i>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3
+A+00A+A+ 00B+D+A- B-C+00C+</pre>
+
+<h3>Sample Output 1</h3>
+<pre>bounded</pre>
+
+<h3>Sample Input 2</h3>
+<pre>1
+K+K-Q+Q-</pre>
+
+<h3>Sample Output 2</h3>
+<pre>unbounded</pre>
+
+
+<footer>
+  ACM-ICPC World Finals 2013 Problem A: Self-Assembly &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

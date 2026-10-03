@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Machine Works — ICPC 2011 World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC 2011 World Finals · Problem F</p>
+  <h1>Machine Works</h1>
+  <p class="meta">Problem ID: works</p>
+</header>
+
+
+<p>You are the director of Arbitrarily Complex Machines (ACM for short), a
+company producing advanced machinery using even more advanced machinery. The old
+production machinery has broken down, so you need to buy new production machines
+for the company. Your goal is to make as much money as possible during the
+restructuring period. During this period you will be able to buy and sell
+machines and operate them for profit while ACM owns them. Due to space
+restrictions, ACM can own at most one machine at a time.</p>
+
+<p>During the restructuring period, there will be several machines for sale.
+Being an expert in the advanced machines market, you already know the price
+P<sub>i</sub> and the availability day D<sub>i</sub> for each machines
+M<sub>i</sub>. Note that if you do not buy machine M<sub>i</sub> on day
+D<sub>i</sub>, then somebody else will buy it and it will not be available later.
+Needless to say, you cannot buy a machine if ACM has less money than the price
+of the machine.</p>
+
+<p>If you buy a machine M<sub>i</sub> on day D<sub>i</sub>, then ACM can operate
+it starting on day D<sub>i</sub> + 1. Each day that the machine operates, it
+produces a profit of G<sub>i</sub> dollars for the company.</p>
+
+<p>You may decide to sell a machine to reclaim a part of its purchase price any
+day after you’ve bought it. Each machine has a resale price R<sub>i</sub> for
+which it may be resold to the market. You cannot operate a machine on the day
+that you sell it, but you may sell a machine and use the proceeds to buy a new
+machine on the same day.</p>
+
+<p>Once the restructuring period ends, ACM will sell any machine that it still
+owns. Your task is to maximize the amount of money that ACM makes during the
+restructuring.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of several test cases. Each test case starts with a line
+containing three positive integers N, C, and D. N is the number of machines for
+sale (N ≤ 10<sup>5</sup>), C is the number of dollars with which the company
+begins the restructuring (C ≤ 10<sup>9</sup>), and D is the number of days that
+the restructuring lasts (D ≤ 10<sup>9</sup>).</p>
+
+<p>Each of the next N lines describes a single machine for sale. Each line
+contains four integers D<sub>i</sub>, P<sub>i</sub>, R<sub>i</sub> and
+G<sub>i</sub>, denoting (respectively) the day on which the machine is for sale,
+the dollar price for which it may be bought, the dollar price for which it may
+be resold and the daily profit generated by operating the machine. These numbers
+satisfy 1 ≤ D<sub>i</sub> ≤ D, 1 ≤ R<sub>i</sub> &lt; P<sub>i</sub> ≤ 10<sup>9</sup>
+and 1 ≤ G<sub>i</sub> ≤ 10<sup>9</sup>.</p>
+
+<p>The last test case is followed by a line containing three zeros.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, display its case number followed by the largest number of
+dollars that ACM can have at the end of day D + 1.</p>
+
+<p>Follow the format of the sample output.</p>
+
+<h3>Sample input</h3>
+<pre>6 10 20
+6 12 1 3
+1 9 1 2
+3 2 1 2
+8 20 5 4
+4 11 7 4
+2 10 9 1
+0 0 0</pre>
+
+<h3>Output for the Sample Input</h3>
+<pre>Case 1: 44</pre>
+
+
+<footer>
+  ICPC 2011 World Finals Problem F: Machine Works
+</footer>
+
+</body>
+</html>

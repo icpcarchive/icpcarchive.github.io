@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Do You Know the Way to San Jose? — The Twenty-first Annual ACM International Collegiate Programming Contest Finals (1997)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The Twenty-first Annual ACM International Collegiate Programming Contest Finals · Problem F</p>
+  <h1>Do You Know the Way to San Jose?</h1>
+  <p class="meta">Input file sanjose.in</p>
+</header>
+
+<p>The Internet now offers a variety of interactive map facilities, so that users can see either an overview map of a large geographic region or can “zoom in” to a specific street, sometimes even a specific building, on a much more detailed map. For instance, downtown San Jose might appear in a map of California, a map of Santa Clara county, and a detailed street map.</p>
+
+<p>Suppose you have a large collection of rectangular maps and you wish to design a browsing facility that will process a sequence of map requests for locations at various levels of map detail. Locations are expressed using location names. Each location name has a unique pair of real coordinates (x,y). Maps are unique, labeled with identifying map names, and defined by two pairs of real coordinates—(x1,y1) (x2,y2)—representing opposite corners of the map. All map edges are parallel to the standard Cartesian x and y axes. A map and a location can have the same name. The aspect ratio of a map is the ratio of its height to its width (where width is measured in the x direction and height is measured in the y direction).</p>
+
+<p>The level of detail of a map can be approximated by using the rectangular area represented by the map; i.e., assume that a map covering a smaller area contains more detailed information. Maps can overlap one another. If a location (x,y) lies within two or more maps having equal areas, the preferred map (at that level of detail) is the one in which the location is nearest the center of the map. If the location is equidistant from the centers of two overlapping maps of the same area, then the preferred map (at that level of detail) is the one whose aspect ratio is nearest to the aspect ratio of the browser window, which is 0.75. If this still does not break the tie, then the preferred map is the one in which the location is furthest from the lower right corner of the map (this heuristic is intended to minimize the need for scrolling in the user’s browser window). Finally, if there is still a tie, then the preferred map is the one containing the smallest x-coordinate.</p>
+
+<p>The maximum detail level available for a given location is the maximal number of maps of different areas that contain the location. Clearly, different locations can have different maximum detail levels. The map at detail <i>i</i> for the location is the map with the <i>i</i>th largest area among a maximal set of maps of the distinct area containing the location. Thus, the map at detail level 1 for the location will be the least detailed (largest area) map containing the location and the map at the maximum detail level will be the most detailed (smallest area) map containing the location.</p>
+
+<h2>Input</h2>
+
+<p>The input file consists of a set of maps, locations, and requests; it is organized as follows:</p>
+
+<ul>
+  <li>The word “MAPS”, in all uppercase letters and on a line by itself, introduces a set of one or more maps. Following the set heading, each map is described by a single line consisting of a map name (an alphabetic string with no leading, trailing, or embedded blanks) and two real coordinate pairs—<i>x1 y1 x2 y2</i>—representing opposite corners of the map.</li>
+  <li>The word “LOCATIONS”, in all uppercase letters and on a line by itself, introduces a set of one or more locations. Following this heading, each location is described by a line consisting of a location name (an alphabetic string with no leading, trailing, or embedded blanks) and a real coordinate pair—<i>x y</i>—representing the center of the location.</li>
+  <li>The word “REQUESTS”, in all uppercase letters and on a line by itself, introduces a set of zero or more requests. Following this heading, each request is described by a line consisting of a location name (an alphabetic string with no leading, trailing, or embedded blanks) followed by a positive integer representing the desired detail level for that location.</li>
+  <li>The word “END”, in all uppercase and on a line by itself, terminates the file.</li>
+</ul>
+
+<p>All map and location data preceding the requests are valid. There will be no duplicate maps. The result of processing a valid request is the name of the map containing the given location at the given detail level (using the tie-breaking rules described above). Invalid requests can result from requesting unknown location names, locations that do not appear in any map, or detail levels that exceed the number of maps of different areas containing the location.</p>
+
+<p>The following example should illustrate all these definitions:</p>
+
+<h2>Output</h2>
+
+<p>Each request must be echoed to the output. If the request is valid, display the name of the map satisfying the request. If the location is not on a map, display a message to that effect. If the location is on the map but the detail level is too large, display the name of the map of the smallest available area (largest possible detail level).</p>
+
+<h3>Sample Input 1</h3>
+<pre>MAPS
+BayArea -6.0 12.0 -11.0 5.0
+SantaClara 4.0 9.0 -3.5 2.5
+SanJoseRegion -3.0 10.0 11.0 3.0
+CenterCoast -5.0 11.0 1.0 -8.0
+SanMateo -5.5 4.0 -12.5 9.0
+NCalif -13.0 -7.0 13.0 15.0
+LOCATIONS
+Monterey -4.0 2.0
+SanJose -1.0 7.5
+Fresno 7.0 0.1
+SanFrancisco -10.0 8.6
+SantaCruz -4.0 2.0
+SanDiego 13.8 -19.3
+REQUESTS
+SanJose 3
+SanFrancisco 2
+Fresno 2
+Stockton 1
+SanDiego 2
+SanJose 4
+SantaCruz 3
+END</pre>
+
+<h3>Sample Output 1</h3>
+<pre>SanJose at detail level 3 using SanJoseRegion
+SanFrancisco at detail level 2 using BayArea
+Fresno at detail level 2 no map at that detail level; using NCalif
+Stockton at detail level 1 unknown location
+SanDiego at detail level 2 no map contains that location
+SanJose at detail level 4 using SantaClara
+SantaCruz at detail level 3 no map at that detail level; using CenterCoast</pre>
+
+<footer>
+  The Twenty-first Annual ACM International Collegiate Programming Contest Finals · Problem F · Do You Know the Way to San Jose?
+</footer>
+
+</body>
+</html>

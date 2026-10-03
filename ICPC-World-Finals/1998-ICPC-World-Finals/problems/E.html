@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem E: Petri Net Simulation &mdash; The 22nd Annual ACM International Collegiate Programming Contest World Finals (1998)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+<header>
+  <p class="kicker">The 22nd Annual ACM International Collegiate Programming Contest World Finals &middot; Problem E</p>
+  <h1>Petri Net Simulation</h1>
+  <p class="meta">Input file: petri.in</p>
+</header>
+
+<p>A Petri net is a computational model used to illustrate concurrent activity. Each Petri net contains some number of places (represented by circles), transitions (represented by black rectangles), and directed edges used to connect places to transitions, and transitions to places. Each place can hold zero or more tokens (represented by black dots). Here are two examples:</p>
+
+<figure>
+  <img src="images/E-1.png" alt="">
+</figure>
+
+<p>In the first Petri net above, there are two places (P1 and P2) and two transitions (T1 and T2). P1 initially has one token; P2 has none. P1 is an input place for transition T1, and P2 is an output place for T1. In the second example there are three places and three transitions, with three tokens in P1. T2 has two input places, both of which are P2.</p>
+
+<h3>Operation of a Petri Net</h3>
+
+<p>Each transition in a Petri net is either enabled or disabled. A transition is enabled if there is at least one token in each of its input places. Any transition can fire whenever it is enabled. If multiple transitions are enabled, any one of them may fire. When a transition fires, one token is removed from each of the input places, and one token is added to each of the output places; this is effectively done atomically, as one action. When there are no enabled transitions, a Petri net is said to be dead.</p>
+
+<p>In the top example only T1 is enabled. When it fires one token is removed from P1, and one token is added to P2. Then T2 is enabled. When it fires one token is removed from P2, and one token is added to P1. Clearly this Petri net will repeat this cycle forever.</p>
+
+<p>The bottom example is more interesting. T1 is enabled and fires, effectively moving a token to P2. At this point T1 is still the only enabled transition (T2 requires that P2 have two tokens before it is enabled). T1 fires again, leaving one token in P1 and two tokens in P2. Now both T1 and T2 are enabled. Assume T2 fires, removing two tokens from P2 and adding one token to P3. Now T1 and T3 are enabled. Continuing until no more transitions are enabled, you should see that only one token will be left in P2 after 9 transition firings. (Note that if T1 had fired instead of T2 when both were enabled, this result would have been the same after 9 firings.)</p>
+
+<p>In this problem you will be presented with descriptions of one or more Petri nets. For each you are to simulate some specified number of transition firings, <i>NF</i>, and then report the number of tokens remaining in the places. If the net becomes dead before <i>NF</i> transition firings, you are to report that fact as well.</p>
+
+<h2>Input</h2>
+
+<p>Each Petri net description will first contain an integer <i>NP</i> (0 &lt; <i>NP</i> &lt; 100) followed by <i>NP</i> integers specifying the number of tokens initially in each of the places numbered 1, 2, ..., <i>NP</i>. Next there will appear an integer <i>NT</i> (0 &lt; <i>NT</i> &lt; 100) specifying the number of transitions. Then, for each transition (in increasing numerical order 1, 2, ..., <i>NT</i>) there will appear a list of integers terminated by zero. The negative numbers in the list will represent the input places, so the number -<i>n</i> indicates there is an input place at <i>n</i>. The positive numbers in the list will indicate the output places, so the number <i>p</i> indicates an output place at <i>p</i>. There will be at least one input place and at least one output place for each transition. Finally, after the description of all <i>NT</i> transitions, there will appear an integer indicating the maximum number of firings you are to simulate, <i>NF</i>. The input will contain one or more Petri net descriptions followed by a zero.</p>
+
+<h2>Output</h2>
+
+<p>For each Petri net description in the input display three lines of output. On the first line indicate the number of the input case (numbered sequentially starting with 1) and whether or not <i>NF</i> transitions were able to fire. If so, indicate the net is still live after <i>NF</i> firings. Otherwise indicate the net is dead, and the number of firings which were completed. In either case, on the second line give the identities of the places which contain one or more tokens after the simulation, and the number of tokens each such place contains. This list should be in ascending order. The third line of output for each set should be blank.</p>
+
+<p>The input data will be selected to guarantee the uniqueness of the correct output displays.</p>
+
+<h3>Sample Input</h3>
+
+<pre>2
+ 1 0
+2
+ -1 2 0
+ -2 1 0
+100
+3
+ 3 0 0
+3
+ -1 2 0
+ -2 -2 3 0
+ -3 1 0
+100
+0</pre>
+
+<h3>Output for the Sample Input</h3>
+
+<pre>Case 1: still live after 100 transitions
+Places with tokens: 1 (1)
+
+Case 2: dead after 9 transitions
+Places with tokens: 2 (1)</pre>
+
+<footer>
+  The 22nd Annual ACM International Collegiate Programming Contest World Finals &middot; Problem E &middot; Petri Net Simulation
+</footer>
+
+</body>
+</html>

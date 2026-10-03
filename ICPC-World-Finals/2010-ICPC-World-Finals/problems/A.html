@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem A: APL Lives! &mdash; 34th ICPC World Finals (2010)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">34th ICPC World Finals · Problem A</p>
+  <h1>APL Lives!</h1>
+  <p class="meta">Problem ID: apl</p>
+</header>
+
+<p>APL is an array programming language that uses a notation invented by Ken Iverson in 1957. In this problem
+we consider only a small subset of the language which we call apl (that is, small APL).</p>
+
+<p>Each apl expression appears on a line by itself and each expression has a value, which is displayed immediately
+after the expression is entered. Operators in apl do not have precedence like those in C, C++, or Java, but
+instead are applied right to left. However, parentheses may be used to control evaluation order. Similarly,
+operands for binary operators are evaluated in right to left order. Here are some examples of apl expressions.</p>
+
+<table>
+  <tbody>
+    <tr><td><pre>var = 1 2 3</pre></td><td>Store the vector 1 2 3 in var, replacing its previous value. The value of the expression is 1 2 3. The left operand of the = operator must be a variable.</td></tr>
+    <tr><td><pre>var + 4</pre></td><td>Display the value of var with 4 added to each of its elements (result: 5 6 7); the stored version of var is not modified.</td></tr>
+    <tr><td><pre>- / var</pre></td><td>Display the value of var as if a - operator had been inserted between each of its elements on each row (result: 2). If var has two dimensions, the result is a vector. If var has three dimensions, the result is a two-dimensional array. * / and + / have analogous behaviors.</td></tr>
+    <tr><td><pre>iota 5</pre></td><td>Generate a vector with the values 1 2 3 4 5.</td></tr>
+    <tr><td><pre>2 2 rho 1 2 3 4</pre></td><td>Reshape the vector 1 2 3 4 into a 2 by 2 array; 1 and 2 are in the first row, and 3 and 4 are in the second row.</td></tr>
+    <tr><td><pre>2 2 rho 1 2 3 4 5 6</pre></td><td>Same result as above.</td></tr>
+    <tr><td><pre>2 3 rho 1 2 3 4</pre></td><td>Another reshaping, yielding a first row with 1 2 3 and a second row with 4 1 2; if the right argument does not have a sufficient number of elements, then the elements of the right operand are reused starting from the beginning, in row-major order.</td></tr>
+    <tr><td><pre>2 drop iota 5</pre></td><td>Result: 3 4 5. Drops the two leading elements from iota 5.</td></tr>
+    <tr><td><pre>1 2 * 3 4</pre></td><td>Result: 3 8. Illustrates element-wise multiplication. Operands must be conformable – either they have the same shape, or at least one must be a one-element vector (see second example).</td></tr>
+    <tr><td><pre>( ( a = 1 ) drop 1 2 3 ) – 5</pre></td><td>Result: -3 -2. Illustrates use of parentheses.</td></tr>
+    <tr><td><pre>a + ( a = 5 ) + a + ( a = 6 )</pre></td><td>Result: 22. Illustrates evaluation order</td></tr>
+  </tbody>
+</table>
+
+<p>In this problem you are to write an interpreter for apl. Integers in the input are non-negative and less than
+10<sup>4</sup>. All computed integer values (including intermediate values) have absolute values less than
+10<sup>4</sup>. The number of entries in any matrix is always less than or equal to 10<sup>4</sup>. Variable names
+consist of one to three alphabetic lower-case characters, and the names iota, rho, and drop are always interpreted
+as operators. Exactly one space separates elements of statements (constants, variables, operators, and
+parentheses).</p>
+
+<p>Constants in the input are vectors. All intermediate values are one, two, or three-dimensional arrays with
+positive dimensions. This restricts some operand ranges: “2 0 rho 1 2 3”, “2 3 2 1 rho 5”, and
+“3 drop iota 3” are illegal. The only arithmetic operators provided are + (addition), – (subtraction),
+and * (multiplication). Their operands are conformable as illustrated in the examples. Observe that “1 1 rho
+1” and “1 rho 1” have different shapes. The operand for iota evaluates to a one-element positive
+vector. The left operand of drop evaluates to a one-element non-negative vector and its right operand evaluates to
+a vector. Both operands of rho evaluate to vectors.</p>
+
+<h2>Input</h2>
+
+<p>The input contains several test cases, each on a line by itself. The values of variables assigned in one test
+case are available for use in following test cases. No expression exceeds 80 characters in length, including space
+characters. No test case produces an invalid result (for example, an empty vector).</p>
+
+<p>The last test case is followed by a line containing the single character ‘#’.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, display a line containing the case number and the input line. Then, starting on the next
+line, display the result of evaluating the expression. Vectors display as a single line of integers; m× n
+arrays display as m lines of n values, and m× n× p arrays display as m arrays of size n × p, with a
+blank line separating the n × p arrays. Values on the same line should be separated by white space but need
+not be aligned in columns.</p>
+
+<h3>Sample Input 1</h3>
+<pre>var = 1 2 3
+var + 4
+- / var
+iota 5
+2 2 rho 1 2 3 4
+2 3 rho 1 2 3 4
+2 drop iota 4
+1 2 * 3 4
+( ( a = 1 ) drop 1 2 3 ) – 5
+a + ( a = 5 ) + a + ( a = 6 )
+( 2 2 rho 2 drop iota 6 ) + 100
+1 2 3 + 4 5 6
+2 3 rho 1 2 3 4 5 + 1 2 3 4 5
++ / 2 3 4 rho iota 2 * 3 * 4
+( 2 4 5 rho iota 2 * 4 * 5 ) - 99
+#</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1: var = 1 2 3
+1 2 3
+Case 2: var + 4
+5 6 7
+Case 3: - / var
+2
+Case 4: iota 5
+1 2 3 4 5
+Case 5: 2 2 rho 1 2 3 4
+1 2
+3 4
+Case 6: 2 3 rho 1 2 3 4
+1 2 3
+4 1 2
+Case 7: 2 drop iota 4
+3 4
+Case 8: 1 2 * 3 4
+3 8
+Case 9: ( ( a = 1 ) drop 1 2 3 ) - 5
+-3 -2
+Case 10: a + ( a = 5 ) + a + ( a = 6 )
+22
+Case 11: ( 2 2 rho 2 drop iota 6 ) + 100
+103 104
+105 106
+Case 12: 1 2 3 + 4 5 6
+5 7 9
+Case 13: 2 3 rho 1 2 3 4 5 + 1 2 3 4 5
+2 4 6
+8 10 2
+Case 14: + / 2 3 4 rho iota 2 * 3 * 4
+10 26 42
+58 74 90
+Case 15: ( 2 4 5 rho iota 2 * 4 * 5 ) - 99
+-98 -97 -96 -95 -94
+-93 -92 -91 -90 -89
+-88 -87 -86 -85 -84
+-83 -82 -81 -80 -79
+
+-78 -77 -76 -75 -74
+-73 -72 -71 -70 -69
+-68 -67 -66 -65 -64
+-63 -62 -61 -60 -59</pre>
+
+
+<footer>
+  34th ICPC World Finals Problem A: APL Lives!
+</footer>
+
+</body>
+</html>

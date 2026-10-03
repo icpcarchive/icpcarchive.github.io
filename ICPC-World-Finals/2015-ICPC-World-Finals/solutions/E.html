@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem E: Parallel Evolution (Solution) — ACM ICPC World Finals 2015</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2015</p>
+  <h1>Problem E: Parallel Evolution</h1>
+</header>
+
+<p>Shortest judge solution: 1756 bytes. Shortest team solution (during contest): 1576 bytes.</p>
+
+<p>Fun fact: this problem was originally in the reverse direction, so the description of the solution below is “backwards” from the point of view of the problem, but this does not really change anything.</p>
+
+<p>We have two copies of a string of characters (only three different characters appear, but we will not use this fact in our solutions). We want to subsequently remove characters from the copies, so that all of the strings given on the input appear in one of the copies during the process.</p>
+
+<p>In graph-theoretic terms, we have a directed acyclic graph (the strings being the vertices, and an edge from string A to string B if B is a subsequence of A), and we would like to know if there are two paths, each starting at the base string, that together cover all vertices.<sup>1</sup></p>
+
+<p>Like most problems on DAGs, this has a relatively standard dynamic programming solution, in this case with running time O(N<sup>2</sup>). There is a catch however: a naive way of creating the graph takes time Ω(N<sup>2</sup>S) (comparing all ≈ N<sup>2</sup>/2 pairs of strings to each other, each for Ω(S) time). So we have to be a bit more clever, and in fact, once one understands the problem well enough to construct the graph more quickly, it turns out that the problem admits a simple greedy solution.</p>
+
+<p>First, note that a topological sort of the graph can be obtained by sorting the strings by decreasing length (which can be done in O(NS + N log N) time). Now we go through the strings in topological order. At each step, we consider pairs of decreasing sequences that both start with the base sequence and then use the first k elements of the topologically sorted sequence. We only care about the last string of each sequence (as they are the only ones we have to compare the next string to). We will show there are at most two pairs of strings we need to consider as “possible lasts”. Furthermore, if there are two of them, they have a special structure: they share an element, and this shared element is smaller then the other two elements in the pairs. I.e., they are of the form (A, B) and (A, C), where A ≤ B and A ≤ C.</p>
+
+<p style="border-top: 1px solid #d0d0d0; margin-top: 1.5rem; padding-top: 0.5rem; font-size: 0.85rem;"><sup>1</sup> In combinatorial terms, we’d like to know if a given poset can be covered by two chains. By Dilworth’s Theorem, this is equivalent to asking if the width of the poset is ≤ 2. But while this is something everyone should know, it is irrelevant for this particular problem.</p>
+
+<p>Initially we have a single pair – the two base strings. In each step we add another string, and we want to append it to one of the sequences. We consider two cases.</p>
+
+<p><strong>Case 1: a single candidate</strong> If we currently have a single candidate pair of sequences, we have to append our new string to one of the elements of the pair. Depending on whether this can be done in 0, 1, or 2 different ways, we get 0, 1, or 2 different new candidate pairs (in the case of 0, answer is impossible, and in the case of 2, note that the two candidate pairs have the special structure described above).</p>
+
+<p><strong>Case 2: two candidate pairs</strong> We have two candidate pairs (A, B) and (A, C), and we try to add a new element D. If D ≤ A, we can replace any string by D, nominally giving the three candidates (D, A), (D, B), and (D, C). However, the pair (D, A) is redundant – since A ≤ B, any completion of (D, A) to a full solution is a valid completion of (D, B) as well.</p>
+
+<p>If D cannot be appended to A, then we will have a sequence ending with A and a sequence ending with D — thus we have only one pair (D, A) of possible sequence ends.</p>
+
+<p>To check if this is indeed possible, we have to compare D to B and C, and if it can be appended to either of them, (D, A) becomes our candidate pair, while otherwise we return impossible.</p>
+
+<p>This algorithm obviously makes a constant number of comparisons (2.5 comparisons per step, for we can make three comparisons only every second step), so it runs in a total time O(NS).</p>
+</body>
+</html>

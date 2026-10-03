@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem E: Pattern Matching Prelims — The Twentieth Annual ACM International Collegiate Programming Contest Finals (1996)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The Twentieth Annual ACM International Collegiate Programming Contest Finals · Problem E</p>
+  <h1>Pattern Matching Prelims</h1>
+  <p class="meta">Input file: pattern.in</p>
+</header>
+
+<p>Some algorithms for optical character recognition compare a scanned image with templates of “perfect” characters. Part of the difficulty with such comparisons is deciding where to start the comparison. This is because the characters in the scanned image are subject to noise and distortion, resulting in changes in size, position, and orientation. A procedure that is sometimes used to deal with changes in position matches the “center of gravity” of the scanned character and the templates against which it is compared. In this problem you are to determine the “centers of gravity” of scanned images of characters.</p>
+
+<p>For our purposes, a scanned image will be a rectangular array of real numbers, each of which represents the gray-scale value of a point in a scanned image. Each gray-scale value will be between 0 (representing a totally white region) and 1 (representing a totally black region). The array will have no more than a total of 40 rows and columns.</p>
+
+<p>The center of gravity will always correspond to a particular element in the array. If the center of gravity is the element in the ith row and jth column, for example, then we can say that the sum (or “weight”) of the elements in two portions of the array left after deleting the ith row would be equal to each other. Likewise, the sum of the elements in the two array portions formed by deleting the jth column would be equal. Consider the array shown below, which might have resulted from scanning a lower case “o.” The center of gravity for this array is uniquely in row 3, column 3. The sum of the elements in each array portion formed by deleting the third row is 5.65; the sum of each array portion formed by deleting the third column is 5.60.</p>
+
+<pre> .7      .75        .8        .75    .8
+.55       .3        .2         .1    .7
+ .8       .1        .0         .0    .8
+ .7       .0        .0         .0    .8
+ .8       .9        .8        .75    .9</pre>
+
+<p>In most cases, however, the center cannot be placed as precisely as this. Thus the rule is that the center of gravity is to be placed so as to minimize the difference between the sums of the two portions of the array formed by deleting the row of the center of gravity and similarly for the portions formed by deleting the column of the center of gravity.</p>
+
+<h2>Input</h2>
+
+<p>The input will consist of a sequence of scanned character images. Input for each image will begin with two integers specifying the number of rows and columns in the scanned data. This will be immediately followed by the scanned gray-scale data given in row-major order. A pair of zeroes will follow the data for the last input image.</p>
+
+<h2>Output</h2>
+
+<p>For each input character image, display its number (they are sequentially numbered starting with 1), and the row and column corresponding to the center of gravity. If there are more than one center of gravity, the one with the largest row and column should be displayed. The sample that follows illustrates a reasonable output format.</p>
+
+<h3>Sample Input</h3>
+<pre>5 5
+.1 .2 .1 .2 .1
+.1 .2 .3 .1 .1
+.2 .3 .1 .1 .3
+.4 .1 .1 .1 .2
+.2 .2 .3 .3 .1
+
+5 10
+.1 .1 .1 .1 .1 .1 .1 .1 .1 .1
+.2 .2 .2 .2 .2 .2 .2 .2 .2 .2
+.3 .3 .3 .3 .3 .3 .3 .3 .3 .3
+.4 .4 .4 .4 .4 .4 .4 .4 .4 .4
+.5 .5 .5 .5 .5 .5 .5 .5 .5 .6
+
+0 0</pre>
+
+<h3>Output for the Sample Input</h3>
+<pre>Case 1: center at (3, 3)
+Case 2: center at (4, 6)</pre>
+
+<footer>
+  The Twentieth Annual ACM International Collegiate Programming Contest Finals · Problem E · Pattern Matching Prelims
+</footer>
+
+</body>
+</html>

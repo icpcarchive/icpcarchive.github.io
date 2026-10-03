@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem J: Shortest Flight Path — ACM-ICPC World Finals 2012</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2012 · Problem J</p>
+  <h1>Shortest Flight Path</h1>
+  <p class="meta">Problem ID: shortest</p>
+</header>
+
+
+<p>Commercial flights are statistically quite safe (in terms of number of deaths
+per passenger-kilometer, only going to the moon is safer). But there are still
+reasons for precautions and safety regulations. An early such rule was the
+so-called “60-minute rule,” which required that a two-engine plane must always
+be within 60 minutes of the nearest adequate airport along its entire flight
+path. A variety of similar rules have existed, but at their core, they remain
+the same: the flight path can not take the airplane more than a certain maximum
+allowed distance from the nearest airport. With these restrictions, planes
+cannot always use a direct route for flying from one airport to another.</p>
+
+<p>In this problem we will compute the shortest flight path between two airports
+while adhering to a maximum allowed distance rule. In the figure below, which
+illustrates the first sample test case, any flight route has to stay within the
+three circles. Thus a plane going from airport 2 to airport 3 has to detour from
+the direct route via the region around airport 1. Note that the plane would not
+necessarily have to go to airport 1 itself.</p>
+
+<figure>
+  <img src="images/J-1.png" alt="">
+  <figcaption>The first sample test case: any flight route has to stay within the three circles</figcaption>
+</figure>
+
+<p>Things are further complicated by the fact that planes have limited fuel
+supply, and to go longer distances they may need to make a stopover at
+intermediate airports. Thus, depending on the fuel capacity, a plane going from
+airport 2 to airport 3 in the figure might have to stop over at airport 1 (or
+the fuel capacity might be too low even to go to airport 1, in which case the
+trip would be impossible to make).</p>
+
+<p>We make the following simplifying assumptions:</p>
+
+<ol>
+  <li>The surface of the earth is a sphere of radius 6370 km.</li>
+  <li>Both time and fuel consumption are directly proportional to distance
+  traveled. In other words we are interested only in total distance traveled.</li>
+  <li>The difference in distance caused by planes flying at different altitudes
+  is negligible. Thus, effectively, we assume them to be flying along the
+  earth’s surface.</li>
+  <li>A plane may stop for refueling at as many intermediate airports as needed,
+  each time getting a full tank.</li>
+</ol>
+
+<h2>Input</h2>
+
+<p>The first line of each test case contains two integers <i>N</i> and
+<i>R</i>, where 2 &le; <i>N</i> &le; 25 is the number of airports and
+1 &le; <i>R</i> &le; 10&thinsp;000 is the maximum allowed flight distance (in
+km) from the nearest airport. Each of the next <i>N</i> lines contains two
+integers <i>&phi;</i>, <i>&theta;</i> satisfying 0 &le; <i>&phi;</i> &lt; 360
+and −90 &le; <i>&theta;</i> &le; 90, the longitude and latitude (respectively)
+of an airport, in degrees. The airports are numbered according to their order in
+the input starting from one. No two airports are at the same position.</p>
+
+<p>Following this is a line containing an integer <i>Q</i>, satisfying
+1 &le; <i>Q</i> &le; 100. Each of the next <i>Q</i> lines contains three
+integers <i>s</i>, <i>t</i>, <i>c</i> satisfying 1 &le; <i>s</i>, <i>t</i> &le;
+<i>N</i>, <i>s</i> &ne; <i>t</i>, and 1 &le; <i>c</i> &le; 50&thinsp;000,
+indicating a plane going from airport <i>s</i> to airport <i>t</i> with a fuel
+capacity yielding a range of <i>c</i> km.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, display the case number followed by one line for each
+query containing the length in km of the shortest flight path between airport
+<i>s</i> and <i>t</i>, subject to the fuel constraint <i>c</i>. Display the
+length accurate to three decimal places. If there is no permissible path between
+the two airports, then display the word <i>impossible</i> instead.</p>
+
+<p>You may assume the answer is numerically stable for perturbations of up to
+0.1 km of <i>R</i> or <i>c</i>.</p>
+
+<h3>Sample Input</h3>
+<pre>
+3 2000
+0 0
+0 30
+30 0
+3
+2 3 5000
+2 3 4000
+2 3 3000
+2 10000
+45 45
+225 -45
+2
+1 2 50000
+2 1 50000
+</pre>
+
+<h3>Output for Sample Input</h3>
+<pre>
+Case 1:
+4724.686
+6670.648
+impossible
+Case 2:
+impossible
+impossible
+</pre>
+
+
+<footer>
+  ACM-ICPC World Finals 2012 Problem J: Shortest Flight Path
+</footer>
+
+</body>
+</html>

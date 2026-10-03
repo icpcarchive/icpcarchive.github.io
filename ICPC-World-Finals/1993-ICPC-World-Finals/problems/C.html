@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem C: Kissin’ Cousins — 1993 ACM International Collegiate Programming Contest Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">1993 ACM International Collegiate Programming Contest Finals · Problem C</p>
+  <h1>Kissin’ Cousins</h1>
+</header>
+
+<p>The Oxford English Dictionary defines cousin as follows:</p>
+<blockquote>
+<p>cousin (ku• zn), n. (Also first cousin) child of one’s uncle or aunt; my second (third…) cousin, my
+parent’s first (second…) cousin’s child; my first cousin once (twice…) removed, my first cousin’s
+child (grandchild…), also my parent’s (grandparent’s…) first cousin.</p>
+</blockquote>
+
+<p>Put more precisely, any two persons whose closest common ancestor is (m+1) generations away from one person
+and (m+1)+n generations away from the other are mth cousins nce removed. Normally, m ≥ 1 and n ≥ 0, but being
+used to computers counting from 0, in this problem we require m ≥ 0 and n ≥ 0. This extends the normal definition
+so that siblings are zeroth cousins. We write such a relationship as cousin-m-n.</p>
+
+<p>If one of the persons is an ancestor of the other, p generations away where p ≥ 1, they have a relationship
+descendant-p.</p>
+
+<p>A relationship cousin-m₁-n₁ is closer than a relationship cousin-m₂-n₂ if m₁ &lt; m₂ or (m₁ = m₂ and n₁ &lt; n₂). A
+relationship descendant-p₁ is closer than a relationship descendant-p₂ if p₁ &lt; p₂. A descendant-p
+relationship is always closer than a cousin-m-n relationship.</p>
+
+<p>Write a program that accepts definitions of simple relationships between individuals and displays the closest
+cousin or descendant relationship, if any, which exists between arbitrary pairs of individuals.</p>
+
+<h2>Input</h2>
+
+<p>Each line in the input begins with one of the characters ‘#’, ‘R’, ‘F’ or ‘E’.</p>
+
+<p>‘#’ lines are comments. Ignore them.</p>
+
+<p>‘R’ lines direct your program to record a relationship between two different individuals. The first 5 characters
+following the ‘R’ constitute the name of the first person; the next 5 characters constitute the name of the second.
+Case is significant. Following the names, possibly separated from them by blanks, is a non-negative integer, k,
+defining the relationship. If k is 0, then the named individuals are siblings. If k is 1, then the first named person is
+a child of the second. If k is 2, then the first named person is a grandchild of the second, and so forth. Ignore
+anything on the line following the integer.</p>
+
+<p>‘F’ lines are queries; your program is to find the closest relationship, if any, which exists between the two
+different persons whose 5 character names follow the ‘F’. Ignore anything on the line following the second name.
+A query should be answered only with regard to ‘R’ lines which precede the query in the input.</p>
+
+<p>There will be one ‘E’ line to mark the end of the input data. Ignore anything on or after the ‘E’ line.</p>
+
+<h2>Output</h2>
+
+<p>For each ‘F’ line, your program is to report the closest relationship that exists between the two persons named
+aaaaa and bbbbb in one of the following formats:</p>
+
+<pre>aaaaa and bbbbb are descendant-p.
+aaaaa and bbbbb are cousin-m-n.</pre>
+
+<p>with m, n and p replaced by integers calculated as defined above. If no relationship exists between the pair, your
+program is to output the following:</p>
+
+<pre>aaaaa and bbbbb are not related.</pre>
+
+<p>Assumption:</p>
+<p>A person is not an ancestor of himself/herself.</p>
+
+<h3>Sample Input <i>1</i></h3>
+<pre># A Comment!
+RFred Joe  1 Fred is Joe’s son
+RFran Fred 2
+RJake Fred 1
+RBill Joe  1
+RBill Sue  1
+RJean Sue  1
+RJean Don  1
+RPhil Jean 3
+RStan Jean 1
+RJohn Jean 1
+RMary Don  1
+RSusanMary 4
+RPeg  Mary 2
+FFred Joe
+FJean Jake
+FPhil Bill
+FPhil Susan
+FJake Bill
+FDon  Sue
+FStan John
+FPeg  John
+FJean Susan
+FFran Peg
+FJohn Avram
+RAvramStan  99
+FJohn Avram
+FAvramPhil
+E</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>Fred  and Joe   are descendant-1.
+Jean  and Jake  are not related.
+Phil  and Bill  are cousin-0-3.
+Phil  and Susan are cousin-3-1.
+Jake  and Bill  are cousin-0-1.
+Don   and Sue   are not related.
+Stan  and John  are cousin-0-0.
+Peg   and John  are cousin-1-1.
+Jean  and Susan are cousin-0-4.
+Fran  and Peg   are not related.
+John  and Avram are not related.
+John  and Avram are cousin-0-99.
+Avram and Phil  are cousin-2-97.</pre>
+
+<figure>
+  <img src="images/C-1.png" alt="">
+  <figcaption>Diagram of the Sample Input</figcaption>
+</figure>
+
+<footer>
+  1993 ACM International Collegiate Programming Contest Finals · Problem C · Kissin’ Cousins
+</footer>
+
+</body>
+</html>

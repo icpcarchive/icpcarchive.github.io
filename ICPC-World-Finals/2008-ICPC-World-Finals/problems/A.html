@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem A: Air Conditioning Machinery — ICPC World Finals (2008)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2008 · Problem A</p>
+  <h1>Air Conditioning Machinery</h1>
+  <p class="meta">Input file: ducts.in</p>
+</header>
+
+<p>You are a technician for the Air Conditioning Machinery company (ACM). Unfortunately, when you arrive at a customer site to install some air conditioning ducts, you discover that you are running low on supplies. You have only six duct segments, and they are all of the same kind, called an “elbow.”</p>
+
+<p>You must install a duct in a confined space: a rectangular prism whose sides are multiples of a unit length. Think of the confined space as consisting of an array of unit cubes. Each elbow occupies exactly four unit cubes, as shown in Figure 1 below. A unit cube can be occupied by at most one elbow. Each elbow has exactly two openings, as indicated by the gray squares in the elbow shown in Figure 1. You may assemble the elbows into longer ducts, but your duct must be completely contained inside the given space. One way to connect two elbows is shown in Figure 2. Your task is to connect an inflow to an outflow. The inflow and the outflow are located on the exterior surface of the confined space, aligned with the unit cubes, as shown in Figure 3. To keep expenses down, you must accomplish this task while using the minimum number of elbows.</p>
+
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin:1.5rem 0;"><figure style="margin:0.5rem 0;flex:0 0 calc(31% - 1rem);width:calc(31% - 1rem);"><img src="images/A-1.png" alt="" style="width:100%;height:auto;"><figcaption>Figure 1</figcaption></figure><figure style="margin:0.5rem 0;flex:0 0 calc(31% - 1rem);width:calc(31% - 1rem);"><img src="images/A-2.png" alt="" style="width:100%;height:auto;"><figcaption>Figure 2</figcaption></figure><figure style="margin:0.5rem 0;flex:0 0 calc(31% - 1rem);width:calc(31% - 1rem);"><img src="images/A-3.png" alt="" style="width:100%;height:auto;"><figcaption>Figure 3</figcaption></figure></div>
+<h2>Input</h2>
+
+<p>The input consists of several test cases, each of which consists of a single line containing eleven input values separated by blanks. The input values for each test case are as follows.</p>
+
+<p>The first three input values are integers (x<sub>max</sub>, y<sub>max</sub>, and z<sub>max</sub>) that indicate the size of the confined space in the x, y, and z dimensions, respectively. Each unit cube in the confined space can be identified by coordinates (x, y, z) where 1 ≤ x ≤ x<sub>max</sub>, 1 ≤ y ≤ y<sub>max</sub>, and 1 ≤ z ≤ z<sub>max</sub>. x<sub>max</sub>, y<sub>max</sub>, and z<sub>max</sub> are all positive and not greater than 20.</p>
+
+<p>The next three input values are integers that indicate the location of the inflow by identifying the x, y, and z coordinates of the unit cube that connects to the inflow.</p>
+
+<p>The next input value is a two-character string that indicates the direction of the inward flow, using one of the following codes: +x, -x, +y, -y, +z, -z. The inflow connection is on the face of the unit cube that receives this inward flow. For example, if the data specifies an inflow direction of +y, the inflow connection is on the face of the unit cube that faces in the negative y direction.</p>
+
+<p>The next three input values are integers that indicate the location of the outflow by identifying the x, y, and z coordinates of the unit cube that connects to the outflow.</p>
+
+<p>The last input value is a two-character string that indicates the direction of the outward flow, using the same codes described above. The outflow connection is on the face of the unit cube that generates this outward flow. For example, if the data specifies an outflow direction of +y, the outflow connection is on the face of the unit cube that faces in the positive y direction.</p>
+
+<p>The last line of the input file consists of a single zero to indicate end of input.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, print the case number (starting with 1) followed by the minimum number of elbows that are required to connect the inflow to the outflow without going outside the confined space. If the task cannot be accomplished with your supply of six elbow segments, print the word Impossible instead. Use the format in the sample data.</p>
+
+
+<h3>Sample Input 1</h3>
+<pre>5 4 3 3 1 1 +z 5 4 3 +x
+5 4 3 3 1 1 +z 1 2 3 -x
+0</pre>
+<h3>Sample Output 1</h3>
+<pre>Case 1: 2
+Case 2: Impossible</pre>
+
+<footer>
+  ICPC World Finals 2008 — Problem A: Air Conditioning Machinery
+</footer>
+
+</body>
+</html>

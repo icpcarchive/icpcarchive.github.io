@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem D: Can&rsquo;t Cut Down the Forest for the Trees — 25th Annual ACM ICPC World Finals (2001)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">25th Annual ACM ICPC World Finals · Problem D</p>
+  <h1>Can&rsquo;t Cut Down the Forest for the Trees</h1>
+  <p class="meta">Input: forest.in</p>
+</header>
+
+<p>Once upon a time, in a country far away, there was a king who owned a forest
+of valuable trees. One day, to deal with a cash flow problem, the king decided
+to cut down and sell some of his trees. He asked his wizard to find the
+largest number of trees that could be safely cut down.</p>
+
+<p>All the king&rsquo;s trees stood within a rectangular fence, to protect them
+from thieves and vandals. Cutting down the trees was difficult, since each tree
+needed room to fall without hitting and damaging other trees or the fence.
+Each tree could be trimmed of branches before it was cut. For simplicity, the
+wizard assumed that when each tree was cut down, it would occupy a rectangular
+space on the ground, as shown below. One of the sides of the rectangle is a
+diameter of the original base of the tree. The other dimension of the
+rectangle is equal to the height of the tree.</p>
+
+<figure>
+  <img src="images/D-1.png" alt="">
+  <figcaption>Space occupied by a tree after cutting</figcaption>
+</figure>
+
+<p>Many of the king&rsquo;s trees were located near other trees (that being one
+of the tell-tale signs of a forest.) The wizard needed to find the maximum
+number of trees that could be cut down, one after another, in such a way that
+no fallen tree would touch any other tree or the fence. As soon as each tree
+falls, it is cut into pieces and carried away so it does not interfere with
+the next tree to be cut.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of several test cases each describing a forest. The
+first line of each description contains five integers, x<sub>min</sub>,
+y<sub>min</sub>, x<sub>max</sub>, y<sub>max</sub>, and n. The first four
+numbers represent the minimal and maximal coordinates of the fence in the
+x- and y-directions (x<sub>min</sub> &lt; x<sub>max</sub>, y<sub>min</sub> &lt;
+y<sub>max</sub>). The fence is rectangular and its sides are parallel to the
+coordinate axes. The fifth number n represents the number of trees in the
+forest (1 &le; n &le; 100).</p>
+
+<p>The next n lines describe the positions and dimensions of the n trees. Each
+line contains four integers, x<sub>i</sub>, y<sub>i</sub>, d<sub>i</sub>, and
+h<sub>i</sub>, representing the position of the tree&rsquo;s center
+(x<sub>i</sub>, y<sub>i</sub>), its base diameter d<sub>i</sub>, and its height
+h<sub>i</sub>. No tree bases touch each other, and all the trees are entirely
+inside the fence, not touching the fence at all.</p>
+
+<p>The input is terminated by a test case with x<sub>min</sub> =
+y<sub>min</sub> = x<sub>max</sub> = y<sub>max</sub> = n = 0. This test case
+should not be processed.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, first print its number. Then print the maximum number
+of trees that can be cut down, one after another, such that no fallen tree
+touches any other tree or the fence. Follow the format in the sample output
+given below. Print a blank line after each test case.</p>
+
+<h3>Sample Input 1</h3>
+<pre>0   0    10 10 3
+3   3    2 10
+5   5    3 1
+2   8    3 9
+0   0    0 0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Forest 1
+2 tree(s) can be cut</pre>
+
+
+<footer>
+  25th Annual ACM International Collegiate Programming Contest World Finals (2001) ·
+  Problem D: Can&rsquo;t Cut Down the Forest for the Trees · The 2001 ACM Programming Contest World Finals sponsored by IBM
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Buffed Buffet &mdash; ACM-ICPC World Finals 2014</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2014 &middot; Problem B</p>
+  <h1>Buffed Buffet</h1>
+  <p class="meta">Time limit: 4 seconds</p>
+</header>
+
+<p>You are buying lunch at a buffet. A number of different dishes are available, and you can mix and
+match them to your heart&rsquo;s desire. Some of the dishes, such as dumplings and roasted potatoes, consist
+of pieces of roughly equal size, and you can pick an integral number of such pieces (no splitting is
+allowed). Refer to these as &ldquo;discrete dishes.&rdquo; Other dishes, such as tzatziki or mashed potatoes, are fluid
+and you can pick an arbitrary real-valued amount of them. Refer to this second type as &ldquo;continuous
+dishes.&rdquo;</p>
+
+<p>Of course, you like some of the dishes more than others, but how much you like a dish also depends on
+how much of it you have already eaten. For instance, even if you generally prefer dumplings to potatoes,
+you might prefer a potato over a dumpling if you have already eaten ten dumplings. To model this, each
+dish <i>i</i> has an initial tastiness <i>t</i><sub><i>i</i></sub>, and a rate of decay of the tastiness &Delta;<i>t</i><sub><i>i</i></sub>. For discrete dishes, the tastiness
+you experience when eating the <i>n</i><sup>th</sup> item of the dish is <i>t</i><sub><i>i</i></sub> &minus; (<i>n</i> &minus; 1)&Delta;<i>t</i><sub><i>i</i></sub>. For continuous dishes, the
+tastiness you experience when eating an infinitesimal amount <i>dx</i> grams of the dish after already having
+eaten <i>x</i> grams is (<i>t</i><sub><i>i</i></sub> &minus; <i>x</i>&Delta;<i>t</i><sub><i>i</i></sub>)<i>dx</i>. In other words, the respective total amounts of tastiness you experience
+when eating <i>N</i> items of a discrete dish or <i>X</i> grams of a continuous dish are as follows:</p>
+
+<p style="text-align: center">&sum;<sub><i>n</i>=1</sub><sup><i>N</i></sup> (<i>t</i><sub><i>i</i></sub> &minus; (<i>n</i> &minus; 1)&Delta;<i>t</i><sub><i>i</i></sub>) and &int;<sub>0</sub><sup><i>X</i></sup> (<i>t</i><sub><i>i</i></sub> &minus; <i>x</i>&Delta;<i>t</i><sub><i>i</i></sub>)<i>dx</i></p>
+
+<p>For simplicity, do not take into account that different dishes may or may not go well together, so define
+the total tastiness that you experience from a meal as the sum of the total tastinesses of the individual
+dishes in the meal (and the same goes for the weight of a meal &ndash; there are no food antiparticles in the
+buffet!).</p>
+
+<p>You have spent days of painstaking research determining the numbers <i>t</i><sub><i>i</i></sub> and &Delta;<i>t</i><sub><i>i</i></sub> for each of the dishes
+in the buffet. All that remains is to compute the maximum possible total tastiness that can be achieved
+in a meal of weight <i>w</i>. Better hurry up, lunch is going to be served soon!</p>
+
+<h2>Input</h2>
+
+<p>The input consists of a single test case. The first line of input consists of two integers <i>d</i> and <i>w</i>
+(1 &le; <i>d</i> &le; 250 and 1 &le; <i>w</i> &le; 10&thinsp;000), where <i>d</i> is the number of different dishes at the buffet and <i>w</i> is
+the desired total weight of your meal in grams.</p>
+
+<p>Then follow <i>d</i> lines, the <i>i</i><sup>th</sup> of which describes the <i>i</i><sup>th</sup> dish. Each dish description is in one of the
+following two forms:</p>
+
+<ul>
+  <li>A description of the form &ldquo;<i>D w t</i><sub><i>i</i></sub> &Delta;<i>t</i><sub><i>i</i></sub>&rdquo; indicates that this is a discrete dish where each item
+  weighs <i>w</i><sub><i>i</i></sub> grams, with initial tastiness <i>t</i><sub><i>i</i></sub> and decay of tastiness &Delta;<i>t</i><sub><i>i</i></sub>.</li>
+  <li>A description of the form &ldquo;<i>C t</i><sub><i>i</i></sub> &Delta;<i>t</i><sub><i>i</i></sub>&rdquo; indicates that this is a continuous dish with initial tastiness
+  <i>t</i><sub><i>i</i></sub> and decay of tastiness &Delta;<i>t</i><sub><i>i</i></sub>.</li>
+</ul>
+
+<p>The numbers <i>w</i><sub><i>i</i></sub>, <i>t</i><sub><i>i</i></sub>, and &Delta;<i>t</i><sub><i>i</i></sub> are integers satisfying 1 &le; <i>w</i><sub><i>i</i></sub> &le; 10&thinsp;000 and 0 &le; <i>t</i><sub><i>i</i></sub>, &Delta;<i>t</i><sub><i>i</i></sub> &le; 10&thinsp;000.</p>
+
+<h2>Output</h2>
+
+<p>Display the maximum possible total tastiness of a meal of weight <i>w</i> based on the available dishes. Give
+the answer with a relative or absolute error of at most 10<sup>&minus;6</sup>. If it is impossible to make a meal of total
+weight exactly <i>w</i> based on the available dishes, display <i>impossible</i>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>2 15
+D 4 10 1
+C 6 1</pre>
+
+<h3>Sample Output 1</h3>
+<pre>40.500000000</pre>
+
+<h3>Sample Input 2</h3>
+<pre>3 15
+D 4 10 1
+C 6 1
+C 9 3</pre>
+
+<h3>Sample Output 2</h3>
+<pre>49.000000000</pre>
+
+<h3>Sample Input 3</h3>
+<pre>2 19
+D 4 5 1
+D 6 3 2</pre>
+
+<h3>Sample Output 3</h3>
+<pre>impossible</pre>
+
+
+<footer>
+  ACM-ICPC World Finals 2014 Problem B: Buffed Buffet
+</footer>
+
+</body>
+</html>

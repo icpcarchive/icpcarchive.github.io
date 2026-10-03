@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem E: Optimal Routing — The Twenty-first Annual ACM International Collegiate Programming Contest Finals (1997)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The Twenty-first Annual ACM International Collegiate Programming Contest Finals · Problem E</p>
+  <h1>Optimal Routing</h1>
+  <p class="meta">Input file: routing.in</p>
+</header>
+
+<p>Acme Courier Message, Inc. (ACM) is planning to add a service for delivery of documents and small parcels. ACM will group parcels and documents in bags, which will be transported by car among different stations for intermediate handling and routing prior to final delivery. ACM is in the initial stages of determining the workload requirements for transporting bags among stations.</p>
+
+<p>When a driver delivers a bag, she will (if possible) locate and pick up another bag for delivery to another station, continuing in this manner until there are no more deliverable bags. A deliverable bag is one that can be picked up and delivered to its destination by a driver prior to the end of her workday. The total time for a driver’s workday begins with the time of pickup of her first bag and includes the time she spends delivering bags, the time in transit, and the time waiting at stations for deliverable bags. ACM would like its drivers to spend the maximum amount of time possible delivering the bags between stations within a normal workday. In addition, ACM wants drivers’ final destinations to be the same as the stations where they started whenever possible.</p>
+
+<p>You must write a program to determine optimal driver routes for several ACM scenarios. Each scenario describes bags and stations for a single workday. In this simple version, routes for all drivers will originate from the same station, which we call station A. Optimal routes are subject to the following restrictions.</p>
+
+<ol>
+  <li>A driver’s normal workday will not exceed 10 hours.</li>
+  <li>Drivers will travel from one station to another with one bag, if one is available for pickup. If there are no deliverable bags at a station, the driver will proceed to another station that has a scheduled deliverable bag to continue her route.</li>
+  <li>If several different routes with a final destination of station A are possible, the one requiring the longest cumulative delivery time is optimal. If there are more than one with the longest cumulative delivery time, the one with the shortest total workday time is optimal.</li>
+  <li>Whenever possible, the final destination of a driver is station A. However, if it is impossible to schedule a final destination of station A, then the route requiring the longest cumulative delivery time is optimal. If there are more than one with the longest cumulative delivery time, the one with the shortest total workday time is optimal.</li>
+  <li>Every bag that originates from station A will be delivered. (Some bags originating at other stations will not necessarily be delivered.) No bag will be delivered more than once.</li>
+</ol>
+
+<p>The optimal route for the driver who picks up the first available deliverable bag at station A is completely determined before any consideration of subsequent drivers. The optimal route of the second driver, who picks up the next available deliverable bag at station A that has not already been scheduled for delivery by the first driver, is completely determined next. The optimal route determination continues in this manner until all the bags that can be delivered have been scheduled for delivery. Undeliverable bags will be identified and reported. Throughout the entire process, each driver will be routed according to the bags not already scheduled earlier for delivery. In all scenarios the time to travel from station A to any other station is 10 hours or less.</p>
+
+<h2>Input</h2>
+
+<p>Input for each scenario comes in two parts: a list of the bags and a table of times required to drive between stations. The first line in each scenario consists of an integer <i>n</i> representing the number of bags to be delivered. The next <i>n</i> lines describe each bag in the following format:</p>
+
+<pre>id origin destination time</pre>
+
+<p>where <i>id</i> is the bag identification number (integer), <i>origin</i> and <i>destination</i> are the station labels for the bag’s origin and destination (uppercase letters), and <i>time</i> is when the bag is available for transport. The format for <i>time</i> is hhmm, where hh and mm are integers representing time on a 24-hour clock varying from 0001 to 2400. Data on a line are separated by single blanks. Each station is labeled with a unique uppercase letter. Bags may appear in any time order in the list. The end of input is signified by a scenario for which the number of bags is 0.</p>
+
+<p>Input data for the table of driving times consist of lines of the form:</p>
+
+<pre>station1 station2 time</pre>
+
+<p>where <i>station1</i> and <i>station2</i> are uppercase letters and <i>time</i> is as described earlier. Transit times between stations are listed for all stations which are included in the list of bags. Transit times are bidirectional. Different scenarios are completely unrelated.</p>
+
+<h2>Output</h2>
+
+<p>Output for each scenario begins by identifying the scenario by number (Scenario 1, Scenario 2, etc.). Following that is a listing of each driver’s optimal route. Each route begins with the number of the driver (Driver 1, Driver 2, etc.) and then a summary of the driver’s route including all transits between stations in the order in which the stations were visited. For transits which deliver a bag, display the bag identification number and its origin and destination stations For transits which do not deliver a bag, display the origin and destinations stations. Output for each driver is summarized by the total delivery time and the total workday time in the form hhmm, following the time format specified in the input of time values. If two different routes for a driver are optimal, then output may show either one. The final section of output for a scenario will include a listing of all undeliverable bags or a statement indicating successful delivery of all bags. Each section of a scenario and each scenario should be separated by a blank line.</p>
+
+<h3>Sample Input 1</h3>
+<pre>7
+1 A B 0800
+3 A C 0850
+2 B C 0700
+6 B D 1250
+5 B C 1400
+7 C A 1600
+8 D C 1130
+A B 0400
+A C 0135
+A D 0320
+B C 0345
+B D 0120
+C D 0200
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Scenario 1
+
+Driver 1
+  Bag #1 from station A to station B
+  Bag #2 from station B to station C
+  Bag #7 from station C to station A
+  Total delivery time: 0920
+  Total workday time: 0935
+
+Driver 2
+  Bag #3 from station A to station C
+   --&gt;Transit without delivery from station C to station B
+  Bag #5 from station B to station C
+  Total delivery time: 0520
+  Total workday time: 0905
+
+Undelivered Bags:
+  Bag #8 remains at station D
+  Bag #6 remains at station B</pre>
+
+<footer>
+  The Twenty-first Annual ACM International Collegiate Programming Contest Finals · Problem E · Optimal Routing
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem D: Cutting Cheese — ACM-ICPC World Finals 2015</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2015 · Problem D</p>
+  <h1>Cutting Cheese</h1>
+  <p class="meta">Time limit: 3 seconds</p>
+</header>
+
+<figure class="hero">
+  <img src="images/D-1.png" alt="">
+  <figcaption>Picture by Jon Sullivan via Wikimedia Commons</figcaption>
+</figure>
+
+<p>Of course you have all heard of the International Cheese Processing Company. Their machine for cutting
+a piece of cheese into slices of exactly the same thickness is a classic. Recently they produced a machine
+able to cut a spherical cheese (such as Edam) into slices &ndash; no, not all of the same thickness, but all
+of the same weight! But new challenges lie ahead: cutting Swiss cheese.</p>
+
+<p>Swiss cheese such as Emmentaler has holes in it, and the holes may have different sizes. A slice with
+holes contains less cheese and has a lower weight than a slice without holes. So here is the challenge: cut
+a cheese with holes in it into slices of equal weight.</p>
+
+<p>By smart sonar techniques (the same techniques used to scan unborn babies and oil fields), it is possible to
+locate the holes in the cheese up to micrometer precision. For the present problem you may assume that the
+holes are perfect spheres.</p>
+
+<p>Each uncut block has size 100 &times; 100 &times; 100 where each dimension is measured in millimeters.
+Your task is to cut it into <i>s</i> slices of equal weight. The slices will be 100 mm wide and 100 mm
+high, and your job is to determine the thickness of each slice.</p>
+
+<h2>Input</h2>
+
+<p>The first line of the input contains two integers <i>n</i> and <i>s</i>, where 0 &le;
+<i>n</i> &le; 10&thinsp;000 is the number of holes in the cheese, and 1 &le; <i>s</i> &le; 100 is the
+number of slices to cut. The next <i>n</i> lines each contain four positive integers <i>r</i>,
+<i>x</i>, <i>y</i>, and <i>z</i> that describe a hole, where <i>r</i> is the radius and
+<i>x</i>, <i>y</i>, and <i>z</i> are the coordinates of the center, all in
+micrometers.</p>
+
+<p>The cheese block occupies the points (<i>x</i>, <i>y</i>, <i>z</i>) where 0 &le;
+<i>x</i>, <i>y</i>, <i>z</i> &le; 100&thinsp;000, except for the points that
+are part of some hole. The cuts are made perpendicular to the <i>z</i> axis.</p>
+
+<p>You may assume that holes do not overlap but may touch, and that the holes are fully contained in the
+cheese but may touch its boundary.</p>
+
+<h2>Output</h2>
+
+<p>Display the <i>s</i> slice thicknesses in millimeters, starting from the end of the cheese with
+<i>z</i> = 0. Your output should have an absolute or relative error of at most 10<sup>&minus;6</sup>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>0 4</pre>
+
+<h3>Sample Output 1</h3>
+<pre>25.000000000
+25.000000000
+25.000000000
+25.000000000</pre>
+
+<h3>Sample Input 2</h3>
+<pre>2 5
+10000 10000 20000 20000
+40000 40000 50000 60000</pre>
+
+<h3>Sample Output 2</h3>
+<pre>14.611103142
+16.269801734
+24.092457788
+27.002992272
+18.023645064</pre>
+
+<footer>
+  ACM-ICPC World Finals 2015 Problem D: Cutting Cheese &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

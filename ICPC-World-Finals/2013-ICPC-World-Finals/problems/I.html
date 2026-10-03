@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem I: Pirate Chest — ACM-ICPC World Finals 2013</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2013 · Problem I</p>
+  <h1>Pirate Chest</h1>
+  <p class="meta">Time limit: 15 seconds</p>
+</header>
+
+<p>Pirate Dick finally had enough of fighting, marauding, theft, and making
+life miserable for many on the open seas. So he decided to retire, and he
+found the perfect island to spend the rest of his days on, provided he does
+not run out of money. He has plenty of gold coins now, and he wants to store
+them in a chest (he is a pirate after all). Dick can construct a rectangular
+chest with integer dimensions of any size up to a specified maximum size for
+the top but with an arbitrary integer height. Now he needs a place to hide the
+chest. While exploring the island, he found the perfect solution.</p>
+
+<p>Dick will hide his chest by submerging it in a murky pond. The pond has a
+rectangular surface, and it completely fills the bottom of a valley that has
+high vertical rocky walls. Dick surveyed the pond and knows its depth for each
+of the squares of a Cartesian coordinate grid system placed on the pond
+surface. When Dick submerges the chest, it will sink as far as possible until
+it touches the bottom. The top of the chest will remain parallel to the
+pond&rsquo;s surface and the chest will be aligned with the grid squares. The
+water displaced by the submerged chest will raise the level of the
+pond&rsquo;s surface (this will occur even if there is no space around the
+chest for the displaced water to rise). The walls of the valley are high enough
+that the water can never splash out of the valley. Of course, since the chest
+must be invisible, its top must be strictly below the surface of the pond.
+Your job is to find the volume of the largest chest that Pirate Dick can hide
+this way.</p>
+
+<p>In Figure I.1, the leftmost image shows a pond, the middle image shows a
+possible placement of a chest of volume 3, and the rightmost image shows a
+placement of a chest of volume 4, which is the maximum possible volume. Note
+that if the second chest were made one unit taller, its top would be visible
+because it would be at exactly the same height as the surface of the water.</p>
+
+<figure>
+  <img src="images/I-1.png" alt="">
+  <figcaption>Figure I.1: Illustration of Sample Input 1.</figcaption>
+</figure>
+
+<h2>Input</h2>
+
+<p>The input consists of a single test case. A test case starts with a line
+containing four integers <i>a</i>, <i>b</i>, <i>m</i>, and <i>n</i> (1 &le;
+<i>a</i>, <i>b</i>, <i>m</i>, <i>n</i> &le; 500). The pond&rsquo;s surface
+dimensions are <i>m</i> &times; <i>n</i> and the maximum size of the top (and
+bottom) of the chest is <i>a</i> &times; <i>b</i>. In addition, <i>a</i> and
+<i>b</i> are small enough that it is not possible to cover the entire pond
+with a chest with top size <i>a</i> &times; <i>b</i>. Each of the remaining
+<i>m</i> lines in a test case contains <i>n</i> integers
+<i>d</i><sub><i>i</i>,<i>j</i></sub> specifying the pond&rsquo;s depth at grid
+square (<i>i</i>, <i>j</i>), where 0 &le; <i>d</i><sub><i>i</i>,<i>j</i></sub>
+&le; 10<sup>9</sup> for each 1 &le; <i>i</i> &le; <i>m</i> and 1 &le;
+<i>j</i> &le; <i>n</i>.</p>
+
+<h2>Output</h2>
+
+<p>Display the maximum volume of a rectangular chest with integer dimensions
+(where one of the dimensions of the top is bounded by <i>a</i> and the other
+is bounded by <i>b</i>) that can be completely submerged below the surface of
+the pond. If no chest can be hidden in the pond, display 0.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3 1 2 3
+2 1 1
+2 2 1</pre>
+
+<h3>Sample Output 1</h3>
+<pre>4</pre>
+
+<h3>Sample Input 2</h3>
+<pre>4 1 1 5
+2 0 2 2 2</pre>
+
+<h3>Sample Output 2</h3>
+<pre>12</pre>
+
+<h3>Sample Input 3</h3>
+<pre>2 3 3 5
+2 2 2 2 2
+2 2 2 2 2
+2 2 2 2 2</pre>
+
+<h3>Sample Output 3</h3>
+<pre>18</pre>
+
+
+<footer>
+  ACM-ICPC World Finals 2013 Problem I: Pirate Chest &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

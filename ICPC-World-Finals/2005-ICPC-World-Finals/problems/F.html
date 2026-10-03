@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Crossing Streets &mdash; ICPC World Finals 2005</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2005 &middot; Problem F</p>
+  <h1>Crossing Streets</h1>
+  <p class="meta">Input file: streets.in</p>
+</header>
+
+
+<p>Peter Longfoot is a student at the university of Suburbia. Every morning, Peter leaves home to walk to the university. Many other students are driving their cars or riding their bicycles to campus, but Peter prefers to walk, avoiding the chaotic traffic of the city as much as possible.</p>
+
+<p>Unfortunately, Peter cannot avoid the traffic entirely, since he has to cross streets in order to reach the university. Recently, Peter has wondered how to minimize the number of streets he has to cross. For example, in the following map, streets are drawn as horizontal and vertical lines. To reach the university starting at his home, Peter has to cross at least two streets. Peter cannot cross a street pair at an intersection and Peter cannot walk along a street.</p>
+
+<figure>
+  <img src="images/F-1.png" alt="">
+  <figcaption>Figure: Streets are shown as straight lines and the arrows show possible walking paths for Peter. The black arrows show one possible path for Peter where he only has to cross two streets. The gray arrows show a path for Peter where he needs to cross four streets. The path shown by the dotted arrows is not legal because it crosses two streets at an intersection. The figure above corresponds to the first sample input.</figcaption>
+</figure>
+
+<p>Peter knows the locations of all streets in the city, but he has trouble figuring out the best way to the university. So you must write a program to help him.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of several descriptions of cities. Each description starts with a line containing a single integer n (1 &le; n &le; 500), the number of streets in the city. This is followed by n lines, each containing four integers x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub>, indicating that there is a street from coordinates (x<sub>1</sub>, y<sub>1</sub>) to (x<sub>2</sub>, y<sub>2</sub>). All streets are parallel to either the x- or y-axis, since the city is built on a square grid. Streets can overlap, in which case they are counted as only one street. The city description is concluded by a line containing four integers x<sub>h</sub>, y<sub>h</sub>, x<sub>u</sub>, y<sub>u</sub>, the coordinates (x<sub>h</sub>, y<sub>h</sub>) of Peter&rsquo;s home, and the coordinates (x<sub>u</sub>, y<sub>u</sub>) of the university, respectively. Neither Peter&rsquo;s home nor the university will be located on a street. You should consider the streets as straight-line segments, so the streets have no width. Although the endpoints of the streets are integers, Peter doesn&rsquo;t need to walk along the grids. He can walk in any direction he likes. The magnitudes of all integers in the input file are less than 2&times;10<sup>9</sup>.</p>
+
+<p>The input is terminated by a line consisting of the integer zero.</p>
+
+<h2>Output</h2>
+
+<p>For each city description, first output its number in the sequence of descriptions. Then output the minimum number of streets that Peter has to cross to go from his home to the university.</p>
+
+<p>Follow the format of the sample output.</p>
+
+<h3>Sample Input 1</h3>
+<pre>8
+6 0 24 0
+24 0 24 4
+24 4 6 4
+6 4 6 0
+12 1 26 1
+26 1 26 6
+26 6 12 6
+12 6 12 1
+0 1 17 3
+1
+10 10 20 10
+1 1 30 30
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>City 1
+Peter has to cross 2 streets
+City 2
+Peter has to cross 0 streets</pre>
+
+
+<footer>
+  ICPC World Finals 2005 &mdash; Problem F: Crossing Streets
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">The 2004 28th Annual ICPC World Finals · Problem H</p>
+  <h1>Tree-Lined Streets</h1>
+  <p class="meta">Input File: streets.in</p>
+</header>
+
+
+<p>The city council of Greenville recently voted to improve the appearance of inner city streets. To provide more
+greenery in the scenery, the city council has decided to plant trees along all major streets and avenues. To get an
+idea of how expensive this urban improvement project will be, the city council wants to determine how many
+trees will be planted. The planting of trees is limited in two ways:</p>
+
+<ul>
+  <li>Along a street, trees have to be planted at least 50 meters apart. This is to provide adequate growing
+      space, and to keep the cost of the project within reasonable limits.</li>
+  <li>Due to safety concerns, no tree should be planted closer than 25 meters along a street to the nearest
+      intersection. This is to ensure that traffic participants can easily see each other approaching an
+      intersection. Traffic safety should not be compromised by reducing visibility.</li>
+</ul>
+
+<p>All streets considered in this project are straight. They have no turns or bends.</p>
+
+<p>The city council needs to know the maximum number of trees that can be planted under these two restrictions.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of descriptions of several street maps. The first line of each description contains an integer
+<i>n</i> (1 &le; <i>n</i> &le; 100), which is the number of streets in the map. Each of the following <i>n</i> lines describes a street as
+a line segment in the Cartesian plane. An input line describing a street contains four integers <i>x</i><sub>1</sub>,
+<i>y</i><sub>1</sub>, <i>x</i><sub>2</sub>, and <i>y</i><sub>2</sub>. This means that this street goes from point (<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>) to point (<i>x</i><sub>2</sub>,
+<i>y</i><sub>2</sub>). The coordinates <i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>, <i>x</i><sub>2</sub>, and <i>y</i><sub>2</sub> are given in meters, (0 &le; <i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>, <i>x</i><sub>2</sub>, <i>y</i><sub>2</sub> &le; 100000). Every
+street has a positive length. Each end point lies on exactly one street.</p>
+
+<p>For each street, the distances between neighboring intersections and/or the end points of the street are not
+exact multiples of 25 meters. More precisely, the difference of such a distance to the nearest multiple of 25
+meters will be at least 0.001 meters. At each intersection, exactly two streets meet.</p>
+
+<p>Input for the last street map description is followed by a line consisting of the number 0.</p>
+
+<h2>Output</h2>
+
+<p>For each street map described in the input, first print its number in the sequence. Then print the maximum
+number of trees that can be planted under the restrictions specified above. Follow the format in the sample
+output given below.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3
+0 40 200 40
+40 0 40 200
+0 200 200 0
+4
+0 30 230 30
+0 200 230 200
+30 0 30 230
+200 0 200 230
+3
+0 1 121 1
+0 0 121 4
+0 4 121 0
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Map 1
+Trees = 13
+Map 2
+Trees = 20
+Map 3
+Trees = 7</pre>
+
+
+<footer>
+  The 2004 ACM Programming Contest World Finals · Problem H: Tree-Lined Streets · sponsored by IBM
+</footer>
+
+</body>
+</html>

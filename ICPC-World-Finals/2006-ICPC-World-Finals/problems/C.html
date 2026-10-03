@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem C: Ars Longa — The 30th Annual ACM International Collegiate Programming Contest World Finals (2006)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The 30th Annual ACM International Collegiate Programming Contest World Finals · Problem C</p>
+  <h1>Ars Longa</h1>
+  <p class="meta">Input file: ars.in</p>
+</header>
+
+<p>You have been struck with inspiration, and are designing a beautiful new art sculpture for the foyer of your local museum. For highly important artistic reasons, you are designing it using very specific materials. However, you are not sure if physics is on your side. Will your sculpture actually stand up?</p>
+
+<p>The sculpture will be composed of various ball joints weighing 1 kilogram each, and various rods (of negligible weight) connecting the joints. Rods cannot be stretched or compressed, and they can never detach from a joint. However, they are free to rotate around the joints in any direction. The joints that lie on the ground are glued in place; all others are free to move. For simplicity, you may ignore the effects of intersections of rods; each rod exerts force only on the 2 joints connected to it. Also, any joint that is in the air will have at least one rod coming out that is not parallel to the ground. This prevents the degenerate case where a ball is supported only horizontally by a rigid structure. In real life, it would sag just a little.</p>
+
+<p>Write a program to determine whether your structure is static (that is, will not immediately move from the effects of gravity). Note that each rod can transmit an arbitrarily large tensional force along its length, and that &ldquo;being static&rdquo; means that the tensional forces at each joint balance the weight of the joint.</p>
+
+<p>If the structure is static, you must also determine whether it is stable (that is, will not move if perturbed slightly by pulling its joints).</p>
+
+<h2>Input</h2>
+
+<p>The input contains several sculpture descriptions. Every description begins with a line containing integers <i>J</i> and <i>R</i>, the number of joints and rods in the structure, respectively. Joints are numbered from 1 to <i>J</i>. The description continues with <i>J</i> lines, one per joint, each containing 3 floating point numbers giving the x, y, z coordinates of that joint. Following are <i>R</i> lines, one per rod, with 2 distinct integers indicating the joints connected by that rod.</p>
+
+<p>Each rod is exactly the right length to connect its joints. The z coordinates will always be non-negative; a z coordinate of 0 indicates that the joint is on the ground and fixed in place. There are at most 100 joints and 100 rods.</p>
+
+<p>The last description is followed by a line containing two zeroes.</p>
+
+<h2>Output</h2>
+
+<p>For each sculpture description, output NON-STATIC, UNSTABLE, or STABLE, as shown in the sample output.</p>
+
+<h3>Sample Input 1</h3>
+<pre>4 3
+0 0 0
+-1.0 -0.5 1.0
+1.0 -0.5 1.0
+0 1.0 1.0
+1 2
+1 3
+1 4
+4 6
+0 0 0
+-1.0 -0.5 1.0
+1.0 -0.5 1.0
+0 1.0 1.0
+1 2
+1 3
+1 4
+2 3
+2 4
+3 4
+7 9
+0 0 0
+-1.0 -0.5 1.0
+1.0 -0.5 1.0
+0 1.0 1.0
+-1.0 -0.5 0
+1.0 0.5 0
+0 1.0 0
+1 2
+1 3
+1 4
+2 3
+2 4
+3 4
+2 5
+3 6
+4 7
+0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Sculpture 1: NON-STATIC
+Sculpture 2: UNSTABLE
+Sculpture 3: STABLE</pre>
+
+<footer>
+  The 30th Annual ACM International Collegiate Programming Contest World Finals &middot; Problem C &middot; Ars Longa
+</footer>
+
+</body>
+</html>

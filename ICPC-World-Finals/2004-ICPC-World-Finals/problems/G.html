@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">The 2004 28th Annual ICPC World Finals · Problem G</p>
+  <h1>Navigation</h1>
+  <p class="meta">Input File: navigation.in</p>
+</header>
+
+
+<p>Global Positioning System (GPS) is a navigation system based on a set of satellites orbiting approximately
+20,000 kilometers above the earth. Each satellite follows a known orbit and transmits a radio signal that encodes
+the current time. If a GPS-equipped vehicle has a very accurate clock, it can compare its own local time with the
+time encoded in the signals received from the satellites. Since radio signals propagate at a known rate, the
+vehicle can compute the distance between its current location and the location of the satellite when the signal
+was broadcast. By measuring its distance from several satellites in known orbits, a vehicle can compute its
+position very accurately.</p>
+
+<figure>
+  <img src="images/G-1.png" alt="">
+  <figcaption>Figure 1: The Compass</figcaption>
+</figure>
+
+<figure>
+  <img src="images/G-2.png" alt="">
+  <figcaption>Figure 2: 1st Sample Input</figcaption>
+</figure>
+
+<p>You must write a simple &ldquo;autopilot&rdquo; program based on GPS navigation. To make the problem easier, we state it
+as a two-dimensional problem. In other words, you do not need to take into account the curvature of the earth or
+the altitude of the satellites. Furthermore, the problem uses speeds that are more appropriate for airplanes and
+sound waves than for satellites and radio waves.</p>
+
+<p>Given a set of signals from moving sources, your program must compute the receiving position on the Cartesian
+plane. Then, given a destination point on the plane, your program must compute the compass heading required
+to go from the receiving position to the destination. All compass headings are stated in degrees. Compass
+heading 0 (North) corresponds to the positive <i>y</i> direction, and compass heading 90 (East) corresponds to the
+positive <i>x</i> direction, as shown in Figure 1.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of multiple data sets.</p>
+
+<p>The first line of input in each data set contains an integer N (1 &le; N &le; 10), which is the number of signal sources
+in the set. This is followed by three floating point numbers: <i>t</i>, <i>x</i>, and <i>y</i>. Here, <i>t</i> denotes the exact
+local time when all the signals are received, represented in seconds after the reference time (time 0), and
+<i>x</i> and <i>y</i> represent the coordinates of the destination point on the Cartesian plane. Each of the next N
+lines contains four floating-point numbers that carry information about one signal source. The first two numbers
+represent the known position of the signal source on the Cartesian plane at the reference time. The third number
+represents the direction of travel of the signal source in the form of a compass heading D (0 &le; D &lt; 360).
+The fourth number is the time that is encoded in the signal&mdash;that is, the time when the signal was transmitted,
+represented in seconds after the reference time. The magnitudes of all numbers in the input file are less than
+10000 and no floating-point number has more than 5 digits after the decimal point.</p>
+
+<p>The last data set is followed by a line containing four zeros.</p>
+
+<p>The unit distance in the coordinate space is one meter. Assume that each signal source is moving over the
+Cartesian plane at a speed of 100 meters per second and that the broadcast signal propagates at a speed of 350
+meters per second. Due to inaccuracies in synchronizing clocks, assume that your distance calculations are
+accurate only to 0.1 meter. That is, if two points are computed to be within 0.1 meter of each other, you should
+treat them as the same point. There is also the possibility that a signal may have been corrupted in transmission,
+so the data received from multiple signals may be inconsistent.</p>
+
+<h2>Output</h2>
+
+<p>For each trial, print the trial number followed by the compass heading from the receiving location to the
+destination, in degrees rounded to the nearest integer. Use the labeling as shown in the example output. If the
+signals do not contain enough information to compute the receiving location (that is, more than one position is
+consistent with the signals), print &ldquo;Inconclusive.&rdquo; If the signals are inconsistent (that is, no position is
+consistent with the signals), print &ldquo;Inconsistent.&rdquo; If the receiving location is within 0.1 meter of the destination,
+print &ldquo;Arrived.&rdquo; If the situation is Inconclusive or Inconsistent, then you do not need to consider the case
+Arrived.</p>
+
+<p>Figure 2 on the previous page corresponds to the first sample input. The locations of the three satellites at
+time <i>t</i> = 0 are A (-100,350), B (350,-100) and C (350,800). The signals received by the GPS unit were
+transmitted at time <i>t</i> = 1.75, when the satellites were at locations A&rsquo;, B&rsquo;, and C&rsquo; (however, in general the
+signals received by the GPS unit might have been transmitted at different times). The signals from the three
+satellites converge at D at time <i>t</i> = 2.53571, which means D is the location of the receiving GPS unit. From
+point D, a compass course of 45 degrees leads toward the destination point of (1050, 1050).</p>
+
+<h3>Sample Input 1</h3>
+<pre>3 2.53571 1050.0 1050.0
+-100.0  350.0  90.0 1.75
+ 350.0 -100.0   0.0 1.75
+ 350.0  800.0 180.0 1.75
+2 2.0 1050.0 1050.0
+-100.0  350.0  90.0 1.0
+ 350.0 -100.0   0.0 1.0
+0 0 0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Trial 1: 45 degrees
+Trial 2: Inconclusive</pre>
+
+
+<footer>
+  The 2004 ACM Programming Contest World Finals · Problem G: Navigation · sponsored by IBM
+</footer>
+
+</body>
+</html>

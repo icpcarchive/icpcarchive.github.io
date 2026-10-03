@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: Raising the Roof &mdash; 2007 ICPC World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+
+<header>
+  <p class="kicker">2007 ICPC World Finals &middot; Problem H</p>
+  <h1>Raising the Roof</h1>
+  <p class="meta">Input file: roof.in</p>
+</header>
+
+<p>You have agreed to help a roofer estimate the amount of material required to protect
+the surface of a roof from sun damage by computing the surface area of the roof that
+can be seen when viewed from directly above.</p>
+
+<p>The geometry of a roof is defined by the vertices of the triangles that enclose the
+plane surfaces of the roof. The x and y coordinates of a vertex are determined from an
+aerial view of the roof, and the z coordinate is the height of the vertex above the
+ground, assuming that the ground is level (which we do). For example, a line segment
+with vertices (10,10,10) and (10,20,10) is parallel to the ground, and is 10 units
+long. A line segment with vertices (10,10,10) and (10,18,16) slopes from 10 units to
+16 units above the ground; in the aerial view of the roof it is 8 units long, but the
+actual length is 10 units.</p>
+
+<p>In an aerial view of a roof, one region of the roof can sometimes obscure a lower
+region. Only visible portions of the roof should be included in the total. For example,
+suppose you view a two-story building with a second floor that is smaller than the
+first floor. Obviously the area of the second floor&rsquo;s roof must be included in the
+total, but the visible surface area of the first floor&rsquo;s roof will not include the
+area directly underneath the second floor&rsquo;s roof.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of several test cases corresponding to roof descriptions. A test
+case begins with a line containing integers V (1 &le; V &le; 300), which is the number
+of vertices, and T (1 &le; T &le; 1000), which is the number of triangles. Each of the
+next V lines contains the coordinates x, y, z of a vertex. The test case concludes with
+T triangle descriptions, each consisting of the three vertex indices describing the
+vertices of a roof triangle. Vertices are numbered sequentially in the order they
+appear in the input, starting with 1.</p>
+
+<p>All coordinates are positive integers no greater than 100. No roof triangles are
+degenerate, and all pairs of roof triangles have disjoint interiors &ndash; that is,
+they may touch but they will not overlap or intersect.</p>
+
+<p>The last test case is followed by a line containing two zeroes.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, print a line containing the test case number (beginning with
+1) followed by the total visible surface area of the roof, accurate to two fractional
+digits. Use the sample output format and print a blank line after each case.</p>
+
+<h3>Sample Input 1</h3>
+<pre>6 2
+10 10 10
+10 20 10
+20 10 10
+10 10 20
+10 20 20
+20 20 20
+1 2 3
+4 5 6
+3 1
+10 10 10
+10 18 16
+20 10 10
+1 2 3
+0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1: 75.00
+
+Case 2: 50.00</pre>
+
+<footer>
+  2007 ICPC World Finals Problem H: Raising the Roof &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

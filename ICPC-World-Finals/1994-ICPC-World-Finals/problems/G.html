@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: VTAS - Vessel Traffic Advisory Service — 1994 Eighteenth Annual International Collegiate Programming Contest Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">1994 Eighteenth Annual International Collegiate Programming Contest Finals · Problem G</p>
+  <h1>VTAS - Vessel Traffic Advisory Service</h1>
+</header>
+
+<p>In order to promote safety and efficient use of port facilities, the Association of Coastal Merchants (ACM) has developed a concept for a Vessel Traffic Advisory Service (VTAS) that will provide traffic advisories for vessels transiting participating ports.</p>
+
+<p>The concept is built on a computer program that maintains information about the traffic patterns and reported movements of vessels within the port over multiple days. For each port, the traffic lanes are defined between waypoints. The traffic lanes have been designated as directional to provide traffic separation and flow controls. Each port is represented by a square matrix containing the distances (in nautical miles) along each valid traffic lane. The distances are defined from each row waypoint to each column waypoint. A distance of 0 indicates that no valid traffic lane exists between the two waypoints.</p>
+
+<p>Vessel traffic enters the port at a waypoint and transits the traffic lanes. A vessel may begin its transit at any of the waypoints and must follow a valid connected route via the valid traffic lanes. A vessel may end its transit at any valid waypoint.</p>
+
+<p>The service provided by the VTAS to transiting vessels includes:</p>
+<ul>
+  <li>Projection of arrival times at waypoints</li>
+  <li>Notification of invalid routes</li>
+  <li>Projected encounters with other vessels on each leg of the transit. An &ldquo;encounter&rdquo; occurs when two vessels are between common waypoints (either traffic lane) at a common time</li>
+  <li>Warning of close passing with another vessel in the vicinity of a waypoint (within 3 minutes of projected waypoint arrival)</li>
+</ul>
+
+<p>Reported times will be rounded to the nearest whole minute. Time is maintained based on a 24 hour clock (i.e. 9 am is 0900, 9 PM is 2100, midnight is 0000). Speed is measured in knots which is equal to 1 nautical mile per hour.</p>
+
+<h2>Input</h2>
+
+<p>The input file for the computer program include a Port Specification to provide the description of the traffic patterns within the port and a Traffic List which contains the sequence of vessels entering the port and their intended tracks. The end of the input is indicated by a Vessel Name beginning with an "*"</p>
+<pre>         Port Specification : Number of Waypoints in Port (an integer N)
+                               Waypoint ID List (N single-character designators)
+                               Waypoint Connection Matrix (N rows of N real values specifying the distances
+                               between waypoints in nautical miles)
+         Traffic List: Vessel Name (alphabetic characters)
+                        Time at first waypoint (on 24-hour clock) &amp; Planned Transit Speed (in knots)
+                        Planned Route (ordered list of waypoints)</pre>
+
+<h2>Output</h2>
+
+<p>The output shall provide for each vessel as it enters the port a listing indicating the arrival of the vessel and its planned speed followed by a table containing the waypoints in its route and projected arrival at each waypoint. Following this table will be appropriate messages indicating:</p>
+<ul>
+  <li>Notification of Invalid Routes</li>
+  <li>Projected Encounters on each leg</li>
+  <li>Warning of close passing at waypoints</li>
+</ul>
+<p>All times are to be printed as four-digit integers with leading zeros when necessary.</p>
+
+<h2>Assumptions &amp; Limitations</h2>
+
+<ol>
+  <li>Vessel names are at most 20 characters long.</li>
+  <li>There are at most 20 waypoints in a port and at most 20 waypoints in any route.</li>
+  <li>There will be at most 20 vessels in port at any time.</li>
+  <li>A vessel will complete its transit in at most 12 hours.</li>
+  <li>No more than 24 hours will elapse between vessel entries.</li>
+</ol>
+
+<h3>Sample Input</h3>
+<pre>6
+ABCDEF
+0 3 0 0 0 0
+3 0 0 2 0 0
+0 3 0 0 0 0
+0 0 0 0 3 0
+0 0 2 0 0 4
+0 0 0 0 4 0
+Tug
+2330 12
+ABDEF
+WhiteSailboat
+2345 6
+ECBDE
+TugWBarge
+2355 5
+DECBA
+PowerCruiser
+   0 15
+FECBA
+LiberianFreighter
+   7 18
+ABDXF
+ChineseJunk
+  45 8
+ACEF
+*****</pre>
+
+<figure>
+  <img src="images/G-1.png" alt="">
+</figure>
+
+<h3>Output for the Sample Input</h3>
+<pre>Tug entering system at 2330 with a planned speed of 12.0 knots
+          Waypoint:    A    B    D    E    F
+          Arrival:   2330 2345 2355 0010 0030
+
+WhiteSailboat entering system at 2345 with a planned speed of 6.0 knots
+          Waypoint:    E    C    B    D    E
+          Arrival:   2345 0005 0035 0055 0125
+
+TugWBarge entering system at 2355 with a planned speed of 5.0 knots
+          Waypoint:    D    E    C    B    A
+          Arrival:   2355 0031 0055 0131 0207
+Projected encounter with Tug on leg between Waypoints D &amp; E
+** Warning ** Close passing with Tug at Waypoint D
+
+PowerCruiser entering system at 0000 with a planned speed of 15.0 knots
+          Waypoint:    F    E    C    B    A
+          Arrival:   0000 0016 0024 0036 0048
+Projected encounter with Tug on leg between Waypoints F &amp; E
+Projected encounter with WhiteSailboat on leg between Waypoints C &amp; B
+** Warning ** Close passing with WhiteSailboat at Waypoint B
+
+LiberianFreighter entering system at 0007 with a planned speed of 18.0 knots
+**&gt; Invalid Route Plan for Vessel: LiberianFreighter
+
+ChineseJunk entering system at 0045 with a planned speed of 8.0 knots
+**&gt; Invalid Route Plan for Vessel: ChineseJunk</pre>
+
+<footer>
+  1994 Eighteenth Annual International Collegiate Programming Contest Finals · Problem G · VTAS - Vessel Traffic Advisory Service
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem A: Catch the Plane — ACM-ICPC World Finals 2018</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2018 · Problem A</p>
+  <h1>Catch the Plane</h1>
+  <p class="meta">Time limit: 10 seconds</p>
+</header>
+
+<p>Your plane to the ICPC Finals departs in a short time, and the only way to
+get to the airport is by bus. Unfortunately, some of the bus drivers are
+considering going on strike, so you do not know whether you can get to the
+airport on time. Your goal is to plan your journey in such a way as to maximize
+the probability of catching your plane.</p>
+
+<p>You have a detailed map of the city, which includes all the bus stations. You
+are at station 0 and the airport is at station 1. You also have a complete
+schedule of when each bus leaves its start station and arrives at its
+destination station. Additionally, for each bus you know the probability that it
+is actually going to run as scheduled, as opposed to its driver going on strike
+and taking the bus out of service. Assume all these events are independent. That
+is, the probability of a given bus running as planned does not change if you
+know whether any of the other buses run as planned.</p>
+
+<p>If you arrive before the departure time of a bus, you can transfer to that
+bus. But if you arrive exactly at the departure time, you will not have enough
+time to get on the bus. You cannot verify ahead of time whether a given bus will
+run as planned – you will find out only when you try to get on the bus. So if
+two or more buses leave a station at the same time, you can try to get on only
+one of them.</p>
+
+<figure>
+  <img src="images/A-1.png" alt="">
+  <figcaption>Figure A.1: Bus schedule corresponding to Sample Input 1.</figcaption>
+</figure>
+
+<p>Consider the bus schedule shown in Figure A.1. It lists the start and
+destination stations of several bus routes along with the departure and arrival
+times. You have written next to some of these the probability that that route
+will run. Bus routes with no probability written next to them have a 100% chance
+of running. You can try catching the first listed bus. If it runs, it will take
+you straight to the airport, and you can stop worrying. If it does not, things
+get more tricky. You could get on the second listed bus to station 2. It is
+certain to leave, but you would be too late to catch the third listed bus which
+otherwise would have delivered you to the airport on time. The fourth listed bus
+– which you can catch – has only a 0.1 probability of actually running. That is a
+bad bet, so it is better to stay at station 0 and wait for the fifth listed bus.
+If you catch it, you can try to get onto the sixth listed bus to the airport; if
+that does not run, you still have the chance of returning to station 0 and
+catching the last listed bus straight to the airport.</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains two integers <i>m</i> (1 &le; <i>m</i> &le;
+10<sup>6</sup>) and <i>n</i> (2 &le; <i>n</i> &le; 10<sup>6</sup>), denoting the
+number of buses and the number of stations in the city. The next line contains
+one integer <i>k</i> (1 &le; <i>k</i> &le; 10<sup>18</sup>), denoting the time by
+which you must arrive at the airport.</p>
+
+<p>Each of the next <i>m</i> lines describes one bus. Each line contains
+integers <i>a</i> and <i>b</i> (0 &le; <i>a</i>, <i>b</i> &lt; <i>n</i>,
+<i>a</i> &ne; <i>b</i>), denoting the start and destination stations for the bus.
+Next are integers <i>s</i> and <i>t</i> (0 &le; <i>s</i> &lt; <i>t</i> &le;
+<i>k</i>), giving the departure time from station <i>a</i> and the arrival time
+at station <i>b</i>. The last value on the line is <i>p</i> (0 &le; <i>p</i> &le;
+1, with at most 10 digits after the decimal point), which denotes the
+probability that the bus will run as planned.</p>
+
+<h2>Output</h2>
+
+<p>Display the probability that you will catch your plane, assuming you follow
+an optimal course of action. Your answer must be correct to within an absolute
+error of 10<sup>&minus;6</sup>.</p>
+
+<h3>Sample Input <i>1</i></h3>
+<pre>8 4
+1000
+0 1 0 900 0.2
+0 2 100 500 1.0
+2 1 500 700 1.0
+2 1 501 701 0.1
+0 3 200 400 0.5
+3 1 500 800 0.1
+3 0 550 650 0.9
+0 1 700 900 0.1</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>0.3124</pre>
+
+
+<h3>Sample Input <i>2</i></h3>
+<pre>4 2
+2
+0 1 0 1 0.5
+0 1 0 1 0.5
+0 1 1 2 0.4
+0 1 1 2 0.2</pre>
+
+<h3>Sample Output <i>2</i></h3>
+<pre>0.7</pre>
+
+
+
+<footer>
+  ACM-ICPC World Finals 2018 Problem A: Catch the Plane
+</footer>
+
+</body>
+</html>

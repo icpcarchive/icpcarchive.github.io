@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem A: Balanced Diet (Solution) — ACM ICPC World Finals 2016</title>
+<style>
+
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2016</p>
+  <h1>Problem A: Balanced Diet</h1>
+</header>
+
+<p>Shortest judge solution: 643 bytes. Shortest team solution (during contest): 741 bytes.</p>
+
+<p>The solution to this problem will simulate Danny’s optimal behavior for as long as possible, to find the answer. The first issue to deal with is the “forever” answer — for how long do we need to simulate before we can safely claim that Danny will be able to eat sweets forever.</p>
+<p>Let A denote the sum of all a<sub>i</sub>. Notice that if at whatever point Danny has n sweets, where n is positive and divisible by A, then the numbers n f<sub>i</sub> − 1 and n f<sub>i</sub> + 1 are integers. Thus, there is only one possible choice of the number of sweets of any given type, for all the types, and so s<sub>i</sub> = n f<sub>i</sub>. If we extend the sequence cyclically (that is, the n + 1st sweet is equal to the 1st, the n + 2nd is equal to the second, and so on), then it will always be balanced — because in the inequalities, all three expressions increase by n f<sub>i</sub>.</p>
+<p>So, we need to simulate just to the nearest multiple of A. Since A is at most 10<sup>5</sup>, this means we need to be able to simulate a single step (single choice of a sweet) in logarithmic time.</p>
+<p>This, in its heart, is a scheduling problem. For any sweet type i, there is some minimum total number of sweets we need to have to be able to buy the kth sweet of that type (let’s call that number L(i, k)), and some maximum total number of sweets, where if we did not buy the kth sweet of type i and we already have this number of sweets, then our diet is already unbalanced (let’s call that number U(i, k)). The solution (as usually with scheduling problems) is to always take the element which has the earliest deadline — so, in this case, the sweet with the lowest U(i, k) value. The proof is a relatively standard exchange argument, which we leave to the reader.</p>
+<p>Implementation-wise, we can hold two priority queues — the queue of sweets we can’t yet buy, ordered by L(i, k), and the queue of sweets we can buy, ordered by U(i, k). Notice that we know up front which sweets we will need to buy to get up to A, so we can begin by inserting them all into the appropriate queues. At each day, begin by moving sweets that we can now buy from the first queue to the second, and then pick the first sweet from the second queue and buy it. If it turns out that is was already expired when we buy it, the previous day was the last we could have had a balanced diet, otherwise we proceed.</p>
+<p>One simplification that we can apply to this is that the first queue is in fact not required: if we assume all the sweets are available immediately, the solution may start constructing unbalanced sequences, but it will not be able to extend the sequence to a larger number of days, so the answer remains the same. The proof is rather standard, but a bit technical, so we will skip it.</p>
+</body>
+</html>

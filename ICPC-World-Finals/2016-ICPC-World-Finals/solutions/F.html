@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Longest Rivers (Solution) — ACM ICPC World Finals 2016</title>
+<style>
+
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2016</p>
+  <h1>Problem F: Longest Rivers</h1>
+</header>
+
+<p>Shortest judge solution: 1220 bytes. Shortest team solution (during contest): 1888 bytes.</p>
+
+<p>This was conceptually one of the hardest problems in the problemset, although the implementation was actually relatively simple.</p>
+<p>Let’s begin by focusing on a single river. So, we pick a river and want to push it as high up the ranklist as possible. Obviously, we always choose this river’s name at any confluence, all the way to the sea. After this, our river has some length L. Now, the problem is to choose other river names at confluences, so that as few rivers as possible end up longer than L.</p>
+<p>Let’s call a river long if it’s longer than L, and short if it’s not. We aim to minimize the number of long rivers (which is equivalent to minimizing the places where a short river becomes long). Let’s look at any confluence not involving our chosen river.</p>
+<ul><li>If at least one of the rivers entering the confluence is long, then we can safely choose it to continue (and terminate the other river).</li><li>If both rivers are short, we can always choose the shorter of the two.</li></ul>
+<p>This gives us an O(n<sup>2</sup>) solution to the problem — for each river, calculate its length, and then apply the algorithm above to determine the length of all other rivers.</p>
+<p>Now, let’s work on making this work for all rivers at one go.</p>
+<p>First, observe that the value L for any given river is simply the distance from the source of this river to the sea. This can be calculated by a standard tree recursion going from the sea in O(n) time for all the rivers.</p>
+<p>Now, for each river R, we aim to answer the question “If we always choose R as the river at the confluences on its path to the sea, how many rivers of length larger than L do we have to form?”. This question is difficult to answer for all the rivers at the same time. However, it is actually equivalent to the question “How many rivers of length larger than L do we have to form?” with no additional constraints. To see this, take the optimal naming choice to get as few as possible rivers longer than L described above. Take any confluence where we did not choose the name R. Notice that if we choose the name R at this confluence instead, the number of long rivers does not grow — since no matter how many times we choose R, it is not going to become longer than L, and the lengths of other rivers could only have decreased. Thus, what we have to answer is “how many rivers longer than L do we have to form?” for each value L. We will answer all such questions at one go, ordered by increasing L.</p>
+<p>At each time we will keep the current value L. Additionally, for each confluence point and each river source, we will remember it to be in one of the three states:</p>
+<ul><li>At least one of the rivers entering this confluence is long (river sources cannot be in this state). This confluence is irrelevant from the point of view of rivers starting to be long.</li><li>Both rivers entering this confluence are short, or it’s a river source, but the resulting river will become long before it reaches the next confluence point.</li><li>Both rivers entering this confluence are short, or it’s a river source, and the resulting river is still short when it reaches the next confluence point.</li></ul>
+<p>In the second and third cases, we choose the shorter of the two rivers entering the confluence to continue.</p>
+<p>We begin with L = 0. All river sources are in the second state, all the confluences are in the first state, and we have N long rivers in the system.</p>
+<p>When L grows, the only thing that changes is that rivers that were long with the previous value of L can now become short, possibly changing the state of some confluence point or river source from the second to the third; this can in turn change the state of some confluence from the first to the second case. This, in turn, can lead us to reconsider the choice of the river we continue in the confluence point (and possibly trickle down to changing the state of a confluence downstream, and so on).</p>
+<p>So, we will do the following. We will keep the states as described above. Additionally, for each point in the second state, we will identify the value of L at which it will flip over to the third state, and keep a priority queue of those points. We repeatedly pick the lowest L value, flip the state of the point, and propagate changes downstream. Note that a single vertex will change state from the first to the second only once, and from the second to the third only once — so the total runtime will be O(n log n), where the log is for priority queue retrieval and insertion.</p>
+</body>
+</html>

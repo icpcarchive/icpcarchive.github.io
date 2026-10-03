@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Calling Circles — The Twentieth Annual ACM International Collegiate Programming Contest Finals (1996)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The Twentieth Annual ACM International Collegiate Programming Contest Finals · Problem B</p>
+  <h1>Calling Circles</h1>
+  <p class="meta">Input file: circles.in</p>
+</header>
+
+<p>If you’ve seen television commercials for US long-distance phone companies lately, you’ve noticed that AT&amp;T and MCI have been spending a lot of money trying to convince people that they provide the best service at the lowest cost. MCI has “calling circles.” You provide a list of people that you call most frequently. If you call someone in your calling circle (who is also an MCI customer), you get bigger discounts than if you call outside your circle. AT&amp;T points out that you only get the big discounts for people in your calling circle, and if you change who you call most frequently, it’s up to you to add them to your calling circle.</p>
+
+<p>LibertyBell Phone Co. is a new company that thinks they have the calling plan that can put both MCI and AT&amp;T out of business. LibertyBell has calling circles, but they figure out your calling circle for you. This is how it works. LibertyBell keeps track of all phone calls. Your calling circle consists of all people whom you call and who call you, either directly or indirectly. For example, if Ben calls Alexander, Alexander calls Dolly, and Dolly calls Ben, they are all within the same circle. Also, if Dolly also calls Benedict and Benedict calls Dolly, then Benedict is in the same calling circle as Dolly, Ben, and Alexander. Finally, if Alexander calls Aaron but Aaron doesn’t call Alexander, Ben, Dolly, or Benedict, then Aaron is not in the circle.</p>
+
+<p>You’ve been hired by LibertyBell to write the program to determine calling circles given a log of phone calls between people.</p>
+
+<h2>Input</h2>
+
+<p>The input file will contain one or more data sets. Each data set begins with a line containing two integers, n and m. The first integer, n, represents the number of different people who are in the data set. The maximum value for n is 25. The remainder of the data set consists of m lines, each representing a phone call. Each call is represented by two names, separated by a single space. Names are first names only (unique within a data set) and consist of only alphabetic characters; no name is longer than 25 letters. For example, if Ben called Dolly, it would be represented in the data file as</p>
+<pre>Ben Dolly</pre>
+<p>Input is terminated by values of zero (0) for n and m.</p>
+
+<h2>Output</h2>
+
+<p>For each input set, output a header line with the data set number, followed by a line for each calling circle in that data set. Each calling circle line contains the names of all the people within the circle, separated by comma-space (a comma followed by a single space). Consecutive output sets are separated by a single blank line.</p>
+
+<h3>Sample Input</h3>
+<pre>5 6
+Ben Alexander
+Alexander Dolly
+Dolly Ben
+Dolly Benedict
+Benedict Dolly
+Alexander Aaron
+14 34
+John Aaron
+Aaron Benedict
+Betsy John
+Betsy Ringo
+Ringo Dolly
+Benedict Paul
+John Betsy
+John Aaron
+Benedict George
+Dolly Ringo
+Paul Martha
+George Ben
+Alexander George
+Betsy Ringo
+Alexander Stephen
+Martha Stephen
+Benedict Alexander
+Stephen Paul
+Betsy Ringo
+Quincy Martha
+Ben Patrick
+Betsy Ringo
+Patrick Stephen
+Paul Alexander
+Patrick Ben
+Stephen Quincy
+Ringo Betsy
+Betsy Benedict
+Betsy Benedict
+Betsy Benedict
+Betsy Benedict
+Betsy Benedict
+Betsy Benedict
+Quincy Martha
+0 0</pre>
+
+<h3>Output for the Sample Input</h3>
+<pre>Calling circles for data set 1:
+Ben, Alexander, Dolly, Benedict
+Aaron
+
+Calling circles for data set 2:
+John, Betsy, Ringo, Dolly
+Aaron
+Benedict
+Paul, George, Martha, Ben, Alexander, Stephen, Quincy, Patrick</pre>
+
+<footer>
+  The Twentieth Annual ACM International Collegiate Programming Contest Finals · Problem B · Calling Circles
+</footer>
+
+</body>
+</html>

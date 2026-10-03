@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem D: Chips Challenge — ICPC 2011 World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC 2011 World Finals · Problem D</p>
+  <h1>Chips Challenge</h1>
+  <p class="meta">Problem ID: chips</p>
+</header>
+
+
+<p>A prominent microprocessor company has enlisted your help to lay out some
+interchangeable components (widgets) on some of their computer chips. Each
+chip’s design is an N × N square of slots. One slot can hold a single component,
+and you are to try to fit in as many widgets as possible.</p>
+
+<p>Modern processor designs are complex, of course. You unfortunately have
+several restrictions:</p>
+
+<ul>
+  <li>Some of the slots are disabled.</li>
+  <li>Some of the slots are already occupied by other components and cannot be
+  used for widgets.</li>
+  <li>There are sibling memory buses connected to the horizontal and vertical
+  edges of the chip and their bandwidth loads need to match. As such, there must
+  be exactly as many components in the first row as in the first column, exactly
+  as many in the second row as in the second column, and so on. Component counts
+  include both the components already specified on the chip and the added
+  widgets.</li>
+  <li>Similarly, the power supply is connected at the end of each row and column.
+  To avoid hot spots, any given row or column must have no more than A/B of the
+  total components on the chip for a given A and B.</li>
+</ul>
+
+<p>A specification for a chip is N lines of N characters, where ‘.’ indicates an
+open slot, ‘/’ indicates a disabled slot, and ‘C’ indicates a slot already
+occupied by a component. For example:</p>
+
+<pre>CC/..
+././/
+..C.C
+/.C..
+/./C/</pre>
+
+<p>If no more than 3/10 of the components may be in any one row or column, the
+maximum number of widgets that can be added to this 5 × 5 chip is 7. A possible
+arrangement is below, where ‘W’ indicates a widget added in an open slot.</p>
+
+<pre>CC/W.
+W/W//
+W.C.C
+/.CWW
+/W/C/</pre>
+
+<h2>Input</h2>
+
+<p>The input consists of several test cases. Each case starts with a line
+containing three integers: The size of the chip N (1 ≤ N ≤ 40), and A and B
+(1 ≤ B ≤ 1000, 0 ≤ A ≤ B) as described above. Each of the following N lines
+contains N characters describing the slots, one of ‘.’, ‘/’ or ‘C’, as described
+above.</p>
+
+<p>The last test case is followed by a line containing three zeros.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, display a single line beginning with the case number. If
+there is a solution, display the maximum number of widgets that can be added to
+the chip. Display “impossible” if there is no solution.</p>
+
+<p>Follow the format of the sample output.</p>
+
+<h3>Sample input</h3>
+<pre>2 1 1
+/.
+//
+2 50 100
+/.
+C/
+2 100 100
+./
+C.
+5 3 10
+CC/..
+././/
+..C.C
+/.C..
+/./C/
+5 2 10
+CC/..
+././/
+..C.C
+/.C..
+/./C/
+0 0 0</pre>
+
+<h3>Output for the Sample Input</h3>
+<pre>Case 1: 0
+Case 2: 1
+Case 3: impossible
+Case 4: 7
+Case 5: impossible</pre>
+
+
+<footer>
+  ICPC 2011 World Finals Problem D: Chips Challenge
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Say Cheese — 25th Annual ACM ICPC World Finals (2001)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">25th Annual ACM ICPC World Finals · Problem B</p>
+  <h1>Say Cheese</h1>
+  <p class="meta">Input: cheese.in</p>
+</header>
+
+<p>Once upon a time, in a giant piece of cheese, there lived a cheese mite
+named Amelia Cheese Mite. Amelia should have been truly happy because she was
+surrounded by more delicious cheese than she could ever eat. Nevertheless, she
+felt that something was missing from her life.</p>
+
+<p>One morning, her dreams about cheese were interrupted by a noise she had
+never heard before. But she immediately realized what it was — the sound of a
+male cheese mite, gnawing in the same piece of cheese! (Determining the gender
+of a cheese mite just by the sound of its gnawing is by no means easy, but all
+cheese mites can do it. That&rsquo;s because their parents could.)</p>
+
+<p>Nothing could stop Amelia now. She had to meet that other mite as soon as
+possible. Therefore she had to find the fastest way to get to the other mite.
+Amelia can gnaw through one millimeter of cheese in ten seconds. But it turns
+out that the direct way to the other mite might not be the fastest one. The
+cheese that Amelia lives in is full of holes. These holes, which are bubbles
+of air trapped in the cheese, are spherical for the most part. But
+occasionally these spherical holes overlap, creating compound holes of all
+kinds of shapes. Passing through a hole in the cheese takes Amelia essentially
+zero time, since she can fly from one end to the other instantly. So it might
+be useful to travel through holes to get to the other mite quickly.</p>
+
+<p>For this problem, you have to write a program that, given the locations of
+both mites and the holes in the cheese, determines the minimal time it takes
+Amelia to reach the other mite. For the purposes of this problem, you can
+assume that the cheese is infinitely large. This is because the cheese is so
+large that it never pays for Amelia to leave the cheese to reach the other
+mite (especially since cheese-mite eaters might eat her). You can also assume
+that the other mite is eagerly anticipating Amelia&rsquo;s arrival and will not
+move while Amelia is underway.</p>
+
+<h2>Input</h2>
+
+<p>The input file contains descriptions of several cheese mite test cases.
+Each test case starts with a line containing a single integer n (0 &le; n &le;
+100), the number of holes in the cheese. This is followed by n lines
+containing four integers x<sub>i</sub>, y<sub>i</sub>, z<sub>i</sub>, r<sub>i</sub>
+each. These describe the centers (x<sub>i</sub>, y<sub>i</sub>, z<sub>i</sub>)
+and radii r<sub>i</sub> (r<sub>i</sub> &gt; 0) of the holes. All values here
+(and in the following) are given in millimeters.</p>
+
+<p>The description concludes with two lines containing three integers each.
+The first line contains the values x<sub>A</sub>, y<sub>A</sub>, z<sub>A</sub>,
+giving Amelia&rsquo;s position in the cheese, the second line containing
+x<sub>O</sub>, y<sub>O</sub>, z<sub>O</sub>, gives the position of the other
+mite.</p>
+
+<p>The input file is terminated by a line containing the number &ndash;1.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, print one line of output, following the format of the
+sample output. First print the number of the test case (starting with 1). Then
+print the minimum time in seconds it takes Amelia to reach the other mite,
+rounded to the closest integer. The input will be such that the rounding is
+unambiguous.</p>
+
+<h3>Sample Input 1</h3>
+<pre>1
+20 20 20 1
+0 0 0
+0 0 10
+1
+5 0 0 4
+0 0 0
+10 0 0
+-1</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Cheese 1: Travel time = 100 sec
+Cheese 2: Travel time = 20 sec</pre>
+
+
+<footer>
+  25th Annual ACM International Collegiate Programming Contest World Finals (2001) ·
+  Problem B: Say Cheese · The 2001 ACM Programming Contest World Finals sponsored by IBM
+</footer>
+
+</body>
+</html>

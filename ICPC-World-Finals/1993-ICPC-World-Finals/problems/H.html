@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: Scanner — 1993 ACM International Collegiate Programming Contest Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">1993 ACM International Collegiate Programming Contest Finals · Problem H</p>
+  <h1>Scanner</h1>
+</header>
+
+<p>A body scanner works by scanning a succession of horizontal slices through the body; the slices are imaged one at
+a time. The image slices can be reassembled to form a three dimensional model of the object. Write a program to
+construct a two dimensional image slice using data captured during the scan.</p>
+
+<figure>
+  <img src="images/H-1.png" alt="">
+</figure>
+
+<p>The scanner consists of four arrays of sensors arranged around a 10×15 matrix. Array 1 consists of 10
+sensors pointing to the right, array 2 has 24 sensors pointing diagonally to the top right, array 3 has 15
+sensors pointing to the top and array 4 has 24 sensors pointing to the top left. Each sensor records the thickness
+of that portion of the object directly in front of that sensor.</p>
+
+<p>Readings from the arrays of sensors are recorded in counterclockwise order. Within an array of sensors,
+data are also recorded counterclockwise. A complete scan consists of 73 readings.</p>
+
+<h2>Input</h2>
+
+<p>The input file begins with a line with an integer indicating the number of image slices to follow. For each image
+slice, there are separate lines with 10, 24, 15, and 24 integers representing sensor data from sensor arrays 1
+through 4 respectively. The order of the readings is indicated in the diagram. Although it is possible for the result
+of a scan to be ambiguous, the data supplied to you will have no ambiguous interpretation.</p>
+
+<h2>Output</h2>
+
+<p>For each slice, your program should print 10 lines of 15 cells. To indicate that the cell represents a part of the
+object, print a hash character (#) for the cell; to indicate that the cell is not a part of the object, print a period (.).
+Between successive output image slices, print a blank line.</p>
+
+<h3>Sample Input <i>1</i> (describing object in diagram above)</h3>
+<pre>1
+10 10 6 4 6 8 13 15 11 6
+0 1 2 2 2 2 4 5 5 6 7 6 5 6 6 5 5 6 6 3 2 2 1 0
+2 4 5 5 7 6 7 10 10 10 7 3 3 5 5
+0 0 1 3 4 4 4 4 3 4 5 7 8 8 9 9 6 4 4 2 0 0 0 0 0</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>.##########....
+.##########....
+....######.....
+......####.....
+.......####..##
+.......########
+#####..########
+###############
+..#########..##
+....######.....</pre>
+
+<footer>
+  1993 ACM International Collegiate Programming Contest Finals · Problem H · Scanner
+</footer>
+
+</body>
+</html>

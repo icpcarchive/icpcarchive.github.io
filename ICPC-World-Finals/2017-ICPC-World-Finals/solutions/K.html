@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem K: Tarot Sham Boast (Solution) — ACM ICPC World Finals 2017</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2017</p>
+  <h1>Problem K: Tarot Sham Boast</h1>
+</header>
+
+<p>Shortest judge solution: 473 bytes. Shortest team solution (during contest): 585 bytes.</p>
+<p>Python solutions by the judges: both Pypy and CPython</p>
+
+<p>This problem has a beautiful solution that is not impossible to get an intuition about, but hard to actually prove correct.</p>
+
+<p>A naive way of computing the probability that a string X of length ` appears in a uniformly random string of length n is to use the principle of inclusion-exclusion:</p>
+
+<p style="text-align: center">p(X) = ∑<sub>I ⊆[n−`+1]</sub> (−1)<sup>|I|+1</sup> Pr[there is an occurence of X at all positions in I]</p>
+
+<p>For I = {i} consisting of a single element, the probability in the sum is simple 3<sup>−`</sup> – the probability that characters i, i + 1, . . . , i + ` − 1 match X. Thus the first-order contribution from index sets I of size 1 to p(X) is simply (n − ` + 1)/3<sup>`</sup>, regardless of what X looks like.</p>
+
+<p>For the second-order terms I = {i, j}, things are a bit more interesting. If j ≥ i + ` then the probability is simply 3<sup>−2`</sup> since the two matches of X involve disjoint positions. But for j &lt; i + ` however, the probability is 0 unless j − i is an overlap of X, where we say that t is an overlap of X if the prefix of the first ` − t characters of X equals the suffix of the last ` − t characters of X. If t is an overlap of X, then the set I = {i, i + t} contributes −1/3<sup>2`−t</sup> to the expression for p(X) above.</p>
+
+<p>This hints at the following intuition: strings X with more overlaps should have smaller values of p(X). Among different overlap values t, higher values of t seems to result in smaller probabilities, because the subtracted terms 1/3<sup>2`−t</sup> are larger. So a somewhat natural hypothesis is that if we write the overlaps of X in decreasing order, then strings with lexicographically smaller overlap sequences have higher likelihood.</p>
+
+<p>However, this is just an intuition, and it is not at all clear what happens with higher-order terms – the degree-3 terms (having |I| = 3) give positive contributions to p(X) and more overlaps will by a similar reasoning cause these to be larger. It turns out that the hypothesis above is correct, and that lexicographically smaller overlap sequences leads to larger probabilities. We only have a very long and non-intuitive proof of this, which we don’t include here. But since several people have expressed an interest in it, it has been made available as a separate document here: http://www.csc.kth.se/~austrin/icpc/tarotshamproof.pdf.</p>
+
+<p>As an example, consider the two strings X = RPSRPSRPS and Y = RPRRPRRPR. The overlaps of X are Ov(X) = (6, 3, 0). The overlap sequence of Y is Ov(Y) = (6, 3, 1, 0). This means that in general, X has a higher likelihood of appearing than Y (since (6, 3, 0) is lexicographically smaller than (6, 3, 1, 0)).</p>
+
+<p>However, there was an additional mistake that could be made. If n ≤ 2` − 2, only overlaps t ≥ 2 can come into play. This means that for such small values of n, the strings X and Y are actually equi-probable. In general, we need to ignore any overlap values that are smaller than 2` − n when constructing the overlap sequence.</p>
+
+<p>Overlap sequences can be constructed in O(`) time using KMP or hashing, leading to an O(`s log s) time algorithm.</p>
+</body>
+</html>

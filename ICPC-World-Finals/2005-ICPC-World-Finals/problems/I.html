@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem I: Workshops &mdash; ICPC World Finals 2005</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2005 &middot; Problem I</p>
+  <h1>Workshops</h1>
+  <p class="meta">Input file: workshops.in</p>
+</header>
+
+
+<p>The first Californian Conference on Holism took place back in 1979 in San Francisco. The term "Californian" was a slight exaggeration, as all 23 participants actually lived in San Francisco. Several years later, in 1987, the conference was truly Californian, with 337 participants from all over the state. Since then, the number of participants has been growing like the size of memory chips. In 1993 the conference was renamed the American Conference on Holism (2549 participants), and a second renaming (World Conference on Holism) followed in 1997, when the number of participants from all over the world had grown to 9973. The conference obtained its present name (Galactic Conference on Holism) in 2003 after some discussion as to whether or not the word Galactic was intended to exclude extragalactic life forms. Still the next year, all registered participants were terrestrial&mdash;though a few participants positively reported to have sensed extraterrestrial presence.</p>
+
+<p>The number of workshops grew with the number of participants. For the upcoming conference, the organization has to face some down to earth but very nasty scheduling problems. For the 2005 conference the board has decided to have no more than 1000 workshops concurrently. Nevertheless they had to rent every hall or classroom they could lay their hands on. Some of these rooms are available for a restricted time only.</p>
+
+<p>In the morning of the first day the opening meeting takes place in a football stadium, and in the afternoon the participants attend workshops. Before lunch each participant has to indicate which workshop he or she wants to join that afternoon. The organizing staff then has a list of all workshops, including the duration and the number of participants for each workshop. They also have a list of all available rooms, with the capacity of each room, and the time this specific room must be cleared. With this information the staff must schedule each workshop in a room of sufficient capacity and sufficient availability in time. As this problem is not necessarily solvable, some overflow capacity is supplied by tents in the football stadium. These tents have plenty of capacity, but they are unpleasantly warm and noisy. So the organizing staff wants the schedule to minimize the number of tent workshops&mdash;that is, workshops that are not assigned to a room. If there are multiple solutions that minimize the number of tent workshops, the staff wants to minimize the number of participants attending tent workshops.</p>
+
+<p>We ask you to supply such a schedule (preferably before lunch is over).</p>
+
+<h2>Input</h2>
+
+<p>The input file contains several trials. Each trial consists of two parts: the list of workshops, and the list of rented rooms.</p>
+
+<p>The list of workshops starts with a line containing the number of workshops w (0 &lt; w &le; 1000). Each of the next w lines contains two numbers, describing a workshop. The first number is the number p of participants (0 &lt; p &le; 100), and the second number is the duration d of the workshop in minutes (0 &lt; d &le; 300). For your convenience, other details of the workshops are omitted. All workshops start at 14:00.</p>
+
+<p>The list of rented rooms starts with a line containing the number of rented rooms r (0 &lt; r &le; 1000). Each of the following r lines contains the description of a rented room. A line describing a rented room contains the number s of seats in the room (0 &lt; s &le; 100), followed by the time when the room must be cleared, in the format hh:mm where hh represents the hour and mm represents the minute, using a 24-hour clock. All the rooms are available starting at 14:00. All times when rooms must be cleared are between 14:01 and 23:59, inclusive.</p>
+
+<p>The input is terminated by a line consisting of the integer zero.</p>
+
+<h2>Output</h2>
+
+<p>For each trial in the input file the output must contain a line consisting of the trial number, the number of tent workshops, and the number of participants attending tent workshops. Follow the format shown in the sample output.</p>
+
+<h3>Sample Input 1</h3>
+<pre>1
+20 60
+1
+30 16:00
+2
+20 60
+50 30
+1
+30 14:50
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Trial 1:  0 0
+Trial 2:  2 70</pre>
+
+
+<footer>
+  ICPC World Finals 2005 &mdash; Problem I: Workshops
+</footer>
+
+</body>
+</html>

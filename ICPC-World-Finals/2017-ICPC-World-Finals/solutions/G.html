@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Replicate Replicate Rfplicbte (Solution) — ACM ICPC World Finals 2017</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2017</p>
+  <h1>Problem G: Replicate Replicate Rfplicbte</h1>
+</header>
+
+<p>Shortest judge solution: 1637 bytes. Shortest team solution (during contest): 1440 bytes.</p>
+<p>Python solutions by the judges: none</p>
+
+<p>The judges had this pegged as a medium difficulty problem but the teams apparently felt otherwise. There are a few small observations to make, in order to understand how to solve the problem.</p>
+
+<p>The first thing to realize is that when applying a step of the process, the bounding box of the pattern always grows by at least one step in every dimension, even if there is an error. Equivalently: without errors, the resulting bounding box after an evolution step will have at least 2 filled cells on every side. In other words, when going backwards, the bounding box will shrink by at least one step in each dimension for every step. This means that the total number of iterations to go backwards can be at most min((n + 1)/2, (m + 1)/2).</p>
+
+<p>Suppose for a moment that no errors happen. Then we can simply reconstruct the previous pattern X from the current pattern Y row by row – if we’re reconstructing cell (r, c), and have already reconstructed all rows r<sup>0</sup> &lt; r, and all cells (r<sup>0</sup>, c<sup>0</sup>) with r<sup>0</sup> = r and c<sup>0</sup> &lt; c, then we can compute the previous value X<sub>r,c</sub> by Y<sub>r−1,c−1</sub> ⊕ X<sub>r−2,c−2</sub> ⊕ X<sub>r−2,c−1</sub> ⊕ X<sub>r−2,c</sub> ⊕ X<sub>r−1,c−2</sub> ⊕ X<sub>r−1,c−1</sub> ⊕ X<sub>r−1,c</sub> ⊕ X<sub>r,c−2</sub> ⊕ X<sub>r,c−1</sub> (where ⊕ is XOR a.k.a. addition mod 2). Proceeding in this way we can reconstruct the previous step.</p>
+
+<p>OK, that’s easy, but what if there are errors, how do we even detect that? Suppose that cell (r, c) has an error. By the observation above, this will cause the reconstruction of cell X<sub>r+1,c+1</sub> to get the wrong value. This will in turn cause X<sub>r+1,c+2</sub> to get the wrong value. However, then X<sub>r+1,c+3</sub> will actually get the correct value, because the two errors from X<sub>r+1,c+1</sub> and X<sub>r+1,c+2</sub> cancel out. Then similarly X<sub>r+1,c+4</sub> and X<sub>r+1,c+5</sub> will get the wrong value, and X<sub>r+1,c+6</sub> will get the right value, and it will continue cycling like that with two incorrect cells followed by one correct cell. That means that when we get to the end of the row, we can verify that the first two cells that should be outside the bounding box (by the observation above) become empty. If an error happened in row r, at least one of these two cells will get an error and become non-empty. When this happens, we can run the reconstruction again, but column by column instead of row by row, which allows to detect that an error happened in row c. We have then found the error, can undo it, and then run the reconstruction step again to get to the previous pattern.</p>
+
+<p>The process ends when the pattern is either a single filled cell, or if the reconstruction process still finds errors after the first error is fixed. Going back one iteration using the above process takes O(n · m) time, so by the observation above on the maximum number of iterations, this results in an O((n + m)<sup>3</sup>) time algorithm.</p>
+
+<p>Note that there are actually no choices to make in how to do the reconstruction, meaning that the answer is in fact uniquely determined (though figuring this out was part of solving the problem).</p>
+</body>
+</html>

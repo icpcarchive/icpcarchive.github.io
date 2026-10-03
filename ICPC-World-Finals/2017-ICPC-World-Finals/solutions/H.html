@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: Scenery (Solution) — ACM ICPC World Finals 2017</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2017</p>
+  <h1>Problem H: Scenery</h1>
+</header>
+
+<p>Shortest judge solution: 1753 bytes. Shortest team solution (during contest): N/A bytes.</p>
+<p>Python solutions by the judges: none</p>
+
+<p>OK, this is the difficult problem of the set...</p>
+
+<p>This problem really tempts you to try some sort of a greedy solution. Let us see how that would go. Let us process time from the beginning. At any point in time, when we decide to take a photograph, we should – out of all the photographs we can currently take – choose the one for which the end time is the smallest (by a standard interchange argument).</p>
+
+<p>The tricky part is to choose whether you should actually start taking a photograph. Consider an input with two photographs to take. The first one will be available in the range [0, 5], the second in the range [1, 3], and the time to take a single photograph is 2. Then, at time zero, we will fail if we start to take the first photograph. On the other hand, if the second range was [2, 4], we would fail if we didn’t start a photograph at zero. So, some sort of smarts are going to be needed.</p>
+
+<p>We will describe two solutions. The first, which we will describe in some detail, comes from the paper “Scheduling Unit-time Tasks With Arbitrary Release Times and Deadlines” by Garey, Johnson, Simons, and Tarjan (SICOMP, 1981). In that paper it is shown that the problem can even be solved in O(n log n), but we felt that getting a quadratic time solution was hard enough, and that is what we describe here.</p>
+
+<p>We are going to adapt the naive solution above. Notice that in order to make the photograph with the range [1, 3] be even feasible, regardless of all the other photographs, we cannot start any photograph in the open range (−1, 1) – if we do, it will overlap the range [1, 3], and we will not be able to fit [1, 3] in. We will try to generalize that observation.</p>
+
+<p>Take any interval [s, e], and consider all the photographs which become available no earlier than s, and become unavailable no later than e. Then, all these photographs have to fit into the interval [s, e]. We will now totally disregard their constraints (except that they have to be taken somewhere in [s, e]), and try to take them as late as possible. Note that since we disregard their constraints, they are all identical and we can just schedule them greedily. Let us look at the time C when we started taking the first (earliest) of those photographs. However we schedule these photographs in the interval, the first start time will not be later than C. If C &lt; s, then we will simply not be able to take all the photographs. The interesting case is if C − s &lt; t. Then, if any photograph gets started in the open interval (C − t, s), we will be unable to take all the photos from the interval [s, e], since we will not be able to take the first of them at C or before.</p>
+
+<p>This means we can mark the interval (C − t, s) as “forbidden”, and no photograph can ever be started then. We can also take any forbidden intervals we found so far into account when doing the greedy scheduling from the back (which might help us create more forbidden intervals).</p>
+
+<p>The full algorithm works as follows. We order all the availability times of all the photographs from latest to earliest. For each such time s, we iterate over all the end times e of the photographs, and for each interval [s, e] we run the algorithm above – take all the photographs that have to be taken fully within [s, e], ignore other constraints on them, assign times to them as late as possible (taking into account already created forbidden regions), and find the time C, which is the earliest possible start time of the first of those photographs. If C &lt; s, return NO, and if C − s &lt; t, produce a new forbidden region ending in s.</p>
+
+<p>The above, implemented naively, is pretty slow. First, notice that while as written we can have a quadratic number of forbidden regions, it is trivial to collapse all the forbidden regions ending at any s into one (the one corresponding to the smallest C). Also, note that when we move from s to the previous s<sub>0</sub>, we don’t have to run the time assignment from scratch – we can just take the previous C value, and if the photograph starting at s<sub>0</sub> ends before some e, we just have to add one more photograph before the C (by default, at C − t, but possibly earlier if C − t is in a forbidden region). This allows us to progress through this stage in O(n<sup>2</sup>) time.</p>
+
+<p>Then, after this is done, we just run the standard “greedy” algorithm, taking the forbidden regions into account. The tricky part, of course, is to prove that this actually solves the problem. Obviously, if the greedy algorithm succeeds in taking the photographs, the answer is YES. Now, we will prove that if the greedy algorithm ends up taking a photograph after its end time, then we would have actually failed in the first phase.</p>
+
+<p>Assume the greedy algorithm did take a photograph incorrectly. First, notice that if there are idle times (that is, times when no photograph is being taken by the greedy), we can assume they are all within forbidden regions. If there was an idle period without a forbidden region, let’s say at time X, it means that we have had no photograph available to take. So, all the photographs that were available before X got assigned and ended before X, and so they do not affect the photographs that become available after X. So, we can just remove these photographs from the set altogether and solve the smaller problem.</p>
+
+<p>Now, assume the greedy algorithm failed. Take the first photograph P<sub>i</sub>, with a deadline of e<sub>i</sub>, that got scheduled so it ends after e<sub>i</sub>. If no photograph that got scheduled earlier has a deadline later than e<sub>i</sub>, it means that the photographs up to P<sub>i</sub> actually failed to fit into the range s<sub>0</sub>, e<sub>i</sub> – and so for that interval the first phase would’ve returned NO. If there is a photograph that has a deadline later than e<sub>i</sub>, let P<sub>j</sub> be the latest of those photographs. Consider all the photographs P<sub>k1</sub>, . . . , P<sub>kl</sub> that got scheduled between P<sub>j</sub> and P<sub>i</sub>, and let s be the earliest time at which any of those photographs (including P<sub>j</sub>) became available. Consider the first phase for the interval s, e<sub>i</sub> – it had to have failed (because the greedy solution failed to put these photographs into this interval).</p>
+
+<p>Thus, in all the cases where the greedy algorithm fails, the first phase had to have failed for some interval as well – so, if the first phase finished successfully, we are guaranteed the greedy algorithm will return a correct answer.</p>
+
+<p>An alternative approach, which we will not prove, is an approach where we modify a naive branching approach. Naively, we can process forward through time, and maintain a set of possible states, where a possible state is the time when the photograph currently being taken (if any) ends, and the set of photographs that are available to take, but not yet started. This set of states is potentially exponential in size. We branch out (from all the states where there is no photograph being taken) when a new photograph becomes available, and we branch out when a photograph taking ends (to either not start a new photograph, or to start the one with the earliest deadline from those in the state).</p>
+
+<p>However, it is provable that we can actually have only one state where no photograph is being taken – when the algorithm ends up produces a new “nothing runs” state because some photograph just finished, one of the two states is strictly worse than the other. The proof, and the details of turning this into a quadratic algorithm, are left as an exercise to the reader.</p>
+</body>
+</html>

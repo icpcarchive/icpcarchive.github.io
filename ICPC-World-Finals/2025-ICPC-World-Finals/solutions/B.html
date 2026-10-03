@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Blackboard Game (Solution) — ICPC World Finals 2025</title>
+<style>
+:root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ICPC World Finals 2025</p>
+  <h1>Problem B: Blackboard Game</h1>
+</header>
+<p>Solved by 8 teams.</p>
+<p>First solved after 53 minutes.</p>
+<p>Shortest judge solution: 960 bytes.</p>
+<p>The solution splits into two parts, one for small n and one for large n. Depending on the exact approaches used for the two parts, the cutoff point between them could be taken anywhere between about 200 to 10<sup>5</sup>.</p>
+<p>Given n, create an undirected graph G with the numbers from 1 to n as nodes and add an edge between two numbers if one is a prime multiple of the other. Then an even number k is a winning move iff there exists a maximum matching in this graph that does not use the vertex k. Whichever move the other player makes, we can simply respond with the matched vertex. It is not possible for the other player to select an unmatched vertex at any point, as then the sequence of numbers that were played so far would constitute an augmenting path, contrary to our assumption that the matching was maximal.</p>
+<p>If every maximum matching uses all even numbers, then it is optimal to go second. Suppose the other player opens the game by choosing k. Find any maximum matching (that now necessarily uses k) and follow the same strategy as in the first case. Again, it is impossible for the other player to ever select an unmatched vertex, this time because this would imply that we could change our matching along the alternating path given by the sequence of numbers so far and thus construct a maximum matching that avoids k, giving us another contradiction.</p>
+<p>A maximum matching avoiding a specific vertex can be found by first computing any maximum matching M in G. Then, a vertex k is avoided by some (possibly different) maximum matching if there exists an M-alternating path (a path alternating between edges in M and outside of M) that starts at an unmatched vertex and ends at k).</p>
+<p>If n is small enough, then it is actually feasible to compute the matchings, making use of the fact that G is bipartite, with the two parts being the numbers with an even or odd number of prime factors, respectively. This can be done using the Hopcroft-Karp algorithm (or even using the simpler algorithm that only uses DFS). The observation about how one quickly finds vertices that are outside of some maximum matching is not strictly necessary, as one can also delete the vertices one by one and recompute the matchings.</p>
+<p>For large n, the matching approach is too slow and one needs to actually look at the structure of the game/graph. It turns out that the game is always winning for the first player, and they have a winning strategy based on primes and semiprimes (numbers of the form pq, where p and q are prime numbers). The basic idea is as follows: the first player keeps playing semiprimes pq with n/2 &lt; pq ≤ n, which means that the second player has to choose between its prime factors p and q. Intuitively, the second player will eventually run out of primes, as there are many more semiprimes than primes.</p>
+<p>The following winning strategy works for all n &gt; 176. Select three distinct primes p, q and r in the range (n/4, n/3]. Such primes exist by a generalized version of Bertrand’s postulate. Then the first player has the six semiprimes {2p, 3p, 2q, 3q, 2r, 3r} available to them, while the second player is limited to the five primes {2, 3, p, q, r}. In fact, this strategy is quite similar to the one for the first part. We open the game with the move 2p and then make use of the fact that there exists a perfect matching between the five remaining semiprimes and the five primes.</p>
+<p>Another view of the semiprime strategy is based on creating a graph with the primes as vertices and the semiprimes as edges between them. Then we want to find some edge (2, p), corresponding to a starting move of 2p, such that if that edge is deleted both of its endpoints 2 and p can reach some cycle. The paths from the endpoints to the cycles constitute a winning strategy, because as long as we are following the path, the second player always has only a single prime available (the unvisited endpoint of the current edge), and after a walk around the cycle the second player is out of moves. The strategy from the previous paragraph is just a special case of this approach, with the cycle 2 − q − 3 − r reachable both starting at 2 and starting at p.</p>
+<p>As the problem only asked for a winning move instead of the entire strategy, other approaches were possible for both parts. For the large part, one could generate winning moves using the matching approach and try to look for a pattern. Conversely, if one didn’t find the matching idea for the small part, then it was possible (albeit tricky) to run a heuristic search and hardcode the values into one’s submission.</p>
+</body>
+</html>

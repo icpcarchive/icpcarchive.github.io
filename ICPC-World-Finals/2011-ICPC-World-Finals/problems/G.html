@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Magic Sticks — ICPC 2011 World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC 2011 World Finals · Problem G</p>
+  <h1>Magic Sticks</h1>
+  <p class="meta">Problem ID: magicsticks</p>
+</header>
+
+
+<p>Magic was accepted by all ancient peoples as a technique to compel the help
+of divine powers. In a well-known story, one group of sorcerers threw their
+walking sticks on the floor where they magically appeared to turn into live
+serpents. In opposition, another person threw his stick on the floor, where it
+turned into a serpent which then consumed the sorcerers’ serpents!</p>
+
+
+<p>The only magic required for this problem is its solution. You are given a
+magic stick that has several straight segments, with joints between the segments
+that allow the stick to be folded. Depending on the segment lengths and how they
+are folded, the segments of the stick can be arranged to produce a number of
+polygons. You are to determine the maximum area that could be enclosed by the
+polygons formed by folding the stick, using each segment in at most one polygon.
+Segments can touch only at their endpoints. For example, the stick shown below
+on the left has five segments and four joints. It can be folded to produce a
+polygon as shown on the right.</p>
+
+<figure>
+  <img src="images/G-1.png" alt="">
+</figure>
+
+<h2>Input</h2>
+
+<p>The input contains several test cases. Each test case describes a magic
+stick. The first line in each test case contains an integer n (1 ≤ n ≤ 500)
+which indicates the number of the segments in the magic stick. The next line
+contains n integers S<sub>1</sub>, S<sub>2</sub>, . . . , S<sub>n</sub>
+(1 ≤ S<sub>i</sub> ≤ 1000) which indicate the lengths of the segments in the
+order they appear in the stick.</p>
+
+<p>The last test case is followed by a line containing a single zero.</p>
+
+<h2>Output</h2>
+
+<p>For each case, display its case number followed by the maximum total enclosed
+area that can be obtained by folding the magic stick at the given points.
+Answers within an absolute or relative error of 10<sup>−4</sup> will be
+accepted.</p>
+
+<p>Follow the format of the sample output.</p>
+
+<h3>Sample input</h3>
+<pre>4
+1 2 3 4
+8
+3 4 5 33 3 4 3 5
+0</pre>
+
+<h3>Output for the Sample Input</h3>
+<pre>Case 1: 4.898979
+Case 2: 19.311</pre>
+
+
+<footer>
+  ICPC 2011 World Finals Problem G: Magic Sticks
+</footer>
+
+</body>
+</html>

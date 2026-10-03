@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Pilgrimage — The 30th Annual ACM International Collegiate Programming Contest World Finals (2006)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The 30th Annual ACM International Collegiate Programming Contest World Finals · Problem G</p>
+  <h1>Pilgrimage</h1>
+  <p class="meta">Input file: pilgrimage.in</p>
+</header>
+
+<p>Jack is making a long distance walk with some friends along the old pilgrim road from V&eacute;zelay to Santiago de Compostela. Jack administers money for the group. His administration is quite simple. Whenever an amount (&euro; 60, say) has to be paid for the common good he will pay it, and write in his booklet: PAY 60.</p>
+
+<p>When needed, Jack will ask every member of the group, including himself, to pay an amount (&euro; 50, say) to the collective purse, and write in his booklet: COLLECT 50. If the group size is 7, he collects &euro; 350 in total.</p>
+
+<p>Unfortunately some of the group members cannot participate in the full walk. So sometimes the group will grow, sometimes it will shrink. How does Jack handle these comings and goings of group members in terms of collective money? Suppose, for example, the group size is 7, and that Jack has &euro; 140 in cash, which is &euro; 20 for every group member. If two group members leave, each will receive &euro; 20, and Jack will write in his booklet: OUT 2. If under the same circumstances three new group members arrive, they will each have to pay &euro; 20, and Jack will write: IN 3.</p>
+
+<p>In these cases the amount in cash could easily be divided, without fractions. As a strange coincidence, this happened during the whole trip. Jack never had to make calculations with fractional numbers of euros.</p>
+
+<p>Near the end of the trip, Jack was joined by all his fellow travelers. Nobody was willing to miss the glorious finale of the trip. It was then that Jack tried to remember what the group size had been during each part of the trip. He could not remember.</p>
+
+<p>Given a page of Jack's booklet, could you figure out the size of the group at the beginning of that page?</p>
+
+<h2>Input</h2>
+
+<p>The input file contains several test cases. Each test case is a sequence of lines in Jack&rsquo;s booklet. The first line of each test case will give the number <i>N</i> (0 &lt; <i>N</i> &le; 50) of lines to follow. The next <i>N</i> lines have the format:</p>
+
+<p><code>&lt;keyword&gt; &lt;num&gt;</code>, where</p>
+
+<pre>&lt;keyword&gt; = PAY | COLLECT | IN | OUT</pre>
+
+<p>and <code>&lt;num&gt;</code> is a positive integer, with the following restrictions:</p>
+
+<pre>IN k          k &le; 20
+OUT k         k &le; 20
+COLLECT k     k &le; 200
+PAY k         k &le; 2000</pre>
+
+<p>The last case is followed by a line containing a single zero.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, print a single line describing the size of the group at the beginning of the part of the trip described in the test case. This line contains:</p>
+
+<ul>
+  <li>The word IMPOSSIBLE, if the data are inconsistent.</li>
+  <li>A single number giving the size of the group just prior to the sequence of lines in Jack&rsquo;s booklet, if this size is uniquely determined by the data.</li>
+  <li>Several numbers, in increasing order, separated by spaces, giving the possible sizes of the group, in case the number of solutions is finite, but the solution is not unique.</li>
+  <li>A statement in the format: SIZE &gt;= N, giving a lower bound for the size of the group, in case the number of solutions is infinite. Observe that the inequality SIZE &gt;= 1 always applies, since at least Jack himself did the whole trip.</li>
+</ul>
+
+<h3>Sample Input 1</h3>
+<pre>5
+IN 1
+PAY 7
+IN 1
+PAY 7
+IN 1
+7
+IN 1
+COLLECT 20
+PAY 30
+PAY 12
+IN 2
+PAY 30
+OUT 3
+3
+IN 1
+PAY 8
+OUT 3
+1
+OUT 5
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>IMPOSSIBLE
+2
+3 7
+SIZE &gt;= 6</pre>
+
+<footer>
+  The 30th Annual ACM International Collegiate Programming Contest World Finals &middot; Problem G &middot; Pilgrimage
+</footer>
+
+</body>
+</html>

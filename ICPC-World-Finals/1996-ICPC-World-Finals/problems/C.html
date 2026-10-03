@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem C: Cutting Corners — The Twentieth Annual ACM International Collegiate Programming Contest Finals (1996)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The Twentieth Annual ACM International Collegiate Programming Contest Finals · Problem C</p>
+  <h1>Cutting Corners</h1>
+  <p class="meta">Input file: corner.in</p>
+</header>
+
+<p>Bicycle messengers delivering documents and small items from one office building to another have long been part of the guerrilla transportation services in several major U.S. cities. The cyclists themselves are a rare breed of riders who are notorious for their speed, their disrespect for one-way streets and traffic signals, and their unflinching bravery in facing motorized vehicles and pedestrians alike.</p>
+
+<p>Bicycle messenger services tend to be very competitive, and Billy’s Bicycle Messenger Service is no exception. In order to boost its competitive edge as well as determine its actual expenses, BBMS is developing a new scheme for pricing deliveries that depends in part on the routes messengers travel. You are to write a program to help BBMS determine the minimum distances for various routes.</p>
+
+<p>The following assumptions simplify your task:</p>
+<ul>
+  <li>Messengers can ride their bicycles anywhere at ground level except inside buildings.</li>
+  <li>Ground floors of buildings consist of rectangles. If two rectangles making up ground floors touch, they share interior space. In that case, they are considered to be part of the same building.</li>
+  <li>Two different buildings do not touch, although they can be quite close. (Bicycle messengers— skinny to a fault—can travel between any two different buildings.)</li>
+  <li>Starting and stopping points for any given trip are never in the interiors of buildings.</li>
+  <li>It is always possible to travel from the starting to stopping point for each trip.</li>
+</ul>
+
+<p>Input for your program will be several scenarios of bicycle delivery trips. Each scenario is a bird’s-eye snapshot showing the locations of the buildings and the starting and ending points for a route (all measured with respect to a hypothetical infinite square grid). The picture below is a typical snapshot of buildings, which are shaded, and the route’s starting and stopping points. All are superimposed on a grid.</p>
+
+<figure>
+  <img src="images/C-1.png" alt="">
+  <figcaption>A typical snapshot of buildings, which are shaded, and the route’s starting and stopping points</figcaption>
+</figure>
+
+<p>The input file represents several snapshots. Input for each snapshot consists of lines as follows:</p>
+
+<table>
+  <tr><td>First line:</td><td>n</td><td>The number of rectangles comprising buildings in the snapshot (an integer greater than or equal to 0)</td></tr>
+  <tr><td>Second line:</td><td>x<sub>1</sub> y<sub>1</sub> x<sub>2</sub> y<sub>2</sub></td><td>The x- and y-coordinates of the starting and stopping points of the route.</td></tr>
+  <tr><td>Remaining n lines:</td><td>x<sub>1</sub> y<sub>1</sub> x<sub>2</sub> y<sub>2</sub> x<sub>3</sub> y<sub>3</sub></td><td>The x- and y-coordinates of three vertices of the rectangle representing a rectangular part of a building.</td></tr>
+</table>
+
+<p>The x- and y-coordinates of all input data are real numbers between 0 and 1000 inclusive. Successive coordinates on a line are separated by one or more blanks. The end of all input is signified by a “First line” with a negative number of rectangles.</p>
+
+<p>To avoid problems with real precision, the input data set restricts all coordinates to be between 0 and 1000 inclusive. The interior enclosed by any two intersecting rectangles will be at least large enough to contain a square of .01 unit on a side. In addition, two buildings that do not intersect will be at least .01 unit apart.</p>
+
+<p>Output for each snapshot is the number of the input record (snapshot #1, snapshot #2, etc.) and the distance of the shortest path from the starting to stopping points that does not go through the interior of any building. Diasance should be shown with two digits to the right of the decimal. Output for successive snapshots should be separated by blank lines.</p>
+
+<p>The following input data file corresponds to the single snapshot from the illustration on the opposite side.</p>
+
+<h3>Sample Input</h3>
+<pre>5
+6.5   9            10    3
+1     5            3     3        6 6
+5.25 2             8     2        8 3.5
+6     10           6     12       9 12
+7     6            11    6        11 8
+10    7            11    7        11 11
+-1</pre>
+
+<h3>Output for the Sample Input</h3>
+<pre>Snapshot #:1
+   route distance: 7.28</pre>
+
+<footer>
+  The Twentieth Annual ACM International Collegiate Programming Contest Finals · Problem C · Cutting Corners
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Undecodable Codes — The 2002 ACM Programming Contest World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">2002 ACM Programming Contest World Finals · Problem B</p>
+  <h1>Undecodable Codes</h1>
+  <p class="meta">Input: codes.in</p>
+</header>
+<p>Phil Oracle has a unique ability that makes him indispensable at the National Spying Agency. His colleagues can bring him any new binary code and he can tell them immediately whether the code is uniquely decodable or not. A code is the assignment of a unique sequence of characters (a codeword) to each character in an alphabet. A binary code is one in which the codewords contain only zeroes and ones. For example, here are two possible binary codes for the alphabet {a,c,j,l,p,s,v}.</p>
+
+<table style="border-collapse:collapse; margin:1.5rem auto; font-family:&quot;SFMono-Regular&quot;, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size:0.9rem;">
+  <tr><td style="border:1px solid var(--rule); padding:0.2rem 1rem;"></td><td style="border:1px solid var(--rule); padding:0.2rem 1rem; font-weight:600; text-align:center;">Code 1</td><td style="border:1px solid var(--rule); padding:0.2rem 1rem; font-weight:600; text-align:center;">Code 2</td></tr>
+  <tr><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">a</td><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">1</td><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">010</td></tr>
+  <tr><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">c</td><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">01</td><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">01</td></tr>
+  <tr><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">j</td><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">001</td><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">001</td></tr>
+  <tr><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">l</td><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">0001</td><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">10</td></tr>
+  <tr><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">p</td><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">00001</td><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">0</td></tr>
+  <tr><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">s</td><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">000001</td><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">1</td></tr>
+  <tr><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">v</td><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">0000001</td><td style="border:1px solid var(--rule); padding:0.2rem 1rem; text-align:center;">101</td></tr>
+</table>
+
+<p>The encoding of a string of characters from an alphabet (the cleartext) is the concatenation of the codewords corresponding to the characters of the cleartext, in order, from left to right. A code is uniquely decodable if the encoding of every possible cleartext using that code is unique. In the example above, Code 1 is uniquely decodable, but Code 2 is not. For example, the encodings of the cleartexts &ldquo;pascal&rdquo; and &ldquo;java&rdquo; are both 001010101010. Even shorter encodings that are not uniquely decodable are 01 and 10.</p>
+
+<p>While the agency is very proud of Phil, he unfortunately gives only &ldquo;yes&rdquo; or &ldquo;no&rdquo; answers. Some members of the agency would prefer more tangible proof, especially in the case of codes that are not uniquely decodable. For this problem you will deal only with codes that are not uniquely decodable. For each of these codes you must determine the single encoding having the minimum length (measured in bits) that is ambiguous because it can result from encoding each of two or more different cleartexts. In the case of a tie, choose the encoding which comes first lexicographically.</p>
+
+<h2>Input</h2>
+
+<p>One or more codes are to be tested. The input for each code begins with an integer <i>m</i>, 1 &le; <i>m</i> &le; 20, on a line by itself, where <i>m</i> is the number of binary codewords in the code. This is followed by <i>m</i> lines each containing one binary codeword string, with optional leading and trailing whitespace. No codeword will contain more than 20 bits.</p>
+
+<p>The input is terminated by the number zero on a line by itself.</p>
+
+<h2>Output</h2>
+
+<p>For each code, display the sequential code number (starting with 1), the length of the shortest encoding that is not uniquely decodable, and the shortest encoding itself, with ties broken as previously described. The encoding must be displayed with 20 bits on each line except the last, which may contain fewer than 20 bits. Place a blank line after the output for each code. Use the format shown in the samples below.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3
+  0
+  01
+  10
+5
+ 0110
+  00
+   111
+  001100
+     110
+5
+  1
+  001
+  0001
+  00000000000000000001
+  10000000000000000000
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Code 1: 3 bits
+010
+
+Code 2: 9 bits
+001100110
+
+Code 3: 21 bits
+10000000000000000000
+1</pre>
+
+<footer>
+  The 2002 ACM Programming Contest World Finals sponsored by IBM · Problem B: Undecodable Codes
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: Towers of Powers &mdash; The 22nd Annual ACM International Collegiate Programming Contest World Finals (1998)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+<header>
+  <p class="kicker">The 22nd Annual ACM International Collegiate Programming Contest World Finals &middot; Problem H</p>
+  <h1>Towers of Powers</h1>
+  <p class="meta">Input file: tower.in</p>
+</header>
+
+<p>One of the many problems in computer-generated graphics is realistically modeling the &ldquo;orderly randomness&rdquo; of things like mountain ranges and city skylines. A new student intern at a graphics company had an idea&mdash; use fluctuations in number representations to model height. In this problem you will compute several such number representations and show the &ldquo;skylines&rdquo; they produce.</p>
+
+<p>Let <i>n</i> be any positive integer, and let <i>b</i> be an integer greater than or equal to 2. The complete base-<i>b</i> expansion of <i>n</i> is obtained as follows. First write the usual base-<i>b</i> expansion of <i>n</i>, which is just a sum of powers of <i>b</i>, each multiplied by a coefficient between 1 and <i>b</i>-1, omitting terms with zero coefficients. For example, if <i>n</i> = 20000 and <i>b</i> = 3, the base-3 expansion of 20000 is given by</p>
+
+<p>20000 = 3⁹ + 3⁵ + 2×3³ + 2×3² + 2</p>
+
+<p>To obtain the complete base-<i>b</i> expansion, we apply the same procedure to the exponents until all numbers are represented in base <i>b</i>. For <i>n</i> = 20000 and <i>b</i> = 3 we would have</p>
+
+<pre>                                                   2
+                               20000 = 3 + 33+2 +2×33+ 2×32 + 2
+                                                  3</pre>
+
+<p>As another example, consider <i>n</i> = 16647 and <i>b</i> = 2. The resulting expansion is</p>
+
+<pre>                                               2+1       2           2+1
+                                              2        +2 +2        2           2
+                             16647 = 2                         +2          +2 +2+1</pre>
+
+<p>The rising and falling heights of the numbers form the number&rsquo;s &ldquo;skyline.&rdquo;</p>
+
+<p>For each pair of integers <i>n</i> and <i>b</i> in the input, display the complete base-<i>b</i> representation of <i>n</i>. Your display should use multiple output lines for different exponent heights. The display must begin with <i>n</i> = , followed by the expansion. Answers should use an asterisk (*) as the multiplication symbol between coefficients and powers of <i>b</i>. Zero terms must not be printed, and unnecessary coefficients and exponents must not be shown (for example, display 1 instead of <i>b</i><sup>0</sup>, <i>b</i><sup>2</sup> instead of 1*<i>b</i><sup>2</sup> and <i>b</i> instead of <i>b</i><sup>1</sup>). To assist in accurately viewing the skyline of the number, the display must show one character (either a digit, +, or *) per column of the multi-line display; there must be no unnecessary spaces. The correct format is illustrated in the sample output shown below.</p>
+
+<p>Answers must be displayed using no more than 80 columns. Expansions requiring more than 80 columns must be split between terms, and a second set of display lines used to show the remaining portion of the expansion. The second part of the answer must begin in the same column as the previous part of the answer. See the sample output for an example.</p>
+
+<h2>Input</h2>
+
+<p>Input is a sequence of pairs of integers, <i>n</i> and <i>b</i>, followed by a pair of zeroes. Each value for <i>n</i> will be positive, and each value for <i>b</i> will be greater than or equal to 2. No value will exceed the maximum signed integer size for the machine.</p>
+
+<h2>Output</h2>
+
+<p>For each input pair, <i>n</i> and <i>b</i>, print the complete base-<i>b</i> expansion of <i>n</i> as described above. Print a line containing &ldquo;<i>n</i> in complete base <i>b</i>:&rdquo; preceding each expansion. Separate the output for consecutive pairs by a line of hyphens. All coefficients, bases, and exponents are to be displayed as standard base 10 integers. The expansion for each input pair will require at most two standard screen widths, allowing for indentation and splitting between terms of the expansion.</p>
+
+<h3>Sample Input</h3>
+
+<pre>20000 3
+16647 2
+1000 12
+85026244 3
+0 0</pre>
+
+<h3>Output for the Sample Input</h3>
+
+<pre>20000 in complete base 3:
+
+          2
+         3   3+2    3     2
+20000 = 3 +3    +2*3 +2*3 +2
+-------------------------------------------------------
+16447 in complete base 2:
+
+          2+1 2      2+1
+         2   +2 +2 2      2
+16647 = 2         +2    +2 +2+1
+-------------------------------------------------------
+1000 in complete base 12:
+
+           2
+1000 = 6*12 +11*12+4
+-------------------------------------------------------
+85026244 in complete base 3:
+
+             2            2          2          2          2        2        2
+            3 +2*3+1     3 +2*3     3 +3+2     3 +3+1     3 +2     3 +1    3
+85026244 = 3        +2*3       +2*3       +2*3       +2*3     +2*3    +2*3
+
+
+                    2*3+2 2*3+1    3
+                +2*3     +3    +2*3 +3+1</pre>
+
+<footer>
+  The 22nd Annual ACM International Collegiate Programming Contest World Finals &middot; Problem H &middot; Towers of Powers
+</footer>
+
+</body>
+</html>

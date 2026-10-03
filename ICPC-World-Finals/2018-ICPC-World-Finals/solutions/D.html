@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem D: Gem Island (Solution) — ACM ICPC World Finals 2018</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+<header>
+  <p class="kicker">ACM ICPC World Finals 2018</p>
+  <h1>Problem D: Gem Island</h1>
+</header>
+<p>Shortest judge solution: 1278 bytes. Shortest team solution (during contest): 1050 bytes.</p>
+<p>Let us number the islanders 1, 2, . . . , n in some fixed order. Let (g<sub>1</sub>, g<sub>2</sub>, . . . , g<sub>n</sub>) be any integers summing up to d + n, with g<sub>i</sub> ≥ 1 – a potential distribution of gems after d nights. It turns out the probability the gems are distributed that way after d nights is the same for any distribution.</p>
+<p>Let us prove this by induction on d. For d = 0, there is only one distribution (1, 1, . . . , 1). For a higher d, there are n potential ways to get to (g<sub>1</sub>, g<sub>2</sub>, . . . , g<sub>n</sub>) – from any distribution where exactly one islander has exactly one gem less. The probability that we get from (g<sub>1</sub>, g<sub>2</sub>, . . . , g<sub>k</sub> − 1, . . . , g<sub>n</sub>) to (g<sub>1</sub>, g<sub>2</sub>, . . . , g<sub>n</sub>) is (g<sub>k</sub> − 1)/(n + d − 1) – one of the g<sub>k</sub> − 1 has to be the one to split.</p>
+<p>Since the probability for each distribution for d − 1 is some fixed p by the inductive hypothesis, the total probability of getting to (g<sub>1</sub>, g<sub>2</sub>, . . . , g<sub>n</sub>) is p · ∑<sub>k</sub> (g<sub>k</sub> − 1)/(n + d − 1) = p · (n + d − 1)/(n + d − 1) = p.</p>
+<p>And the sum of all g<sub>k</sub> − 1 is d – the number of gems over the first one that all the islanders have (technically, we also need to exclude the distributions where g<sub>k</sub> = 1 from the sum, since (g<sub>1</sub>, g<sub>2</sub>, . . . , 0, . . . , g<sub>n</sub>) is not a valid distribution, but the probability of that distribution is multiplied by g<sub>k</sub> − 1 = 0 in the sum anyway, so it does not matter).</p>
+<p>With that observation, we are prepared to calculate the expected value we are being asked for. Since all the distributions are equally probable, we can instead calculate the sum of the number of gems the r richest islanders have, over all possible distributions, and then divide by the number of all possible distributions. The number of ways to assign d gems to n people is <sup>n+d−1</sup>C<sub>d</sub>, and we can precalculate all the binomial coefficients in quadratic time and memory, so let’s just look at the sum.</p>
+<p>Let us denote the sum over all legal distributions of n + d gems to n people of the number of gems the r richest people have by S(n, d). We can write a recursion for S(n, d). If n ≤ r, S(n, d) = n + d.</p>
+<p>For larger n, there is a contribution coming from the first gems of every islander – that is obviously r · <sup>n+d−1</sup>C<sub>d</sub>. On top of that, we have some islanders that have only one gem – their contribution is finished – and some that have more gems. These islanders that have more gems, after removing their first gem, still have a valid distribution of the remaining d gems. So, if we fix g – the number of islanders that have exactly one gem – the remaining contribution is <sup>n</sup>C<sub>g</sub> S(n − g, d − n + g). This gives us a recursion formula for S(n, d):</p>
+<p>S(n, d) = <sup>n+d−1</sup>C<sub>d</sub> ( r + ∑<sub>g=0</sub><sup>n</sup> <sup>n</sup>C<sub>g</sub> S(n − g, d − n + g) )</p>
+<p>This recursion formula translates to a dynamic program for calculating S(n, d) in time O(n<sup>2</sup>d), which is fast enough. Even less efficient solutions (with an extra log factor in there) had a chance to pass if efficiently implemented.</p>
+<p>This problem can be solved even faster. For instance, a quadratic-time solution, communicated to us by Petr Mitrichev, goes roughly as follows. Let V(k, y) be the number of distributions for which exactly k islanders have at least y gems. We have S(n, d) = ∑<sub>k,y ≥ 1</sub> min(k, r) V(k, y).</p>
+<p>If we denote by W(k, y) the number of distributions where at least k islanders have at least y gems, then V(k, y) = W(k, y) − W(k + 1, y). And W(k, y) can be calculated from the inclusion-exclusion principle as</p>
+<p>W(k, y) = ∑<sub>ℓ ≥ k</sub> (−1)<sup>ℓ</sup> <sup>n</sup>C<sub>k−1</sub> <sup>ℓ−k</sup>C<sub>ℓ−1</sub> <sup>n+d−ℓ(y−1)−1</sup>C<sub>d−ℓ(y−1)</sub></p>
+<p>The proofs of these equalities, as well as of the fact that the resulting algorithm is quadratic, are left as an exercise to the reader.</p>
+</body>
+</html>

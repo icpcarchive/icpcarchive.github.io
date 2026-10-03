@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem A: System Dependencies — The Twenty-first Annual ACM International Collegiate Programming Contest Finals (1997)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The Twenty-first Annual ACM International Collegiate Programming Contest Finals · Problem A</p>
+  <h1>System Dependencies</h1>
+  <p class="meta">Input file: depend.in</p>
+</header>
+
+<p>Components of computer systems often have dependencies—other components that must be installed before they will function properly. These dependencies are frequently shared by multiple components. For example, both the TELNET client program and the FTP client program require that the TCP/IP networking software be installed before they can operate. If you install TCP/IP and the TELNET client program, and later decide to add the FTP client program, you do not need to reinstall TCP/IP.</p>
+
+<p>For some components it would not be a problem if the components on which they depended were reinstalled; it would just waste some resources. But for others, like TCP/IP, some component configuration may be destroyed if the component was reinstalled.</p>
+
+<p>It is useful to be able to remove components that are no longer needed. When this is done, components that only support the removed component may also be removed, freeing up disk space, memory, and other resources. But a supporting component, not explicitly installed, may be removed only if all components which depend on it are also removed. For example, removing the FTP client program and TCP/IP would mean the TELNET client program, which was not removed, would no longer operate. Likewise, removing TCP/IP by itself would cause the failure of both the TELNET and the FTP client programs. Also if we installed TCP/IP to support our own development, then installed the TELNET client (which depends on TCP/IP) and then still later removed the TELNET client, we would not want TCP/IP to be removed.</p>
+
+<p>We want a program to automate the process of adding and removing components. To do this we will maintain a record of installed components and component dependencies. A component can be installed explicitly in response to a command (unless it is already installed), or implicitly if it is needed for some other component being installed. Likewise, a component, not explicitly installed, can be explicitly removed in response to a command (if it is not needed to support other components) or implicitly removed if it is no longer needed to support another component.</p>
+
+<h2>Input</h2>
+
+<p>The input will contain a sequence of commands (as described below), each on a separate line containing no more than eighty characters. Item names are case sensitive, and each is no longer than ten characters. The command names (DEPEND, INSTALL, REMOVE and LIST) always appear in uppercase starting in column one, and item names are separated from the command name and each other by one or more spaces. All appropriate DEPEND commands will appear before the occurrence of any INSTALL command that uses them. There will be no circular dependencies. The end of the input is marked by a line containing only the word END.</p>
+
+<table>
+  <tr><th>Command Syntax</th><th>Interpretation/Response</th></tr>
+  <tr><td>DEPEND item1 item2 [item3 …]</td><td>item1 depends on item2 (and item3 …)</td></tr>
+  <tr><td>INSTALL item1</td><td>install item1 and those on which it depends</td></tr>
+  <tr><td>REMOVE item1</td><td>remove item1, and those on which it depends, if possible</td></tr>
+  <tr><td>LIST</td><td>list the names of all currently-installed components</td></tr>
+</table>
+
+<h2>Output</h2>
+
+<p>Echo each line of input. Follow each echoed INSTALL or REMOVE line with the actions taken in response, making certain that the actions are given in the proper order. Also identify exceptional conditions (see Expected Output, below, for examples of all cases). For the LIST command, display the names of the currently installed components. No output, except the echo, is produced for a DEPEND command or the line containing END. There will be at most one dependency list per item.</p>
+
+<h3>Sample Input 1</h3>
+<pre>DEPEND   TELNET TCPIP NETCARD
+DEPEND TCPIP NETCARD
+DEPEND DNS TCPIP NETCARD
+DEPEND  BROWSER   TCPIP  HTML
+INSTALL NETCARD
+INSTALL TELNET
+INSTALL foo
+REMOVE NETCARD
+INSTALL BROWSER
+INSTALL DNS
+LIST
+REMOVE TELNET
+REMOVE NETCARD
+REMOVE DNS
+REMOVE NETCARD
+INSTALL NETCARD
+REMOVE TCPIP
+REMOVE BROWSER
+REMOVE TCPIP
+LIST
+END</pre>
+
+<h3>Sample Output 1</h3>
+<pre>DEPEND   TELNET TCPIP NETCARD
+DEPEND TCPIP NETCARD
+DEPEND DNS TCPIP NETCARD
+DEPEND  BROWSER   TCPIP  HTML
+INSTALL NETCARD
+   Installing NETCARD
+INSTALL TELNET
+   Installing TCPIP
+   Installing TELNET
+INSTALL foo
+   Installing foo
+REMOVE NETCARD
+   NETCARD is still needed.
+INSTALL BROWSER
+   Installing HTML
+   Installing BROWSER
+INSTALL DNS
+   Installing DNS
+LIST
+   HTML
+   BROWSER
+   DNS
+   NETCARD
+   foo
+   TCPIP
+   TELNET
+REMOVE TELNET
+   Removing TELNET
+REMOVE NETCARD
+   NETCARD is still needed.
+REMOVE DNS
+   Removing DNS
+REMOVE NETCARD
+   NETCARD is still needed.
+INSTALL NETCARD
+   NETCARD is already installed.
+REMOVE TCPIP
+   TCPIP is still needed.
+REMOVE BROWSER
+   Removing BROWSER
+   Removing HTML
+   Removing TCPIP
+REMOVE TCPIP
+   TCPIP is not installed.
+LIST
+   NETCARD
+   foo
+END</pre>
+
+<footer>
+  The Twenty-first Annual ACM International Collegiate Programming Contest Finals · Problem A · System Dependencies
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem I: Water Tanks &mdash; 2007 ICPC World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+
+<header>
+  <p class="kicker">2007 ICPC World Finals &middot; Problem I</p>
+  <h1>Water Tanks</h1>
+  <p class="meta">Input file: tanks.in</p>
+</header>
+
+<p>The Aqua Container Management company manages water storage facilities. They are
+considering a system of storing water in a series of connected vertical tanks. Each
+tank has a horizontal cross-sectional area of one square meter, but the tanks have
+different heights. The base of each tank is at ground level. Each tank is connected by
+a pipe to the previous tank in the series and by another pipe to the next tank in the
+series. The pipes connecting the tanks are level and are at increasing heights (that
+is, the pipe connecting tank i to tank i+1 is at a higher level than the pipe
+connecting tank i to tank i-1.) Tank 1 is open so that air and water can flow into it
+freely at the top. All the other tanks are closed so that air and water can flow in and
+out only through the connecting pipes. The connecting pipes are large enough that water
+and air can flow through them freely and simultaneously but small enough that their
+dimensions can be ignored in this problem.</p>
+
+<p>The series of tanks is filled by pouring water slowly into the top of tank 1,
+continuing until the water level reaches the top of tank 1. As the water level rises
+above the connecting pipes, water flows among the tanks.</p>
+
+<p>Aqua Container Management needs a program to compute the cubic meters of water that
+can be poured into the series of tanks before the water level reaches the top of tank
+1.</p>
+
+<p>The figure below illustrates a simple case involving only two tanks. After the
+filling procedure is completed, the air in the upper part of the second tank is
+compressed (its air pressure is greater than one atmosphere), so the water level in the
+second tank is lower than the water level in the first tank.</p>
+
+<figure>
+  <img src="images/I-1.png" alt="">
+  <figcaption>Tanks before filling and tanks after filling</figcaption>
+</figure>
+
+<p>The following physical principles are helpful in solving this problem (some of these
+are approximations that are acceptable for the purposes of this problem):</p>
+
+<ul>
+  <li>Water flows downhill.</li>
+  <li>In an open space, the air pressure is equal to one atmosphere.</li>
+  <li>Air is compressible (the volume occupied by a given amount of air depends on
+      pressure). Water is not compressible (the volume occupied by a given amount of
+      water is constant, independent of pressure).</li>
+  <li>Air pressure is the same everywhere within a closed space. If the volume of the
+      closed space changes, the product of the volume and the air pressure within the
+      space remains constant. For example, suppose an enclosed airspace has an initial
+      volume V<sub>1</sub> and pressure P<sub>1</sub>. If the volume of the airspace
+      changes to V<sub>2</sub>, then the new pressure P<sub>2</sub> satisfies
+      P<sub>1</sub>V<sub>1</sub> = P<sub>2</sub>V<sub>2</sub>.</li>
+  <li>In a column of water below an airspace, the water pressure at a level D meters
+      below the water surface is equal to the air pressure at the surface plus
+      0.097&middot;D atmospheres. This is true regardless of whether the airspace is
+      open or enclosed.</li>
+  <li>In a connected body of water (for example, when two or more tanks are connected
+      by pipes below the water line), the water pressure is constant at any given
+      level.</li>
+</ul>
+
+<h2>Input</h2>
+
+<p>The input consists of several test cases representing different series of water
+tanks. Each test case has three lines of data. The first line contains an integer N
+(2 &le; N &le; 10) which is the number of tanks in the test case. The second line
+contains N positive floating point numbers that are the heights, in meters, of tanks
+1 through N. The third line contains N-1 floating point numbers. On this line, the kth
+number represents the height above the ground of the pipe that connects tank k and
+tank k+1. The numbers on the third line are increasing (each number is greater than
+the preceding number).</p>
+
+<p>The last test case is followed by a line containing the integer zero.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, print a line containing the test case number (beginning with
+1) followed by the amount of water, in cubic meters, that can be poured into tank 1
+before the water level reaches the top of tank 1. Print the results with three digits
+to the right of the decimal point.</p>
+
+<p>Print a blank line after the output for each test case. Use the format of the sample
+output.</p>
+
+<h3>Sample Input 1</h3>
+<pre>2
+10.0 8.0
+4.0
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1: 15.260</pre>
+
+<footer>
+  2007 ICPC World Finals Problem I: Water Tanks &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

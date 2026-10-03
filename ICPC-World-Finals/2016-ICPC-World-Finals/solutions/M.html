@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem M: What Really Happened on Mars? (Solution) — ACM ICPC World Finals 2016</title>
+<style>
+
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2016</p>
+  <h1>Problem M: What Really Happened on Mars?</h1>
+</header>
+
+<p>Shortest judge solution: 1814 bytes. Shortest team solution (during contest): 2254 bytes.</p>
+
+<p>This problem had a long, scary and convoluted statement hiding a simple implementation. In fact, it gave you exactly the algorithm you need to implement!</p>
+<p>We need to simulate the processor’s decisions. The limits are low enough that we can actually afford to do this step-by-step, although we could optimize by fast-forwarding if a string of compute instructions are getting executed and no new tasks start.</p>
+<p>Let us look at the individual steps to implement. Identifying running tasks is simple. The tricky part is determining what is blocked, and checking the current priorities of tasks. There are two approaches to that. We assume we keep the information on which task holds which resource locked.</p>
+<p>The first one, which is harder to analyse but easier to code, is to repeatedly try to iterate on the rule for blocking and priority inheritance, until no new actions to perform are found. So, in each execution step, we would perform a loop until nothing changes. In the loop, for each pair of tasks, we check if the lower-current-priority one blocks the higher-current-priority one, and if yes, increase the first task’s priority to be equal to the second task’s. It’s hard to figure out why that would actually reach a fixed point eventually, but the problem statement tells us there exists a unique solution, so one might hope it will.</p>
+<p>The second approach is to go from highest-priority tasks first. If the highest base priority task T isn’t blocked, it will be granted the processor — no task can have a priority higher than the highest base priority, and we are guaranteed there will be no ties in the priority resolution. If T is blocked, then we identify all the tasks that block T, and raise their current priority to the highest base priority. Note that T will never become unblocked (the first condition does not depend on priorities, and the priority of the highest-priority task will never change), so these priority changes are permanent. So, we can iteratively analyse each of these tasks, until we finally get to a task that is not blocked — and that task will get the processor (note that we’re relying on the guarantee there will be no ties). This obviously runs in O(t<sup>2</sup>) time for each determination without any optimization, so it will be fast enough.</p>
+<p>Once we know which task to run, we execute one instruction, possibly increment the clock according to rules in step 3, and go back to the beginning.</p>
+<p>We consider the fate of this task — which only got solved by Shanghai Jiao Tong University a quarter of an hour before the scoreboard freeze — a reminder to always try to read and understand the statement of all problems early in the contest!</p>
+</body>
+</html>

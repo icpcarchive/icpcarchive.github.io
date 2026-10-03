@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Nondeterministic Trellis Automata — The Twentieth Annual ACM International Collegiate Programming Contest Finals (1996)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The Twentieth Annual ACM International Collegiate Programming Contest Finals · Problem F</p>
+  <h1>Nondeterministic Trellis Automata</h1>
+  <p class="meta">Input file: trellis.in</p>
+</header>
+
+<p>A nondeterministic trellis automaton (NTA) is a kind of parallel machine composed of identical finite-state processors arranged in an infinite triangular trellis, or series of rows of processors. The top, or apex, of the triangle is a single processor. The next row has two processors and each successive row of an NTA has one more processor than the row above it. Each processor in an NTA is connected to two children in the row below it. Computation in an NTA occurs bottom up; the state of each processor in a row is based on the state of the processor's children and a transition table. The input to an NTA is the initial configuration, or state, of one row of processors. The input is specified by a string that gives the initial state of each processor in a row so that an n-character string specifies the initial configuration for a row of n processors. Computation proceeds up the NTA to the apex by nondeterministically calculating the state of each processor in a row based on the transition table and the state of the processor's children in the row below.</p>
+
+<p>Transitions are computed nondeterministically; an input is accepted if some computation puts the apex processor into an accepting state. An input is rejected if no computation puts the apex processor into an accepting state. For example, the table below shows transitions for a 3-state NTA. States are labeled by characters "a", "b", and "c"; the only accepting state is "c".</p>
+
+<pre>                                                right child
+State transition                             a       b      c
+      table:                        a        a       a      c           State c is the only
+                                    b       a,c      a      b           accepting state
+                                    c        c       b      a</pre>
+
+<p>The diagram below shows two computations for the input "bba". The computation on the left rejects the input since the state of the apex is "a"; but the computation on the right accepts the input since the state of the apex is "c". Since some computation results in an accepting state for the apex, the string "bba" is accepted by the NTA. The input "bbb" would be rejected by this NTA since the only computation results in the state "a" for the apex.</p>
+
+<figure>
+  <img src="images/F-1.png" alt="">
+  <figcaption>Two computations for the input "bba"</figcaption>
+</figure>
+
+<p>The states (and inputs) of an NTA are consecutive lowercase letters. Thus the states for a 5-state NTA are "a", "b", "c", "d", and "e". Accepting states are grouped at the end of the letters so that if a 5-state NTA has two accepting states, the accepting states are "d" and "e".</p>
+
+<h2>Input</h2>
+
+<p>The input for your program is a sequence of NTA descriptions and strings (which are the inputs to the NTAs). An NTA description is given by the number of states n followed by the number of accepting states on one line separated by whitespace. The n x n transition table follows in row-major order; each transition string is given on a separate line. Each NTA description is followed by its input strings, one per line. A string of "#" terminates the input strings. An NTA description in which the number of states is zero terminates the input for your program.</p>
+
+<p>NTAs will have at most 15 states, input strings will be at most 15 characters.</p>
+
+<h2>Output</h2>
+
+<p>For each NTA description, print the number of the NTA (NTA #1, NTA #2, etc. ). For each input string for an NTA print the word "accepted" or "rejected" followed by an echo print of the input string.</p>
+
+<h3>Sample Input</h3>
+<pre>3 1
+a
+a
+c
+ca
+a
+b
+c
+b
+a
+bba
+aaaaa
+abab
+babbba
+a
+baaab
+abbbaba
+baba
+bcbab
+#
+3 2
+ab
+a
+c
+a
+ab
+b
+c
+b
+ab
+abc
+cbc
+#
+0 0</pre>
+
+<h3>Output for the Sample Input</h3>
+<pre>NTA # 1
+accept bba
+reject aaaaa
+reject abab
+accept babbba
+reject a
+accept baaab
+accept abbbaba
+accept baba
+reject bcbab
+
+NTA # 2
+reject abc
+accept cbc</pre>
+
+<footer>
+  The Twentieth Annual ACM International Collegiate Programming Contest Finals · Problem F · Nondeterministic Trellis Automata
+</footer>
+
+</body>
+</html>

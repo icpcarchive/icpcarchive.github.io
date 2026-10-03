@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Branch Assignment (Solution) — ACM ICPC World Finals 2016</title>
+<style>
+
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2016</p>
+  <h1>Problem B: Branch Assignment</h1>
+</header>
+
+<p>Shortest judge solution: 1310 bytes. Shortest team solution (during contest): 1359 bytes.</p>
+
+<p>This problem has two rather independent components. The first component is to compute the shortest paths between the headquarters and every branch (in both directions). This part is completely standard and can be solved using Dijkstra’s algorithm.</p>
+<p>The second part is to find an optimal partitioning of branches into subgroups. First let us formulate the problem more concretely. For branch i, let a<sub>i</sub> denote the distance from headquarters to branch i, and b<sub>i</sub> the distance from branch i to headquarters. Then, if we assign a set G ⊆ {1, …, b} of branches to the same sub-projects, the total distance travelled to deliver the messages within this group equals (|G| − 1) ∑<sub>i∈G</sub> (a<sub>i</sub> + b<sub>i</sub>) (because each branch needs to send messages to and receive messages from the |G| − 1 other branches in the group). Since this only depends on the sum a<sub>i</sub> + b<sub>i</sub>, let us write c<sub>i</sub> = a<sub>i</sub> + b<sub>i</sub> for brevity.</p>
+<p>In other words, our goal is to partition {1, …, b} into s subsets G<sub>1</sub>, …, G<sub>s</sub> such that ∑<sub>j=1</sub><sup>s</sup> (|S<sub>j</sub>| − 1) ∑<sub>i∈S<sub>j</sub></sub> c<sub>i</sub> is minimized. This can be solved using dynamic programming.</p>
+<p>Another way of phrasing the objective we are minimizing is ∑<sub>i=1</sub><sup>b</sup> c<sub>i</sub> · (g(i) − 1), where g(i) denotes the size of the group to which we allocate branch i. From this, we can observe that if c<sub>i</sub> &lt; c<sub>j</sub> for some branches i and j, then we should have g(j) ≤ g(i) (otherwise, we can swap groups for i and j and get a better assignment). This also implies that we can assume without loss of generality that the smallest group contains the t<sub>1</sub> branches with largest c<sub>i</sub> values (for some t<sub>1</sub>), the second smallest group contains the t<sub>2</sub> branches with the remaining largest c<sub>i</sub> values, and so on.</p>
+<p>This gives a natural dynamic programming algorithm where we define D(i, j) to be the minimum distance of partitioning the i largest branches into j different groups. A straightforward dynamic programming algorithm using these ideas might use the recursive identity</p>
+<p style="text-align: center">D(i, j) = min<sub>1≤ k ≤ i</sub> D(i − k, j − 1) + (k − 1) ∑<sub>i−k &lt; ` ≤ i</sub> c`&nbsp;&nbsp;(1)</p>
+<p>representing that we can try all possibilities for the size k of the last group. However, this leads to an Ω(b<sup>2</sup> s) running time which is too slow. The final observation to make this fast enough is almost immediate given our observations and setup so far (but depending on exactly how one arrives at and formulates the b<sup>2</sup> s time solution, the last step may be hard to see): since we may assume that the group using the largest elements is the smallest groups, we may bound k in (1) above by i/j instead of i. This little change changes the running time of the resulting dynamic program to O(∑<sub>i=1</sub><sup>b</sup> ∑<sub>j=1</sub><sup>s</sup> i/j) = O(b<sup>2</sup> log s).</p>
+</body>
+</html>

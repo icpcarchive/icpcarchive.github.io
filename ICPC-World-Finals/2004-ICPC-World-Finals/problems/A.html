@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem A: Carl the Ant — The 2004 28th Annual ICPC World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">The 2004 28th Annual ICPC World Finals · Problem A</p>
+  <h1>Carl the Ant</h1>
+  <p class="meta">Input File: carl.in</p>
+</header>
+
+<p>Ants leave small chemical trails on the ground in order to mark paths for other ants to follow. Ordinarily these
+trails follow rather straight lines. But in one ant colony there is an ant named Carl, and Carl is not an ordinary
+ant. Carl will often zigzag for no apparent reason, sometimes crossing his own path numerous times in the
+process. When other ants come to an intersection, they always follow the path with the strongest scent, which is
+the most recent path that leads away from the intersection point.</p>
+
+<p>Ants are 1 centimeter long, move and burrow at 1 centimeter per second, and follow their paths exactly (bending
+at right angles when moving around corners). Ants cannot cross or overlap each other. If two ants meet at the
+exact same instant at an intersection point, the one that has been on Carl&rsquo;s path the longest has the right of way;
+otherwise, the ant that has been waiting the longest at an intersection will move first.</p>
+
+<p>Carl burrows up from the ground to start at the origin at time 0. He then walks his path and burrows back down
+into the ground at the endpoint. The rest of the ants follow at regular intervals. Given the description of Carl&rsquo;s
+path and when the other ants start the path, you are to determine how long it takes the entire set of ants to finish
+burrowing back into the ground. All the ants are guaranteed to finish.</p>
+
+<h2>Input</h2>
+
+<p>Input consists of several test cases. The first line of the input file contains a single integer indicating the number
+of test cases.</p>
+
+<p>The input for each test case starts with a single line containing three positive integers <i>n</i> (1 &le; <i>n</i> &le; 50),
+<i>m</i> (1 &le; <i>m</i> &le; 100), and <i>d</i> (1 &le; <i>d</i> &le; 100). Here, <i>n</i> is the number of line segments in Carl&rsquo;s
+path, <i>m</i> is the number of ants traveling the path (including Carl), and <i>d</i> is the time delay before each
+successive ant&rsquo;s emergence. Carl (who is numbered 0) starts at time 0. The next ant (ant number 1) will emerge
+at time <i>d</i>, the next at time 2<i>d</i>, and so on. If the burrow is blocked, the ants will emerge as soon as
+possible in the correct order.</p>
+
+<p>Each of the next <i>n</i> lines for the test case consists of a unique integer pair <i>x y</i>
+(-100 &le; <i>x</i>, <i>y</i> &le; 100), which is the endpoint of a line segment of Carl&rsquo;s path, in the order that
+Carl travels. The first line starts at the origin (0,0) and the starting point of every subsequent line is the
+endpoint of the previous line.</p>
+
+<p>For simplicity, Carl always travels on line segments parallel to the axes, and no endpoints lie on any segment
+other than the ones which they serve as an endpoint.</p>
+
+<h2>Output</h2>
+
+<p>The output for each case is described as follows:</p>
+
+<pre>Case C:
+Carl finished the path at time t1
+The ants finished in the following order:
+a1 a2 a3 ... am
+The last ant finished the path at time t2</pre>
+
+<p>Here, <i>C</i> is the case number (starting at 1), <i>a</i><sub>1</sub>, <i>a</i><sub>2</sub>, <i>a</i><sub>3</sub>, &hellip;
+<i>a</i><sub><i>m</i></sub> are the ant numbers in the order that they go back underground, and <i>t</i><sub>1</sub>
+and <i>t</i><sub>2</sub> are the times (in seconds) at which Carl and the last ant finish going underground.
+You should separate consecutive cases with a single blank line.</p>
+
+<h3>Sample Input 1</h3>
+<pre>2
+4 7 4
+0 4
+2 4
+2 2
+-2 2
+4 7 2
+0 4
+2 4
+2 2
+-2 2</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1:
+Carl finished the path at time 13
+The ants finished in the following order:
+0 2 1 3 4 5 6
+The last ant finished the path at time 29
+
+Case 2:
+Carl finished the path at time 13
+The ants finished in the following order:
+0 4 1 5 2 6 3
+The last ant finished the path at time 19</pre>
+
+<footer>
+  The 2004 ACM Programming Contest World Finals · Problem A: Carl the Ant · sponsored by IBM
+</footer>
+
+</body>
+</html>

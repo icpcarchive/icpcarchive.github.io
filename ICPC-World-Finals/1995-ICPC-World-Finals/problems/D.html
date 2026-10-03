@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem D: Sail Race — The Nineteenth Annual ACM International Collegiate Programming Contest Finals (1995)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The Nineteenth Annual ACM International Collegiate Programming Contest Finals · Problem D</p>
+  <h1>Sail Race</h1>
+  <p class="meta">Input File: sail.in</p>
+</header>
+
+<p>The Atlantic Coastal Mariners (ACM) sailing club is building a race planning tool to estimate durations of sailboat races with various race courses, wind directions, and types of sailboats. You must write a program to help with that task.</p>
+
+<p>A race course is defined by marks with up to 10 marks per race course. A sailboat must sail to all marks in the specified order. The marks are identified as x- and y-coordinates on a hypothetical grid with a single unit equal to one nautical mile (nm). The positive y-axis is oriented due north and the positive x-axis is oriented due east. The race course is in open waters without any navigational limitations.</p>
+
+<p>For purposes of this planning tool, the only driving force controlling a sailboat is the wind. The wind determines the sailboat’s speed of advance and limits its direction of travel. The wind is constant for the duration of each race and is specified in terms of the direction from which the wind is blowing and its speed in nautical miles per hour (kts). Wind direction is specified as a compass bearing in degrees measured clockwise from 000.0° as north.</p>
+
+<p>Sailboats cannot steer any closer to the wind than a given "point angle" off the wind direction. In order to make progress closer to the wind direction, the sailboat must tack back and forth across the wind, steering no closer to the wind than its point angle. Each time the sailboat tacks or passes a mark it incurs a tack penalty. For this simulation, each sailboat will travel each leg of a race (the portion of a race between successive marks) with the minimum number of tacks and the minimum possible distance. Courses and directions are specified as compass bearings in degrees measured clockwise from 000.0° as north.</p>
+
+<p>The speed of a sailboat is determined by the sailboat design, wind speed, and direction steered relative to the wind. In the figure, the wind direction is 45° and the point angle is 40°. This means then that this sailboat cannot steer between 5° and 85° because it cannot point that closely into the wind.</p>
+
+<figure>
+  <img src="images/D-1.png" alt="">
+</figure>
+
+<p>For this problem, the ratio of sailboat speed to wind speed is one of three ratios, selected as shown in the table below according to the angle off the wind :</p>
+
+<pre>                Angle off wind                                              Applicable ratio
+                ≤ point angle and &lt; reach angle                             point speed ratio
+                ≤ reach angle and &lt; downwind angle                          reach speed ratio
+                ≤ downwind angle                                            downwind speed ratio</pre>
+
+<p>For instance, if the boat is steering at an angle off the wind which is between the reach angle and downwind angle then</p>
+
+<pre>boat speed = reach speed ratio × wind speed</pre>
+
+<h2>Input</h2>
+
+<p>Your solution must accept multiple input data sets. Each data set represents a different race course to be evaluated for a single sailboat. The data set begins with a line with 4 numbers: wind direction (real), wind speed (real), tack penalty (real), and number of marks n (integer). The next line contains six real numbers: point angle, point speed ratio, reach angle, reach speed ratio, downwind angle, downwind speed ratio.</p>
+
+<p>The subsequent n lines of the data set represent the n race marks in the order in which they must be reached. Each line begins with a 2-character mark id followed by the x-coordinate then y-coordinate of the mark.</p>
+
+<p>The end of input is denoted by a line of four 0’s.</p>
+
+<h2>Output</h2>
+
+<p>The output for your program consists of various data calculated for each input data set. Values should be presented with the following precisions and units.</p>
+
+<pre>    Courses, tacks, directions              0.1 degree        Distance          0.01 nm
+    Speed                                   0.1 kts           Time              0.01 hours</pre>
+
+<p>Output for each race begins with a header containing the number of the data set (1 for the first, 2 for the second, etc.) and the number of legs. The next line is the total length of the race course, measured as the sum of distances between successive marks.</p>
+
+<p>For each leg of the course, the leg number, beginning and ending mark id’s, course from the beginning to end marks of the leg, and the leg distance is presented. This is followed by a listing of the tacks necessary to complete the leg. The tacks for each race are numbered sequentially, with tack numbers beginning with 1 for each race. For each tack, the tack number, the projected sailboat speed, the course steered, and the length of that tack are presented.</p>
+
+<p>The summary output for each data set includes the total number of tacks, the total distance traveled for the race, the estimated race duration, and the total tack penalty time incurred by the sailboat after leaving the first mark.</p>
+
+<p>The exact format of the output is not specified, but all output should be organized so that it is in the specified order, appropriately labeled and follows given numeric specifications.</p>
+
+<h3>Sample Input</h3>
+<pre>45 10 .1 6
+45 0.5 90 0.75 135 0.67
+M1 15 10
+M2 25 20
+M3 22 30
+M4 5 25
+M5 10 15
+M6 10 10
+0 0 0 0</pre>
+
+<h3>Output for the Sample Input</h3>
+<pre>========================
+Race 1 has 5 legs
+The race layout is  58.48 nm long
+-----------------------------
+
+Leg 1 from Mark M1 to M2 == &gt; Direction:  45.0  Distance:  14.14 nm
+Tack 1 ==&gt; Speed:  5.0   Direction:  90.0  Distance: 10.00 nm
+Tack 2 ==&gt; Speed:  5.0   Direction:   0.0  Distance: 10.00 nm
+
+Leg 2 from Mark M2 to M3 == &gt; Direction: 343.3  Distance:  10.44 nm
+Tack 3 ==&gt; Speed:  5.0   Direction: 343.3  Distance: 10.44 nm
+
+Leg 3 from Mark M3 to M4 == &gt; Direction: 253.6  Distance:  17.72 nm
+Tack 4 ==&gt; Speed:  6.7   Direction: 253.6  Distance: 17.72 nm
+
+Leg 4 from Mark M4 to M5 == &gt; Direction: 153.4  Distance:  11.18 nm
+Tack 5 ==&gt; Speed:  7.5   Direction: 153.4  Distance: 11.18 nm
+
+Leg 5 from Mark M5 to M6 == &gt; Direction: 180.0  Distance:   5.00 nm
+Tack 6 ==&gt; Speed:  6.7   Direction: 180.0  Distance:  5.00 nm
+
+--------------------------------
+Race 1 was 64.34 nm long with 6 tack legs
+Estimated Race Duration is 11.47 hours with 0.50 hours of Tack Penalty
+===========================</pre>
+
+<footer>
+  The Nineteenth Annual ACM International Collegiate Programming Contest Finals · Problem D · Sail Race
+</footer>
+
+</body>
+</html>

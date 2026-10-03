@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: Professor Monotonic&rsquo;s Networks — 25th Annual ACM ICPC World Finals (2001)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">25th Annual ACM ICPC World Finals · Problem H</p>
+  <h1>Professor Monotonic&rsquo;s Networks</h1>
+  <p class="meta">Input: sort.in</p>
+</header>
+
+<p>Professor Monotonic has been experimenting with comparison networks, each of
+which includes a number of two-input, two-output comparators. A comparator, as
+illustrated below, will compare the values on its inputs, i<sub>1</sub> and
+i<sub>2</sub>, and place them on the outputs, o<sub>1</sub> and o<sub>2</sub>,
+so that o<sub>1</sub> &le; o<sub>2</sub> regardless of the relationship between
+the input values.</p>
+
+<figure>
+  <img src="images/H-1.png" alt="">
+  <figcaption>A comparator: inputs i<sub>1</sub>, i<sub>2</sub>; outputs o<sub>1</sub>, o<sub>2</sub></figcaption>
+</figure>
+
+<p>A comparison network has n inputs a<sub>1</sub>,a<sub>2</sub>,&hellip;,a<sub>n</sub>
+and n outputs b<sub>1</sub>,b<sub>2</sub>,&hellip;,b<sub>n</sub>. Each of the
+two inputs to a comparator is either connected to one of the network&rsquo;s n
+inputs or connected to the output of another comparator. Each of the two outputs
+from a comparator is either connected to one of the network&rsquo;s n outputs
+or is connected to the input of another comparator. A graph of the
+interconnections of comparators must be acyclic. The illustration below shows a
+comparison network with four inputs, four outputs, and five comparators.</p>
+
+<figure>
+  <img src="images/H-2.png" alt="">
+  <figcaption>A comparison network with four inputs, four outputs, and five comparators</figcaption>
+</figure>
+
+<p>In operation, the network&rsquo;s inputs are applied and the comparators
+perform their functions. Of course a comparator cannot operate until both of
+its inputs are available. Assuming a comparator requires one unit of time to
+operate, this sample network will require three units of time to produce its
+outputs. Comp -1 and Comp -2 operate in parallel, as do Comp -3 and Comp -4.
+Comp -5 cannot operate until Comp -3 and Comp -4 have comp leted their work.</p>
+
+<p>Professor Monotonic needs help in determining which proposed comparison
+networks are also sorting networks, and how long they will take to perform
+their task. A sorting network is a comparison network for which the outputs are
+monotonically increasing regardless of the input values. The example above is a
+sorting network, since for all possible input values the output values will have
+the relation b<sub>1</sub> &le; b<sub>2</sub> &le; b<sub>3</sub> &le;
+b<sub>4</sub>.</p>
+
+<h2>Input</h2>
+
+<p>The professor will provide a description of each comparison network to be
+examined. Each description will begin with a line containing values for n (the
+number of inputs) and k (the number of comparators). These values satisfy
+1 = n = 12 and 0 = k = 150. This is followed by zero or more non-empty lines,
+each containing at most 15 pairs of comparator inputs. The source of the input
+to each comparator is given by a pair of integers i and j. Each of these
+specifies either the subscript of a network input that is input to the
+comparator (that is, a<sub>i</sub> or a<sub>j</sub>), or the corresponding
+output of a preceding comparator.</p>
+
+<p>The outputs of a comparator are numbered the same as its inputs (in other
+words, if the comparator&rsquo;s inputs are i and j, the corresponding outputs
+are also labeled i and j). The order in which these pairs appear is
+significant, and affects the order in which the comparators operate. If two
+pairs contain an integer in common, the order of the corresponding comparators
+in the network is determined by the order of the pairs in the list. For example,
+consider the input data for the example shown:</p>
+
+<pre>4 5
+1 2    3 4    1 3
+2 4    2 3</pre>
+
+<p>This indicates there will be four input values and five comparators in the
+network. The first comparator (Comp -1) will receive its input values from
+network inputs a<sub>1</sub> and a<sub>2</sub>. The second comp arator
+(Comp -2) will receive its input values from network inputs a<sub>3</sub> and
+a<sub>4</sub>. The third comparator (Comp -3) will receive its first input from
+the first output of Comp -1, and will receive its second input from the first
+output of Comp -2. Similarly, the fourth comparator (Comp -4) will receive its
+first input from the second output of Comp -1, and will receive its second input
+from the second output of Comp -2. Finally, the fifth comparator (Comp -5) will
+receive its first input from the first output of Comp -4, and will receive its
+second input from the second output of Comp -3. The outputs b<sub>1</sub>,b<sub>2</sub>,&hellip;,b<sub>n</sub>
+are taken from the first output of Comp -3, the first output of Comp -5, the
+second output of Comp -5, and the second output of Comp -4, respectively.</p>
+
+<p>A pair of zeros will follow the input data for the last network.</p>
+
+<h2>Output</h2>
+
+<p>For each input case, display the case number (cases are numbered
+sequentially starting with 1), an indication of whether the network is a
+sorting network or not, and the number of time units required for the network
+to operate (regardless of whether it is a sorting network or not).</p>
+
+<h3>Sample Input 1</h3>
+<pre>4   5
+1   2      3   4      1   3
+2   4      2   3
+8   0
+3   3
+1   2      2   3      1   2
+0   0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1 is a sorting network and operates in 3 time units.
+Case 2 is not a sorting network and operates in 0 time units.
+Case 3 is a sorting network and operates in 3 time units.
+
+
+
+</pre>
+
+
+<footer>
+  25th Annual ACM International Collegiate Programming Contest World Finals (2001) ·
+  Problem H: Professor Monotonic&rsquo;s Networks · The 2001 ACM Programming Contest World Finals sponsored by IBM
+</footer>
+
+</body>
+</html>

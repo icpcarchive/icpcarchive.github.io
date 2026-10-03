@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem J: Routing — The 30th Annual ACM International Collegiate Programming Contest World Finals (2006)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The 30th Annual ACM International Collegiate Programming Contest World Finals · Problem J</p>
+  <h1>Routing</h1>
+  <p class="meta">Input file: routing.in</p>
+</header>
+
+<p>As more and more transactions between companies and people are being carried out electronically over the Internet, secure communications have become an important concern. The Internet Cryptographic Protocol Company (ICPC) specializes in secure business-to-business transactions carried out over a network. The system developed by ICPC is peculiar in the way it is deployed in the network.</p>
+
+<p>A network like the Internet can be modeled as a directed graph: nodes represent machines or routers, and edges correspond to direct connections, where data can be transmitted along the direction of an edge. For two nodes to communicate, they have to transmit their data along directed paths from the first node to the second, and from the second node to the first.</p>
+
+<figure>
+  <img src="images/J-1.png" alt="">
+  <figcaption>Figure: An arrow from node <i>X</i> to node <i>Y</i> means that it is possible to connect to node <i>Y</i> from node <i>X</i> but not vice versa. If software is installed on nodes 1, 2, 7, and 8, then communication is possible between node 1 and node 2. Other configurations are also possible but this is the minimum cost option. This figure corresponds to the first sample input.</figcaption>
+</figure>
+
+<p>To perform a secure transaction, ICPC&rsquo;s system requires the installation of their software not only on the two end-nodes that want to communicate, but also on all intermediate nodes on the two paths connecting the end-nodes. Since ICPC charges customers according to how many copies of their software have to be installed, it would be interesting to have a program that for any network and end-node pair finds the cheapest way to connect the nodes.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of several descriptions of networks. The first line of each description contains two integers <i>N</i> and <i>M</i> (2 &le; <i>N</i> &le; 100), the number of nodes and edges in the network, respectively. The nodes in the network are labeled 1, 2, ..., <i>N</i>, where nodes 1 and 2 are the ones that want to communicate. The first line of the description is followed by <i>M</i> lines containing two integers <i>X</i> and <i>Y</i> (1 &le; <i>X</i>, <i>Y</i> &le; <i>N</i>), denoting that there is a directed edge from <i>X</i> to <i>Y</i> in the network.</p>
+
+<p>The last description is followed by a line containing two zeroes.</p>
+
+<h2>Output</h2>
+
+<p>For each network description in the input, display its number in the sequence of descriptions. Then display the minimum number of nodes on which the software has to be installed, such that there is a directed path from node 1 to node 2 using only the nodes with the software, and also a path from node 2 to node 1 with the same property. (Note that a node can be on both paths but a path need not contain all the nodes.) The count should include nodes 1 and 2.</p>
+
+<p>If node 1 and 2 cannot communicate, display IMPOSSIBLE instead.</p>
+
+<p>Follow the format in the sample given below, and display a blank line after each test case.</p>
+
+<h3>Sample Input 1</h3>
+<pre>8 12
+1 3
+3 4
+4 2
+2 5
+5 6
+6 1
+1 7
+7 1
+8 7
+7 8
+8 2
+2 8
+2 1
+1 2
+0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Network 1
+Minimum number of nodes = 4
+
+Network 2
+IMPOSSIBLE</pre>
+
+<footer>
+  The 30th Annual ACM International Collegiate Programming Contest World Finals &middot; Problem J &middot; Routing
+</footer>
+
+</body>
+</html>

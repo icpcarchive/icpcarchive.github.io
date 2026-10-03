@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Queue and A — The 2000 ACM Programming Contest World Finals sponsored by IBM (2000)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The 2000 ACM Programming Contest World Finals sponsored by IBM · Problem G</p>
+  <h1>Queue and A</h1>
+  <p class="meta">Input file: queue.in</p>
+</header>
+
+
+<p>The customer support group of Contest.com receives and responds to requests for technical support via e-mail.
+Requests may begin arriving when the office opens at 8:00 a.m. and all requests must be serviced by the end of the
+day.</p>
+
+<p>As requests are received, they are classified according to a predetermined list of topics. Each member of the support
+staff has responsibility for one or more of these topics and each topic has one or more support personnel assigned to
+it. Because staff members have different levels of expertise, each staff member has a prioritized list of topics that he
+or she can handle. Staff personnel are not permitted to handle requests outside their specified areas.</p>
+
+<p>As staff members become available, they select from the pool of waiting requests according to their priority list of
+topics. All requests arriving at time <i>t</i> are available for allocation at time <i>t</i>. If two staff members are simultaneously
+available, scheduling preference is given to the one whose most recent job was scheduled earliest. If there is still a
+tie, scheduling preference is given to the person whose id number appears earlier in the input list of staff people. At
+the opening of business, all personnel are available to handle requests.</p>
+
+<p>You have been asked to perform a preliminary analysis of the technical support environment based on a number of
+different scenarios. For each scenario, information will be given about the mix of requests and the division of labor
+among the staff. For each topic, you will given the average number of requests per day for that topic, the average
+elapsed time before the first of these requests is received, the average time between requests for this topic, and the
+average time needed to service the request. All times are given in minutes. You will also be given a list of support
+personnel and, for each one, a list of the topics for which he or she has responsibility. (Since data are based on
+estimates, factors such as coffee breaks, lunch, computer failures, etc., can be ignored.)</p>
+
+<h2>Input</h2>
+
+<p>Input consists of a number of scenarios. Each scenario begins with the number of request topics, a positive integer
+no larger than 20. This is followed by a description of each topic. Each description consists of five integer values: a
+unique topic identifier, the number of requests for that topic, the elapsed time before the first request for that topic is
+received, the time needed to service a request, and the time between successive requests. All but the third of these
+values are positive integers; the elapsed time until the first request could be zero. Following this, the number of
+personnel is given. This will be a positive integer not to exceed 5. Finally, a description of each person is given in
+the form of three or more positive integer values: a unique identifying number for the person, the number of topics
+covered by this person, and a list of the topic identifiers arranged from highest priority to lowest priority for that
+person. A zero follows the last scenario.</p>
+
+<h2>Output</h2>
+
+<p>For each scenario, the output consists of the scenario number followed by the statement, “All requests are serviced
+within <i>m</i> minutes,” where <i>m</i> is the number of minutes from the start of the business day until the last request is
+serviced.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3
+128 20 0 5 10
+134 25 5 6 7
+153 30 10 4 5
+4
+10 2 128 134
+11 1 134
+12 2 128 153
+13 1 153
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Scenario 1: All requests are serviced within 195 minutes.</pre>
+
+
+<footer>
+  The 2000 ACM Programming Contest World Finals sponsored by IBM · Problem G · Queue and A
+</footer>
+
+</body>
+</html>

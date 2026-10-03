@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Containers &mdash; 2007 ICPC World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+
+<header>
+  <p class="kicker">2007 ICPC World Finals &middot; Problem B</p>
+  <h1>Containers</h1>
+  <p class="meta">Input file: containers.in</p>
+</header>
+
+<p>A seaport container terminal stores large containers that are eventually loaded on
+seagoing ships for transport abroad. Containers coming to the terminal by road and
+rail are stacked at the terminal as they arrive.</p>
+
+<p>Seagoing ships carry large numbers of containers. The time to load a ship depends in
+part on the locations of its containers. The loading time increases when the
+containers are not on the top of the stacks, but can be fetched only after removing
+other containers that are on top of them.</p>
+
+<p>The container terminal needs a plan for stacking containers in order to decrease
+loading time. The plan must allow each ship to be loaded by accessing only topmost
+containers on the stacks, and minimizing the total number of stacks needed.</p>
+
+<p>For this problem, we know the order in which ships must be loaded and the order in
+which containers arrive. Each ship is represented by a capital letter between A and Z
+(inclusive), and the ships will be loaded in alphabetical order. Each container is
+labeled with a capital letter representing the ship onto which it needs to be loaded.
+There is no limit on the number of containers that can be placed in a single stack.</p>
+
+<h2>Input</h2>
+
+<p>The input file contains multiple test cases. Each test case consists of a single
+line containing from 1 to 1000 capital letters representing the order of arrival of a
+set of containers. For example, the line ABAC means consecutive containers arrive to
+be loaded onto ships A, B, A, and C, respectively. When all containers have arrived,
+the ships are loaded in strictly increasing order: first ship A, then ship B, and so
+on.</p>
+
+<p>A line containing the word end follows the last test case.</p>
+
+<h2>Output</h2>
+
+<p>For each input case, print the case number (beginning with 1) and the minimum
+number of stacks needed to store the containers before loading starts. Your output
+format should be similar to the one shown here.</p>
+
+<h3>Sample Input 1</h3>
+<pre>A
+CBACBACBACBACBA
+CCCCBBBBAAAA
+ACMICPC
+end</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1: 1
+Case 2: 3
+Case 3: 1
+Case 4: 4</pre>
+
+<footer>
+  2007 ICPC World Finals Problem B: Containers &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

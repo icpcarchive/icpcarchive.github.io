@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem X: Quartets (Solution) — 46th ICPC World Finals</title>
+<style>
+
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+<header>
+  <p class="kicker">46th ICPC World Finals</p>
+  <h1>Problem X: Quartets</h1>
+</header>
+<p>Problem authors:<br>Martin Kacer and Yujie An<br>Solved by 8 teams.<br>First solved after 179 minutes.<br>Shortest team solution: 3096 bytes.<br>Shortest judge solution: 2894 bytes.</p>
+<figure><img src="images/X-1.png" alt=""></figure>
+<p>To solve this problem, we need to understand what data a single move provides us about the state of the world and determine whether the information we have is compatible with some starting positions of the cards. Given that we have to check consistency of our knowledge with possible starting hands, we will represent our knowledge in terms of what it implies about the starting hands (and separately keep how that state changed from the time we started).</p>
+<p>There are three types of events listed in the input, we need to understand how they affect the state of the world. We will store the following types of information:</p>
+<ul>
+<li>A specific card started in the hand of player P</li>
+<li>A specific card did not start in the hand of player P</li>
+<li>A specific player started with some card in set S, which has not moved yet</li>
+</ul>
+<p>Additionally, for each card, we store its current position, if it has moved.</p>
+<p>If a player x asks y for a card C, and gets it, then:</p>
+<ul>
+<li>If we don’t know for sure that x has a card in the suit (we could know that because x is known to have a card in that suit now, or they’re known to have an unknown card in that suit), we now mark x as having started with a card in the suit that we don’t know yet.</li>
+<li>If we knew the current position of C, it was either in y’s hand, in which case we learn nothing, or it was in someone else’s hand, which means someone cheated.</li>
+<li>If we didn’t know the current position of C, then we learn that it started in y’s hand, and is currently in x’s hand. Also, if we knew that y started with some unknown card of the suit, we now clear this information.</li>
+</ul>
+<p>If a player x asks a player y for C and doesn’t get it, then:</p>
+<ul>
+<li>We learn the same thing as above about x having a card in the suit,</li>
+<li>If we don’t know the current position of C (which means it didn’t move from the beginning), we know y didn’t start with C.</li>
+</ul>
+<p>Finally, if a player declares a quartet, we need to know that for all the cards in the set, either it has moved and they already have it (in which case we know nothing), or it hasn’t moved, and then we learn they started with it. And we mark all the cards to have a known position of “gone”.</p>
+<p>Given this knowledge, how do we check if the information we have is consistent with some starting hand? The constraints are small enough that a somewhat pruned brute force search can work. However, the problem can also be represented as a matching problem, where we are matching the 32 cards in the players’ hands to the 32 cards values.</p>
+<ul>
+<li>If we know a specific card started in a player’s hand, we just pick one of the eight cards in that player’s hand, and hard-match it to the card values.</li>
+<li>If we know a specific card has not started in a player’s hand, we remove the edges connecting every card in the player’s hand to that card value.</li>
+<li>If we know a player has to start with a card from a set that hasn’t moved, we pick one card in that player’s hand, and remove all the edges connecting it to any other sets.</li>
+</ul>
+<p>If there exists a perfect matching in this graph, it’s possible no-one has cheated yet.</p>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem F: Othello — 1992 ACM Scholastic Programming Contest Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">1992 ACM Scholastic Programming Contest Finals · Problem F</p>
+  <h1>Othello</h1>
+</header>
+
+<p>Othello is a game played by two people on an 8 x 8 board, using disks that are white on one side and black on the other. One player places disks with the white side up and the other player places disks with the black side up. The players alternate placing one disk on an unoccupied space on the board. In placing a disk, the player must bracket at least one of the other color disks. Disks are bracketed if they are in a straight line horizontally, vertically, or diagonally, with a disk of the current player’s color at each end of the line. When a move is made, all the disks that were bracketed are changed to the color of the player making the move. (It is possible that disks will be bracketed across more than one line in a single move.)</p>
+<figure><img src="images/F-1.png" alt=""></figure>
+<p>Write a program to read a series of Othello games. The first line of the input is the number of games to be processed. Each game consists of a board configuration followed by a list of commands. The board configuration consists of 9 lines. The first 8 specify the current state of the board. Each of these 8 lines contains 8 characters, and each of these characters will be one of the following:</p>
+<ul>
+  <li>‘-’ indicating an unoccupied square</li>
+  <li>‘B’ indicating a square occupied by a black disk</li>
+  <li>‘W’ indicating a square occupied by a white disk</li>
+</ul>
+<p>The ninth line is either a ‘B’ or a ‘W’ to indicate which is the current player. You may assume that the data is legally formatted.</p>
+<p>The commands are to list all possible moves for the current player, make a move, or quit the current game. There is one command per line with no blanks in the input. Commands are formatted as follows:</p>
+<ul>
+  <li>List all possible moves for the current player. The command is an ‘L’ in the first column of the line. The program should go through the board and print all legal moves for the current player in the format (x,y) where x represents the row of the legal move and y represents its column. These moves should be printed in row major order which means:
+    <ul>
+      <li>1) all legal moves in row number i will be printed before any legal move in row number j if j is greater than i</li>
+      <li>and 2) if there is more than one legal move in row number i, the moves will be printed in ascending order based on column number.</li>
+    </ul>
+    All legal moves should be put on one line. If there is no legal move because it is impossible for the current player to bracket any pieces, the program should print the message “No legal move.”
+  </li>
+  <li>Make a move. The command is an ‘M’ in the first column of the line, followed by 2 digits in the second and third column of the line. The digits are the row and the column of the space to place the piece of the current player’s color, unless the current player has no legal move. If the current player has no legal move, the current player is first changed to the other player and the move will be the move of the new current player. You may assume that the move is then legal. You should record the changes to the board, including adding the new piece and changing the color of all bracketed pieces. At the end of the move, print the number of pieces of each color on the board in the format “Black - xx White - yy” where xx is the number of black pieces on the board and yy is the number of white pieces on the board. After a move, the current player will be changed to the player that did not move.</li>
+  <li>Quit the current game. The command will be a ‘Q’ in the first column of the line. At this point, print the final board configuration using the same format as was used in the input. This terminates input for the current game.</li>
+</ul>
+<p>You may assume that the commands will be syntactically correct. Put one blank line between output from separate games and no blank lines anywhere else in the output.</p>
+
+<h3>Sample Input</h3>
+<pre>2
+--------
+--------
+--------
+---WB---
+---BW---
+--------
+--------
+--------
+W
+L
+M35
+L
+Q
+WWWWB---
+WWWB----
+WWB-----
+WB------
+--------
+--------
+--------
+--------
+B
+L
+M25
+L
+Q</pre>
+<h3>Sample Output</h3>
+<pre>(3,5) (4,6) (5,3) (6,4)
+Black - 1 White - 4
+(3,4) (3,6) (5,6)
+--------
+--------
+----W---
+---WW---
+---BW---
+--------
+--------
+--------
+
+No legal move.
+Black - 3 White - 12
+(3,5)
+WWWWB---
+WWWWW---
+WWB-----
+WB------
+--------
+--------
+--------
+--------</pre>
+
+<footer>
+  1992 ACM Scholastic Programming Contest Finals · Problem F · Othello
+</footer>
+
+</body>
+</html>

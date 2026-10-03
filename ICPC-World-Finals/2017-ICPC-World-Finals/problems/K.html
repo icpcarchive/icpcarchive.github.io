@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem K: Tarot Sham Boast — ACM-ICPC World Finals 2017</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2017 · Problem K</p>
+  <h1>Tarot Sham Boast</h1>
+  <p class="meta">Time limit: 2 seconds</p>
+</header>
+
+<p>Curse your rival! Every year at the annual Rock Paper Scissors tournament,
+you have made it to the final match. (Your Rock technique is unmatched, and your
+Paper cuts to the bone! Your Scissors need a little work, though.) But every
+year, he defeats you, even though his moves appear entirely random! And he
+claims to the press that he simply cannot be beaten. What is his secret?</p>
+
+<p>Fortunately, you think you have figured it out. This year, just before the
+tournament, you caught him visiting various shamans around town. Aha! He is
+using the supernatural against you! You figured two can play at this game. So
+you went and visited a set of fortune-tellers, who have each used a Tarot deck
+to predict a sequence that your rival will end up using, sometime during the
+match.</p>
+
+<p>However, your initial excitement has passed, and now you are feeling a little
+silly. This cannot possibly work, right? In the end it feels like you have paid
+good money for a fraudulent, random set of predictions. Oh well; you might as
+well keep an eye out for some of them during the match. But which predictions
+will you use?</p>
+
+<p>In the final match, you and your rival will play <i>n</i> rounds of Rock
+Paper Scissors. In each round, your rival and you will both choose one of the
+three options (Rock, Paper, or Scissors). Based on your selections, a winner of
+the round will be determined (exactly how is irrelevant to this problem).</p>
+
+<p>Given the length of the final match and the various predictions, sort them in
+order of how likely they are to appear sometime during the match as a contiguous
+sequence of options chosen by your rival, assuming he is choosing his symbol in
+each round independently and uniformly at random.</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains two integers <i>n</i> (1 &le; <i>n</i>
+&le; 10<sup>6</sup>), the number of rounds in the final match, and <i>s</i>
+(1 &le; <i>s</i> &le; 10), the number of sequences. The remaining <i>s</i> lines
+each describe a prediction, consisting of a string of characters &lsquo;R&rsquo;,
+&lsquo;P&rsquo;, and &lsquo;S&rsquo;. All predictions have the same length, which
+is between 1 and <i>n</i> characters long, inclusive, and no longer than
+10<sup>5</sup>.</p>
+
+<h2>Output</h2>
+
+<p>Display all of the predictions, sorted by decreasing likelihood of appearance
+sometime during the final match. In the case of tied predictions, display them
+in the same order as in the input.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3 4
+PP
+RR
+PS
+SS</pre>
+
+<h3>Sample Output 1</h3>
+<pre>PS
+PP
+RR
+SS</pre>
+
+<h3>Sample Input 2</h3>
+<pre>20 3
+PRSPS
+SSSSS
+PPSPP</pre>
+
+<h3>Sample Output 2</h3>
+<pre>PRSPS
+PPSPP
+SSSSS</pre>
+
+<footer>
+  ACM-ICPC World Finals 2017 Problem K: Tarot Sham Boast
+</footer>
+
+</body>
+</html>

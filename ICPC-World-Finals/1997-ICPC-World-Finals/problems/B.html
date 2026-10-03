@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Jill Rides Again — The Twenty-first Annual ACM International Collegiate Programming Contest Finals (1997)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The Twenty-first Annual ACM International Collegiate Programming Contest Finals · Problem B</p>
+  <h1>Jill Rides Again</h1>
+  <p class="meta">Input file: jill.in</p>
+</header>
+
+<p>Jill likes to ride her bicycle, but since the pretty city of Greenhills where she lives has grown, Jill often uses the excellent public bus system for part of her journey. She has a folding bicycle which she carries with her when she uses the bus for the first part of her trip. When the bus reaches some pleasant part of the city, Jill gets off and rides her bicycle. She follows the bus route until she reaches her destination or she comes to a part of the city she does not like. In the latter event she will board the bus to finish her trip.</p>
+
+<p>Through years of experience, Jill has rated each road on an integer scale of “niceness.” Positive niceness values indicate roads Jill likes; negative values are used for roads she does not like. Jill plans where to leave the bus and start bicycling, as well as where to stop bicycling and re-join the bus, so that the sum of niceness values of the roads she bicycles on is maximized. This means that she will sometimes cycle along a road she does not like, provided that it joins up two other parts of her journey involving roads she likes enough to compensate. It may be that no part of the route is suitable for cycling so that Jill takes the bus for its entire route. Conversely, it may be that the whole route is so nice Jill will not use the bus at all.</p>
+
+<p>Since there are many different bus routes, each with several stops at which Jill could leave or enter the bus, she feels that a computer program could help her identify the best part to cycle for each bus route.</p>
+
+<h2>Input</h2>
+
+<p>The input file contains information on several bus routes. The first line of the file is a single integer <i>b</i> representing the number of route descriptions in the file. The identifier for each route (<i>r</i>) is the sequence number within the data file, 1 &le; <i>r</i> &le; <i>b</i>. Each route description begins with the number of stops on the route: an integer <i>s</i>, 2 &le; <i>s</i> &le; 20,000 on a line by itself. The number of stops is followed by <i>s</i>−1 lines, each line <i>i</i> (1 &le; <i>i</i> &lt; <i>s</i>) is an integer <i>n<sub>i</sub></i> representing Jill’s assessment of the niceness of the road between the two stops <i>i</i> and <i>i</i>+1.</p>
+
+<h2>Output</h2>
+
+<p>For each route <i>r</i> in the input file, your program should identify the beginning bus stop <i>i</i> and the ending bus stop <i>j</i> that identify the segment of the route which yields the maximal sum of niceness, <i>m</i> = <i>n<sub>i</sub></i>+<i>n<sub>i+1</sub></i>+…+<i>n<sub>j−1</sub></i>. If more than one segment is maximally nice, choose the one with the longest cycle ride (largest <i>j</i>−<i>i</i>). To break ties in longest maximal segments, choose the segment that begins with the earliest stop (lowest <i>i</i>). For each route <i>r</i> in the input file, print a line in the form:</p>
+
+<blockquote>The nicest part of route <i>r</i> is between stops <i>i</i> and <i>j</i>.</blockquote>
+
+<p>However, if the maximal sum is not positive, your program should print:</p>
+
+<blockquote>Route <i>r</i> has no nice parts.</blockquote>
+
+<h3>Sample Input 1</h3>
+<pre>3
+3
+  -1
+   6
+10
+   4
+  -5
+   4
+  -3
+   4
+   4
+  -4
+   4
+  -5
+4
+  -2
+  -3
+  -4</pre>
+
+<h3>Sample Output 1</h3>
+<pre>The nicest part of route 1 is between stops 2 and 3
+The nicest part of route 2 is between stops 3 and 9
+Route 3 has no nice parts</pre>
+
+<footer>
+  The Twenty-first Annual ACM International Collegiate Programming Contest Finals · Problem B · Jill Rides Again
+</footer>
+
+</body>
+</html>

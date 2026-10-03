@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem E: Getting a Jump on Crime — ACM-ICPC World Finals 2018</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2018 · Problem E</p>
+  <h1>Getting a Jump on Crime</h1>
+  <p class="meta">Time limit: 2 seconds</p>
+</header>
+
+<p>Your friend Robin is a superhero. When you first found out about this, you
+figured “everybody needs a hobby, and this seems more exciting than stamp
+collecting,” but now you are really thankful that somebody is doing something
+about the crime in your hometown.</p>
+
+<p>Every night, Robin patrols the city by jumping from roof to roof and watching
+what goes on below. Naturally, superheroes need to respond to crises immediately,
+so Robin asked you for help in figuring out how to get around your hometown
+quickly.</p>
+
+<p>Your hometown is built on a square grid, where each block is <i>w</i> ×
+<i>w</i> meters. Each block is filled by a single building. The buildings may
+have different heights (see Figure E.1). To get from one building to another
+(not necessarily adjacent) building, Robin makes a single jump from the center of
+the roof of the first building to the center of the roof of the second building.
+Robin cannot change direction while in the air, but can choose the angle at which
+to lift off.</p>
+
+<figure>
+  <img src="images/E-1.png" alt="">
+  <figcaption>Figure E.1: Cross-section of buildings corresponding to the first sample input. Buildings are shown in black, and the jump from the roof at (1, 1) to the roof at (4, 1) is shown with a green line.</figcaption>
+</figure>
+
+<p>Of course, Robin only wants to perform jumps without colliding with any
+buildings. Such collisions do little damage to a superhero, but building owners
+tend to get irritated when someone crashes through their windows. You explain the
+physics to Robin: “All your jumps are done with the same initial velocity
+<i>v</i>, which has a horizontal component <i>v</i><sub><i>d</i></sub> towards
+the destination and vertical component <i>v</i><sub><i>h</i></sub> upwards, so
+<i>v</i><sub><i>d</i></sub><sup>2</sup> + <i>v</i><sub><i>h</i></sub><sup>2</sup>
+= <i>v</i><sup>2</sup>. As you travel, your horizontal velocity stays constant
+(<i>v</i><sub><i>d</i></sub>(<i>t</i>) = <i>v</i><sub><i>d</i></sub>), but your
+vertical velocity is affected by gravity
+(<i>v</i><sub><i>h</i></sub>(<i>t</i>) = <i>v</i><sub><i>h</i></sub> − <i>t</i> ·
+<i>g</i>), where <i>g</i> = 9.80665 m/s² in your hometown. Naturally, your cape
+allows you to ignore the effects of air resistance. This allows you to determine
+your flight path and ...” at which point you notice that Robin has nodded off –
+less math, more super-heroing!</p>
+
+<p>So it falls to you: given a layout of the city and the location of Robin’s
+secret hideout, you need to determine which building roofs Robin can reach, and
+the minimum number of jumps it takes to get to each roof.</p>
+
+<p>Note that if Robin’s jump passes over the corner of a building (where four
+buildings meet), then the jump needs to be higher than all four adjacent
+buildings.</p>
+
+<h2>Input</h2>
+
+<p>The input starts with a line containing six integers <i>d</i><sub><i>x</i></sub>,
+<i>d</i><sub><i>y</i></sub>, <i>w</i>, <i>v</i>, `<sub><i>x</i></sub>,
+`<sub><i>y</i></sub>. These represent the size <i>d</i><sub><i>x</i></sub> ×
+<i>d</i><sub><i>y</i></sub> of the city grid (1 &le; <i>d</i><sub><i>x</i></sub>,
+<i>d</i><sub><i>y</i></sub> &le; 20) in blocks, the width of each building
+(1 &le; <i>w</i> &le; 10<sup>3</sup>) in meters, Robin’s takeoff velocity
+(1 &le; <i>v</i> &le; 10<sup>3</sup>) in meters per second, and the coordinates
+(`<sub><i>x</i></sub>, `<sub><i>y</i></sub>) of Robin’s secret hideout
+(1 &le; `<sub><i>x</i></sub> &le; <i>d</i><sub><i>x</i></sub>, 1 &le;
+`<sub><i>y</i></sub> &le; <i>d</i><sub><i>y</i></sub>).</p>
+
+<p>The first line is followed by a description of the heights of the buildings in
+the city grid. The description consists of <i>d</i><sub><i>y</i></sub> lines, each
+containing <i>d</i><sub><i>x</i></sub> non-negative integers. The
+<i>j</i><sup>th</sup> line contains the heights for buildings (1, <i>j</i>),
+(2, <i>j</i>), . . . , (<i>d</i><sub><i>x</i></sub>, <i>j</i>). All heights are
+given in meters and are at most 10<sup>3</sup>.</p>
+
+<h2>Output</h2>
+
+<p>Display the minimum number of jumps Robin needs to get from the secret hideout
+to the roof of each building. If there is no way to reach a building’s roof,
+display X instead of the number of jumps. Display the buildings in the same order
+as given in the input file, split into <i>d</i><sub><i>y</i></sub> lines, each
+containing <i>d</i><sub><i>x</i></sub> values. You may assume that changing the
+height of any building by up to 10<sup>&minus;6</sup> would not change the
+answers.</p>
+
+<h3>Sample Input <i>1</i></h3>
+<pre>4 1 100 55 1 1
+10 40 60 10</pre>
+
+<h3>Sample Output <i>1</i></h3>
+<pre>0 1 1 1</pre>
+
+
+<h3>Sample Input <i>2</i></h3>
+<pre>4 4 100 55 1 1
+0 10 20 30
+10 20 30 40
+20 30 200 50
+30 40 50 60</pre>
+
+<h3>Sample Output <i>2</i></h3>
+<pre>0 1 1 2
+1 1 1 2
+1 1 X 2
+2 2 2 3</pre>
+
+
+
+<footer>
+  ACM-ICPC World Finals 2018 Problem E: Getting a Jump on Crime
+</footer>
+
+</body>
+</html>

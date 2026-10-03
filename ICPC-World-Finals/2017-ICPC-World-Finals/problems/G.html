@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Replicate Replicate Rfplicbte — ACM-ICPC World Finals 2017</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2017 · Problem G</p>
+  <h1>Replicate Replicate Rfplicbte</h1>
+  <p class="meta">Time limit: 3 seconds</p>
+</header>
+
+<p>The owner of the Automatic Cellular Manufacturing corporation has just
+patented a new process for the mass production of identical parts. Her approach
+uses a two-dimensional lattice of two-state cells, each of which is either
+&ldquo;empty&rdquo; or &ldquo;filled.&rdquo; The exact details are, of course,
+proprietary.</p>
+
+<p>Initially, a set of cells in the lattice is filled with a copy of the part
+that is to be reproduced. In a sequence of discrete steps, each cell in the
+lattice simultaneously updates its state by examining its own state and those
+of its eight surrounding neighbors. If an odd number of these nine cells are
+filled, the cell&rsquo;s state in the next time step will be filled, otherwise
+it will be empty. Figure G.1 shows several steps in the replication process for
+a simple pattern consisting of three filled cells.</p>
+
+<figure>
+  <img src="images/G-1.png" alt="">
+  <figcaption>Figure G.1: The replication process.</figcaption>
+</figure>
+
+<p>However, a bug has crept into the process. After each update step, one cell
+in the lattice might spontaneously flip its state. For instance, Figure G.2
+shows what might happen if a cell flipped its state after the first time step
+and another flipped its state after the third time step.</p>
+
+<figure>
+  <img src="images/G-2.png" alt="">
+  <figcaption>Figure G.2: Errors in the replication process. This figure
+  corresponds to Sample Input 1.</figcaption>
+</figure>
+
+<p>Unfortunately, the original patterns were lost, and only the (possibly
+corrupted) results of the replication remain. Can you write a program to
+determine a smallest possible nonempty initial pattern that could have resulted
+in a given final pattern?</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains two integers <i>w</i> (1 &le; <i>w</i>
+&le; 300) and <i>h</i> (1 &le; <i>h</i> &le; 300), where <i>w</i> and
+<i>h</i> are the width and height of the bounding box of the final pattern.
+Following that are <i>h</i> lines, each containing <i>w</i> characters, giving
+the final pattern. Each character is either &lsquo;.&rsquo; (representing an
+empty cell) or &lsquo;#&rsquo; (representing a filled cell). There is at least
+one filled cell in the first row, in the last row, in the first column, and in
+the last column.</p>
+
+<h2>Output</h2>
+
+<p>Display a minimum-size nonempty pattern that could have resulted in the
+given pattern, assuming that at each stage of the replication process at most
+one cell spontaneously changed state. The size of a pattern is the area of its
+bounding box. If there is more than one possible minimum-size nonempty starting
+pattern, any one will be accepted. Use the character &lsquo;.&rsquo; for empty
+cells and &lsquo;#&rsquo; for filled cells. Use the minimum number of rows and
+columns needed to display the pattern.</p>
+
+<h3>Sample Input 1</h3>
+<pre>10 10
+.#...#...#
+##..##..##
+##.#.##...
+##.#.##...
+.#...#####
+...##..#.#
+......###.
+##.#.##...
+#..#..#..#
+##..##..##</pre>
+
+<h3>Sample Output 1</h3>
+<pre>.#
+##</pre>
+
+<h3>Sample Input 2</h3>
+<pre>8 8
+##..#.##
+#.####.#
+.#.#.#..
+.##.#.##
+.#.#.#..
+.##.#.##
+#..#.###
+##.#.##.</pre>
+
+<h3>Sample Output 2</h3>
+<pre>####
+#..#
+#.##
+###.</pre>
+
+<h3>Sample Input 3</h3>
+<pre>5 4
+#....
+..###
+..###
+..###</pre>
+
+<h3>Sample Output 3</h3>
+<pre>#</pre>
+
+<footer>
+  ACM-ICPC World Finals 2017 Problem G: Replicate Replicate Rfplicbte
+</footer>
+
+</body>
+</html>

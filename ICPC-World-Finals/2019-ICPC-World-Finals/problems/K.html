@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem K: Traffic Blights — ICPC World Finals 2019</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2019 · Problem K</p>
+  <h1>Traffic Blights</h1>
+  <p class="meta">Time limit: 2 seconds</p>
+</header>
+
+<p>Cars! Where do they come from? Where do they go? Nobody knows. They
+appear where roads have been built, as if out of nowhere. Some say that no two
+cars are alike. Some say that if you look closely, you can see the pale ghosts
+of miserable humans inside them, trapped forever—particularly in the morning and
+late afternoon. What scientific eye could frame their fearful symmetry?</p>
+
+<p>Well, yours, hopefully. As part of your government’s Urban Traffic Control
+department, you are trying to write a paper on local traffic congestion. It is
+too dangerous to observe cars in the wild, of course, but you have been given
+some data on the traffic lights along your town’s Main Street, and you would
+like to do some theoretical calculations about how well-synchronized they are.</p>
+
+<p>Main Street is set out on a line, with traffic lights placed at various
+points along it. Each traffic light cycles between red and green with a fixed
+period, being red for <i>r</i> seconds, then green for <i>g</i> seconds, then
+red for <i>r</i> seconds, and so on. The values of <i>r</i> and <i>g</i> may be
+different for different traffic lights. At time 0, all the lights have just
+turned red.</p>
+
+<p>Assume that an “ideal” car mystically appears at the west end of Main Street
+at a uniformly random real-valued time in the interval [0, 2019!] (where
+<i>k</i>! is the product of the first <i>k</i> positive integers), driving
+eastwards at a slow crawl of 1 meter/second until it hits a red light. What is
+the probability that it will make it through all the lights without being forced
+to stop? If it does hit a red light, which one is it likely to hit first?</p>
+
+<p>Write a program to answer these questions.</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains an integer <i>n</i> (1 &le; <i>n</i> &le;
+500), the number of traffic lights. Each of the following <i>n</i> lines
+contains three integers <i>x</i>, <i>r</i>, and <i>g</i> describing a traffic
+light, where <i>x</i> (1 &le; <i>x</i> &le; 10<sup>5</sup>) is the position of
+the light along Main Street in meters, and <i>r</i> and <i>g</i> (0 &le;
+<i>r</i>, <i>g</i> and 1 &le; <i>r</i> + <i>g</i> &le; 100) are the durations in
+seconds of the red and green portions of the light’s period (so the light is red
+from time 0 to <i>r</i>, from time <i>r</i> + <i>g</i> to 2<i>r</i> + <i>g</i>,
+and so on).</p>
+
+<p>The west end of Main Street is at position 0, and the lights are listed in
+order of strictly increasing position.</p>
+
+<h2>Output</h2>
+
+<p>For each of the <i>n</i> lights, output a line containing the probability
+that this light will be the first red light an “ideal” car hits. Then output a
+line containing the probability that an “ideal” car makes it all the way without
+stopping. Your answers should have an absolute error of at most
+10<sup>&minus;6</sup>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>4
+1 2 3
+6 2 3
+10 2 3
+16 3 4</pre>
+
+<h3>Sample Output 1</h3>
+<pre>0.4
+0
+0.2
+0.171428571429
+0.228571428571</pre>
+
+<h3>Sample Input 2</h3>
+<pre>6
+4 1 5
+9 8 7
+13 3 5
+21 5 7
+30 9 1
+2019 20 0</pre>
+
+<h3>Sample Output 2</h3>
+<pre>0.166666666667
+0.466666666667
+0.150000000000
+0.108333333333
+0.091666666667
+0.016666666667
+0.000000000000</pre>
+
+<footer>
+  ICPC World Finals 2019 Problem K: Traffic Blights &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

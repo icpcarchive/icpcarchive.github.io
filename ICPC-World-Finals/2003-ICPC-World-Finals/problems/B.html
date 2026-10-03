@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Light Bulbs — The 27th Annual ACM International Collegiate Programming Contest World Finals (2003)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">The 27th Annual ACM International Collegiate Programming Contest World Finals sponsored by IBM · Problem B</p>
+  <h1>Light Bulbs</h1>
+  <p class="meta">Input File: bulbs.in</p>
+</header>
+
+<p>Hollywood’s newest theater, the Atheneum of Culture and Movies, has a huge
+computer-operated marquee composed of thousands of light bulbs. Each row of bulbs is
+operated by a set of switches that are electronically controlled by a computer program.
+Unfortunately, the electrician installed the wrong kind of switches, and tonight is the
+ACM’s opening night. You must write a program to make the switches perform correctly.</p>
+
+<p>A row of the marquee contains <i>n</i> light bulbs controlled by <i>n</i> switches.
+Bulbs and switches are numbered from 1 to <i>n</i>, left to right. Each bulb can either be
+ON or OFF. Each input case will contain the initial state and the desired final state for a
+single row of bulbs.</p>
+
+<p>The original lighting plan was to have each switch control a single bulb. However the
+electrician’s error caused each switch to control two or three consecutive bulbs, as shown in
+Figure 1. The leftmost switch (<i>i</i> = 1) toggles the states of the two leftmost bulbs (1
+and 2); the rightmost switch (<i>i</i> = <i>n</i>) toggles the states of the two rightmost
+bulbs (<i>n</i> – 1 and <i>n</i>). Each remaining switch (1 &lt; <i>i</i> &lt; <i>n</i>)
+toggles the states of the three bulbs with indices <i>i</i> – 1, <i>i</i>, and <i>i</i> + 1.
+(In the special case where there is a single bulb and a single switch, the switch simply
+toggles the state of that bulb.) Thus, if bulb 1 is ON and bulb 2 is OFF, flipping switch 1
+will turn bulb 1 OFF and bulb 2 ON. The minimum cost of changing a row of bulbs from an
+initial configuration to a final configuration is the minimum number of switches that must be
+flipped to achieve the change.</p>
+
+<figure>
+  <img src="images/B-1.png" alt="">
+  <figcaption>Figure 1</figcaption>
+</figure>
+
+<p>You can represent the state of a row of bulbs in binary, where 0 means the bulb is OFF
+and 1 means the bulb is ON. For instance, 01100 represents a row of five bulbs in which the
+second and third bulbs are both ON. You could transform this state into 10000 by flipping
+switches 1, 4, and 5, but it would be less costly to simply flip switch 2.</p>
+
+<p>You must write a program that determines the switches that must be flipped to change a
+row of light bulbs from its initial state to its desired final state with minimal cost. Some
+combinations of initial and final states may not be feasible. For compactness of
+representation, decimal integers are used instead of binary for the bulb configurations.
+Thus, 01100 and 10000 are represented by the decimal integers 12 and 16.</p>
+
+<h2>Input</h2>
+
+<p>The input file contains several test cases. Each test case consists of one line. The line
+contains two non-negative decimal integers, at least one of which is positive and each of
+which contains at most 100 digits. The first integer represents the initial state of the row
+of bulbs and the second integer represents the final state of the row. The binary equivalent
+of these integers represents the initial and final states of the bulbs, where 1 means ON and
+0 means OFF.</p>
+
+<p>To avoid problems with leading zeros, assume that the first bulb in either the initial or
+the final configuration (or both) is ON. There are no leading or trailing blanks in the
+input lines, no leading zeros in the two decimal integers, and the initial and final states
+are separated by a single blank.</p>
+
+<p>The last test case is followed by a line containing two zeros.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, print a line containing the case number and a decimal integer
+representing a minimum-cost set of switches that need to be flipped to convert the row of
+bulbs from initial state to final state. In the binary equivalent of this integer, the
+rightmost (least significant) bit represents the <i>n</i>th switch, 1 indicates that a
+switch has been flipped, and 0 indicates that the switch has not been flipped. If there is no
+solution, print “impossible”. If there is more than one solution, print the one with the
+smallest decimal equivalent.</p>
+
+<p>Print a blank line between cases. Use the output format shown in the example.</p>
+
+<h3>Sample Input 1</h3>
+<pre>12 16
+1 1
+3 0
+30 5
+7038312 7427958190
+4253404109 657546225
+0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case Number 1: 8
+
+Case Number 2: 0
+
+Case Number 3: 1
+
+Case Number 4: 10
+
+Case Number 5: 2805591535
+
+Case Number 6: impossible</pre>
+
+<footer>
+  The 2003 ACM Programming Contest World Finals sponsored by IBM
+</footer>
+
+</body>
+</html>

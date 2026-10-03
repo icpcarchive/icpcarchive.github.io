@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem K: Traffic Blights (Solution) — ACM ICPC World Finals 2019</title>
+<style>
+
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+<header>
+  <p class="kicker">ACM ICPC World Finals 2019</p>
+  <h1>Problem K: Traffic Blights</h1>
+</header>
+<p>Solved by 4 teams.</p>
+<p>First solved after 243 minutes.</p>
+<p>Shortest team solution: 1971 bytes.</p>
+<p>Shortest judge solution: 961 bytes.</p>
+<figure><img src="images/K-1.png" alt=""></figure>
+<p>This was one of the hardest problems in the set, and it has a very nice solution based on an approach that could ostensibly be called “divide and conquer” or “meet in the middle”.</p>
+<p>First, it is easy to see that the system of traffic lights is periodic, with some period P = lcm( p1 , . . . , pn ), where pi = ri + gi is the period of the ith traffic light. So there is a naïve solution to the problem in time Ω(nP) by checking for each time t ∈ {0, . . . , P − 1} what would happen to a car arriving at time t. But P can be as large as lcm(1, . . . , 100) ≈ 1040 so this has no chance of running in time.</p>
+<p>Next, if all pairs of periods pi and p j were relatively prime then the problem would be easier, because now the probabilities that a car passes light i and light j are independent (this follows from the Chinese Remainder Theorem), so in order to compute the probability that a car passes some set of lights we just have to multiply the probabilities of passing the individual lights, and we could solve the problem in O(n) time. Extending this slightly, if some pairs of lights have the same period pi = p j rather than being relatively prime, then we can also solve the problem rather easily, say in O(np) time (where p ≤ 100 is the maximum period length of any individual light) by, for each period, keeping track of which times modulo that period would result in having stopped at a red light. As yet another small extension of this idea, if the periods of some pairs of lights are divisible by each other, the same solution applies (e.g. if one light is green at times 2–3 modulo 5, and another is green at times 7–11 modulo 15, we can think of the first one as instead being a light which is green at times 2–3, 7–8, and 12–13 modulo 15 so that both have the same period).</p>
+<p>These small observations let us deal with some situations but in general the periods will have some shared common factors that will mess things up (e.g. if p1 = 64 and p2 = 92 then gcd( p1 , p2 ) = 4 and the periods are clearly not divisible by each other).</p>
+<p>We now get to the key idea of the solution. Let us pick some number X and for each time t ∈ {0, . . . , X − 1} compute the answer for cars arriving at time t modulo X, that is, times t, t + X, t + 2X, etc. When restricted to these times, a traffic light with period pi will still behave in a periodic way, but with period pi / gcd( X, pi ). These “reduced periods” are in general smaller than the original periods, and the hope is that maybe they are sufficiently reduced that the small common factors are eliminated and the “all periods relatively prime or divisible by each others” solution from above can be applied. So how large do we need to make X? A sufficient condition for all the reduced periods being relatively prime or divisible by each other is that they are all prime powers, so we can choose the smallest X with the property that p/ gcd( p, X ) is a prime power for all 1 ≤ p ≤ 100. It turns out that the smallest such X is quite small, namely X = 23 · 32 · 5 · 7 = 2520 (which can be figured out by some pen and paper work, or in an engineering way by writing a small program to try all X).</p>
+<p>All in all, this leads to an O( X · n · p) time algorithm, which for X ≤ 2520, n ≤ 500, and p ≤ 100 is reasonably fast. The judges considered increasing the limit of p up to 200, because while growing exponentially in p, the value of X at that point is still only 27720 (you need to add in a factor 11 from the previous bound). But we decided that this problem was hard enough as it is, and that it was probably more approachable with the bound of 100.</p>
+</body>
+</html>

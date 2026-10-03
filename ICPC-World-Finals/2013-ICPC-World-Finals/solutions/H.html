@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: Матрёшка (Solution) — ACM ICPC World Finals 2013</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2013</p>
+  <h1>Problem H: Матрёшка</h1>
+</header>
+
+<p>Shortest judge solution: 1396 bytes. Shortest team solution (during contest): 1531 bytes.</p>
+
+<p>Let us write x<sub>0</sub> , . . . , x<sub>n−1</sub> for the sizes, S(i, j) for the minimum number of operations needed to assemble the dolls in positions i, i + 1, . . . , j − 1 to a single group (not necessarily consisting of consecutive dolls), and M(i ) for the minimum number of operations to assemble the dolls in positions i, i + 1, . . . , n − 1 into complete sets (consisting of consecutive dolls). Finally let us say that an interval (i, j) is ok if x<sub>i</sub> , . . . , x<sub>j−1</sub> is a permutation of the integers from 1 to ( j − i ).</p>
+
+<p>What we seek is then M (0). We can write the following recurrence for M (i ), with base case M (n) = 0.</p>
+
+<pre>
+M(i ) = min S(i, j) + M ( j).
+        j∈{i +1,...n}
+         (i, j) is ok
+</pre>
+
+<p>Thus with access to S(i, j), computing the M(·) function can be done in O(n<sup>2</sup> ) time using dynamic programming.</p>
+
+<p>Computing the S(·, ·) values is another dynamic programming exercise. The optimal way of combining the dolls in the interval has as last operation the combination of a group consisting of the dolls from i to k − 1 with a group consisting of the dolls from k to j − 1 for some k between i + 1 and j − 1 (inclusive), so we can write the following recursion when j ≥ i + 2 (the base case when j &lt; i + 2 is left as an exercise):</p>
+
+<pre>
+S(i, j) = min S(i, k ) + S(k, j) + C (i, k, j),
+         i &lt;k&lt; j
+</pre>
+
+<p>where C (i, k, j) is the cost of combining a group [ x<sub>i</sub> , . . . , x<sub>k−1</sub> ] with the group [ x<sub>k</sub> , . . . , x<sub>j−1</sub> ]. The cost C (i, k, j) can be computed as follows: if the group that contains the smallest dolls contains the t smallest dolls among x<sub>i</sub> , . . . , x<sub>j−1</sub> , then C (i, k, j) = j − i − t (because we have to open all but those t smallest dolls in order to combine the two groups).</p>
+
+<p>If implemented naively, this leads to an O(n<sup>4</sup> ) solution which is too slow, but with a little care the recursion for S(·, ·) can be implemented to give an O(n<sup>3</sup> ) solution.</p>
+</body>
+</html>

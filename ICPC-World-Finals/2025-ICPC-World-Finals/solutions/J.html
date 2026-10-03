@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem J: Stacking Cups (Solution) — ICPC World Finals 2025</title>
+<style>
+:root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ICPC World Finals 2025</p>
+  <h1>Problem J: Stacking Cups</h1>
+</header>
+<p>Solved by 128 teams.</p>
+<p>First solved after 35 minutes.</p>
+<p>Shortest judge solution: 496 bytes.</p>
+<p>With some experimentation, one can quickly observe the pattern that all heights in the range 2n − 1 to n<sup>2</sup> can be achieved, except for n<sup>2</sup> − 2. Let’s prove that n<sup>2</sup> − 2 cannot be achieved. Every cup contributes either 0cm, 1cm or its height to the total height of the stack. What’s more, the 3cm cup cannot contribute a height of 1cm, because only the 1cm cup can fit inside and that doesn’t reach the top of the 3cm cup, so it is impossible to build a stack that sits on the base of the 3cm cup. So starting from the solution for n<sup>2</sup> (stacking the cups from smallest to largest), the only change that reduces the height by up to 2cm is to put the 1cm cup inside a larger cup (reducing the height by 1cm).</p>
+<p>Now lets consider how to construct any other solution. We can proceed inductively: assume we know how to use n − 1 cups to construct stacks with heights from 2n − 3 to n<sup>2</sup> − 2n + 1, excluding n<sup>2</sup> − 2n − 1. We can then add the nth cup either to the bottom of the stack (increasing the height by 1, with a minimum of 2n − 1) or to the top (increasing the height by 2n − 1). The first case gives us all heights from 2n − 1 to n<sup>2</sup> − 2n − 1; the second gives all heights from 4n − 4 to n<sup>2</sup> except n<sup>2</sup> − 2. So provided that n<sup>2</sup> − 2n ≥ 4n − 4, we will have complete coverage except for n<sup>2</sup> − 2. This holds for n ≥ 6. For n ≤ 5 we can use brute force.</p>
+</body>
+</html>

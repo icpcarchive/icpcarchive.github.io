@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem I: Quests — ICPC World Finals 2020</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">ICPC World Finals 2020 · Problem I</p>
+  <h1>Quests</h1>
+  <p class="meta">Time limit: 10 seconds</p>
+</header>
+
+<p>To relax before competing in the ICPC World Finals, you have decided to
+play a computer game called Quests. You have played it a number of times
+already, and now you want to achieve a perfect playthrough&mdash;to prepare
+for your perfect playthrough of the finals!</p>
+
+<p>In the game, you have to complete a number of quests, and you earn
+experience points (XPs) for completing each one. The total number of XPs you
+have earned at any time determines your current level. You reach a new level
+for every <i>v</i> XPs that you earn. Formally, your level at any time is the
+largest integer <i>L</i> such that you have at least <i>L</i>&thinsp;&middot;&thinsp;<i>v</i>
+XPs.</p>
+
+<p>Each quest is assigned a number <i>x</i> of XPs and a target difficulty
+level <i>d</i>. If you complete the quest when your level is at least
+<i>d</i>, you earn <i>x</i> XPs. However, if you complete the quest when your
+level is less than <i>d</i>, you will earn <i>c</i>&thinsp;&middot;&thinsp;<i>x</i>
+XPs. The constant <i>c</i> is an XP multiplier that results in a bonus for
+completing a quest when you are at a lower level than the recommended level
+<i>d</i>.</p>
+
+<p>You know all the <i>n</i> quests and their respective <i>x</i> and
+<i>d</i> numbers by heart (and you know the numbers <i>v</i> and <i>c</i>
+as well&mdash;you have played this game a lot). You are also skilled enough to
+complete any quest, regardless of its target difficulty level and your level.
+You want to complete all the quests in an order that will allow you to earn
+the largest possible number of XPs.</p>
+
+<p>For example in the sample input, the maximum XPs you can earn is 43, which
+is done as follows. First complete the second quest (you earn 4 XPs, because
+you are at level 0, and you completed a quest with target difficulty level
+2). Then complete the first quest (you earn 30 XPs, because you are still at
+level 0, and the target difficulty level is 1). With 34 XPs, you are now level
+3. Finally, complete the third quest (for which you earn 9 XPs, without the
+multiplier, since you are already at level 3).</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains three integers <i>n</i>, <i>v</i>, and
+<i>c</i>, where <i>n</i> (1 &le; <i>n</i> &le; 2&thinsp;000) is the number of
+quests in the game, <i>v</i> (1 &le; <i>v</i> &le; 2&thinsp;000) is the number
+of XPs required to reach each level, and <i>c</i> (2 &le; <i>c</i> &le;
+2&thinsp;000) is the XP multiplier for completing a quest before reaching its
+target difficulty level. Following that are <i>n</i> lines, each of which
+contains two integers <i>x</i> and <i>d</i> describing one quest, where
+<i>x</i> (1 &le; <i>x</i> &le; 2&thinsp;000) is the number of XPs you earn for
+completing that quest if you are at or above its target difficulty level and
+<i>d</i> (1 &le; <i>d</i><sub><i>i</i></sub> &le; 10<sup>6</sup>) is the target
+difficulty level for that quest.</p>
+
+<h2>Output</h2>
+
+<p>Output the maximum possible number of XPs you could earn by finishing all
+the quests.</p>
+
+<h3>Sample Input 1</h3>
+<pre>3 10 2
+15 1
+2 2
+9 1</pre>
+
+<h3>Sample Output 1</h3>
+<pre>43</pre>
+
+<footer>
+  ICPC World Finals 2020 Problem I: Quests
+</footer>
+
+</body>
+</html>

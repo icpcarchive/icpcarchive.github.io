@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem I: The Solar System — The 27th Annual ACM International Collegiate Programming Contest World Finals (2003)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">The 27th Annual ACM International Collegiate Programming Contest World Finals sponsored by IBM · Problem I</p>
+  <h1>The Solar System</h1>
+  <p class="meta">Input File: solar.in</p>
+</header>
+
+<p>It is common knowledge that the Solar System consists of the sun at its center and nine
+planets moving around the sun on elliptical orbits. Less well known is the fact that the
+planets’ orbits are not at all arbitrary. In fact, the orbits obey three laws discovered by
+Johannes Kepler. These laws, also called “The Laws of Planetary Motion,” are the following.</p>
+
+<ol>
+  <li>The orbits of the planets are ellipses, with the sun at one focus of the ellipse.
+  (Recall that the two foci of an ellipse are such that the sum of the distances to them is
+  the same for all points on the ellipse.)</li>
+  <li>The line joining a planet to the sun sweeps over equal areas during equal time
+  intervals as the planet travels around the ellipse.</li>
+  <li>The ratio of the squares of the revolutionary periods of two planets is equal to the
+  ratio of the cubes of their semi major axes.</li>
+</ol>
+
+<figure>
+  <img src="images/I-1.png" alt="">
+</figure>
+
+<p>By Kepler’s first law, the path of the planet shown in the figure on the left is an
+ellipse. According to Kepler’s second law, if the planet goes from M to N in time
+<i>t</i><sub>A</sub> and from P to Q in time <i>t</i><sub>B</sub> and if
+<i>t</i><sub>A</sub> = <i>t</i><sub>B</sub>, then area A equals area B. Kepler’s third law is
+illustrated next.</p>
+
+<figure>
+  <img src="images/I-2.png" alt="">
+</figure>
+
+<p>Consider an ellipse whose center is at the origin O and that is symmetric with respect to the two
+coordinate axes. The x-axis intersects the ellipse at points A and B and the y-axis intersects the ellipse
+at points C and D. Set a=½|AB| and b=½|CD|. Then the ellipse is defined by the
+equation x2/a2+y2/b2=1. If a &ge; b, AB is called the major axis, CD the minor axis, and OA
+(with length a) is called the semi major axis. When two planets are revolving around the sun
+in times <i>t</i><sub>1</sub> and <i>t</i><sub>2</sub> respectively, and the semi major axes
+of their orbits have lengths <i>a</i><sub>1</sub> and <i>a</i><sub>2</sub>, then according
+to Kepler’s third law (<i>t</i><sub>1</sub>/<i>t</i><sub>2</sub>)<sup>2</sup> =
+(<i>a</i><sub>1</sub>/<i>a</i><sub>2</sub>)<sup>3</sup>.</p>
+
+<p>In this problem, you are to compute the location of a planet using Kepler’s laws. You are
+given the description of one planet in the Solar System (i.e., the length of its semi-major
+axis, semi-minor axis, and its revolution time) and the description of a second planet (its
+semi-major axis and semi-minor axis). Assume that the second planet’s orbit is aligned with
+the coordinate axes (as in the above figure), that it moves in counter clockwise direction,
+and that the sun is located at the focal point with non-negative x-coordinate. You are to
+compute the position of the second planet a specified amount of time after it starts at the
+point with maximal x-coordinate on its orbit (point B in the above figure).</p>
+
+<h2>Input</h2>
+
+<p>The input file contains several descriptions of pairs of planets. Each line contains six
+integers <i>a</i><sub>1</sub>, <i>b</i><sub>1</sub>, <i>t</i><sub>1</sub>,
+<i>a</i><sub>2</sub>, <i>b</i><sub>2</sub>, <i>t</i>. The first five integers are positive,
+and describe two planets as follows:
+<blockquote>
+  <i>a</i><sub>1</sub> = semi major axis of the first planet’s orbit<br>
+  <i>b</i><sub>1</sub> = semi minor axis of the first planet’s orbit<br>
+  <i>t</i><sub>1</sub> = period of revolution of the first planet (in days)<br>
+  <i>a</i><sub>2</sub> = semi major axis of the second planet’s orbit<br>
+  <i>b</i><sub>2</sub> = semi minor axis of the second planet’s orbit
+</blockquote></p>
+
+<p>The non-negative integer <i>t</i> is the time (in days) at which you have to determine the
+position of the second planet, assuming that the planet starts in position (<i>a</i><sub>2</sub>,0).</p>
+
+<p>The last description is followed by a line containing six zeros.</p>
+
+<h2>Output</h2>
+
+<p>For each pair of planets described in the input, produce one line of output. For each
+line, print the number of the test case. Then print the x- and y-coordinates of the position
+of the second planet after <i>t</i> days. These values must be exact to three digits to the
+right of the decimal point. Follow the format of the sample output provided below.</p>
+
+<h3>Sample Input 1</h3>
+<pre>10 5 10 10 5 10
+10 5 10 20 10 10
+0 0 0 0 0 0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Solar System 1: 10.000 0.000
+Solar System 2: -17.525 4.819</pre>
+
+<footer>
+  The 2003 ACM Programming Contest World Finals sponsored by IBM
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+                                           Problem L
+                                         Sweep Stakes
+                                    Time limit: 20 seconds
+You may have already won! In fact, you did already win! You won your very own island, in the deepest
+reaches of the unexplored ocean! Well, mostly unexplored. As it happens, there was a small military
+base there before you, and when they packed up and flew out they left behind an assortment of scraps,
+munitions, tunnels, . . . and unexploded defensive ordnance. That’s right: You now possess your very
+own minefield.
+The minefield consists of an m × n grid, with any square of the grid holding 0 or 1 mines. Fortunately,
+you were able to recover the engineers’ plans from when they deployed the mines. Unfortunately, the
+exact locations of the mines were never written down: the engineers had a preselected independent
+probability of deploying a mine in each square. However, you do know how many mines were placed in
+total.
+You would like to estimate how safe various parts of your island are. Write a program to compute the
+probability of mine counts over various subsets of the minefield.
+
+
+Input
+
+The first line of input contains four integers m, n, t, and q, where m and n (1 ≤ m, n ≤ 500) are the
+dimensions of the minefield, t (0 ≤ t ≤ mn) is the total number of mines, and q (0 ≤ q ≤ 500) is
+the number of queries. The second line contains m real numbers p1 , p2 , . . . , pm (0 ≤ pi ≤ 0.1 for all
+i, with at most six digits after the decimal point specified), and the third line contains n real numbers
+q1 , q2 , . . . , qn (0 ≤ qj ≤ 0.1 for all j, with at most six digits after the decimal point specified). The
+preselected probability of the engineers placing a mine on square (i, j) is pi + qj . All choices of whether
+to place a mine on a given square were made independently, and the value of t is chosen so that the
+probability of deploying exactly t mines is at least 10−5 .
+Each of the remaining q lines describes a single query. Each of those lines begins with an integer s
+(0 ≤ s ≤ 500), followed by s pairs of integers i and j (1 ≤ i ≤ m, 1 ≤ j ≤ n), which are the
+coordinates of s distinct squares in the grid.
+
+
+Output
+
+For each query with s squares, output s + 1 real numbers, which are the probabilities of the s given
+squares containing 0, 1, . . . , s mines. Your answer should have an absolute error of at most 10−6 .
+
+ Sample Input 1                                        Sample Output 1
+ 2 2 1 2                                               0.75 0.25
+ 0.05 0.05                                             0.5 0.5 0
+ 0.05 0.05
+ 1 1 1
+ 2 2 1 1 2
+
+
+
+ICPC World Finals 2020 Problem L: Sweep Stakes                                                            23
+

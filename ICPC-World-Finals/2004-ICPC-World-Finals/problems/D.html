@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">The 2004 28th Annual ICPC World Finals · Problem D</p>
+  <h1>Insecure in Prague</h1>
+  <p class="meta">Input File: insecure.in</p>
+</header>
+
+
+<p>Prague is a dangerous city for developers of cryptographic schemes. In 2001, a pair of researchers in Prague
+announced a security flaw in the famous PGP encryption protocol. In Prague in 2003, a flaw was discovered in
+the SSL/TLS (Secure Sockets Layer and Transport Layer Security) protocols. However, Prague&rsquo;s reputation for
+being tough on cryptographic protocols hasn&rsquo;t stopped the part-time amateur cryptographer and full-time
+nutcase, Immanuel Kant-DeWitt (known to his friends as &ldquo;I. Kant-DeWitt&rdquo;), from bringing his latest encryption
+scheme to Prague. Here&rsquo;s how it works:</p>
+
+<p>A plain text message <i>p</i> of length <i>n</i> is to be transmitted. The sender chooses an integer
+<i>m</i> &ge; 2<i>n</i>, and integers <i>s</i>, <i>t</i>, <i>i</i>, and <i>j</i>, where 0 &le; <i>s</i>, <i>t</i>, <i>i</i>, <i>j</i> &lt; <i>m</i> and
+<i>i</i> &lt; <i>j</i>. The scheme works as follows: <i>m</i> is the length of the transmitted ciphertext string,
+<i>c</i>. Initially, <i>c</i> contains <i>m</i> empty slots. The first letter of <i>p</i> is placed in position
+<i>s</i> of <i>c</i>. The <i>k</i>th letter, <i>k</i> &ge; 2, is placed by skipping over <i>i</i> empty slots in
+<i>c</i> after the (<i>k</i>-1)st letter, wrapping around to the beginning of <i>c</i> if necessary. Slots already
+containing letters are not counted as empty. For instance, if the message is PRAGUE, if <i>s</i> = 1,
+<i>i</i> = 6, and <i>m</i> = 15, then the letters are placed in <i>c</i> as follows:</p>
+
+<pre>         A    P    _    U   _    _    _    _    R    G   _ _ E _ _
+         0    1    2    3   4    5    6    7    8    9   10 11 12 13 14</pre>
+
+<p>Starting with the first empty slot in or after position <i>t</i> in string <i>c</i>, the plain text message is
+entered again, but this time skipping <i>j</i> empty slots between letters. For instance, if <i>t</i> = 0 and
+<i>j</i> = 8, the second copy of <i>p</i> is entered as follows (beginning in position 2, the first empty slot
+starting from <i>t</i> = 0):</p>
+
+<pre>         A    P    P    U   R    _    A    U    R    G   E G E _ _
+         0    1    2    3   4    5    6    7    8    9   10 11 12 13 14</pre>
+
+<p>Finally, any remaining unfilled slots in <i>c</i> are filled in with randomly chosen letters:</p>
+
+<pre>         A    P    P    U   R    A    A    U    R    G   E G E W E
+         0    1    2    3   4    5    6    7    8    9   10 11 12 13 14</pre>
+
+<p>Kant-DeWitt believes that the duplication of the message, combined with the use of random letters, will confuse
+decryption schemes based upon letter frequencies and that, without knowledge of <i>s</i> and <i>i</i>, no one can
+figure out what the original message is. Your job is to try to prove him wrong. Given a number of ciphertext strings
+(and no additional information), you will determine the longest possible message that could have been encoded using
+the Kant-DeWitt method.</p>
+
+<h2>Input</h2>
+
+<p>A number of ciphertext strings, one per line. Each string will consist only of upper case alphabetic letters, with
+no leading or trailing blanks; each will have length between 2 and 40.</p>
+
+<p>Input for the last test case is followed by a line consisting of the letter X.</p>
+
+<h2>Output</h2>
+
+<p>For each input ciphertext string, print the longest string that could be encrypted in the ciphertext. If more than
+one string has the longest length, then print &ldquo;Codeword not unique&rdquo;. Follow the format of the sample
+output given below.</p>
+
+<h3>Sample Input 1</h3>
+<pre>APPURAAURGEGEWE
+ABABABAB
+THEACMPROGRAMMINGCONTEST
+X</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Code 1: PRAGUE
+Code 2: Codeword not unique
+Code 3: Codeword not unique</pre>
+
+
+<footer>
+  The 2004 ACM Programming Contest World Finals · Problem D: Insecure in Prague · sponsored by IBM
+</footer>
+
+</body>
+</html>

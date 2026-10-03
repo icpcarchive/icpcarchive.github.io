@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem D: RAID! — The Twenty-first Annual ACM International Collegiate Programming Contest Finals (1997)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">The Twenty-first Annual ACM International Collegiate Programming Contest Finals · Problem D</p>
+  <h1>RAID!</h1>
+  <p class="meta">Input file: raid.in</p>
+</header>
+
+<p>RAID (Redundant Array of Inexpensive Disks) is a technique which uses multiple disks to store data. By storing the data on more than one disk, RAID is more fault tolerant than storing data on a single disk. If there is a problem with one of the disks, the system can still recover the original data provided that the remaining disks do not have corresponding problems.</p>
+
+<p>One approach to RAID breaks data into blocks and stores these blocks on all but one of the disks. The remaining disk is used to store the parity information for the data blocks. This scheme uses vertical parity in which bits in a given position in data blocks are exclusive ORed to form the corresponding parity bit. The parity block moves between the disks, starting at the first disk, and moving to the next one in order. For instance, if there were five disks and 28 data blocks were stored on them, they would be arranged as follows:</p>
+
+<pre>Disk 1                 Disk 2                  Disk 3                      Disk 4               Disk 5
+Parity for 1-4         Data block 1            Data block 2                Data block 3         Data block 4
+Data block 5           Parity for 5-8          Data block 6                Data block 7         Data block 8
+Data block 9           Data block 10           Parity for 9-12             Data block 11        Data block 12
+Data block 13          Data block 14           Data block 15               Parity for 13-16     Data block 16
+Data block 17          Data block 18           Data block 19               Data block 20        Parity for 17-20
+Parity for 21-24       Data block 21           Data block 22               Data block 23        Data block 24
+Data block 25          Parity for 25-28        Data block 26               Data block 27        Data block 28</pre>
+
+<p>With this arrangement of disks, a block size of two bits and even parity, the hexadecimal sample data 6C7A79EDFC (01101100 01111010 01111001 11101101 11111100 in binary) would be stored as:</p>
+
+<pre>Disk 1              Disk 2                Disk 3                 Disk 4                Disk 5
+00                  01                    10                     11                    00
+01                  10                    11                     10                    10
+01                  11                    01                     10                    01
+11                  10                    11                     11                    01
+11                  11                    11                     00                    11</pre>
+
+<p>If a block becomes unavailable, its information can still be retrieved using the information on the other disks. For example, if the first bit of the first block of disk 3 becomes unavailable, it can be reconstructed using the corresponding parity and data bits from the other four disks. We know that our sample system uses even parity:</p>
+
+<p>0⊕0⊕?⊕1⊕0=0</p>
+
+<p>So the missing bit must be 1.</p>
+
+<p>An arrangement of disks is invalid if a parity error is detected, or if any data block cannot be reconstructed because two or more disks are unavailable for that block.</p>
+
+<p>Write a program to report errors and recover information from RAID disks.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of several disk sets.</p>
+
+<p>Each disk set has 3 parts. The first part of the disk set contains three integers on one line: the first integer <i>d</i>, 2 &le; <i>d</i> &le; 6, is the number of disks, the second integer <i>s</i>, 1 &le; <i>s</i> &le; 64, is the size of each block in bits, and the third integer <i>b</i>, 1 &le; <i>b</i> &le; 100, is the total number of data and parity blocks on each disk. The second part of the disk set is a single letter on a line, either “E” signifying even parity or “O” signifying odd parity. The third part of the disk set contains <i>d</i> lines, one for each disk, each holding <i>s</i> × <i>b</i> characters representing the bits on the disk, with the most significant bits first. Each bit will be specified as “0” or “1” if it holds valid data, or “x” if that bit is unavailable. The end of input will be a disk set with <i>d</i> = 0. There will be no other data for this set which should not be processed.</p>
+
+<h2>Output</h2>
+
+<p>For each disk set in the input, display the number of the set and whether the set is valid or invalid. If the set is valid, display the recovered data bits in hexadecimal. If necessary, add extra “0” bits at the end of the recovered data so the number of bits is always a multiple of 4. All output shall be appropriately labeled.</p>
+
+<h3>Sample Input 1</h3>
+<pre>5 2 5
+E
+0001011111
+0110111011
+1011011111
+1110101100
+0010010111
+3 2 5
+E
+0001111111
+0111111011
+xx11011111
+3 5 1
+O
+11111
+11xxx
+x1111
+0</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Disk set 1 is valid, contents are: 6C7A79EDFC
+Disk set 2 is invalid.
+Disk set 3 is valid, contents are: FFC</pre>
+
+<footer>
+  The Twenty-first Annual ACM International Collegiate Programming Contest Finals · Problem D · RAID!
+</footer>
+
+</body>
+</html>

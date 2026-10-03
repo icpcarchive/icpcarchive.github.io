@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem B: Affine Mess — ICPC 2011 World Finals</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC 2011 World Finals · Problem B</p>
+  <h1>Affine Mess</h1>
+  <p class="meta">Problem ID: affine</p>
+</header>
+
+
+<p>Tess L. Ation ran into a little problem last week when she demonstrated the
+beta version of her new drawing software. On the screen she had an elegant
+demonstration design that illustrated every feature of her program; it had taken
+her hours to produce it. She was just putting the finishing touches on it as a
+group of potential investors entered the room to see the demonstration.</p>
+
+<p>The presentation went well. Near the end, Tess clicked on a control panel
+button and told her audience, “This is the ‘snap to grid’ control. It forces
+control points, such as vertices, to jump to the nearest grid point. Here, let
+me show you,” and she placed three bright red dots on the screen. Each one
+appeared at the grid point nearest to where she clicked. (“Luckily all control
+points in my demo design were already at integer coordinates. But I will have to
+remember to delete these three red dots before I save my diagram,” she thought to
+herself.) “Now I’ll step into the next room and get out of your way so you can
+discuss the system among yourselves and get a closer look at the screen, but
+please don’t touch anything, since I haven’t saved that file yet.”</p>
+
+<p>A few minutes later, the group joined Tess. One of the visitors stepped up to
+Tess and said, “I hope you don’t mind, but I wanted to try it myself. Don’t
+worry, I just played with the x-scale and y-scale controls a little bit.” The
+next person said, “Sorry if this is a problem, but I really wanted to get a feel
+for the speed of display, so I just played around with the translation tool.”
+And a third person said, “I couldn’t resist just one tiny test: I rotated the
+image just so I could see all of the vertices snap to the nearest grid points
+after the rotation.”</p>
+
+<p>The person who played with the rotation tool remembered going first, but the
+other two could not recall their order. The three remembered only a few details
+of the changes. The x- and y-scaling factors had been (possibly negative)
+nonzero integers; the center of scaling was the origin (0, 0). The x- and
+y-translation amounts had been integers. Rotation had been specified by a point
+with integer coordinates (x, y) on the perimeter of a square of width 20
+centered at the origin (hence, −10 ≤ x, y ≤ 10 and the absolute value of x or y
+or both was 10). The tool rotated the drawing around the origin such that the
+positive x-axis would pass through (x, y) afterwards. Snapping took place after
+this rotation (coordinates with a fractional part of 0.5 were rounded away from
+zero).</p>
+
+<p>After they left, Tess looked at her design – it was completely changed! She
+had not yet implemented the “undo” feature, and she had not saved the diagram
+prior to giving the demonstration. However, the three identical red dots were
+still there (transformed to other integer grid locations, of course), and Tess
+could remember the integer coordinates where she had originally placed them.
+Obviously, someone else might have altered the drawing without saying anything
+to her, but she could write a program to see if it was possible to reconstruct
+the sequence of alterations. Can you too?</p>
+
+<h2>Input</h2>
+
+<p>The input contains several test cases. Each test case consists of six pairs
+of integers x<sub>i</sub> and y<sub>i</sub> (−500 ≤ x<sub>i</sub>, y<sub>i</sub> ≤
+500 for 1 ≤ i ≤ 6), three pairs per input line. The first three pairs represent
+the distinct initial locations of the three red dots. The last three pairs
+represent the distinct final locations of the three dots. The indexing of the
+pairs in each group of three is not significant: for example, (x<sub>1</sub>,
+y<sub>1</sub>) could have been mapped to any of (x<sub>4</sub>, y<sub>4</sub>),
+(x<sub>5</sub>, y<sub>5</sub>) or (x<sub>6</sub>, y<sub>6</sub>).</p>
+
+<p>The last test case is followed by a line with six zeros.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, display its case number followed by one of the following
+three messages:</p>
+
+<ul>
+  <li>“equivalent solutions” to indicate that there are one or more valid
+  transformations, and all of them have the same effect on the whole drawing (no
+  matter what the whole drawing looks like).</li>
+  <li>“inconsistent solutions” to indicate that there are several valid
+  transformations, but in general not all of them map the entire drawing in the
+  same way (some drawing is mapped differently by two valid transformations).</li>
+  <li>“no solution” to indicate that neither of the first two cases occurs.</li>
+</ul>
+
+<p>A valid transformation is a combination of rotation, translation and scaling
+(or rotation, scaling and translation) which satisfies the restrictions
+described above and maps the initial set of red dots to the final set
+(occupying all three final locations).</p>
+
+<p>Follow the format of the sample output.</p>
+
+<h3>Sample input</h3>
+<pre>3 0 4 0 1 4
+-2 -4 -1 3 3 -4
+0 1 1 1 2 1
+1 2 2 2 3 2
+1 0 2 0 3 0
+3 3 1 1 2 2
+1 0 2 0 3 0
+3 2 1 1 2 2
+2 3 0 6 1 2
+2 3 0 6 1 2
+0 0 0 0 0 0</pre>
+
+<h3>Output for the Sample Input</h3>
+<pre>Case 1: equivalent solutions
+Case 2: inconsistent solutions
+Case 3: no solution
+Case 4: inconsistent solutions
+Case 5: equivalent solutions</pre>
+
+
+<footer>
+  ICPC 2011 World Finals Problem B: Affine Mess
+</footer>
+
+</body>
+</html>

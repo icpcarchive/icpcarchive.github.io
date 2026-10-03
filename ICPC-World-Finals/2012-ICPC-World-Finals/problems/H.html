@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem H: Room Service — ACM-ICPC World Finals 2012</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2012 · Problem H</p>
+  <h1>Room Service</h1>
+  <p class="meta">Problem ID: room</p>
+</header>
+
+
+<p>You are working for a company designing cute, funny robot vacuum cleaners.
+At a high level, the robots’ behavior is divided into three modes:</p>
+
+<ol>
+  <li>Exploration</li>
+  <li>Vacuuming</li>
+  <li>Rampant Killing</li>
+</ol>
+
+<p>Unfortunately, while consumer testing shows that the last two modes are
+working perfectly, the exploration mode still has bugs. You’ve been put in
+charge of debugging.</p>
+
+<p>At the beginning of the exploration mode, the robot is placed into a convex
+polygonal room. It has sensors that should tell it where all the walls are. Your
+job is to write a program that verifies that these readings are correct. To do
+this, the robot needs to physically touch every wall in the room.</p>
+
+<p>Your problem is this: given the shape of a convex polygonal room with
+<i>N</i> walls and a starting point <i>P</i> inside it, determine the shortest
+route that touches each wall and then returns to <i>P</i>. Touching a corner
+counts as touching both incident walls.</p>
+
+<h2>Input</h2>
+
+<p>Each test case starts with a line containing the number of vertices
+<i>N</i> of the polygon (3 &le; <i>N</i> &le; 100) and the integer coordinates
+<i>P<sub>x</sub></i> and <i>P<sub>y</sub></i> of the robot’s starting point
+(−10&thinsp;000 &le; <i>P<sub>x</sub></i>, <i>P<sub>y</sub></i> &le;
+10&thinsp;000). This is followed by <i>N</i> lines, each containing two
+integers <i>x</i>, <i>y</i> (−10&thinsp;000 &le; <i>x</i>, <i>y</i> &le;
+10&thinsp;000) defining a vertex of the polygon. Vertices are given in
+counterclockwise order, all interior angles are less than 180 degrees, the
+polygon does not self-intersect, and the robot’s starting point is strictly
+inside the polygon.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, display the case number and the length of the desired
+route, accurate to two decimal places.</p>
+
+<h3>Sample Input</h3>
+<pre>
+4 0 0
+-1 -1
+1 -1
+1 1
+-1 1
+3 10 1
+0 0
+30 0
+0 20
+</pre>
+
+<h3>Output for Sample Input</h3>
+<pre>
+Case 1: 5.66
+Case 2: 36.73
+</pre>
+
+
+<footer>
+  ACM-ICPC World Finals 2012 Problem H: Room Service
+</footer>
+
+</body>
+</html>

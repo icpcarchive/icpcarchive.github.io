@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem W: Riddle of the Sphinx — 46th ICPC World Championship (2022)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">46th ICPC World Championship · Problem W</p>
+  <h1>Riddle of the Sphinx</h1>
+  <p class="meta">Time limit: 2 seconds</p>
+</header>
+
+<figure class="hero">
+  <img src="images/W-1.png" alt="">
+  <figcaption>Oedipus and the Sphinx by Gustave Moreau, 1864, public domain</figcaption>
+</figure>
+
+<p>One of the most remarkable landmarks in Egypt is the Great Sphinx of Giza, a
+statue depicting a mythical creature with the head of a human, the body of a
+lion, and the wings of an eagle. Sphinxes were regarded as guardians in Egyptian
+and Greek mythologies. Probably the most famous sphinx is the one who guarded
+the Greek city of Thebes. According to myths, when Oedipus tried to enter the
+city, the sphinx gave him the following riddle: “Which creature has one voice,
+but has four feet in the morning, two feet in the afternoon, and three feet at
+night?”</p>
+
+<p>As you might have heard, Oedipus correctly answered, “Man — who crawls on all
+fours as a baby, then walks on two feet as an adult, and then uses a walking
+stick in old age.”</p>
+
+<p>In this problem, you meet a different sphinx who gives you a somewhat
+reversed riddle: “How many legs do an axex, a basilisk, and a centaur have?”
+While you recognize these as creatures from Egyptian and Greek mythology, you
+have no clue how many legs each has (except that it is a nonnegative integer).
+The sphinx sternly instructs you to not touch anything so you are unable to
+search for the answer on your phone. However, the sphinx allows you to ask her
+five questions. In each question you can ask the sphinx how many legs some
+number of these creatures have in total. For instance, you could ask, “How many
+legs do three basilisks and one axex have in total?” or “How many legs do five
+centaurs have?” Seems easy enough, you think, but then you remember that
+sphinxes are tricky creatures: one of the sphinx&rsquo;s five answers might be an
+outright lie, and you do not know which one.</p>
+
+<p>Write a program to talk to the sphinx, ask the five questions, and solve the
+riddle.</p>
+
+<h2>Interaction</h2>
+
+<p>There are exactly five rounds of questions. In each question round, you must
+first write a line containing three space-separated integers <i>a</i>, <i>b</i>,
+and <i>c</i> (0 &le; <i>a</i>, <i>b</i>, <i>c</i> &le; 10), representing the
+question “How many legs do <i>a</i> axex, <i>b</i> basilisks, and <i>c</i>
+centaurs have in total?” After the question is asked, an input line containing
+a single integer <i>r</i> (0 &le; <i>r</i> &le; 10<sup>5</sup>) is available on
+standard input, giving the sphinx&rsquo;s answer to your question.</p>
+
+<p>After the five rounds of questions, output a line containing three
+space-separated nonnegative integers <i>a</i>, <i>b</i>, and <i>c</i>,
+indicating the number of legs of an axex, a basilisk, and a centaur,
+respectively.</p>
+
+<h3>Sample Interaction 1</h3>
+<p><i>Read</i></p>
+<pre>12
+13
+24
+4
+8</pre>
+<p><i>Write</i></p>
+<pre>1 1 1
+1 1 1
+5 0 1
+1 0 0
+1 1 0
+4 4 4</pre>
+
+<h3>Sample Interaction 2</h3>
+<p><i>Read</i></p>
+<pre>2023
+0
+42
+2024
+0</pre>
+<p><i>Write</i></p>
+<pre>4 4 4
+1 0 0
+0 1 0
+0 0 1
+0 0 0
+0 42 2024</pre>
+
+<footer>
+  46th ICPC World Championship Problem W: Riddle of the Sphinx &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

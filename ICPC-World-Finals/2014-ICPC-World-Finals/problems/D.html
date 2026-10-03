@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem D: Game Strategy &mdash; ACM-ICPC World Finals 2014</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">&larr; All problems</a></p>
+
+
+<header>
+  <p class="kicker">ACM-ICPC World Finals 2014 &middot; Problem D</p>
+  <h1>Game Strategy</h1>
+  <p class="meta">Time limit: 8 seconds</p>
+</header>
+
+<p>Alice and Bob are playing a board game. The board is divided into positions labeled <i>a</i>, <i>b</i>, <i>c</i>, <i>d</i>, . . . and
+the players use a gamepiece to mark the current position. Each round of the game consists of two steps:</p>
+
+<ol>
+  <li>Alice makes a choice. Depending on the current position, she has different options, where each
+  option is a set of positions. Alice chooses one set <i>S</i> among the available sets of positions.</li>
+  <li>Bob makes a choice. His choice is one position <i>p</i> from the set <i>S</i> that Alice chose in step 1. Bob
+  moves the gamepiece to position <i>p</i>, which is the position for the start of the next round.</li>
+</ol>
+
+<p>Prior to the first round, each player independently selects one of the positions and reveals it at the start
+of the game. Bob&rsquo;s position is where the game starts. Alice wins the game if she can force Bob to move
+the gamepiece to the position she has chosen. To make things interesting, they have decided that Bob
+will pay Alice a certain amount if he loses, but Alice must pay Bob a certain amount after every round.
+The game now ends if Alice&rsquo;s position is reached or when Alice runs out of cash.</p>
+
+<p>Both Alice and Bob play optimally: Alice will always choose an option that will lead to her winning the
+game, if this is possible, and Bob will always try to prevent Alice from winning.</p>
+
+<p>For all possible start and end positions, Alice would like you to determine whether she can win the game
+and if so, how many rounds it will take.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of a single test case. The first line contains the number of positions <i>n</i> (1 &le; <i>n</i> &le; 25).
+The <i>n</i> positions are labeled using the first <i>n</i> letters of the English alphabet in lowercase. The rest of the
+test case consists of <i>n</i> lines, one for each position <i>p</i>, in alphabetical order. The line for position <i>p</i> contains
+the options available to Alice in position <i>p</i>. It starts with the number of options <i>m</i> (1 &le; <i>m</i> &lt; 2<sup><i>n</i></sup>), which
+is followed by <i>m</i> distinct strings, one for each option. Each string contains the positions available to
+Bob if Alice chooses that option. The string has at least 1 character, the characters (which correspond
+to valid board positions) are in alphabetical order, and no characters are duplicated. The total number of
+options for the test case is at most 10<sup>6</sup>.</p>
+
+<h2>Output</h2>
+
+<p>For each position <i>p</i> in alphabetical order, display one line. In that line, for each position <i>q</i> in alphabetical
+order display the minimal number of rounds in which Alice can be guaranteed to arrive at position <i>q</i>
+when starting the game in position <i>p</i>, or &minus;1 if Alice cannot be guaranteed to reach <i>q</i> from <i>p</i>.</p>
+
+<h3>Sample Input 1</h3>
+<pre>2
+2 ab b
+1 b</pre>
+
+<h3>Sample Output 1</h3>
+<pre>0 1
+-1 0</pre>
+
+<h3>Sample Input 2</h3>
+<pre>3
+1 b
+2 b a
+2 ab ac</pre>
+
+<h3>Sample Output 2</h3>
+<pre>0 1 -1
+1 0 -1
+2 2 0</pre>
+
+
+<footer>
+  ACM-ICPC World Finals 2014 Problem D: Game Strategy
+</footer>
+
+</body>
+</html>

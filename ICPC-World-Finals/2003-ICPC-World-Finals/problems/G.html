@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: A Linking Loader — The 27th Annual ACM International Collegiate Programming Contest World Finals (2003)</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">The 27th Annual ACM International Collegiate Programming Contest World Finals sponsored by IBM · Problem G</p>
+  <h1>A Linking Loader</h1>
+  <p class="meta">Input File: linker.in</p>
+</header>
+
+<p>An object module is produced by a compiler as a result of processing a source program. A
+linking loader (or just a linker) is used to combine the multiple object modules used when a
+program contains several separately compiled modules. Two of its primary tasks are to
+relocate the code and data in each object module (since the compiler does not know where in
+memory a module will be placed), and to resolve symbolic references from one module to
+another. For example, a main program may reference a square root function called <i>sqrt</i>,
+and that function may be defined in a separate source module. The linker will then minimally
+have to assign addresses to the code and data in each module, and put the address of the
+<i>sqrt</i> function in the appropriate location(s) in the main module’s code.</p>
+
+<p>An object module contains (in order) zero or more external symbol definitions, zero or
+more external symbol references, zero or more bytes of code and data (that may include
+references to the values of external symbols), and an end of module marker. In this problem,
+an object module is represented as a sequence of text lines, each beginning with a single
+uppercase character that characterizes the remainder of the line. The format of each of
+these lines is as follows. Whitespace (one or more blanks and/or tab characters) will appear
+between the fields in these lines. Additional whitespace may follow the last field in each
+line.</p>
+
+<ul>
+  <li>A line of the form “D symbol offset” is an external symbol definition. It defines
+  <i>symbol</i> as having the address <i>offset</i> bytes greater than the address where the
+  first byte of code and data for the current object module is located by the linker. A
+  symbol is a string of no more than eight upper case alphabetic characters. The offset is a
+  hexadecimal number with no more than four digits (using only upper case alphabetic
+  characters for the digits A through F). For example, in a module that is loaded starting at
+  the address 100<sub>16</sub>, the line “D START 5C” indicates that the symbol START is
+  defined as being associated with the address 15C<sub>16</sub>. The number of D lines in a
+  test case is at most 100.</li>
+  <li>A line of the form “E symbol” is an external symbol reference, and indicates that the
+  value of <i>symbol</i> (presumably defined in another object module) may be referenced as
+  part of the code and data for the current module. For example, the line “E START” indicates
+  that the value of the symbol START (that is, the address defined for it) may be used as
+  part of the code and data for the module. Each of the “E” lines for each module is numbered
+  sequentially, starting with 0, so they can be referenced in the “C” lines.</li>
+  <li>A line of the form “C n byte1 byte2 … byten” specifies the first or next <i>n</i>
+  bytes of code and data for the current module. The value <i>n</i> is specified as a one or
+  two digit hexadecimal number, and will be no larger than 10 hexadecimal. Each byte is
+  either a one or two digit hexadecimal number, or a dollar sign. The first byte following a
+  dollar sign (always on the same line) gives the 0-origin index of an external symbol
+  reference for this module, and identifies the symbol which is to have its 16-bit value
+  inserted at the current point in the linked program (that is, in the location indicated by
+  the dollar sign and the following byte). The high-order byte is placed in the location
+  indicated by the dollar sign. The values specified for the other bytes (those not following
+  a dollar sign) are loaded into sequential memory locations, starting with the first
+  (lowest) unused memory location. For example, the line “C 4 25 $ 0 37” would cause the
+  values 25<sub>16</sub> 01<sub>16</sub> 5C<sub>16</sub> and 37<sub>16</sub> to be placed in
+  the next four unused memory locations, assuming the first “E” line for the current module
+  specified a symbol defined as having the address 15C<sub>16</sub>. If the 0-origin index of
+  the external symbol reference is an undefined symbol, the 16-bit value inserted at the
+  current point in the linked program is 0000<sub>16</sub>.</li>
+  <li>A line of the form “Z” marks the end of an object module.</li>
+</ul>
+
+<p>You may assume that no address requires more than four hexadecimal digits. Lines are
+always given in the order shown above. There are no syntax errors in the input.</p>
+
+<h2>Input</h2>
+
+<p>This problem has multiple input cases. The input for each case is one or more object
+modules, in sequence, that are to be linked, followed by a line beginning with a dollar sign.
+The first address at which code is to be loaded in each case is 100<sub>16</sub>.</p>
+
+<p>The last case will be followed by a line containing only a dollar sign.</p>
+
+<h2>Output</h2>
+
+<p>For each case, print the case number (starting with 1), the 16-bit checksum of the loaded
+bytes (as described below), and the load map showing the address of each externally defined
+or referenced symbol, in ascending order of symbol name. For undefined symbols, print the
+value as four question marks, but use zero as the symbol’s value when it is referenced in
+“C” lines. If a symbol is defined more than once, print “M” following the address shown in
+the load map, and use the value from the first definition encountered in any object module
+to satisfy external references. Format the output exactly as shown in the samples.</p>
+
+<p>The 16-bit checksum is computed by first setting it to zero. Then, for each byte assigned
+to a memory location by the loader, in increasing address order, circularly left shift the
+checksum by one bit, and add the byte from the memory location, discarding any carry out of
+the low-order 16 bits.</p>
+
+<h3>Sample Input 1</h3>
+<pre>D MAIN 0
+D END 5
+C 03 01 02 03
+C 03 04 05 06
+Z
+$
+D ENTRY 4
+E SUBX
+E SUBY
+C 10 1 2 3 4 5 $ 0 6 7 8 9 A B C D E
+C 8 10 20 30 40 50 60 70 80
+C 8 90 A0 B0 C0 D0 E0 $ 1
+C 5 $ 0 FF EE DD
+Z
+D SUBX 01
+C 06 A B C D E F
+Z
+D SUBX 05
+C 06 51 52 53 54 55 56
+Z
+$
+$</pre>
+
+<h3>Sample Output 1</h3>
+<pre>Case 1: checksum = 0078
+SYMBOL   ADDR
+--------  ----
+END       0105
+MAIN      0100
+Case 2: checksum = 548C
+SYMBOL   ADDR
+--------  ----
+ENTRY     0104
+SUBX      0126 M
+SUBY      ????</pre>
+
+<footer>
+  The 2003 ACM Programming Contest World Finals sponsored by IBM
+</footer>
+
+</body>
+</html>

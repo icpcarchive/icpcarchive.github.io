@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem J: Tile Cutting (Solution) — ACM ICPC World Finals 2015</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All solutions</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2015</p>
+  <h1>Problem J: Tile Cutting</h1>
+</header>
+
+<p>Shortest judge solution: 1201 bytes. Shortest team solution (during contest): 1478 bytes.</p>
+
+<p>This problem, despite the pictures, is not about geometry, but rather about number theory.</p>
+
+<p>Consider a particular way to get a tile according to the rules. We have a rectangular tile of size x × y. Let the cut on the lower edge be a from the left and b from the right (so that a + b = x). To make a parallelogram, the cut on the upper edge has to be b away from the left edge. Similarly, if the cut on the left edge is c away from the bottom, and d away from the top (with c + d = y), then the cut on the right edge has to be d away from the bottom and c away from the top.</p>
+
+<p>The area of the whole rectangle is (a + b)(c + d), while the area of the triangles we cut away is ac/2, bd/2, ac/2 and bd/2, and the area of the tile is ac + bd. A set of a, b, c, d uniquely determines a way of cutting a tile. So, to get a way to cut a tile of area A, we need to represent A as the sum of two numbers, and then represent each of those two as a product of two numbers.</p>
+
+<p>The number of ways to represent a number as a product of two numbers is simply the number of divisors of the number, which we’ll denote d(n). Calculating d(n) for all n up to 500 000 is easy. So the number of ways to get a tile of size A is N(A) := ∑<sub>x=1</sub><sup>A−1</sup> d(x)d(A − x), and we need to calculate the maximum of this function over the input range.</p>
+
+<p>There are two approaches that you can take here. The standard one, that most (all but one?) teams used, is to use the Fast Fourier Transform. This allows you to compute the convolution (a function like the one above) in O(B log B) time for all A up to B.</p>
+
+<p>However, there is also another approach that you can take if you don’t know the FFT algorithm (although you really should learn it, if you don’t know it!). You can obviously calculate all the N(A) values in quadratic time by just applying the formula directly. This is too slow to pass within the two-second time limit, but it’s enough to do it locally on the contestants computer. This allows for a precomputation-based solution.</p>
+
+<p>The limit for the source code size is 128 KB. The N(A) values go up to some 170 million in the range we care about, so even storing them as decimal representations we can fit one value in 9 bytes. So you can easily fit 12 500 numbers into your source code. So, divide the whole range [1, 500 000] into intervals of size 40 each. Precompute and store in your code the maximum value in each of these intervals. Using these values, you can easily answer queries quickly, and the precomputation should easily run within a few minutes.</p>
+</body>
+</html>

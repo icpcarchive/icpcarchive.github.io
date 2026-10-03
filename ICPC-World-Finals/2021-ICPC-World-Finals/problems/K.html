@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem K: Take On Meme — ICPC World Finals 2021</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+
+<header>
+  <p class="kicker">ICPC World Finals 2021 · Problem K</p>
+  <h1>Take On Meme</h1>
+  <p class="meta">Time limit: 4 seconds</p>
+</header>
+
+<p>The Internet can be so fickle. You work for a small ad agency,
+Mimi&rsquo;s Mammoth Memes. Your ad campaigns are very cheap, and rely on the
+hope of producing the next hit viral meme. Unfortunately, the last four hundred
+or so memes have failed to take off, despite having been precisely engineered to
+appeal to every single person on Earth. You&rsquo;re not sure what exactly went
+wrong, but you&rsquo;ve decided to try a new approach: crowd sourcing!</p>
+
+<p>According to your scientific meme theory, all memes can be rated from
+&minus;&infin; to &infin; on two scales: xanthochromism, and yellowishness, also
+known as (<i>x</i>, <i>y</i>) values. Obviously (you think), the best memes are
+memorable for being particularly xanthochromic, yellowish, unxanthochromic, or
+unyellowish. You feel that the &ldquo;quality&rdquo; of any meme is directly
+measurable as its squared Euclidean distance (<i>x</i><sup>2</sup> +
+<i>y</i><sup>2</sup>) from the Base Meme (0, 0), otherwise known as All Your
+Base.</p>
+
+<p>To produce the ultimate viral meme, you&rsquo;ll be taking your company&rsquo;s
+last few failed memes and throwing them into a tournament, decided by online
+voting. The tournament can be represented as a rooted tree. Input memes come in
+at the leaves, and at each internal node, a vote will be held among its
+<i>k</i> child memes (<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>), &hellip;,
+(<i>x</i><sub><i>k</i></sub>, <i>y</i><sub><i>k</i></sub>). After the vote, all
+the memes will be horrifically mangled and merged into a brand new meme,
+specifically calculated to emphasize the winner and de-emphasize all the
+losers: the resultant <i>x</i> value will be
+&sum;<sub><i>i</i>=1</sub><sup><i>k</i></sup>
+<i>w</i><sub><i>i</i></sub>&thinsp;&middot;&thinsp;<i>x</i><sub><i>i</i></sub>,
+where <i>w</i><sub><i>i</i></sub> is 1 if the <i>i</i><sup>th</sup> child won,
+and &minus;1 otherwise. The <i>y</i> value is computed similarly. This new meme
+will move on to the next vote in the tournament &ndash; or, if there is no
+parent, it will be declared the champion and the ultimate meme!</p>
+
+<p>You already have the structure of the tournament planned out, including all
+the input memes and the internal voting nodes. What is the largest possible
+quality for any meme that the tournament could produce?</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains an integer <i>n</i> (1 &le; <i>n</i> &le;
+10<sup>4</sup>), giving the total number of nodes in the tournament tree. The
+next <i>n</i> lines each describe a single tree node indexed from 1 to
+<i>n</i>. The line for node <i>i</i> starts with an integer
+<i>k</i><sub><i>i</i></sub> (0 &le; <i>k</i><sub><i>i</i></sub> &le; 100), the
+number of children of that node. If <i>k</i><sub><i>i</i></sub> is 0, then node
+<i>i</i> is an input meme and there will be two more integers
+<i>x</i><sub><i>i</i></sub> and <i>y</i><sub><i>i</i></sub>
+(&minus;10<sup>3</sup> &le; <i>x</i><sub><i>i</i></sub>,
+<i>y</i><sub><i>i</i></sub> &le; 10<sup>3</sup>) describing it. If
+<i>k</i><sub><i>i</i></sub> &gt; 0, then <i>k</i><sub><i>i</i></sub> different
+integers <i>j</i> (<i>i</i> &lt; <i>j</i> &le; <i>n</i>) will follow, giving the
+indices of the <i>k</i><sub><i>i</i></sub> nodes entering this voting step.</p>
+
+<p>All input memes will eventually be merged into the final output meme at node
+1. The complete tree will have a height of no more than 10.</p>
+
+<h2>Output</h2>
+
+<p>Output the largest possible quality for the champion meme at node 1.</p>
+
+<h3>Sample Input 1</h3>
+<pre>4
+3 2 3 4
+0 10 1
+0 3 6
+0 2 7</pre>
+
+<h3>Sample Output 1</h3>
+<pre>169</pre>
+
+<h3>Sample Input 2</h3>
+<pre>8
+3 4 2 5
+2 3 8
+0 -3 9
+0 -5 -7
+2 6 7
+0 1 4
+0 -3 -1
+0 1 4</pre>
+
+<h3>Sample Output 2</h3>
+<pre>314</pre>
+
+<footer>
+  ICPC World Finals 2021 Problem K: Take On Meme &copy; ICPC Foundation
+</footer>
+
+</body>
+</html>

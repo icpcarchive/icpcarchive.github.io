@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solution sketches — ACM ICPC World Finals 2011</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+  table.problems {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.05rem;
+  }
+  table.problems td {
+    padding: 0.7rem 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  table.problems td:first-child a {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  table.problems tr:hover { background: #f5f8fc; }
+  table.problems .title a {
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+  }
+  table.problems .title a:hover { color: var(--accent); text-decoration: underline; }
+  table.problems .tl {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  header .meta { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+  .testdata { margin: 0; }
+  .testdata a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.2rem 0.5rem; font-size: 1.1rem; white-space: nowrap; }
+  .testdata a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="../problems/index.html">← Problem set</a></p>
+
+<header>
+  <p class="kicker">ACM ICPC World Finals 2011</p>
+  <h1>Solution sketches</h1>
+  <p class="meta">11 solutions (A–K)</p>
+</header>
+
+<p><strong>Disclaimer</strong> This is an unofficial analysis of some possible ways to solve the problems of the ACM ICPC World Finals 2011. Any error in this text is my error. Should you find such an error, I would be happy to hear about it at austrin@kth.se.</p>
+<p>Also, note that these sketches are just that—sketches. They are not intended to give a complete solution, but rather to outline some approach that can be used to solve the problem. If some of the terminology or algorithms mentioned below are not familiar to you, your favorite search engine should be able to help.</p>
+<p>Finally, I want to stress that while I’m the one who has written this document, I do not take credit for the ideas behind these solutions—they come from many different people.</p>
+<p>— Per Austrin</p>
+
+<table class="problems">
+  <tbody>
+    <tr><td><a href="A.html">A</a></td><td class="title"><a href="A.html">To Add Or To Multiply</a></td></tr>
+    <tr><td><a href="B.html">B</a></td><td class="title"><a href="B.html">Affine Mess</a></td></tr>
+    <tr><td><a href="C.html">C</a></td><td class="title"><a href="C.html">Ancient Messages</a></td></tr>
+    <tr><td><a href="D.html">D</a></td><td class="title"><a href="D.html">Chips Challenge</a></td></tr>
+    <tr><td><a href="E.html">E</a></td><td class="title"><a href="E.html">Coffee Central</a></td></tr>
+    <tr><td><a href="F.html">F</a></td><td class="title"><a href="F.html">Machine Works</a></td></tr>
+    <tr><td><a href="G.html">G</a></td><td class="title"><a href="G.html">Magic Sticks</a></td></tr>
+    <tr><td><a href="H.html">H</a></td><td class="title"><a href="H.html">Mining Your Own Business</a></td></tr>
+    <tr><td><a href="I.html">I</a></td><td class="title"><a href="I.html">Mummy Madness</a></td></tr>
+    <tr><td><a href="J.html">J</a></td><td class="title"><a href="J.html">Pyramids</a></td></tr>
+    <tr><td><a href="K.html">K</a></td><td class="title"><a href="K.html">Trash Removal</a></td></tr>
+  </tbody>
+</table>
+
+<h2>Summary</h2>
+
+<p>A common theme that recurred in many of this year’s problems is guessing: guess a part of the answer, and then with this part fixed do some computations to see if the guess leads to a correct answer. (Of course, the details of exactly what to guess and how to figure out if the guess leads to an answer differs.) Problems where this applies are: A, B, D, I, and K.</p>
+<p>Regarding the difficulties of the problem, my guesses were even more way off than usual. I had expected problem B to be the second easiest problem which turned out to be way off (never underestimate the deterring effect of a large mass of text...). Instead, the two easiest problems turned out to be C (which I did guess) and K (which I should have guessed but somehow did not). Almost all teams solved both of these. The next chunk of problems were E and J, both solved by slightly more than half of the teams. Continuing in the same pattern, problems A and H, were solved by roughly a third of the teams. The remaining problems were less popular, with at most 7 solutions for each. Problem D was the only one that was not solved.</p>
+<p>Here are the stats of how many solutions there were<sup>1</sup>:</p>
+
+<table class="problems">
+<tr><td>Problem</td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td>I</td><td>J</td><td>K</td></tr>
+<tr><td>Submissions</td><td>138</td><td>36</td><td>192</td><td>12</td><td>223</td><td>33</td><td>107</td><td>195</td><td>10</td><td>396</td><td>297</td></tr>
+<tr><td>Solved</td><td>35</td><td>7</td><td>98</td><td>0</td><td>63</td><td>2</td><td>7</td><td>39</td><td>2</td><td>60</td><td>94</td></tr>
+</table>
+
+<p>As an additional curiosity fact: the judges were somewhat worried this year that some team would solve all 11 problems. We estimated roughly 4 hours of coding time to solve all problems. Of course, this does not take debugging time into account or the fact that it is almost impossible to utilize the computer at a 100% efficiency. Turns out the problemset was more than hard enough, as usual.</p>
+<p>Congratuliations to Zhejiang University for winning their first ICPC World Champions title!</p>
+<p>1 Seven of the submissions to problem D were actually submissions to problem C.</p>
+
+<footer>
+  © ICPC Foundation — solution sketches converted from the official PDF.
+</footer>
+</body>
+</html>

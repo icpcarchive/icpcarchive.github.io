@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem G: Opportunity Cost — ICPC World Finals 2020</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56b0;
+    --rule: #d0d0d0;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 2.5rem 1.25rem 3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+  }
+  header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  header .kicker {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.35rem;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.4rem;
+  }
+  header .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+  p { margin: 0 0 1rem; }
+  figure {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  figure.hero {
+    float: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  figcaption {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+  pre {
+    background: #f6f7f9;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 1rem;
+    white-space: pre;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    figure.hero { float: none; width: 100%; margin: 1.5rem 0; }
+  }
+
+  .backlink { margin: 0 0 1.25rem; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 1.1rem; }
+  .backlink a { color: var(--accent); text-decoration: none; display: inline-block; padding: 0.25rem 0.6rem; }
+  .backlink a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<p class="backlink"><a href="index.html">← All problems</a></p>
+
+<header>
+  <p class="kicker">ICPC World Finals 2020 · Problem G</p>
+  <h1>Opportunity Cost</h1>
+  <p class="meta">Time limit: 5 seconds</p>
+</header>
+
+<p>As with most types of products, buying a new phone can be difficult. One of
+the main challenges is that there are a lot of different aspects of the phone
+that you might care about, such as its price, its performance, and how
+user-friendly the phone is. Typically, there will be no single phone that is
+simultaneously the best at all of these things: the cheapest phone, the most
+powerful phone, and the most user-friendly phone will likely be different
+phones.</p>
+
+<p>Thus when buying a phone, you are forced to make some sacrifices by
+balancing the different aspects you care about against each other and choosing
+the phone that achieves the best compromise (where &ldquo;best&rdquo; of
+course depends on what your priorities happen to be). One way of measuring
+this sacrifice is known as the opportunity cost, which (for the purposes of
+this problem) we define as follows.</p>
+
+<p>Suppose that you have bought a phone with price <i>x</i>, performance
+<i>y</i>, and user-friendliness <i>z</i>. For simplicity, we assume that these
+three values are measured on a comparable numeric scale where higher is better.
+If there are <i>n</i> available phones, and the values
+(<i>x</i><sub><i>i</i></sub>, <i>y</i><sub><i>i</i></sub>,
+<i>z</i><sub><i>i</i></sub>) represent the (price, performance,
+user-friendliness) of the <i>i</i><sup>th</sup> phone, then the opportunity
+cost of your phone is defined as</p>
+
+<p style="text-align: center;">max<sub>1&le;<i>i</i>&le;<i>n</i></sub>&thinsp;(max(<i>x</i><sub><i>i</i></sub> &minus; <i>x</i>, 0) + max(<i>y</i><sub><i>i</i></sub> &minus; <i>y</i>, 0) + max(<i>z</i><sub><i>i</i></sub> &minus; <i>z</i>, 0))</p>
+
+<p>Write a program that, given the list of available phones, finds a phone with
+the minimum opportunity cost.</p>
+
+<h2>Input</h2>
+
+<p>The first line of input contains an integer <i>n</i> (2 &le; <i>n</i> &le;
+200&thinsp;000), the number of phones considered. Following that are
+<i>n</i> lines. The <i>i</i><sup>th</sup> of these lines contains three
+integers <i>x</i><sub><i>i</i></sub>, <i>y</i><sub><i>i</i></sub>, and
+<i>z</i><sub><i>i</i></sub>, where <i>x</i><sub><i>i</i></sub> is the price,
+<i>y</i><sub><i>i</i></sub> is the performance, and
+<i>z</i><sub><i>i</i></sub> is the user-friendliness of the
+<i>i</i><sup>th</sup> phone (1 &le; <i>x</i><sub><i>i</i></sub>,
+<i>y</i><sub><i>i</i></sub>, <i>z</i><sub><i>i</i></sub> &le; 10<sup>9</sup>).</p>
+
+<h2>Output</h2>
+
+<p>Output a single line containing two integers: the smallest possible
+opportunity cost and an integer between 1 and <i>n</i> indicating the phone
+achieving that opportunity cost. If there are multiple such phones, output the
+one with the smallest index.</p>
+
+<h3>Sample Input 1</h3>
+<pre>4
+20 5 5
+5 20 5
+5 5 20
+10 10 10</pre>
+
+<h3>Sample Output 1</h3>
+<pre>10 4</pre>
+
+<h3>Sample Input 2</h3>
+<pre>4
+15 15 5
+5 15 15
+15 5 15
+10 10 10</pre>
+
+<h3>Sample Output 2</h3>
+<pre>10 1</pre>
+
+<footer>
+  ICPC World Finals 2020 Problem G: Opportunity Cost
+</footer>
+
+</body>
+</html>
