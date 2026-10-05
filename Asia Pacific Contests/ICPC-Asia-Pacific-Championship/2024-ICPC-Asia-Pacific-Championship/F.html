@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2024 — F. Forming Groups</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2024 — F. Forming Groups</a><nav><a href="index.html">Index</a><a href="solutions/F.html">Solution</a><a href="https://fileserv.icpc.jp/championship2024/data.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="E.html">← E. Duplicates</a><a href="G.html">G. Personality Test →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem F</div>
+  <h1>Forming Groups</h1>
+  <div class="tlimit">Time limit: 5 seconds</div>
+</div>
+
+<p>There are \(n\) students, numbered from \(1\) to \(n\), who need to form groups for the upcoming hackathon. You are student \(1\), the captain of the students. Student \(i\) has <em>skill level</em> \(a_i\).</p>
+
+<p>Students \(2\) to \(n\) are standing in a line from left to right in order. You can choose to stand in between any two students, to the left of student \(2\), or to the right of student \(n\). You cannot change the order of the \(n - 1\) students.</p>
+
+<p>You can also choose the number of groups \(k\) (\(k \gt 1\) and \(k\) must be a divisor of \(n\)) to participate in the hackathon. The groups will be numbered from \(1\) to \(k\). After you have chosen your position and the value of \(k\), the students will be grouped as follows:</p>
+
+<ul>
+  <li>The first student from the left will be assigned to group \(1\).</li>
+  <li>The second student from the left will be assigned to group \(2\).</li>
+  <li>\(\ldots\)</li>
+  <li>The \(k\)-th student from the left will be assigned to group \(k\).</li>
+  <li>The \((k+1)\)-th student from the left will be assigned to group \(1\).</li>
+  <li>The \((k+2)\)-th student from the left will be assigned to group \(2\).</li>
+  <li>\(\ldots\)</li>
+  <li>The \(n\)-th student from the left will be assigned to group \(k\).</li>
+</ul>
+
+<p>Formally, for each \(j\) (\(1 \le j \le k\)) and for each \(i\) (\(0 \le i \lt n/k\)), the \((i \times k + j)\)-th student from the left will be assigned to group \(j\). It can be shown that each student will be assigned to exactly one group and all the groups have the same number of students.</p>
+
+<p>The <em>skill level of a group</em> is the sum of the skill levels of the students inside the group. By choosing where you stand as well as the number of groups \(k\) optimally, you want to minimize the ratio \(x_{\max}/x_{\min}\) where</p>
+
+<ul>
+  <li>\(x_{\max}\) is the skill level of the group with the largest skill level, and</li>
+  <li>\(x_{\min}\) is the skill level of the group with the smallest skill level.</li>
+</ul>
+
+<h2>Input</h2>
+<p>The first line of input contains one integer \(t\) (\(1 \le t \le 100\,000\)) representing the number of test cases. After that, \(t\) test cases follow. Each of them is presented as follows.</p>
+
+<p>The first line of a test case contains two integers \(n\) and \(a_1\) (\(2 \le n \le 10^6; 1 \le a_1 \le 1000\)). The next line contains \(n - 1\) integers \(a_2, a_3, \ldots, a_n\) (\(1 \le a_i \le 1000\) for all \(i\)).</p>
+
+<p>The sum of \(n\) across all test cases in one input file does not exceed \(10^6\).</p>
+
+<h2>Output</h2>
+<p>For each test case, output one line containing two positive integers \(p\) and \(q\) such that the minimum ratio is \(p/q\). The fraction \(p/q\) should be irreducible. In other words, \(p\) and \(q\) should be coprime.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>2
+4 1
+2 1 2
+3 10
+4 3
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>1 1
+10 3
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>In the first test case, by standing between students \(2\) and \(3\) (or between students \(3\) and \(4\)) and choosing \(k = 2\), group \(1\) will have the skill level \(2 + 1\) and group \(2\) will have the skill level \(1 + 2\), thus the ratio is \(1/1\).</p>
+
+<p>In the second test case, the only choice for the value of \(k\) is \(3\).</p>
+
+</article><nav class="pn"><a href="E.html">← E. Duplicates</a><a href="G.html">G. Personality Test →</a></nav>
+</main>
+</body>
+</html>

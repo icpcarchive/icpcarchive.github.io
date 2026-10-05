@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2024 — M. Zig-zag</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2024 — M. Zig-zag</a><nav><a href="index.html">Index</a><a href="solutions/M.html">Solution</a><a href="https://fileserv.icpc.jp/championship2024/data.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="L.html">← L. XOR Operations</a><span></span></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem M</div>
+  <h1>Zig-zag</h1>
+  <div class="tlimit">Time limit: 12 seconds</div>
+</div>
+
+<p>Zack’s Zergonomics Zegree has taught him that the optimal way to display items in a store is to stack them into a zig-zag pattern.</p>
+
+<p>Zack needs to display \(n\) boxes lined up on the storefront, each one containing an action figure. These boxes can be stacked on top of one another, and they are identical and indistinguishable from each other. His goal is to decide the number of stacks, and then stack up the boxes such that each stack is non-empty, and the numbers of boxes in the stacks form a <em>zig-zag</em> sequence.</p>
+
+<p>Formally, if there are \(s\) (\(s \ge 1\)) stacks numbered \(1\) to \(s\) from left to right, and stack \(i\) contains \(a_i\) boxes, then the following conditions must be satisfied:</p>
+<ul>
+  <li>\(a_i \ge 1\) for each \(i\) from \(1\) to \(s\),</li>
+  <li>\(a_1 + a_2 + \ldots + a_s = n\), and</li>
+  <li>at least one of the following is true:
+    <ul>
+      <li>\(a_1 \lt a_2 \gt a_3 \lt a_4 \gt \ldots\), or</li>
+      <li>\(a_1 \gt a_2 \lt a_3 \gt a_4 \lt \ldots\)</li>
+    </ul>
+  </li>
+</ul>
+
+<p>For example, for \(n = 6\), there are \(12\) ways as illustrated by Figure M.1.</p>
+
+<figure>
+  <img src="img/M-fig1.png" alt="Twelve zig-zag stackings of 6 boxes, numbered 1 to 12" width="734" height="138" loading="lazy">
+  <figcaption>Figure M.1: All \(12\) possible ways for \(n = 6\).</figcaption>
+</figure>
+
+<p>Find the number of different ways Zack can stack \(n\) boxes modulo \(998\,244\,353\).</p>
+
+<p>Two ways are considered the same if and only if the number of stacks is the same, and pairs of stacks at the same positions have the same number of boxes.</p>
+
+<h2>Input</h2>
+<p>The first line of input contains one integer \(t\) (\(1 \le t \le 300\,000\)) representing the number of test cases. After that, \(t\) test cases follow. Each of them consists of a single line containing one integer \(n\) (\(1 \le n \le 300\,000\)).</p>
+
+<h2>Output</h2>
+<p>For each test case, output an integer representing the number of different ways to stack \(n\) boxes modulo \(998\,244\,353\).</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>4
+5
+6
+7
+890
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>7
+12
+19
+502674609
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>The value of \(n\) on the second test case is \(6\), and the \(12\) ways are illustrated in the problem description.</p>
+
+</article><nav class="pn"><a href="L.html">← L. XOR Operations</a><span></span></nav>
+</main>
+</body>
+</html>

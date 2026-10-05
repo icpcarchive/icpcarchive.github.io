@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2024 — G. Personality Test</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2024 — G. Personality Test</a><nav><a href="index.html">Index</a><a href="solutions/G.html">Solution</a><a href="https://fileserv.icpc.jp/championship2024/data.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="F.html">← F. Forming Groups</a><a href="H.html">H. Pho Restaurant →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem G</div>
+  <h1>Personality Test</h1>
+  <div class="tlimit">Time limit: 3 seconds</div>
+</div>
+
+<p>There are \(n\) students taking a personality test consisting of \(m\) questions. The students are numbered from \(1\) to \(n\) and the questions are numbered from \(1\) to \(m\). For each question, each student can either answer it with a single uppercase Latin character (<code>A</code>–<code>Z</code>) or not answer it. Let \(S_i\) be a string of \(m\) characters representing the answers of student \(i\), where the \(j\)-th character of \(S_i\) is an uppercase Latin character if they answered question \(j\), or a period (<code>.</code>) if they did not.</p>
+
+<p>Two students are considered <em>similar</em> if there is a set of at least \(k\) questions where both students answered all questions in the set, and for each question in the set, they answered it with the same answer.</p>
+
+<p>For example, let \(n = 3\), \(m = 3\), \(k = 2\), \(S_1 =\) <code>BBC</code>, \(S_2 =\) <code>..C</code>, and \(S_3 =\) <code>.BC</code>. In this example, students \(1\) and \(3\) are similar since they answered questions \(2\) and \(3\) with the same answer, while students \(2\) and \(3\) are not similar since they answered only question \(3\) with the same answer.</p>
+
+<p>You want to find a pair of integers \((a, b)\) such that \(a \lt b\) and students \(a\) and \(b\) are similar, or determine if there is no such pair. If there is more than one pair, find the one with the <strong>smallest</strong> \(b\). If there is still more than one pair, find the one with the <strong>largest</strong> \(a\).</p>
+
+<h2>Input</h2>
+<p>The first line of input contains three integers \(n\), \(m\), and \(k\) (\(2 \le n \le 5000; 1 \le m \le 3000; 1 \le k \le 5\)). Each of the next \(n\) lines contains a string of \(m\) characters. The \(i\)-th line contains the string \(S_i\).</p>
+
+<h2>Output</h2>
+<p>Output one line containing the integers \(a\) and \(b\) representing the pair of similar students as mentioned in the problem statement, or just the integer <code>-1</code> if there is no such pair.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>3 3 2
+BBC
+..C
+.BC
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>1 3
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>This is the example in the problem statement.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #2</div><pre>3 3 1
+BBC
+..C
+.BC
+</pre></div>
+  <div><div class="sh">Sample Output #2</div><pre>1 2
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #2</p>
+<p>Students \(1\) and \(2\) are similar.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #3</div><pre>3 3 3
+BBC
+..C
+.BC
+</pre></div>
+  <div><div class="sh">Sample Output #3</div><pre>-1
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #3</p>
+<p>There is no pair of similar students.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #4</div><pre>4 12 2
+GOOD.LUCK.IN
+WINNING.ICPC
+ASIA.PACIFIC
+CHAMPIONSHIP
+</pre></div>
+  <div><div class="sh">Sample Output #4</div><pre>2 3
+</pre></div>
+</div>
+
+</article><nav class="pn"><a href="F.html">← F. Forming Groups</a><a href="H.html">H. Pho Restaurant →</a></nav>
+</main>
+</body>
+</html>

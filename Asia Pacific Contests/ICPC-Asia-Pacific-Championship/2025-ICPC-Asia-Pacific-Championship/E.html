@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — E. Minus Operator</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2025 — E. Minus Operator</a><nav><a href="index.html">Index</a><a href="solutions/E.html">Solution</a><a href="https://fileserv.icpc.jp/championship2025/icpc-apac-2025-tasks.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="D.html">← D. Tower of Hanoi</a><a href="F.html">F. Hold the Star →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem E</div>
+  <h1>Minus Operator</h1>
+  <div class="tlimit">Time limit: 2 seconds</div>
+</div>
+
+<p>The <em>minus operator</em> on binary values \(a\) and \(b\) is defined by \((a - b) = 1\) if \(a = 1\) and \(b = 0\); otherwise, \((a - b) = 0\). Also, the syntax of an expression is defined as follows. Here, <code>x</code>, parentheses, and the minus are terminal symbols, and \(E\) is the start symbol.</p>
+
+\[E \;::=\; \texttt{x} \;\mid\; (E - E)\]
+
+<p>The <em>judge program</em> possesses an expression adhering to \(E\). The expression is hidden from you. At the start, you are only provided with the number of terminal symbols <code>x</code> in the expression, denoted by \(n\).</p>
+
+<p>Your task is to guess the expression by making a limited number of <em>queries</em>.</p>
+
+<p>In a single query, you specify a binary string \(S\) of length \(n\). The judge program then temporarily replaces each occurrence of the \(i\)-th terminal symbol <code>x</code> from the left with \(S_i\), for \(i = 1, \ldots, n\), and evaluates the replaced expression based on the definition of the minus operator. After that, the judge program returns the evaluated value to you, which is either \(0\) or \(1\).</p>
+
+<h2>Interaction</h2>
+<p>The first line of input contains an integer \(n\) (\(3 \le n \le 200\)). After reading the integer, your program can start making queries. For each query, your program should write a line of the form “<code>query</code> \(S\)”. Here, \(S\) is a binary string of length \(n\). Each character of \(S\) must be either <code>0</code> or <code>1</code>. In response, an input line containing the evaluated value becomes available.</p>
+
+<p>Your program can make up to <strong>\(500\) queries.</strong> If your program makes more than \(500\) queries, it will be judged as “Wrong Answer.”</p>
+
+<p>When your program identifies the expression that the judge program possesses, it should write a line of the form “<code>answer</code> \(T\)”, where \(T\) is the expression. After that, the interaction stops and your program should terminate.</p>
+
+<p>Under the constraints above, it can be shown that the expression can be uniquely identified.</p>
+
+<p><em>Notes on interactive judging:</em></p>
+
+<ul>
+  <li>The evaluation is non-adversarial, meaning that the expression is chosen in advance rather than in response to your queries.</li>
+  <li>Do not forget to flush output buffers after writing. See the “Judging Details” document for details.</li>
+  <li>You are provided with a command-line tool for local testing, together with input files corresponding to the sample interactions. You can download these files from DOMjudge. The tool has comments at the top to explain its use.</li>
+</ul>
+
+<div class="table-wrap"><table class="interaction">
+  <tr><th>Read</th><th>Sample Interaction #1</th><th>Write</th></tr>
+  <tr><td><code>3</code></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td><code>query 111</code></td></tr>
+  <tr><td><code>0</code></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td><code>answer ((x-x)-x)</code></td></tr>
+</table></div>
+
+<p class="expl">Explanation for the sample interaction #1</p>
+<p>When \(n = 3\), there are only two possible expressions: <code>((x-x)-x)</code> or <code>(x-(x-x))</code>. For a query \(s = \) <code>111</code>, the evaluated values for these expressions are,</p>
+<ul>
+  <li>\(((1 - 1) - 1) = (0 - 1) = 0\), and</li>
+  <li>\((1 - (1 - 1)) = (1 - 0) = 1\).</li>
+</ul>
+<p>In this example, the judge program returns \(0\), indicating that the first expression is the correct one.</p>
+
+<div class="table-wrap"><table class="interaction">
+  <tr><th>Read</th><th>Sample Interaction #2</th><th>Write</th></tr>
+  <tr><td><code>4</code></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td><code>query 0000</code></td></tr>
+  <tr><td><code>0</code></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td><code>query 1001</code></td></tr>
+  <tr><td><code>1</code></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td><code>answer ((x-x)-(x-x))</code></td></tr>
+</table></div>
+
+</article><nav class="pn"><a href="D.html">← D. Tower of Hanoi</a><a href="F.html">F. Hold the Star →</a></nav>
+</main>
+</body>
+</html>

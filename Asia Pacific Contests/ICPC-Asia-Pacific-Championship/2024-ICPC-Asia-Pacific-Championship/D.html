@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2024 — D. Bánh Bò</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2024 — D. Bánh Bò</a><nav><a href="index.html">Index</a><a href="solutions/D.html">Solution</a><a href="https://fileserv.icpc.jp/championship2024/data.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="C.html">← C. Bit Counting Sequence</a><a href="E.html">E. Duplicates →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem D</div>
+  <h1>Bánh Bò</h1>
+  <div class="tlimit">Time limit: 15 seconds</div>
+</div>
+
+<p class="story">Ever since the Earth got destroyed, Trillian has been missing some Earth delicacies. Today, she had the spaceship’s food machine generate for her a Vietnamese delicacy she once enjoyed: <span class="up">bánh bò hấp</span> (steamed chewy sponge cake).</p>
+
+<p>Trillian has an unlimited number of <em>bánh bò hấp</em> pieces. Each piece of <em>bánh bò hấp</em> is either <em>red</em> or <em>white</em>. She wants to assemble \(rc\) pieces of <em>bánh bò hấp</em> into a grid with dimensions \(r \times c\), where each cell contains a single piece of <em>bánh bò hấp</em>. Thus, there are exactly \(2^{rc}\) distinct ways to assemble <em>bánh bò hấp</em> into an \(r \times c\) grid, since we consider pieces of the same color to be identical.</p>
+
+<p>We say an assembly of <em>bánh bò hấp</em> is <em>uniform</em> if all \(6 \times 7\) subgrids have the same number of red pieces. Consequently, in a uniform <em>bánh bò hấp</em> assembly, all \(6 \times 7\) subgrids have the same number of white pieces as well. Note that an \(r \times c\) grid has \((r-5)(c-6)\) subgrids of dimensions \(6 \times 7\).</p>
+
+<p>For example, Figure D.1 illustrates a uniform assembly of \(7 \times 8\) pieces of <em>bánh bò hấp</em>, where shaded cells represent red <em>bánh bò hấp</em> pieces and unshaded cells represent white <em>bánh bò hấp</em> pieces. Figure D.2 shows that all four \(6 \times 7\) subgrids have \(6\) red pieces and \(36\) white pieces.</p>
+
+<figure>
+  <img src="img/D-fig1.png" alt="A 7×8 grid with some shaded cells" width="241" height="230" loading="lazy">
+  <figcaption>Figure D.1: An example of uniform <em>bánh bò hấp</em> assembly.</figcaption>
+</figure>
+
+<figure>
+  <img src="img/D-fig2.png" alt="Four 6×7 subgrids" width="741" height="156" loading="lazy">
+  <figcaption>Figure D.2: All four \(6 \times 7\) subgrids of the uniform <em>bánh bò hấp</em> assembly illustrated in Figure D.1.</figcaption>
+</figure>
+
+<p>Given \(r\) and \(c\), where \(r\) <strong>is a multiple of</strong> \(6\) and \(c\) <strong>is a multiple of</strong> \(7\), Trillian would like to calculate the number of possible uniform <em>bánh bò hấp</em> assemblies modulo \(998\,244\,353\).</p>
+
+<h2>Input</h2>
+<p>Input consists of a single line containing two integers \(r\) and \(c\) (\(6 \le r \le 66\,666\); \(r\) is a multiple of \(6\); \(7 \le c \le 77\,777\); \(c\) is a multiple of \(7\)).</p>
+
+<h2>Output</h2>
+<p>Output the number of possible uniform <em>bánh bò hấp</em> assemblies modulo \(998\,244\,353\).</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>6 7
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>780136139
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>The output is \(2^{42}\) modulo \(998\,244\,353\).</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #2</div><pre>12 14
+</pre></div>
+  <div><div class="sh">Sample Output #2</div><pre>22889737
+</pre></div>
+</div>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #3</div><pre>12 42
+</pre></div>
+  <div><div class="sh">Sample Output #3</div><pre>96403614
+</pre></div>
+</div>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #4</div><pre>42 14
+</pre></div>
+  <div><div class="sh">Sample Output #4</div><pre>94940316
+</pre></div>
+</div>
+
+</article><nav class="pn"><a href="C.html">← C. Bit Counting Sequence</a><a href="E.html">E. Duplicates →</a></nav>
+</main>
+</body>
+</html>

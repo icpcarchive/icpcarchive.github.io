@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2024 — Solution E. Duplicates</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2024 — Solution E. Duplicates</a><nav><a href="index.html">Solutions index</a><a href="../E.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="D.html">← D. Bánh Bò</a><a href="F.html">F. Forming Groups →</a></nav><article class="paper">
+<h1 class="sol-title">E&nbsp;&nbsp;Duplicates</h1>
+
+<p>Let’s say a row or a column is <em>colorful</em> if the values within it are all distinct. Otherwise, we say it’s <em>non-colorful</em>. Our objective in this problem is to minimize the number of modifications needed to make all rows and columns non-colorful.</p>
+
+<p>Let \(m_r\) denote the number of colorful rows, and \(m_c\) denote the number of colorful columns. Since the number of colorful rows and colorful columns decreases by at most one with each modification, we require a minimum of \(\max(m_r, m_c)\) modifications to make all rows and columns in the matrix non-colorful. We can show that \(\max(m_r, m_c)\) is indeed adequate for achieving this objective as follows.</p>
+
+<p>When both \(m_r \gt 0\) and \(m_c \gt 0\) hold, there exists an entry \((i, j)\) such that row \(i\) and column \(j\) are colorful. By changing the value at \((i, j)\) to an arbitrary integer other than \(A_{ij}\), we simultaneously decrease the number of colorful rows and columns by one, respectively.</p>
+
+<p>When \(m_r = 0\) and \(m_c \gt 0\), there exists a colorful column, let’s say column \(j\). In this case, there must be at least one value \(v\) such that modifying an entry \((1, j)\) to \(v\) makes column \(j\) non-colorful while keeping row \(1\) non-colorful.</p>
+
+<p>A similar logic applies when \(m_r \gt 0\) and \(m_c = 0\).</p>
+
+<p>Using this approach, we can accomplish the objective with \(\max(m_r, m_c)\) modifications. The computational time is \(O(n^3)\) with a sloppy implementation. This can be further improved to \(O(n^2)\) time.</p>
+
+</article><nav class="pn"><a href="D.html">← D. Bánh Bò</a><a href="F.html">F. Forming Groups →</a></nav>
+</main>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — A. Control Towers</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2025 — A. Control Towers</a><nav><a href="index.html">Index</a><a href="solutions/A.html">Solution</a><a href="https://fileserv.icpc.jp/championship2025/icpc-apac-2025-tasks.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><span></span><a href="B.html">B. Three-Dimensional Embedding →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem A</div>
+  <h1>Control Towers</h1>
+  <div class="tlimit">Time limit: 2 seconds</div>
+</div>
+
+<p>You are an architect tasked with designing the new airport in your city. After you have completed your design, you just realize you forgot to allocate spaces for the control towers.</p>
+
+<p>The layout of the new airport can be represented by a 2D grid of \(r\) rows and \(c\) columns, with the rows numbered from \(1\) to \(r\) (top to bottom) and the columns numbered from \(1\) to \(c\) (left to right). The cell in row \(i\) and column \(j\) is denoted by \((i, j)\). Each cell can either be occupied or empty.</p>
+
+<p>You need to place four control towers (numbered from \(1\) to \(4\)), each in a different empty cell. To allow easier communication between different towers, for all \(k = 1, 2, 3\), you want tower \(k\) and tower \(k + 1\) to be placed either in the same row or in the same column.</p>
+
+<p>You want to calculate the number of ways to place the control towers to satisfy the requirements above. Two ways are considered different if there exists \(k\) where control tower \(k\) is placed in different cells.</p>
+
+<h2>Input</h2>
+<p>The first line of input contains two integers \(r\) and \(c\) (\(1 \le r, c \le 2000\)). Each of the next \(r\) lines contains a string of \(c\) characters. The \(j\)-th character in the \(i\)-th line is <code>#</code> if cell \((i, j)\) is occupied; otherwise, it is <code>.</code> (dot).</p>
+
+<h2>Output</h2>
+<p>Output the number of ways to place the control towers to satisfy the requirements above.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>3 4
+.#.#
+#...
+.###
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>10
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>Figure A.1 illustrates all \(10\) possible ways to place the control towers, where the cells numbered \(1\), \(2\), \(3\), and \(4\) represent control towers \(1\), \(2\), \(3\), and \(4\) respectively.</p>
+
+<figure>
+  <img src="img/A-fig1.png" alt="Ten 3×4 grids showing tower placements" width="737" height="178" loading="lazy">
+  <figcaption>Figure A.1: All \(10\) possible ways to place the control towers.</figcaption>
+</figure>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #2</div><pre>4 6
+######
+#.#.#.
+.#.#.#
+######
+</pre></div>
+  <div><div class="sh">Sample Output #2</div><pre>0
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #2</p>
+<p>It is impossible for any control tower in row \(2\) to be in the same column as any control tower in row \(3\). Since there are not enough empty cells to place all four control towers in the same row, there is no way to place the control towers to satisfy the requirements above.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #3</div><pre>1 10
+..........
+</pre></div>
+  <div><div class="sh">Sample Output #3</div><pre>5040
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #3</p>
+<p>All \(10 \times 9 \times 8 \times 7 = 5040\) ways of control tower positions satisfy the requirements above.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #4</div><pre>1 10
+##########
+</pre></div>
+  <div><div class="sh">Sample Output #4</div><pre>0
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #4</p>
+<p>There is no empty cell to place any control tower.</p>
+
+</article><nav class="pn"><span></span><a href="B.html">B. Three-Dimensional Embedding →</a></nav>
+</main>
+</body>
+</html>

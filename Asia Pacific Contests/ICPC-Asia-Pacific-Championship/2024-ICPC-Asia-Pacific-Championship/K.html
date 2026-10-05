@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2024 — K. Tree Quiz</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2024 — K. Tree Quiz</a><nav><a href="index.html">Index</a><a href="solutions/K.html">Solution</a><a href="https://fileserv.icpc.jp/championship2024/data.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="J.html">← J. There and Back Again</a><a href="L.html">L. XOR Operations →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem K</div>
+  <h1>Tree Quiz</h1>
+  <div class="tlimit">Time limit: 4 seconds</div>
+</div>
+
+<p>Your friend wants to quiz you. You are given a <em>rooted tree</em> with \(n\) nodes, numbered from \(1\) to \(n\). For every node \(i\), its parent is node \(p_i\), except for the <em>root</em> (the node without a parent) which has \(p_i = 0\). Node \(u\) is an <em>ancestor</em> of node \(v\) if either \(u = v\), or node \(u\) is an ancestor of the parent of node \(v\) (if it exists).</p>
+
+<p>We say that node \(z\) is a <em>common ancestor</em> of nodes \(x\) and \(y\) if node \(z\) is an ancestor of both nodes \(x\) and \(y\). We say that node \(z\) is the <em>lowest common ancestor</em> of nodes \(x\) and \(y\) if it is a common ancestor of nodes \(x\) and \(y\), and every common ancestor of nodes \(x\) and \(y\) is also an ancestor of node \(z\). We denote the lowest common ancestor of nodes \(x\) and \(y\) by \(\mathrm{LCA}(x, y)\). In particular, \(\mathrm{LCA}(x, x) = x\).</p>
+
+<p>Your friend would like to run the following pseudocode:</p>
+<pre>let L be an empty array
+for x = 1 to n
+  for y = 1 to n
+    append ((x - 1) * n * n + (LCA(x, y) - 1) * n + (y - 1)) to L
+sort L in non-decreasing order
+</pre>
+
+<p>Your friend has \(q\) questions, numbered from \(1\) to \(q\). In question \(j\), you are given an integer \(k_j\) and asked to find the \(k_j\)-th element of the array \(L\). Note that \(L\) is 1-indexed, so the indices range from \(1\) to \(n^2\), inclusive. To pass the quiz, you have to answer all of the questions.</p>
+
+<h2>Input</h2>
+<p>The first line of input contains two integers \(n\) and \(q\) (\(1 \le n \le 100\,000\); \(1 \le q \le 100\,000\)). The second line contains \(n\) integers \(p_1, p_2, \ldots, p_n\) (\(0 \le p_i \le n\) for all \(i\)). It is guaranteed that the given values represent a rooted tree. Each of the next \(q\) lines contains an integer. The \(j\)-th line contains \(k_j\) (\(1 \le k_j \le n^2\)).</p>
+
+<h2>Output</h2>
+<p>For each question in order, output an integer representing the answer to the question.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>5 3
+3 0 2 2 3
+1
+18
+25
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>0
+82
+124
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>The tree in the input is illustrated by Figure K.1.</p>
+
+<figure>
+  <img src="img/K-fig1.png" alt="Tree rooted at 2 with children 3 and 4; node 3 has children 1 and 5" width="204" height="149" loading="lazy">
+  <figcaption>Figure K.1: Illustration of the tree in sample input #1.</figcaption>
+</figure>
+
+<p>The elements of \(L\) are<br>
+\((0, 6, 8, 12, 14, 30, 31, 32, 33, 34, 56, 58, 60, 62, 64, 80, 81, 82, 84, 93, 106, 108, 110, 112, 124)\).</p>
+
+</article><nav class="pn"><a href="J.html">← J. There and Back Again</a><a href="L.html">L. XOR Operations →</a></nav>
+</main>
+</body>
+</html>

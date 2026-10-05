@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — L. Boarding Queue</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2025 — L. Boarding Queue</a><nav><a href="index.html">Index</a><a href="solutions/L.html">Solution</a><a href="https://fileserv.icpc.jp/championship2025/icpc-apac-2025-tasks.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="K.html">← K. Book Sorting</a><a href="M.html">M. Can You Reach There? →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem L</div>
+  <h1>Boarding Queue</h1>
+  <div class="tlimit">Time limit: 2 seconds</div>
+</div>
+
+<p>You are on your way to compete in The 2025 ICPC Asia Pacific Championship. Unfortunately, you are in the process of the worst part of flying: waiting in the boarding queue.</p>
+
+<p>You are in a queue with \(n\) travelers, numbered from \(1\) to \(n\) ordered from the front of the queue to the back of the queue.</p>
+
+<p>The boarding area is represented by a grid of \(r\) rows and \(c\) columns, where the rows are numbered from \(1\) to \(r\) (top to bottom) and the columns are numbered from \(1\) to \(c\) (left to right). Each traveler occupies exactly one distinct cell in the grid. Two travelers are <em>adjacent</em> if the cells they are in share an edge. Traveler \(t\) and traveler \(t - 1\) are guaranteed to be adjacent, for any \(2 \le t \le n\).</p>
+
+<p>For example, Figure L.1 illustrates a possible location of the travelers. In this example, traveler \(1\) is adjacent to travelers \(2\) and \(10\) but not adjacent to traveler \(11\).</p>
+
+<figure>
+  <img src="img/L-fig1.png" alt="A 4×5 grid with travelers 1 to 11 placed in a path" width="242" height="196" loading="lazy">
+  <figcaption>Figure L.1: Example location of the travelers.</figcaption>
+</figure>
+
+<p>At each boarding step, all of the following happen simultaneously:</p>
+
+<ul>
+  <li>The frontmost traveler in the queue, say traveler \(t\), boards the aircraft and leaves the boarding area.</li>
+  <li>For each \(t'\) (\(t + 1 \le t' \le n\)), traveler \(t'\) takes the cell that traveler \(t' - 1\) was occupying immediately before the step.</li>
+</ul>
+
+<p>For example, Figure L.2 illustrates the locations of the travelers after the first three boarding steps from the initial location above.</p>
+
+<figure>
+  <img src="img/L-fig2.png" alt="Three 4×5 grids showing traveler positions after 1, 2, and 3 boarding steps" width="750" height="196" loading="lazy">
+  <figcaption>Figure L.2: Location of the travelers after \(1\), \(2\), and \(3\) boarding steps respectively.</figcaption>
+</figure>
+
+<p>You are traveler \(p\) (that is, there are \(p - 1\) travelers in front of you). You know that your team coach is somewhere in the queue, but you do not know where. Assuming your team coach is equally likely to be any of travelers \(1\) to \(n\) (except \(p\)), you want to calculate the probability that you will be adjacent to your team coach at some point before you board the aircraft. Formally, you will be adjacent to traveler \(q\) at some point before you board the aircraft if there exists an integer \(s\) (\(0 \le s \lt p\)) such that traveler \(p\) and traveler \(q\) are adjacent after \(s\) boarding steps.</p>
+
+<h2>Input</h2>
+<p>The first line of input contains four integers \(r\), \(c\), \(n\), and \(p\) (\(1 \le r, c \le 1000; 2 \le n \le r \times c; 1 \le p \le n\)). Each of the next \(r\) lines contains \(c\) integers. The \(j\)-th integer in the \(i\)-th line denotes \(G_{i,j}\) (\(0 \le G_{i,j} \le n\)), where a non-zero value of \(G_{i,j}\) means that traveler \(G_{i,j}\) initially occupies the cell at row \(i\) and column \(j\) of the boarding area, while a zero value of \(G_{i,j}\) means that no traveler occupies the cell. Across all pairs \((i, j)\), each of the integers \(1\) to \(n\) appears exactly once in \(G_{i,j}\). The input guarantees that traveler \(t\) and traveler \(t - 1\) are adjacent, for all \(2 \le t \le n\).</p>
+
+<h2>Output</h2>
+<p>Output a fraction in the \(x/y\) format indicating the probability that you will be adjacent to your team coach at some point before you board the aircraft. The value of \(y\) must be equal to \(n - 1\). Note that there must not be spaces between the integers and the \(/\) delimiter.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>4 5 11 2
+11 0 0 0 0
+10 1 2 0 0
+9 0 3 4 0
+8 7 6 5 0
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>3/10
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>This sample corresponds to the example given in the problem description above. You will be adjacent to your team coach at some point before you board the aircraft if your team coach is either traveler \(1\), \(3\), or \(11\).</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #2</div><pre>1 7 7 6
+1 2 3 4 5 6 7
+</pre></div>
+  <div><div class="sh">Sample Output #2</div><pre>2/6
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #2</p>
+<p>You will be adjacent to your team coach at some point before you board the aircraft if your team coach is either traveler \(5\) or \(7\). Note that the output <code>1/3</code> is <strong>not</strong> accepted.</p>
+
+</article><nav class="pn"><a href="K.html">← K. Book Sorting</a><a href="M.html">M. Can You Reach There? →</a></nav>
+</main>
+</body>
+</html>

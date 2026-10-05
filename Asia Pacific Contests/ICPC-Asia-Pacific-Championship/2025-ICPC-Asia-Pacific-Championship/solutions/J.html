@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — Solution J. Gathering Sharks</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2025 — Solution J. Gathering Sharks</a><nav><a href="index.html">Solutions index</a><a href="../J.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="I.html">← I. Squares on Grid Lines</a><a href="K.html">K. Book Sorting →</a></nav><article class="paper">
+<h1 class="sol-title">J&nbsp;&nbsp;Gathering Sharks</h1>
+
+<p>Let’s renumerate the sharks such that shark \(i\) is the shark initially in the group numbered \(i\). We calculate a new array \(pos\), where \(pos[i]\) is the location of shark \(i\).</p>
+
+<p>Executing a command is like merging two adjacent elements. Suppose the elements at indices \(x\) and \(y\) (\(x \lt y\)) are merged. Its merged result will have a position of \(pos[x]\) and an index of \(y\). Notice that, after the merge, its relative order with the rest of the elements remains the same, so its exact new index doesn’t matter. We can see this operation as the element at index \(x\) erasing the element at index \(y\), with a cost of \(|pos[x] - pos[y]|\).</p>
+
+<p>We can solve this problem using dynamic programming. Let \(dp[l][r]\) (\(l \le r\)) be the minimum time required to have all sharks from \(l + 1\) to \(r\) get erased by shark \(l\). The base case is \(dp[l][r] = 0\) if \(l = r\).</p>
+
+<p>Let’s figure out the transitions. For some pair \((l, r)\) (\(l \le r\)), let’s consider only the sharks from \(l\) to \(r\). Consider the sharks among them that are directly erased by shark \(l\). Let \(p\) be the last such shark to be erased. Then it must hold that:</p>
+
+<ul>
+  <li>Every shark from \(l + 1\) to \(p - 1\) must be erased by sharks between \(l\) and \(p - 1\).</li>
+  <li>Every shark from \(p + 1\) to \(r\) must be erased by sharks between \(p\) and \(r\).</li>
+</ul>
+
+<p>That means, if we fix some value of \(p\), the minimum total time is equal to \(dp[l][p-1] + dp[p][r] + |pos[l] - pos[p]|\).</p>
+
+<p>For each \(l \le r\), we brute force every single possible value of \(p\) (\(l + 1 \le p \le r\)) to get the minimum time.</p>
+
+<p>Time complexity: \(O(n^3)\)</p>
+
+</article><nav class="pn"><a href="I.html">← I. Squares on Grid Lines</a><a href="K.html">K. Book Sorting →</a></nav>
+</main>
+</body>
+</html>

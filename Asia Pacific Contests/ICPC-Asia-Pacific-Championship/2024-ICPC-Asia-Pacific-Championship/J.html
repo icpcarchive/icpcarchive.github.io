@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2024 — J. There and Back Again</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2024 — J. There and Back Again</a><nav><a href="index.html">Index</a><a href="solutions/J.html">Solution</a><a href="https://fileserv.icpc.jp/championship2024/data.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="I.html">← I. Symmetric Boundary</a><a href="K.html">K. Tree Quiz →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem J</div>
+  <h1>There and Back Again</h1>
+  <div class="tlimit">Time limit: 2 seconds</div>
+</div>
+
+<p>There are \(n\) cities in Asia-Pacific, numbered from \(1\) to \(n\). The 2024 ICPC Asia Pacific Championship is held in Hanoi, which is city \(n\).</p>
+
+<p>There are \(m\) bidirectional roads, numbered from \(1\) to \(m\), connecting some pairs of cities. Road \(i\) connects cities \(u_i\) and \(v_i\) and takes \(t_i\) units of time to travel in either direction. Each road connects different cities and different roads connect different pairs of cities.</p>
+
+<p>You live in city \(1\). You would like to travel to city \(n\) to attend the contest through a sequence of roads, and then travel back to city \(1\) through a sequence of roads. Traveling through the same route is boring, so you would like the routes in both traversals to be different. Two routes are considered different if the <strong>set of distinct</strong> roads traversed through one route is different from the <strong>set of distinct</strong> roads traversed through the other route.</p>
+
+<p>In each traversal, it is possible to pass through the same city or road multiple times. It is also possible to continue traversing after reaching the destination city (i.e., city \(1\) or city \(n\)). The <em>traversal time</em> is the sum of the travel times of the roads passed through in the traversal. If a road is passed through multiple times in the traversal, then the travel time of the road is also counted multiple times accordingly.</p>
+
+<p>Determine the minimum total traversal time to do both traversals satisfying the requirements above, or indicate if the requirements cannot be satisfied.</p>
+
+<h2>Input</h2>
+<p>The first line of input contains two integers \(n\) and \(m\) (\(2 \le n \le 100\,000\); \(1 \le m \le \min(\frac{n(n-1)}{2}, 300\,000)\)). Each of the next \(m\) lines contains three integers. The \(i\)-th line contains \(u_i\), \(v_i\), and \(t_i\) (\(1 \le u_i \lt v_i \le n\); \(1 \le t_i \le 1000\)). Different roads connect different pairs of cities.</p>
+
+<h2>Output</h2>
+<p>Output an integer representing the minimum total traversal time to do both traversals satisfying the requirements above, or <code>-1</code> if the requirements cannot be satisfied.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>3 2
+1 2 10
+1 3 5
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>30
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>The cities and roads are illustrated by Figure J.1.</p>
+
+<figure>
+  <img src="img/J-fig1.png" alt="Graph with roads 1–2 (10) and 1–3 (5)" width="119" height="121" loading="lazy">
+  <figcaption>Figure J.1: Illustration of sample input #1.</figcaption>
+</figure>
+
+<p>One possible way to minimize the total traversal time is as follows:</p>
+<ul>
+  <li>Travel from city \(1\) to city \(3\) by passing through road \(2\) (connecting cities \(1\) and \(3\)). The traversal time is \(5\). The set of traversed roads is \(\{2\}\).</li>
+  <li>Travel from city \(3\) to city \(1\) by passing through road \(2\), and then road \(1\) (connecting cities \(1\) and \(2\)) twice. The traversal time is \(5 + 10 + 10 = 25\). The set of traversed roads is \(\{1, 2\}\).</li>
+</ul>
+<p>It can be shown that there is no way to do both traversals with a smaller total traversal time.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #2</div><pre>4 3
+1 2 10
+2 3 5
+3 4 2
+</pre></div>
+  <div><div class="sh">Sample Output #2</div><pre>-1
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #2</p>
+<p>The cities and roads are illustrated by Figure J.2.</p>
+
+<figure>
+  <img src="img/J-fig2.png" alt="Path graph 1–2–3–4 with road times 10, 5, 2" width="270" height="45" loading="lazy">
+  <figcaption>Figure J.2: Illustration of sample input #2.</figcaption>
+</figure>
+
+<p>To go from city \(1\) to city \(4\) and then back, both traversals have to pass through all the roads. Therefore, it is impossible to satisfy the requirements above.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #3</div><pre>4 4
+1 2 3
+2 4 2
+1 3 3
+3 4 4
+</pre></div>
+  <div><div class="sh">Sample Output #3</div><pre>12
+</pre></div>
+</div>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #4</div><pre>3 1
+1 2 1000
+</pre></div>
+  <div><div class="sh">Sample Output #4</div><pre>-1
+</pre></div>
+</div>
+
+</article><nav class="pn"><a href="I.html">← I. Symmetric Boundary</a><a href="K.html">K. Tree Quiz →</a></nav>
+</main>
+</body>
+</html>

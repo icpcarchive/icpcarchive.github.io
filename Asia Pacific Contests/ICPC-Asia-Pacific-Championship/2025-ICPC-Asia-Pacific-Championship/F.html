@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — F. Hold the Star</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2025 — F. Hold the Star</a><nav><a href="index.html">Index</a><a href="solutions/F.html">Solution</a><a href="https://fileserv.icpc.jp/championship2025/icpc-apac-2025-tasks.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="E.html">← E. Minus Operator</a><a href="G.html">G. Corrupted File →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem F</div>
+  <h1>Hold the Star</h1>
+  <div class="tlimit">Time limit: 2 seconds</div>
+</div>
+
+<p>You are playing a computer game with \(n\) rooms, \(m\) characters, and one star. The rooms are arranged from left to right and numbered from \(1\) to \(n\) in that order. The characters are numbered from \(1\) to \(m\). At any time, each character is in one of the rooms and the star is either in one of the rooms or held by one of the characters. The objective of the game is for the star to be held by character \(m\).</p>
+
+<p>You can play the game by performing several actions. Each action costs a certain amount of <em>staracips</em> (the unit of currency in the game), possibly zero. In each action, you choose a character \(x\) (let room \(y\) be the room the character is currently in) and command the character to do either of the following:</p>
+
+<ul>
+  <li>Move to one of the adjacent rooms (\(y - 1\) or \(y + 1\)), if such a room exists. If character \(x\) is holding the star, then the character continues to hold the star. This action costs \(s_x\) <em>staracips</em>. The values of \(s_1, s_2, \ldots, s_m\) are given.</li>
+  <li>Pick the star up and hold it, if the star is currently in room \(y\) and is not held by any character. This action costs \(0\) <em>staracips</em>.</li>
+  <li>Put the star down and release it, if the star is currently held by character \(x\). The star then falls to room \(y\). This action costs \(0\) <em>staracips</em>.</li>
+</ul>
+
+<p>The game contains \(q\) levels, numbered from \(1\) to \(q\). In all levels, each character \(i\) is initially in room \(r_i\) and character \(m\) must hold the star to win the level. The only difference between the levels is that, in each level \(j\), the star is initially in room \(l_j\).</p>
+
+<p>For each level, you want to compute the minimum total <em>staracips</em> you have to spend to win the level. Note that you don’t have to minimize the number of actions.</p>
+
+<h2>Input</h2>
+<p>The first line of input contains three integers \(n\), \(m\), and \(q\) (\(1 \le n \le 10^9; 1 \le m \le 100\,000; 1 \le q \le 100\,000\)). The \(i\)-th of the next \(m\) lines contains two integers \(r_i\) and \(s_i\) (\(1 \le r_i \le n; 1 \le s_i \le 10^9\)). The \(j\)-th of the next \(q\) lines contains an integer \(l_j\) (\(1 \le l_j \le n\)).</p>
+
+<h2>Output</h2>
+<p>For each level in order, output the minimum total <em>staracips</em> you have to spend to win the level.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>6 5 4
+1 7
+3 2
+2 3
+5 3
+2 5
+1
+2
+5
+6
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>5
+0
+8
+14
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>You can win the first level by spending \(5\) <em>staracips</em> by doing the following actions:</p>
+<ol>
+  <li>Character \(5\) moves from room \(2\) to room \(1\). This action costs \(5\) <em>staracips</em>.</li>
+  <li>Character \(5\) picks the star up.</li>
+</ol>
+
+<p>You can win the second level by spending \(0\) <em>staracips</em> by doing the following actions:</p>
+<ol>
+  <li>Character \(5\) picks the star up.</li>
+</ol>
+
+<p>You can win the third level by spending \(8\) <em>staracips</em> by doing the following actions:</p>
+<ol>
+  <li>Character \(4\) picks the star up.</li>
+  <li>Character \(4\) moves from room \(5\) to room \(4\). This action costs \(3\) <em>staracips</em>.</li>
+  <li>Character \(4\) moves from room \(4\) to room \(3\). This action costs \(3\) <em>staracips</em>.</li>
+  <li>Character \(4\) puts the star down.</li>
+  <li>Character \(2\) picks the star up.</li>
+  <li>Character \(2\) moves from room \(3\) to room \(2\). This action costs \(2\) <em>staracips</em>.</li>
+  <li>Character \(2\) puts the star down.</li>
+  <li>Character \(5\) picks the star up.</li>
+</ol>
+
+<p>You can win the fourth level by spending \(14\) <em>staracips</em> by doing the following actions:</p>
+<ol>
+  <li>Character \(2\) moves from room \(3\) to room \(4\), then to room \(5\), then to room \(6\). These actions cost \(3 \times 2 = 6\) <em>staracips</em> in total.</li>
+  <li>Character \(2\) picks the star up.</li>
+  <li>Character \(2\) moves from room \(6\) to room \(5\), then to room \(4\), then to room \(3\), then to room \(2\). These actions cost \(4 \times 2 = 8\) <em>staracips</em> in total.</li>
+  <li>Character \(2\) puts the star down.</li>
+  <li>Character \(5\) picks the star up.</li>
+</ol>
+
+</article><nav class="pn"><a href="E.html">← E. Minus Operator</a><a href="G.html">G. Corrupted File →</a></nav>
+</main>
+</body>
+</html>

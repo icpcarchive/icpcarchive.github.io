@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — I. Squares on Grid Lines</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2025 — I. Squares on Grid Lines</a><nav><a href="index.html">Index</a><a href="solutions/I.html">Solution</a><a href="https://fileserv.icpc.jp/championship2025/icpc-apac-2025-tasks.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="H.html">← H. Secret Lilies and Roses</a><a href="J.html">J. Gathering Sharks →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem I</div>
+  <h1>Squares on Grid Lines</h1>
+  <div class="tlimit">Time limit: 4 seconds</div>
+</div>
+
+<p>You have a square of side length \(n\) on a 2D plane, partitioned into a grid of \(1 \times 1\) square cells, totaling \(n^2\) cells.</p>
+
+<p>Your task is to answer \(q\) queries, numbered from \(1\) to \(q\), described below. In query \(i\), you are given a real number \(s_i\), and you must count the number of ways to place four points on the plane such that</p>
+
+<ul>
+  <li>each point lies on the boundary of a cell (not necessarily the same), and</li>
+  <li>the four points form the vertices of a square with area \(s_i\).</li>
+</ul>
+
+<p>Here, the edges of the square formed by these points do <strong>not</strong> need to be parallel to the edges of the cells. If there are infinitely many valid placements, you must report that as your answer.</p>
+
+<p>Two placements are considered different if there exists a point that appears in one placement but not in the other.</p>
+
+<h2>Input</h2>
+<p>The first line of input contains two integers \(n\) and \(q\) (\(1 \le n \le 2000\), \(1 \le q \le 100\,000\)). The \(i\)-th of the next \(q\) lines contains a real number \(s_i\) (\(0.01 \le s_i \le n^2\)), given with exactly two digits after the decimal point.</p>
+
+<h2>Output</h2>
+<p>Output \(q\) lines. The \(i\)-th line should contain the number of valid placements for query \(i\). If infinitely many exist, output <code>-1</code> instead.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>3 4
+6.90
+0.26
+2.65
+1.00
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>2
+4
+10
+-1
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>For queries \(1\) and \(2\), the valid placements are illustrated in Figure I.1. The top two placements correspond to query \(1\), and the bottom four correspond to query \(2\). In each placement, the shaded region represents a square formed by the points.</p>
+
+<figure>
+  <img src="img/I-fig1.png" alt="Two large tilted squares in a 3×3 grid and four small diamond squares around grid points" width="804" height="364" loading="lazy">
+  <figcaption>Figure I.1: Illustrations of Sample Input #1.</figcaption>
+</figure>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #2</div><pre>1 5
+0.49
+0.50
+0.51
+0.99
+1.00
+</pre></div>
+  <div><div class="sh">Sample Output #2</div><pre>0
+1
+2
+2
+1
+</pre></div>
+</div>
+
+</article><nav class="pn"><a href="H.html">← H. Secret Lilies and Roses</a><a href="J.html">J. Gathering Sharks →</a></nav>
+</main>
+</body>
+</html>

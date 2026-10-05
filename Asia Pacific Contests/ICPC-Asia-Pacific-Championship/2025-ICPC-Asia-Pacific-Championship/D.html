@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — D. Tower of Hanoi</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2025 — D. Tower of Hanoi</a><nav><a href="index.html">Index</a><a href="solutions/D.html">Solution</a><a href="https://fileserv.icpc.jp/championship2025/icpc-apac-2025-tasks.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="C.html">← C. Cactus Connectivity</a><a href="E.html">E. Minus Operator →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem D</div>
+  <h1>Tower of Hanoi</h1>
+  <div class="tlimit">Time limit: 2 seconds</div>
+</div>
+
+<p>While visiting Hanoi to compete in The ICPC Asia Pacific Championship last year, you learned about the famous Tower of Hanoi problem. In the problem, there are three rods and several disks of distinct radii, which can slide onto any rod. The rods are numbered from \(1\) to \(3\). At any point in time, each disk must be stacked on one of the rods, and the disks stacked on each rod must be arranged in increasing order of radius from top to bottom. In one step, you can move the disk on top of one rod to the top of another rod, provided this move does not violate the restriction above. The goal is to move all the disks to rod \(1\) in the minimum number of steps.</p>
+
+<p>You are solving an extension of this famous problem. You have a sequence of \(n\) integers \(p_1, p_2, \ldots, p_n\), the initial values of which are given to you.</p>
+
+<p>You are also given \(q\) operations. Each operation is either of the following:</p>
+
+<p><strong>Change operation:</strong> Two integers \(x\) and \(y\) are given. This operation requires you to change the value of \(p_x\) to \(y\).</p>
+
+<p><strong>Solve operation:</strong> Two integers \(l\) and \(r\) are given. This operation requires you to solve the Tower of Hanoi problem with \(r - l + 1\) disks of radii \(l, l + 1, \ldots, r\), where the disk of radius \(i\) is initially stacked on rod \(p_i\), for each \(l \le i \le r\). The order of the disks initially stacked on each rod satisfies the restriction explained earlier. You need to find the minimum number of steps to move all disks to rod \(1\) modulo \(998\,244\,353\).</p>
+
+<p>Your task is to perform all the given operations sequentially.</p>
+
+<h2>Input</h2>
+<p>The first line of input contains two integers \(n\) and \(q\) (\(1 \le n \le 100\,000; 1 \le q \le 100\,000\)). The second line contains \(n\) integers representing the initial values of \(p_1, p_2, \ldots, p_n\) (\(1 \le p_i \le 3\)). The next \(q\) lines represent the operations in the order they are to be performed. Each line is in one of the following formats:</p>
+
+<ol>
+  <li>“<code>c</code> \(x\) \(y\)” (\(1 \le x \le n; 1 \le y \le 3\)) to apply a Change operation for the specified integers \(x\) and \(y\).</li>
+  <li>“<code>s</code> \(l\) \(r\)” (\(1 \le l \le r \le n\)) to apply a Solve operation for the specified integers \(l\) and \(r\).</li>
+</ol>
+
+<p>The input contains at least one Solve operation.</p>
+
+<h2>Output</h2>
+<p>For each Solve operation, in order, output the minimum number of steps to solve the Tower of Hanoi problem with disks of radii \(l, l + 1, \ldots, r\) modulo \(998\,244\,353\).</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>4 4
+2 3 1 3
+s 2 4
+s 1 3
+c 3 3
+s 2 4
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>6
+2
+7
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>The first operation requires you to solve the Tower of Hanoi problem with disks of radii \(2\), \(3\), and \(4\) initially stacked on rods \(3\), \(1\), and \(3\) respectively. All disks can be moved to rod \(1\) in \(6\) steps as illustrated by Figure D.1.</p>
+
+<figure>
+  <img src="img/D-fig1.png" alt="Seven states of the three pegs showing the 6 moves" width="734" height="541" loading="lazy">
+  <figcaption>Figure D.1: \(6\) steps to move all disks to rod \(1\). The shaded rod represents the rod moved on the last step.</figcaption>
+</figure>
+
+<p>The second operation requires you to solve the Tower of Hanoi problem with disks of radii \(1\), \(2\), and \(3\) initially stacked on rods \(2\), \(3\), and \(1\) respectively.</p>
+
+<p>The fourth operation requires you to solve the Tower of Hanoi problem with disks of radii \(2\), \(3\), and \(4\) initially stacked on rods \(3\), \(3\), and \(3\) respectively.</p>
+
+</article><nav class="pn"><a href="C.html">← C. Cactus Connectivity</a><a href="E.html">E. Minus Operator →</a></nav>
+</main>
+</body>
+</html>

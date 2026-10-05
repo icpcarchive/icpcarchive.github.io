@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2026 — Solution H. Reflect Sort</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2026 — Solution H. Reflect Sort</a><nav><a href="index.html">Solutions index</a><a href="../H.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="G.html">← G. Extra Transition</a><a href="I.html">I. Growth Factor →</a></nav><article class="paper">
+<h1 class="sol-title">H&nbsp;&nbsp;Reflect Sort</h1>
+
+<p>Consider the attributes of the sequence that can’t change no matter what operations you do. For each \(i\) (\(1 \le i \le n-1\)), the value of \(|a_i - a_{i+1}|\) will always be the same.</p>
+
+<p>That means, if the value of \(a_1\) is fixed, you are forced to make \(a_{i+1} = a_i + |a_i - a_{i+1}|\) for all \(1 \le i \le n-1\). This makes the final value of \(a_n\) to be \(a_1 + |a_1 - a_2| + |a_2 - a_3| + \ldots + |a_{n-1} - a_n|\). So to minimize \(a_n\), you just need to minimize \(a_1\).</p>
+
+<p>Since \(a_1\) is the minimum value in the end, you just need to make \(a_1\) to be the smallest possible positive integer without worrying about the other elements.</p>
+
+<p>Consider doing a prefix operation on \(\{1, 2, \ldots, x\}\), and then doing another prefix operation on \(\{1, 2, \ldots, x-1\}\). That increases the value of \(a_1\) by \(2 \times (a_{x+1} - a_x)\). Furthermore, for each value of \(a_{x+1} - a_x\), you can always flip its sign without changing the value of \(a_1\) by doing suffix operations. That means, the value of \(a_1\) can be increased or decreased any number of times by any value \(2 \times |a_x - a_{x+1}|\).</p>
+
+<p>From number theory, it can be obtained that if the greatest common divisor of all values of \(2 \times |a_x - a_{x+1}|\) is \(d\), then the value of \(a_1\) can be increased or decreased by any multiple of \(d\). You want \(a_1\) to have the minimum possible positive value. So if \(a_1 \bmod d = 0\), you should make it to be \(d\). Else, you should make it to be \(a_1 \bmod d\).</p>
+
+<p>Time complexity: \(O(n \log \max a_i)\)</p>
+
+</article><nav class="pn"><a href="G.html">← G. Extra Transition</a><a href="I.html">I. Growth Factor →</a></nav>
+</main>
+</body>
+</html>

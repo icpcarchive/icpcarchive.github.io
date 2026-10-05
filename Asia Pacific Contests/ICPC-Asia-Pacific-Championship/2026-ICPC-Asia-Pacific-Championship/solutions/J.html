@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2026 — Solution J. Worldwide Playlist</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2026 — Solution J. Worldwide Playlist</a><nav><a href="index.html">Solutions index</a><a href="../J.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="I.html">← I. Growth Factor</a><a href="K.html">K. Time Display Stickers →</a></nav><article class="paper">
+<h1 class="sol-title">J&nbsp;&nbsp;Worldwide Playlist</h1>
+
+<p>Observe that the number of skips is equal to the number of songs played minus \(n\).</p>
+
+<p>To listen to the songs \(b_1, \ldots, b_n\) in order, the total number of songs played is equal to \(\operatorname{pos}_a(b_n) + kn\), where \(\operatorname{pos}_a(x)\) denotes the position of song \(x\) in the permutation \(a\), and \(k\) is the number of <em>wraps</em> around the playlist: the number of times \(a_1\) is played after \(a_n\).</p>
+
+<p>We can see that a wrap occurs whenever the next desired song appears <em>earlier</em> in the permutation \(a\) than the current song. In other words, \(k\) is equal to the number of indices \(i\) such that \(\operatorname{pos}_a(b_{i+1}) \lt \operatorname{pos}_a(b_i)\).</p>
+
+<p>Next, let us handle updates. We maintain an array storing \(\operatorname{pos}_a(i)\) for \(1 \le i \le n\).</p>
+<ul>
+  <li>To handle updates with \(c = 2\), since swapping \(b_x\) and \(b_y\) affects only the comparisons involving these two positions, we can update the corresponding contributions to \(k\) in \(O(1)\).</li>
+  <li>To handle updates with \(c = 1\), note that swapping \(a_x\) and \(a_y\) changes \(\operatorname{pos}_a(i)\) for two values of \(i\). We can recompute their contributions to \(k\) in \(O(1)\) as well.</li>
+</ul>
+
+<p>Therefore, the total time complexity is \(O(n + q)\).</p>
+
+</article><nav class="pn"><a href="I.html">← I. Growth Factor</a><a href="K.html">K. Time Display Stickers →</a></nav>
+</main>
+</body>
+</html>

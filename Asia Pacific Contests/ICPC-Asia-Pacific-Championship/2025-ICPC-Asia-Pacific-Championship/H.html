@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — H. Secret Lilies and Roses</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2025 — H. Secret Lilies and Roses</a><nav><a href="index.html">Index</a><a href="solutions/H.html">Solution</a><a href="https://fileserv.icpc.jp/championship2025/icpc-apac-2025-tasks.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="G.html">← G. Corrupted File</a><a href="I.html">I. Squares on Grid Lines →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem H</div>
+  <h1>Secret Lilies and Roses</h1>
+  <div class="tlimit">Time limit: 2 seconds</div>
+</div>
+
+<p>There are \(n\) flowers arranged in a line from left to right, which are numbered from \(1\) to \(n\) in that order. Each flower is either a lily or a rose. For an integer \(j\) between \(0\) and \(n\), inclusive, let \(l_j\) denote the number of lilies among the leftmost \(j\) flowers, and let \(r_j\) denote the number of roses among the rightmost \(n - j\) flowers.</p>
+
+<p>Initially, only the number of flowers \(n\) is provided to you. The types of the flowers are hidden. You can obtain information on the flowers by making <em>queries</em>. In one query, you can perform one of the following.</p>
+
+<p><strong>Type query:</strong> Specify an integer \(i\) between \(1\) and \(n\), inclusive. You will then receive the type of flower \(i\).</p>
+
+<p><strong>Multiply query:</strong> Specify an integer \(j\) between \(0\) and \(n\), inclusive. You will then receive the value of \(l_j \times r_j\).</p>
+
+<p>Your task is to find an integer \(k\) between \(0\) and \(n\), inclusive, for which \(l_k = r_k\) by making a limited number of queries. You can assume that at least one such integer exists for the arrangement of the flower types. Note that you do not need to identify the type of each flower.</p>
+
+<h2>Interaction</h2>
+<p>The first line of input contains one integer \(t\) (\(1 \le t \le 100\)) representing the number of test cases. After that, \(t\) test cases follow. Each of them is presented as follows.</p>
+
+<p>The first line of input for each test case contains an integer \(n\) (\(1 \le n \le 100\)). After reading it, your program can start making queries. For each query, your program should write a line containing one of the following:</p>
+
+<ul>
+  <li>“<code>type</code> \(i\)” to perform a Type query by specifying an integer \(i\) (\(1 \le i \le n\)). In response, an input line containing a string either <code>lily</code> or <code>rose</code> becomes available, indicating the type of flower \(i\).</li>
+  <li>“<code>multi</code> \(j\)” to perform a Multiply query by specifying an integer \(j\) (\(0 \le j \le n\)). In response, an input line containing the integer \(l_j \times r_j\) becomes available.</li>
+</ul>
+
+<p>Your program is allowed to make up to <strong>10 queries</strong> for each test case. This means the total number of Type queries and Multiply queries combined must not exceed \(10\). If your program makes more than \(10\) queries, it will be judged as “Wrong Answer”.</p>
+
+<p>When your program identifies an integer \(k\) such that \(l_k = r_k\), it should write a line of the form “<code>answer</code> \(k\)” (\(0 \le k \le n\)). Note that providing the answer does not count as a query.</p>
+
+<p>The input guarantees that at least one correct output exists. If there are multiple correct outputs, any one of them will be accepted.</p>
+
+<p>After writing the answer line, your program should start processing the next test case. When all \(t\) test cases have been processed, the interaction stops and your program should terminate.</p>
+
+<p><em>Notes on interactive judging:</em></p>
+<ul>
+  <li>The evaluation is non-adversarial, meaning that the types of the flowers are chosen in advance rather than in response to your queries.</li>
+  <li>Do not forget to flush output buffers after writing. See the “Judging Details” document for details.</li>
+  <li>You are provided with a command-line tool for local testing, together with input files corresponding to the sample interactions. You can download these files from DOMjudge. The tool has comments at the top to explain its use.</li>
+</ul>
+
+<div class="table-wrap"><table class="interaction">
+  <tr><th>Read</th><th>Sample Interaction #1</th><th>Write</th></tr>
+  <tr><td>2</td><td></td><td></td></tr>
+  <tr><td>9</td><td></td><td></td></tr>
+  <tr><td></td><td></td><td>type 8</td></tr>
+  <tr><td>lily</td><td></td><td></td></tr>
+  <tr><td></td><td></td><td>type 1</td></tr>
+  <tr><td>rose</td><td></td><td></td></tr>
+  <tr><td></td><td></td><td>multi 6</td></tr>
+  <tr><td>6</td><td></td><td></td></tr>
+  <tr><td></td><td></td><td>multi 3</td></tr>
+  <tr><td>3</td><td></td><td></td></tr>
+  <tr><td></td><td></td><td>answer 5</td></tr>
+  <tr><td>3</td><td></td><td></td></tr>
+  <tr><td></td><td></td><td>multi 3</td></tr>
+  <tr><td>0</td><td></td><td></td></tr>
+  <tr><td></td><td></td><td>type 3</td></tr>
+  <tr><td>rose</td><td></td><td></td></tr>
+  <tr><td></td><td></td><td>answer 3</td></tr>
+</table></div>
+
+<p class="expl">Explanation for the sample interaction #1</p>
+<p>For the first test case, nine flowers are arranged as shown in the following figure. In response to the third query, \(l_6 \times r_6 = 3 \times 2 = 6\) is returned, and in response to the fourth query, \(l_3 \times r_3 = 1 \times 3 = 3\) is returned. Since \(l_5 = r_5 = 3\), \(k = 5\) is a correct output.</p>
+
+<figure>
+  <img src="img/H-fig1.png" alt="Nine flowers: rose, rose, lily, lily, lily, rose, rose, lily, rose; multi 6 gives 3 lilies × 2 roses" width="496" height="132" loading="lazy">
+</figure>
+
+<p>For the second test case, all three flowers are assumed to be roses.</p>
+
+</article><nav class="pn"><a href="G.html">← G. Corrupted File</a><a href="I.html">I. Squares on Grid Lines →</a></nav>
+</main>
+</body>
+</html>

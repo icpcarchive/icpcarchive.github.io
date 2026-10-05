@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2026 — Solution G. Extra Transition</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2026 — Solution G. Extra Transition</a><nav><a href="index.html">Solutions index</a><a href="../G.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="F.html">← F. Minesweeper String</a><a href="H.html">H. Reflect Sort →</a></nav><article class="paper">
+<h1 class="sol-title">G&nbsp;&nbsp;Extra Transition</h1>
+
+<p>We write a path from vertex \(a\) to \(b\) through zero or more vertex by \(a \to^* b\) (which is equivalent to \(a \to^* b\)).</p>
+
+<p>A graph \(G\) is a series-parallel graph with two terminals \(s\) and \(t\) if and only if \(G\) can be reduced to the graph with \(2\) vertices \(s\) and \(t\) with only one edge connecting them by repeatedly applying following operations:</p>
+<ul>
+  <li><em>series operation</em>: if a vertex \(v\) has exactly two incident edges to vertices \(x\) and \(y\) (\(x \ne y\)), remove \(v\) and its incident edges, then add an edge between \(x\) and \(y\).</li>
+  <li><em>parallel operation</em>: if there are multiple edges between two vertices \(x\) and \(y\), remove all of them, then add one edge between \(x\) and \(y\).</li>
+</ul>
+
+<p>Note that parallel edges are allowed during the operations.</p>
+
+<p>We can see that a graph \(G\) is well-designed if and only if it is series-parallel. We show this later.</p>
+
+<p>Let \(G\) be a series-parallel graph. Now we discuss the condition when addition of an edge between \(u\) and \(v\) keeps \(G\) series-parallel. In the definition of series operation, we may allow contracting several paths \(x\) – \(v_1\) – \(\cdots\) – \(v_k\) – \(y\) to \(x\) – \(y\) (if all of \(v_1, \ldots, v_k\) have degree of \(2\)). Then, we let all of edges before contraction (\(x\) – \(v_1\) and so on) be ones that have been initially existed or have been added in a parallel operation. Here, addition of an edge between \(u\) and \(v\) keeps \(G\) series-parallel if and only if there is an extended series operation involving \(u\) and \(v\) while contracting \(G\) into an edge.</p>
+<ul>
+  <li>If such series operation exists, we can easily construct a sequence of operations for \(G\) added with an edge between \(u\) and \(v\).</li>
+  <li>Suppose \(G\) added with an edge between \(u\) and \(v\) is series-parallel. During contraction, vertices \(u\) and \(v\) can be removed (by series operations) only after the (initially added) edge between \(u\) and \(v\) is removed by a parallel operation. This means that, after applying operations, the original graph (before edge addition) could have a path \(u\) – \(\cdots\) – \(v\) where any intermediate vertices have degree of \(2\).</li>
+</ul>
+
+<p>We can check whether a graph is series-parallel in \(O(m \log n)\) time. Along this check, we can also compute \(\sum_{(i,j) \in S} w_i w_j\).</p>
+
+<h3>Proof of equivalence between well-designed and series-parallel graphs</h3>
+
+<p>First, we show that series-parallel graphs are well-designed by induction on the number of edges in \(G\).</p>
+
+<p>We have to first check that, if \(G\) is series-parallel, for any vertex \(v\), there is a simple path from \(s\) to \(t\) through \(v\). Since series-parallel graphs do not have isolated vertices, it suffices to show that, for any <em>edge</em> \(e\), there is a simple path from \(s\) to \(t\) through \(e\). This argument can be easily shown by induction.</p>
+
+<p>If \(G\) consists of \(2\) vertices and an edge connecting them, \(G\) is clearly well-designed.</p>
+
+<p>Otherwise, let \(G'\) be the graph obtained by applying a series operation to \(G\). \(G'\) is also series-parallel and \(G'\) has strictly fewer edges than \(G\), so \(G'\) should be well-designed. Let \(v\) be the vertex removed by the operation, and \(x\) and \(y\) be the vertices which are adjacent to \(v\) in \(G\). For vertices \(p\) and \(q\) (\(p \ne v, q \ne v\)), if there are paths \(s \to^* p \to^* q \to^* t\) and \(sto^*q \to^* p \to^* t\) in \(G\), we have paths of the same form in \(G'\) (possibly \(x \to v \to y\) is contracted to \(x \to y\)). Also, suppose that, for a vertex \(p\), there are paths \(s \to^* p \to^* v \to^* t\) and \(s \to^K v \to^* p \to^* t\) in \(G\). Since \(v\) is adjacent only to \(x\) and \(y\), we will have a path of form \(s \to^* p \to^* x \to v \to y \to^* t\) or \(s \to^* p \to^* y \to v \to x \to^* t\). The same applies to the latter path. Thus we will have paths \(s \to^* p \to^* x \to^* t\) and \(s \to^* x \to^* p \to^* t\), or \(s \to^* p \to^* y \to^* t\) and \(s \to^* y \to^* p \to^* t\). Either case contradicts to the fact that \(G'\) is well-designed. The same holds if \(G'\) is obtained by a parallel operation.</p>
+
+<p>Now we show the inverse: if a graph \(G\) is well-designed, then it is series-parallel. If \(G\) is well-designed and \(G'\) can be obtained from \(G\) by applying a series or parallel operation, it is easy to see that \(G'\) is also well-designed. Thus, it suffices to show that an operation is applicable to \(G\) (unless \(G\) has only two vertices \(s\) and \(t\) and an edge connecting them). If \(G\) has a parallel edge, a parallel operation can be immediately applied. From now on, we assume that \(G\) is well-designed and has no parallel edge, and we show a series operation is applicable to \(G\) (that is, there is a vertex \(v \ne s, t\) with degree of 2).</p>
+
+<p>For two distinct vertices \(a\) and \(b\) (possibly \(s\) or \(t\)), if there exists a simple path \(s \to^* a \to^* b \to^* t\), we write \(a \Rightarrow b\). Note that \(a \Rightarrow b\) and \(b \Rightarrow a\) does not hold at the same time (because \(G\) is well-designed). Also this relationship is transitive: if \(a \Rightarrow b\) and \(b \Rightarrow c\), then \(a \Rightarrow c\).</p>
+
+<p>We can show that, for each edge \(e\), there is a simple path from \(s\) to \(t\) through \(e\). Thus, for any neighbor \(w\) of \(v\), exactly one of \(v \Rightarrow w\) and \(w \Rightarrow v\) holds. Thus we can add directions to each (undirected) edge \(\{u, v\}\): from \(u\) to \(v\) if \(u \Rightarrow v\), or from \(v\) to \(u\) if \(v \Rightarrow u\). TWe can see that this directed graph \(G'\) is a directed acyclic graph (DAG) with the source \(s\) and the terminal \(t\). Then let \(T\) the <em>dominator tree</em> of \(G'\). Also we let \(W\) be the connected component containing \(s\) of the graph \((V(G), E(G) \cap E(T))\). All edges adjacent to \(s\) are in \(T\), so \(W\) is non-empty. Thus \(W\) will have at least one leaf.</p>
+
+<p>If the only leaf in \(W\) is \(t\), let \(s = v_0, v_1, \ldots, v_{k-1}, v_k = t\) be the path from \(s\) to \(t\) in \(W\). If \(v_i\) (\(0 \le i \le k-1\)) has a neighbor \(v'_{i+1} \ne v_{i+1}\) with \(v_i \Rightarrow v'_{i+1}\) (note that \(v'_{i+1}\) cannot be one of \(v_{i+2}, \ldots, v_k\), either), \(v'_{i+1}\) will be in \(W\) and thus \(W\) will have other leaf than \(t\). From this, it follows that \(G\) is a path graph, which is clearly series-parallel.</p>
+
+<p>Otherwise, let \(v\) be one of the <em>uppermost</em> leaf in \(W\): there is no leaf \(v'\) in \(W\) such that \(v' \Rightarrow v\). We show that the degree of \(v\) is two, thus a series operation is applicable.</p>
+
+<p>Suppose there are two distinct neighbors \(w_1, w_2\) of \(v\) with \(v \Rightarrow w_1\) and \(v \Rightarrow w_2\). Without loss of generality, we can assume \(w_2 \Rightarrow w_1\) does not hold. Let \(p_1\) be the parent of \(w_1\) in \(T\). Since \(p_1\) should be an ancestor of \(v\) in \(T\), we have a path \(s \to^* p_1 \to^* w_1 \to v \to w_2 \to^* t\). This is simple because \(w_2 \to^* t\) cannot contain \(w_1\). We also have a path \(s \to^* p_1 \to^* v \to w_1 \to^* t\), which contradicts the fact that \(G\) is well-designed. Therefore, there exists only one vertex \(w\) with \(v \Rightarrow w\).</p>
+
+<p>Since \(v\) is a leaf in \(W\), its parent \(p\) is adjacent to \(v\) and \(p \Rightarrow v\). Suppose another neighbor \(q\) of \(v\) satisfies \(q \Rightarrow p\). By the definition of \(W\), all path from \(s\) to \(v\) passes through \(p\). Similarly, all path from \(s\) to \(q\) passes through \(p\). We arbitrarily take one such path: \(s, \ldots, p, m_1, \ldots, m_k = q\). Since \(p\) is in \(W\) and we have an edge between \(p\) and \(m_1\), we have a leaf \(r\) in \(W\) as an descendant of \(m_1\). \(r\) cannot be one of \(m_1, \ldots, m_k\) because \(v\) is uppermost. Suppose the lowest ancestor of \(r\) in \(m_1, \ldots, m_k\) is \(m_j\). Then we have a path \(s \to^* p \to v \to q \to^* m_j \to^* r \to^* t\) (we take the unique path \(m_j \to^* r\) in \(W\)). This path is simple:</p>
+<ul>
+  <li>\(r\) cannot be \(v\) because the parent of \(v\) is \(p\).</li>
+  <li>\(m_j \to^* r\) cannot contain \(v\); otherwise \(v\) cannot be a leaf.</li>
+  <li>\(r \to^* t\) cannot contain \(v\) because \(v\) is uppermost.</li>
+</ul>
+
+<p>We also have a path \(s \to^* p \to^* q \to v \to^* t\), which contradicts the fact that \(G\) is well-designed. Therefore, there exists only one vertex \(p\) with \(p \Rightarrow v\).</p>
+
+<p>Combining these two arguments, it follows that the degree of \(v\) is \(2\).</p>
+
+</article><nav class="pn"><a href="F.html">← F. Minesweeper String</a><a href="H.html">H. Reflect Sort →</a></nav>
+</main>
+</body>
+</html>

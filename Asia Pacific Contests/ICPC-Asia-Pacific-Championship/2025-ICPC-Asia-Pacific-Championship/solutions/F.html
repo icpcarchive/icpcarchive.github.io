@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — Solution F. Hold the Star</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2025 — Solution F. Hold the Star</a><nav><a href="index.html">Solutions index</a><a href="../F.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="E.html">← E. Minus Operator</a><a href="G.html">G. Corrupted File →</a></nav><article class="paper">
+<h1 class="sol-title">F&nbsp;&nbsp;Hold the Star</h1>
+
+<p>We can separate the levels into two cases: the case where the star is initially to the left of character \(m\), and the case where it’s initially to the right. Let’s just solve for the latter case. Doing the other case is exactly the same, with just mirroring the room configuration.</p>
+
+<p>Let’s consider just one level. The star is initially to the right of character \(m\). It’s not hard to see that it’s always optimal to always move the star to the left, and never move the star to the right. However, it’s possible for a character to move to the right to pick up the star.</p>
+
+<p>Consider the moving characters who take part in delivering the star to character \(m\) in a single level. We can divide these moving characters into only four types:</p>
+
+<ul>
+  <li>Type \(1\): While in his/her initial position, he/she receives the star, and then he/she moves to the left to move the star to another position.</li>
+  <li>Type \(2\): He/she moves to the star’s current position, picks up the star, and then does nothing.</li>
+  <li>Type \(3\): He/she moves to the right to the star’s current position, and then he/she moves to the left to move the star to another position.</li>
+  <li>Type \(4\): He/she moves to the left to the star’s current position, and then he/she moves to the left to move the star to another position.</li>
+</ul>
+
+<p>Using greedy observations, we can obtain multiple properties of the optimal strategy.</p>
+
+<ul>
+  <li>The only possible type \(2\) character is character \(m\).</li>
+  <li>The only possible type \(3\) character is the first character that moves the star.</li>
+  <li>The only possible type \(4\) character is the first character that moves the star.</li>
+  <li>If character \(m\) is type \(2\), then no other character takes part in delivering the star.</li>
+</ul>
+
+<p>Using all properties above, there are only four possible cases for the sequence of types of characters taking part in delivering the star:</p>
+
+<ol>
+  <li>\([2]\)</li>
+  <li>\([3, 1, 1, 1, \ldots, 1, 1, 1]\)</li>
+  <li>\([4, 1, 1, 1, \ldots, 1, 1, 1]\)</li>
+  <li>\([1, 1, 1, 1, \ldots, 1, 1, 1]\)</li>
+</ol>
+
+<p>Notice that type \(3\) and type \(4\) also includes type \(1\). Handling the second and third cases automatically handles the fourth case, so the fourth case can be ignored.</p>
+
+<p>For the second and third cases, it’s not hard to see that it’s always optimal for the values of \(s_i\) to be decreasing over time. For that, we first sort the characters based on their positions from left to right. If we only consider the characters between room \(r_m\) and room \(l_j\) (inclusive), and we calculate the suffix minimum of \(s_i\), then optimally, the trailing characters of type \(1\) taking part in this are only the characters that appear in the suffix minimum.</p>
+
+<p>That means, for some \(l_j\), if we have decided which character \(x\) we want to be type \(3\) or type \(4\), we can know his/her value of \(s_x\), and then the trailing type \(1\)s are just the characters in the suffix minimum with values of \(s_i\) smaller than \(s_x\).</p>
+
+<p>Now, let’s solve the first, second, and third cases for all levels simultaneously where \(l_j\) is to the right of \(r_m\). We can sort the levels based on increasing values of \(l_j\).</p>
+
+<p>For the first case, we can do a simple \(O(1)\) math for each \(l_j\).</p>
+
+<p>Now, let’s consider the second and third cases. One hard thing is that the suffix minimum changes as \(l_j\) moves to the right, because more characters are considered to be a potential type \(1\). We can handle the changes in the suffix minimum by maintaining the suffix minimum using a stack as \(l_j\) gets bigger.</p>
+
+<p>For each character \(x\) to the right of \(r_m\), we calculate \(dp[x]\) as the cost if the trailing type \(1\)s start from character \(x\). We can calculate these values as we’re simulating the suffix minimum stack.</p>
+
+<p>Let’s solve for the type \(4\) character first. Let’s say it’s character \(x\). He/she must be located to the right of \(l_j\). It can be obtained that finding the optimal type \(4\) for some \(l_j\) is just finding the minimum value of \(dp[x]\) for all characters \(x\) located to the right of \(l_j\). This can be solved by precomputing the suffix minimum of \(dp[x]\).</p>
+
+<p>Now, let’s solve for the type \(3\) character. Let’s say it’s character \(x\). He/she must be to the left of \(l_j\). It can be obtained that in the optimal strategy:</p>
+
+<ul>
+  <li>If the optimal character \(x\) satisfies \(r_x \gt r_m\), then during the time character \(x\) goes to the right to pick up the star and goes to the left to deliver the star to the trailing type \(1\)s, he/she must revisit his/her initial position along the way.</li>
+  <li>If the optimal character \(x\) satisfies \(r_x \le r_m\), then character \(x\) only picks up the star and delivers it directly to character \(m\), without the help from other characters.</li>
+</ul>
+
+<p>Because of that, we can calculate the total cost for each possible candidate character \(x\) as the following:</p>
+
+<ul>
+  <li>If \(r_x \gt r_m\), its total cost is \(dp[x] + 2 \times (l_j - r_x) \times s_x\)</li>
+  <li>If \(r_x \le r_m\), its total cost is \((2 \times l_j - r_x - r_m) \times s_x\)</li>
+</ul>
+
+<p>We can see that for both cases, the cost is linearly dependent on \(l_j\). Because of that, the total cost for each possible candidate character can be made into a line equation with \(l_j\) being the variable. To find the optimal line for every given value of \(l_j\) efficiently, we maintain these lines using convex hull trick. As we move \(l_j\) to the right, we incrementally add more lines to our convex hull. The optimal cost for each level can be calculated using a binary search on these maintained lines.</p>
+
+<p>Time complexity: \(O((n + q) \log(n + q))\)</p>
+
+</article><nav class="pn"><a href="E.html">← E. Minus Operator</a><a href="G.html">G. Corrupted File →</a></nav>
+</main>
+</body>
+</html>

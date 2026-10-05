@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2026 — L. Onion</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2026 — L. Onion</a><nav><a href="index.html">Index</a><a href="solutions/L.html">Solution</a><a href="https://fileserv.icpc.jp/championship2026/icpc-apac-2026-tasks.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="K.html">← K. Time Display Stickers</a><a href="M.html">M. Deformed Balance →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem L</div>
+  <h1>Onion</h1>
+  <div class="tlimit">Time limit: 5 seconds</div>
+</div>
+
+<p class="story">Onions are widely used in cuisines around the world. This problem is about an “onion peeling” process in geometry.</p>
+
+<p>A set of points in a two-dimensional plane is <em>convex</em> if, for any pair of points \(p\) and \(q\) in the set, the line segment connecting \(p\) and \(q\) is entirely contained in the set. For a set of points \(S\), its <em>convex hull</em> is the smallest convex set containing all points in \(S\).</p>
+
+<p>You are given four integers \(n\), \(a\), \(b\), and \(k\). You have a set \(S\) of \(n\) points, initialized as follows:</p>
+\[ S = \{(x, (ax + b) \bmod n) \mid x = 0, 1, \ldots, n-1\}. \]
+
+<p>You apply the following operation \(k\) times: let \(H\) be the convex hull of the set \(S\), and then remove from \(S\) all points that lie on the boundary of the convex hull \(H\).</p>
+
+<p>Note that \(S\) can become empty. In that case, its convex hull is also empty, and its area is zero.</p>
+
+<p>For each operation, determine the <em>doubled</em> area of the convex hull \(H\). It can be shown that this value is always an integer.</p>
+
+<h2>Input</h2>
+<p>The input consists of a single line containing four integers \(n\), \(a\), \(b\), and \(k\) (\(1 \le n \le 10^9\); \(0 \le a, b \lt n\); \(1 \le k \le 300\)).</p>
+
+<h2>Output</h2>
+<p>Output \(k\) lines. The \(i\)-th line should contain an integer representing the doubled area of the convex hull in the \(i\)-th operation.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>4 1 2 1
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>8
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>Figure L.1 illustrates the points in \(S\) and the boundary of the convex hull in the first operation. The area of the convex hull is \(4\), and thus the doubled area is \(8\).</p>
+
+<figure>
+  <img src="img/L-fig1.png" alt="Four points (0,2), (1,3), (2,0), (3,1) with their convex hull boundary in red" width="168" height="166" loading="lazy">
+  <figcaption>Figure L.1: Illustration of Sample Input #1.</figcaption>
+</figure>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #2</div><pre>37 14 7 5
+</pre></div>
+  <div><div class="sh">Sample Output #2</div><pre>2257
+1406
+592
+74
+0
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #2</p>
+<p>Figure L.2 illustrates the boundaries in the first four operations. The set \(S\) becomes empty after the fourth operation. The area for the fifth operation is \(0\).</p>
+
+<figure>
+  <img src="img/L-fig2.png" alt="37 points with four nested convex hull boundaries in red, green, blue and gray" width="331" height="323" loading="lazy">
+  <figcaption>Figure L.2: Illustration of Sample Input #2.</figcaption>
+</figure>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #3</div><pre>280 40 12 4
+</pre></div>
+  <div><div class="sh">Sample Output #3</div><pre>131040
+82880
+39200
+0
+</pre></div>
+</div>
+
+</article><nav class="pn"><a href="K.html">← K. Time Display Stickers</a><a href="M.html">M. Deformed Balance →</a></nav>
+</main>
+</body>
+</html>

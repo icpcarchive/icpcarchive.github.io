@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2024 — Solution C. Bit Counting Sequence</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2024 — Solution C. Bit Counting Sequence</a><nav><a href="index.html">Solutions index</a><a href="../C.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="B.html">← B. Attraction Score</a><a href="D.html">D. Bánh Bò →</a></nav><article class="paper">
+<h1 class="sol-title">C&nbsp;&nbsp;Bit Counting Sequence</h1>
+
+<p><strong>Observation C.1.</strong> <em>For a non-negative integer \(y\), if \(p(y) - p(y+1) = t \ge 0\), the rightmost \((t+1)\) bits in the binary representation of \(y\) are all \(1\). Additionally, the \((t+2)\)-th bit of \(y\) from the right is \(0\).</em></p>
+
+<p>For example, consider \(y = 87 = (1010111)_2\). Here, \(t = p(y) - p(y+1) = 5 - 3 = 2\). As the observation states, the rightmost three bits of \(y\) are \(1\), and the fourth bit of \(y\) from the right is \(0\).</p>
+
+<p>Let \(k\) be the smallest index such that \(a_k = \max(a_1, \ldots, a_n)\). Also, let \(x\) denote the solution to this problem.</p>
+
+<p>When \(k \lt n\), let \(t = a_k - a_{k+1}\). It’s worth noting that \(t \ge 0\) according to the definition of \(k\). Based on the previous observation, the binary representation of \(x + k - 1\) should be like</p>
+\[x + k - 1 = (\ldots 0\,\overbrace{1 \ldots 1}^{t+1})_2.\]
+
+<p>The bits starting from the \((t+3)\)-th position from the right of \(x + k - 1\) cannot be determined solely from this observation. However, considering that \(a_k\) is the largest value among \(a_1, \ldots, a_n\), for \(s = a_k - (t+1)\),</p>
+\[x + k - 1 = (\overbrace{1 \ldots 1}^{s}\,0\,\overbrace{1 \ldots 1}^{t+1})_2.\]
+
+<p>is the smallest possible value for \(x + k - 1\). Consequently, we can compute the smallest possible value of \(x\). If any of the following conditions hold: \(s \lt 0\), \(x \lt 0\), or \(p(x + i - 1) \ne a_i\) for some \(i\), then the solution does not exist.</p>
+
+<p>Similarly, when \(k = n\), the smallest possible value for \(x + n - 1\) is \(2^{a_n} - 1\). The runtime complexity is \(O(n)\).</p>
+
+</article><nav class="pn"><a href="B.html">← B. Attraction Score</a><a href="D.html">D. Bánh Bò →</a></nav>
+</main>
+</body>
+</html>

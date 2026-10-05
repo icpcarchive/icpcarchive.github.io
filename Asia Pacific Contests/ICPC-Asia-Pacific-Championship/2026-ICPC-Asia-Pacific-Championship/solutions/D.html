@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2026 — Solution D. Christmas Tree Un-decoration</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2026 — Solution D. Christmas Tree Un-decoration</a><nav><a href="index.html">Solutions index</a><a href="../D.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="C.html">← C. Upside Down Dijkstra</a><a href="E.html">E. Parallel Sums →</a></nav><article class="paper">
+<h1 class="sol-title">D&nbsp;&nbsp;Christmas Tree Un-decoration</h1>
+
+<p>First, consider the problem without updates. We can perform a DP on the tree. Define \(\mathrm{dp}(u)\) as the minimum number of operations to remove all ornaments in the subtree rooted at vertex \(u\). The transition is</p>
+\[\mathrm{dp}(u) = \max\left(a_u, \sum_{c \text{ child of } u} \mathrm{dp}(c)\right).\]
+<p>Thus, the answer can be computed in \(O(n)\) time.</p>
+
+<p>To handle updates, we use heavy-light decomposition. Define:</p>
+<ul>
+  <li>\(b_u\): the sum of \(\mathrm{dp}(c)\) for all light children \(c\) of \(u\).</li>
+  <li>\(h(u)\): the heavy child of \(u\).</li>
+</ul>
+
+<p>The transition becomes \(\mathrm{dp}(u) = \max(a_u, b_u + \mathrm{dp}(h(u)))\).</p>
+
+<p>Next, consider a chain in the heavy-light decomposition from its topmost vertex \(c_1\) to a leaf \(c_k\): \((c_1, c_2, \ldots, c_k)\). We have</p>
+\[\begin{aligned}
+\mathrm{dp}(c_1) &amp;= \max(a_{c_1}, b_{c_1} + \mathrm{dp}(c_2)) \\
+&amp;= \max(a_{c_1}, b_{c_1} + a_{c_2}, b_{c_1} + b_{c_2} + \mathrm{dp}(c_3)) \\
+&amp;\;\;\vdots \\
+&amp;= \max_{i=1}^{k} \left(a_{c_i} + \sum_{j=1}^{i-1} b_{c_j}\right).
+\end{aligned}\]
+
+<p>Note that the only important value we need to compute is \(\mathrm{dp}(c_1)\), since it either becomes the final answer (if \(c_1 = 1\)) or contributes to \(b_{p_{c_1}}\) (if \(c_1 \ne 1\)). Therefore, we can maintain each term inside the \(\max\) function above for each chain using a lazy segment tree.</p>
+
+<p>To update the number of ornaments in vertex \(u_i\) to \(x_i\), we update \(a_{u_i}\) in \(u_i\)’s chain, then move up while updating the values of \(b\) for the chains’ roots’ parents. In this way, an update can be performed in \(O(\log^2 n)\) time.</p>
+
+<p>Therefore, the problem has been solved in \(O(n \log n + q \log^2 n)\) time.</p>
+
+</article><nav class="pn"><a href="C.html">← C. Upside Down Dijkstra</a><a href="E.html">E. Parallel Sums →</a></nav>
+</main>
+</body>
+</html>

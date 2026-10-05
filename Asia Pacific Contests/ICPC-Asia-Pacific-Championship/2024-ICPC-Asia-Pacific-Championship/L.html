@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2024 — L. XOR Operations</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2024 — L. XOR Operations</a><nav><a href="index.html">Index</a><a href="solutions/L.html">Solution</a><a href="https://fileserv.icpc.jp/championship2024/data.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="K.html">← K. Tree Quiz</a><a href="M.html">M. Zig-zag →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem L</div>
+  <h1>XOR Operations</h1>
+  <div class="tlimit">Time limit: 2 seconds</div>
+</div>
+
+<p>You are given \(n\) integers \(a_1, a_2, \ldots, a_n\). You have a sequence of \(n\) integers \(B = (b_1, b_2, \ldots, b_n)\) which initially are all zeroes.</p>
+
+<p>In one operation, you choose two different indices \(i\) and \(j\), then simultaneously</p>
+<ul>
+  <li>replace \(b_i\) with \(b_i \oplus a_i \oplus a_j\), and</li>
+  <li>replace \(b_j\) with \(b_j \oplus a_i \oplus a_j\).</li>
+</ul>
+
+<p>Note that \(\oplus\) represents the bitwise XOR operation, which returns an integer whose binary representation has a \(1\) in each bit position for which the corresponding bits of either but not both operands are \(1\). For example, \(3 \oplus 10 = 9\) because \((0011)_2 \oplus (1010)_2 = (1001)_2\).</p>
+
+<p>You want to compute the number of different possible sequences \(B\) you can obtain after performing zero or more operations. Since this number might be huge, calculate this number modulo \(998\,244\,353\).</p>
+
+<p>Two sequences of length \(n\) are considered different if and only if there exists an index \(i\) (\(1 \le i \le n\)) such that the \(i\)-th element of one sequence differs from the \(i\)-th element of the other sequence.</p>
+
+<h2>Input</h2>
+<p>The first line of input contains one integer \(n\) (\(2 \le n \le 200\,000\)). The second line contains \(n\) integers \(a_1, a_2, \ldots, a_n\) (\(0 \le a_i \lt 2^{30}\) for all \(i\)).</p>
+
+<h2>Output</h2>
+<p>Output an integer representing the number of different possible sequences \(B\) you can obtain after performing zero or more operations modulo \(998\,244\,353\).</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>3
+1 2 1
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>4
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>Starting from \(B = (0, 0, 0)\), we can obtain the following two sequences \(B\):</p>
+<ul>
+  <li>Perform the operation with \(i = 1\) and \(j = 2\). We will have \(B = (3, 3, 0)\).</li>
+  <li>After that, perform the operation with \(i = 2\) and \(j = 3\). We will have \(B = (3, 0, 3)\).</li>
+</ul>
+<p>Starting from \(B = (0, 0, 0)\), we can also obtain the following sequence \(B\):</p>
+<ul>
+  <li>Perform the operation with \(i = 2\) and \(j = 3\). We will have \(B = (0, 3, 3)\).</li>
+</ul>
+<p>It can be shown that \((0, 0, 0)\), \((3, 3, 0)\), \((3, 0, 3)\), and \((0, 3, 3)\) are the only possible sequences \(B\) you can obtain. Therefore, the answer is \(4\).</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #2</div><pre>4
+852415 852415 852415 852415
+</pre></div>
+  <div><div class="sh">Sample Output #2</div><pre>1
+</pre></div>
+</div>
+
+</article><nav class="pn"><a href="K.html">← K. Tree Quiz</a><a href="M.html">M. Zig-zag →</a></nav>
+</main>
+</body>
+</html>

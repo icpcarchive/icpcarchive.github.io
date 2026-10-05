@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — Solution M. Can You Reach There?</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2025 — Solution M. Can You Reach There?</a><nav><a href="index.html">Solutions index</a><a href="../M.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="L.html">← L. Boarding Queue</a><span></span></nav><article class="paper">
+<h1 class="sol-title">M&nbsp;&nbsp;Can You Reach There?</h1>
+
+<p>We can solve this problem by considering several cases:</p>
+
+<ol>
+  <li>\(n = 1\),</li>
+  <li>\(n = 2\),</li>
+  <li>\(n \ge 3\) and not all marked points are on one line, and</li>
+  <li>\(n \ge 3\) and all marked points are on one line.</li>
+</ol>
+
+<h3>M.1&nbsp;&nbsp;\(n = 1\)</h3>
+
+<p>From the starting point \(S\) and a marked point \(P\), let \(R\) be the reflection of \(S\) with respect to \(P\). We can show that we can reach any point on the segment \(SR\).</p>
+
+<h3>M.2&nbsp;&nbsp;\(n = 2\)</h3>
+
+<p>Let \(P\) and \(Q\) be the two marked points. Consider the illustration below:</p>
+
+<figure><img src="img/M-fig1.png" alt="Points P, Q, S, T, S2 on a grid with arrows P to T, T to Q, S to Q, Q to S2" width="427" height="355" loading="lazy"></figure>
+
+<p>We can move from \(S\) to \(T\) and from \(T\) to \(S_2\). We can prove that \(\overrightarrow{PQ} = \overrightarrow{SS_2}\), i.e. we can effectively translate any arbitrary point \(X\) with vector \(\overrightarrow{PQ}\). Similarly, we can also translate any arbitrary point \(X\) with vector \(\overrightarrow{QP}\).</p>
+
+<p>Let’s consider the 2 lines: \(l_1\) which goes through \(T\) and parallel to the segment \(PQ\), and \(l_2\) which goes through \(S\) and parallel to the segment \(PQ\). On these two lines, we can visit all the points that that are translation of \(S\) (or \(T\)) by a multiple of vector \(\overrightarrow{PQ}\). It can be proven that no other points on \(l_1\) and \(l_2\) can be visited.</p>
+
+<figure><img src="img/M-fig2.png" alt="Line through T0, T, T2, T3 above segment PQ, and line through S0, S, S2, S3 below it" width="760" height="280" loading="lazy"></figure>
+
+<p>It is trivial to show that the points "outside" of the region between lines \(l_1\) and \(l_2\) cannot be reached. How about the points "inside" the region between lines \(l_1\) and \(l_2\)?</p>
+
+<figure><img src="img/M-fig3.png" alt="Colored triangles S0PQ, SPQ, S2PQ, S3PQ" width="760" height="269" loading="lazy"></figure>
+
+<p>From point \(S_i\), we can visit all the points inside triangle \(S_iPQ\). We can also translate the points in each of the triangles \(S_iPQ\) by a multiple of vector \(\overrightarrow{PQ}\), more precisely, translate triangle \(S_iPQ\) by vector \(S_iS\):</p>
+
+<figure><img src="img/M-fig4.png" alt="The triangles translated so that they all share vertex S, covering the region between S and line PQ" width="760" height="198" loading="lazy"></figure>
+
+<p>From this, we can show that all the points between lines \(l_1\) and \(l_2\) (exclusive) are reachable.</p>
+
+<p>Note that there is a corner case where \(S\) or \(T\) is on the line \(PQ\).</p>
+
+<h3>M.3&nbsp;&nbsp;\(n \ge 3\)</h3>
+
+<p>When all marked points are collinear, we can solve it similarly to case \(n = 2\).</p>
+
+<p>When not all marked points are collinear, let \(P\), \(Q\) and \(R\) be three non-collinear marked points:</p>
+
+<figure><img src="img/M-fig5.png" alt="Parallel lines through R and P, through Q, and through Q2, with segment RQ" width="760" height="477" loading="lazy"></figure>
+
+<p>From any starting point \(S\), we can reach point \(R\) (using marked point \(R\)). Let \(l_0\) be the line going through \(P\) and \(Q\), and \(l_1\) be the line going through \(Q\) and parallel with \(l_0\). Using marked points \(P\) and \(Q\), we can reach all points between lines \(l_0\) and \(l_1\), excluding line \(l_1\).</p>
+
+<p>Let \(Q_2\) the translation of \(Q\) by vector \(\overrightarrow{RQ}\), and let \(l_2\) be the line going through \(Q_2\). Using marked points \(R\) and \(Q\), we can translate any point by vector \(\overrightarrow{RQ}\). Thus, we can reach all points between lines \(l_1\) and \(l_2\) (excluding line \(l_2\)).</p>
+
+<p>Continue to apply the above translation, we can show that we can reach every point in the plane.</p>
+
+</article><nav class="pn"><a href="L.html">← L. Boarding Queue</a><span></span></nav>
+</main>
+</body>
+</html>

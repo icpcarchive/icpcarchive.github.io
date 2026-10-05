@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — Solution E. Minus Operator</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2025 — Solution E. Minus Operator</a><nav><a href="index.html">Solutions index</a><a href="../E.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="D.html">← D. Tower of Hanoi</a><a href="F.html">F. Hold the Star →</a></nav><article class="paper">
+<h1 class="sol-title">E&nbsp;&nbsp;Minus Operator</h1>
+
+<p>In a standard context, the expression \(a - b - c\) is interpreted as \((a - b) - c\), reflecting the <em>left-associative</em> nature of the minus operator. In the following, we omit parentheses wherever possible for simplicity. For instance, the expression</p>
+\[(((x - x) - (x - x)) - (x - x))\]
+<p>can be written more compactly as</p>
+\[x - x - (x - x) - (x - x).\]
+
+<p>Throughout this simplified representation, parentheses around a variable can only appear in one of the following forms: “\(-(x-\)”, “\(-x-\)”, “\(-x)-\)”, “\(-x))-\)”, “\(-x)))-\)”, and so on. Note that “\(-((x-\)” cannot appear, because that would make one pair of parentheses redundant.</p>
+
+<h3>Nested Case</h3>
+
+<p>As a special case, consider the situation where \(n = 6\), and the expression takes the form</p>
+\[x - (x - (x - (x- \quad ? \quad x \quad ? \quad - \quad ? \quad x \quad ? \quad ))),\]
+<p>where “\(?\)” indicates unknown parts. Suppose we specifically want to identify how the second-to-last variable is parenthesized. The possible forms are “\((x\)”, “\(x\)”, “\(x)\)”, “\(x))\)”, or “\(x)))\)”. To distinguish these forms, the following queries are effective: \(S = 111101, 111001, 110001,\) and \(100001.\) Here is a table of the evaluated results under each query:</p>
+
+<div class="table-wrap"><table class="data">
+<tr><th></th><th>\(111101\)</th><th>\(111001\)</th><th>\(110001\)</th><th>\(100001\)</th></tr>
+<tr><th>\((x\)</th><td>\(0\)</td><td>\(1\)</td><td>\(0\)</td><td>\(1\)</td></tr>
+<tr><th>\(x\)</th><td>\(1\)</td><td>\(1\)</td><td>\(0\)</td><td>\(1\)</td></tr>
+<tr><th>\(x)\)</th><td>\(0\)</td><td>\(0\)</td><td>\(0\)</td><td>\(1\)</td></tr>
+<tr><th>\(x))\)</th><td>\(1\)</td><td>\(1\)</td><td>\(1\)</td><td>\(1\)</td></tr>
+<tr><th>\(x)))\)</th><td>\(0\)</td><td>\(0\)</td><td>\(0\)</td><td>\(0\)</td></tr>
+</table></div>
+
+<p>From these results, we can devise the following query strategy to identify the parentheses around that variable: First, query \(S = 111101\).</p>
+
+<ul>
+  <li>If the response to the query is \(0\), the possibilities are “\((x\)”, “\(x)\)”, or “\(x)))\)”. Next, query \(S = 111001\). If the response is \(1\), the form must be “\((x\)”. Otherwise, query \(S = 100001\).</li>
+  <li>If the response to the query is \(1\), then the possibilities are “\(x\)” or “\(x))\)”. Next, query \(S = 110001\) to distinguish between these two.</li>
+</ul>
+
+<h3>General Case</h3>
+
+<p>While the previous section focuses on a specific case, the same reasoning can be generalized. Assume we aim to determine the parenthesis patterns for each variable from left to right. For the leftmost variable, there are obviously no parentheses. For the second variable, we might have either “\(x\)” or “\((x\)”, and so forth.</p>
+
+<p>When investigating the parentheses around the \(i\)-th variable from the left, suppose we already know the parenthesis arrangement to its left. We can then construct a query in which the variables that directly contributes to the depth of the \(i\)-th variable are substituted with \(1\). For instance, consider a partially known expression:</p>
+\[x - (x - x) - (x - (x - x) - (x - x) - (x - (x - (x - x) - x - (x- \quad ? \quad x \quad ? \quad x.\]
+<p>We would build a corresponding query string so the result looks like</p>
+\[1 - (0 - 0) - (1 - (0 - 0) - (0 - 0) - (1 - (1 - (0 - 0) - 0 - (1- \quad ? \quad x \quad ? \quad x,\]
+<p>which simplifies to</p>
+\[1 - (1 - (1 - (1 - (1- \quad ? \quad x \quad ? \quad x.\]
+<p>This closely mirrors the situation from the nested case above. Using the same method: “\((x\)” and “\(x\)” can be identified in \(2\) queries, “\(x)\)” in \(3\) queries, “\(x))\)” in \(3\) queries, “\(x)))\)” in \(4\) queries, “\(x))))\)” in \(4\) queries, and so on.</p>
+
+<h3>Query Complexity</h3>
+
+<p>Now, let’s estimate the worst query complexity of the method. Let \(t\) be the total number of “\((x\)” instances in the expression. Also, suppose \(k\) variables appear in the forms “\(x)\)”, “\(x))\)”, etc., and let the \(j\)-th of those \(k\) variables close \(r_j\) parentheses, for \(j = 1, \ldots, k\). Note that \(r_1 + r_2 + \cdots + r_k = t\).</p>
+
+<p>The total number of queries used by this strategy is</p>
+\[2n + \sum_{j=1}^{k} \left\lceil \frac{r_j}{2} \right\rceil.\]
+
+<p>Analyzing this sum requires some care. Let \(s_0\) be the sum of the even \(r_j\) values, and \(s_1\) be the sum of the odd \(r_j\) values. Also, let \(k_1\) be the number of odd \(r_j\). Then</p>
+\[\sum_{j=1}^{k} \left\lceil \frac{r_j}{2} \right\rceil = \frac{s_0}{2} + \frac{s_1 + k_1}{2} = \frac{t}{2} + \frac{k_1}{2} \le \frac{n}{2},\]
+<p>where we used \(s_0 + s_1 = t\) and \(t + k_1 \le n\). Hence, the overall method requires at most \(2n + \frac{n}{2} = 2.5n\) queries.</p>
+
+</article><nav class="pn"><a href="D.html">← D. Tower of Hanoi</a><a href="F.html">F. Hold the Star →</a></nav>
+</main>
+</body>
+</html>

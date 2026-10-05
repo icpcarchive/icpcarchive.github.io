@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2026 — Solution A. Compare Suffixes</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2026 — Solution A. Compare Suffixes</a><nav><a href="index.html">Solutions index</a><a href="../A.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><span></span><a href="B.html">B. Subtree Removal Game →</a></nav><article class="paper">
+<h1 class="sol-title">A&nbsp;&nbsp;Compare Suffixes</h1>
+
+<h3>Step 1</h3>
+
+<p>We maintain the order of suffixes (also known as a suffix array) from the end of \(S\). At the beginning, we determine whether \(S(n) \gt S(n-1)\) or \(S(n) \lt S(n-1)\). This can be done by a single query.</p>
+
+<p>Suppose that we have now determined the order of \(k\) suffixes \(S(n-k+1), S(n-k+2), \ldots, S(n)\):</p>
+\[S(p_{n-k+1}) \lt S(p_2) \lt \ldots \lt S(p_n)\]
+<p>for a sequence \((p_{n-k+1}, \ldots, p_n)\), which is a permutation of \((n-k+1, \ldots, n)\).</p>
+
+<p>For each \(i = n-k+1, \ldots, n-1\), consider the following question: can \(S_{p_i}\) and \(S_{p_{i+1}}\) be the same character? If they are the same, the order of \(S(p_i)\) and \(S(p_{i+1})\) must be the same as that of \(S(p_i+1)\) and \(S(p_{i+1}+1)\). Since \(S(p_i) \lt S(p_{i+1})\), this is equivalent to \(S(p_i+1) \lt S(p_{i+1}+1)\). Thus, if \(S(p_i+1) \gt S(p_{i+1}+1)\), then \(S_{p_i}\) and \(S_{p_{i+1}}\) must be different characters. Since \(S\) consists of only lowercase letters, the number of such indices \(i\) is at most \(25\). We call such an index \(i\) a <em>splitting position</em>.</p>
+
+<h3>Step 2</h3>
+
+<p>We want to know which position the suffix \(S(n-k)\) falls into the current ordering \(S(p_1) \lt \ldots \lt S(p_k)\), using fewer queries. To do so, we split this ordering by splitting positions. By performing a kind of binary search, we can determine which sub-ordering \(S(n-k)\) falls into. However, this can incur too many queries.</p>
+
+<p>Assume that \(S(p_x) \lt S(n-k) \lt S(p_{x+1})\) for some index \(x\). We are interested in, after adding \(S(n-k)\) in the ordering, a new splitting position happens to appear or not. Since \(n\) is much larger than \(25\), this does not happen in most cases.</p>
+
+<p>If it does not, \(S(p_x+1) \lt S(n-k+1)\) must hold. For each sub-ordering, say, \(S(p_a) \lt \ldots \lt S(p_b)\), we can find the largest index \(y \in [a, b]\) such that \(S(p_y+1) \lt S(n-k+1)\). Let us say \(y\) is a <em>representative index</em> of that sub-ordering.</p>
+
+<p>In the binary search we mentioned above, we use representative indices. After finding a representative index \(y\) such that \(S(p_y) \lt S(n-k) \lt S(p_z)\) (where \(z\) is the representative index of next sub-ordering), we query to determine whether \(S(n-k) \lt S(p_{y+1})\) holds. If it holds, we successfully determine the position of \(S(n-k)\) with at most \(\lceil \log_2(26) \rceil + 1 = 6\) queries.</p>
+
+<p>If \(S(n-k) \lt S(p_{y+1})\) does not hold, we simply do binary search over the current ordering \(S(p_1) \lt \ldots \lt S(p_k)\) to determine the position of \(S(n-k)\). This requires at most \(\lceil \log_2(n) \rceil\) queries, and this case occurs at most \(25\) times.</p>
+
+<p>Iterating \(k = n-1\) down to \(1\) will yield the answer. Overall, the total query count is bounded by \(6n + 25\log_2(n) \le 6260\). In general, for the number of the types of letters \(\sigma\), the query count is \(n(\log_2(\sigma)+1) + \sigma\log_2(n)\). Computational time is \(O(n^2)\).</p>
+
+</article><nav class="pn"><span></span><a href="B.html">B. Subtree Removal Game →</a></nav>
+</main>
+</body>
+</html>

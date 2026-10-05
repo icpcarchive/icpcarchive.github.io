@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — Solution B. Three-Dimensional Embedding</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2025 — Solution B. Three-Dimensional Embedding</a><nav><a href="index.html">Solutions index</a><a href="../B.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="A.html">← A. Control Towers</a><a href="C.html">C. Cactus Connectivity →</a></nav><article class="paper">
+<h1 class="sol-title">B&nbsp;&nbsp;Three-Dimensional Embedding</h1>
+
+<p>In this problem, we are asked to embed a given graph into the cubic space \([0, 400]^3\). This is not straightforward, so let us first consider how to embed it in a differently sized box (not necessarily a cube).</p>
+
+<p>Suppose that one vertex is placed at \((0, 2, 0)\). With a suitable construction, we can attach five polylines to that vertex so that their endpoints lie at \((0, j, 0)\) for \(j = 0, 1, \ldots, 4\). We call this arrangement a <em>gadget</em>. We can center such a gadget at any position, not necessarily at \((0, 2, 0)\).</p>
+
+<p><strong>Step 1:</strong> \(3n \times 6 \times m\)</p>
+
+<p>One possible embedding is to line up \(n\) gadgets horizontally and then make connections between these gadgets in each \(z\)-layer (a plane parallel to the \(xy\)-plane).</p>
+
+<p>Place the \(i\)-th gadget so that its center is at \((1 + 3i, 2, 0)\) for \(i = 0, 1, \ldots, n - 1\). For each edge connecting vertices \(v\) and \(w\) in the original graph, choose one endpoint from the \(v\)-th gadget and one endpoint from the \(w\)-th gadget, and connect them as follows:</p>
+
+<ul>
+  <li>Suppose we use the \(z\)-layer \(z = z_0\) for \(z_0 \ge 1\).</li>
+  <li>From the chosen endpoint in the \(v\)-th gadget, extend along the \(z\)-axis to \(z = z_0\), shift by \(-1\) in the \(x\)-direction, and then shift up to \(5\) in the \(y\)-direction.</li>
+  <li>Do the same for the chosen endpoint in the \(w\)-th gadget.</li>
+  <li>In the plane \(z = z_0\), join these two extended endpoints with a straight segment.</li>
+</ul>
+
+<p>By assigning distinct \(z\)-layers to different edges, we avoid intersections. This produces an embedding in a box of size \(3n \times 6 \times m\).</p>
+
+<p><strong>Step 2:</strong> \(3n \times n/2 \times 19\)</p>
+
+<p>We next aim to fit the graph into a more compact (and closer to cubic) space by reducing the number of \(z\)-layers used.</p>
+
+<p>Let \(M\) be a matching in the graph, meaning that each vertex is incident to at most one edge in \(M\). We will use two consecutive \(z\)-layers to embed as many edges as possible. Suppose \(z_0\) and \(z_0 + 1\) are two consecutive layers. For the \(j\)-th edge \((v, w)\) in \(M\), do the following:</p>
+
+<ul>
+  <li>From one endpoint in the \(v\)-th gadget, extend along the \(z\)-axis to \(z = z_0\), shift by \(-1\) in \(x\), shift to \(j + 5\) in \(y\), and then continue the extension by \(+1\) in \(z\).</li>
+  <li>Do the same for one endpoint in the \(w\)-th gadget.</li>
+  <li>Connect these polylines in the plane \(z = z_0 + 1\).</li>
+</ul>
+
+<p>Polylines produced in this way do not intersect. With a greedy edge-coloring of the graph, we obtain \(9\) matchings, each embedded by the above method. Thus, we get an embedding in a box of size \(3n \times n/2 \times 19\).</p>
+
+<p><strong>Step 3:</strong> \(9\sqrt{n} \times 3\sqrt{n} \times 7\sqrt{n}\)</p>
+
+<p>Finally, we arrange the gadgets in a rectangular grid to further balance the dimensions.</p>
+
+<p>Let \(d\) be an integer to be chosen later. Label each gadget as \((i, j)\) for \(0 \le i \lt n/d\) and \(0 \le j \lt d\). Place gadget \((i, j)\) so that its center is at \((1 + 3i, 2 + 5j, 0)\). This arrangement ensures that none of the gadgets overlap.</p>
+
+<p>We then form a matching in a <em>contracted</em> graph: for each \(i\), we contract the vertices corresponding to the gadgets \((i, 0), (i, 1), \ldots, (i, d - 1)\). The contracted graph has \(n/d\) vertices, each of degree at most \(5d\). Using a greedy edge-coloring again, we obtain \(10d - 1\) matchings. Each pair of gadgets in different columns \((i, \cdot)\) and \((i', \cdot)\) is connected by the method from Step 2.</p>
+
+<p>For gadgets in the same column, say \((i, j)\) and \((i, j')\), we connect them in a single \(z\)-layer \(z = z_0\) as follows:</p>
+
+<ul>
+  <li>From an endpoint in gadget \((i, j)\), extend up to \(z_0\) and <strong>shift by</strong> \(+1\) <strong>in</strong> \(x\).</li>
+  <li>Do the same for gadget \((i, j')\).</li>
+  <li>Connect these two extended endpoints in the plane \(z = z_0\).</li>
+</ul>
+
+<p>These polylines do not interfere with those connecting gadgets across different columns.</p>
+
+<p>To decide \(d\), note the required space:</p>
+
+<ul>
+  <li>x-dimension: \(3n/d\),</li>
+  <li>y-dimension: \(5d + n/2d\),</li>
+  <li>z-dimension: \(20d\).</li>
+</ul>
+
+<p>Setting \(d = \sqrt{n}/3\) yields a final embedding in a box of size \(9\sqrt{n} \times 3\sqrt{n} \times 7\sqrt{n}\), which fits within \([0, 400]^3\) for \(n \le 1600\) because \(9\sqrt{1600} = 360 \lt 400.\)</p>
+
+<p>Overall, the time complexity of this construction is \(O\big(n\sqrt{n}\big)\).</p>
+
+</article><nav class="pn"><a href="A.html">← A. Control Towers</a><a href="C.html">C. Cactus Connectivity →</a></nav>
+</main>
+</body>
+</html>

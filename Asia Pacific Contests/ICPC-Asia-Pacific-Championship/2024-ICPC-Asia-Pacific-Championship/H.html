@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2024 — H. Pho Restaurant</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2024 — H. Pho Restaurant</a><nav><a href="index.html">Index</a><a href="solutions/H.html">Solution</a><a href="https://fileserv.icpc.jp/championship2024/data.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="G.html">← G. Personality Test</a><a href="I.html">I. Symmetric Boundary →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem H</div>
+  <h1>Pho Restaurant</h1>
+  <div class="tlimit">Time limit: 2 seconds</div>
+</div>
+
+<p>As you may know, pho is one of the most common dishes in Hanoi. It contains a special kind of flour noodles, meat (usually beef or chicken), and green onions dipped in a tasty broth. Vietnamese people enjoy pho for breakfast, lunch, dinner, and even light meals. For tourists, trying pho is a must, especially in the cold of Hanoi.</p>
+
+<p>You own a <em>phở bò</em> (beef pho) restaurant in Vietnam with \(n\) tables, numbered \(1\) to \(n\). The 2024 ICPC Asia Pacific Championship contestants are currently in your restaurant. Each contestant is initially seated at one of the tables and there is at least one contestant initially seated at each table.</p>
+
+<p>Each contestant would like to order one of the two most well-known kinds of pho: <em>phở tái</em> (pho with medium-rare beef) or <em>phở chín</em> (pho with well-done beef). The initial state of table \(i\) is represented by the binary string \(S_i\). The length of \(S_i\) is the number of contestants initially seated at table \(i\). The \(j\)-th character of \(S_i\) is <code>0</code> if the \(j\)-th contestant initially seated at the table would like to order a <em>phở tái</em>, and <code>1</code> if the contestant would like to order a <em>phở chín</em>.</p>
+
+<p>To make it easier to track the orders, the restaurant wants the contestants seated at the same table to have the same order. That is, for each table, at least one of the following must be true:</p>
+<ul>
+  <li>All of the contestants seated at that table would like to order a <em>phở tái</em>.</li>
+  <li>All of the contestants seated at that table would like to order a <em>phở chín</em>.</li>
+</ul>
+
+<p>To satisfy this requirement and the contestants’ orders, you want to move zero or more contestants to a different table. The destination table must be one of the \(n\) tables. In other words, you must not add new tables. There is no limit to the number of contestants that can be seated at the same table. After moving the contestants, the following condition should be satisfied by each table: either there is no contestant seated at that table or all contestants seated at that table would like to order the same dish.</p>
+
+<p>Since moving contestants takes some time, you would like to compute the minimum number of contestants you need to move.</p>
+
+<h2>Input</h2>
+<p>The first line of input contains one integer \(n\) (\(2 \le n \le 100\,000\)). Each of the next \(n\) lines contains a binary string. The \(i\)-th line contains \(S_i\) (\(1 \le |S_i| \le 200\,000\)). The sum of \(|S_i|\) across all \(i\) does not exceed \(500\,000\).</p>
+
+<h2>Output</h2>
+<p>Output an integer representing the minimum number of contestants you need to move.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>4
+11101101
+00
+10001
+10
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>5
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>You can move</p>
+<ul>
+  <li>the seventh contestant initially seated at table \(1\) to table \(3\),</li>
+  <li>the fourth contestant initially seated at table \(1\) to table \(4\),</li>
+  <li>the first and fifth contestants initially seated at table \(3\) to table \(1\), and</li>
+  <li>the first contestant initially seated at table \(4\) to table \(1\).</li>
+</ul>
+<p>You will then have all contestants seated at table \(1\) ordering <em>phở chín</em>, while the contestants seated at the other tables will be ordering <em>phở tái</em>. It can be shown that you cannot move fewer than \(5\) contestants to satisfy the requirements.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #2</div><pre>2
+101010
+010101
+</pre></div>
+  <div><div class="sh">Sample Output #2</div><pre>6
+</pre></div>
+</div>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #3</div><pre>5
+0000
+11
+0
+00000000
+1
+</pre></div>
+  <div><div class="sh">Sample Output #3</div><pre>0
+</pre></div>
+</div>
+
+</article><nav class="pn"><a href="G.html">← G. Personality Test</a><a href="I.html">I. Symmetric Boundary →</a></nav>
+</main>
+</body>
+</html>

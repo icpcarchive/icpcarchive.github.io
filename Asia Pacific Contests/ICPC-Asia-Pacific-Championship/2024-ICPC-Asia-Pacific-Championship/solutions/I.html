@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2024 — Solution I. Symmetric Boundary</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2024 — Solution I. Symmetric Boundary</a><nav><a href="index.html">Solutions index</a><a href="../I.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="H.html">← H. Pho Restaurant</a><a href="J.html">J. There and Back Again →</a></nav><article class="paper">
+<h1 class="sol-title">I&nbsp;&nbsp;Symmetric Boundary</h1>
+
+<p>Let’s denote an input point \((x_i, y_i)\) by \(P_i\). Also, let \(X\) represent the center of the point symmetry. According to the definition of point symmetry, a point \(Q_i\) satisfying \((P_i + Q_i)/2 = X \iff Q_i = 2X - P_i\) should also be included in the boundary of the convex region we are seeking. The problem is to find a point \(X\) such that the \(2n\) points \(P_1, \ldots, P_n, Q_1, \ldots, Q_n\) form a hull, meaning that the boundary of the convex hull of the \(2n\) points contains all of them. We say that a point \(X\) satisfying this condition is <em>valid</em>.</p>
+
+<p>Somewhat briefly, the solution is as follows: for two indices \(a\) and \(b\) that are between \(1\) and \(n\), inclusive, let \(L(a, b)\) be a line passing through \((P_a + P_b)/2\) and \((P_{a+1} + P_b)/2\). Here, we say \(P_{n+1} = P_1\). Draw \(n^2\) lines of \(L(a, b)\) on the plane for \(1 \le a, b \le n\). There are \(O(n^4)\) intersection points between the lines. For each intersection point, verify whether the point is valid or not. If it is valid, calculate the area of the hull. This process requires \(O(n \log n)\) time for each intersection point. The minimum area found by this procedure represents the solution. The runtime complexity is \(O(n^5 \log n)\).</p>
+
+<p>But why is the above solution correct? Before delving into the rationale, let’s explain a few concepts.</p>
+
+<ul>
+  <li>The point \(Q_i\) depends on the point \(X\), so from now on, we write \(Q_i\) as \(Q_i(X)\).</li>
+  <li>For three points \(A, B\) and \(C\), let \(CCW(A, B, C)\) be true if and only if \((B - A) \times (C - A) \ge 0\).</li>
+  <li>For a valid point \(X\), let \(s(X)\) denote the area of a convex hull formed by the points \(P_1, \ldots, P_n, Q_1(X), \ldots\), \(Q_n(X)\).</li>
+</ul>
+
+<p>When we draw \(n^2\) lines, the plane is divided into \(O(n^4)\) connected regions. Let’s select one region \(R\). Here, \(R\) includes the boundary of the region. We denote the interior points of \(R\) by \(R^\circ\). For any two points \(X \in R^\circ\) and \(X' \in R\), and for any two indices \(a\) and \(b\), both of the following hold.</p>
+
+<ul>
+  <li>If \(CCW(P_a, P_{a+1}, Q_b(X))\) is true, \(CCW(P_a, P_{a+1}, Q_b(X'))\) is also true.<br>
+  (Hint: prove that \(CCW(P_a, P_{a+1}, Q_b(X))\) is equivalent to \(CCW((P_a + P_b)/2, (P_{a+1} + P_b)/2, X)\).)</li>
+  <li>If \(CCW(P_a, Q_b(X), Q_{b+1}(X))\) is true, \(CCW(P_a, Q_b(X'), Q_{b+1}(X'))\) is also true.</li>
+</ul>
+
+<p>This implies that if one point in \(R^\circ\) is valid, then any point in \(R\) is valid. Also, the order of vertices on the boundary of a convex polygon formed by \(P_1, \ldots, P_n, Q_1(X), \ldots, Q_n(X)\) is always the same for \(X \in R\).</p>
+
+<p>From this, we can deduce that the function \(s : \mathbb{R}^2 \to \mathbb{R}\) is a linear function when the domain is restricted in \(R\), because the area of a polygon is the sum of the cross product of neighboring vertices,</p>
+
+<ul>
+  <li>\(P_a \times P_{a+1}\) is constant,</li>
+  <li>\(P_a \times Q_b(X)\) and \(Q_b(X) \times P_a\) vary linearly with respect to \(X\), and</li>
+  <li>\(Q_b(X) \times Q_{b+1}(X) = (2X - P_b) \times (2X - P_{b+1}) = 2X \times (P_b - P_{b+1}) + P_b \times P_{b+1}\) varies linearly with respect to \(X\).</li>
+</ul>
+
+<p>Therefore, the minimum value of \(s\) within the domain of \(R\) is always achieved on the boundary of \(R\). Specifically, since \(R\) is a convex polygon, the minimum value is attained at the vertices of the region. This justifies the fact that we only need to check the intersection points of \(n^2\) lines.</p>
+
+</article><nav class="pn"><a href="H.html">← H. Pho Restaurant</a><a href="J.html">J. There and Back Again →</a></nav>
+</main>
+</body>
+</html>

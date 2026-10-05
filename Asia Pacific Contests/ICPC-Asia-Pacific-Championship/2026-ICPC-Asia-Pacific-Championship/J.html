@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2026 — J. Worldwide Playlist</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2026 — J. Worldwide Playlist</a><nav><a href="index.html">Index</a><a href="solutions/J.html">Solution</a><a href="https://fileserv.icpc.jp/championship2026/icpc-apac-2026-tasks.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="I.html">← I. Growth Factor</a><a href="K.html">K. Time Display Stickers →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem J</div>
+  <h1>Worldwide Playlist</h1>
+  <div class="tlimit">Time limit: 2 seconds</div>
+</div>
+
+<p>You are planning a trip around the world. For this trip, you have installed a music app containing \(n\) songs, numbered from \(1\) to \(n\).</p>
+
+<p>Initially, the app generates a playlist for these \(n\) songs in the form of a permutation of \(1, 2, \ldots, n\), denoted by \(a_1, a_2, \ldots, a_n\). It plays the \(n\) songs in the order \(a_1, a_2, \ldots, a_n\): song \(a_1\) plays first, song \(a_2\) plays second, and so on. The playlist is <em>infinite</em>: each time after song \(a_n\) plays, it starts all over from song \(a_1\).</p>
+
+<p>The next song starts playing automatically when the current song finishes. Before a song finishes, you may instead press a <em>skip</em> button to immediately jump to the next song in the playlist.</p>
+
+<p>You have a desired permutation of the \(n\) songs, denoted by \(b_1, b_2, \ldots, b_n\). This means that you want to listen to \(n\) songs <em>in full</em> in the order of \(b_1, b_2, \ldots, b_n\) by strategically pressing the skip button zero or more times. In other words, you want the first song you listen to in full (not skipped) to be song \(b_1\), the second to be song \(b_2\), and so on, until the \(n\)-th is song \(b_n\). After listening to these \(n\) songs in full, you stop listening.</p>
+
+<p>You use this playlist for \(d\) days. Between each pair of consecutive days, you update the permutations using three integers \(c\), \(x\), and \(y\) as follows:</p>
+
+<ul>
+  <li>If \(c = 1\), then you swap \(a_x\) and \(a_y\).</li>
+  <li>If \(c = 2\), then you swap \(b_x\) and \(b_y\).</li>
+</ul>
+
+<p>Note that the effect of each update persists to subsequent days.</p>
+
+<p>For each day, assuming you start listening from song \(a_1\), determine the minimum number of times you need to press the skip button so that the songs you listen to in full are \(b_1, b_2, \ldots, b_n\) in this order.</p>
+
+<h2>Input</h2>
+<p>The first line of input contains two integers \(n\) and \(d\) (\(2 \le n \le 200\,000\); \(2 \le d \le 200\,000\)).</p>
+<p>The second line contains \(n\) integers representing the initial values of \(a_1, a_2, \ldots, a_n\) (\(1 \le a_i \le n\); \(a_i \ne a_j\) for all \(i \ne j\)).</p>
+<p>The third line contains \(n\) integers representing the initial values of \(b_1, b_2, \ldots, b_n\) (\(1 \le b_i \le n\); \(b_i \ne b_j\) for all \(i \ne j\)).</p>
+<p>The \(k\)-th of the next \(d - 1\) lines contains three integers \(c\), \(x\), and \(y\) (\(c \in \{1, 2\}\); \(1 \le x \lt y \le n\)), representing the update between the \(k\)-th and \((k+1)\)-th days.</p>
+
+<h2>Output</h2>
+<p>Output \(d\) lines, where the \(k\)-th line should contain the minimum number of skips for the \(k\)-th day.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>4 3
+1 4 2 3
+3 2 1 4
+1 3 4
+2 1 3
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>6
+2
+6
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>On the first day, \((a_1, \ldots, a_4) = (1, 4, 2, 3)\) and \((b_1, \ldots, b_4) = (3, 2, 1, 4)\). You can listen to these songs in full in the desired order with \(6\) skips:</p>
+<ul>
+  <li>Song \(1\) plays. Skip this song.</li>
+  <li>Song \(4\) plays. Skip this song.</li>
+  <li>Song \(2\) plays. Skip this song.</li>
+  <li>Song \(3\) plays. Listen to this song in full.</li>
+  <li>Song \(1\) plays. Skip this song.</li>
+  <li>Song \(4\) plays. Skip this song.</li>
+  <li>Song \(2\) plays. Listen to this song in full.</li>
+  <li>Song \(3\) plays. Skip this song.</li>
+  <li>Song \(1\) plays. Listen to this song in full.</li>
+  <li>Song \(4\) plays. Listen to this song in full.</li>
+</ul>
+<p>On the second day, the permutations are \((a_1, \ldots, a_4) = (1, 4, \mathbf{3}, \mathbf{2})\) and \((b_1, \ldots, b_4) = (3, 2, 1, 4)\). The minimum number of skips is \(2\).</p>
+<p>On the third day, the permutations are \((a_1, \ldots, a_4) = (1, 4, 3, 2)\) and \((b_1, \ldots, b_4) = (\mathbf{1}, 2, \mathbf{3}, 4)\). The minimum number of skips is \(6\).</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #2</div><pre>7 5
+4 7 1 2 6 5 3
+2 6 5 1 4 3 7
+1 2 5
+2 6 7
+1 6 7
+2 1 5
+</pre></div>
+  <div><div class="sh">Sample Output #2</div><pre>16
+26
+21
+20
+6
+</pre></div>
+</div>
+
+</article><nav class="pn"><a href="I.html">← I. Growth Factor</a><a href="K.html">K. Time Display Stickers →</a></nav>
+</main>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — K. Book Sorting</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2025 — K. Book Sorting</a><nav><a href="index.html">Index</a><a href="solutions/K.html">Solution</a><a href="https://fileserv.icpc.jp/championship2025/icpc-apac-2025-tasks.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="J.html">← J. Gathering Sharks</a><a href="L.html">L. Boarding Queue →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem K</div>
+  <h1>Book Sorting</h1>
+  <div class="tlimit">Time limit: 2 seconds</div>
+</div>
+
+<p>You have \(n\) books arranged from left to right on a bookshelf. These books are uniquely labeled from \(1\) to \(n\). The \(i\)-th book from the left is labeled \(p_i\). You want to sort the books so that their labels are in ascending order from left to right.</p>
+
+<p>In one step, you can perform one of the following actions:</p>
+
+<ul>
+  <li>Choose two adjacent books and swap them.</li>
+  <li>Choose one book and move it to the leftmost position.</li>
+  <li>Choose one book and move it to the rightmost position.</li>
+</ul>
+
+<p>Compute the minimum number of steps required to sort the books.</p>
+
+<h2>Input</h2>
+<p>The first line of input contains an integer \(n\) (\(2 \le n \le 500\,000\)). The second line contains \(n\) pairwise distinct integers \(p_1, p_2, \ldots, p_n\) (\(1 \le p_i \le n\)).</p>
+
+<h2>Output</h2>
+<p>Output the minimum number of steps to sort the books in ascending order from left to right by their labels.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>6
+6 2 1 4 3 5
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>3
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>You can do the following three steps in order: swap the books labeled \(2\) and \(1\), swap the books labeled \(4\) and \(3\), and move the book labeled \(6\) to the rightmost position.</p>
+
+<p style="text-align:center"><code>6 2 1 4 3 5</code> \(\rightarrow\) <code>6 <strong>1 2</strong> 4 3 5</code> \(\rightarrow\) <code>6 1 2 <strong>3 4</strong> 5</code> \(\rightarrow\) <code>1 2 3 4 5 <strong>6</strong></code></p>
+
+<p>It can be shown that two or fewer steps are insufficient to sort the books.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #2</div><pre>9
+9 2 4 3 7 5 1 8 6
+</pre></div>
+  <div><div class="sh">Sample Output #2</div><pre>5
+</pre></div>
+</div>
+
+</article><nav class="pn"><a href="J.html">← J. Gathering Sharks</a><a href="L.html">L. Boarding Queue →</a></nav>
+</main>
+</body>
+</html>

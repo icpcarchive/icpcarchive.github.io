@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2026 — Solution I. Growth Factor</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2026 — Solution I. Growth Factor</a><nav><a href="index.html">Solutions index</a><a href="../I.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="H.html">← H. Reflect Sort</a><a href="J.html">J. Worldwide Playlist →</a></nav><article class="paper">
+<h1 class="sol-title">I&nbsp;&nbsp;Growth Factor</h1>
+
+<p>The problem asks to find the number of integer sequences \((b_1, \ldots, b_n)\) such that \(1 \le b_i \le a_i\) and \(b_i \mid b_{i+1}\).</p>
+
+<p>First, observe that the condition \(b_i \mid b_{i+1}\) inherently implies that \(b_i \le b_{i+1}\). Because the sequence \(b\) must be non-decreasing, any valid sequence must also satisfy \(b_i \le a_{i+1}\), \(b_i \le a_{i+2}\), and so on. Therefore, we can replace each \(a_i\) with \(\min_{i \le j \le n} a_j\) to make the sequence \(a\) non-decreasing without altering the set of valid sequences for \(b\). Let \(M := \max a_i = a_n\).</p>
+
+<p>Let \(\operatorname{left}(v)\) be the minimum index \(i\) such that \(a_i \ge v\). Let \(f_v(l)\) be the number of valid prefixes of length \(l\) ending exactly with the value \(v\).</p>
+
+<p>If the prefix consists entirely of the value \(v\) up to index \(l\), this is only valid if \(v \le a_1\). Otherwise, the value \(v\) must be preceded by some proper factor \(u\) of \(v\). Suppose the transition from \(u\) to \(v\) happens such that \(b_j = u\) and \(b_{j+1} = v\). For this to be valid, we must have \(j \ge \max\{1, \operatorname{left}(v) - 1, \operatorname{left}(u)\}\). This imposes a lower bound on the transition index, and let this valid threshold be \(L(u, v)\).</p>
+
+<p>The transition can be written as:</p>
+\[f_v(l) = [v \le a_1] + \sum_{\substack{u \mid v \\ u \lt v}} \sum_{L(u,v) \le j \lt l} f_u(j)\]
+
+<p>Computing this directly would be too slow. However, we can represent \(f_v(l)\) as a linear combination of binomial coefficients:</p>
+\[f_v(l) = \begin{cases} \displaystyle\sum_{k \ge 0} D_v[k] \binom{l}{k} &amp; \text{if } v \le a_l \\ 0 &amp; \text{otherwise} \end{cases}\]
+
+<p>This representation is extremely powerful because it allows us to utilize Fermat’s identity. Specifically, for \(L \le l - 1\), we have:</p>
+\[\sum_{j=L}^{l-1} \binom{j}{k} = \binom{l}{k+1} - \binom{L}{k+1}\]
+
+<p>Under the condition \(v \le a_l\), substituting our polynomial representation into the transition yields:</p>
+\[\begin{aligned}
+\sum_{L(u,v) \le j \lt l} f_u(j) &amp;= \sum_{L(u,v) \le j \lt l} [u \le a_j] \sum_{k \ge 0} D_u[k] \binom{j}{k} \\
+&amp;= \sum_{k \ge 0} D_u[k] \left( \binom{l}{k+1} - \binom{L(u,v)}{k+1} \right)
+\end{aligned}\]
+
+<p>From this, we can directly extract the updates for the coefficients \(D_v\). For each proper factor \(u\) of \(v\) and for each \(k\):</p>
+<ul>
+  <li>Add \(D_u[k]\) to \(D_v[k+1]\).</li>
+  <li>Subtract \(D_u[k]\tbinom{L(u,v)}{k+1}\) from \(D_v[0]\), since it acts as a constant term.</li>
+</ul>
+
+<p>Because \(b_i\) must be a proper factor of \(b_{i+1}\) at each step, the value strictly increases by at least a factor of \(2\). Therefore, the maximum number of transitions is bounded by \(\lfloor \log_2(M) \rfloor \le 18\). This means we only need to maintain about \(18\) non-zero coefficients for each value \(v\).</p>
+
+<p>For each value \(u\) from \(1\) to \(M\), we iterate over all its multiples \(v\), and update the \(\mathcal{O}(\log M)\) coefficients. Finally, the answer is the sum of \(f_v(n)\) for all \(1 \le v \le a_n\). The total time complexity will be \(\mathcal{O}\left(n + M \log^2 M\right)\).</p>
+
+</article><nav class="pn"><a href="H.html">← H. Reflect Sort</a><a href="J.html">J. Worldwide Playlist →</a></nav>
+</main>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2024 — Solution M. Zig-zag</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2024 — Solution M. Zig-zag</a><nav><a href="index.html">Solutions index</a><a href="../M.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="L.html">← L. XOR Operations</a><span></span></nav><article class="paper">
+<h1 class="sol-title">M&nbsp;&nbsp;Zig-zag</h1>
+
+<p>Here, we’ll only describe how to count <em>even-length</em> partitions of \(n\) such that \(a_1 \lt a_2 \gt a_3 \lt a_4 \gt a_5 \lt \ldots\). There are only a few other kinds of partitions and they can all be handled similarly. Also, let \(N := 300\,000\).</p>
+
+<p>Instead of counting partitions satisfying \(a_1 \lt a_2 \gt a_3 \lt a_4 \gt a_5 \lt \ldots\), it’s easier to count partitions satisfying \(a_1 \lt a_2 \le a_3 \lt a_4 \le a_5 \lt \ldots\). Let’s call even-length partitions satisfying the latter <em>almost increasing</em>. Once we have computed the latter, the former can be computed by inclusion-exclusion. Specifically, we’re counting partitions satisfying \(a_1 \lt a_2 \;?\; a_3 \lt a_4 \;?\; a_5 \lt \ldots\) where each “?” is either “no condition”, or “\(\le\)”, and in the latter case, the whole term is weighted by \(-1\) (because of inclusion-exclusion).</p>
+
+<p>Formally, let the <em>weight</em> of an almost-increasing partition be \((-1)^k\) where \(k\) is the number of times “\(\le\)” appears, and let \(a(n)\) be the sum of the weights of all almost-increasing partitions of \(n\). Then every partition satisfying “\(a_1 \lt a_2 \;?\; a_3 \lt a_4 \;?\; a_5 \lt \ldots\)” is just a conjunction of some number \(k\) of almost-increasing partitions. Thus, the number \(c(n)\) of partitions of \(n\) satisfying \(a_1 \lt a_2 \gt a_3 \lt a_4 \gt a_5 \lt \ldots\) is</p>
+\[c(n) = \sum_{k=0}^{\infty} \sum_{\substack{n_i \ge 0 \\ n_1 + \ldots n_k = n}} a(n_1) a(n_2) \ldots a(n_k),\]
+
+<p>where the inner sum is actually a \(k\)-fold sum. The inclusion-exclusion is handled by the weights. Now, notice that this is a convolution and can be stated nicely in terms of generating functions! Let \(A(x) := \sum_{n \ge 0} a(n) x^n\) and \(C(x) := \sum_{n \ge 0} c(n) x^n\). Then the above translates to</p>
+\[C(x) = \sum_{k=0}^{\infty} A(x)^k = \frac{1}{1 - A(x)}.\]
+
+<p>Thus, if we’re able to compute \(A(x)\), we’re also able to compute \(C(x)\) with a single generating function inverse in \(O(N \log N)\).</p>
+
+<p>The values \(a(n)\) for \(n \le N\) can be computed with DP by noticing that for an almost-increasing partition \(a\) of \(n\), \(a_i \ge i/2\) for all \(i\), and thus its length is \(O(\sqrt{n})\). Thus, we can compute them with DP by finding a recurrence for \(a(n, \ell)\), the sum of the weights of almost-increasing partitions with sum \(n\) and length \(\ell\). Because \(n \le N\) and \(\ell \le 2\sqrt{N}\), with an \(O(1)\) transition this gives an \(O(N^{1.5})\)-time algorithm.</p>
+
+</article><nav class="pn"><a href="L.html">← L. XOR Operations</a><span></span></nav>
+</main>
+</body>
+</html>

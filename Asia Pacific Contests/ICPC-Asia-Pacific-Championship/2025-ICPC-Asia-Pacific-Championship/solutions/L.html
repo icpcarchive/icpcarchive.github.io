@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — Solution L. Boarding Queue</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2025 — Solution L. Boarding Queue</a><nav><a href="index.html">Solutions index</a><a href="../L.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="K.html">← K. Book Sorting</a><a href="M.html">M. Can You Reach There? →</a></nav><article class="paper">
+<h1 class="sol-title">L&nbsp;&nbsp;Boarding Queue</h1>
+
+<p>For each \(i\) (\(1 \le i \le p\)), consider what the state of the boarding queue would be by the time you occupy traveler \(i\)’s initial location. There would have been \(p - i\) boarding steps. Travelers \(1\) to \(p - i\) would have left the boarding queue, while traveler \(x\) (for \(x \gt p - i\)) would occupy traveler \((x - (p - i))\)’s initial location.</p>
+
+<p>Therefore, we can simply solve this problem by iterating \(i\) from \(1\) to \(p\). Consider all the travelers \(j\) who are initially adjacent to traveler \(i\). If \(j + (p - i) \le N\), then traveler \(j + (p - i)\) will be adjacent to you after \(p - i\) boarding steps. Insert \(j + (p - i)\) to a data structure.</p>
+
+<p>After all \(p\) iterations, print the number of distinct integers in the data structure. With a data structure that supports constant-time insertion, this solution runs in \(O(r \times c + n)\) time.</p>
+
+</article><nav class="pn"><a href="K.html">← K. Book Sorting</a><a href="M.html">M. Can You Reach There? →</a></nav>
+</main>
+</body>
+</html>

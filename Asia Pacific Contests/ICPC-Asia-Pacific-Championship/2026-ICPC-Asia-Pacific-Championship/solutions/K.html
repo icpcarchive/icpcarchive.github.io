@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2026 — Solution K. Time Display Stickers</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2026 — Solution K. Time Display Stickers</a><nav><a href="index.html">Solutions index</a><a href="../K.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="J.html">← J. Worldwide Playlist</a><a href="L.html">L. Onion →</a></nav><article class="paper">
+<h1 class="sol-title">K&nbsp;&nbsp;Time Display Stickers</h1>
+
+<p>We can separate time displays into two different types:</p>
+<ol>
+  <li>time displays whose hour is between \(00\) and \(09\) (let’s say these are time displays of type A), and</li>
+  <li>time displays whose hour is between \(10\) and \(11\) (let’s say these are time displays of type B).</li>
+</ol>
+
+<p>We want to check whether it is possible to create \(x\) time displays of type A and \(y\) time displays of type B. We can do this by greedily assigning stickers to positions with the fewest possible stickers to be put into first.</p>
+
+<p>In other words, we can do the following steps:</p>
+
+<div class="table-wrap"><table class="data">
+<tr><th rowspan="2"></th><th colspan="4" style="text-align:center">Possible stickers</th></tr>
+<tr><th style="text-align:center"><code>H</code></th><th style="text-align:center"><code>H</code></th><th style="text-align:center"><code>M</code></th><th style="text-align:center"><code>M</code></th></tr>
+<tr><td>Type A</td><td>\(0\)</td><td>\([0, 9]\)</td><td>\([0, 5]\)</td><td>\([0, 9]\)</td></tr>
+<tr><td>Type B</td><td>\(1\)</td><td>\([0, 1]\)</td><td>\([0, 5]\)</td><td>\([0, 9]\)</td></tr>
+</table></div>
+
+<ol>
+  <li>Assign \(x\) stickers numbered \(0\) to the first <code>H</code> position for \(x\) time displays of type A.</li>
+  <li>Assign \(y\) stickers numbered \(1\) to the first <code>H</code> position for \(y\) time displays of type B.</li>
+  <li>Combine the remaining stickers numbered \(0\) and \(1\) together, and assign \(y\) of them to the second <code>H</code> position for \(y\) time displays of type B.</li>
+  <li>Combine the remaining stickers numbered \(0\) to \(5\) together, and assign \(x+y\) of them to the first <code>M</code> position for \(x + y\) time displays.</li>
+  <li>Combine the remaining stickers numbered \(0\) to \(9\) together, and assign \(2x + y\) of them to the remaining positions.</li>
+</ol>
+
+<p>If, at any step, we don’t have enough number of required stickers, then it is not possible to create \(x\) time displays of type A and \(y\) time displays of type B.</p>
+
+<p>To find the maximum value of \(x + y\) among all valid values of \(x\) and \(y\), we can try all possible values of \(x\) from \(0\) to \(n\) and use binary search to find the maximum valid value of \(y\) for the corresponding value of \(x\).</p>
+
+<p>This solution solves the problem in \(O(n \log n)\).</p>
+
+</article><nav class="pn"><a href="J.html">← J. Worldwide Playlist</a><a href="L.html">L. Onion →</a></nav>
+</main>
+</body>
+</html>

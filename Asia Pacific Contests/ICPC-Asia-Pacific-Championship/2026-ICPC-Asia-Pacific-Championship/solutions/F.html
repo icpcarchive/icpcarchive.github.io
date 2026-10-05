@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2026 — Solution F. Minesweeper String</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2026 — Solution F. Minesweeper String</a><nav><a href="index.html">Solutions index</a><a href="../F.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="E.html">← E. Parallel Sums</a><a href="G.html">G. Extra Transition →</a></nav><article class="paper">
+<h1 class="sol-title">F&nbsp;&nbsp;Minesweeper String</h1>
+
+<p>For any given width \(w\), we conceptually begin by assuming that each digit \(x\) (the number of mines in each cell) contributes \(4x\) to the total sum. The actual total may decrease due to the following four situations:</p>
+<ol>
+  <li><p>Two digits \(x, y\) become vertically adjacent.</p>
+    <p>If the positions of two digits differ by exactly \(w\), they appear in two consecutive rows. In this case, the total decreases by \(x + y\).</p></li>
+  <li><p>A digit \(x\) lies on the leftmost or rightmost column.</p>
+    <p>If a digit’s position \(p\) (\(0\)-based) satisfies</p>
+    \[p \bmod w = 0 \quad \text{or} \quad p \bmod w = w - 1,\]
+    <p>then the digit lies on the boundary of the grid, contributing a reduction of \(x\).</p>
+    <p>A special case might happen for the last digit, which will always decrease the actual total since the row is truncated to its right, even if it is not in the rightmost column.</p></li>
+  <li><p>A digit \(x\) lies in the first or last row.</p>
+    <p>If a digit appears in the first or last row under width \(w\), the total decreases by \(x\). (Note that this may be counted twice.)</p></li>
+  <li><p>Two digits \(x, y\) become horizontally adjacent.</p>
+    <p>If two digits are adjacent in the string, the total decreases by \(x + y\) unless they are split across rows.</p></li>
+</ol>
+
+<p>To compute all cases:</p>
+
+<p><strong>Case 1:</strong> Consider calculating the total reduction for each \(w\). For a digit \(x\) at position \(p\), it contributes a reduction of \(x\) if the digit at position \(p - w\) is non-zero, or if the digit at position \(p + w\) is non-zero (both can occur, resulting in a contribution of \(2x\)). Therefore, we can define two polynomials:</p>
+\[P(x) = \sum_{i=0}^{n-1} S_i \cdot x^i, \quad Q(x) = \sum_{i=0}^{n-1} \llbracket S_{n-i-1} \ne 0 \rrbracket \cdot x^i,\]
+<p>The total reduction for \(w\) will be \([x^{n-1-w}](P(x)Q(x)) + [x^{n-1+w}](P(x)Q(x))\).</p>
+<p>The product of \(P\) and \(Q\) can be computed using a single convolution in \(O(n \log n)\).</p>
+
+<p><strong>Case 2:</strong> A digit at position \(p\) lies on a boundary column precisely for all divisors \(w\) of \(p\) and \(p + 1\). Thus, for each digit, we decrement the totals for all divisors of \(p\) and \(p + 1\). The total contribution for all \(w\) can be computed in \(O(n \log n)\). Be careful with the special case of the last digit.</p>
+
+<p><strong>Case 3:</strong> A digit lies in the first or last row exactly when \(w\) falls within certain continuous intervals. These intervals can be accumulated using a difference array in linear time.</p>
+
+<p><strong>Case 4:</strong> For each adjacent pair of digits \(x, y\) in the string, initially decrease the total by \(x + y\). Then, if their positions in the string are \(p\) and \(p + 1\), increment all divisors \(w\) of \(p + 1\). The total contribution for all \(w\) can be computed in \(O(n \log n)\), and it is possible to merge this with Case 2.</p>
+
+<p>The overall time complexity is \(O(n \log n)\).</p>
+
+<p>It is possible to modify the problem back to eight-direction minesweeper, but that might not be interesting.</p>
+
+</article><nav class="pn"><a href="E.html">← E. Parallel Sums</a><a href="G.html">G. Extra Transition →</a></nav>
+</main>
+</body>
+</html>

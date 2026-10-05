@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — M. Can You Reach There?</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2025 — M. Can You Reach There?</a><nav><a href="index.html">Index</a><a href="solutions/M.html">Solution</a><a href="https://fileserv.icpc.jp/championship2025/icpc-apac-2025-tasks.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="L.html">← L. Boarding Queue</a><span></span></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem M</div>
+  <h1>Can You Reach There?</h1>
+  <div class="tlimit">Time limit: 2 seconds</div>
+</div>
+
+<p>You are given \(n\) distinct marked points on a 2D plane, numbered from \(1\) to \(n\). Marked point \(i\) has coordinates \((x_i, y_i)\).</p>
+
+<p>In this problem, you are given \(q\) scenarios, numbered from \(1\) to \(q\). In each scenario \(k\), four integers \(a_k\), \(b_k\), \(c_k\), and \(d_k\) are given, indicating that you initially stand at \((a_k, b_k)\) and aim to reach \((c_k, d_k)\) by repeating the <em>steps</em> described below any number of times.</p>
+
+<p>In a single step, you choose two marked points \(P\) and \(Q\), which may be identical. Let \(S\) denote the point where you are currently standing, and define a point \(T\) by</p>
+\[ \overrightarrow{PT} = \overrightarrow{SQ}. \]
+
+<p>In other words, \(T\) is chosen so that the vector from \(P\) to \(T\) has the same direction and length as the vector from \(S\) to \(Q\). You may then move to <em>any point</em> on the segment \(ST\), including the point \(T\) itself, and you will stand at that new point.</p>
+
+<p>For each scenario, determine whether the objective can be achieved using the described steps. Note that all scenarios are independent of each other.</p>
+
+<h2>Input</h2>
+<p>The first line of input contains two integers \(n\) and \(q\) (\(1 \le n \le 100\,000\), \(1 \le q \le 100\,000\)). The \(i\)-th of the next \(n\) lines contains two integers \(x_i\) and \(y_i\) (\(0 \le x_i, y_i \le 10^9\)). The input guarantees that no two marked points have the same coordinates.</p>
+
+<p>The next \(q\) lines represent the scenarios. The \(k\)-th of these lines contains four integers \(a_k\), \(b_k\), \(c_k\), and \(d_k\) (\(0 \le a_k, b_k, c_k, d_k \le 10^9; (a_k, b_k) \ne (c_k, d_k)\)).</p>
+
+<h2>Output</h2>
+<p>Output \(q\) lines. The \(k\)-th line should contain <code>yes</code> if the objective of scenario \(k\) is achievable, or <code>no</code> otherwise.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>2 4
+10 0
+0 10
+3 4 6 5
+4 0 7 0
+4 0 16 0
+123 456 789 0
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>yes
+yes
+yes
+no
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>There are two marked points \((10, 0)\) and \((0, 10)\). In scenario \(1\), starting from the point \(S = (a_1, b_1) = (3, 4)\), the objective is achieved as follows:</p>
+
+<ul>
+  <li>In the first step, choose \((10, 0)\) as \(P\) and \((0, 10)\) as \(Q\). A point \(T\) is determined with coordinates \((7, 6)\). Move to a point \((40/7, 75/14)\), which lies on the segment \(ST\). (Figure M.1 (a))</li>
+  <li>In the next step, choose \((10, 0)\) as both \(P\) and \(Q\). A point \(T\) is determined with coordinates \((100/7, -75/14)\). From there, you can reach the point \((c_1, d_1) = (6, 5)\). (Figure M.1 (b))</li>
+</ul>
+
+<p>In scenario \(2\), you start from \(S = (a_2, b_2) = (4, 0)\). Choose \((10, 0)\) as both \(P\) and \(Q\). A point \(T\) is determined with coordinates \((16, 0)\). The point \((c_2, d_2) = (7, 0)\) is on the segment \(ST\), allowing you to reach there in a single step. (Figure M.1 (c))</p>
+
+<p>In scenario \(3\), the objective is similarly achievable.</p>
+
+<p>In scenario \(4\), it can be shown that reaching the point \((c_4, d_4) = (789, 0)\) from \((a_4, b_4) = (123, 456)\) is impossible.</p>
+
+<figure>
+  <img src="img/M-fig1.png" alt="Three plots (a), (b), (c) illustrating the steps of scenarios 1 and 2" width="803" height="280" loading="lazy">
+  <figcaption>Figure M.1: Illustrations of the scenarios in Sample Input #1.</figcaption>
+</figure>
+
+</article><nav class="pn"><a href="L.html">← L. Boarding Queue</a><span></span></nav>
+</main>
+</body>
+</html>

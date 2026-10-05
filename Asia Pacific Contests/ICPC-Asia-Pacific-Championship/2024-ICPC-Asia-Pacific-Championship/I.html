@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2024 — I. Symmetric Boundary</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2024 — I. Symmetric Boundary</a><nav><a href="index.html">Index</a><a href="solutions/I.html">Solution</a><a href="https://fileserv.icpc.jp/championship2024/data.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="H.html">← H. Pho Restaurant</a><a href="J.html">J. There and Back Again →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem I</div>
+  <h1>Symmetric Boundary</h1>
+  <div class="tlimit">Time limit: 4 seconds</div>
+</div>
+
+<p>Symmetrical figures are beautiful—and they are the subject of this task. A region in a 2D plane is <em>convex</em> if, for every pair of points \(p\) and \(q\) in the region, the segment connecting \(p\) and \(q\) is entirely included in the region. Also, a region in a 2D plane is <em>point-symmetric</em> if, when you rotate the region by 180 degrees around a certain point, the rotated region exactly matches the original region.</p>
+
+<p>You are given a convex polygon in a 2D plane with \(n\) vertices, numbered from \(1\) to \(n\) in counterclockwise order. Vertex \(i\) has coordinates \((x_i, y_i)\). No three vertices are collinear. Determine whether there exists a convex, point-symmetric region containing all of the \(n\) vertices on its boundary. If one or more such regions exist, compute the minimum area among all of them.</p>
+
+<h2>Input</h2>
+<p>The first line of input contains one integer \(n\) (\(3 \le n \le 30\)). Each of the next \(n\) lines contains two integers. The \(i\)-th line contains \(x_i\) and \(y_i\) (\(0 \le x_i, y_i \le 1000\)).</p>
+<p>It is guaranteed that the given polygon is convex, its vertices are given in counterclockwise order, and no three of its vertices are collinear.</p>
+
+<h2>Output</h2>
+<p>If one or more such regions exist, output the minimum area among all of them. The relative error of the output must be within \(10^{-9}\).</p>
+<p>If such a region does not exist, output <code>-1</code> instead.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>4
+0 0
+10 0
+8 9
+4 9
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>90.0
+</pre></div>
+</div>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #2</div><pre>8
+8 10
+2 9
+0 8
+0 2
+2 0
+8 0
+10 2
+10 8
+</pre></div>
+  <div><div class="sh">Sample Output #2</div><pre>-1
+</pre></div>
+</div>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #3</div><pre>6
+231 77
+359 20
+829 124
+998 461
+941 735
+879 825
+</pre></div>
+  <div><div class="sh">Sample Output #3</div><pre>486567.9669655848
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output</p>
+<p>Figure I.1 illustrates the vertices in the sample input as black dots. For sample inputs #1 and #3, the shaded regions represent the regions with the minimum possible area.</p>
+
+<figure>
+  <img src="img/I-fig1.png" alt="Three plots of the sample input vertices; samples 1 and 3 show shaded minimum-area regions" width="803" height="248" loading="lazy">
+  <figcaption>Figure I.1: Illustrations of the sample inputs (from left to right).</figcaption>
+</figure>
+
+</article><nav class="pn"><a href="H.html">← H. Pho Restaurant</a><a href="J.html">J. There and Back Again →</a></nav>
+</main>
+</body>
+</html>

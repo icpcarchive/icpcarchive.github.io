@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2026 — K. Time Display Stickers</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2026 — K. Time Display Stickers</a><nav><a href="index.html">Index</a><a href="solutions/K.html">Solution</a><a href="https://fileserv.icpc.jp/championship2026/icpc-apac-2026-tasks.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="J.html">← J. Worldwide Playlist</a><a href="L.html">L. Onion →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem K</div>
+  <h1>Time Display Stickers</h1>
+  <div class="tlimit">Time limit: 2 seconds</div>
+</div>
+
+<p>You have a collection of \(n\) digit stickers, represented by a string \(S\) of length \(n\). Each character of \(S\) is a digit <code>0</code> through <code>9</code>, representing one sticker of that digit.</p>
+
+<p>You want to create <em>time displays</em> using these stickers. Each time display shows a time in the format <code>HH:MM</code>, where:</p>
+
+<ul>
+  <li><code>HH</code> is a two-digit hour between \(00\) and \(11\) (inclusive), and</li>
+  <li><code>MM</code> is a two-digit minute between \(00\) and \(59\) (inclusive).</li>
+</ul>
+
+<p>In other words, each time display requires exactly four stickers: two for the hours and two for the minutes. Each sticker can only be used for at most one time display.</p>
+
+<p>What is the maximum number of time displays you can create?</p>
+
+<h2>Input</h2>
+<p>The first line of input contains one integer \(t\) (\(1 \le t \le 10\,000\)) representing the number of test cases. After that, \(t\) test cases follow. Each of them is presented as follows.</p>
+<p>The first line of each test case contains an integer \(n\) (\(1 \le n \le 10^6\)).</p>
+<p>The second line contains a string \(S\) of length \(n\), consisting only of digits <code>0</code>–<code>9</code>.</p>
+<p>The sum of \(n\) across all test cases in one input file does not exceed \(10^6\).</p>
+
+<h2>Output</h2>
+<p>For each test case, output the maximum number of time displays you can create.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>4
+10
+0123456789
+11
+00123456789
+8
+99111111
+4
+1234
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>1
+2
+2
+0
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>For the first test case, you can create one time display <code>10:59</code>. It can be shown that you cannot create two displays for a given collection of stickers.</p>
+<p>For the second test case, you can create two time displays: <code>10:59</code> and <code>04:27</code>.</p>
+<p>For the third test case, you can create two time displays: <code>11:19</code> and <code>11:19</code>.</p>
+<p>For the fourth test case, you cannot create any time displays.</p>
+
+</article><nav class="pn"><a href="J.html">← J. Worldwide Playlist</a><a href="L.html">L. Onion →</a></nav>
+</main>
+</body>
+</html>

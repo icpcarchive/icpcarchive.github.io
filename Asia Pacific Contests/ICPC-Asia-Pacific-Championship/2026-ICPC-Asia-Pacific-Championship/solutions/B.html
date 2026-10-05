@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2026 — Solution B. Subtree Removal Game</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2026 — Solution B. Subtree Removal Game</a><nav><a href="index.html">Solutions index</a><a href="../B.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="A.html">← A. Compare Suffixes</a><a href="C.html">C. Upside Down Dijkstra →</a></nav><article class="paper">
+<h1 class="sol-title">B&nbsp;&nbsp;Subtree Removal Game</h1>
+
+<p>We can perform a binary search for the solution. For a fixed value \(v\), let’s consider the following game:</p>
+
+<p>\(Game(v)\): A leaf node holding an integer \(i \le v\) has label “F”, and holding \(i \gt v\) has label “S”. If a node with “F” remains at the end of the game, the first player (minimizer) wins. If “S” remains, the second (maximizer) wins.</p>
+
+<p>If we determine the value such that the winner of \(Game(v)\) is the second player while that of \(Game(v+1)\) is the first player, we can conclude that the answer is \(v+1\). So, let’s consider solving \(Game(v)\) for some \(v\). Note that we only need to take labels “F” and “S” into account now. In what follows, we denote the two players as “F” and “S” for simplicity (“F” for the first and “S” for the second).</p>
+
+<p>For a subtree rooted at node \(x\) and a player \(p\) (“F” or “S”), define \(Win(x, p)\) as the winner of a game that</p>
+<ul>
+  <li>starts with player \(p\), and</li>
+  <li>starts with subtree \(x\).</li>
+</ul>
+
+<p>For a node \(x\), let’s define \(D(x)\) as follows:</p>
+<ul>
+  <li>If \(x\) is a leaf node labeled “F”, \(D(x) = 1\).</li>
+  <li>If \(x\) is a leaf node labeled “S”, \(D(x) = -1\).</li>
+  <li>If \(x\) is a non-leaf, let \(S(x)\) is the sum of \(D(y)\) over its child nodes \(y\). Then, \(D(x)\) is the <em>sign</em> of \(S(x)\); that is, \(D(x) = 1\) if \(S(x) \gt 0\), \(D(x) = 0\) if \(S(x) = 0\), and \(D(x) = -1\) if \(S(x) \lt 0\).</li>
+</ul>
+
+<p>We show the following argument by induction on the number of leaf nodes:</p>
+<ul>
+  <li>If \(D(x) \gt 0\), \(Win(x, F) = Win(x, S) = F\),</li>
+  <li>If \(D(x) = 0\), \(Win(x, F) = F\) and \(Win(x, S) = S\), and</li>
+  <li>If \(D(x) \lt 0\), \(Win(x, F) = Win(x, S) = S\).</li>
+</ul>
+
+<p>Without loss of generality, we can assume that the root node has at least 2 children, or the tree consists only of the root node. For the latter case, the argument is trivial. We consider the former case below.</p>
+
+<p><strong>When \(D(x) \gt 0\).</strong> If the root node \(x\) has at least one child \(y\) with \(D(y) \le 0\), the first player can choose \(y\). Otherwise, the first player can select any (immediate) child of \(x\). In either case, \(D(x) \gt 0\) holds after the operation.</p>
+
+<p><strong>When \(D(x) = 0\).</strong> We can find a path from \(x_0 = x\) to \(x_k\) where</p>
+<ul>
+  <li>\(D(x_0) = ... = D(x_k) = 0\), and</li>
+  <li>\(x_k\) has children \(y^+\) and \(y^-\) with \(D(y^+) \gt 0\) and \(D(y^-) \lt 0\).</li>
+</ul>
+<p>Then, the first player can choose \(y^-\). After the operation \(D(x) \gt 0\) holds.</p>
+
+<p><strong>When \(D(x) \lt 0\).</strong> We note that the value of \(D\) changes by at most 1 after the operation. Therefore, \(D(x) \le 0\) holds after the operation.</p>
+
+<p>From this argument, we can compute \(Win(x, F)\) by recursion in \(O(n)\). Overall time complexity is \(O(n \log n)\).</p>
+
+</article><nav class="pn"><a href="A.html">← A. Compare Suffixes</a><a href="C.html">C. Upside Down Dijkstra →</a></nav>
+</main>
+</body>
+</html>

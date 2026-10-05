@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2024 — Solution F. Forming Groups</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2024 — Solution F. Forming Groups</a><nav><a href="index.html">Solutions index</a><a href="../F.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="E.html">← E. Duplicates</a><a href="G.html">G. Personality Test →</a></nav><article class="paper">
+<h1 class="sol-title">F&nbsp;&nbsp;Forming Groups</h1>
+
+<p>For a fixed value of \(k\), we can compute the minimum ratio by initially assuming that student \(1\) is standing on the leftmost position. We then try to shift student \(1\) one position to the right each time, while keeping track of the sum of skill levels of each group, and maintaining a data structure to keep track of the minimum and maximum sum. Each shift only modifies the sum of skill levels of two groups. We can use a multiset data structure to support each shift in \(O(\log n)\) time. After each shift, we compute the ratio between the maximum and minimum sum.</p>
+
+<p>Trying all factors of \(n\) as the value of \(k\) is too slow. An optimization is to observe that for a fixed arrangement of students, having \(k\) groups is better than having \(2k\) groups. This is because by pairing \(2k\) groups and combining each pair into \(k\) groups, the maximum sum is less than doubled, while the minimum sum is more than doubled, which reduces the ratio. A similar argument can be applied for any multiples of \(k\) as well.</p>
+
+<p>Therefore, we can try only prime factors of \(n\) as a value of \(k\). For \(n \le 10^6\), there are at most \(7\) prime factors. Therefore, this solution runs in \(7 \times O(n \log n)\) time.</p>
+
+</article><nav class="pn"><a href="E.html">← E. Duplicates</a><a href="G.html">G. Personality Test →</a></nav>
+</main>
+</body>
+</html>

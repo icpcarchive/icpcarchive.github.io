@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2026 — Solution C. Upside Down Dijkstra</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2026 — Solution C. Upside Down Dijkstra</a><nav><a href="index.html">Solutions index</a><a href="../C.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="B.html">← B. Subtree Removal Game</a><a href="D.html">D. Christmas Tree Un-decoration →</a></nav><article class="paper">
+<h1 class="sol-title">C&nbsp;&nbsp;Upside Down Dijkstra</h1>
+
+<p>Since the wrong Dijkstra’s algorithm always takes the current maximum distance, that means whenever a new vertex is processed, if it is adjacent to at least one unprocessed vertex, the next processed vertex must be one of those adjacent to the current vertex. If all of its adjacent vertices are already processed, then this vertex will not generate new entries to the heap and the next maximum distance comes from the next unprocessed "child" of its closest "ancestor". If observed more closely, notice that the order of vertices processed looks like an arbitrary naive DFS that does not go through the same vertices more than once. Each vertex in the DFS only unrecurse back to its source parent when all of its neighboring vertices are already processed.</p>
+
+<p>The solution is to check whether or not \(S\) follows a possible naive DFS order, using a stack. A vertex can only be pushed into the stack if it is adjacent to the current top. The top of the stack can only be popped when it has already had all of its neighbors processed. The edge weights can be calculated based on the order of vertices pushed into the stack interacting with the current state of the stack.</p>
+
+<p>Each iteration might have a worst case of \(O(n)\) time complexity because of the need to iterate edges, so some non-trivial optimizations might be needed to make sure that the total time complexity is still within \(O(n+m)\).</p>
+
+</article><nav class="pn"><a href="B.html">← B. Subtree Removal Game</a><a href="D.html">D. Christmas Tree Un-decoration →</a></nav>
+</main>
+</body>
+</html>

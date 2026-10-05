@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2026 — Solution E. Parallel Sums</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2026 — Solution E. Parallel Sums</a><nav><a href="index.html">Solutions index</a><a href="../E.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="D.html">← D. Christmas Tree Un-decoration</a><a href="F.html">F. Minesweeper String →</a></nav><article class="paper">
+<h1 class="sol-title">E&nbsp;&nbsp;Parallel Sums</h1>
+
+<p>To simplify, let’s change the indexing of the sequences into \(0\)-based, so now it’s \(A = (a_0, a_1, \ldots, a_{n-1})\) and \(s_0, s_1, \ldots, s_{n-m}\) such that \(s_i = a_i + a_{i+1} + \ldots + a_{i+m-1}\).</p>
+
+<p>Consider the relationships between elements of \(A\). Notice that \(a_{i+m} - a_i = s_{i+1} - s_i\). Since the values of \(s_i\) are constant, then each element \(a_i\) is just \(a_{i \bmod m}\) plus some constant value that can be obtained from several values of \(s_i\).</p>
+
+<p>From the values of \(s_i\), construct a sequence \(w_0, w_1, \ldots, w_{n-1}\) which indicates that \(a_i = a_{i \bmod m} + w_i\). Then with this, satisfying the \(n-m+1\) requirements of \(s_i\) is equivalent to satisfying the following:</p>
+<ul>
+  <li>\(a_0 + a_1 + \ldots + a_{m-1} = s_0\)</li>
+  <li>\(a_i = a_{i \bmod m} + w_i\) for all \(i\).</li>
+</ul>
+
+<p>Suppose we want to naively solve for a query with a pair \((l, r)\). If \(r - l + 1 \lt m\), then the answer can be arbitrarily small. Otherwise, we group each of \(a_l, a_{l+1}, \ldots, a_r\) based on their indices modulo \(m\). For elements at indices \(i\) with the same value of \(i \bmod m\), only the maximum value of \(w_i\) matters. We calculate the maximum value of \(w_i\) for each group.</p>
+
+<p>Suppose these maximum values are \(y_0, y_1, \ldots, y_{m-1}\) for each group of indices modulo \(m\). Then we need to find \(a_0, a_1, \ldots, a_m\) such that \(a_0 + a_1 + \ldots + a_{m-1} = s_0\) and the value of \(\max(a_0 + y_0, a_1 + y_1, \ldots, a_{m-1} + y_{m-1})\) is minimized. It turns out that the minimum value of that is equal to \(\left\lceil \frac{s_0 + y_0 + y_1 + \ldots + y_{m-1}}{m} \right\rceil\).</p>
+
+<p>Now we need to be able to calculate that quickly. We have solutions for two cases, cases with \(m \le \sqrt{n}\) and cases with \(m \gt \sqrt{n}\).</p>
+
+<p>If \(m \le \sqrt{n}\), before doing the queries, we can build a sparse table for the values of \(w_i\) for each group of \(i \bmod m\). Then, for each query, we do a range maximum query for each sparse table to get the values of \(y_i\), then we sum them.</p>
+
+<p>If \(m \gt \sqrt{n}\), then each group has a small number of elements. For each possible pair \((p_0, p_1)\) \((0 \le p_0 \le p_1 \lt \lceil \frac{n}{m} \rceil)\):</p>
+<ol>
+  <li>We iterate each group and calculate the maximum value from the \(p_0\)-th to the \(p_1\)-th element of \(w_i\) of that group.</li>
+  <li>We make a prefix sum of length \(m\) from those maximum values.</li>
+</ol>
+
+<p>Then, each query is just an \(O(1)\) number of range sum queries in a few of those prefix sums.</p>
+
+<p>Time complexity: \(O((n+q)\sqrt{n})\)</p>
+
+</article><nav class="pn"><a href="D.html">← D. Christmas Tree Un-decoration</a><a href="F.html">F. Minesweeper String →</a></nav>
+</main>
+</body>
+</html>

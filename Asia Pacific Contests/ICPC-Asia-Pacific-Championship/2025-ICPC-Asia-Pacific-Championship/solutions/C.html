@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — Solution C. Cactus Connectivity</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2025 — Solution C. Cactus Connectivity</a><nav><a href="index.html">Solutions index</a><a href="../C.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="B.html">← B. Three-Dimensional Embedding</a><a href="D.html">D. Tower of Hanoi →</a></nav><article class="paper">
+<h1 class="sol-title">C&nbsp;&nbsp;Cactus Connectivity</h1>
+
+<p>For any graph \(G\), denote the connectivity value and max-cut of the graph as \(cv(G)\) and \(mc(G)\), respectively. We are going to prove that \(cv(G) = mc(G) + 1\).</p>
+
+<p><strong>Lemma 1.</strong> \(cv(G) \gt mc(G)\)</p>
+
+<p class="proof"><em>Proof.</em> Let \(S\) and \(T\) be a partition of vertices of \(G\) such that the value of \(S - T\) cut is the maximum cut. Create a graph \(H\) by adding more edges and vertices to each of \(S\) and \(T\), so that they each become a clique with at least \((mc(G) + 1)\) vertices. \(H\) is a \(mc(G)\)-edge-connected supergraph of \(G\), but removing all the edges of \(G\) from \(H\) leaves \(S\) and \(T\) disconnected. Therefore, \(mc(G)\) is not sufficient. \(\square\)</p>
+
+<p><strong>Lemma 2.</strong> \(cv(G) \le mc(G) + 1\)</p>
+
+<p class="proof"><em>Proof.</em> We are going to prove this by contradiction. Let us assume that \(cv(G) \gt mc(G) + 1\). This means that there exists an \((mc(G) + 1)\)-edge-connected supergraph of \(G\) such that removing all the edges of \(G\) from it leaves a disconnected graph. Let that supergraph be \(F\), and \(A\) and \(B\) be any two connected components of the disconnected graph. The value of \(A - B\) cut in \(F\) must be at least \((mc(G) + 1)\), since otherwise \(F\) would not be a \((mc(G) + 1)\)-edge-connected graph. Also, since removing all the edges of \(G\) from \(F\) leaves \(A\) and \(B\) disconnected, all the edges connecting \(A\) and \(B\) must also be present in \(G\). This means there exists a cut in \(G\) with a value more than \(mc(G)\). This is a contradiction. \(\square\)</p>
+
+<p>Therefore, the crux of this problem is to find the max-cut of the given graph. While finding a max-cut of a general graph is an NP-hard problem, fortunately, there is an easy solution to find a max-cut of a cactus.</p>
+
+<p>Each of the connected components of the given cactus can be solved separately. For each connected component, find any spanning tree. Greedily bicolor the tree so that each of the tree edges connects two vertices of different colors. All the tree edges count toward the value of the max-cut. For each of the non-tree edges, increment the value of the max-cut if they also connect two vertices of different colors.</p>
+
+<p>This solution runs in \(O(n + m)\) time.</p>
+
+</article><nav class="pn"><a href="B.html">← B. Three-Dimensional Embedding</a><a href="D.html">D. Tower of Hanoi →</a></nav>
+</main>
+</body>
+</html>

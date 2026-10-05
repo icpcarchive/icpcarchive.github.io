@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2026 — F. Minesweeper String</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2026 — F. Minesweeper String</a><nav><a href="index.html">Index</a><a href="solutions/F.html">Solution</a><a href="https://fileserv.icpc.jp/championship2026/icpc-apac-2026-tasks.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="E.html">← E. Parallel Sums</a><a href="G.html">G. Extra Transition →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem F</div>
+  <h1>Minesweeper String</h1>
+  <div class="tlimit">Time limit: 2 seconds</div>
+</div>
+
+<p>You are given a string \(S\) of length \(n\) consisting of digits <code>0</code>–<code>9</code>. You want to use this string to generate a variant of Minesweeper. In this variant, a cell may contain more than one mine, and the mine count in a cell is based on its 4-neighborhood (edge-adjacent cells), instead of the usual 8-neighborhood.</p>
+
+<p>To do that, you choose an integer \(w\) (\(1 \le w \le n\)) representing the width of the grid. You arrange the \(n\) cells, numbered from \(0\) to \(n - 1\), into a grid. The grid has \(\lceil n/w \rceil\) rows numbered from \(0\) to \(\lceil n/w \rceil - 1\) from top to bottom, and \(w\) columns numbered from \(0\) to \(w - 1\) from left to right. For each \(0 \le i \lt n\), cell \(i\) is located at row \(\lfloor i/w \rfloor\) and column \(i \bmod w\), and corresponds to the \((i + 1)\)-th digit of \(S\). Thus, row \(0\) contains cells \(0\) to \(w - 1\), row \(1\) contains cells \(w\) to \(2w - 1\), and so on. Note that the bottommost row may contain less than \(w\) cells.</p>
+
+<p>After arranging the grid, you perform the following steps:</p>
+<ol>
+  <li>For each cell corresponding to a non-zero digit \(x\) (<code>1</code>–<code>9</code>), you place \(x\) mines in that cell.</li>
+  <li>For each remaining cell corresponding to <code>0</code>, you write a number in that cell that is equal to the total number of mines in its adjacent cells. Two cells are adjacent if they share an edge. Note that each cell has at most <strong>four</strong> adjacent cells.</li>
+</ol>
+
+<p>For a width \(w\), define \(f(w)\) as the sum of the numbers in all cells without mines on the generated grid. Given an integer \(k\), your task is to compute the \(k\)-th largest value among the values \(f(1), f(2), \ldots, f(n)\).</p>
+
+<h2>Input</h2>
+<p>The first line of input contains two integers \(n\) and \(k\) (\(1 \le k \le n \le 500\,000\)).</p>
+
+<p>The second line contains a string \(S\) of length \(n\) consisting of digits <code>0</code>–<code>9</code>.</p>
+
+<h2>Output</h2>
+<p>Output the \(k\)-th largest value among \(f(1), f(2), \ldots, f(n)\).</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>5 3
+20103
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>7
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>Figure F.1 illustrates the resulting grids for widths \(1\) to \(5\). Each dot in a cell represents one mine.</p>
+
+<figure>
+  <img src="img/F-fig1.png" alt="Five grids of widths 1 to 5; dots represent mines and numbers are written in cells without mines" width="841" height="191" loading="lazy">
+  <figcaption>Figure F.1: The resulting grids for all \(5\) possible widths.</figcaption>
+</figure>
+
+<p>By summing up the numbers on the cells containing no mines, you obtain the following.</p>
+<ul>
+  <li>\(f(1) = 7\)</li>
+  <li>\(f(2) = 3\)</li>
+  <li>\(f(3) = 11\)</li>
+  <li>\(f(4) = 4\)</li>
+  <li>\(f(5) = 7\)</li>
+</ul>
+
+<p>The third largest value among them is \(7\).</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #2</div><pre>5 1
+20103
+</pre></div>
+  <div><div class="sh">Sample Output #2</div><pre>11
+</pre></div>
+</div>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #3</div><pre>8 4
+60409003
+</pre></div>
+  <div><div class="sh">Sample Output #3</div><pre>35
+</pre></div>
+</div>
+
+</article><nav class="pn"><a href="E.html">← E. Parallel Sums</a><a href="G.html">G. Extra Transition →</a></nav>
+</main>
+</body>
+</html>

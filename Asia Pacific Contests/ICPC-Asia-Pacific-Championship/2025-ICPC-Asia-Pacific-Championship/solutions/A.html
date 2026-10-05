@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — Solution A. Control Towers</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2025 — Solution A. Control Towers</a><nav><a href="index.html">Solutions index</a><a href="../A.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><span></span><a href="B.html">B. Three-Dimensional Embedding →</a></nav><article class="paper">
+<h1 class="sol-title">A&nbsp;&nbsp;Control Towers</h1>
+
+<p>Here is one of many ways to solve this problem.</p>
+
+<p>If two or more towers could be placed at the same cell, it is not hard to come up with a DP solution: \(DP[k][i][j]\) denotes the number of ways to place the towers where \(k\) towers have been placed such that tower \(k\) is at \((i, j)\). Naively, there will be \(O(r + c)\) transitions for each state. These transitions could be replaced by doing some precomputations on the sum of each row and column of the placement of tower \((k - 1)\). Let \(SUM(k)\) be the sum of \(DP[k][i][j]\) for all \(i\) and \(j\). \(SUM(4)\) then should be the final answer.</p>
+
+<p>With minor tweaks, we can force the DP to disallow adjacent towers to be located at the same cell. Our remaining job now is to eliminate the cases where the non-adjacent towers could be at the same cell.</p>
+
+<p>Let \(A\), \(B\), \(C\), and \(D\) be the locations of towers \(1\), \(2\), \(3\), and \(4\). We need to eliminate the cases where \(A = C\), or \(B = D\), or \(A = D\). Recall that by the tweak mentioned previously, the adjacent towers cannot be located at the same cell. Therefore, the last case is independent (and cannot be mixed) to the first two.</p>
+
+<p>For \(A = C\) and \(B = D\) cases, we can use inclusion–exclusion principle. If \(A = C\) but \(B \ne D\), it is equivalent to placing three towers instead of four. Same thing goes for \(B = D\) but \(A \ne C\). For \(A = C\) and \(B = D\) though, it is equivalent to placing two towers instead. Therefore, we can subtract the answer (of \(SUM(4)\)) by \(2 \times SUM(3)\) and add it by \(SUM(2)\).</p>
+
+<p>Lastly for \(A = D\) case, observe that \(A\), \(B\), and \(C\) must either be located at the same row or at the same column. Therefore, for each row and for each column, we can simply count the number of empty cells, namely \(p\), and subtract the current answer by \(p \times (p - 1) \times (p - 2)\).</p>
+
+<p>Time complexity: \(O(rc)\)</p>
+
+</article><nav class="pn"><span></span><a href="B.html">B. Three-Dimensional Embedding →</a></nav>
+</main>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2026 — A. Compare Suffixes</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2026 — A. Compare Suffixes</a><nav><a href="index.html">Index</a><a href="solutions/A.html">Solution</a><a href="https://fileserv.icpc.jp/championship2026/icpc-apac-2026-tasks.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><span></span><a href="B.html">B. Subtree Removal Game →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem A</div>
+  <h1>Compare Suffixes</h1>
+  <div class="tlimit">Time limit: 2 seconds</div>
+</div>
+
+<p>The <em>judge program</em> possesses a hidden string \(S\) of length \(n\) consisting only of lowercase Latin letters (<code>a</code>–<code>z</code>). You cannot access the string. At the start, only the length \(n\) is given to you.</p>
+
+<p>Your task is to determine the order of all \(n\) suffixes using a limited number of <em>queries</em>.</p>
+
+<p>For an integer \(k\) (\(1 \le k \le n\)), let \(S(k)\) denote the suffix of \(S\) starting at the \(k\)-th character. In particular, \(S(1) = S\).</p>
+
+<p>In a single query, you specify two distinct integers \(i\) and \(j\). The judge program compares \(S(i)\) and \(S(j)\) lexicographically and returns whether \(S(i) \lt S(j)\) or \(S(i) \gt S(j)\) to you. Note that ties never occur for \(i \ne j\) because all suffixes are distinct.</p>
+
+<p>Find a permutation \((p_1, p_2, \ldots, p_n)\) of \((1, 2, \ldots, n)\) such that \(S(p_1) \lt S(p_2) \lt \cdots \lt S(p_n)\).</p>
+
+<h2>Interaction</h2>
+<p>The first line of input contains the integer \(n\) (\(2 \le n \le 1000\)).</p>
+
+<p>To issue a query, your program should write a line of the form “<code>query</code> \(i\) \(j\)” (\(1 \le i \le n; 1 \le j \le n; i \ne j\)). After that, an input line containing <code>first</code> or <code>second</code> becomes available. A line containing <code>first</code> means \(S(i) \lt S(j)\), while a line containing <code>second</code> means \(S(i) \gt S(j)\).</p>
+
+<p>Once you determine the order of the suffixes, your program should write a line of the form “<code>answer</code> \(p_1\) \(p_2\) \(\ldots\) \(p_n\)”. After that, the interaction stops and your program should terminate without extra output.</p>
+
+<p>Your program may issue at most \(6260\) queries. If your program issues more than \(6260\) queries, it will be judged as “Wrong Answer.”</p>
+
+<p>It is guaranteed that the hidden string \(S\) consists only of lowercase letters (<code>a</code>–<code>z</code>).</p>
+
+<p><em>Notes on interactive judging:</em></p>
+<ul>
+  <li>The evaluation is non-adversarial, meaning that the string \(S\) is chosen in advance rather than in response to your queries.</li>
+  <li>Do not forget to flush output buffers after writing. See the “Judging Details” document for details.</li>
+  <li>You are provided with a command-line tool for local testing, together with input files corresponding to the sample interactions. You can download these files from DOMjudge. The tool has comments at the top to explain its use.</li>
+</ul>
+
+<div class="table-wrap"><table class="interaction">
+  <tr><th>Read</th><th>Sample Interaction #1</th><th>Write</th></tr>
+  <tr><td><code>4</code></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td><code>query 2 1</code></td></tr>
+  <tr><td><code>first</code></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td><code>query 2 4</code></td></tr>
+  <tr><td><code>second</code></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td><code>query 1 3</code></td></tr>
+  <tr><td><code>first</code></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td><code>answer 4 2 1 3</code></td></tr>
+</table></div>
+
+<p class="expl">Explanation for the sample interaction #1</p>
+<p>In this sample, \(S = \) <code>icpc</code> is assumed. The order of four suffixes is \(S(4) \lt S(2) \lt S(1) \lt S(3)\) because <code>c</code> \(\lt\) <code>cpc</code> \(\lt\) <code>icpc</code> \(\lt\) <code>pc</code>.</p>
+
+<p>In the first and third query, <code>first</code> is returned because \(S(2) \lt S(1)\) and \(S(1) \lt S(3)\). In the second query, <code>second</code> is returned because \(S(2) \gt S(4)\). With these responses, you can determine the ordering.</p>
+
+</article><nav class="pn"><span></span><a href="B.html">B. Subtree Removal Game →</a></nav>
+</main>
+</body>
+</html>

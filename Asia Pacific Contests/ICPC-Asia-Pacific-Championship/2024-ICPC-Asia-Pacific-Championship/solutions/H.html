@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2024 — Solution H. Pho Restaurant</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2024 — Solution H. Pho Restaurant</a><nav><a href="index.html">Solutions index</a><a href="../H.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="G.html">← G. Personality Test</a><a href="I.html">I. Symmetric Boundary →</a></nav><article class="paper">
+<h1 class="sol-title">H&nbsp;&nbsp;Pho Restaurant</h1>
+
+<p>Consider an easier version of this problem where we can add new tables. Clearly, it is optimal if, for the tables that are seated by different orders, we move the <em>minority</em>, i.e. the lesser orders between the two types of pho, to a new table.</p>
+
+<p>One can assume that this strategy also works for the original problem. However, it only works if existing tables accommodate the minorities. This will not be an issue if we can have both types of pho to be a non-minority on some tables. But in case non-minorities are just one type (which also means there is just one type of minority), we need to choose a table that is dedicated to accommodating minorities instead. As this table will move the non-minority orders, it is not optimal to choose more than one dedicated table. Thus, a single careful iteration will suffice.</p>
+
+<p>There is also an alternative solution that uses DP-Bitmask where we have four bits to represent: there is a table where we need to move ‘0’, there is a table where we need to move ‘1’, there is a table dedicated to consist of only ‘0’, and there is a table dedicated to consist of only ‘1’.</p>
+
+<p>All solutions run in \(O(n + \sum_{i=1}^{n} |S_i|)\).</p>
+
+</article><nav class="pn"><a href="G.html">← G. Personality Test</a><a href="I.html">I. Symmetric Boundary →</a></nav>
+</main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — Solution G. Corrupted File</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2025 — Solution G. Corrupted File</a><nav><a href="index.html">Solutions index</a><a href="../G.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="F.html">← F. Hold the Star</a><a href="H.html">H. Secret Lilies and Roses →</a></nav><article class="paper">
+<h1 class="sol-title">G&nbsp;&nbsp;Corrupted File</h1>
+
+<p>Notice that we can "combine" operations: if we pick two bits \(i\) and \(i + 1\) and replace it, and later pick the replaced bit \(i\) and \(i + 1\) (originally at position \(i + 2\)), we can think of it as one big operation: pick bits \(i\), \(i + 1\), \(i + 2\), and transform them into \(1\) if all of the bits are \(1\), or \(0\) otherwise.</p>
+
+<p>From this observation, we can rephrase the problem as: Given a bit sequence \(B\). You can select several disjoint subarrays, and replace each subarray with \(1\) if all the bits in it are \(1\), or \(0\) otherwise.</p>
+
+<p>We decompose \(B\) into segments, where each segment only contains either bit \(0\) or bit \(1\), e.g. for the given bit sequence \(11011011\), we decompose it into \([11, 0, 11, 0, 11]\).</p>
+
+<p>Notice that doing an operation on a subarray that’s completely within a segment is just reducing the length of a segment into any positive length.</p>
+
+<p>What happens if you do an operation on a subarray that contains elements from two or more segments? Since \(0\) must be present in the subarray, it will be replaced by \(0\). This operation can be used to delete segments with value \(1\).</p>
+
+<p>From the observations above, by doing the operations, we can do the following:</p>
+
+<ul>
+  <li>Reduce the length of a segment with value \(0\) into any positive length.</li>
+  <li>Reduce the length of a segment with value \(1\) into any positive length.</li>
+  <li>Combine several adjacent segments into a big segment of value \(0\), effectively deleting some segments with value \(1\) in the middle.</li>
+</ul>
+
+<p>We solve the problem greedily: For each \(i\) between \(1\) and number of segments in \(C\), we want to find the minimum prefix of segments in \(B\), which we can transform into segments \(C_1, \ldots, C_i\). We iterate each segment in \(C\) from left to right while maintaining a pointer in \(B\) representing the currently used prefix.</p>
+
+<p>Let denote by \(c_i\) the value of segment \(C_i\) and \(k_i\) its length.</p>
+
+<ul>
+  <li>If \(c_i = 0\), we iterate the prefix pointer until it has visited \(k_i\) values of \(0\).</li>
+  <li>If \(c_i = 1\), we iterate the prefix pointer until we find a segment in \(B\) with value \(1\) and length of at least \(k_i\).</li>
+</ul>
+
+<p>If at any point the prefix pointer goes outside \(B\), then it is impossible to transform \(B\) into \(C\).</p>
+
+<p>Also, since we cannot make a segment of value \(0\) disappear, if the first (or last) segment of \(B\) has value \(0\) while the first (or last) segment of \(C\) has value \(1\), then it is impossible.</p>
+
+<p>Otherwise, it is possible.</p>
+
+<p>Time complexity: \(O(m + n)\).</p>
+
+</article><nav class="pn"><a href="F.html">← F. Hold the Star</a><a href="H.html">H. Secret Lilies and Roses →</a></nav>
+</main>
+</body>
+</html>

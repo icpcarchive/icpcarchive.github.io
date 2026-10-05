@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — Solution I. Squares on Grid Lines</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2025 — Solution I. Squares on Grid Lines</a><nav><a href="index.html">Solutions index</a><a href="../I.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="H.html">← H. Secret Lilies and Roses</a><a href="J.html">J. Gathering Sharks →</a></nav><article class="paper">
+<h1 class="sol-title">I&nbsp;&nbsp;Squares on Grid Lines</h1>
+
+<p>Define the following:</p>
+
+<ul>
+  <li>Corner point: A point that lies on a corner of a cell.</li>
+  <li>Horizontal point: A point that lies on a horizontal side of a cell and is not a corner point.</li>
+  <li>Vertical point: A point that lies on a vertical side of a cell and is not a corner point.</li>
+  <li>Center point: A point that’s the center of a cell’s square shape.</li>
+  <li>Outer border: The perimeter of the \(n \times n\) grid.</li>
+  <li>Unlimited area: A value for the square area such that there are an infinite number of valid squares with that area.</li>
+</ul>
+
+<p>First, notice that for a square whose vertices are all corner points and not all of which are at the outer border, its area is an unlimited area.</p>
+
+<p>Next, we can obtain that for a square whose area isn’t an unlimited area, there are only two cases:</p>
+
+<ol>
+  <li>Its vertices in order are a horizontal point, then a vertical point, then a horizontal point, then a vertical point.</li>
+  <li>All of its vertices are integer points at the outer border.</li>
+</ol>
+
+<p>We can prove this by seeing that if any two consecutive square vertices are both horizontal or both vertical, it turns out that that would only occur in a square that’s able to be translated along the grid lines, which would result in an unlimited area if there’s still room to translate it in the grid.</p>
+
+<p>From those aforementioned two cases, we obtain that every single possible square whose area isn’t an unlimited area must have a center at a corner point or a center point.</p>
+
+<p>Let’s calculate for every possible valid square whose center is at a corner point. One corner point with the most number of possible squares is point \((\lfloor \frac{n}{2} \rfloor, \lfloor \frac{n}{2} \rfloor)\). Let’s call that point the pivot. Consider every possible valid square for that pivot. Consider one quadrant of the plane that contains every point \((x, y)\) satisfying \(0 \le x \le \lfloor \frac{n}{2} \rfloor\) and \(0 \le y \lt \lfloor \frac{n}{2} \rfloor\). Exactly one vertex of the square must lie inside that quadrant. We can use that vertex as a unique identifier. If the Euclidean distance from the vertex in that quadrant to the pivot is \(d\), then the square’s area is \(2d^2\).</p>
+
+<p>We can iterate over every single line segment that’s a horizontal or vertical side of a cell in that quadrant. For each line segment, we can calculate the lower-bound and upper-bound for the area of a square whose bottom left vertex lies on that segment. In other words, we calculate the interval of possible areas for each line segment.</p>
+
+<p>Remember that we’ve only been calculating for squares whose centers are at the pivot. However, we can use these squares to calculate for squares centered at other corner points. For each line segment we calculated previously, we can determine how many possible corner points that the pivot can be translated to such that the square doesn’t go outside the outer border. We determine that number based on how far away the line segment is to the pivot.</p>
+
+<p>While using this pivot, we can also calculate the areas of squares whose bottom left vertex is a corner point in this quadrant to account for unlimited areas obtained from squares whose centers are corner points.</p>
+
+<p>For valid squares whose centers are center points, we calculate area intervals and unlimited areas again using a slightly different pivot \((\lfloor \frac{n-1}{2} \rfloor + \frac{1}{2}, \lfloor \frac{n-1}{2} \rfloor + \frac{1}{2})\). This time, the quadrant cuts off some cell sides in half, so its line segment must be cut off accordingly.</p>
+
+<p>After doing all that, we get every single area interval for every line segment, each with its number of possible translated squares. We can do a line sweep through these intervals while also iterating the queries in ascending order to get the total number of squares for every query. Don’t forget to handle the case where a queried area is among the calculated unlimited areas.</p>
+
+<p>The number of line segments we need to iterate is \(O(n^2)\). The number of unlimited areas is \(O(n^2)\).</p>
+
+<p>Time complexity: \(O((n^2 + q) \log n)\)</p>
+
+</article><nav class="pn"><a href="H.html">← H. Secret Lilies and Roses</a><a href="J.html">J. Gathering Sharks →</a></nav>
+</main>
+</body>
+</html>

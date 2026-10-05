@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — B. Three-Dimensional Embedding</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2025 — B. Three-Dimensional Embedding</a><nav><a href="index.html">Index</a><a href="solutions/B.html">Solution</a><a href="https://fileserv.icpc.jp/championship2025/icpc-apac-2025-tasks.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="A.html">← A. Control Towers</a><a href="C.html">C. Cactus Connectivity →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem B</div>
+  <h1>Three-Dimensional Embedding</h1>
+  <div class="tlimit">Time limit: 2 seconds</div>
+</div>
+
+<p>An <em>embedding</em> of a graph in a space is a way of placing each vertex at a distinct point in that space and drawing each edge as a simple arc connecting its two vertices, so that no two arcs intersect except at a shared vertex. In this problem, we focus on embeddings in a <em>three-dimensional space</em> under certain conditions.</p>
+
+<p>You are given a simple undirected graph with \(n\) vertices and \(m\) edges, which means there is at most one edge connecting any pair of vertices and each edge connects different vertices. The vertices are numbered from \(1\) to \(n\), and the edges are numbered from \(1\) to \(m\). Edge \(j\) connects the two distinct vertices \(v_j\) and \(w_j\). Each vertex is incident to at most five edges.</p>
+
+<p>Find an embedding of the graph such that all of the following conditions are satisfied.</p>
+
+<ul>
+  <li>Each vertex \(i\) is embedded as a point \((x_i, y_i, 0)\) in the space. The coordinates \(x_i\) and \(y_i\) must be integers between \(0\) and \(400\), inclusive. All points must have distinct coordinates.</li>
+  <li>Each edge \(j\) is embedded as a polyline (a connected series of line segments) with the embedded points for vertices \(v_j\) and \(w_j\) as its endpoints. Each segment of the polyline must be parallel to the \(x\)-, \(y\)-, or \(z\)-axis. Each node of the polyline must have integer coordinates between \(0\) and \(400\), inclusive. Each polyline must have no more than \(30\) nodes, counting its endpoints.</li>
+  <li>Polylines must not have self-intersections. Distinct polylines must not share any point, except when they correspond to edges incident to the same vertex. In that case, they may share only that single endpoint.</li>
+</ul>
+
+<h2>Input</h2>
+<p>The first line of input contains two integers \(n\) and \(m\) (\(2 \le n \le 1600\), \(1 \le m \le 4000\)). The \(j\)-th of the following \(m\) lines contains two integers \(v_j\) and \(w_j\) (\(1 \le v_j \lt w_j \le n\)).</p>
+
+<p>The input guarantees that each vertex is incident to at most five edges. Further, there are no parallel edges; that is, if \(j \ne j'\), \((v_j, w_j) \ne (v_{j'}, w_{j'})\) holds.</p>
+
+<h2>Output</h2>
+<p>First, output \(n\) lines. The \(i\)-th of these lines should contain two integers \(x_i\) and \(y_i\), representing the coordinates where vertex \(i\) is embedded. Then, output \(m\) lines, where the \(j\)-th line represents the polyline corresponding to edge \(j\), using the following format:</p>
+
+\[k \; x'_1 \; y'_1 \; z'_1 \; \cdots \; x'_k \; y'_k \; z'_k\]
+
+<p>Here, \(k\) is the number of nodes, which must be between \(2\) and \(30\), inclusive. The points \((x'_1, y'_1, z'_1), \ldots, (x'_k, y'_k, z'_k)\) are the nodes of the polyline. The first point \((x'_1, y'_1, z'_1)\) must be \((x_{v_j}, y_{v_j}, 0)\), and the last point \((x'_k, y'_k, z'_k)\) must be \((x_{w_j}, y_{w_j}, 0)\). Each pair of consecutive points is connected by a segment to form the polyline. Each segment must have a positive length. Two consecutive segments may have the same orientation; for example, both can be parallel to the \(x\)-axis.</p>
+
+<p>The embedding that you output must satisfy all of the conditions mentioned above.</p>
+
+<p>Under the given input constraints, it can be shown that there exists at least one valid output. If there are multiple outputs, any one of them will be accepted.</p>
+
+<p><em>Notes on special judging:</em></p>
+
+<p>You are provided with a command-line tool for local testing. You can download the file from DOMjudge. The tool has comments at the top to explain its use.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>3 3
+1 2
+1 3
+2 3
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>0 0
+400 0
+0 399
+3 0 0 0 100 0 0 400 0 0
+4 0 0 0 0 0 200 0 399 200 0 399 0
+3 400 0 0 400 399 0 0 399 0
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>Figure B.1 illustrates the embedding represented by the sample output.</p>
+
+<figure>
+  <img src="img/B-fig1.png" alt="3D plot of the three vertices and the axis-parallel polylines connecting them" width="529" height="565" loading="lazy">
+  <figcaption>Figure B.1: Illustration of the embedding.</figcaption>
+</figure>
+
+</article><nav class="pn"><a href="A.html">← A. Control Towers</a><a href="C.html">C. Cactus Connectivity →</a></nav>
+</main>
+</body>
+</html>

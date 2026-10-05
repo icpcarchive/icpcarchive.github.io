@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — J. Gathering Sharks</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2025 — J. Gathering Sharks</a><nav><a href="index.html">Index</a><a href="solutions/J.html">Solution</a><a href="https://fileserv.icpc.jp/championship2025/icpc-apac-2025-tasks.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="I.html">← I. Squares on Grid Lines</a><a href="K.html">K. Book Sorting →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem J</div>
+  <h1>Gathering Sharks</h1>
+  <div class="tlimit">Time limit: 2 seconds</div>
+</div>
+
+<p>You are the leader of a swarm of \(n\) sharks living in a one-dimensional ocean. The sharks are positioned from left to right, with each adjacent pair separated by a distance of one unit.</p>
+
+<p>As the leader, you want all the sharks to gather at a common point to form a single group. Initially, no two sharks belong to the same group; for each \(i = 1, \ldots, n\), the \(i\)-th shark from the left forms its own group, uniquely numbered \(a_i\), consisting of only itself.</p>
+
+<p>To achieve your goal, you can command the sharks to perform the following actions \(n - 1\) times.</p>
+
+<ol>
+  <li>You shout out an integer \(b\) that meets both conditions:
+    <ul>
+      <li>There exists a group numbered \(b\).</li>
+      <li>There exists at least one group numbered strictly smaller than \(b\).</li>
+    </ul>
+  </li>
+  <li>Afterward, letting \(c\) be the <strong>largest existing</strong> group number strictly smaller than \(b\), all the sharks in the group numbered \(b\) <em>simultaneously</em> move to the position of the group numbered \(c\), and the two groups merge.</li>
+  <li>The merged group is numbered \(b\), and the group numbered \(c\) ceases to exist.</li>
+</ol>
+
+<p>All sharks move at a constant speed of one unit distance per unit time. Commands must be executed sequentially, with no overlap in execution. Once a command is completed, the next one can begin immediately.</p>
+
+<p>Compute the minimum time required for all the sharks to gather at a common point by commanding the sharks \(n - 1\) times optimally.</p>
+
+<h2>Input</h2>
+<p>The first line of input contains an integer \(n\) (\(2 \le n \le 500\)). The second line contains \(n\) pairwise distinct integers \(a_1, a_2, \ldots, a_n\) (\(1 \le a_i \le n\)).</p>
+
+<h2>Output</h2>
+<p>Output the minimum time required for all the sharks to gather at a common point.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>4
+3 2 4 1
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>4
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>You can command the sharks to perform the following actions:</p>
+
+<ol>
+  <li>You shout out \(3\). The leftmost shark moves to the position of the second-leftmost shark, and they form a group numbered \(3\). This takes \(1\) unit of time.</li>
+  <li>You shout out \(4\). The second rightmost shark moves to the position of the group numbered \(3\), and they form a group numbered \(4\). This takes \(1\) unit of time.</li>
+  <li>You shout out \(4\). The sharks in the group numbered \(4\) move to the rightmost position, forming a group of four sharks. This takes \(2\) units of time.</li>
+</ol>
+
+<p>The total time is \(1 + 1 + 2 = 4\). It can be shown that \(4\) units of time is optimal.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #2</div><pre>9
+1 2 4 5 7 8 3 6 9
+</pre></div>
+  <div><div class="sh">Sample Output #2</div><pre>17
+</pre></div>
+</div>
+
+</article><nav class="pn"><a href="I.html">← I. Squares on Grid Lines</a><a href="K.html">K. Book Sorting →</a></nav>
+</main>
+</body>
+</html>

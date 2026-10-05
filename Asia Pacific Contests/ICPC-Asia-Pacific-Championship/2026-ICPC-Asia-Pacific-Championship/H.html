@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2026 — H. Reflect Sort</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2026 — H. Reflect Sort</a><nav><a href="index.html">Index</a><a href="solutions/H.html">Solution</a><a href="https://fileserv.icpc.jp/championship2026/icpc-apac-2026-tasks.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="G.html">← G. Extra Transition</a><a href="I.html">I. Growth Factor →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem H</div>
+  <h1>Reflect Sort</h1>
+  <div class="tlimit">Time limit: 2 seconds</div>
+</div>
+
+<p>You have a sequence of \(n\) integers \((a_1, a_2, \ldots, a_n)\), the initial values of which are given to you. You may apply the following operation to the sequence any number of times (possibly zero):</p>
+
+<ol>
+  <li>Choose an index \(i\) (\(1 \le i \le n\)).</li>
+  <li>Choose a set \(S\) to be either the prefix \(\{1, 2, \ldots, i-1\}\) or the suffix \(\{i+1, i+2, \ldots, n\}\).</li>
+  <li>For every \(j \in S\), replace \(a_j\) with \(2a_i - a_j\).</li>
+</ol>
+
+<p>Your goal is to make the sequence <em>non-decreasing</em> and all elements <em>positive</em>, while minimizing \(a_n\), using the operation above any number of times. That is, \(1 \le a_1 \le a_2 \le \ldots \le a_n\) must hold in the resulting sequence. What is the minimum possible value of \(a_n\) in the resulting sequence?</p>
+
+<h2>Input</h2>
+<p>The first line of input contains a single integer \(n\) (\(2 \le n \le 100\,000\)).</p>
+<p>The second line contains \(n\) integers representing the initial values of \(a_1, a_2, \ldots, a_n\) (\(1 \le a_i \le 10^9\)).</p>
+
+<h2>Output</h2>
+<p>Output the minimum possible value of \(a_n\) in the resulting sequence.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>5
+6 3 5 5 2
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>10
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>You can do the following sequence of operations.</p>
+<ol>
+  <li>Choose \(i = 1\) and \(S\) as the suffix \(\{2, 3, 4, 5\}\): \((6, 3, 5, 5, 2) \to (6, 9, 7, 7, 10)\).</li>
+  <li>Choose \(i = 3\) and \(S\) as the prefix \(\{1, 2\}\): \((6, 9, 7, 7, 10) \to (8, 5, 7, 7, 10)\).</li>
+  <li>Choose \(i = 2\) and \(S\) as the prefix \(\{1\}\): \((8, 5, 7, 7, 10) \to (2, 5, 7, 7, 10)\).</li>
+</ol>
+<p>After these operations, the sequence is non-decreasing and all elements are positive. It can be shown that \(a_5 = 10\) is the minimum possible value.</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #2</div><pre>3
+2 1 100000
+</pre></div>
+  <div><div class="sh">Sample Output #2</div><pre>100002
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #2</p>
+<p>The minimum possible value of \(a_3\) is \(100002\), which can be attained by the following operations.</p>
+<ol>
+  <li>Choose \(i = 2\) and \(S\) as the suffix \(\{3\}\): \((2, 1, 100000) \to (2, 1, -99998)\).</li>
+  <li>Choose \(i = 1\) and \(S\) as the suffix \(\{2, 3\}\): \((2, 1, -99998) \to (2, 3, 100002)\).</li>
+</ol>
+<p>Note that the sequence may contain non-positive values during operations.</p>
+
+</article><nav class="pn"><a href="G.html">← G. Extra Transition</a><a href="I.html">I. Growth Factor →</a></nav>
+</main>
+</body>
+</html>

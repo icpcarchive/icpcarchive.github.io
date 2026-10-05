@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2026 — Solution L. Onion</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2026 — Solution L. Onion</a><nav><a href="index.html">Solutions index</a><a href="../L.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="K.html">← K. Time Display Stickers</a><a href="M.html">M. Deformed Balance →</a></nav><article class="paper">
+<h1 class="sol-title">L&nbsp;&nbsp;Onion</h1>
+
+<p>The key observation is that we can partition all points into \(O(\sqrt{n})\) groups such that the points in each group are collinear.</p>
+
+<p>Let \(x_i = i\) and \(y_i = (ai + b) \bmod n\) represent the coordinates of the \(i\)-th point. Let \(r = \lceil \sqrt{n} \rceil\). We can split the range \([0, n-1]\) of coordinates into \(r\) intervals: \([0, r-1], [r, 2r-1], \ldots, [(r-1)r, n-1]\). By the pigeonhole principle, there exists two indices \(0 \le j \lt k \le r\) such that \(y_j\) and \(y_k\) lie in the same interval.</p>
+
+<p>Let \(u = k - j = x_k - x_j\) and \(v = y_k - y_j\). We have \(u \le r\), \(|v| \le r - 1\), and \(v \equiv (ak + b) - (aj + b) \equiv au \pmod{n}\). Fix some \(0 \le s \le u - 1\) and consider the sequence of points with indices \(s, s+u, s+2u, \ldots\) (\(s + tu\) for \(0 \le t \le \left\lfloor \frac{n-1-s}{u} \right\rfloor\)). We may write</p>
+\[\begin{aligned}
+y_{s+tu} &amp;= (a(s + tu) + b) \bmod n \\
+&amp;= (as + b + atu) \bmod n \\
+&amp;= (y_s + tv) \bmod n \\
+&amp;= y_s + tv - n \left\lfloor \frac{y_s + tv}{n} \right\rfloor.
+\end{aligned}\]
+
+<p>For values of \(t\) with the same \(\left\lfloor \frac{y_s + tv}{n} \right\rfloor\), the points \((x_{s+tu}, y_{s+tu})\) lie on the same line with slope \(\frac{v}{u}\). If \(|v| \ne 0\), as \(t\) increases, the value of \(\left\lfloor \frac{y_s + tv}{n} \right\rfloor\) can only change when \(t\) changes by \(\frac{n}{|v|}\). Therefore, the range of \(t\) can be partitioned into at most \(\left\lfloor \frac{|v|}{u} \right\rfloor + 1\) intervals where the value of \(\left\lfloor \frac{y_s + tv}{n} \right\rfloor\) is constant in each interval. In other words, the points with indices \(s, s+u, s+2u, \ldots\) form at most \(\left\lfloor \frac{|v|}{u} \right\rfloor + 1\) consecutive groups that are collinear. Summing this for \(s\), we can partition all \(n\) points into a total of at most \(|v| + u = O(\sqrt{n})\) groups.</p>
+
+<p>We maintain the list of collinear point groups from top to bottom, each represented by left and right endpoints. Notice that only the endpoints of each group can be the vertices of the convex hull. Since there are only \(O(\sqrt{n})\) candidates, the convex hull can be found in \(O(\sqrt{n} \log n)\) time (which can be optimized to \(O(\sqrt{n})\) if sorting is avoided by iterating points in a certain order, but this is not necessary). Then, we need to remove points on the convex hull boundary, which are</p>
+<ul>
+  <li>all points in the topmost nonempty group,</li>
+  <li>all points in the bottommost nonempty group, and</li>
+  <li>the left or right endpoints of each group that lie on the boundary.</li>
+</ul>
+
+<p>Each of these can be updated in \(O(1)\) time for a total time complexity of \(O(\sqrt{n})\).</p>
+
+<p>To find \(k\) layers of convex hull, simply repeat the process \(k\) times. The total time complexity is \(O(k\sqrt{n} \log n)\) or \(O(k\sqrt{n})\).</p>
+
+</article><nav class="pn"><a href="K.html">← K. Time Display Stickers</a><a href="M.html">M. Deformed Balance →</a></nav>
+</main>
+</body>
+</html>

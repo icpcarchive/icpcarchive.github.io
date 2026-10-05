@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — Solution D. Tower of Hanoi</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2025 — Solution D. Tower of Hanoi</a><nav><a href="index.html">Solutions index</a><a href="../D.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="C.html">← C. Cactus Connectivity</a><a href="E.html">E. Minus Operator →</a></nav><article class="paper">
+<h1 class="sol-title">D&nbsp;&nbsp;Tower of Hanoi</h1>
+
+<p>First, consider the solution for the single-query case. Instead of putting the disks back into the rod \(1\), consider moving all disks from rod \(1\) to their initial stack, which we now regard as the desired stack. If the largest disk is on the rod \(1\), it does not need to move. Otherwise, if it needs to move to the rod \(2\) or \(3\), all other smaller disks need to move first to the rod \(3\) or \(2\), respectively. We can show by induction that moving \(x\) disks from a stack to another takes \(2^x - 1\) moves. After the largest disk has been moved to its desired stack, consider whether the second-largest disk needs to move or not, and so on.</p>
+
+<p>Then we go back to the original setting in which there are several queries. For a block (consecutive subsequence) of disks, suppose we want to move all disks in the block to the rod \(i\). Then moving all disks in the block requires some steps. Also, suppose that one or more smaller disks are stacked on top of the disks in the block. In order to move all these disks to the rod \(i\), those smaller disks must be first moved to a specific rod, whose index is uniquely determined by the target rod \(i\) and the arrangement of the disks in the block. To efficiently process the queries, we maintain two values for a block (\(i = 1, 2, 3\)): the number of steps required to move all the disks in the block to the rod \(i\), and the rod index where smaller disks first must be moved.</p>
+
+<p>Given two consecutive blocks, we can compute the values for the block formed by concatenating them. Now we can use a segment tree to efficiently computing these values for any (consecutive) subsequences of disks. The total time complexity is \(O(n + q \log n)\).</p>
+
+</article><nav class="pn"><a href="C.html">← C. Cactus Connectivity</a><a href="E.html">E. Minus Operator →</a></nav>
+</main>
+</body>
+</html>

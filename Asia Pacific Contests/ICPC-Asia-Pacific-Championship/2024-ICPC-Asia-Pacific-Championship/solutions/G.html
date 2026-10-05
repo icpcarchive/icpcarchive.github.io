@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2024 — Solution G. Personality Test</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2024 — Solution G. Personality Test</a><nav><a href="index.html">Solutions index</a><a href="../G.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="F.html">← F. Forming Groups</a><a href="H.html">H. Pho Restaurant →</a></nav><article class="paper">
+<h1 class="sol-title">G&nbsp;&nbsp;Personality Test</h1>
+
+<p>The problem can be reformulated as follows:</p>
+
+<blockquote><p>Suppose there exists a graph with \(n\) vertices, numbered from \(1\) to \(n\). Initially, each pair of vertices is connected by an undirected edge with weight zero. We increment an integer \(b\) from \(1\) to \(n\). In each step, for every \(1 \le i \lt b\) and \(1 \le j \le m\) such that \(S_{ij} = S_{bj} \ne\) ‘.’, we increment the weight between vertices \(i\) and \(b\) by one. If we encounter an edge with a weight of \(k\) or more, we must report that edge and terminate the program.</p></blockquote>
+
+<p>A straightforward implementation of this procedure requires \(\Theta(n^2 m)\) time. An important observation is that the sum of weights across all edges is bounded by \((k-1)\binom{n}{2}\), unless the step is at the termination of the program. This implies that the increase in edge weights occurs at most \(O(kn^2)\) times. With some precomputation, for each \(j\) such that \(S_{bj} \ne\) ‘.’ in the steps of the above procedure, we can enumerate all indices \(i\) satisfying \(S_{ij} = S_{bj}\) in \(O(\#\{i \lt b \mid S_{ij} = S_{bj}\})\) time, instead of \(\Theta(b)\) time.</p>
+
+<p>With this enumeration method, the runtime becomes \(O(nm + m\Sigma + kn^2)\), where \(\Sigma\) is the number of Latin characters (in this problem, \(\Sigma = 26\)).</p>
+
+</article><nav class="pn"><a href="F.html">← F. Forming Groups</a><a href="H.html">H. Pho Restaurant →</a></nav>
+</main>
+</body>
+</html>

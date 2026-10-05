@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2024 — Solution A. Antiparticle Antiphysics</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2024 — Solution A. Antiparticle Antiphysics</a><nav><a href="index.html">Solutions index</a><a href="../A.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><span></span><a href="B.html">B. Attraction Score →</a></nav><article class="paper">
+<h1 class="sol-title">A&nbsp;&nbsp;Antiparticle Antiphysics</h1>
+
+<p>Using the notation \(X^n\) to denote the string \(X\) repeated \(n\) times and \(\varepsilon\) for the empty string, we can state our rules as P \(\to\) APA, A \(\to\) PAP, A\(^a \to \varepsilon\), and P\(^p \to \varepsilon\). Here are more operations we can do:</p>
+
+<ul>
+  <li>APA \(\to\) P, because APA \(\to\) AAPAA \(\to\) AAAPAAA \(\to \ldots \to\) A\(^a\)PA\(^a \to\) P. Similarly, PAP \(\to\) A.</li>
+  <li>AA \(\to\) PP, because AA \(\to\) APAP \(\to\) PP. Similarly, PP \(\to\) AA.</li>
+  <li>PA \(\to\) APPP, because PA \(\to\) PPAP \(\to\) AAAP \(\to\) APPP. Similarly, AP \(\to\) PAAA.</li>
+  <li>P \(\to\) PAAAA, because P \(\to\) APA \(\to\) PAAAA. Similarly, A \(\to\) APPPP, P \(\to\) AAAAP, and A \(\to\) PPPPA.</li>
+  <li>AAAA \(\to\) PPPP, because AAAA \(\to\) PPAA \(\to\) PPPP. Similarly, PPPP \(\to\) AAAA.</li>
+</ul>
+
+<p>We can summarize the last few operations as \(\varepsilon \to\) A\(^4\) and \(\varepsilon \to\) P\(^4\). By repeatedly using these along with A\(^a \to \varepsilon\) and P\(^p \to \varepsilon\), we get \(\varepsilon \leftrightarrow\) A\(^{\gcd(a,4)}\) and \(\varepsilon \leftrightarrow\) P\(^{\gcd(p,4)}\), where we begin writing “\(\leftrightarrow\)” because we notice that all operations are now reversible. Also, without loss of generality, we can replace \(a\) and \(p\) by \(\gcd(a,4)\) and \(\gcd(p,4)\) respectively and then swap them if necessary to assume that \(a \mid p \mid 4\).</p>
+
+<p>We can then show using the above operations that any string is equivalent to one of A, AA, AAA, AAAA, P, AP, AAP, and AAAP. Let’s call these the eight <em>special strings</em>. Some of these can be reduced to each other further in case \(a\) and/or \(p\) are smaller than \(4\). But since \(a \mid p \mid 4\), there are only a few possibilities, and we can just check one by one. The most substantial case is when \(a = p = 4\), in which one can show that the eight special strings are distinct because they form a structure isomorphic to the quaternion group \(Q_8\), the eight-element subset \(\{1, i, j, k, -1, -i, -j, -k\}\) of the quaternions under multiplication. The other cases are just quotients of \(Q_8\) by some of its subgroups. All in all, we get four distinct groups: the trivial group if \(a = p = 1\), \(\mathbb{Z}/2\) if \(a = 1\) and \(p \gt 1\), \((\mathbb{Z}/2)^2\) if \(a = 2\), and \(Q_8\) if \(a = 4\).</p>
+
+<p>We have now shown that a string is convertible into another string iff their corresponding group elements are the same, and the above already shows one way to do so. But there are many other ways, some taking fewer steps than others. Here’s my procedure to reduce a string \(X\) to its corresponding special string:</p>
+
+<pre>while X is not special or len(X) &gt; gcd(a, 4)
+    if len(X) &gt; a and A**a is in X
+        remove the A**a
+    else if PA is in X
+        convert the rightmost PA to APAA
+    else if PP is in X
+        convert the leftmost PP to AA
+    else
+        insert AAAA in front of X
+</pre>
+
+<p>After this procedure, \(X\) will be a special string. To convert between equivalent special strings, we can just hardcode the conversion procedures—their overall contribution to the number of steps will be negligible anyway. There’s also a similar procedure to convert back to a given string from its special string. These procedures seem very efficient and seem to require less than \(10\,000\) operations even for strings up to length \(50\).</p>
+
+<p>Explicit bounds can also be obtained by carefully counting the number of steps of each intermediate operation above. For example, setting \(n = 50\) and \(k = 20\), we see that APA \(\to\) P takes \(k + O(1)\) steps, PAAA \(\to\) AP takes \(3k + O(1)\), etc. By working through the steps like this, one can show that a slightly altered version of the algorithm needs at most \(8nk + 24k^2 + O(n + k)\) steps. This is \(\lt 20\,000\) in the worst case, so it passes comfortably.</p>
+
+</article><nav class="pn"><span></span><a href="B.html">B. Attraction Score →</a></nav>
+</main>
+</body>
+</html>

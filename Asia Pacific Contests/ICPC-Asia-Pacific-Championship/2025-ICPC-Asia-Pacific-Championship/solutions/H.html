@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — Solution H. Secret Lilies and Roses</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2025 — Solution H. Secret Lilies and Roses</a><nav><a href="index.html">Solutions index</a><a href="../H.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="G.html">← G. Corrupted File</a><a href="I.html">I. Squares on Grid Lines →</a></nav><article class="paper">
+<h1 class="sol-title">H&nbsp;&nbsp;Secret Lilies and Roses</h1>
+
+<p>If you are nowhere to the solution, take this hint: “What if you already know how many roses there are?” If you cannot go further, this is another hint: “Once you know how many roses there are, you do not need to make any query again!”</p>
+
+<p>Indeed, if there are \(k\) roses, then the answer is simply “<code>answer</code> \(k\)”. The proof is simple. If there are \(l_k\) lilies among the leftmost \(k\) flowers, that means there are \(k - l_k\) roses among them. Therefore, the number of roses among the other flowers (a.k.a. \(r_k\)) will be \(k - (k - l_k) = l_k\). This also proves that the answer actually always exists for any configuration of the flowers.</p>
+
+<p>So now we have reduced this problem into finding the number of roses among the \(n\) flowers. At a glance, this might be easily solved with a binary search by finding the smallest \(j\) such that the “<code>multi</code> \(j\)” is a non-zero value. However, this strategy will not work as we can have the following flower configurations (with \(R\)‘s denoting roses and \(L\)‘s denoting lilies):</p>
+\[[RRR \cdots RRR]\ L\ [\text{any}]\ R\ [LLL \cdots LLL]\]
+
+<p>Particularly, the result of making a multiply query on the first block of roses or the last block of lilies is always \(0\). Only if we make a multiply query on the “middle” block part will result a non-zero response, and note that this part could be very narrow.</p>
+
+<p>One possible solution is to use a binary search with the type query instead: We go to the right if it is rose, and left if it is lily. Assuming that there is a “dummy” rose flower as flower \(0\) and a “dummy” lily flower as flower \(n + 1\), this binary search allows us to find any position \(x\) separating a rose and then a lily (i.e. flower \(x\) is rose and flower \(x + 1\) is lily).</p>
+
+<p>Finally, we first make “<code>multi</code> \(x\)” query to get \(l_x \times r_x\). And then, we may make “<code>multi</code> \(x-1\)” and “<code>multi</code> \(x+1\)” queries, as the first will definitely increase the number of the roses on the right (i.e. \(l_{x-1} \times r_{x-1} = l_x \times (r_x + 1)\)) and the second will definitely increase the number of the lilies on the left (i.e. \(l_{x+1} \times r_{x+1} = (l_x + 1) \times r_x\)). With these three equations, it is not hard to find both values of \(l_x\) and \(r_x\) even if any of them is \(0\), and finally know the number of roses among the \(n\) flowers. But actually, asking two of these three equations is already enough to determine the two variables.</p>
+
+<p>Query complexity: \(\lceil \log_2 n \rceil + 2\)</p>
+
+</article><nav class="pn"><a href="G.html">← G. Corrupted File</a><a href="I.html">I. Squares on Grid Lines →</a></nav>
+</main>
+</body>
+</html>

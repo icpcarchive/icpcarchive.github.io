@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2025 — Solution K. Book Sorting</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="../index.html">ICPC Asia Pacific Championship 2025 — Solution K. Book Sorting</a><nav><a href="index.html">Solutions index</a><a href="../K.html">Problem</a></nav></header>
+<main>
+<nav class="pn"><a href="J.html">← J. Gathering Sharks</a><a href="L.html">L. Boarding Queue →</a></nav><article class="paper">
+<h1 class="sol-title">K&nbsp;&nbsp;Book Sorting</h1>
+
+<p>Let the sequence \(a_1, a_2, \ldots, a_n\) be the “inverse permutation” of \(p\). That is, \(p_{a_i} = i\) for \(i = 1, \ldots, n\). Also, let \(\operatorname{inv}(x_1, \ldots, x_m)\) denote the inversion number of the sequence \(x_1, \ldots, x_m\) (number of pairs of indices \(1 \le i \lt j \le m\) such that \(x_i \gt x_j\)).</p>
+
+<p>We first consider what the optimal strategy for sorting the books looks like. We can observe that, in an optimal strategy, each book is either</p>
+
+<ul>
+  <li>moved to the leftmost position exactly once,</li>
+  <li>moved to the rightmost position exactly once, or</li>
+  <li>swapped with an adjacent book zero or more times.</li>
+</ul>
+
+<p>Then, using two numbers \(1 \le l \le r \le n\), an optimal strategy is represented as follows:</p>
+
+<ul>
+  <li>Move books labeled \(l - 1, l - 2, \ldots, 1\) to the leftmost position, in this order.</li>
+  <li>Move books labeled \(r + 1, r + 2, \ldots, n\) to the rightmost position, in this order.</li>
+  <li>Sort books labeled \(l, l + 1, \ldots, r\) using swap actions.</li>
+</ul>
+
+<p>Here the total number of operations equals \(l - 1 + n - r + \operatorname{inv}(a_l, a_{l+1}, \ldots, a_r)\). This can be computed by finding the maximum value of \(f(l, r) = r - l - \operatorname{inv}(a_l, a_{l+1}, \ldots, a_r)\).</p>
+
+<p>Let \(S_r = \{1 \le i \le r \mid \forall i \lt j \le r, f(i, r) \gt f(j, r)\}\). We note that \(\{r\} \in S_r\) holds. Suppose we sort the values in \(S_r\) in descending order: \(r = s_{r,1} \gt s_{r,2} \gt \cdots \gt s_{r,k_r}\). Then we can show \(f(s_{r,j}, r) = j - 1\). It follows from \(f(r, r) = 0\) and \(f(s_{r,j+1}, r) - f(s_{r,j}, r) = 1\) (otherwise, another index between \(s_{r,j+1}\) and \(s_{r,j}\) would have been present in \(S_r\)). Thus, if we can track \(S_r\) for each \(r\), we can easily compute the answer.</p>
+
+<p>Here, let us consider how \(S_{r+1}\) can be constructed from \(S_r\).</p>
+
+<ul>
+  <li>If \(a_{r+1}\) is larger than all of \(a_1, \ldots, a_r\), \(f(l, r + 1) = f(l, r) + 1\) for all \(l\), thus \(S_{r+1} = S_r \cup \{r + 1\}\).</li>
+  <li>Otherwise, we handle the effect of “inversions” one by one for each \(l\) with \(a_l \gt a_{r+1}\). A single inversion \(a_l \gt a_{r+1}\) reduces the value of \(f(1, r + 1), f(2, r + 1), \ldots, f(l, r + 1)\) by \(1\) compared with the case in which this inversion had not been present. We can see that this eliminates the largest element in \(S_{r+1}\) that is not larger than \(l\).</li>
+</ul>
+
+<p>In the overall process of computing \(S_1, \ldots, S_n\), each index \(r\) will be added to \(S\) exactly once and removed at most once. Elimination of the largest element that is not larger than \(l\) can have no effects if all the elements in \(S\) is larger than \(l\). However, in this case, we can ignore such \(l\) in the subsequent elimination processes to keep the runtime efficient.</p>
+
+<p>If we maintain \(S\) and elimination candidates using balanced binary trees (such as <code>std::set</code>), the overall algorithm runs in \(O(n \log n)\) time.</p>
+
+</article><nav class="pn"><a href="J.html">← J. Gathering Sharks</a><a href="L.html">L. Boarding Queue →</a></nav>
+</main>
+</body>
+</html>

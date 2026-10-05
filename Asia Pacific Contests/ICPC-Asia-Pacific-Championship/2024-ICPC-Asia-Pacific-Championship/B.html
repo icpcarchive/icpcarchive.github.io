@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICPC Asia Pacific Championship 2024 — B. Attraction Score</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],ignoredTags:['script','noscript','style','textarea','pre','code'],throwOnError:false})"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">ICPC Asia Pacific Championship 2024 — B. Attraction Score</a><nav><a href="index.html">Index</a><a href="solutions/B.html">Solution</a><a href="https://fileserv.icpc.jp/championship2024/data.zip">Test data</a></nav></header>
+<main>
+<nav class="pn"><a href="A.html">← A. Antiparticle Antiphysics</a><a href="C.html">C. Bit Counting Sequence →</a></nav><article class="paper">
+<div class="phead">
+  <div class="plabel">Problem B</div>
+  <h1>Attraction Score</h1>
+  <div class="tlimit">Time limit: 4 seconds</div>
+</div>
+
+<p>There are \(n\) cities, numbered from \(1\) to \(n\), in the fictional country of Manteiv. We can consider these cities to be on a flat plane with a 2D coordinate system, where city \(i\) is at coordinates \((x_i, y_i)\). No two cities are located at the same position.</p>
+
+<p>There are \(m\) highways, numbered from \(1\) to \(m\), each of which is a line segment with two different cities as its endpoints and has a number of attraction points alongside it. Specifically, highway \(j\) has \(a_j\) attraction points and connects cities \(u_j\) and \(v_j\) as its endpoints. Having intersections on highways causes traffic jams, and building a highway on top of another highway costs a lot of money. Therefore, it is guaranteed that</p>
+
+<ul>
+  <li>no two highways intersect at any point other than at a city,</li>
+  <li>no highway passes through a city other than its two endpoints, and</li>
+  <li>there is at most one highway connecting each pair of cities.</li>
+</ul>
+
+<p>The Manteiv Ministry of Tourism would like to choose a subset of cities as tourist attractions. Intuitively, the ministry would like many pairs of chosen cities to be connected by a highway with many attraction points. Formally, the <em>attraction score</em> of a non-empty subset of cities \(S\) is defined as follows:</p>
+
+<ul>
+  <li>For every pair of integers \((a, b)\) where \(a \lt b\), cities \(a\) and \(b\) are in \(S\), and they are connected by a highway, add the number of attraction points on the highway to the score.</li>
+  <li>Let \(f(S)\) be the number of pairs of integers \((a, b)\) where \(a \lt b\), cities \(a\) and \(b\) are in \(S\), and they are <strong>not</strong> connected by a highway. The score incurs a penalty (negative) score of \(10^6\) multiplied by <strong>the square of</strong> \(f(S)\). In other words, subtract \(10^6 \times f(S)^2\) from the score.</li>
+</ul>
+
+<p>For example, let \(n = 3\), cities \(1\) and \(2\) be connected by a highway with \(10\) attraction points, cities \(2\) and \(3\) be connected by a highway with \(20\) attraction points, and cities \(1\) and \(3\) not be connected by a highway.</p>
+
+<ul>
+  <li>The attraction score of the subset of cities \(\{1\}\) is \(0\).</li>
+  <li>The attraction score of the subset of cities \(\{1, 2\}\) is \(10 - 10^6 \times 0^2 = 10\).</li>
+  <li>The attraction score of the subset of cities \(\{2, 3\}\) is \(20 - 10^6 \times 0^2 = 20\).</li>
+  <li>The attraction score of the subset of cities \(\{1, 2, 3\}\) is \(10 + 20 - 10^6 \times 1^2 = -999\,970\).</li>
+</ul>
+
+<p>As an advisor to the ministry, you would like to find the maximum attraction score among all possible non-empty subsets of cities \(S\).</p>
+
+<h2>Input</h2>
+<p>The first line of input contains two integers \(n\) and \(m\) (\(1 \le n \le 100\,000\); \(0 \le m \le 300\,000\)). Each of the next \(n\) lines contains two integers. The \(i\)-th line contains \(x_i\) and \(y_i\) (\(0 \le x_i, y_i \le 10^9\)). Each of the next \(m\) lines contains three integers. The \(j\)-th line contains \(u_j\), \(v_j\), and \(a_j\) (\(1 \le u_j \lt v_j \le n; 0 \le a_j \le 10^6\)). The highways are guaranteed to satisfy the conditions in the problem statement.</p>
+
+<h2>Output</h2>
+<p>Output an integer representing the maximum attraction score among all possible non-empty subsets of cities \(S\).</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #1</div><pre>3 2
+0 0
+0 1
+1 0
+1 2 10
+2 3 20
+</pre></div>
+  <div><div class="sh">Sample Output #1</div><pre>20
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #1</p>
+<p>This sample is the example given in the problem statement above. The subset of cities \(\{2, 3\}\) gives the highest attraction score of \(20\).</p>
+
+<div class="sample">
+  <div><div class="sh">Sample Input #2</div><pre>3 3
+0 0
+0 1
+1 0
+1 2 10
+2 3 20
+1 3 30
+</pre></div>
+  <div><div class="sh">Sample Output #2</div><pre>60
+</pre></div>
+</div>
+
+<p class="expl">Explanation for the sample input/output #2</p>
+<p>The cities and highways are illustrated by Figure B.1. By choosing cities \(1\), \(2\), and \(3\) in \(S\), the attraction score would be \(10 + 20 + 30 - 10^6 \times 0^2 = 60\).</p>
+
+<figure>
+  <img src="img/B-fig1.png" alt="Triangle of cities 1, 2, 3 with highways A1 = 10, A2 = 20, A3 = 30" width="253" height="253" loading="lazy">
+  <figcaption>Figure B.1: Illustration of sample input #2.</figcaption>
+</figure>
+
+</article><nav class="pn"><a href="A.html">← A. Antiparticle Antiphysics</a><a href="C.html">C. Bit Counting Sequence →</a></nav>
+</main>
+</body>
+</html>
