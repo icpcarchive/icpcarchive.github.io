@@ -1,0 +1,88 @@
+{
+ "id": 492,
+ "name": "Rocky Mountain 2020",
+ "url": "https://qoj.ac/contest/492",
+ "categories": [
+  "ICPC/Regionals/North America/Rocky Mountain"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 3645,
+   "letter": "A",
+   "title": "Stopwatch",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Stopwatch.pdf"
+  },
+  {
+   "id": 3646,
+   "letter": "B",
+   "title": "Arithmetic Decoding",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Arithmetic Decoding.pdf"
+  },
+  {
+   "id": 3647,
+   "letter": "C",
+   "title": "Paper Snowflakes",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Paper Snowflakes.pdf"
+  },
+  {
+   "id": 3648,
+   "letter": "D",
+   "title": "Forced Choice",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Forced Choice.pdf"
+  },
+  {
+   "id": 3649,
+   "letter": "E",
+   "title": "Interview Queue",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Interview Queue.pdf"
+  },
+  {
+   "id": 3650,
+   "letter": "F",
+   "title": "Conquest",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Conquest.pdf"
+  },
+  {
+   "id": 3651,
+   "letter": "G",
+   "title": "Distance",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Distance.pdf"
+  },
+  {
+   "id": 3652,
+   "letter": "H",
+   "title": "Antimatter Rain",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Antimatter Rain.pdf"
+  },
+  {
+   "id": 3653,
+   "letter": "I",
+   "title": "Vaccine Efficacy",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Vaccine Efficacy.pdf"
+  },
+  {
+   "id": 3654,
+   "letter": "J",
+   "title": "Pegs and Legs",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Pegs and Legs.pdf"
+  },
+  {
+   "id": 3655,
+   "letter": "K",
+   "title": "Train Boarding",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Train Boarding.pdf"
+  }
+ ]
+}

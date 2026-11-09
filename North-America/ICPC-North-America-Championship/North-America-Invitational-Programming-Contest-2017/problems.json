@@ -1,0 +1,141 @@
+{
+ "id": 116,
+ "name": "North America Invitational Programming Contest 2017",
+ "url": "https://qoj.ac/contest/116",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=116&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=116&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 6444,
+   "letter": "A",
+   "title": "Pieces of Parentheses",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Pieces of Parentheses.pdf"
+  },
+  {
+   "id": 6445,
+   "letter": "B",
+   "title": "Stars in a Can",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Stars in a Can.pdf"
+  },
+  {
+   "id": 6446,
+   "letter": "C",
+   "title": "Stretching Streamers",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Stretching Streamers.pdf"
+  },
+  {
+   "id": 6447,
+   "letter": "D",
+   "title": "Heaps from Trees",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Heaps from Trees.pdf"
+  },
+  {
+   "id": 6448,
+   "letter": "E",
+   "title": "Blazing New Trails",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Blazing New Trails.pdf"
+  },
+  {
+   "id": 6449,
+   "letter": "F",
+   "title": "Incremental Double Free Strings",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Incremental Double Free Strings.pdf"
+  },
+  {
+   "id": 6450,
+   "letter": "G",
+   "title": "Apple Market",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Apple Market.pdf"
+  },
+  {
+   "id": 6451,
+   "letter": "H",
+   "title": "Maximum Color Clique",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Maximum Color Clique.pdf"
+  },
+  {
+   "id": 6452,
+   "letter": "I",
+   "title": "Ski Resort",
+   "statement_pages": [
+    17,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Ski Resort.pdf"
+  },
+  {
+   "id": 6453,
+   "letter": "J",
+   "title": "Yin and Yang Stones",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Yin and Yang Stones.pdf"
+  },
+  {
+   "id": 6454,
+   "letter": "K",
+   "title": "Unbalanced Parentheses",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Unbalanced Parentheses.pdf"
+  }
+ ]
+}

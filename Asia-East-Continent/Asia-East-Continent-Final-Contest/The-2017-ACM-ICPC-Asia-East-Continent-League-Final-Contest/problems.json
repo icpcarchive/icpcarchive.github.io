@@ -1,0 +1,160 @@
+{
+ "id": 2026,
+ "name": "The 2017 ACM-ICPC Asia East Continent League Final Contest",
+ "url": "https://qoj.ac/contest/2026",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent",
+  "ICPC/Regionals/Asia East Continent/The 2017 ACM-ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2026&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11201,
+   "letter": "A",
+   "title": "Chat Group",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Chat Group.pdf"
+  },
+  {
+   "id": 11202,
+   "letter": "B",
+   "title": "Scapegoat",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Scapegoat.pdf"
+  },
+  {
+   "id": 11203,
+   "letter": "C",
+   "title": "Traffic Light",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Traffic Light.pdf"
+  },
+  {
+   "id": 11204,
+   "letter": "D",
+   "title": "Mr. Panda and Geometric Sequence",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Mr. Panda and Geometric Sequence.pdf"
+  },
+  {
+   "id": 11205,
+   "letter": "E",
+   "title": "Snakebird",
+   "statement_pages": [
+    6,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Snakebird.pdf"
+  },
+  {
+   "id": 11206,
+   "letter": "F",
+   "title": "Good Number",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Good Number.pdf"
+  },
+  {
+   "id": 11207,
+   "letter": "G",
+   "title": "Image Recognition",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Image Recognition.pdf"
+  },
+  {
+   "id": 11208,
+   "letter": "H",
+   "title": "Mr. Panda and Birthday Song",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Mr. Panda and Birthday Song.pdf"
+  },
+  {
+   "id": 11209,
+   "letter": "I",
+   "title": "PLAYERUNKNOWN’S BATTLEGROUNDS",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - PLAYERUNKNOWN’S BATTLEGROUNDS.pdf"
+  },
+  {
+   "id": 11210,
+   "letter": "J",
+   "title": "Straight Master",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Straight Master.pdf"
+  },
+  {
+   "id": 11211,
+   "letter": "K",
+   "title": "Downgrade",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Downgrade.pdf"
+  },
+  {
+   "id": 11212,
+   "letter": "L",
+   "title": "SOS",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - SOS.pdf"
+  },
+  {
+   "id": 11213,
+   "letter": "M",
+   "title": "World Cup",
+   "statement_pages": [
+    19,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - World Cup.pdf"
+  }
+ ]
+}

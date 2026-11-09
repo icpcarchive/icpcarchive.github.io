@@ -1,0 +1,126 @@
+{
+ "id": 2679,
+ "name": "Rocky Mountain 2016",
+ "url": "https://qoj.ac/contest/2679",
+ "categories": [
+  "ICPC/Regionals/North America/Rocky Mountain"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2679&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15938,
+   "letter": "A",
+   "title": "FizzBuzz",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - FizzBuzz.pdf"
+  },
+  {
+   "id": 15939,
+   "letter": "B",
+   "title": "Election",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Election.pdf"
+  },
+  {
+   "id": 15940,
+   "letter": "C",
+   "title": "Password Hacking",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Password Hacking.pdf"
+  },
+  {
+   "id": 15941,
+   "letter": "D",
+   "title": "Delivering Goods",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Delivering Goods.pdf"
+  },
+  {
+   "id": 15942,
+   "letter": "E",
+   "title": "Studying For Exams",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Studying For Exams.pdf"
+  },
+  {
+   "id": 15943,
+   "letter": "F",
+   "title": "Bumper-To-Bumper Traffic",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Bumper-To-Bumper Traffic.pdf"
+  },
+  {
+   "id": 15944,
+   "letter": "G",
+   "title": "Flow Shop",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Flow Shop.pdf"
+  },
+  {
+   "id": 15945,
+   "letter": "H",
+   "title": "Nice Numbers",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Nice Numbers.pdf"
+  },
+  {
+   "id": 15946,
+   "letter": "I",
+   "title": "Stacking Cups",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Stacking Cups.pdf"
+  },
+  {
+   "id": 15947,
+   "letter": "J",
+   "title": "Stack Construction",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Stack Construction.pdf"
+  }
+ ]
+}

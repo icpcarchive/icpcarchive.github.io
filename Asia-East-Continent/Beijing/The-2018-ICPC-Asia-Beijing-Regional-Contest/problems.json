@@ -1,0 +1,123 @@
+{
+ "id": 2004,
+ "name": "The 2018 ICPC Asia Beijing Regional Contest",
+ "url": "https://qoj.ac/contest/2004",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Beijing",
+  "ICPC/Regionals/Asia East Continent/The 2018 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2004&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9494,
+   "letter": "A",
+   "title": "Jin Yong’s Wukong Ranking List",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Jin Yong’s Wukong Ranking List.pdf"
+  },
+  {
+   "id": 9495,
+   "letter": "B",
+   "title": "Heshen's Account Book",
+   "statement_pages": [
+    1,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Heshen's Account Book.pdf"
+  },
+  {
+   "id": 9496,
+   "letter": "C",
+   "title": "Pythagorean triple",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Pythagorean triple.pdf"
+  },
+  {
+   "id": 9497,
+   "letter": "D",
+   "title": "Frog and Portal",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Frog and Portal.pdf"
+  },
+  {
+   "id": 9498,
+   "letter": "E",
+   "title": "Xor 2",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Xor 2.pdf"
+  },
+  {
+   "id": 9499,
+   "letter": "F",
+   "title": "The Kth Largest Value",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - The Kth Largest Value.pdf"
+  },
+  {
+   "id": 9500,
+   "letter": "G",
+   "title": "Solving Equations is Easy",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Solving Equations is Easy.pdf"
+  },
+  {
+   "id": 9501,
+   "letter": "H",
+   "title": "Approximate Matching",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Approximate Matching.pdf"
+  },
+  {
+   "id": 9502,
+   "letter": "I",
+   "title": "Palindromes",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Palindromes.pdf"
+  },
+  {
+   "id": 9503,
+   "letter": "J",
+   "title": "Rikka with Triangles",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Rikka with Triangles.pdf"
+  }
+ ]
+}

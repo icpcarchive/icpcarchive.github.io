@@ -1,0 +1,181 @@
+{
+ "id": 1792,
+ "name": "The 2021 ICPC Moscow Regional Contest",
+ "url": "https://qoj.ac/contest/1792",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Moscow Regional Contest / Moscow Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1792&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9281,
+   "letter": "A",
+   "title": "A Non-Palindromic Modification",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - A Non-Palindromic Modification.pdf"
+  },
+  {
+   "id": 9282,
+   "letter": "B",
+   "title": "Gleb and Liteyny Avenue",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Gleb and Liteyny Avenue.pdf"
+  },
+  {
+   "id": 9283,
+   "letter": "C",
+   "title": "Socks Drying",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Socks Drying.pdf"
+  },
+  {
+   "id": 9284,
+   "letter": "D",
+   "title": "Christmas Children Circle",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Christmas Children Circle.pdf"
+  },
+  {
+   "id": 9285,
+   "letter": "E",
+   "title": "Construct The Integer",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Construct The Integer.pdf"
+  },
+  {
+   "id": 9286,
+   "letter": "F",
+   "title": "Build the Non-Cactus",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Build the Non-Cactus.pdf"
+  },
+  {
+   "id": 9287,
+   "letter": "G",
+   "title": "Double Elimination",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Double Elimination.pdf"
+  },
+  {
+   "id": 9288,
+   "letter": "H",
+   "title": "Roman Palindromes",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Roman Palindromes.pdf"
+  },
+  {
+   "id": 9289,
+   "letter": "I",
+   "title": "1%-Euclidean",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - 1%-Euclidean.pdf"
+  },
+  {
+   "id": 9290,
+   "letter": "J",
+   "title": "Spectacular Ending",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Spectacular Ending.pdf"
+  },
+  {
+   "id": 9291,
+   "letter": "K",
+   "title": "Efficient Interception",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Efficient Interception.pdf"
+  },
+  {
+   "id": 9292,
+   "letter": "L",
+   "title": "FoodSberry",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - FoodSberry.pdf"
+  },
+  {
+   "id": 9293,
+   "letter": "M",
+   "title": "Fine Trip",
+   "statement_pages": [
+    19,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Fine Trip.pdf"
+  },
+  {
+   "id": 9294,
+   "letter": "N",
+   "title": "Integer Perimeter",
+   "statement_pages": [
+    20,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - Integer Perimeter.pdf"
+  },
+  {
+   "id": 9295,
+   "letter": "O",
+   "title": "Treeshop",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/O - Treeshop.pdf"
+  }
+ ]
+}

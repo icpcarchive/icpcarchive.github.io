@@ -1,0 +1,148 @@
+{
+ "id": 2261,
+ "name": "2018 Arab Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/2261",
+ "categories": [
+  "ICPC/Regionals/Africa and Arab/Arab Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2261&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 12620,
+   "letter": "A",
+   "title": "Awesome Shawarma",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Awesome Shawarma.pdf"
+  },
+  {
+   "id": 12621,
+   "letter": "B",
+   "title": "Baklava Tray",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Baklava Tray.pdf"
+  },
+  {
+   "id": 12622,
+   "letter": "C",
+   "title": "Coffee",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Coffee.pdf"
+  },
+  {
+   "id": 12623,
+   "letter": "D",
+   "title": "Dull Chocolates",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dull Chocolates.pdf"
+  },
+  {
+   "id": 12624,
+   "letter": "E",
+   "title": "Exciting Menus",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Exciting Menus.pdf"
+  },
+  {
+   "id": 12625,
+   "letter": "F",
+   "title": "Flipping El-fetiera",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Flipping El-fetiera.pdf"
+  },
+  {
+   "id": 12626,
+   "letter": "G",
+   "title": "Greatest Chicken Dish",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Greatest Chicken Dish.pdf"
+  },
+  {
+   "id": 12627,
+   "letter": "H",
+   "title": "Hawawshi Decryption",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hawawshi Decryption.pdf"
+  },
+  {
+   "id": 12628,
+   "letter": "I",
+   "title": "Ice-cream Knapsack",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Ice-cream Knapsack.pdf"
+  },
+  {
+   "id": 12629,
+   "letter": "J",
+   "title": "Journey to Jupiter",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Journey to Jupiter.pdf"
+  },
+  {
+   "id": 12630,
+   "letter": "K",
+   "title": "Khoshaf",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Khoshaf.pdf"
+  },
+  {
+   "id": 12631,
+   "letter": "L",
+   "title": "Looking for Taste",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Looking for Taste.pdf"
+  }
+ ]
+}

@@ -1,0 +1,817 @@
+<!DOCTYPE HTML PUBLIC "-//W3O//DTD W3 HTML 3.2//EN">
+<HTML>
+<HEAD>
+<meta charset="iso-8859-2">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+
+   <TITLE>CTU Open Contest 1997 - Zadání úloh</TITLE>
+   <META NAME="Description" CONTENT="ACM International Collegiate
+         Programming Contest, zadání úloh pražského kola (CTU Open) 1997.">
+   <META NAME="Keywords" CONTENT="ACM, Programming Contest, CTU Open">
+   <META NAME="Author" CONTENT="Martin Kačer, Boba Mannová">
+   <META NAME="Generator" CONTENT="hand made (using NEdit)">
+</HEAD>
+
+
+<BODY BGCOLOR="White">
+
+<!-- ***** klikaci mapy ***** -->
+
+<!-- linka s vyberem kodovani -->
+<!--
+<MAP NAME="map-czset">
+   <AREA SHAPE="Circle" COORDS="386,15,16" ALT="ISO-8859-2"
+   HREF="/iso2/97prg/problems.html">
+   <AREA SHAPE="Circle" COORDS="419,15,16" ALT="Windows 1250"
+   HREF="/1250/97prg/problems.html">
+   <AREA SHAPE="Circle" COORDS="452,15,16" ALT="IBM CP 852"
+   HREF="/852/97prg/problems.html">
+   <AREA SHAPE="Circle" COORDS="484,15,16" ALT="Macintosh EE"
+   HREF="/mac/97prg/problems.html">
+   <AREA SHAPE="Circle" COORDS="518,15,16" ALT="Ascii 7-bit"
+   HREF="/ascii/97prg/problems.html">
+   <AREA SHAPE="Rect" COORDS="518,19,580,31" ALT="vybrat kódování"
+   HREF="czech.html">
+   -->
+   <AREA SHAPE="Circle" COORDS="78,15,16" ALT="English Version"
+   HREF="problemsE.html">
+   <AREA SHAPE="Rect" COORDS="14,19,72,31" ALT="English Version"
+   HREF="problemsE.html">
+</MAP>
+
+
+
+<!-- ***** zahlavi s logem souteze ***** -->
+
+<CENTER>
+<P><TABLE BORDER=0><TR><TD>
+<IMG SRC="../img/counter.gif" ALT="ACM" WIDTH=128 HEIGHT=96>
+<TD><IMG SRC="../img/contest.gif" ALT="Programming Contest"
+width=424 height=96></TABLE>
+
+<IMG SRC="../img/line-czech-2.gif" WIDTH=592 HEIGHT=32 BORDER=0
+ALT="kódování češtiny" USEMAP="#map-czset">
+
+
+
+<!-- ***** ulohy ***** -->
+
+
+<P><TABLE WIDTH=600 BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR><TD>
+
+<P ALIGN="Center">Katedra počítačů ČVUT FEL &amp; Czech ACM Chapter
+
+<P ALIGN="Center">Soutěž v programování 1997
+
+
+
+<H2 ALIGN="Center">Cestovní kancelář ACMCZ</H2>
+
+<P>Po přechodu na tržní hospodářství začalo v&nbsp;našem státě vznikat
+velké množství společností podnikajících v&nbsp;různých oborech. Jedním
+z&nbsp;nejvýnosnějších oborů se stal cestovní ruch, především pak zájezdy
+do zahraničí.</P>
+
+<P>Jednou z&nbsp;nově založených cestovních kanceláří je i agentura
+<I>Amatérské cestování mezi cizokrajnými zvířátky (ACMCZ)</I>, která se
+snaží mezi konkurencí prosadit především díky svým originálním službám.</P>
+
+<P>Provoz takové cestovní kanceláře je ale velice náročný a majitele stojí
+vedení agendy mnoho času a nervů. Proto zakoupil nový výkonný osobní
+počítač, na který hodlá přesunout většinu organizační práce. Bohužel však
+stále nemá k&nbsp;dispozici potřebné programové vybavení. Vaším úkolem bude
+pomoci při vytváření několika základních programů nutných pro správný chod
+celé společnosti.</P>
+
+<P>Protože majitel kanceláře je v&nbsp;práci s&nbsp;počítači velmi zběhlý,
+není pro něj důležitá ani tak grafická stránka, jako spíš rychlost provádění
+všech výpočtů. Všechny programy, které máte vytvořit, tedy dostanou všechna
+potřebná data na svůj standardní vstup a potřebné výsledky mají poslat
+v&nbsp;předepsané formě na standardní výstup. Ve všech případech budou
+čísla na vstupu i na výstupu tak velká, aby se vešla do standardního typu
+<I>integer</I> nebo <I>int</I> (není-li stanoveno jinak).</P>
+
+<P>Přejeme všem mnoho úspěchů při plnění tohoto úkolu.</P>
+
+
+<P><IMG SRC="../img/line.gif" WIDTH=592 HEIGHT=32 BORDER=0>
+
+
+<H2 ALIGN="Center">Letiště</H2>
+
+<P>Při vykládání zavazadel cestujících používá naše cestovní kancelář
+<I>Supervýkonný ultrazdvihující natáčecí hydraulický ekologický
+pohyblivý elektrický nízkoplošinový vozíkový dopravník</I>
+SUN-HEPEN-VD-31789/48WQ, lidově zvaný též <I>ještěrka</I>. Na tento
+vozík se naloží část zavazadel a odveze se od letadla do prostoru
+určeného k&nbsp;naložení na nákladní automobil.</P>
+
+<P>Na letišti Guiliama Watese ve státě Muctonsofie je mezi přistávací
+dráhou a stanovištěm nákladních automobilů postaven poměrně úzký, ale
+velmi dlouhý průjezd, který je po obou stranách ohraničen vysokými zdmi.
+Přestože na to majitel cestovní kanceláře ACMCZ již několikrát písemně
+upozorňoval, je po celé délce tohoto průjezdu neustále nepořádek. Na
+všech možných i nemožných místech jsou různě poházené bedny, přístroje,
+vraky aut, letadel a počítačů a jiné nepotřebné předměty. Majitel letiště
+Guiliam Wates však veškerou kritiku odmítá s&nbsp;odůvodněním, že zatím
+bylo vždy možné projet.</P>
+
+<P>Jedinou změnou k&nbsp;lepšímu, která byla na letišti od roku 1981
+provedena, je to, že byla plocha průjezdu rozdělena na čtvercové díly,
+opticky zvýrazněné pomocí velkých čtvercových dlaždic. Všechny dlaždice
+jsou k&nbsp;sobě skládány celými stranami a jsou přesně tak velké, aby
+jedna volná dlaždice stačila na projetí ještěrky ve všech čtyřech směrech
+a také na její otočení o 90 stupňů. Průjezd je ve všech místech stejně
+široký, takže dlaždice vytvářejí obdélník o stranách <VAR>S</VAR> (kratší
+strana) a <VAR>L</VAR> (delší strana). Pomocí stacionární družice
+zakoupené vedením letiště speciálně k&nbsp;tomuto účelu je celá plocha
+každou hodinu snímkována a s&nbsp;pomocí počítače je registrováno, které
+dlaždice jsou neprůjezdné a které nikoli.</P>
+
+<P>Majitel kanceláře ACMCZ je s&nbsp;takovým stavem hrubě nespokojen,
+protože při průjezdu se ztratí mnoho času různým zatáčením a hledáním
+správné cesty. Také se velmi často řidičům stává, že vůbec nenajdou volný
+průjezd na druhou stranu a musí dlouhé desítky minut bloudit a čekat, až se
+některé místo uvolní. Právníkům ACMCZ se víceméně legálním způsobem
+podařilo získat několik okamžitých situací na průjezdové cestě, které
+byly zaznamenány družicí a počítačem. Protože by rádi dokázali majiteli
+letiště to, že v&nbsp;některých okamžicích vůbec nebylo možné projet od
+letadla k&nbsp;nákladnímu automobilu, potřebují program, který dokáže
+průchodnost takové cesty určit.</P>
+
+<H3>Specifikace vstupu</H3>
+
+<P>Vstup se skládá z&nbsp;<VAR>N</VAR> zadání. První řádek vstupního
+souboru obsahuje celé kladné číslo <VAR>N</VAR>. Dále následují
+jednotlivá zadání. Každé zadání obsahuje na prvním řádku celé kladné
+číslo <VAR>S</VAR>, <VAR>S &lt;= 10000</VAR>. Toto číslo udává počet
+dlaždic tvořících jednu řadu (tedy velikost kratší strany obdélníka
+měřenou na dlaždice). Dále následuje <VAR>L</VAR> řádků, na každém
+z&nbsp;nich je popsána jedna řada dlaždic (postupně, od začátku cesty).
+Každý takový řádek obsahuje <VAR>S</VAR> znaků, kde <TT>1</TT> znamená
+volnou dlaždici (je možno projet) a <TT>0</TT> obsazenou dlaždici (není
+možné projet). Počet řádků (a tedy délka celého průjezdu) není omezen.
+Každé zadání je ukončeno jedním prázdným řádkem. Prázdný řádek obsahuje
+pouze znak pro přechod na nový řádek.</P>
+
+<H3>Specifikace výstupu</H3>
+
+<P>Pro každé z&nbsp;<VAR>N</VAR> zadání musí program vypsat právě jeden
+řádek, na kterém bude věta <TT>Cesta je prujezdna.</TT>, jestliže je pro
+dané zadání možné projet z&nbsp;horní strany obdélníka na spodní, nebo věta
+<TT>Cesta neni prujezdna.</TT>, jestliže průjezd není žádným
+způsobem možný. Ještěrka se může pohybovat pouze po prázdných
+dlaždicích, přejíždět může pouze na sousední dlaždice a nesmí vyjet mimo
+cestu. Sousední dlaždice jsou pouze takové, které se dotýkají celou
+stranou a nikoli pouze vrcholem.</P>
+
+<H3>Příklad vstupu</H3>
+<PRE>
+3
+7
+0000110
+0111010
+0101010
+0101010
+1101110
+1000000
+1100000
+0100000
+
+10
+0010010000
+0100001111
+0100001101
+0111001000
+0000000111
+0000001010
+
+10
+0010010000
+0110000000
+0100001111
+0000001101
+0000011001
+0000001010
+0000000000
+</PRE>
+
+<H3>Příklad výstupu</H3>
+<PRE>
+Cesta je prujezdna.
+Cesta neni prujezdna.
+Cesta neni prujezdna.
+</PRE>
+
+
+<P><IMG SRC="../img/line.gif" WIDTH=592 HEIGHT=32 BORDER=0>
+
+
+<H2 ALIGN="Center">Termín</H2>
+
+<P>Každoročně pořádá agentura ACMCZ dovolenou na břehu Buflíkova jezera.
+Tyto zájezdy jsou zvláštní tím, že cestovní kancelář nezajišťuje žádný
+program a zákazníci tak nejsou ničím vázáni a mohou si dělat, co se jim
+zachce. Další výhodou takové akce je i nižší cena. Agentura připraví
+pouze chatičky a stany pro různé počty osob, zajistí jednoho nebo dva
+správce, jeden autobus a to jsou spolu s&nbsp;pronájmem tábora veškeré její
+náklady. Tábor si ACMCZ pronajímá od společnosti BSA (Buflíkova
+Stanovací Agentura), která má ovšem mnoho dalších zájemců, a tak může
+poskytnout prostory pouze na omezený počet dní.</P>
+
+<P>Aby mohla cestovní kancelář zvolit nejlepší termín pro rezervaci tábora,
+pořádá mezi svými zákazníky anketu. Cílem takového průzkumu je zjistit,
+kolik rekreantů by mělo zájem o účast na zmíněném zájezdu
+v&nbsp;jednotlivých dnech celé sezóny. Váš program má být schopen
+z&nbsp;výsledků této ankety určit nejvhodnější termín pro konání akce,
+tj. najít takové období, které netrvá více než je zadaný počet dnů a během
+něhož je maximální součet zájemců pro všechny dny. Období musí být souvislé,
+protože společnost BSA chce z&nbsp;pochopitelných důvodů minimalizovat počet
+střídání různých nájemců.</P>
+
+<H3>Specifikace vstupu</H3>
+
+<P>Vstup se skládá z&nbsp;<VAR>N</VAR> zadání. První řádek obsahuje celé
+kladné číslo <VAR>N</VAR>. Dále následují jednotlivá zadání. Každé zadání
+začíná jedním řádkem, který obsahuje celé kladné číslo <VAR>K</VAR>,
+<VAR>K &lt;= 1000</VAR>. Číslo <VAR>K</VAR> vyjadřuje maximální počet dní,
+na který je BSA ochotna tábor pronajmout. Na druhém řádku zadání je
+posloupnost celých nezáporných čísel, navzájem oddělených mezerou. Počet
+čísel není nijak omezen. Tato čísla nejsou nikdy vyšší než milion a
+reprezentují zájem o jednotlivé dny během celé sezóny. Za posledním číslem
+na řádku následuje bezprostředně znak přechodu na nový řádek, tj. nejsou
+za ním žádné mezery.</P>
+
+<H3>Specifikace výstupu</H3>
+
+<P>Pro každé zadání musí výstup obsahovat jediný řádek textu
+s&nbsp;větou: <TT>Nejvhodnejsi termin zacina <VAR>XX</VAR>. dnem.</TT>, kde
+<VAR>XX</VAR> je číslo prvního dne (dny jsou číslovany od začátku
+posloupnosti od jedné) takového souvislého období, pro které je součet
+zájemců ze všech dnů maximální a které netrvá déle než <VAR>K</VAR> dnů.
+Pokud má úloha více řešení, vypište první termín splňující zadání.</P>
+
+<H3>Příklad vstupu</H3>
+<PRE>
+3
+3
+6 2 3 2 9 2 1 1
+3
+1 1
+2
+1 1 2 1 3 2 8 1
+</PRE>
+
+<H3>Příklad výstupu</H3>
+<PRE>
+Nejvhodnejsi termin zacina 3. dnem.
+Nejvhodnejsi termin zacina 1. dnem.
+Nejvhodnejsi termin zacina 6. dnem.
+</PRE>
+
+
+<P><IMG SRC="../img/line.gif" WIDTH=592 HEIGHT=32 BORDER=0>
+
+
+<H2 ALIGN="Center">Překladač</H2>
+
+<P>Cestovní kancelář ACMCZ má samozřejmě mnoho konkurentů, ale největším
+z&nbsp;nich je zcela určitě <I>Nepolitická asociace pro turistická
+odvětví</I> (<I>NATO</I>), která mimo jiné vlastní veliké výpočetní
+středisko. Protože se majitel ACMCZ dozvěděl o plánech svého konkurenta,
+podplatil jednoho ze zaměstnanců střediska, aby mu získal zdrojové texty
+použitých programů. Zjistil, že většina výpočtů, které se ve výpočetním
+středisku provádějí, se týká budoucnosti něžného pohlaví na naší planetě.
+Protože výsledky těchto výpočtů jsou pro cestovní kancelář životně
+důležité, hodlá ACMCZ získané programy použít pro vlastní potřebu. Aby
+nemohl být nezákonně nabytý software zjištěn na disku počítače, budou se
+výpočty provádět s&nbsp;použitím programovatelného kapesního kalkulátoru.
+Bohužel, ukradené programy jsou psány výhradně v&nbsp;programovacím jazyce
+<B>miniBASIC</B> a kalkulátor umí pouze zásobníkový jazyk <B>miniFORTH</B>.
+Společnost by tedy potřebovala překladač mezi těmito dvěma jazyky.</P>
+
+<P>Příkazy miniBASICu jsou tyto:</P>
+<UL>
+<LI><TT>LET <I>prom</I>=<I>výraz</I></TT>, kde <I>prom</I> je identifikátor
+proměnné a <I>výraz</I> je aritmetický výraz. Příkaz přiřadí proměnné
+<I>prom</I> hodnotu aritmetického výrazu <I>výraz</I>.</LI>
+
+<LI><TT>PRINT <I>prom</I></TT>, kde <I>prom</I> je identifikátor proměnné.
+Příkaz vytiskne hodnotu proměnné <I>prom</I> a ukončí program.</LI>
+</UL>
+
+<P><I>Identifikátor proměnné</I> je jedno z&nbsp;písmen <TT>A</TT> až
+<TT>Z</TT>.</P>
+
+<P><I>Aritmetický výraz</I> je jedna z&nbsp;následujících možností:</P>
+
+<UL>
+<LI>číslo v&nbsp;desítkové soustavě,</LI>
+
+<LI>identifikátor proměnné,</LI>
+
+<LI>výraz utvořený z&nbsp;předchozích dvou možností za pomoci jednoho
+z&nbsp;operátorů <TT>+</TT> (plus), <TT>-</TT> (minus), <TT>*</TT> (krát),
+<TT>/</TT> (děleno) následujícím způsobem
+
+<UL>
+<LI><CODE>&lt;výraz&gt; ::= &lt;operand1&gt; &lt;operátor&gt;
+&lt;operand2&gt;}</CODE></LI>
+
+<LI><CODE>&lt;operand&gt; ::= &lt;číslo&gt; <I>nebo</I>
+&lt;identifikátor&gt;</CODE></LI></LI>
+</UL>
+</UL>
+
+<P>Program v&nbsp;miniBASICu se skládá z&nbsp;posloupnosti příkazů LET,
+za níž následuje jediný příkaz PRINT. Ten je posledním příkazem programu.
+Každý příkaz je uveden na samostatném řádku. Všimněte si, že každý výraz
+může obsahovat maximálně jeden operátor.</P>
+
+<P>Jazyk miniFORTH je jazyk zásobníkového počítače s&nbsp;těmito
+příkazy:</P>
+
+<UL>
+<LI><TT>:</TT> - začátek programu</LI>
+
+<LI><TT>;</TT> - konec programu</LI>
+
+<LI><TT><VAR>prom</VAR></TT> - uloží na vrchol zásobníku adresu proměnné
+<VAR>prom</VAR></LI>
+
+<LI><TT>@</TT> - provede dereferenci, tj. adresu proměnné na vrcholu zásobníku
+nahradí hodnotou této proměnné</LI>
+
+<LI><TT><VAR>const</VAR></TT> - uloží konstantu na vrchol zásobníku,
+<VAR>const</VAR> je zápis čísla v&nbsp;desítkové soustavě</LI>
+
+<LI><TT>+</TT> - sčítání</LI>
+
+<LI><TT>-</TT> - odčítání</LI>
+
+<LI><TT>*</TT> - násobení</LI>
+
+<LI><TT>/</TT> - dělení</LI>
+
+<LI><TT>.</TT> - vytiskne hodnotu na vrcholu zásobníku a celý zásobník
+vyprázdní</LI>
+</UL>
+
+<P>Aritmetické operace se provádějí vždy s&nbsp;hodnotami na vrcholu
+zásobníku (pravý operand je na vrcholu zásobníku, levý pod ním), výsledek
+je uložen opět na vrchol zásobníku a operandy jsou odstraněny. Příkazy
+programu jsou odděleny libovolným počtem mezer.</P>
+
+<H3>Specifikace vstupu</H3>
+
+<P>Vstup se skládá z&nbsp;<VAR>N</VAR> zadání. První řádek vstupního
+souboru obsahuje celé kladné číslo <VAR>N</VAR>. Dále následuje <VAR>N</VAR>
+programů v&nbsp;miniBASICu. Délka programu v&nbsp;miniBASICu není nijak
+omezena. Za posledním příkazem každého programu je jeden prázdný řádek.
+Prázdný řádek obsahuje pouze znak <I>'přechod na nový řádek'</I>.</P>
+
+<H3>Specifikace výstupu</H3>
+
+<P>Pro každé zadání musí výstup obsahovat právě jeden řádek textu, na
+kterém bude program v&nbsp;miniFORTHu ekvivalentní zadanému programu
+v&nbsp;miniBASICu. Programy jsou ekvivalentní, jestliže pro libovolné
+počáteční hodnoty proměnných produkují stejný výstup (na výstupu je
+stejná hodnota). Složitější výrazy můžete libovolně optimalizovat, není
+to však podmínkou.</P>
+
+<H3>Příklad vstupu</H3>
+<PRE>
+2
+LET A=12*A
+LET B=A-5
+LET C=67+B
+PRINT C
+
+LET D=A-B
+LET E=C+D
+LET F=D*E
+LET G=D/E
+PRINT G
+</PRE>
+
+<H3>Příklad výstupu</H3>
+<PRE>
+: 67 12 A @ * 5 - + . ;
+: A @ B @ - C @ A @ B @ - + / . ;
+</PRE>
+
+
+<P><IMG SRC="../img/line.gif" WIDTH=592 HEIGHT=32 BORDER=0>
+
+
+<H2 ALIGN="Center">Písařka</H2>
+
+<P>Sekretářka cestovní agentury musí psát mnoho různých dopisů: nabídky
+zájezdů, pozvánky, oznámení o změnách, poděkování a v&nbsp;neposlední řadě
+i omluvy za připálené jídlo, hotelový bazén v&nbsp;rekonstrukci nebo zavřenou
+internetovou kavárnu v&nbsp;místě pobytu. K&nbsp;psaní všech takových dopisů se
+v&nbsp;agentuře ACMCZ samozřejmě používá osobní počítač a textový editor
+Tornádo 713-111.</P>
+
+<P>Ředitel společnosti by chtěl své pohledné a mladé sekretářce práci co
+nejvíce usnadnit, protože by ji pochopitelně rád využíval také k&nbsp;jiným
+činnostem. Svůj návrh založil na skutečnosti, že slovní zásoba použitá
+ve všech dopisech, které píše sekretářka, je omezená. Není problém
+sestavit seznam všech slov, které se v&nbsp;takových dopisech vyskytují,
+a sekretářce potom bude stačit psát začátky těchto slov, čímž si může
+ušetřit mnoho písmen. Vaším úkolem je napsat program, který takový
+zkrácený text převede na jeho plnou verzi.</P>
+
+<H3>Specifikace vstupu</H3>
+
+<P>Vstup se skládá z <VAR>N</VAR> zadání. První řádek obsahuje
+celé kladné číslo <VAR>N</VAR>. Dále následují jednotlivá zadání.
+Každé zadání se skládá ze dvou částí. První část obsahuje slova,
+která sekretářka zná, druhá část začátky slov určené k&nbsp;doplnění.
+První řádek první části obsahuje celé kladné číslo <VAR>X</VAR>, udávající
+počet slov, která sekretářka zná. Následuje postupně <VAR>X</VAR> řádků,
+z&nbsp;nichž každý obsahuje právě jedno slovo. V&nbsp;tomto seznamu se žádné
+slovo nevyskytne více než jednou. První řádek druhé části obsahuje
+celé kladné číslo <VAR>Y</VAR> a za ním následuje postupně <VAR>Y</VAR> řádků,
+každý obsahuje jeden řetězec -- začátek slova, které má být doplněno.</P>
+
+<P>Každé slovo může být <VAR>1</VAR> až <VAR>100</VAR> znaků dlouhé, může obsahovat malá
+i velká písmena a číslice. Počet známých slov <VAR>X</VAR> je z&nbsp;intervalu
+<VAR>&lt;1,&nbsp;1000&gt;</VAR>, počet zadávaných slov <VAR>Y</VAR> je z&nbsp;intervalu
+<VAR>&lt;1,&nbsp;10000&gt;</VAR>. Velká a malá písmena jsou považována za
+různá.</P>
+
+<H3>Specifikace výstupu</H3>
+
+<P>Pro každý začátek slova musí výstup obsahovat právě jeden řádek
+textu. Je-li možné daný řetězec jednoznačně doplnit na existující
+slovo ze seznamu na začátku zadání, bude mít výstup tvar
+<TT>Doplneno slovo <VAR>XX</VAR>.</TT>, kde za písmena <VAR>XX</VAR> se samozřejmě
+dosadí úplný tvar slova. Pokud daným řetězcem začíná více různých
+slov, vypište na řádek větu <TT>Detekovana kolize.</TT> a pokud
+neexistuje žádné slovo, které by začínalo zadaným řetězcem, větu
+<TT>Slovo nelze doplnit.</TT>. Za doplnění se považuje i doplnění
+prázdného řetězce.</P>
+
+<H3>Příklad vstupu</H3>
+<PRE>
+1
+5
+skola
+skolnik
+skoda
+volkswagen
+voltamper
+10
+sko
+skod
+skop
+skoln
+skolni
+skolnikovo
+v
+volper
+volk
+volt
+</PRE>
+
+<H3>Příklad výstupu</H3>
+<PRE>
+Detekovana kolize.
+Doplneno slovo skoda.
+Slovo nelze doplnit.
+Doplneno slovo skolnik.
+Doplneno slovo skolnik.
+Slovo nelze doplnit.
+Detekovana kolize.
+Slovo nelze doplnit.
+Doplneno slovo volkswagen.
+Doplneno slovo voltamper.
+</PRE>
+
+
+<P><IMG SRC="../img/line.gif" WIDTH=592 HEIGHT=32 BORDER=0>
+
+
+<H2 ALIGN="Center">Lékař</H2>
+
+<P>Na ostrově Fujutimoru v&nbsp;Karibském moři se objevila epidemie nové,
+dříve zcela neznámé nemoci <I>Philuktirus Pendoxis</I> (filuktůra). Ačkoli
+tato nemoc není životu nebezpečná, je pro postiženého i jeho okolí velmi
+nepříjemná. Projevuje se totiž takovými příznaky, jako jsou malátnost,
+žaludeční nevolnost, časté depresivní stavy, nadměrná kousavost, prudké
+záchvaty zuřivosti a používání MS-Windows.</P>
+
+<P>Vědci zjistili, že filuktůra se může vyskytnout pouze u některých lidí,
+neboť většina jedinců je proti ní zcela imunní. Skutečnost, zda se daný
+člověk může nebo nemůže touto nemocí nakazit, lze spolehlivě zjistit
+mikrobiologickým testem, nazvaným podle svého objevitele, kterým, jak
+již zajisté tušíte, není nikdo jiný než řecký vědec Postolomlatos.
+Protože cestovní kancelář ACMCZ by nerada způsobila svým zákazníkům
+traumata spojená s&nbsp;filuktůrou, provádí před každým odjezdem na ostrov
+Fujutimoru vyšetření všech cestujících.</P>
+
+<P>Při Postolomlatově testu se vyšetřovanému pacientovi odebere vzorek
+krve, který se dále velmi složitým způsobem zpracovává. Tento postup
+přesahuje rámec tohoto textu, takže se o něm nebudeme blíže zmiňovat.
+Důležité však je, že do upraveného preparátu se přidá určitý počet
+bakterií Pendoxia Vulgaris, které filuktůru způsobují. Některé
+z&nbsp;těchto bakterií po krátké době odumřou díky přítomnosti obranných
+látek v&nbsp;krvi. A právě z&nbsp;poměru odumřelých a přeživších bakterií
+se stanovuje stupeň obranyschopnosti zkoumaného organismu.</P>
+
+<P>Speciálně školený laborant tedy připraví preparát, přidá do něj odměřené
+množství roztoku s&nbsp;bakteriemi, nanese jej na mikroskopické sklíčko,
+sejme CCD kamerou jeho obraz, upraví ho a digitalizuje pomocí softwaru
+dodaného výrobcem kamery. Výsledkem je černobílá bitmapa, obsahující bílé
+pixely pozadí a černé pixely znamenající části buňky. Buňka živé bakterie
+vypadá vždy jako souvislá černá oblast s&nbsp;jednou bílou dírou uprostřed,
+buňka odumřelé bakterie se jeví jako souvislá černá oblast bez díry.
+Můžeme předpokládat, že žádné dvě buňky se nedotýkají, že v&nbsp;bitmapě
+nejsou žádné jiné objekty než buňky a že všechny pixely mimo bitmapu jsou
+bílé, tj. všechny buňky leží v&nbsp;bitmapě celé a nedotýkají se jejího
+okraje.</P>
+
+<P>Vaším úkolem je napsat program, který z&nbsp;dané bitmapy určí, kolik je
+v&nbsp;preparátu buněk typu A (živé bakterie, tj. oblast s&nbsp;dírou) a
+kolik buněk typu B (odumřelé bakterie, tj. oblast bez díry). Pro účely
+úlohy provedeme neformální definici použitých pojmů:</P>
+
+<UL>
+<LI>Dva pixely spolu sousedí (dotýkají se) právě tehdy, pokud součet
+absolutních hodnot rozdílu jejich <VAR>X</VAR> a <VAR>Y</VAR> souřadnic
+je právě roven jedné.</LI>
+
+<LI>Cesta je posloupnost sousedících pixelů.</LI>
+
+<LI>Souvislá oblast je maximální množina stejnobarevných pixelů
+taková, že mezi každými dvěma pixely oblasti existuje cesta rovněž
+obsažená v&nbsp;této oblasti.</LI>
+
+<LI>Černá oblast <VAR>C</VAR> obsahuje díru právě tehdy, pokud existuje
+souvislá bílá oblast <VAR>D</VAR> (díra) taková, že každá cesta
+z&nbsp;<VAR>D</VAR> do jiné bílé oblasti vede vždy přes pixely oblasti
+<VAR>C</VAR>.</LI>
+</DL>
+
+<H3>Specifikace vstupu</H3>
+
+<P>Vstup se skládá z <VAR>N</VAR> zadání. První řádek vstupního souboru
+obsahuje celé kladné číslo <VAR>N</VAR>. Dále následují jednotlivá zadání,
+každé začíná řádkem obsahujícím dvě celá kladná čísla <VAR>R</VAR> a
+<VAR>S</VAR>, (<VAR>R &lt;= 1000000</VAR> a <VAR>S &lt;= 200</VAR>),
+reprezentující počet řádků a sloupců bitmapy. Dále následuje <VAR>R</VAR>
+řádků obsahujících samotnou bitmapu. Každý z&nbsp;těchto řádků obsahuje
+<VAR>S</VAR> znaků. Znak <TT>'X'</TT> znamená černý pixel, znak
+<TT>'.'</TT> bílý pixel. Poté ihned následuje znak
+'přechod na nový řádek'.</P>
+
+<H3>Specifikace výstupu</H3>
+
+<P>Pro každé zadání vypište jediný řádek, který bude obsahovat text
+<TT>Nalezeno <VAR>XX</VAR> bunek typu A a <VAR>YY</VAR> bunek typu B.</TT>,
+kde <VAR>XX</VAR> a <VAR>YY</VAR> nahradíte odpovídajícími čísly.</P>
+
+<H3>Příklad vstupu</H3>
+<PRE>
+1
+3 7
+XXX..XX
+X.X.XX.
+XXX....
+</PRE>
+
+<H3>Příklad výstupu</H3>
+<PRE>
+Nalezeno 1 bunek typu A a 1 bunek typu B.
+</PRE>
+
+
+<P><IMG SRC="../img/line.gif" WIDTH=592 HEIGHT=32 BORDER=0>
+
+
+<H2 ALIGN="Center">Farma</H2>
+
+<P>Nejdražší a bezkonkurenčně nejžádanější atrakcí cestovní kanceláře
+ACMCZ je bezesporu letecký zájezd do státu Komolu, kdesi uprostřed
+Tichého oceánu. Tento zájezd je proslaven především tím, že na tamější
+farmě Naopsi pěstují domorodci velmi vzácného a zvláštního živočicha,
+který se jmenuje Vertecholustosaurus a který se množí dělením. Za jeden
+den se vždy počet  živočichů zvětší <VAR>K</VAR>-krát. Poslední den
+dovolené je servírována specialita v&nbsp;podobě stehýnek
+z&nbsp;Vertecholustosaura. Jeho maso je velmi chutné, zdravé a výživné
+a samozřejmě také pěkně drahé.</P>
+
+<P>Farmu Naopsi však bohužel velmi často navštěvují různí zloději, kteří
+Vertecholustosaury kradou. Od zlodějů vykupují tyto vzácné živočichy
+překupníci, ale vždy výhradně po baleních o velikosti <VAR>X</VAR>.
+Jelikož jsou zloději velmi chamtiví, ukradnou vždy takové největší možné
+množství živočichů, které je celistvým násobkem čísla <VAR>X</VAR>, a
+zbytek nechají na farmě.</P>
+
+<P>Aby měla cestovní kancelář jistotu, že v&nbsp;poslední den jejího
+zájezdu bude dostatek Vertecholustosaurů na závěrečnou hostinu (a ještě
+po ní zbyde takové množství, aby nedošlo k&nbsp;ohrožení chovu), potřebuje
+vytvořit počítačový program, který dokáže spočítat, kolik živočichů
+v&nbsp;Naopsi zůstane, když víme, že farmu navštíví různé tlupy zlodějů
+celkem <VAR>C</VAR>-krát, a to v&nbsp;časech <VAR>T<SUB>1</SUB></VAR>,
+<VAR>T<SUB>2</SUB></VAR>, <VAR>...</VAR>, <VAR>T<SUB>C</SUB></VAR>.
+Vaším úkolem je napsat právě takový program, který zjistí, kolik živočichů
+zůstane na farmě po poslední "návštěvě" zlodějů, jestliže v&nbsp;čase
+<VAR>0</VAR> bylo na farmě <VAR>Z</VAR> živočichů.</P>
+
+<H3>Specifikace vstupu</H3>
+
+<P>Vstup se skládá z&nbsp;<VAR>N</VAR> zadání. První řádek vstupního
+souboru obsahuje celé kladné číslo <VAR>N</VAR>. Dále následují jednotlivá
+zadání. Každé zadání je tvořeno dvěma řádky čísel, ta jsou vždy oddělena
+právě jednou mezerou. Na prvním řádku jsou umístěna celá čísla <VAR>Z</VAR>,
+<VAR>K</VAR>, <VAR>X</VAR>, <VAR>C</VAR>, na druhém pak <VAR>C</VAR> čísel
+<VAR>T<SUB>1</SUB></VAR> až <VAR>T<SUB>C</SUB></VAR>, která tvoří
+neklesající posloupnost nezáporných celých čísel o délce <VAR>C</VAR>.
+Ta udávají časy příchodů zlodějských tlup ve dnech.</P>
+
+<P>Program může využít těchto omezení na obor hodnot:</P>
+
+<UL>
+<LI><VAR>1 &lt;= X &lt;= 40 000</VAR></LI>
+<LI><VAR>1 &lt;= K &lt;= 40 000</VAR></LI>
+<LI><VAR>0 &lt;= Z &lt;= 40 000</VAR></LI>
+<LI><VAR>1 &lt;= C &lt;= 100</VAR></LI>
+</UL>
+
+<H3>Specifikace výstupu</H3>
+
+<P>Pro každé zadání musí výstup obsahovat právě jeden řádek textu, na
+kterém bude věta <TT>Na farme zbylo <VAR>XX</VAR> zivocichu.</TT>, kde
+<VAR>XX</VAR> je počet Vertecholustosaurů, kteří zbyli po poslední
+návštěvě zlodějů.</P>
+
+<H3>Příklad vstupu</H3>
+<PRE>
+2
+6 2 10 1
+2
+1 2 20000 2
+4 15
+</PRE>
+
+<H3>Příklad výstupu</H3>
+<PRE>
+Na farme zbylo 4 zivocichu.
+Na farme zbylo 12768 zivocichu.
+</PRE>
+
+
+<P><IMG SRC="../img/line.gif" WIDTH=592 HEIGHT=32 BORDER=0>
+
+
+<H2 ALIGN="Center">Zavazadla</H2>
+
+<P>Cestovní kancelář ACMCZ zajišťuje při leteckých zájezdech svým klientům
+přepravu všech zavazadel, aniž by se o ně museli nějak starat. Pro
+zjednodušení své práce ukládá zavazadla všech cestujících do jednotných
+kontejnerů, které mají tvar rotačního válce s&nbsp;velmi malou výškou (jedná
+se tedy téměř o takzvanou <I>placku</I>). Společnost vlastní celkem 30
+kontejnerů a každý z&nbsp;nich má jinou velikost. Tyto kontejnery se naplní
+zavazadly, označí se nálepkou se jménem cílové stanice a naloží se do
+letadla. K&nbsp;nakládání se přitom používá letištní jeřáb, za který se musí
+platit drahý pronájem. Aby se ušetřilo na těchto poplatcích, vypravují
+se vždy tři letecké zájezdy současně.</P>
+
+<P>Jeřáb má při nakládání k&nbsp;dispozici tři plošiny, které jsou ovšem tak
+malé, že se na ně vejde pouze jediný kontejner. Naštěstí jsou kontejnery
+konstruovány tak, že se dají skládat na sebe (takže jich tímto způsobem
+můžeme na jednu plošinu umístit i více). Při pokládání musíme dávat
+velký pozor na to, aby vždy ležel menší kontejner na větším. Jinak by
+totiž mohlo dojít k&nbsp;jejich deformaci, a tím i k&nbsp;možnému poškození
+zavazadel cestujících. A taková dáma v&nbsp;letech se spoustou vlivných
+přátel, rozlícená tím, že se jí při přepravě do alpského lyžařského
+letoviska pomačkala její oblíbená večerní toaleta, to není nic
+příjemného.</P>
+
+<P>Na začátku nakládky jsou vždy všechny kontejnery položeny na jedné
+plošině. Největší je úplně dole, nejmenší nahoře. Prvním úkolem jeřábníka
+je rozdělit tyto kontejnery podle jejich cílové stanice. Během celého
+manévru (stejně tak jako po jeho skončení) se nesmí nikdy ocitnout větší
+kontejner na menším. Vaším úkolem je určit, jaký nejmenší počet přesunů
+musí jeřábník provést, aby rozdělil kontejnery na jednotlivé plošiny tak,
+že na každé z&nbsp;nich budou ležet kontejnery určené pro jedno cílové
+místo.</P>
+
+<H3>Specifikace vstupu</H3>
+
+<P>První řádek obsahuje celé kladné číslo <VAR>N</VAR> udávající počet
+zadaných úloh. Následuje <VAR>N</VAR> řádků definujících jednotlivé úlohy.
+Každá z&nbsp;nich je zadána počtem kontejnerů <VAR>X</VAR> a dále
+<VAR>X</VAR> čísly z&nbsp;množiny <VAR>{0, 1, 2}</VAR>, která označují,
+kam se mají kontejnery dopravit. Cílové stanice jsou zadány postupně podle
+velikosti počínaje spodním (největším) kontejnerem. Všechna čísla jsou od
+sebe oddělena mezerou, číslo <VAR>X</VAR> nebude nikdy větší než
+<VAR>30</VAR>.</P>
+
+<H3>Specifikace výstupu</H3>
+
+<P>Pro každou úlohu program vygeneruje právě jeden řádek, který bude
+obsahovat větu <TT>Je treba <VAR>XX</VAR> presunu.</TT>, kde místo
+<VAR>XX</VAR> bude číslo udávající minimální počet přesunů, který je
+nutný pro takové rozdělení, aby všechny kontejnery určené do stejné
+cílové stanice ležely vždy na jedné plošině a aby na takové plošině
+nebyly žádné kontejnery určené pro stanici jinou.</P>
+
+<H3>Příklad vstupu</H3>
+<PRE>
+3
+5 1 1 1 1 1
+2 1 2
+3 0 1 1
+</PRE>
+
+<H3>Příklad výstupu</H3>
+<PRE>
+Je treba 0 presunu.
+Je treba 1 presunu.
+Je treba 3 presunu.
+</PRE>
+
+
+<P><IMG SRC="../img/line.gif" WIDTH=592 HEIGHT=32 BORDER=0>
+
+
+<H2 ALIGN="Center">Soutěž</H2>
+
+<P>Jedním z&nbsp;nejžádanějších zájezdů pořadaných cestovní kanceláří ACMCZ
+je poznávací výlet spojený s&nbsp;účastí na soutěži v&nbsp;programování,
+která se koná každoročně v&nbsp;Praze. Pravidla této soutěže jistě všichni
+znáte, takže je zde nemusíme uvádět.</P>
+
+<P>Adam a Karel se rozhodli letos tohoto zájezdu zúčastnit a chtěli by na
+soutěži uspět co nejlépe. Vymysleli proto novou strategii: Adam bude
+všechny programy pouze analyzovat, Karel je bude pouze kódovat (tj.
+zapisovat do počítače v&nbsp;programovacím jazyce miniFORTH). Začne-li
+jeden z&nbsp;nich pracovat na úloze, vždy svou část úkolu dokončí, než
+začne pracovat na jiné, tj. nepracuje nikdy na dvou úlohách současně, ani
+svou práci nepřerušuje. Karel nemůže začít úlohu kódovat dříve než ji Adam
+zanalyzuje.</P>
+
+<H3>Specifikace vstupu</H3>
+
+<P>První řádek vstupního souboru obsahuje celé kladné číslo <VAR>N</VAR>
+znamenající počet zadání. Následuje <VAR>N</VAR> bloků, každý pro jedno
+zadání. Každý blok začíná řádkem obsahujícím celé kladné číslo <VAR>M</VAR>
+(<VAR>M &lt;= 100000</VAR>), které reprezentuje počet úloh, které mají Adam
+s&nbsp;Karlem vyřešit. Dále následuje <VAR>M</VAR> řádek, každá z&nbsp;nich
+náleží jedné úloze a obsahuje dvě celá kladná čísla <VAR>A</VAR> a
+<VAR>B</VAR> (<VAR>A,B &lt;= 1000000</VAR>) udávající postupně časy
+v&nbsp;minutách potřebné na analýzu a na kódování dané úlohy.</P>
+
+<H3>Specifikace výstupu</H3>
+
+<P>Pro každé zadání vypište jeden řádek ve formátu: <TT>Adam s Karlem budou
+hotovi nejdrive za <VAR>XX</VAR> minut.</TT>, kde <VAR>XX</VAR> nahraďte
+odpovídajícím časem v&nbsp;minutách. Tento čas by měl udávat minimální dobu,
+za kterou mohou mít Adam a Karel vyřešeny všechny úlohy při dodržení všech
+uvedených podmínek.</P>
+
+<H3>Příklad vstupu</H3>
+<PRE>
+1
+3
+4 5
+2 1
+1 4
+</PRE>
+
+<H3>Příklad výstupu</H3>
+<PRE>
+Adam s Karlem budou hotovi nejdrive za 11 minut.
+</PRE>
+
+</TABLE>
+
+
+<!-- ***** konec stranky (s pocitadlem pristupu) ***** -->
+
+<P><IMG SRC="../img/line.gif" WIDTH=592 HEIGHT=32 BORDER=0>
+<!--
+<P><TABLE BORDER=0>
+<TR><TD>Na těchto stránkách jste návštěvníkem číslo
+<TD><IMG SRC="http://hpk.felk.cvut.cz/cgi-bin/contest/counter.cgi?97prg"
+WIDTH=128 HEIGHT=48>
+<TD>od 19.&nbsp;září 1999.
+</TABLE>
+-->
+</CENTER>
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,169 @@
+{
+ "id": 1118,
+ "name": "Mid-Atlantic USA 2022 (Div. 1)",
+ "url": "https://qoj.ac/contest/1118",
+ "categories": [
+  "ICPC/Regionals/North America/Mid-Atlantic USA",
+  "ICPC/Regionals/North America/Southeast USA",
+  "ICPC/Regionals/North America/South Central USA"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1118&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1118&r=1"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1118&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5591,
+   "letter": "A",
+   "title": "Fading Wind",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Fading Wind.pdf"
+  },
+  {
+   "id": 5585,
+   "letter": "B",
+   "title": "Creative Accounting",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Creative Accounting.pdf"
+  },
+  {
+   "id": 5582,
+   "letter": "C",
+   "title": "Chocolate Chip Fabrication",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Chocolate Chip Fabrication.pdf"
+  },
+  {
+   "id": 5584,
+   "letter": "D",
+   "title": "Counting Satellites",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Counting Satellites.pdf"
+  },
+  {
+   "id": 5590,
+   "letter": "E",
+   "title": "Exponent Exchange",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Exponent Exchange.pdf"
+  },
+  {
+   "id": 5592,
+   "letter": "F",
+   "title": "Family Visits",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Family Visits.pdf"
+  },
+  {
+   "id": 5588,
+   "letter": "G",
+   "title": "Eroding Pillars",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Eroding Pillars.pdf"
+  },
+  {
+   "id": 5604,
+   "letter": "H",
+   "title": "Triangle Containment",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Triangle Containment.pdf"
+  },
+  {
+   "id": 5583,
+   "letter": "I",
+   "title": "Color Tubes",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Color Tubes.pdf"
+  },
+  {
+   "id": 5603,
+   "letter": "J",
+   "title": "Three Dice",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Three Dice.pdf"
+  },
+  {
+   "id": 5597,
+   "letter": "K",
+   "title": "Lone Knight",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Lone Knight.pdf"
+  },
+  {
+   "id": 5580,
+   "letter": "L",
+   "title": "Branch Manager",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Branch Manager.pdf"
+  },
+  {
+   "id": 5577,
+   "letter": "M",
+   "title": "Alchemy",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Alchemy.pdf"
+  }
+ ]
+}

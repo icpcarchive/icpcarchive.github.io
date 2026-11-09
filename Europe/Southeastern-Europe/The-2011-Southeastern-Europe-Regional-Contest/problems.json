@@ -1,0 +1,126 @@
+{
+ "id": 2706,
+ "name": "The 2011 Southeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2706",
+ "categories": [
+  "ICPC/Regionals/Europe/Southeastern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2706&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15760,
+   "letter": "A",
+   "title": "Secret — MAX",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Secret — MAX.pdf"
+  },
+  {
+   "id": 15761,
+   "letter": "B",
+   "title": "Safety Grade",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Safety Grade.pdf"
+  },
+  {
+   "id": 15762,
+   "letter": "C",
+   "title": "Search by template",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Search by template.pdf"
+  },
+  {
+   "id": 15763,
+   "letter": "D",
+   "title": "Roots Intervals",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Roots Intervals.pdf"
+  },
+  {
+   "id": 15764,
+   "letter": "E",
+   "title": "Palindromic Dates",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Palindromic Dates.pdf"
+  },
+  {
+   "id": 15765,
+   "letter": "F",
+   "title": "Post Offices",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Post Offices.pdf"
+  },
+  {
+   "id": 15766,
+   "letter": "G",
+   "title": "Choosing a camera",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Choosing a camera.pdf"
+  },
+  {
+   "id": 15767,
+   "letter": "H",
+   "title": "Road Planner",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Road Planner.pdf"
+  },
+  {
+   "id": 15768,
+   "letter": "I",
+   "title": "Term Generator",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Term Generator.pdf"
+  },
+  {
+   "id": 15769,
+   "letter": "J",
+   "title": "Painting",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Painting.pdf"
+  }
+ ]
+}

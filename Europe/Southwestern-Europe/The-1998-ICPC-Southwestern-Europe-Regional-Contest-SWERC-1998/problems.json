@@ -1,0 +1,115 @@
+{
+ "id": 3645,
+ "name": "The 1998 ICPC Southwestern Europe Regional Contest (SWERC 1998)",
+ "url": "https://qoj.ac/contest/3645",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3645&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19780,
+   "letter": "A",
+   "title": "Optimal Programs",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Optimal Programs.pdf"
+  },
+  {
+   "id": 19796,
+   "letter": "B",
+   "title": "The Die Is Cast",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - The Die Is Cast.pdf"
+  },
+  {
+   "id": 19781,
+   "letter": "C",
+   "title": "It's not a Bug, it's a Feature!",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - It's not a Bug, it's a Feature!.pdf"
+  },
+  {
+   "id": 19782,
+   "letter": "D",
+   "title": "Reflections",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Reflections.pdf"
+  },
+  {
+   "id": 19783,
+   "letter": "E",
+   "title": "Going in Circles on Alpha Centauri",
+   "statement_pages": [
+    10,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Going in Circles on Alpha Centauri.pdf"
+  },
+  {
+   "id": 19784,
+   "letter": "F",
+   "title": "Blowing Fuses",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Blowing Fuses.pdf"
+  },
+  {
+   "id": 19785,
+   "letter": "G",
+   "title": "Fast Food",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Fast Food.pdf"
+  },
+  {
+   "id": 19786,
+   "letter": "H",
+   "title": "Sorting Slides",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Sorting Slides.pdf"
+  },
+  {
+   "id": 19787,
+   "letter": "I",
+   "title": "Single-Player Games",
+   "statement_pages": [
+    19,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Single-Player Games.pdf"
+  }
+ ]
+}

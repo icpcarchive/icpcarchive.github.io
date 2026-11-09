@@ -1,0 +1,148 @@
+{
+ "id": 1045,
+ "name": "The 2022 ICPC Asia Seoul Regional Contest",
+ "url": "https://qoj.ac/contest/1045",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Korea"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1045&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5077,
+   "letter": "A",
+   "title": "Card Game",
+   "statement_pages": [
+    2,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Card Game.pdf"
+  },
+  {
+   "id": 5078,
+   "letter": "B",
+   "title": "Castle Design",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Castle Design.pdf"
+  },
+  {
+   "id": 5079,
+   "letter": "C",
+   "title": "Empty Quadrilaterals",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Empty Quadrilaterals.pdf"
+  },
+  {
+   "id": 5080,
+   "letter": "D",
+   "title": "Folding Stick",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Folding Stick.pdf"
+  },
+  {
+   "id": 5081,
+   "letter": "E",
+   "title": "Forbidden Turns",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Forbidden Turns.pdf"
+  },
+  {
+   "id": 5082,
+   "letter": "F",
+   "title": "Frog Jump",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Frog Jump.pdf"
+  },
+  {
+   "id": 5083,
+   "letter": "G",
+   "title": "Linear Regression",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Linear Regression.pdf"
+  },
+  {
+   "id": 5084,
+   "letter": "H",
+   "title": "Longest Substring",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Longest Substring.pdf"
+  },
+  {
+   "id": 5085,
+   "letter": "I",
+   "title": "Palindrome Type",
+   "statement_pages": [
+    19,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Palindrome Type.pdf"
+  },
+  {
+   "id": 5086,
+   "letter": "J",
+   "title": "Parentheses Tree",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Parentheses Tree.pdf"
+  },
+  {
+   "id": 5087,
+   "letter": "K",
+   "title": "Shuffle Game",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Shuffle Game.pdf"
+  },
+  {
+   "id": 5088,
+   "letter": "L",
+   "title": "Two Choreographies",
+   "statement_pages": [
+    24,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Two Choreographies.pdf"
+  }
+ ]
+}

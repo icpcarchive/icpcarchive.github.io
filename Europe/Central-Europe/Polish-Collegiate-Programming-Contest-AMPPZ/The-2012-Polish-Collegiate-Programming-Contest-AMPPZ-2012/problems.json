@@ -1,0 +1,141 @@
+{
+ "id": 1448,
+ "name": "The 2012 Polish Collegiate Programming Contest (AMPPZ 2012)",
+ "url": "https://qoj.ac/contest/1448",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/Polish Collegiate Programming Contest (AMPPZ)"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1448&r=0"
+  },
+  {
+   "text": "Statements (pl)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1448&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11569,
+   "letter": "A",
+   "title": "Vending Machine",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Vending Machine.pdf"
+  },
+  {
+   "id": 11570,
+   "letter": "B",
+   "title": "Bus Trip",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bus Trip.pdf"
+  },
+  {
+   "id": 11571,
+   "letter": "C",
+   "title": "Sequence",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Sequence.pdf"
+  },
+  {
+   "id": 11572,
+   "letter": "D",
+   "title": "DNA",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - DNA.pdf"
+  },
+  {
+   "id": 11573,
+   "letter": "E",
+   "title": "Evaluation of an Expression",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Evaluation of an Expression.pdf"
+  },
+  {
+   "id": 11574,
+   "letter": "F",
+   "title": "Formula One",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Formula One.pdf"
+  },
+  {
+   "id": 11575,
+   "letter": "G",
+   "title": "Save the Dinosaurs",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Save the Dinosaurs.pdf"
+  },
+  {
+   "id": 11576,
+   "letter": "H",
+   "title": "Hydra",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hydra.pdf"
+  },
+  {
+   "id": 11577,
+   "letter": "I",
+   "title": "Inversions",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Inversions.pdf"
+  },
+  {
+   "id": 11578,
+   "letter": "J",
+   "title": "Do It Tomorrow",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Do It Tomorrow.pdf"
+  },
+  {
+   "id": 11579,
+   "letter": "K",
+   "title": "Rabbits",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Rabbits.pdf"
+  }
+ ]
+}

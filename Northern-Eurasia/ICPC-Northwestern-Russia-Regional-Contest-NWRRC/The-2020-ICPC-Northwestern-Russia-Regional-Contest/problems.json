@@ -1,0 +1,174 @@
+{
+ "id": 2813,
+ "name": "The 2020 ICPC Northwestern Russia Regional Contest",
+ "url": "https://qoj.ac/contest/2813",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Northwestern Russia Regional Contest (NWRRC) / Northern Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2813&r=0"
+  },
+  {
+   "text": "Tutorials (ru)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2813&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16922,
+   "letter": "A",
+   "title": "Archivist",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Archivist.pdf"
+  },
+  {
+   "id": 16923,
+   "letter": "B",
+   "title": "Bicycle",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bicycle.pdf"
+  },
+  {
+   "id": 16924,
+   "letter": "C",
+   "title": "Corrupted Sort",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Corrupted Sort.pdf"
+  },
+  {
+   "id": 16925,
+   "letter": "D",
+   "title": "Display",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Display.pdf"
+  },
+  {
+   "id": 16926,
+   "letter": "E",
+   "title": "Easy Compare-and-Set",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Easy Compare-and-Set.pdf"
+  },
+  {
+   "id": 16927,
+   "letter": "F",
+   "title": "Futures Market Trends",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Futures Market Trends.pdf"
+  },
+  {
+   "id": 16928,
+   "letter": "G",
+   "title": "Grammar Path",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Grammar Path.pdf"
+  },
+  {
+   "id": 16929,
+   "letter": "H",
+   "title": "Heroes of Coin Flipping",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Heroes of Coin Flipping.pdf"
+  },
+  {
+   "id": 16930,
+   "letter": "I",
+   "title": "Integer Square",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Integer Square.pdf"
+  },
+  {
+   "id": 16931,
+   "letter": "J",
+   "title": "Joint Password Storage",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joint Password Storage.pdf"
+  },
+  {
+   "id": 16932,
+   "letter": "K",
+   "title": "Keys and Locks Boolean Logic",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Keys and Locks Boolean Logic.pdf"
+  },
+  {
+   "id": 16933,
+   "letter": "L",
+   "title": "Lost Permutation",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lost Permutation.pdf"
+  },
+  {
+   "id": 16934,
+   "letter": "M",
+   "title": "Mind the Gap",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mind the Gap.pdf"
+  },
+  {
+   "id": 16935,
+   "letter": "N",
+   "title": "Nunchucks Shop",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - Nunchucks Shop.pdf"
+  }
+ ]
+}

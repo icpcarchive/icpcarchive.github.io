@@ -1,0 +1,104 @@
+{
+ "id": 3623,
+ "name": "The 1999 ACM ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/3623",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3623&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19687,
+   "letter": "A",
+   "title": "Splitting Peas",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Splitting Peas.pdf"
+  },
+  {
+   "id": 19688,
+   "letter": "B",
+   "title": "Love You, Disney World",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Love You, Disney World.pdf"
+  },
+  {
+   "id": 19689,
+   "letter": "C",
+   "title": "Chess x Tetris",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Chess x Tetris.pdf"
+  },
+  {
+   "id": 19690,
+   "letter": "D",
+   "title": "Dungeon of Doom",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dungeon of Doom.pdf"
+  },
+  {
+   "id": 19691,
+   "letter": "E",
+   "title": "Papergirl Paradise",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Papergirl Paradise.pdf"
+  },
+  {
+   "id": 19692,
+   "letter": "F",
+   "title": "Basically Boolean",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Basically Boolean.pdf"
+  },
+  {
+   "id": 19693,
+   "letter": "G",
+   "title": "Bits of Trinity",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Bits of Trinity.pdf"
+  },
+  {
+   "id": 19694,
+   "letter": "H",
+   "title": "Land Lords",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Land Lords.pdf"
+  }
+ ]
+}

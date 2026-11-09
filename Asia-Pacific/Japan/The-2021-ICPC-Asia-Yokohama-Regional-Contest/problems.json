@@ -1,0 +1,137 @@
+{
+ "id": 912,
+ "name": "The 2021 ICPC Asia Yokohama Regional Contest",
+ "url": "https://qoj.ac/contest/912",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=912&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3794,
+   "letter": "A",
+   "title": "Loop of Chocolate",
+   "statement_pages": [
+    2,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Loop of Chocolate.pdf"
+  },
+  {
+   "id": 3795,
+   "letter": "B",
+   "title": "Lottery Fun Time",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Lottery Fun Time.pdf"
+  },
+  {
+   "id": 3796,
+   "letter": "C",
+   "title": "Reversible Compression",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Reversible Compression.pdf"
+  },
+  {
+   "id": 3797,
+   "letter": "D",
+   "title": "Wireless Communication Network",
+   "statement_pages": [
+    9,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Wireless Communication Network.pdf"
+  },
+  {
+   "id": 3798,
+   "letter": "E",
+   "title": "Planning Railroad Discontinuation",
+   "statement_pages": [
+    12,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Planning Railroad Discontinuation.pdf"
+  },
+  {
+   "id": 3799,
+   "letter": "F",
+   "title": "It's Surely Complex",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - It's Surely Complex.pdf"
+  },
+  {
+   "id": 3800,
+   "letter": "G",
+   "title": "Genealogy of Puppets",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Genealogy of Puppets.pdf"
+  },
+  {
+   "id": 3801,
+   "letter": "H",
+   "title": "Cancer DNA",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Cancer DNA.pdf"
+  },
+  {
+   "id": 3802,
+   "letter": "I",
+   "title": "“Even” Division",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - “Even” Division.pdf"
+  },
+  {
+   "id": 3803,
+   "letter": "J",
+   "title": "The Cross Covers Everything",
+   "statement_pages": [
+    24,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - The Cross Covers Everything.pdf"
+  },
+  {
+   "id": 3804,
+   "letter": "K",
+   "title": "Distributing the Treasure",
+   "statement_pages": [
+    26,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Distributing the Treasure.pdf"
+  }
+ ]
+}

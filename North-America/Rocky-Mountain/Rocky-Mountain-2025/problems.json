@@ -1,0 +1,102 @@
+{
+ "id": 2796,
+ "name": "Rocky Mountain 2025",
+ "url": "https://qoj.ac/contest/2796",
+ "categories": [
+  "ICPC/Regionals/North America/Rocky Mountain"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 15863,
+   "letter": "A",
+   "title": "Adrift At Sea",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Adrift At Sea.pdf"
+  },
+  {
+   "id": 15864,
+   "letter": "B",
+   "title": "Buying Jerseys",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Buying Jerseys.pdf"
+  },
+  {
+   "id": 15865,
+   "letter": "C",
+   "title": "Conveyor Belt Sushi",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Conveyor Belt Sushi.pdf"
+  },
+  {
+   "id": 15866,
+   "letter": "D",
+   "title": "Corporate Retreat",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Corporate Retreat.pdf"
+  },
+  {
+   "id": 15867,
+   "letter": "E",
+   "title": "Draft Lottery",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Draft Lottery.pdf"
+  },
+  {
+   "id": 15868,
+   "letter": "F",
+   "title": "Energy Usage",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Energy Usage.pdf"
+  },
+  {
+   "id": 15869,
+   "letter": "G",
+   "title": "Genies",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Genies.pdf"
+  },
+  {
+   "id": 15870,
+   "letter": "H",
+   "title": "Hexadecimal Confusion",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Hexadecimal Confusion.pdf"
+  },
+  {
+   "id": 15871,
+   "letter": "I",
+   "title": "Poetic Tournament",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Poetic Tournament.pdf"
+  },
+  {
+   "id": 15872,
+   "letter": "J",
+   "title": "Spies vs. Spies",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Spies vs. Spies.pdf"
+  },
+  {
+   "id": 15873,
+   "letter": "K",
+   "title": "Team Practice",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Team Practice.pdf"
+  },
+  {
+   "id": 15874,
+   "letter": "L",
+   "title": "Video Games",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Video Games.pdf"
+  },
+  {
+   "id": 15875,
+   "letter": "M",
+   "title": "What Time Is It Mr. Fox?",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - What Time Is It Mr. Fox_.pdf"
+  }
+ ]
+}

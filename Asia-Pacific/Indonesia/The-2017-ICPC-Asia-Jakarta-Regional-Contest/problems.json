@@ -1,0 +1,95 @@
+{
+ "id": 2347,
+ "name": "The 2017 ICPC Asia Jakarta Regional Contest",
+ "url": "https://qoj.ac/contest/2347",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Indonesia"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 13179,
+   "letter": "A",
+   "title": "Winning ICPC",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Winning ICPC.pdf"
+  },
+  {
+   "id": 13180,
+   "letter": "B",
+   "title": "Travelling Businessmen Problem",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Travelling Businessmen Problem.pdf"
+  },
+  {
+   "id": 13181,
+   "letter": "C",
+   "title": "Non-Interactive Guessing Number",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Non-Interactive Guessing Number.pdf"
+  },
+  {
+   "id": 13182,
+   "letter": "D",
+   "title": "Make a Forest",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Make a Forest.pdf"
+  },
+  {
+   "id": 13183,
+   "letter": "E",
+   "title": "Parks of Jakarta",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Parks of Jakarta.pdf"
+  },
+  {
+   "id": 13184,
+   "letter": "F",
+   "title": "Random Number Generator",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Random Number Generator.pdf"
+  },
+  {
+   "id": 13185,
+   "letter": "G",
+   "title": "National Disaster: Two Towers",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - National Disaster_ Two Towers.pdf"
+  },
+  {
+   "id": 13186,
+   "letter": "H",
+   "title": "ANTS",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - ANTS.pdf"
+  },
+  {
+   "id": 13187,
+   "letter": "I",
+   "title": "XEN 3166",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - XEN 3166.pdf"
+  },
+  {
+   "id": 13188,
+   "letter": "J",
+   "title": "Meeting",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Meeting.pdf"
+  },
+  {
+   "id": 13189,
+   "letter": "K",
+   "title": "Permutation",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Permutation.pdf"
+  },
+  {
+   "id": 13190,
+   "letter": "L",
+   "title": "Sacred Scarecrows",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Sacred Scarecrows.pdf"
+  }
+ ]
+}

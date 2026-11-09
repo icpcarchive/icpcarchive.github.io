@@ -1,0 +1,159 @@
+{
+ "id": 4538,
+ "name": "The 2022 ICPC Asia Ho Chi Minh City Regional",
+ "url": "https://qoj.ac/contest/4538",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Vietnam"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=4538&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 22828,
+   "letter": "A",
+   "title": "Aqua",
+   "statement_pages": [
+    1,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Aqua.pdf"
+  },
+  {
+   "id": 22829,
+   "letter": "B",
+   "title": "Binary Assignment",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Binary Assignment.pdf"
+  },
+  {
+   "id": 22830,
+   "letter": "C",
+   "title": "Changing Seats",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Changing Seats.pdf"
+  },
+  {
+   "id": 22831,
+   "letter": "D",
+   "title": "Date, date & date!",
+   "statement_pages": [
+    9,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Date, date & date!.pdf"
+  },
+  {
+   "id": 22832,
+   "letter": "E",
+   "title": "Emotional Damage",
+   "statement_pages": [
+    13,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Emotional Damage.pdf"
+  },
+  {
+   "id": 22833,
+   "letter": "F",
+   "title": "Fabulous Activity",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fabulous Activity.pdf"
+  },
+  {
+   "id": 22834,
+   "letter": "G",
+   "title": "Goal-line Technology",
+   "statement_pages": [
+    19,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Goal-line Technology.pdf"
+  },
+  {
+   "id": 22835,
+   "letter": "H",
+   "title": "Hardest Problem",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hardest Problem.pdf"
+  },
+  {
+   "id": 22836,
+   "letter": "I",
+   "title": "Inversion",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Inversion.pdf"
+  },
+  {
+   "id": 22837,
+   "letter": "J",
+   "title": "Joining Letters",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joining Letters.pdf"
+  },
+  {
+   "id": 22838,
+   "letter": "K",
+   "title": "K Paths",
+   "statement_pages": [
+    29,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - K Paths.pdf"
+  },
+  {
+   "id": 22839,
+   "letter": "L",
+   "title": "Lexicographically Minimum",
+   "statement_pages": [
+    31,
+    32
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lexicographically Minimum.pdf"
+  },
+  {
+   "id": 22840,
+   "letter": "M",
+   "title": "Median of Xor Sequence — Easy Version",
+   "statement_pages": [
+    33,
+    34
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Median of Xor Sequence — Easy Version.pdf"
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "id": 1126,
+ "name": "Greater NY 2022",
+ "url": "https://qoj.ac/contest/1126",
+ "categories": [
+  "ICPC/Regionals/North America/Greater New York"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 5673,
+   "letter": "A",
+   "title": "Cornhole",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Cornhole.pdf"
+  },
+  {
+   "id": 5674,
+   "letter": "B",
+   "title": "Sum of Remainders",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Sum of Remainders.pdf"
+  },
+  {
+   "id": 5675,
+   "letter": "C",
+   "title": "Quotdoku",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Quotdoku.pdf"
+  },
+  {
+   "id": 5676,
+   "letter": "D",
+   "title": "Counting Pythagorean Triples",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Counting Pythagorean Triples.pdf"
+  },
+  {
+   "id": 5677,
+   "letter": "E",
+   "title": "Clarissa's Conical Cannolis",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Clarissa's Conical Cannolis.pdf"
+  },
+  {
+   "id": 5678,
+   "letter": "F",
+   "title": "Busy As a Bee",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Busy As a Bee.pdf"
+  },
+  {
+   "id": 5679,
+   "letter": "G",
+   "title": "Linked Triangles",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Linked Triangles.pdf"
+  },
+  {
+   "id": 5680,
+   "letter": "H",
+   "title": "You You See What?",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - You You See What_.pdf"
+  },
+  {
+   "id": 5681,
+   "letter": "I",
+   "title": "Caravan Trip Plans",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Caravan Trip Plans.pdf"
+  },
+  {
+   "id": 5682,
+   "letter": "J",
+   "title": "PSET",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - PSET.pdf"
+  }
+ ]
+}

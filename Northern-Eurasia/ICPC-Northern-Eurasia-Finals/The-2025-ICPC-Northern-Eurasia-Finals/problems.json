@@ -1,0 +1,163 @@
+{
+ "id": 2785,
+ "name": "The 2025 ICPC Northern Eurasia Finals",
+ "url": "https://qoj.ac/contest/2785",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2785&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2785&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15893,
+   "letter": "A",
+   "title": "Alphabet City",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Alphabet City.pdf"
+  },
+  {
+   "id": 15894,
+   "letter": "B",
+   "title": "Battle of Arrays",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Battle of Arrays.pdf"
+  },
+  {
+   "id": 15895,
+   "letter": "C",
+   "title": "Cacti Classification",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cacti Classification.pdf"
+  },
+  {
+   "id": 15896,
+   "letter": "D",
+   "title": "Doorway",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Doorway.pdf"
+  },
+  {
+   "id": 15897,
+   "letter": "E",
+   "title": "Elevator Against Humanity",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Elevator Against Humanity.pdf"
+  },
+  {
+   "id": 15898,
+   "letter": "F",
+   "title": "Fragmented Nim",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fragmented Nim.pdf"
+  },
+  {
+   "id": 15899,
+   "letter": "G",
+   "title": "Greta's Game",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Greta's Game.pdf"
+  },
+  {
+   "id": 15900,
+   "letter": "H",
+   "title": "Honey Cake",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Honey Cake.pdf"
+  },
+  {
+   "id": 15901,
+   "letter": "I",
+   "title": "Irrigation Interlock",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Irrigation Interlock.pdf"
+  },
+  {
+   "id": 15902,
+   "letter": "J",
+   "title": "Jinx or Jackpot",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jinx or Jackpot.pdf"
+  },
+  {
+   "id": 15903,
+   "letter": "K",
+   "title": "Knit the Grid",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Knit the Grid.pdf"
+  },
+  {
+   "id": 15904,
+   "letter": "L",
+   "title": "LLM Training",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - LLM Training.pdf"
+  },
+  {
+   "id": 15905,
+   "letter": "M",
+   "title": "Medical Parity",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Medical Parity.pdf"
+  }
+ ]
+}

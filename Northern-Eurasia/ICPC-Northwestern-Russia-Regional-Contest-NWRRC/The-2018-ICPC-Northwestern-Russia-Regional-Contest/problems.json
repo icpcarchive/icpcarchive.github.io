@@ -1,0 +1,152 @@
+{
+ "id": 290,
+ "name": "The 2018 ICPC Northwestern Russia Regional Contest",
+ "url": "https://qoj.ac/contest/290",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Northwestern Russia Regional Contest (NWRRC) / Northern Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=290&r=0"
+  },
+  {
+   "text": "Tutorials (ru)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=290&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3667,
+   "letter": "A",
+   "title": "Accumulator Battery",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Accumulator Battery.pdf"
+  },
+  {
+   "id": 3668,
+   "letter": "B",
+   "title": "Building a Stair",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Building a Stair.pdf"
+  },
+  {
+   "id": 3669,
+   "letter": "C",
+   "title": "Counting Stairs",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Counting Stairs.pdf"
+  },
+  {
+   "id": 3670,
+   "letter": "D",
+   "title": "Distinct Substrings",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Distinct Substrings.pdf"
+  },
+  {
+   "id": 3671,
+   "letter": "E",
+   "title": "Email Destruction",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Email Destruction.pdf"
+  },
+  {
+   "id": 3672,
+   "letter": "F",
+   "title": "Forgotten Land",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Forgotten Land.pdf"
+  },
+  {
+   "id": 3673,
+   "letter": "G",
+   "title": "Generalized German Quotation",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Generalized German Quotation.pdf"
+  },
+  {
+   "id": 3674,
+   "letter": "H",
+   "title": "Halves Not Equal",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Halves Not Equal.pdf"
+  },
+  {
+   "id": 3675,
+   "letter": "I",
+   "title": "Interactive Array Guessing",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Interactive Array Guessing.pdf"
+  },
+  {
+   "id": 3676,
+   "letter": "J",
+   "title": "Joined Vessels",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joined Vessels.pdf"
+  },
+  {
+   "id": 3677,
+   "letter": "K",
+   "title": "Keyboard Consensus",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Keyboard Consensus.pdf"
+  },
+  {
+   "id": 3678,
+   "letter": "L",
+   "title": "LED-led Paths",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - LED-led Paths.pdf"
+  }
+ ]
+}

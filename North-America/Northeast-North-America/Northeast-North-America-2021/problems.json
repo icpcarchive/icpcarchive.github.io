@@ -1,0 +1,95 @@
+{
+ "id": 859,
+ "name": "Northeast North America 2021",
+ "url": "https://qoj.ac/contest/859",
+ "categories": [
+  "ICPC/Regionals/North America/Northeast North America"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 2908,
+   "letter": "A",
+   "title": "Double Password",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Double Password.pdf"
+  },
+  {
+   "id": 2905,
+   "letter": "B",
+   "title": "Tree Hopping",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Tree Hopping.pdf"
+  },
+  {
+   "id": 2903,
+   "letter": "C",
+   "title": "Tetris Generation",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Tetris Generation.pdf"
+  },
+  {
+   "id": 2899,
+   "letter": "D",
+   "title": "Dorm Room Divide",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Dorm Room Divide.pdf"
+  },
+  {
+   "id": 2910,
+   "letter": "E",
+   "title": "Rise and Fall",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Rise and Fall.pdf"
+  },
+  {
+   "id": 2897,
+   "letter": "F",
+   "title": "Circle Bounce",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Circle Bounce.pdf"
+  },
+  {
+   "id": 2898,
+   "letter": "G",
+   "title": "Diagonals",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Diagonals.pdf"
+  },
+  {
+   "id": 2906,
+   "letter": "H",
+   "title": "XOR Island",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - XOR Island.pdf"
+  },
+  {
+   "id": 2900,
+   "letter": "I",
+   "title": "Fail Them All!",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Fail Them All!.pdf"
+  },
+  {
+   "id": 2901,
+   "letter": "J",
+   "title": "Hopscotch 500",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Hopscotch 500.pdf"
+  },
+  {
+   "id": 2914,
+   "letter": "K",
+   "title": "Problem Set Construction",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Problem Set Construction.pdf"
+  },
+  {
+   "id": 2902,
+   "letter": "L",
+   "title": "Shortest Missing Subsequences",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Shortest Missing Subsequences.pdf"
+  }
+ ]
+}

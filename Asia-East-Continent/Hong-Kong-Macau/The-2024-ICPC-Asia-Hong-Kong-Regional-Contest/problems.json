@@ -1,0 +1,164 @@
+{
+ "id": 1885,
+ "name": "The 2024 ICPC Asia Hong Kong Regional Contest",
+ "url": "https://qoj.ac/contest/1885",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Hong Kong & Macau",
+  "ICPC/Regionals/Asia East Continent/The 2024 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1885&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1885&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9915,
+   "letter": "A",
+   "title": "General Symmetry",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - General Symmetry.pdf"
+  },
+  {
+   "id": 9916,
+   "letter": "B",
+   "title": "Defeat the Enemies",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Defeat the Enemies.pdf"
+  },
+  {
+   "id": 9917,
+   "letter": "C",
+   "title": "The Story of Emperor Bie",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - The Story of Emperor Bie.pdf"
+  },
+  {
+   "id": 9918,
+   "letter": "D",
+   "title": "Master of Both VI",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Master of Both VI.pdf"
+  },
+  {
+   "id": 9919,
+   "letter": "E",
+   "title": "Concave Hull",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Concave Hull.pdf"
+  },
+  {
+   "id": 9920,
+   "letter": "F",
+   "title": "Money Game 2",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Money Game 2.pdf"
+  },
+  {
+   "id": 9921,
+   "letter": "G",
+   "title": "Yelkrab",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Yelkrab.pdf"
+  },
+  {
+   "id": 9922,
+   "letter": "H",
+   "title": "Mah-jong",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Mah-jong.pdf"
+  },
+  {
+   "id": 9923,
+   "letter": "I",
+   "title": "Ma Meilleure Ennemie",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Ma Meilleure Ennemie.pdf"
+  },
+  {
+   "id": 9924,
+   "letter": "J",
+   "title": "Reconstruction",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Reconstruction.pdf"
+  },
+  {
+   "id": 9925,
+   "letter": "K",
+   "title": "LR String",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - LR String.pdf"
+  },
+  {
+   "id": 9926,
+   "letter": "L",
+   "title": "Flipping Paths",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Flipping Paths.pdf"
+  },
+  {
+   "id": 9927,
+   "letter": "M",
+   "title": "Godzilla",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Godzilla.pdf"
+  }
+ ]
+}

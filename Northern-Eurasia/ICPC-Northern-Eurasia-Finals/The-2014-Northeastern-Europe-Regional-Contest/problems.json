@@ -1,0 +1,141 @@
+{
+ "id": 909,
+ "name": "The 2014 Northeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/909",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=909&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=909&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 6090,
+   "letter": "A",
+   "title": "Alter Board",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Alter Board.pdf"
+  },
+  {
+   "id": 6091,
+   "letter": "B",
+   "title": "Burrito King",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Burrito King.pdf"
+  },
+  {
+   "id": 6092,
+   "letter": "C",
+   "title": "Cactus Generator",
+   "statement_pages": [
+    3,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cactus Generator.pdf"
+  },
+  {
+   "id": 6093,
+   "letter": "D",
+   "title": "Damage Assessment",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Damage Assessment.pdf"
+  },
+  {
+   "id": 6094,
+   "letter": "E",
+   "title": "Epic Win!",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Epic Win!.pdf"
+  },
+  {
+   "id": 6095,
+   "letter": "F",
+   "title": "Filter",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Filter.pdf"
+  },
+  {
+   "id": 6096,
+   "letter": "G",
+   "title": "Gomoku",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gomoku.pdf"
+  },
+  {
+   "id": 6097,
+   "letter": "H",
+   "title": "Hidden Maze",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hidden Maze.pdf"
+  },
+  {
+   "id": 6098,
+   "letter": "I",
+   "title": "Improvements",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Improvements.pdf"
+  },
+  {
+   "id": 6099,
+   "letter": "J",
+   "title": "Jokewithpermutation",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jokewithpermutation.pdf"
+  },
+  {
+   "id": 6100,
+   "letter": "K",
+   "title": "Knockout Racing",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Knockout Racing.pdf"
+  }
+ ]
+}

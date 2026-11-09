@@ -1,0 +1,148 @@
+{
+ "id": 1837,
+ "name": "The 2024 ICPC North America Qualifier",
+ "url": "https://qoj.ac/contest/1837",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1837&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 8984,
+   "letter": "A",
+   "title": "Balatro",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Balatro.pdf"
+  },
+  {
+   "id": 8985,
+   "letter": "B",
+   "title": "Bikes and Barricades",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bikes and Barricades.pdf"
+  },
+  {
+   "id": 8986,
+   "letter": "C",
+   "title": "Call for Problems",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Call for Problems.pdf"
+  },
+  {
+   "id": 8987,
+   "letter": "D",
+   "title": "Colorful Trees",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Colorful Trees.pdf"
+  },
+  {
+   "id": 8988,
+   "letter": "E",
+   "title": "Dishonest Lottery",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Dishonest Lottery.pdf"
+  },
+  {
+   "id": 8989,
+   "letter": "F",
+   "title": "Ellipse Eclipse",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Ellipse Eclipse.pdf"
+  },
+  {
+   "id": 8990,
+   "letter": "G",
+   "title": "Gears and Axles",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gears and Axles.pdf"
+  },
+  {
+   "id": 8991,
+   "letter": "H",
+   "title": "Genetic Reconstruction",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Genetic Reconstruction.pdf"
+  },
+  {
+   "id": 8992,
+   "letter": "I",
+   "title": "Light Up",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Light Up.pdf"
+  },
+  {
+   "id": 8993,
+   "letter": "J",
+   "title": "Menger Sponge",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Menger Sponge.pdf"
+  },
+  {
+   "id": 8994,
+   "letter": "K",
+   "title": "Rhythm Flow",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Rhythm Flow.pdf"
+  },
+  {
+   "id": 8995,
+   "letter": "L",
+   "title": "Snake",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Snake.pdf"
+  }
+ ]
+}

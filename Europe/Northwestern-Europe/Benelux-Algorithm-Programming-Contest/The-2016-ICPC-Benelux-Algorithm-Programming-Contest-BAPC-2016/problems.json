@@ -1,0 +1,152 @@
+{
+ "id": 3892,
+ "name": "The 2016 ICPC Benelux Algorithm Programming Contest (BAPC 2016)",
+ "url": "https://qoj.ac/contest/3892",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3892&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3892&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19302,
+   "letter": "A",
+   "title": "Airport Logistics",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Airport Logistics.pdf"
+  },
+  {
+   "id": 19303,
+   "letter": "B",
+   "title": "Battle Simulation",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Battle Simulation.pdf"
+  },
+  {
+   "id": 19304,
+   "letter": "C",
+   "title": "Brexit",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Brexit.pdf"
+  },
+  {
+   "id": 19305,
+   "letter": "D",
+   "title": "Bridge Automation",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Bridge Automation.pdf"
+  },
+  {
+   "id": 19306,
+   "letter": "E",
+   "title": "Charles in Charge",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Charles in Charge.pdf"
+  },
+  {
+   "id": 19307,
+   "letter": "F",
+   "title": "Endless Turning",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Endless Turning.pdf"
+  },
+  {
+   "id": 19308,
+   "letter": "G",
+   "title": "Manhattan Positioning System",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Manhattan Positioning System.pdf"
+  },
+  {
+   "id": 19309,
+   "letter": "H",
+   "title": "Multiplying Digits",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Multiplying Digits.pdf"
+  },
+  {
+   "id": 19310,
+   "letter": "I",
+   "title": "Older Brother",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Older Brother.pdf"
+  },
+  {
+   "id": 19311,
+   "letter": "J",
+   "title": "Programming Tutors",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Programming Tutors.pdf"
+  },
+  {
+   "id": 19312,
+   "letter": "K",
+   "title": "Safe Racing",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Safe Racing.pdf"
+  },
+  {
+   "id": 19313,
+   "letter": "L",
+   "title": "Sticky Situation",
+   "statement_pages": [
+    25,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Sticky Situation.pdf"
+  }
+ ]
+}

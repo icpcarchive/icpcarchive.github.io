@@ -1,0 +1,137 @@
+{
+ "id": 3890,
+ "name": "The 2018 ICPC Benelux Algorithm Programming Contest (BAPC 2018)",
+ "url": "https://qoj.ac/contest/3890",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3890&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19327,
+   "letter": "A",
+   "title": "A Prize No One Can Win",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - A Prize No One Can Win.pdf"
+  },
+  {
+   "id": 19328,
+   "letter": "B",
+   "title": "Birthday Boy",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Birthday Boy.pdf"
+  },
+  {
+   "id": 19329,
+   "letter": "C",
+   "title": "Cardboard Container",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cardboard Container.pdf"
+  },
+  {
+   "id": 19330,
+   "letter": "D",
+   "title": "Driver Disagreement",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Driver Disagreement.pdf"
+  },
+  {
+   "id": 19331,
+   "letter": "E",
+   "title": "Entirely Unsorted Sequences",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Entirely Unsorted Sequences.pdf"
+  },
+  {
+   "id": 19332,
+   "letter": "F",
+   "title": "Financial Planning",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Financial Planning.pdf"
+  },
+  {
+   "id": 19333,
+   "letter": "G",
+   "title": "Game Night",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game Night.pdf"
+  },
+  {
+   "id": 19334,
+   "letter": "H",
+   "title": "Harry the Hamster",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Harry the Hamster.pdf"
+  },
+  {
+   "id": 19335,
+   "letter": "I",
+   "title": "In Case of an Invasion, Please...",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - In Case of an Invasion, Please.pdf"
+  },
+  {
+   "id": 19336,
+   "letter": "J",
+   "title": "Janitor Troubles",
+   "statement_pages": [
+    20,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Janitor Troubles.pdf"
+  },
+  {
+   "id": 19337,
+   "letter": "K",
+   "title": "Kingpin Escape",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kingpin Escape.pdf"
+  }
+ ]
+}

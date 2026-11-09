@@ -1,0 +1,152 @@
+{
+ "id": 343,
+ "name": "The 2019 ICPC Northern Eurasia Finals",
+ "url": "https://qoj.ac/contest/343",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=343&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=343&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2191,
+   "letter": "A",
+   "title": "Apprentice Learning Trajectory",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Apprentice Learning Trajectory.pdf"
+  },
+  {
+   "id": 2192,
+   "letter": "B",
+   "title": "Balls of Buma",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Balls of Buma.pdf"
+  },
+  {
+   "id": 2193,
+   "letter": "C",
+   "title": "Cactus Revenge",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cactus Revenge.pdf"
+  },
+  {
+   "id": 2194,
+   "letter": "D",
+   "title": "DevOps Best Practices",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - DevOps Best Practices.pdf"
+  },
+  {
+   "id": 2195,
+   "letter": "E",
+   "title": "Elections",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Elections.pdf"
+  },
+  {
+   "id": 2196,
+   "letter": "F",
+   "title": "Foolprüf Security",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Foolprüf Security.pdf"
+  },
+  {
+   "id": 2197,
+   "letter": "G",
+   "title": "Game Relics",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game Relics.pdf"
+  },
+  {
+   "id": 2198,
+   "letter": "H",
+   "title": "Help BerLine",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Help BerLine.pdf"
+  },
+  {
+   "id": 2199,
+   "letter": "I",
+   "title": "Intriguing Selection",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Intriguing Selection.pdf"
+  },
+  {
+   "id": 2200,
+   "letter": "J",
+   "title": "Just Arrange the Icons",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Just Arrange the Icons.pdf"
+  },
+  {
+   "id": 2201,
+   "letter": "K",
+   "title": "Key Storage",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Key Storage.pdf"
+  },
+  {
+   "id": 2202,
+   "letter": "L",
+   "title": "Lexicography",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lexicography.pdf"
+  }
+ ]
+}

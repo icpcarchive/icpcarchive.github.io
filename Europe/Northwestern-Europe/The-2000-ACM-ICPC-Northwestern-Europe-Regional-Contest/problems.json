@@ -1,0 +1,104 @@
+{
+ "id": 3624,
+ "name": "The 2000 ACM ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/3624",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3624&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19695,
+   "letter": "A",
+   "title": "Railroads",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Railroads.pdf"
+  },
+  {
+   "id": 19696,
+   "letter": "B",
+   "title": "Ouroboros Snake",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Ouroboros Snake.pdf"
+  },
+  {
+   "id": 19697,
+   "letter": "C",
+   "title": "Vito's Family",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Vito's Family.pdf"
+  },
+  {
+   "id": 19698,
+   "letter": "D",
+   "title": "Smith Numbers",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Smith Numbers.pdf"
+  },
+  {
+   "id": 19699,
+   "letter": "E",
+   "title": "Chainsaw Massacre",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Chainsaw Massacre.pdf"
+  },
+  {
+   "id": 19700,
+   "letter": "F",
+   "title": "Erdős Numbers",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Erdős Numbers.pdf"
+  },
+  {
+   "id": 19701,
+   "letter": "G",
+   "title": "Echo",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Echo.pdf"
+  },
+  {
+   "id": 19702,
+   "letter": "H",
+   "title": "Fold-up Patterns",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Fold-up Patterns.pdf"
+  }
+ ]
+}

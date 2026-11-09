@@ -1,0 +1,148 @@
+{
+ "id": 540,
+ "name": "The 2017 Southeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/540",
+ "categories": [
+  "ICPC/Regionals/Europe/Southeastern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=540&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 6466,
+   "letter": "A",
+   "title": "Concerts",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Concerts.pdf"
+  },
+  {
+   "id": 6467,
+   "letter": "B",
+   "title": "Bricks",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bricks.pdf"
+  },
+  {
+   "id": 6468,
+   "letter": "C",
+   "title": "Christmas Tree",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Christmas Tree.pdf"
+  },
+  {
+   "id": 6469,
+   "letter": "D",
+   "title": "Harry Potter and The Vector Spell",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Harry Potter and The Vector Spell.pdf"
+  },
+  {
+   "id": 6470,
+   "letter": "E",
+   "title": "Looping Playlist",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Looping Playlist.pdf"
+  },
+  {
+   "id": 6471,
+   "letter": "F",
+   "title": "Binary Transformations",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Binary Transformations.pdf"
+  },
+  {
+   "id": 6472,
+   "letter": "G",
+   "title": "Robots",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Robots.pdf"
+  },
+  {
+   "id": 6473,
+   "letter": "H",
+   "title": "Cat and Mouse",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Cat and Mouse.pdf"
+  },
+  {
+   "id": 6474,
+   "letter": "I",
+   "title": "Tetris",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Tetris.pdf"
+  },
+  {
+   "id": 6475,
+   "letter": "J",
+   "title": "Cunning Friends",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Cunning Friends.pdf"
+  },
+  {
+   "id": 6476,
+   "letter": "K",
+   "title": "Escape Room",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Escape Room.pdf"
+  },
+  {
+   "id": 6477,
+   "letter": "L",
+   "title": "Divide and Conquer",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Divide and Conquer.pdf"
+  }
+ ]
+}

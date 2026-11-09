@@ -1,0 +1,163 @@
+{
+ "id": 1112,
+ "name": "The 2016 Northeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/1112",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1112&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1112&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 12534,
+   "letter": "A",
+   "title": "Abbreviation",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Abbreviation.pdf"
+  },
+  {
+   "id": 12535,
+   "letter": "B",
+   "title": "Binary Code",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Binary Code.pdf"
+  },
+  {
+   "id": 12536,
+   "letter": "C",
+   "title": "Cactus Construction",
+   "statement_pages": [
+    3,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cactus Construction.pdf"
+  },
+  {
+   "id": 12537,
+   "letter": "D",
+   "title": "Delight for a Cat",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Delight for a Cat.pdf"
+  },
+  {
+   "id": 12538,
+   "letter": "E",
+   "title": "Expect to Wait",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Expect to Wait.pdf"
+  },
+  {
+   "id": 12539,
+   "letter": "F",
+   "title": "Foreign Postcards",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Foreign Postcards.pdf"
+  },
+  {
+   "id": 12540,
+   "letter": "G",
+   "title": "Game on Graph",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game on Graph.pdf"
+  },
+  {
+   "id": 12541,
+   "letter": "H",
+   "title": "Hard Refactoring",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hard Refactoring.pdf"
+  },
+  {
+   "id": 12542,
+   "letter": "I",
+   "title": "Indiana Jones and the Uniform Cave",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Indiana Jones and the Uniform Cave.pdf"
+  },
+  {
+   "id": 12543,
+   "letter": "J",
+   "title": "Jenga Boom",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jenga Boom.pdf"
+  },
+  {
+   "id": 12544,
+   "letter": "K",
+   "title": "Kids Designing Kids",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kids Designing Kids.pdf"
+  },
+  {
+   "id": 12545,
+   "letter": "L",
+   "title": "List of Primes",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - List of Primes.pdf"
+  },
+  {
+   "id": 12546,
+   "letter": "M",
+   "title": "Mole Tunnels",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mole Tunnels.pdf"
+  }
+ ]
+}

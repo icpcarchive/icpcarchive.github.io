@@ -1,0 +1,86 @@
+{
+ "id": 1166,
+ "name": "The 2023 ICPC Asia Tehran - Online Regional Contest",
+ "url": "https://qoj.ac/contest/1166",
+ "categories": [
+  "ICPC/Regionals/Asia West Continent/Iran/Tehran Online Regional Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (fa)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1166&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 6243,
+   "letter": "A",
+   "title": "دیوارکش",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - دیوارکش.pdf"
+  },
+  {
+   "id": 6244,
+   "letter": "B",
+   "title": "سینما برره",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - سینما برره.pdf"
+  },
+  {
+   "id": 6245,
+   "letter": "C",
+   "title": "نوران",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - نوران.pdf"
+  },
+  {
+   "id": 6246,
+   "letter": "D",
+   "title": "مربع مارپیچ",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - مربع مارپیچ.pdf"
+  },
+  {
+   "id": 6247,
+   "letter": "E",
+   "title": "خوشحال پرانتزی",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - خوشحال پرانتزی.pdf"
+  },
+  {
+   "id": 6248,
+   "letter": "F",
+   "title": "هاکونا ماتاتا",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - هاکونا ماتاتا.pdf"
+  },
+  {
+   "id": 6249,
+   "letter": "G",
+   "title": "بازی آرایه ای",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - بازی آرایه ای.pdf"
+  },
+  {
+   "id": 6250,
+   "letter": "H",
+   "title": "کلاس طراحی الگوریتم‌ها",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - کلاس طراحی الگوریتم‌ها.pdf"
+  },
+  {
+   "id": 6251,
+   "letter": "I",
+   "title": "راننده تاکسی",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - راننده تاکسی.pdf"
+  },
+  {
+   "id": 6252,
+   "letter": "J",
+   "title": "درخت یا بوته‌ای",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - درخت یا بوته‌ای.pdf"
+  }
+ ]
+}

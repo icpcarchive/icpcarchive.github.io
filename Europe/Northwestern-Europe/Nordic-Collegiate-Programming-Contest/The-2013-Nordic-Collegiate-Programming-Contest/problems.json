@@ -1,0 +1,141 @@
+{
+ "id": 2753,
+ "name": "The 2013 Nordic Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/2753",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Nordic Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2753&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2753&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16044,
+   "letter": "A",
+   "title": "Planting Trees",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Planting Trees.pdf"
+  },
+  {
+   "id": 16045,
+   "letter": "B",
+   "title": "Boiling Vegetables",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Boiling Vegetables.pdf"
+  },
+  {
+   "id": 16046,
+   "letter": "C",
+   "title": "Number Trick",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Number Trick.pdf"
+  },
+  {
+   "id": 16047,
+   "letter": "D",
+   "title": "Robert Hood",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Robert Hood.pdf"
+  },
+  {
+   "id": 16048,
+   "letter": "E",
+   "title": "Virus Replication",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Virus Replication.pdf"
+  },
+  {
+   "id": 16049,
+   "letter": "F",
+   "title": "Timebomb",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Timebomb.pdf"
+  },
+  {
+   "id": 16050,
+   "letter": "G",
+   "title": "Erase Securely",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Erase Securely.pdf"
+  },
+  {
+   "id": 16051,
+   "letter": "H",
+   "title": "Pinball",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Pinball.pdf"
+  },
+  {
+   "id": 16052,
+   "letter": "I",
+   "title": "Dance Reconstruction",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Dance Reconstruction.pdf"
+  },
+  {
+   "id": 16053,
+   "letter": "J",
+   "title": "Dartboard",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Dartboard.pdf"
+  },
+  {
+   "id": 16054,
+   "letter": "K",
+   "title": "Cliff Walk",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Cliff Walk.pdf"
+  }
+ ]
+}

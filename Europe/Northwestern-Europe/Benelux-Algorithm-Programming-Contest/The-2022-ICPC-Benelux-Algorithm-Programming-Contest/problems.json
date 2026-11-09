@@ -1,0 +1,152 @@
+{
+ "id": 1044,
+ "name": "The 2022 ICPC Benelux Algorithm Programming Contest",
+ "url": "https://qoj.ac/contest/1044",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1044&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1044&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5125,
+   "letter": "A",
+   "title": "Adjusted Average",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Adjusted Average.pdf"
+  },
+  {
+   "id": 5126,
+   "letter": "B",
+   "title": "Bellevue",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bellevue.pdf"
+  },
+  {
+   "id": 5127,
+   "letter": "C",
+   "title": "Crashing Competition Computer",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Crashing Competition Computer.pdf"
+  },
+  {
+   "id": 5128,
+   "letter": "D",
+   "title": "Dividing DNA",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dividing DNA.pdf"
+  },
+  {
+   "id": 5129,
+   "letter": "E",
+   "title": "Equalising Audio",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Equalising Audio.pdf"
+  },
+  {
+   "id": 5130,
+   "letter": "F",
+   "title": "Failing Flagship",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Failing Flagship.pdf"
+  },
+  {
+   "id": 5131,
+   "letter": "G",
+   "title": "Grinding Gravel",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Grinding Gravel.pdf"
+  },
+  {
+   "id": 5132,
+   "letter": "H",
+   "title": "House Numbering",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - House Numbering.pdf"
+  },
+  {
+   "id": 5133,
+   "letter": "I",
+   "title": "Imperfect Imperial Units",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Imperfect Imperial Units.pdf"
+  },
+  {
+   "id": 5134,
+   "letter": "J",
+   "title": "Jagged Skyline",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jagged Skyline.pdf"
+  },
+  {
+   "id": 5135,
+   "letter": "K",
+   "title": "Kiosk Construction",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kiosk Construction.pdf"
+  },
+  {
+   "id": 5136,
+   "letter": "L",
+   "title": "Lowest Latency",
+   "statement_pages": [
+    25,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lowest Latency.pdf"
+  }
+ ]
+}

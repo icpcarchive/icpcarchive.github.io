@@ -1,0 +1,168 @@
+{
+ "id": 1187,
+ "name": "The 2018 ICPC Asia Qingdao Regional Contest",
+ "url": "https://qoj.ac/contest/1187",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Qingdao",
+  "ICPC/Regionals/Asia East Continent/The 2018 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1187&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1187&r=1"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://sua.ac/wiki/2018-icpc-qingdao/"
+  }
+ ],
+ "problems": [
+  {
+   "id": 6126,
+   "letter": "A",
+   "title": "Sequence and Sequence",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Sequence and Sequence.pdf"
+  },
+  {
+   "id": 6127,
+   "letter": "B",
+   "title": "Kawa Exam",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Kawa Exam.pdf"
+  },
+  {
+   "id": 6128,
+   "letter": "C",
+   "title": "Flippy Sequence",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Flippy Sequence.pdf"
+  },
+  {
+   "id": 6129,
+   "letter": "D",
+   "title": "Magic Multiplication",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Magic Multiplication.pdf"
+  },
+  {
+   "id": 6130,
+   "letter": "E",
+   "title": "Plants vs. Zombies",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Plants vs. Zombies.pdf"
+  },
+  {
+   "id": 6131,
+   "letter": "F",
+   "title": "Tournament",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Tournament.pdf"
+  },
+  {
+   "id": 6132,
+   "letter": "G",
+   "title": "Repair the Artwork",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Repair the Artwork.pdf"
+  },
+  {
+   "id": 6133,
+   "letter": "H",
+   "title": "Mirror",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Mirror.pdf"
+  },
+  {
+   "id": 6134,
+   "letter": "I",
+   "title": "Soldier Game",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Soldier Game.pdf"
+  },
+  {
+   "id": 6135,
+   "letter": "J",
+   "title": "Books",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Books.pdf"
+  },
+  {
+   "id": 6136,
+   "letter": "K",
+   "title": "Airdrop",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Airdrop.pdf"
+  },
+  {
+   "id": 6137,
+   "letter": "L",
+   "title": "Sub-cycle Graph",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Sub-cycle Graph.pdf"
+  },
+  {
+   "id": 6138,
+   "letter": "M",
+   "title": "Function and Function",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Function and Function.pdf"
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "id": 3695,
+ "name": "The 2012-2013 ICPC Southwestern Europe Regional Contest (SWERC 2012)",
+ "url": "https://qoj.ac/contest/3695",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3695&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3695&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19908,
+   "letter": "A",
+   "title": "Beehives",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Beehives.pdf"
+  },
+  {
+   "id": 19909,
+   "letter": "B",
+   "title": "Bits Equalizer",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bits Equalizer.pdf"
+  },
+  {
+   "id": 19910,
+   "letter": "C",
+   "title": "LCM Pair Sum",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - LCM Pair Sum.pdf"
+  },
+  {
+   "id": 19911,
+   "letter": "D",
+   "title": "RNA Secondary Structure",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - RNA Secondary Structure.pdf"
+  },
+  {
+   "id": 19912,
+   "letter": "E",
+   "title": "Old School Days",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Old School Days.pdf"
+  },
+  {
+   "id": 19913,
+   "letter": "F",
+   "title": "Sentry Robots",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Sentry Robots.pdf"
+  },
+  {
+   "id": 19914,
+   "letter": "G",
+   "title": "How Do Spiders Walk on Water?",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - How Do Spiders Walk on Water_.pdf"
+  },
+  {
+   "id": 19915,
+   "letter": "H",
+   "title": "Shares",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Shares.pdf"
+  },
+  {
+   "id": 19916,
+   "letter": "I",
+   "title": "The Moon of Valencia",
+   "statement_pages": [
+    15,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - The Moon of Valencia.pdf"
+  },
+  {
+   "id": 19917,
+   "letter": "J",
+   "title": "Countdown",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Countdown.pdf"
+  }
+ ]
+}

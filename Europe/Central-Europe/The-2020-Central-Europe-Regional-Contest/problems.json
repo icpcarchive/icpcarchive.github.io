@@ -1,0 +1,137 @@
+{
+ "id": 417,
+ "name": "The 2020 Central Europe Regional Contest",
+ "url": "https://qoj.ac/contest/417",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=417&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2474,
+   "letter": "A",
+   "title": "Art Transaction",
+   "statement_pages": [
+    1,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Art Transaction.pdf"
+  },
+  {
+   "id": 2475,
+   "letter": "B",
+   "title": "Bank Robbery",
+   "statement_pages": [
+    5,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bank Robbery.pdf"
+  },
+  {
+   "id": 2476,
+   "letter": "C",
+   "title": "Pizzo Collectors",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Pizzo Collectors.pdf"
+  },
+  {
+   "id": 2477,
+   "letter": "D",
+   "title": "Excavation",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Excavation.pdf"
+  },
+  {
+   "id": 2478,
+   "letter": "E",
+   "title": "Tobacco Growing",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Tobacco Growing.pdf"
+  },
+  {
+   "id": 2479,
+   "letter": "F",
+   "title": "Rescue Mission",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Rescue Mission.pdf"
+  },
+  {
+   "id": 2480,
+   "letter": "G",
+   "title": "Offices",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Offices.pdf"
+  },
+  {
+   "id": 2481,
+   "letter": "H",
+   "title": "Pickpockets",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Pickpockets.pdf"
+  },
+  {
+   "id": 2482,
+   "letter": "I",
+   "title": "Storage Problems",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Storage Problems.pdf"
+  },
+  {
+   "id": 2483,
+   "letter": "J",
+   "title": "Roof Escape",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Roof Escape.pdf"
+  },
+  {
+   "id": 2484,
+   "letter": "K",
+   "title": "Screamers",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Screamers.pdf"
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "id": 810,
+ "name": "The 2021 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/810",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=810&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=810&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2292,
+   "letter": "A",
+   "title": "Access Denied",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Access Denied.pdf"
+  },
+  {
+   "id": 2293,
+   "letter": "B",
+   "title": "Boredom Buster",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Boredom Buster.pdf"
+  },
+  {
+   "id": 2294,
+   "letter": "C",
+   "title": "Cutting Edge",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cutting Edge.pdf"
+  },
+  {
+   "id": 2295,
+   "letter": "D",
+   "title": "Dyson Circle",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dyson Circle.pdf"
+  },
+  {
+   "id": 2296,
+   "letter": "E",
+   "title": "Exchange Students",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Exchange Students.pdf"
+  },
+  {
+   "id": 2297,
+   "letter": "F",
+   "title": "Flatland Olympics",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Flatland Olympics.pdf"
+  },
+  {
+   "id": 2298,
+   "letter": "G",
+   "title": "Glossary Arrangement",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Glossary Arrangement.pdf"
+  },
+  {
+   "id": 2299,
+   "letter": "H",
+   "title": "Heating Up",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Heating Up.pdf"
+  },
+  {
+   "id": 2300,
+   "letter": "I",
+   "title": "IXth Problem",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - IXth Problem.pdf"
+  },
+  {
+   "id": 2301,
+   "letter": "J",
+   "title": "Jet Set",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jet Set.pdf"
+  },
+  {
+   "id": 2302,
+   "letter": "K",
+   "title": "Knitpicking",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Knitpicking.pdf"
+  },
+  {
+   "id": 2303,
+   "letter": "L",
+   "title": "Lucky Shirt",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lucky Shirt.pdf"
+  }
+ ]
+}

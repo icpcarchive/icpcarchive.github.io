@@ -1,0 +1,76 @@
+{
+ "id": 3612,
+ "name": "ICPC Asia Hakodate Regional 2001",
+ "url": "https://qoj.ac/contest/3612",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3612&r=0"
+  },
+  {
+   "text": "Official ICPC Asia Hakodate Regional 2001 Input Data",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3612&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19592,
+   "letter": "A",
+   "title": "Starship Hakodate-maru",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Starship Hakodate-maru.pdf"
+  },
+  {
+   "id": 19593,
+   "letter": "B",
+   "title": "e-Market",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - e-Market.pdf"
+  },
+  {
+   "id": 19594,
+   "letter": "C",
+   "title": "Fishnet",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Fishnet.pdf"
+  },
+  {
+   "id": 19595,
+   "letter": "D",
+   "title": "77377",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - 77377.pdf"
+  },
+  {
+   "id": 19596,
+   "letter": "E",
+   "title": "Beehives",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Beehives.pdf"
+  },
+  {
+   "id": 19597,
+   "letter": "F",
+   "title": "Young, Poor and Busy",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Young, Poor and Busy.pdf"
+  },
+  {
+   "id": 19598,
+   "letter": "G",
+   "title": "Nim",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Nim.pdf"
+  },
+  {
+   "id": 19599,
+   "letter": "H",
+   "title": "Super Star",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Super Star.pdf"
+  }
+ ]
+}

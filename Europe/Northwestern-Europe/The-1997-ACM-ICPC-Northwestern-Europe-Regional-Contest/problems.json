@@ -1,0 +1,72 @@
+{
+ "id": 3621,
+ "name": "The 1997 ACM ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/3621",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3621&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19671,
+   "letter": "A",
+   "title": "Arrows",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Arrows.pdf"
+  },
+  {
+   "id": 19672,
+   "letter": "B",
+   "title": "MDST-machine",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - MDST-machine.pdf"
+  },
+  {
+   "id": 19673,
+   "letter": "C",
+   "title": "Entropy",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Entropy.pdf"
+  },
+  {
+   "id": 19674,
+   "letter": "D",
+   "title": "Columns",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Columns.pdf"
+  },
+  {
+   "id": 19675,
+   "letter": "E",
+   "title": "Internet",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Internet.pdf"
+  },
+  {
+   "id": 19676,
+   "letter": "F",
+   "title": "Gardener",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Gardener.pdf"
+  },
+  {
+   "id": 19677,
+   "letter": "G",
+   "title": "Mendel",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Mendel.pdf"
+  },
+  {
+   "id": 19678,
+   "letter": "H",
+   "title": "Hall of Flames",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Hall of Flames.pdf"
+  }
+ ]
+}

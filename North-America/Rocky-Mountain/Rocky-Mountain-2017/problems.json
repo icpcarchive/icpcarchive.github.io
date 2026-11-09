@@ -1,0 +1,88 @@
+{
+ "id": 2680,
+ "name": "Rocky Mountain 2017",
+ "url": "https://qoj.ac/contest/2680",
+ "categories": [
+  "ICPC/Regionals/North America/Rocky Mountain"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 15927,
+   "letter": "A",
+   "title": "Hissing Microphone",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Hissing Microphone.pdf"
+  },
+  {
+   "id": 15928,
+   "letter": "B",
+   "title": "Open-Pit Mining",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Open-Pit Mining.pdf"
+  },
+  {
+   "id": 15929,
+   "letter": "C",
+   "title": "Multiplication Game",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Multiplication Game.pdf"
+  },
+  {
+   "id": 15930,
+   "letter": "D",
+   "title": "Polyline Simplification",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Polyline Simplification.pdf"
+  },
+  {
+   "id": 15931,
+   "letter": "E",
+   "title": "Palindromic Password",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Palindromic Password.pdf"
+  },
+  {
+   "id": 15932,
+   "letter": "F",
+   "title": "Flow Free",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Flow Free.pdf"
+  },
+  {
+   "id": 15933,
+   "letter": "G",
+   "title": "Decisions, Decisions",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Decisions, Decisions.pdf"
+  },
+  {
+   "id": 15934,
+   "letter": "H",
+   "title": "Heart Rate",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Heart Rate.pdf"
+  },
+  {
+   "id": 15935,
+   "letter": "I",
+   "title": "Initials",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Initials.pdf"
+  },
+  {
+   "id": 15936,
+   "letter": "J",
+   "title": "Particle Collision",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Particle Collision.pdf"
+  },
+  {
+   "id": 15937,
+   "letter": "K",
+   "title": "Frosh Week",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Frosh Week.pdf"
+  }
+ ]
+}

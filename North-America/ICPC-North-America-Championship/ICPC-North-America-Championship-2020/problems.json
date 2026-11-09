@@ -1,0 +1,156 @@
+{
+ "id": 474,
+ "name": "ICPC North America Championship 2020",
+ "url": "https://qoj.ac/contest/474",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=474&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=474&r=1"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=474&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3161,
+   "letter": "A",
+   "title": "Another Coin Weighing Puzzle",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Another Coin Weighing Puzzle.pdf"
+  },
+  {
+   "id": 3162,
+   "letter": "B",
+   "title": "Mini Battleship",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Mini Battleship.pdf"
+  },
+  {
+   "id": 3163,
+   "letter": "C",
+   "title": "Bomas",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Bomas.pdf"
+  },
+  {
+   "id": 3164,
+   "letter": "D",
+   "title": "All Kill",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - All Kill.pdf"
+  },
+  {
+   "id": 3165,
+   "letter": "E",
+   "title": "Grid Guardian",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Grid Guardian.pdf"
+  },
+  {
+   "id": 3166,
+   "letter": "F",
+   "title": "Hopscotch",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Hopscotch.pdf"
+  },
+  {
+   "id": 3167,
+   "letter": "G",
+   "title": "ICPC Camp",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - ICPC Camp.pdf"
+  },
+  {
+   "id": 3168,
+   "letter": "H",
+   "title": "Letter Wheels",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Letter Wheels.pdf"
+  },
+  {
+   "id": 3169,
+   "letter": "I",
+   "title": "Editing Explosion",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Editing Explosion.pdf"
+  },
+  {
+   "id": 3170,
+   "letter": "J",
+   "title": "Lunchtime Name Recall",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Lunchtime Name Recall.pdf"
+  },
+  {
+   "id": 3171,
+   "letter": "K",
+   "title": "Rooted Subtrees",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Rooted Subtrees.pdf"
+  },
+  {
+   "id": 3172,
+   "letter": "L",
+   "title": "Tomb Raider",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Tomb Raider.pdf"
+  }
+ ]
+}

@@ -1,0 +1,163 @@
+{
+ "id": 4614,
+ "name": "The 2025 ICPC Moscow Regional Contest",
+ "url": "https://qoj.ac/contest/4614",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Moscow Regional Contest / Moscow Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=4614&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=4614&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 23643,
+   "letter": "A",
+   "title": "Arrange Jewels In Necklace",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Arrange Jewels In Necklace.pdf"
+  },
+  {
+   "id": 23644,
+   "letter": "B",
+   "title": "Bean Machine, Reinvented",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bean Machine, Reinvented.pdf"
+  },
+  {
+   "id": 23645,
+   "letter": "C",
+   "title": "Captain Thrawn",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Captain Thrawn.pdf"
+  },
+  {
+   "id": 23646,
+   "letter": "D",
+   "title": "Divisibility By Factorial",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Divisibility By Factorial.pdf"
+  },
+  {
+   "id": 23647,
+   "letter": "E",
+   "title": "Expected Symmetry",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Expected Symmetry.pdf"
+  },
+  {
+   "id": 23648,
+   "letter": "F",
+   "title": "Fast Value Changes",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fast Value Changes.pdf"
+  },
+  {
+   "id": 23649,
+   "letter": "G",
+   "title": "Gravity Zero Experiments",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gravity Zero Experiments.pdf"
+  },
+  {
+   "id": 23650,
+   "letter": "H",
+   "title": "Homework Of Xenia",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Homework Of Xenia.pdf"
+  },
+  {
+   "id": 23651,
+   "letter": "I",
+   "title": "Interactive Array Modifications",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Interactive Array Modifications.pdf"
+  },
+  {
+   "id": 23652,
+   "letter": "J",
+   "title": "JQU",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - JQU.pdf"
+  },
+  {
+   "id": 23653,
+   "letter": "K",
+   "title": "Know Your Powers",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Know Your Powers.pdf"
+  },
+  {
+   "id": 23654,
+   "letter": "L",
+   "title": "Latin Words",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Latin Words.pdf"
+  },
+  {
+   "id": 23655,
+   "letter": "M",
+   "title": "Mobile Game Development Lab",
+   "statement_pages": [
+    19,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mobile Game Development Lab.pdf"
+  }
+ ]
+}

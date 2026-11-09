@@ -1,0 +1,159 @@
+{
+ "id": 2779,
+ "name": "The 2025 ICPC Asia Manila Regional Contest",
+ "url": "https://qoj.ac/contest/2779",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Philippines"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2779&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15832,
+   "letter": "A",
+   "title": "Alphabet Chocolate",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Alphabet Chocolate.pdf"
+  },
+  {
+   "id": 15833,
+   "letter": "B",
+   "title": "DJ Nicholas",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - DJ Nicholas.pdf"
+  },
+  {
+   "id": 15834,
+   "letter": "C",
+   "title": "The Drift King",
+   "statement_pages": [
+    5,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - The Drift King.pdf"
+  },
+  {
+   "id": 15835,
+   "letter": "D",
+   "title": "Drinking Culture",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Drinking Culture.pdf"
+  },
+  {
+   "id": 15836,
+   "letter": "E",
+   "title": "Long Distance Examination",
+   "statement_pages": [
+    10,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Long Distance Examination.pdf"
+  },
+  {
+   "id": 15837,
+   "letter": "F",
+   "title": "Map and Fold",
+   "statement_pages": [
+    13,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Map and Fold.pdf"
+  },
+  {
+   "id": 15838,
+   "letter": "G",
+   "title": "Max Cut Min Flow",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Max Cut Min Flow.pdf"
+  },
+  {
+   "id": 15839,
+   "letter": "H",
+   "title": "Prime Topology",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Prime Topology.pdf"
+  },
+  {
+   "id": 15840,
+   "letter": "I",
+   "title": "Stone Steps",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Stone Steps.pdf"
+  },
+  {
+   "id": 15841,
+   "letter": "J",
+   "title": "Tic-Tac-Toe on a Graph",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Tic-Tac-Toe on a Graph.pdf"
+  },
+  {
+   "id": 15842,
+   "letter": "K",
+   "title": "Toxic Culinarity",
+   "statement_pages": [
+    24,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Toxic Culinarity.pdf"
+  },
+  {
+   "id": 15843,
+   "letter": "L",
+   "title": "Trace of Product of Sparse Square Matrices",
+   "statement_pages": [
+    26,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Trace of Product of Sparse Square Matrices.pdf"
+  },
+  {
+   "id": 15844,
+   "letter": "M",
+   "title": "Web Delivery",
+   "statement_pages": [
+    28,
+    29
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Web Delivery.pdf"
+  }
+ ]
+}

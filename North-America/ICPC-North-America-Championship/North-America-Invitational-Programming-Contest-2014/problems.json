@@ -1,0 +1,130 @@
+{
+ "id": 2298,
+ "name": "North America Invitational Programming Contest 2014",
+ "url": "https://qoj.ac/contest/2298",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2298&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2298&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 12944,
+   "letter": "A",
+   "title": "Banjo",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Banjo.pdf"
+  },
+  {
+   "id": 12945,
+   "letter": "B",
+   "title": "Cheats",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Cheats.pdf"
+  },
+  {
+   "id": 12946,
+   "letter": "C",
+   "title": "Diplomacy",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Diplomacy.pdf"
+  },
+  {
+   "id": 12947,
+   "letter": "D",
+   "title": "Fantastic Problem",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Fantastic Problem.pdf"
+  },
+  {
+   "id": 12948,
+   "letter": "E",
+   "title": "GCDs",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - GCDs.pdf"
+  },
+  {
+   "id": 12949,
+   "letter": "F",
+   "title": "Gold Bandits",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Gold Bandits.pdf"
+  },
+  {
+   "id": 12950,
+   "letter": "G",
+   "title": "Integer Estate Agent",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Integer Estate Agent.pdf"
+  },
+  {
+   "id": 12951,
+   "letter": "H",
+   "title": "Reconnaissance",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Reconnaissance.pdf"
+  },
+  {
+   "id": 12952,
+   "letter": "I",
+   "title": "Super Mario 169",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Super Mario 169.pdf"
+  },
+  {
+   "id": 12953,
+   "letter": "J",
+   "title": "Two Knight's Poem",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Two Knight's Poem.pdf"
+  }
+ ]
+}

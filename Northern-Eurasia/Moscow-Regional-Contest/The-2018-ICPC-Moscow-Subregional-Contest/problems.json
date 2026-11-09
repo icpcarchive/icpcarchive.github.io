@@ -1,0 +1,137 @@
+{
+ "id": 3253,
+ "name": "The 2018 ICPC Moscow Subregional Contest",
+ "url": "https://qoj.ac/contest/3253",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Moscow Regional Contest / Moscow Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3253&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16697,
+   "letter": "A",
+   "title": "Array As Palindrome",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Array As Palindrome.pdf"
+  },
+  {
+   "id": 16698,
+   "letter": "B",
+   "title": "Balanced Advertising",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Balanced Advertising.pdf"
+  },
+  {
+   "id": 16699,
+   "letter": "C",
+   "title": "Cutting the Strip",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cutting the Strip.pdf"
+  },
+  {
+   "id": 16700,
+   "letter": "D",
+   "title": "Distance and Union",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Distance and Union.pdf"
+  },
+  {
+   "id": 16701,
+   "letter": "E",
+   "title": "Exhibitions",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Exhibitions.pdf"
+  },
+  {
+   "id": 16702,
+   "letter": "F",
+   "title": "Folding",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Folding.pdf"
+  },
+  {
+   "id": 16703,
+   "letter": "G",
+   "title": "Good Old Football",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Good Old Football.pdf"
+  },
+  {
+   "id": 16704,
+   "letter": "H",
+   "title": "Hard Learning",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hard Learning.pdf"
+  },
+  {
+   "id": 16705,
+   "letter": "I",
+   "title": "Intellectual Shopping",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Intellectual Shopping.pdf"
+  },
+  {
+   "id": 16706,
+   "letter": "J",
+   "title": "Judge Problem",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Judge Problem.pdf"
+  },
+  {
+   "id": 16707,
+   "letter": "K",
+   "title": "Kingdom and Reforms",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kingdom and Reforms.pdf"
+  }
+ ]
+}

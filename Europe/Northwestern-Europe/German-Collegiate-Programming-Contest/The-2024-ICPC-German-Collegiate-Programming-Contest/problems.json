@@ -1,0 +1,163 @@
+{
+ "id": 2132,
+ "name": "The 2024 ICPC German Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/2132",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/German Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2132&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2132&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 12137,
+   "letter": "A",
+   "title": "Alien Attack 2",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Alien Attack 2.pdf"
+  },
+  {
+   "id": 12138,
+   "letter": "B",
+   "title": "Bookshelf Bottleneck",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bookshelf Bottleneck.pdf"
+  },
+  {
+   "id": 12139,
+   "letter": "C",
+   "title": "Copycat Catcher",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Copycat Catcher.pdf"
+  },
+  {
+   "id": 12140,
+   "letter": "D",
+   "title": "Dark Alley",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dark Alley.pdf"
+  },
+  {
+   "id": 12141,
+   "letter": "E",
+   "title": "Even Odd Game",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Even Odd Game.pdf"
+  },
+  {
+   "id": 12142,
+   "letter": "F",
+   "title": "Fair Fruitcake Fragmenting",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fair Fruitcake Fragmenting.pdf"
+  },
+  {
+   "id": 12143,
+   "letter": "G",
+   "title": "Geometric Gridlock",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Geometric Gridlock.pdf"
+  },
+  {
+   "id": 12144,
+   "letter": "H",
+   "title": "Headline Heat",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Headline Heat.pdf"
+  },
+  {
+   "id": 12145,
+   "letter": "I",
+   "title": "Interference",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Interference.pdf"
+  },
+  {
+   "id": 12146,
+   "letter": "J",
+   "title": "Jigsaw Present",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jigsaw Present.pdf"
+  },
+  {
+   "id": 12147,
+   "letter": "K",
+   "title": "Kitten of Chaos",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kitten of Chaos.pdf"
+  },
+  {
+   "id": 12148,
+   "letter": "L",
+   "title": "Laundry",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Laundry.pdf"
+  },
+  {
+   "id": 12149,
+   "letter": "M",
+   "title": "Musical Mending",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Musical Mending.pdf"
+  }
+ ]
+}

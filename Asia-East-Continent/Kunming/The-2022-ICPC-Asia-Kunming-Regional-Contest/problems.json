@@ -1,0 +1,164 @@
+{
+ "id": 1870,
+ "name": "The 2022 ICPC Asia Kunming Regional Contest",
+ "url": "https://qoj.ac/contest/1870",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Kunming",
+  "ICPC/Regionals/Asia East Continent/The 2021 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1870&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1870&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9849,
+   "letter": "A",
+   "title": "Amino Acids",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Amino Acids.pdf"
+  },
+  {
+   "id": 9850,
+   "letter": "B",
+   "title": "Blocks",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Blocks.pdf"
+  },
+  {
+   "id": 9851,
+   "letter": "C",
+   "title": "Cup of Water",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cup of Water.pdf"
+  },
+  {
+   "id": 9852,
+   "letter": "D",
+   "title": "Divisions",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Divisions.pdf"
+  },
+  {
+   "id": 9853,
+   "letter": "E",
+   "title": "Easy String Problem",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Easy String Problem.pdf"
+  },
+  {
+   "id": 9854,
+   "letter": "F",
+   "title": "Find the Maximum",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Find the Maximum.pdf"
+  },
+  {
+   "id": 9855,
+   "letter": "G",
+   "title": "Glass Bead Game",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Glass Bead Game.pdf"
+  },
+  {
+   "id": 9856,
+   "letter": "H",
+   "title": "Helesta",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Helesta.pdf"
+  },
+  {
+   "id": 9857,
+   "letter": "I",
+   "title": "Interval Mex",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Interval Mex.pdf"
+  },
+  {
+   "id": 9858,
+   "letter": "J",
+   "title": "Just Another String Problem",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Just Another String Problem.pdf"
+  },
+  {
+   "id": 9859,
+   "letter": "K",
+   "title": "King of Gamers",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - King of Gamers.pdf"
+  },
+  {
+   "id": 9860,
+   "letter": "L",
+   "title": "Light of Stars",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Light of Stars.pdf"
+  },
+  {
+   "id": 9861,
+   "letter": "M",
+   "title": "Mountain Is Quiet and Alone",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mountain Is Quiet and Alone.pdf"
+  }
+ ]
+}

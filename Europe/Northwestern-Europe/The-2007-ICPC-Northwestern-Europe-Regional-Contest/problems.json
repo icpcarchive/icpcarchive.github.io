@@ -1,0 +1,126 @@
+{
+ "id": 2749,
+ "name": "The 2007 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2749",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2749&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16085,
+   "letter": "A",
+   "title": "Assemble",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Assemble.pdf"
+  },
+  {
+   "id": 16086,
+   "letter": "B",
+   "title": "March of the Penguins",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - March of the Penguins.pdf"
+  },
+  {
+   "id": 16087,
+   "letter": "C",
+   "title": "Containers",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Containers.pdf"
+  },
+  {
+   "id": 16088,
+   "letter": "D",
+   "title": "Youth Hostel Dorm",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Youth Hostel Dorm.pdf"
+  },
+  {
+   "id": 16089,
+   "letter": "E",
+   "title": "Escape from Enemy Territory",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Escape from Enemy Territory.pdf"
+  },
+  {
+   "id": 16090,
+   "letter": "F",
+   "title": "Flight Safety",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Flight Safety.pdf"
+  },
+  {
+   "id": 16091,
+   "letter": "G",
+   "title": "Summits",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Summits.pdf"
+  },
+  {
+   "id": 16092,
+   "letter": "H",
+   "title": "Obfuscation",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Obfuscation.pdf"
+  },
+  {
+   "id": 16093,
+   "letter": "I",
+   "title": "Tower Parking",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Tower Parking.pdf"
+  },
+  {
+   "id": 16094,
+   "letter": "J",
+   "title": "Walk",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Walk.pdf"
+  }
+ ]
+}

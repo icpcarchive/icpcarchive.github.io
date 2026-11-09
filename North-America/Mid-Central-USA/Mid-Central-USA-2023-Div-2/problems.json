@@ -1,0 +1,161 @@
+{
+ "id": 1754,
+ "name": "Mid-Central USA 2023 (Div. 2)",
+ "url": "https://qoj.ac/contest/1754",
+ "categories": [
+  "ICPC/Regionals/North America/Mid-Central USA",
+  "ICPC/Regionals/North America/Southeast USA",
+  "ICPC/Regionals/North America/South Central USA"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1754&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9051,
+   "letter": "A",
+   "title": "ABC String",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - ABC String.pdf"
+  },
+  {
+   "id": 9052,
+   "letter": "B",
+   "title": "Balanced Tree Path",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Balanced Tree Path.pdf"
+  },
+  {
+   "id": 9064,
+   "letter": "C",
+   "title": "A Cappella Recording",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - A Cappella Recording.pdf"
+  },
+  {
+   "id": 9054,
+   "letter": "D",
+   "title": "Ordered Problem Set",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Ordered Problem Set.pdf"
+  },
+  {
+   "id": 9065,
+   "letter": "E",
+   "title": "Acceptable Seating Arrangements",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Acceptable Seating Arrangements.pdf"
+  },
+  {
+   "id": 9066,
+   "letter": "F",
+   "title": "Four Die Rolls",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Four Die Rolls.pdf"
+  },
+  {
+   "id": 9067,
+   "letter": "G",
+   "title": "Rampant Growth",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Rampant Growth.pdf"
+  },
+  {
+   "id": 9068,
+   "letter": "H",
+   "title": "Triple Sevens",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Triple Sevens.pdf"
+  },
+  {
+   "id": 9059,
+   "letter": "I",
+   "title": "Item Selection",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Item Selection.pdf"
+  },
+  {
+   "id": 9060,
+   "letter": "J",
+   "title": "Sequence Guessing",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Sequence Guessing.pdf"
+  },
+  {
+   "id": 9061,
+   "letter": "K",
+   "title": "Streets Behind",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Streets Behind.pdf"
+  },
+  {
+   "id": 9069,
+   "letter": "L",
+   "title": "Training",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Training.pdf"
+  },
+  {
+   "id": 9063,
+   "letter": "M",
+   "title": "Champernowne Verification",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Champernowne Verification.pdf"
+  }
+ ]
+}

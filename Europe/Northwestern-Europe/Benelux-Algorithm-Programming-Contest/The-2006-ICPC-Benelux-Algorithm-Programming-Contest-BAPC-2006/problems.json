@@ -1,0 +1,79 @@
+{
+ "id": 3902,
+ "name": "The 2006 ICPC Benelux Algorithm Programming Contest (BAPC 2006)",
+ "url": "https://qoj.ac/contest/3902",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3902&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19203,
+   "letter": "A",
+   "title": "Geodes",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Geodes.pdf"
+  },
+  {
+   "id": 19204,
+   "letter": "B",
+   "title": "Bowling",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Bowling.pdf"
+  },
+  {
+   "id": 19205,
+   "letter": "C",
+   "title": "High Spies",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - High Spies.pdf"
+  },
+  {
+   "id": 19206,
+   "letter": "D",
+   "title": "Digital Friends",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Digital Friends.pdf"
+  },
+  {
+   "id": 19207,
+   "letter": "E",
+   "title": "The Bavarian Beer Party",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - The Bavarian Beer Party.pdf"
+  },
+  {
+   "id": 19208,
+   "letter": "F",
+   "title": "Evacuation",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Evacuation.pdf"
+  },
+  {
+   "id": 19209,
+   "letter": "G",
+   "title": "Decompression",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Decompression.pdf"
+  },
+  {
+   "id": 19210,
+   "letter": "H",
+   "title": "Rummikub",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Rummikub.pdf"
+  },
+  {
+   "id": 19211,
+   "letter": "I",
+   "title": "Make it Manhattan",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Make it Manhattan.pdf"
+  }
+ ]
+}

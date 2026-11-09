@@ -1,0 +1,141 @@
+{
+ "id": 3886,
+ "name": "The 2013 German Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/3886",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/German Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3886&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3886&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19139,
+   "letter": "A",
+   "title": "Boggle",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Boggle.pdf"
+  },
+  {
+   "id": 19140,
+   "letter": "B",
+   "title": "Booking",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Booking.pdf"
+  },
+  {
+   "id": 19141,
+   "letter": "C",
+   "title": "Chess",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Chess.pdf"
+  },
+  {
+   "id": 19142,
+   "letter": "D",
+   "title": "Kastenlauf",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Kastenlauf.pdf"
+  },
+  {
+   "id": 19143,
+   "letter": "E",
+   "title": "No Trees But Flowers",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - No Trees But Flowers.pdf"
+  },
+  {
+   "id": 19144,
+   "letter": "F",
+   "title": "Peg Solitaire",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Peg Solitaire.pdf"
+  },
+  {
+   "id": 19145,
+   "letter": "G",
+   "title": "Ringworld",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Ringworld.pdf"
+  },
+  {
+   "id": 19146,
+   "letter": "H",
+   "title": "The King of the North",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - The King of the North.pdf"
+  },
+  {
+   "id": 19147,
+   "letter": "I",
+   "title": "Ticket Draw",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Ticket Draw.pdf"
+  },
+  {
+   "id": 19148,
+   "letter": "J",
+   "title": "Timing",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Timing.pdf"
+  },
+  {
+   "id": 19149,
+   "letter": "K",
+   "title": "Triangles",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Triangles.pdf"
+  }
+ ]
+}

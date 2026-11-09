@@ -1,0 +1,126 @@
+{
+ "id": 2705,
+ "name": "The 2012 Southeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2705",
+ "categories": [
+  "ICPC/Regionals/Europe/Southeastern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2705&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15750,
+   "letter": "A",
+   "title": "Dr Who's Banquet",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Dr Who's Banquet.pdf"
+  },
+  {
+   "id": 15751,
+   "letter": "B",
+   "title": "Bitris",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bitris.pdf"
+  },
+  {
+   "id": 15752,
+   "letter": "C",
+   "title": "Primes",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Primes.pdf"
+  },
+  {
+   "id": 15753,
+   "letter": "D",
+   "title": "Longest Prefix Match",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Longest Prefix Match.pdf"
+  },
+  {
+   "id": 15754,
+   "letter": "E",
+   "title": "Stripe",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Stripe.pdf"
+  },
+  {
+   "id": 15755,
+   "letter": "F",
+   "title": "Maximal Number of Divisors",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Maximal Number of Divisors.pdf"
+  },
+  {
+   "id": 15756,
+   "letter": "G",
+   "title": "Miraculous Drug",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Miraculous Drug.pdf"
+  },
+  {
+   "id": 15757,
+   "letter": "H",
+   "title": "Softville",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Softville.pdf"
+  },
+  {
+   "id": 15758,
+   "letter": "I",
+   "title": "Tree",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Tree.pdf"
+  },
+  {
+   "id": 15759,
+   "letter": "J",
+   "title": "VAN DINSKY",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - VAN DINSKY.pdf"
+  }
+ ]
+}

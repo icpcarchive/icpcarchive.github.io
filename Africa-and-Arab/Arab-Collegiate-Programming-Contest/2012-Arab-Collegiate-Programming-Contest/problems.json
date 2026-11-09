@@ -1,0 +1,81 @@
+{
+ "id": 2277,
+ "name": "2012 Arab Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/2277",
+ "categories": [
+  "ICPC/Regionals/Africa and Arab/Arab Collegiate Programming Contest"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 12966,
+   "letter": "A",
+   "title": "The New President",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - The New President.pdf"
+  },
+  {
+   "id": 12967,
+   "letter": "B",
+   "title": "No Name",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - No Name.pdf"
+  },
+  {
+   "id": 12968,
+   "letter": "C",
+   "title": "Encrypted Password",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Encrypted Password.pdf"
+  },
+  {
+   "id": 12969,
+   "letter": "D",
+   "title": "Kids Love Candies",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Kids Love Candies.pdf"
+  },
+  {
+   "id": 12970,
+   "letter": "E",
+   "title": "The Swapping Game",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - The Swapping Game.pdf"
+  },
+  {
+   "id": 12971,
+   "letter": "F",
+   "title": "Lock Pattern",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Lock Pattern.pdf"
+  },
+  {
+   "id": 12972,
+   "letter": "G",
+   "title": "Archery",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Archery.pdf"
+  },
+  {
+   "id": 12973,
+   "letter": "H",
+   "title": "Connecting Islands",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Connecting Islands.pdf"
+  },
+  {
+   "id": 12974,
+   "letter": "I",
+   "title": "Contest Hall Preparation",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Contest Hall Preparation.pdf"
+  },
+  {
+   "id": 12975,
+   "letter": "J",
+   "title": "Math Homework",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Math Homework.pdf"
+  }
+ ]
+}

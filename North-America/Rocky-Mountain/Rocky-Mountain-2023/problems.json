@@ -1,0 +1,152 @@
+{
+ "id": 1483,
+ "name": "Rocky Mountain 2023",
+ "url": "https://qoj.ac/contest/1483",
+ "categories": [
+  "ICPC/Regionals/North America/Rocky Mountain"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1483&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1483&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 8060,
+   "letter": "A",
+   "title": "Attendance",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Attendance.pdf"
+  },
+  {
+   "id": 8061,
+   "letter": "B",
+   "title": "Add or Multiply",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Add or Multiply.pdf"
+  },
+  {
+   "id": 8062,
+   "letter": "C",
+   "title": "Guess Who",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Guess Who.pdf"
+  },
+  {
+   "id": 8063,
+   "letter": "D",
+   "title": "Seven Up",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Seven Up.pdf"
+  },
+  {
+   "id": 8064,
+   "letter": "E",
+   "title": "Gas Station",
+   "statement_pages": [
+    13,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Gas Station.pdf"
+  },
+  {
+   "id": 8065,
+   "letter": "F",
+   "title": "Thwack!",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Thwack!.pdf"
+  },
+  {
+   "id": 8066,
+   "letter": "G",
+   "title": "Bombardment",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Bombardment.pdf"
+  },
+  {
+   "id": 8067,
+   "letter": "H",
+   "title": "Scientific Grading",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Scientific Grading.pdf"
+  },
+  {
+   "id": 8068,
+   "letter": "I",
+   "title": "Building Roads",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Building Roads.pdf"
+  },
+  {
+   "id": 8069,
+   "letter": "J",
+   "title": "Don't Be Fake",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Don't Be Fake.pdf"
+  },
+  {
+   "id": 8070,
+   "letter": "K",
+   "title": "A Complex Problem",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - A Complex Problem.pdf"
+  },
+  {
+   "id": 8071,
+   "letter": "L",
+   "title": "Ribbon Road",
+   "statement_pages": [
+    29,
+    32
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Ribbon Road.pdf"
+  }
+ ]
+}

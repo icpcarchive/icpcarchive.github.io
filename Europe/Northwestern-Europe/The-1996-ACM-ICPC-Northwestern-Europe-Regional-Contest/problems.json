@@ -1,0 +1,104 @@
+{
+ "id": 3620,
+ "name": "The 1996 ACM ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/3620",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3620&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19663,
+   "letter": "A",
+   "title": "Burger",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Burger.pdf"
+  },
+  {
+   "id": 19664,
+   "letter": "B",
+   "title": "Wormholes",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Wormholes.pdf"
+  },
+  {
+   "id": 19665,
+   "letter": "C",
+   "title": "Squares",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Squares.pdf"
+  },
+  {
+   "id": 19666,
+   "letter": "D",
+   "title": "Magic",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Magic.pdf"
+  },
+  {
+   "id": 19667,
+   "letter": "E",
+   "title": "Jackpot",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Jackpot.pdf"
+  },
+  {
+   "id": 19668,
+   "letter": "F",
+   "title": "Dividing coins",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Dividing coins.pdf"
+  },
+  {
+   "id": 19669,
+   "letter": "G",
+   "title": "Crimewave",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Crimewave.pdf"
+  },
+  {
+   "id": 19670,
+   "letter": "H",
+   "title": "Gaston",
+   "statement_pages": [
+    14,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Gaston.pdf"
+  }
+ ]
+}

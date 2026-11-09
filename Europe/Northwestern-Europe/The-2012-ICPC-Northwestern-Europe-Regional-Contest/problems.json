@@ -1,0 +1,141 @@
+{
+ "id": 413,
+ "name": "The 2012 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/413",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=413&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=413&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3564,
+   "letter": "A",
+   "title": "Admiral",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Admiral.pdf"
+  },
+  {
+   "id": 3565,
+   "letter": "B",
+   "title": "Beer Pressure",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Beer Pressure.pdf"
+  },
+  {
+   "id": 3566,
+   "letter": "C",
+   "title": "Cycling",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cycling.pdf"
+  },
+  {
+   "id": 3567,
+   "letter": "D",
+   "title": "Digital Clock",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Digital Clock.pdf"
+  },
+  {
+   "id": 3568,
+   "letter": "E",
+   "title": "Edge Case",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Edge Case.pdf"
+  },
+  {
+   "id": 3569,
+   "letter": "F",
+   "title": "Foul Play",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Foul Play.pdf"
+  },
+  {
+   "id": 3570,
+   "letter": "G",
+   "title": "Guards",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Guards.pdf"
+  },
+  {
+   "id": 3571,
+   "letter": "H",
+   "title": "Hip To Be Square",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hip To Be Square.pdf"
+  },
+  {
+   "id": 3572,
+   "letter": "I",
+   "title": "Idol",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Idol.pdf"
+  },
+  {
+   "id": 3573,
+   "letter": "J",
+   "title": "Joint Venture",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joint Venture.pdf"
+  },
+  {
+   "id": 3574,
+   "letter": "K",
+   "title": "Key Insight",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Key Insight.pdf"
+  }
+ ]
+}

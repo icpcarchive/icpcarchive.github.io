@@ -1,0 +1,141 @@
+{
+ "id": 461,
+ "name": "The 2016 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/461",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=461&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=461&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2682,
+   "letter": "A",
+   "title": "Arranging Hat",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Arranging Hat.pdf"
+  },
+  {
+   "id": 2683,
+   "letter": "B",
+   "title": "British Menu",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - British Menu.pdf"
+  },
+  {
+   "id": 2684,
+   "letter": "C",
+   "title": "Careful Ascent",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Careful Ascent.pdf"
+  },
+  {
+   "id": 2685,
+   "letter": "D",
+   "title": "Driving in Optimistan",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Driving in Optimistan.pdf"
+  },
+  {
+   "id": 2686,
+   "letter": "E",
+   "title": "Exam Redistribution",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Exam Redistribution.pdf"
+  },
+  {
+   "id": 2687,
+   "letter": "F",
+   "title": "Free Weights",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Free Weights.pdf"
+  },
+  {
+   "id": 2688,
+   "letter": "G",
+   "title": "Gotta Nudge 'Em All",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gotta Nudge 'Em All.pdf"
+  },
+  {
+   "id": 2689,
+   "letter": "H",
+   "title": "Hamiltonian Hypercube",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hamiltonian Hypercube.pdf"
+  },
+  {
+   "id": 2690,
+   "letter": "I",
+   "title": "Iron and Coal",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Iron and Coal.pdf"
+  },
+  {
+   "id": 2691,
+   "letter": "J",
+   "title": "Jupiter Orbiter",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jupiter Orbiter.pdf"
+  },
+  {
+   "id": 2692,
+   "letter": "K",
+   "title": "Kiwi Trees",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kiwi Trees.pdf"
+  }
+ ]
+}

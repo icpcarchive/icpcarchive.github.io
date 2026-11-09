@@ -1,0 +1,144 @@
+{
+ "id": 2173,
+ "name": "The 2013 ACM-ICPC Northern Subregional Contest",
+ "url": "https://qoj.ac/contest/2173",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Northwestern Russia Regional Contest (NWRRC) / Northern Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2173&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 12758,
+   "letter": "A",
+   "title": "Arrangement of Contest",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Arrangement of Contest.pdf"
+  },
+  {
+   "id": 12759,
+   "letter": "B",
+   "title": "Ballot Analyzing Device",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Ballot Analyzing Device.pdf"
+  },
+  {
+   "id": 12760,
+   "letter": "C",
+   "title": "Correcting Curiosity",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Correcting Curiosity.pdf"
+  },
+  {
+   "id": 12761,
+   "letter": "D",
+   "title": "Dwarf Tower",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dwarf Tower.pdf"
+  },
+  {
+   "id": 12762,
+   "letter": "E",
+   "title": "Energy Tycoon",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Energy Tycoon.pdf"
+  },
+  {
+   "id": 12763,
+   "letter": "F",
+   "title": "Flight Boarding Optimization",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Flight Boarding Optimization.pdf"
+  },
+  {
+   "id": 12764,
+   "letter": "G",
+   "title": "Garage",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Garage.pdf"
+  },
+  {
+   "id": 12765,
+   "letter": "H",
+   "title": "Heavy Chain Clusterization",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Heavy Chain Clusterization.pdf"
+  },
+  {
+   "id": 12766,
+   "letter": "I",
+   "title": "Intellectual Property",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Intellectual Property.pdf"
+  },
+  {
+   "id": 12767,
+   "letter": "J",
+   "title": "J",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - J.pdf"
+  },
+  {
+   "id": 12768,
+   "letter": "K",
+   "title": "Kids in a Friendly Class",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kids in a Friendly Class.pdf"
+  },
+  {
+   "id": 12769,
+   "letter": "L",
+   "title": "Lonely Mountain",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lonely Mountain.pdf"
+  }
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "id": 1601,
+ "name": "The 2013 Polish Collegiate Programming Contest (AMPPZ 2013)",
+ "url": "https://qoj.ac/contest/1601",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/Polish Collegiate Programming Contest (AMPPZ)"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1601&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11152,
+   "letter": "A",
+   "title": "The Motorway",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - The Motorway.pdf"
+  },
+  {
+   "id": 11153,
+   "letter": "B",
+   "title": "Bytehattan",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bytehattan.pdf"
+  },
+  {
+   "id": 11154,
+   "letter": "C",
+   "title": "The Carpenter",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - The Carpenter.pdf"
+  },
+  {
+   "id": 11155,
+   "letter": "D",
+   "title": "Demonstrations",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Demonstrations.pdf"
+  },
+  {
+   "id": 11156,
+   "letter": "E",
+   "title": "The Exam",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - The Exam.pdf"
+  },
+  {
+   "id": 11157,
+   "letter": "F",
+   "title": "Speed Cameras",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Speed Cameras.pdf"
+  },
+  {
+   "id": 11158,
+   "letter": "G",
+   "title": "Marbles",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Marbles.pdf"
+  },
+  {
+   "id": 11159,
+   "letter": "H",
+   "title": "The Hero",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - The Hero.pdf"
+  },
+  {
+   "id": 11160,
+   "letter": "I",
+   "title": "Genetic Engineering",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Genetic Engineering.pdf"
+  },
+  {
+   "id": 11161,
+   "letter": "J",
+   "title": "Janosik",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Janosik.pdf"
+  },
+  {
+   "id": 11162,
+   "letter": "K",
+   "title": "Blankets",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Blankets.pdf"
+  }
+ ]
+}

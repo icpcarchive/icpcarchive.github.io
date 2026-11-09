@@ -1,0 +1,137 @@
+{
+ "id": 163,
+ "name": "East Central NA 2019",
+ "url": "https://qoj.ac/contest/163",
+ "categories": [
+  "ICPC/Regionals/North America/East Central NA"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=163&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2455,
+   "letter": "A",
+   "title": "Retribution!",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Retribution!.pdf"
+  },
+  {
+   "id": 2456,
+   "letter": "B",
+   "title": "Bio Trip",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bio Trip.pdf"
+  },
+  {
+   "id": 2457,
+   "letter": "C",
+   "title": "Cheese, If You Please",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cheese, If You Please.pdf"
+  },
+  {
+   "id": 2458,
+   "letter": "D",
+   "title": "Follow the Bouncing Ball",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Follow the Bouncing Ball.pdf"
+  },
+  {
+   "id": 2459,
+   "letter": "E",
+   "title": "Just Passing Through",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Just Passing Through.pdf"
+  },
+  {
+   "id": 2460,
+   "letter": "F",
+   "title": "Musical Chairs",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Musical Chairs.pdf"
+  },
+  {
+   "id": 2461,
+   "letter": "G",
+   "title": "Out of Sorts",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Out of Sorts.pdf"
+  },
+  {
+   "id": 2462,
+   "letter": "H",
+   "title": "Remainder Reminder",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Remainder Reminder.pdf"
+  },
+  {
+   "id": 2463,
+   "letter": "I",
+   "title": "Square Rooms",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Square Rooms.pdf"
+  },
+  {
+   "id": 2464,
+   "letter": "J",
+   "title": "Taxed Editor",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Taxed Editor.pdf"
+  },
+  {
+   "id": 2465,
+   "letter": "K",
+   "title": "Where Have You Bin?",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Where Have You Bin_.pdf"
+  }
+ ]
+}

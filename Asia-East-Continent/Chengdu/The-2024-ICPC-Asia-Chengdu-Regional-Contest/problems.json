@@ -1,0 +1,164 @@
+{
+ "id": 1821,
+ "name": "The 2024 ICPC Asia Chengdu Regional Contest",
+ "url": "https://qoj.ac/contest/1821",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Chengdu",
+  "ICPC/Regionals/Asia East Continent/The 2024 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1821&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1821&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9535,
+   "letter": "A",
+   "title": "Arrow a Row",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Arrow a Row.pdf"
+  },
+  {
+   "id": 9536,
+   "letter": "B",
+   "title": "Athlete Welcome Ceremony",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Athlete Welcome Ceremony.pdf"
+  },
+  {
+   "id": 9537,
+   "letter": "C",
+   "title": "Chinese Chess",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Chinese Chess.pdf"
+  },
+  {
+   "id": 9538,
+   "letter": "D",
+   "title": "Closest Derangement",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Closest Derangement.pdf"
+  },
+  {
+   "id": 9539,
+   "letter": "E",
+   "title": "Disrupting Communications",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Disrupting Communications.pdf"
+  },
+  {
+   "id": 9540,
+   "letter": "F",
+   "title": "Double 11",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Double 11.pdf"
+  },
+  {
+   "id": 9541,
+   "letter": "G",
+   "title": "Expanding Array",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Expanding Array.pdf"
+  },
+  {
+   "id": 9542,
+   "letter": "H",
+   "title": "Friendship is Magic",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Friendship is Magic.pdf"
+  },
+  {
+   "id": 9543,
+   "letter": "I",
+   "title": "Good Partitions",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Good Partitions.pdf"
+  },
+  {
+   "id": 9544,
+   "letter": "J",
+   "title": "Grand Prix of Ballance",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Grand Prix of Ballance.pdf"
+  },
+  {
+   "id": 9545,
+   "letter": "K",
+   "title": "Magical Set",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Magical Set.pdf"
+  },
+  {
+   "id": 9546,
+   "letter": "L",
+   "title": "Recover Statistics",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Recover Statistics.pdf"
+  },
+  {
+   "id": 9547,
+   "letter": "M",
+   "title": "Two Convex Holes",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Two Convex Holes.pdf"
+  }
+ ]
+}

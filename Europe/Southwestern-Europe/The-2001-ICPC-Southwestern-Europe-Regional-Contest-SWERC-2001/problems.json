@@ -1,0 +1,115 @@
+{
+ "id": 3648,
+ "name": "The 2001 ICPC Southwestern Europe Regional Contest (SWERC 2001)",
+ "url": "https://qoj.ac/contest/3648",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3648&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19804,
+   "letter": "A",
+   "title": "Mice and Maze",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Mice and Maze.pdf"
+  },
+  {
+   "id": 19805,
+   "letter": "B",
+   "title": "Multiple Morse Matches",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Multiple Morse Matches.pdf"
+  },
+  {
+   "id": 19806,
+   "letter": "C",
+   "title": "Maya Calendar",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Maya Calendar.pdf"
+  },
+  {
+   "id": 19807,
+   "letter": "D",
+   "title": "Water Shortage",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Water Shortage.pdf"
+  },
+  {
+   "id": 19808,
+   "letter": "E",
+   "title": "Puzzle",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Puzzle.pdf"
+  },
+  {
+   "id": 19809,
+   "letter": "F",
+   "title": "Reliable Programs",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Reliable Programs.pdf"
+  },
+  {
+   "id": 19810,
+   "letter": "G",
+   "title": "Binary Stirling Numbers",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Binary Stirling Numbers.pdf"
+  },
+  {
+   "id": 19811,
+   "letter": "H",
+   "title": "Project File Dependencies",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Project File Dependencies.pdf"
+  },
+  {
+   "id": 19812,
+   "letter": "I",
+   "title": "No Change",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - No Change.pdf"
+  }
+ ]
+}

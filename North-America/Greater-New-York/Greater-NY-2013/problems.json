@@ -1,0 +1,74 @@
+{
+ "id": 51,
+ "name": "Greater NY 2013",
+ "url": "https://qoj.ac/contest/51",
+ "categories": [
+  "ICPC/Regionals/North America/Greater New York"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 1479,
+   "letter": "A",
+   "title": "Islands in the Data Stream",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Islands in the Data Stream.pdf"
+  },
+  {
+   "id": 1480,
+   "letter": "B",
+   "title": "Von Neumann's Fly",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Von Neumann's Fly.pdf"
+  },
+  {
+   "id": 1481,
+   "letter": "C",
+   "title": "Strahler Order",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Strahler Order.pdf"
+  },
+  {
+   "id": 1482,
+   "letter": "D",
+   "title": "Pisano Periods",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Pisano Periods.pdf"
+  },
+  {
+   "id": 1483,
+   "letter": "E",
+   "title": "Deranged Exams",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Deranged Exams.pdf"
+  },
+  {
+   "id": 1484,
+   "letter": "F",
+   "title": "Chomp",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Chomp.pdf"
+  },
+  {
+   "id": 1485,
+   "letter": "G",
+   "title": "Triangle Count Sequences of Polygon Triangulations",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Triangle Count Sequences of Polygon Triangulations.pdf"
+  },
+  {
+   "id": 1486,
+   "letter": "H",
+   "title": "Powers of Pascal",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Powers of Pascal.pdf"
+  },
+  {
+   "id": 1487,
+   "letter": "I",
+   "title": "Contraband",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Contraband.pdf"
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": 3615,
+ "name": "The 2006 ACM-ICPC Asia Yokohama Regional Contest",
+ "url": "https://qoj.ac/contest/3615",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3615&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19616,
+   "letter": "A",
+   "title": "How I Wonder What You Are!",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - How I Wonder What You Are!.pdf"
+  },
+  {
+   "id": 19617,
+   "letter": "B",
+   "title": "How I Mathematician Wonder What You Are!",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - How I Mathematician Wonder What You Are!.pdf"
+  },
+  {
+   "id": 19618,
+   "letter": "C",
+   "title": "Cubic Eight-Puzzle",
+   "statement_pages": [
+    5,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cubic Eight-Puzzle.pdf"
+  },
+  {
+   "id": 19619,
+   "letter": "D",
+   "title": "Sum of Different Primes",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Sum of Different Primes.pdf"
+  },
+  {
+   "id": 19620,
+   "letter": "E",
+   "title": "Manhattan Wiring",
+   "statement_pages": [
+    10,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Manhattan Wiring.pdf"
+  },
+  {
+   "id": 19621,
+   "letter": "F",
+   "title": "Power Calculus",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Power Calculus.pdf"
+  },
+  {
+   "id": 19622,
+   "letter": "G",
+   "title": "Polygons on the Grid",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Polygons on the Grid.pdf"
+  },
+  {
+   "id": 19623,
+   "letter": "H",
+   "title": "The Best Name for Your Baby",
+   "statement_pages": [
+    17,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - The Best Name for Your Baby.pdf"
+  },
+  {
+   "id": 19624,
+   "letter": "I",
+   "title": "Enjoyable Commutation",
+   "statement_pages": [
+    20,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Enjoyable Commutation.pdf"
+  }
+ ]
+}

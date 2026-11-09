@@ -1,0 +1,84 @@
+{
+ "id": 3666,
+ "name": "CTU Open Contest 1999",
+ "url": "https://qoj.ac/contest/3666",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3666&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19369,
+   "letter": "A",
+   "title": "Jack",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Jack.pdf"
+  },
+  {
+   "id": 19370,
+   "letter": "B",
+   "title": "Kaleidoskop (Caleidoscope)",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Kaleidoskop (Caleidoscope).pdf"
+  },
+  {
+   "id": 19371,
+   "letter": "C",
+   "title": "Logik (Logic)",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Logik (Logic).pdf"
+  },
+  {
+   "id": 19372,
+   "letter": "D",
+   "title": "Mocneni (Raising Modulo Numbers)",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Mocneni (Raising Modulo Numbers).pdf"
+  },
+  {
+   "id": 19373,
+   "letter": "E",
+   "title": "Nejvyssi zisky (The Highest Profits)",
+   "statement_pages": [
+    7,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Nejvyssi zisky (The Highest Profits).pdf"
+  },
+  {
+   "id": 19374,
+   "letter": "F",
+   "title": "Osmismerka (Word Puzzle)",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Osmismerka (Word Puzzle).pdf"
+  },
+  {
+   "id": 19375,
+   "letter": "G",
+   "title": "Patnactka (Lloyd Fifteen Puzzle)",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Patnactka (Lloyd Fifteen Puzzle).pdf"
+  },
+  {
+   "id": 19376,
+   "letter": "H",
+   "title": "Quorf",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Quorf.pdf"
+  }
+ ]
+}

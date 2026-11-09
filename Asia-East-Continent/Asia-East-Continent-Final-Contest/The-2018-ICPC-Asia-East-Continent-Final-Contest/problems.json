@@ -1,0 +1,157 @@
+{
+ "id": 1938,
+ "name": "The 2018 ICPC Asia East Continent Final Contest",
+ "url": "https://qoj.ac/contest/1938",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent",
+  "ICPC/Regionals/Asia East Continent/The 2018 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1938&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1938&r=1"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://www.bilibili.com/video/BV19t411a7Yv"
+  }
+ ],
+ "problems": [
+  {
+   "id": 10202,
+   "letter": "A",
+   "title": "Exotic … Ancient City",
+   "statement_pages": [
+    3,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Exotic … Ancient City.pdf"
+  },
+  {
+   "id": 10203,
+   "letter": "B",
+   "title": "Mysterious … Host",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Mysterious … Host.pdf"
+  },
+  {
+   "id": 10204,
+   "letter": "C",
+   "title": "Heretical … Möbius",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Heretical … Möbius.pdf"
+  },
+  {
+   "id": 10205,
+   "letter": "D",
+   "title": "Deja vu of … Go Players",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Deja vu of … Go Players.pdf"
+  },
+  {
+   "id": 10206,
+   "letter": "E",
+   "title": "Immortal … Universe",
+   "statement_pages": [
+    12,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Immortal … Universe.pdf"
+  },
+  {
+   "id": 10207,
+   "letter": "F",
+   "title": "Interstellar … Fantasy",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Interstellar … Fantasy.pdf"
+  },
+  {
+   "id": 10208,
+   "letter": "G",
+   "title": "Omnipotent … Garland",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Omnipotent … Garland.pdf"
+  },
+  {
+   "id": 10209,
+   "letter": "H",
+   "title": "Saintly … Coins",
+   "statement_pages": [
+    20,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Saintly … Coins.pdf"
+  },
+  {
+   "id": 10210,
+   "letter": "I",
+   "title": "Misunderstood … Missing",
+   "statement_pages": [
+    26,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Misunderstood … Missing.pdf"
+  },
+  {
+   "id": 10211,
+   "letter": "J",
+   "title": "Philosophical … Balance",
+   "statement_pages": [
+    28,
+    29
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Philosophical … Balance.pdf"
+  },
+  {
+   "id": 10212,
+   "letter": "K",
+   "title": "Desperate … Fire Survive",
+   "statement_pages": [
+    30,
+    31
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Desperate … Fire Survive.pdf"
+  },
+  {
+   "id": 10213,
+   "letter": "L",
+   "title": "Eventual … Journey",
+   "statement_pages": [
+    32,
+    33
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Eventual … Journey.pdf"
+  }
+ ]
+}

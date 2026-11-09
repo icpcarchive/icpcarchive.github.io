@@ -1,0 +1,152 @@
+{
+ "id": 918,
+ "name": "The 2021 ICPC Southwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/918",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=918&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=918&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3859,
+   "letter": "A",
+   "title": "Organizing SWERC",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Organizing SWERC.pdf"
+  },
+  {
+   "id": 3860,
+   "letter": "B",
+   "title": "Drone Photo",
+   "statement_pages": [
+    5,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Drone Photo.pdf"
+  },
+  {
+   "id": 3861,
+   "letter": "C",
+   "title": "Il Derby della Madonnina",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Il Derby della Madonnina.pdf"
+  },
+  {
+   "id": 3862,
+   "letter": "D",
+   "title": "Ice Cream Shop",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Ice Cream Shop.pdf"
+  },
+  {
+   "id": 3863,
+   "letter": "E",
+   "title": "Evolution of Weasels",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Evolution of Weasels.pdf"
+  },
+  {
+   "id": 3864,
+   "letter": "F",
+   "title": "Bottle Arrangements",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Bottle Arrangements.pdf"
+  },
+  {
+   "id": 3865,
+   "letter": "G",
+   "title": "Round Table",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Round Table.pdf"
+  },
+  {
+   "id": 3866,
+   "letter": "H",
+   "title": "Pandemic Restrictions",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Pandemic Restrictions.pdf"
+  },
+  {
+   "id": 3867,
+   "letter": "I",
+   "title": "Antennas",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Antennas.pdf"
+  },
+  {
+   "id": 3868,
+   "letter": "J",
+   "title": "Boundary",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Boundary.pdf"
+  },
+  {
+   "id": 3869,
+   "letter": "K",
+   "title": "Gastronomic Event",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Gastronomic Event.pdf"
+  },
+  {
+   "id": 3870,
+   "letter": "L",
+   "title": "Circular Maze",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Circular Maze.pdf"
+  }
+ ]
+}

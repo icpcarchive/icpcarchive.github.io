@@ -1,0 +1,159 @@
+{
+ "id": 943,
+ "name": "ICPC North America Championship 2022",
+ "url": "https://qoj.ac/contest/943",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=943&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 4225,
+   "letter": "A",
+   "title": "Contact Tracing",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Contact Tracing.pdf"
+  },
+  {
+   "id": 4226,
+   "letter": "B",
+   "title": "Cookie Cutter",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Cookie Cutter.pdf"
+  },
+  {
+   "id": 4227,
+   "letter": "C",
+   "title": "Cram",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cram.pdf"
+  },
+  {
+   "id": 4228,
+   "letter": "D",
+   "title": "Double Sort",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Double Sort.pdf"
+  },
+  {
+   "id": 4229,
+   "letter": "E",
+   "title": "GCD Harmony",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - GCD Harmony.pdf"
+  },
+  {
+   "id": 4230,
+   "letter": "F",
+   "title": "Leaderboard Effect",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Leaderboard Effect.pdf"
+  },
+  {
+   "id": 4231,
+   "letter": "G",
+   "title": "Rafting Trip",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Rafting Trip.pdf"
+  },
+  {
+   "id": 4232,
+   "letter": "H",
+   "title": "Ranked Choice Spoiling",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Ranked Choice Spoiling.pdf"
+  },
+  {
+   "id": 4233,
+   "letter": "I",
+   "title": "Reset",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Reset.pdf"
+  },
+  {
+   "id": 4234,
+   "letter": "J",
+   "title": "Tic Tac Toe Counting",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Tic Tac Toe Counting.pdf"
+  },
+  {
+   "id": 4235,
+   "letter": "K",
+   "title": "Transparency",
+   "statement_pages": [
+    21,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Transparency.pdf"
+  },
+  {
+   "id": 4236,
+   "letter": "L",
+   "title": "Triangular Logs",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Triangular Logs.pdf"
+  },
+  {
+   "id": 4237,
+   "letter": "M",
+   "title": "Word Ladder",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Word Ladder.pdf"
+  }
+ ]
+}

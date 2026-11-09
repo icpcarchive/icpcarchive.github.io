@@ -1,0 +1,88 @@
+{
+ "id": 860,
+ "name": "Mid-Central USA 2021",
+ "url": "https://qoj.ac/contest/860",
+ "categories": [
+  "ICPC/Regionals/North America/Mid-Central USA"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 2907,
+   "letter": "A",
+   "title": "Average Character",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Average Character.pdf"
+  },
+  {
+   "id": 2896,
+   "letter": "B",
+   "title": "Black and White",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Black and White.pdf"
+  },
+  {
+   "id": 2914,
+   "letter": "C",
+   "title": "Problem Set Construction",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Problem Set Construction.pdf"
+  },
+  {
+   "id": 2899,
+   "letter": "D",
+   "title": "Dorm Room Divide",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Dorm Room Divide.pdf"
+  },
+  {
+   "id": 2909,
+   "letter": "E",
+   "title": "Overdraft",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Overdraft.pdf"
+  },
+  {
+   "id": 2900,
+   "letter": "F",
+   "title": "Fail Them All!",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Fail Them All!.pdf"
+  },
+  {
+   "id": 2903,
+   "letter": "G",
+   "title": "Tetris Generation",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Tetris Generation.pdf"
+  },
+  {
+   "id": 2905,
+   "letter": "H",
+   "title": "Tree Hopping",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Tree Hopping.pdf"
+  },
+  {
+   "id": 2906,
+   "letter": "I",
+   "title": "XOR Island",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - XOR Island.pdf"
+  },
+  {
+   "id": 2912,
+   "letter": "J",
+   "title": "Who Goes There?",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Who Goes There_.pdf"
+  },
+  {
+   "id": 2898,
+   "letter": "K",
+   "title": "Diagonals",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Diagonals.pdf"
+  }
+ ]
+}

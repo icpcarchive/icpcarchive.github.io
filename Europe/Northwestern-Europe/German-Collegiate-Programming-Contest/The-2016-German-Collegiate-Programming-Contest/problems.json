@@ -1,0 +1,152 @@
+{
+ "id": 3883,
+ "name": "The 2016 German Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/3883",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/German Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3883&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3883&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19172,
+   "letter": "A",
+   "title": "Dwarves",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Dwarves.pdf"
+  },
+  {
+   "id": 19173,
+   "letter": "B",
+   "title": "Correcting Cheeseburgers",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Correcting Cheeseburgers.pdf"
+  },
+  {
+   "id": 19174,
+   "letter": "C",
+   "title": "Knapsack in a Globalized World",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Knapsack in a Globalized World.pdf"
+  },
+  {
+   "id": 19175,
+   "letter": "D",
+   "title": "Matrix Cypher",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Matrix Cypher.pdf"
+  },
+  {
+   "id": 19176,
+   "letter": "E",
+   "title": "Model Railroad",
+   "statement_pages": [
+    11,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Model Railroad.pdf"
+  },
+  {
+   "id": 19177,
+   "letter": "F",
+   "title": "One-Way Roads",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - One-Way Roads.pdf"
+  },
+  {
+   "id": 19178,
+   "letter": "G",
+   "title": "Formula",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Formula.pdf"
+  },
+  {
+   "id": 19179,
+   "letter": "H",
+   "title": "Celestial Map",
+   "statement_pages": [
+    19,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Celestial Map.pdf"
+  },
+  {
+   "id": 19180,
+   "letter": "I",
+   "title": "Common Knowledge",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Common Knowledge.pdf"
+  },
+  {
+   "id": 19181,
+   "letter": "J",
+   "title": "Selling CPUs",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Selling CPUs.pdf"
+  },
+  {
+   "id": 19182,
+   "letter": "K",
+   "title": "Routing",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Routing.pdf"
+  },
+  {
+   "id": 19183,
+   "letter": "L",
+   "title": "Maze",
+   "statement_pages": [
+    29,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Maze.pdf"
+  }
+ ]
+}

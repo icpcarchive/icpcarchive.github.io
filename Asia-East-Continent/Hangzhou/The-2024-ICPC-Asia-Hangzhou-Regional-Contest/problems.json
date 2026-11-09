@@ -1,0 +1,164 @@
+{
+ "id": 1893,
+ "name": "The 2024 ICPC Asia Hangzhou Regional Contest",
+ "url": "https://qoj.ac/contest/1893",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Hangzhou",
+  "ICPC/Regionals/Asia East Continent/The 2024 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1893&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1893&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9726,
+   "letter": "A",
+   "title": "AUS",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - AUS.pdf"
+  },
+  {
+   "id": 9727,
+   "letter": "B",
+   "title": "Barkley III",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Barkley III.pdf"
+  },
+  {
+   "id": 9728,
+   "letter": "C",
+   "title": "Catch the Star",
+   "statement_pages": [
+    3,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Catch the Star.pdf"
+  },
+  {
+   "id": 9729,
+   "letter": "D",
+   "title": "Dividing Sequence",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dividing Sequence.pdf"
+  },
+  {
+   "id": 9730,
+   "letter": "E",
+   "title": "Elevator II",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Elevator II.pdf"
+  },
+  {
+   "id": 9731,
+   "letter": "F",
+   "title": "Fuzzy Ranking",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fuzzy Ranking.pdf"
+  },
+  {
+   "id": 9732,
+   "letter": "G",
+   "title": "Gathering Mushrooms",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gathering Mushrooms.pdf"
+  },
+  {
+   "id": 9733,
+   "letter": "H",
+   "title": "Heavy-light Decomposition",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Heavy-light Decomposition.pdf"
+  },
+  {
+   "id": 9734,
+   "letter": "I",
+   "title": "Identify Chord",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Identify Chord.pdf"
+  },
+  {
+   "id": 9735,
+   "letter": "J",
+   "title": "Japanese Bands",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Japanese Bands.pdf"
+  },
+  {
+   "id": 9736,
+   "letter": "K",
+   "title": "Kind of Bingo",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kind of Bingo.pdf"
+  },
+  {
+   "id": 9737,
+   "letter": "L",
+   "title": "Let's Go! New Adventure",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Let's Go! New Adventure.pdf"
+  },
+  {
+   "id": 9738,
+   "letter": "M",
+   "title": "Make It Divisible",
+   "statement_pages": [
+    19,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Make It Divisible.pdf"
+  }
+ ]
+}

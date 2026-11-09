@@ -1,0 +1,64 @@
+{
+ "id": 3664,
+ "name": "CTU Open Contest 1997",
+ "url": "https://qoj.ac/contest/3664",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Official-site English Translation (HTML)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3664&r=0"
+  },
+  {
+   "text": "Statements (cs)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3664&r=1"
+  },
+  {
+   "text": "Reconstruction and verification record",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3664&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19353,
+   "letter": "A",
+   "title": "Airport"
+  },
+  {
+   "id": 19354,
+   "letter": "B",
+   "title": "Term"
+  },
+  {
+   "id": 19355,
+   "letter": "C",
+   "title": "Compiler"
+  },
+  {
+   "id": 19356,
+   "letter": "D",
+   "title": "Secretary"
+  },
+  {
+   "id": 19357,
+   "letter": "E",
+   "title": "Medical doctor"
+  },
+  {
+   "id": 19358,
+   "letter": "F",
+   "title": "Farm"
+  },
+  {
+   "id": 19359,
+   "letter": "G",
+   "title": "Luggage"
+  },
+  {
+   "id": 19360,
+   "letter": "H",
+   "title": "Competition"
+  }
+ ]
+}

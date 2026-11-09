@@ -1,0 +1,137 @@
+{
+ "id": 541,
+ "name": "The 2018 Southeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/541",
+ "categories": [
+  "ICPC/Regionals/Europe/Southeastern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=541&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2382,
+   "letter": "A",
+   "title": "Numbers",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Numbers.pdf"
+  },
+  {
+   "id": 2383,
+   "letter": "B",
+   "title": "Broken Watch",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Broken Watch.pdf"
+  },
+  {
+   "id": 2384,
+   "letter": "C",
+   "title": "Tree",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Tree.pdf"
+  },
+  {
+   "id": 2385,
+   "letter": "D",
+   "title": "Space Station",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Space Station.pdf"
+  },
+  {
+   "id": 2386,
+   "letter": "E",
+   "title": "Fishermen",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Fishermen.pdf"
+  },
+  {
+   "id": 2387,
+   "letter": "F",
+   "title": "Min Max Convert",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Min Max Convert.pdf"
+  },
+  {
+   "id": 2388,
+   "letter": "G",
+   "title": "Matrix Queries",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Matrix Queries.pdf"
+  },
+  {
+   "id": 2389,
+   "letter": "H",
+   "title": "Modern Djinn",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Modern Djinn.pdf"
+  },
+  {
+   "id": 2390,
+   "letter": "I",
+   "title": "Inversion",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Inversion.pdf"
+  },
+  {
+   "id": 2391,
+   "letter": "J",
+   "title": "Rabbit vs Turtle",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Rabbit vs Turtle.pdf"
+  },
+  {
+   "id": 2392,
+   "letter": "K",
+   "title": "Points and Rectangles",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Points and Rectangles.pdf"
+  }
+ ]
+}

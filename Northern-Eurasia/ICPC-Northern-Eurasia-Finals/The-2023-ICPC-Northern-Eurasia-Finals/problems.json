@@ -1,0 +1,152 @@
+{
+ "id": 1985,
+ "name": "The 2023 ICPC Northern Eurasia Finals",
+ "url": "https://qoj.ac/contest/1985",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1985&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1985&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 10427,
+   "letter": "A",
+   "title": "Accumulator Apex",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Accumulator Apex.pdf"
+  },
+  {
+   "id": 10428,
+   "letter": "B",
+   "title": "Blueprint for Seating",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Blueprint for Seating.pdf"
+  },
+  {
+   "id": 10429,
+   "letter": "C",
+   "title": "Cactus Transformation",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cactus Transformation.pdf"
+  },
+  {
+   "id": 10430,
+   "letter": "D",
+   "title": "Divisibility Test",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Divisibility Test.pdf"
+  },
+  {
+   "id": 10431,
+   "letter": "E",
+   "title": "Evaluate It and Back Again",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Evaluate It and Back Again.pdf"
+  },
+  {
+   "id": 10432,
+   "letter": "F",
+   "title": "Fugitive Frenzy",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fugitive Frenzy.pdf"
+  },
+  {
+   "id": 10433,
+   "letter": "G",
+   "title": "Great City Saint Petersburg",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Great City Saint Petersburg.pdf"
+  },
+  {
+   "id": 10434,
+   "letter": "H",
+   "title": "Hypercatapult Commute",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hypercatapult Commute.pdf"
+  },
+  {
+   "id": 10435,
+   "letter": "I",
+   "title": "Innovative Washing Machine",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Innovative Washing Machine.pdf"
+  },
+  {
+   "id": 10436,
+   "letter": "J",
+   "title": "Joy of Pokémon Observation",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joy of Pokémon Observation.pdf"
+  },
+  {
+   "id": 10437,
+   "letter": "K",
+   "title": "Kim's Quest",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kim's Quest.pdf"
+  },
+  {
+   "id": 10438,
+   "letter": "L",
+   "title": "LOL Lovers",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - LOL Lovers.pdf"
+  }
+ ]
+}

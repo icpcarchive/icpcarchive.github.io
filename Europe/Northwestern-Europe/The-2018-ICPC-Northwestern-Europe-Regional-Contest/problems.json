@@ -1,0 +1,141 @@
+{
+ "id": 520,
+ "name": "The 2018 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/520",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=520&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=520&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 1290,
+   "letter": "A",
+   "title": "Access Points",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Access Points.pdf"
+  },
+  {
+   "id": 1291,
+   "letter": "B",
+   "title": "Brexit Negotiations",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Brexit Negotiations.pdf"
+  },
+  {
+   "id": 1292,
+   "letter": "C",
+   "title": "Circuit Board Design",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Circuit Board Design.pdf"
+  },
+  {
+   "id": 1293,
+   "letter": "D",
+   "title": "Date Pickup",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Date Pickup.pdf"
+  },
+  {
+   "id": 1294,
+   "letter": "E",
+   "title": "Equality Control",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Equality Control.pdf"
+  },
+  {
+   "id": 1295,
+   "letter": "F",
+   "title": "Fastest Speedrun",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fastest Speedrun.pdf"
+  },
+  {
+   "id": 1296,
+   "letter": "G",
+   "title": "Game Design",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game Design.pdf"
+  },
+  {
+   "id": 1297,
+   "letter": "H",
+   "title": "Hard Drive",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hard Drive.pdf"
+  },
+  {
+   "id": 1298,
+   "letter": "I",
+   "title": "Inflation",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Inflation.pdf"
+  },
+  {
+   "id": 1299,
+   "letter": "J",
+   "title": "Jinxed Betting",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jinxed Betting.pdf"
+  },
+  {
+   "id": 1300,
+   "letter": "K",
+   "title": "Kleptography",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kleptography.pdf"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "id": 3889,
+ "name": "The 2010 German Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/3889",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/German Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3889&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3889&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19107,
+   "letter": "A",
+   "title": "Absurd prices",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Absurd prices.pdf"
+  },
+  {
+   "id": 19108,
+   "letter": "B",
+   "title": "Cheating or Not",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Cheating or Not.pdf"
+  },
+  {
+   "id": 19109,
+   "letter": "C",
+   "title": "Counterattack",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Counterattack.pdf"
+  },
+  {
+   "id": 19110,
+   "letter": "D",
+   "title": "Field Plan",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Field Plan.pdf"
+  },
+  {
+   "id": 19111,
+   "letter": "E",
+   "title": "Hacking",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Hacking.pdf"
+  },
+  {
+   "id": 19112,
+   "letter": "F",
+   "title": "Last Minute Constructions",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Last Minute Constructions.pdf"
+  },
+  {
+   "id": 19113,
+   "letter": "G",
+   "title": "Lineup",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Lineup.pdf"
+  },
+  {
+   "id": 19114,
+   "letter": "H",
+   "title": "Polynomial Estimates",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Polynomial Estimates.pdf"
+  },
+  {
+   "id": 19115,
+   "letter": "I",
+   "title": "Soccer Bets",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Soccer Bets.pdf"
+  },
+  {
+   "id": 19116,
+   "letter": "J",
+   "title": "The Two-ball Game",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - The Two-ball Game.pdf"
+  },
+  {
+   "id": 19117,
+   "letter": "K",
+   "title": "To score or not to score",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - To score or not to score.pdf"
+  }
+ ]
+}

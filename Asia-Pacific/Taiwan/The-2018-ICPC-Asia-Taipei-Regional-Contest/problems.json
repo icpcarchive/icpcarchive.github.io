@@ -1,0 +1,137 @@
+{
+ "id": 4075,
+ "name": "The 2018 ICPC Asia Taipei Regional Contest",
+ "url": "https://qoj.ac/contest/4075",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Taiwan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=4075&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19982,
+   "letter": "A",
+   "title": "Automatic Control Machine",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Automatic Control Machine.pdf"
+  },
+  {
+   "id": 19983,
+   "letter": "B",
+   "title": "No Tabs",
+   "statement_pages": [
+    5,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - No Tabs.pdf"
+  },
+  {
+   "id": 19984,
+   "letter": "C",
+   "title": "Starlight on the Stage",
+   "statement_pages": [
+    9,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Starlight on the Stage.pdf"
+  },
+  {
+   "id": 19985,
+   "letter": "D",
+   "title": "Dictionary Problem",
+   "statement_pages": [
+    13,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dictionary Problem.pdf"
+  },
+  {
+   "id": 19986,
+   "letter": "E",
+   "title": "Pairing Points in Three-Dimensional Spaces",
+   "statement_pages": [
+    17,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Pairing Points in Three-Dimensional Spaces.pdf"
+  },
+  {
+   "id": 19987,
+   "letter": "F",
+   "title": "Will You Save Us?",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Will You Save Us_.pdf"
+  },
+  {
+   "id": 19988,
+   "letter": "G",
+   "title": "Minimum Shipping Cost",
+   "statement_pages": [
+    23,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Minimum Shipping Cost.pdf"
+  },
+  {
+   "id": 19989,
+   "letter": "H",
+   "title": "Hidden Glyphs",
+   "statement_pages": [
+    27,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hidden Glyphs.pdf"
+  },
+  {
+   "id": 19990,
+   "letter": "I",
+   "title": "Protein Structures",
+   "statement_pages": [
+    31,
+    34
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Protein Structures.pdf"
+  },
+  {
+   "id": 19991,
+   "letter": "J",
+   "title": "Mean Weight of a Critical Cycle",
+   "statement_pages": [
+    35,
+    38
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Mean Weight of a Critical Cycle.pdf"
+  },
+  {
+   "id": 19992,
+   "letter": "K",
+   "title": "Monochrome Land",
+   "statement_pages": [
+    39,
+    41
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Monochrome Land.pdf"
+  }
+ ]
+}

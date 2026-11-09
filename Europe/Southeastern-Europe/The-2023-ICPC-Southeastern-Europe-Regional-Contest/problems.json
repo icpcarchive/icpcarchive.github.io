@@ -1,0 +1,163 @@
+{
+ "id": 1452,
+ "name": "The 2023 ICPC Southeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/1452",
+ "categories": [
+  "ICPC/Regionals/Europe/Southeastern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1452&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1452&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7932,
+   "letter": "A",
+   "title": "AND-OR closure",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - AND-OR closure.pdf"
+  },
+  {
+   "id": 7933,
+   "letter": "B",
+   "title": "Build Permutation",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Build Permutation.pdf"
+  },
+  {
+   "id": 7934,
+   "letter": "C",
+   "title": "Christmas Sky",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Christmas Sky.pdf"
+  },
+  {
+   "id": 7935,
+   "letter": "D",
+   "title": "Distinct Game",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Distinct Game.pdf"
+  },
+  {
+   "id": 7936,
+   "letter": "E",
+   "title": "Eliminate Tree",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Eliminate Tree.pdf"
+  },
+  {
+   "id": 7937,
+   "letter": "F",
+   "title": "Fast XORting",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fast XORting.pdf"
+  },
+  {
+   "id": 7938,
+   "letter": "G",
+   "title": "Graph Race",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Graph Race.pdf"
+  },
+  {
+   "id": 7939,
+   "letter": "H",
+   "title": "High Towers",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - High Towers.pdf"
+  },
+  {
+   "id": 7940,
+   "letter": "I",
+   "title": "Impossible Numbers",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Impossible Numbers.pdf"
+  },
+  {
+   "id": 7941,
+   "letter": "J",
+   "title": "Jackpot",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jackpot.pdf"
+  },
+  {
+   "id": 7942,
+   "letter": "K",
+   "title": "$K$ Subsequences",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - $K$ Subsequences.pdf"
+  },
+  {
+   "id": 7943,
+   "letter": "L",
+   "title": "LIS on Grid",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - LIS on Grid.pdf"
+  },
+  {
+   "id": 7944,
+   "letter": "M",
+   "title": "Max Minus Min",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Max Minus Min.pdf"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "id": 3882,
+ "name": "The 2017 German Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/3882",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/German Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3882&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3882&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19184,
+   "letter": "A",
+   "title": "Drawing Borders",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Drawing Borders.pdf"
+  },
+  {
+   "id": 19185,
+   "letter": "B",
+   "title": "Buildings",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Buildings.pdf"
+  },
+  {
+   "id": 19186,
+   "letter": "C",
+   "title": "Joyride",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Joyride.pdf"
+  },
+  {
+   "id": 19187,
+   "letter": "D",
+   "title": "Pants On Fire",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Pants On Fire.pdf"
+  },
+  {
+   "id": 19188,
+   "letter": "E",
+   "title": "Perpetuum Mobile",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Perpetuum Mobile.pdf"
+  },
+  {
+   "id": 19189,
+   "letter": "F",
+   "title": "Plug It In!",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Plug It In!.pdf"
+  },
+  {
+   "id": 19190,
+   "letter": "G",
+   "title": "Water Testing",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Water Testing.pdf"
+  },
+  {
+   "id": 19191,
+   "letter": "H",
+   "title": "Ratatöskr",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Ratatöskr.pdf"
+  },
+  {
+   "id": 19192,
+   "letter": "I",
+   "title": "Überwatch",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Überwatch.pdf"
+  },
+  {
+   "id": 19193,
+   "letter": "J",
+   "title": "Word Clock",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Word Clock.pdf"
+  },
+  {
+   "id": 19194,
+   "letter": "K",
+   "title": "You Are Fired!",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - You Are Fired!.pdf"
+  }
+ ]
+}

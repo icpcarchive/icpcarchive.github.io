@@ -1,0 +1,51 @@
+{
+ "id": 1282,
+ "name": "The 2003 ACM-ICPC Asia Guangzhou Regional Contest",
+ "url": "https://qoj.ac/contest/1282",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Guangzhou"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 6707,
+   "letter": "A",
+   "title": "Special Experiment"
+  },
+  {
+   "id": 6708,
+   "letter": "B",
+   "title": "Elevator Stopping Plan"
+  },
+  {
+   "id": 6709,
+   "letter": "C",
+   "title": "New Go Game"
+  },
+  {
+   "id": 6710,
+   "letter": "D",
+   "title": "Outernet"
+  },
+  {
+   "id": 6711,
+   "letter": "E",
+   "title": "Fold Paper Strips"
+  },
+  {
+   "id": 6712,
+   "letter": "F",
+   "title": "Sum of Factorials"
+  },
+  {
+   "id": 6713,
+   "letter": "G",
+   "title": "Task Sequences"
+  },
+  {
+   "id": 6714,
+   "letter": "H",
+   "title": "Vivian's Problem"
+  }
+ ]
+}

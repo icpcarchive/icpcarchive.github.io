@@ -1,0 +1,153 @@
+{
+ "id": 1799,
+ "name": "The 2024 ICPC Asia East Continent Online Contest (II)",
+ "url": "https://qoj.ac/contest/1799",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent",
+  "ICPC/Regionals/Asia East Continent/The 2024 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1799&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1799&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9370,
+   "letter": "A",
+   "title": "Gambling on Choosing Regionals",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Gambling on Choosing Regionals.pdf"
+  },
+  {
+   "id": 9371,
+   "letter": "B",
+   "title": "Mountain Booking",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Mountain Booking.pdf"
+  },
+  {
+   "id": 9372,
+   "letter": "C",
+   "title": "Prefix of Suffixes",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Prefix of Suffixes.pdf"
+  },
+  {
+   "id": 9373,
+   "letter": "D",
+   "title": "Query on Tree",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Query on Tree.pdf"
+  },
+  {
+   "id": 9374,
+   "letter": "E",
+   "title": "Escape",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Escape.pdf"
+  },
+  {
+   "id": 9375,
+   "letter": "F",
+   "title": "Tourist",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Tourist.pdf"
+  },
+  {
+   "id": 9376,
+   "letter": "G",
+   "title": "Game",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game.pdf"
+  },
+  {
+   "id": 9377,
+   "letter": "H",
+   "title": "Points Selection",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Points Selection.pdf"
+  },
+  {
+   "id": 9378,
+   "letter": "I",
+   "title": "Strange Binary",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Strange Binary.pdf"
+  },
+  {
+   "id": 9379,
+   "letter": "J",
+   "title": "Stacking of Goods",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Stacking of Goods.pdf"
+  },
+  {
+   "id": 9380,
+   "letter": "K",
+   "title": "Match",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Match.pdf"
+  },
+  {
+   "id": 9381,
+   "letter": "L",
+   "title": "502 Bad Gateway",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - 502 Bad Gateway.pdf"
+  }
+ ]
+}

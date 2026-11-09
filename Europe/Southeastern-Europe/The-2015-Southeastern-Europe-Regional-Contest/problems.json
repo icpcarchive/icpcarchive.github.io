@@ -1,0 +1,126 @@
+{
+ "id": 2702,
+ "name": "The 2015 Southeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2702",
+ "categories": [
+  "ICPC/Regionals/Europe/Southeastern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2702&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15571,
+   "letter": "A",
+   "title": "Equivalence",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Equivalence.pdf"
+  },
+  {
+   "id": 15572,
+   "letter": "B",
+   "title": "Tree of Almost Clean Money",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Tree of Almost Clean Money.pdf"
+  },
+  {
+   "id": 15573,
+   "letter": "C",
+   "title": "Primes",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Primes.pdf"
+  },
+  {
+   "id": 15574,
+   "letter": "D",
+   "title": "LCM",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - LCM.pdf"
+  },
+  {
+   "id": 15575,
+   "letter": "E",
+   "title": "Taxies",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Taxies.pdf"
+  },
+  {
+   "id": 15576,
+   "letter": "F",
+   "title": "Irrational Roots",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Irrational Roots.pdf"
+  },
+  {
+   "id": 15577,
+   "letter": "G",
+   "title": "Race",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Race.pdf"
+  },
+  {
+   "id": 15578,
+   "letter": "H",
+   "title": "Railway Tickets",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Railway Tickets.pdf"
+  },
+  {
+   "id": 15579,
+   "letter": "I",
+   "title": "Olympic Parade",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Olympic Parade.pdf"
+  },
+  {
+   "id": 15580,
+   "letter": "J",
+   "title": "Word by mouth",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Word by mouth.pdf"
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "id": 1123,
+ "name": "The 2022 ICPC Southwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/1123",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1123&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1123&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5645,
+   "letter": "A",
+   "title": "Walking Boy",
+   "statement_pages": [
+    3,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Walking Boy.pdf"
+  },
+  {
+   "id": 5646,
+   "letter": "B",
+   "title": "Uniform Chemistry",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Uniform Chemistry.pdf"
+  },
+  {
+   "id": 5647,
+   "letter": "C",
+   "title": "Another Wine Tasting Event",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Another Wine Tasting Event.pdf"
+  },
+  {
+   "id": 5648,
+   "letter": "D",
+   "title": "Crossing the Railways",
+   "statement_pages": [
+    11,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Crossing the Railways.pdf"
+  },
+  {
+   "id": 5649,
+   "letter": "E",
+   "title": "Spinach Pizza",
+   "statement_pages": [
+    15,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Spinach Pizza.pdf"
+  },
+  {
+   "id": 5650,
+   "letter": "F",
+   "title": "Beppa and SwerChat",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Beppa and SwerChat.pdf"
+  },
+  {
+   "id": 5651,
+   "letter": "G",
+   "title": "Parmigiana With Seafood",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Parmigiana With Seafood.pdf"
+  },
+  {
+   "id": 5652,
+   "letter": "H",
+   "title": "Controllers",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Controllers.pdf"
+  },
+  {
+   "id": 5653,
+   "letter": "I",
+   "title": "Library game",
+   "statement_pages": [
+    25,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Library game.pdf"
+  },
+  {
+   "id": 5654,
+   "letter": "J",
+   "title": "Italian Data Centers",
+   "statement_pages": [
+    29,
+    32
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Italian Data Centers.pdf"
+  },
+  {
+   "id": 5655,
+   "letter": "K",
+   "title": "Train Splitting",
+   "statement_pages": [
+    33,
+    34
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Train Splitting.pdf"
+  },
+  {
+   "id": 5656,
+   "letter": "L",
+   "title": "Vittorio Plays with LEGO Bricks",
+   "statement_pages": [
+    35,
+    36
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Vittorio Plays with LEGO Bricks.pdf"
+  }
+ ]
+}

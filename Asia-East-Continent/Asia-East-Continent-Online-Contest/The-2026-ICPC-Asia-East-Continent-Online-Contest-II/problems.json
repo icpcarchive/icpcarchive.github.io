@@ -1,0 +1,77 @@
+{
+ "id": 4113,
+ "name": "The 2026 ICPC Asia East Continent Online Contest (II)",
+ "url": "https://qoj.ac/contest/4113",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent",
+  "ICPC/Regionals/Asia East Continent/The 2026 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=4113&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 20236,
+   "letter": "A",
+   "title": "All Closed"
+  },
+  {
+   "id": 20237,
+   "letter": "B",
+   "title": "Bread"
+  },
+  {
+   "id": 20238,
+   "letter": "C",
+   "title": "Cut Tree"
+  },
+  {
+   "id": 20239,
+   "letter": "D",
+   "title": "Divide and Conquer"
+  },
+  {
+   "id": 20240,
+   "letter": "E",
+   "title": "Exponent"
+  },
+  {
+   "id": 20241,
+   "letter": "F",
+   "title": "Folding Game of Ohto Ai"
+  },
+  {
+   "id": 20242,
+   "letter": "G",
+   "title": "Ghost of Tsushima"
+  },
+  {
+   "id": 20243,
+   "letter": "H",
+   "title": "Hidden Track (Easy Version)"
+  },
+  {
+   "id": 20244,
+   "letter": "I",
+   "title": "Island"
+  },
+  {
+   "id": 20245,
+   "letter": "J",
+   "title": "Joker or Judger"
+  },
+  {
+   "id": 20246,
+   "letter": "K",
+   "title": "K-MEX"
+  },
+  {
+   "id": 20247,
+   "letter": "L",
+   "title": "Loop"
+  }
+ ]
+}

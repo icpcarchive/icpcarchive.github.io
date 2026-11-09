@@ -1,0 +1,76 @@
+{
+ "id": 3665,
+ "name": "CTU Open Contest 1998",
+ "url": "https://qoj.ac/contest/3665",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (cs)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3665&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19361,
+   "letter": "A",
+   "title": "Mince (Coins)",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Mince (Coins).pdf"
+  },
+  {
+   "id": 19362,
+   "letter": "B",
+   "title": "Reversi",
+   "statement_pages": [
+    3,
+    18
+   ],
+   "statement_source": "statements_cs.pdf",
+   "statement_file": "problems/B - Reversi.pdf"
+  },
+  {
+   "id": 19363,
+   "letter": "C",
+   "title": "Lodě (Ships)",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Lodě (Ships).pdf"
+  },
+  {
+   "id": 19364,
+   "letter": "D",
+   "title": "Výlet (Trip)",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Výlet (Trip).pdf"
+  },
+  {
+   "id": 19365,
+   "letter": "E",
+   "title": "Tchyně (Mother-In-Law)",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Tchyně (Mother-In-Law).pdf"
+  },
+  {
+   "id": 19366,
+   "letter": "F",
+   "title": "Zlomky (Fractions)",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Zlomky (Fractions).pdf"
+  },
+  {
+   "id": 19367,
+   "letter": "G",
+   "title": "Noty (Notes)",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Noty (Notes).pdf"
+  },
+  {
+   "id": 19368,
+   "letter": "H",
+   "title": "Podnikatel (Entrepreneur)",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Podnikatel (Entrepreneur).pdf"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "id": 556,
+ "name": "The 2019 Southeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/556",
+ "categories": [
+  "ICPC/Regionals/Europe/Southeastern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=556&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=556&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2371,
+   "letter": "A",
+   "title": "Max or Min",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Max or Min.pdf"
+  },
+  {
+   "id": 2372,
+   "letter": "B",
+   "title": "Level Up",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Level Up.pdf"
+  },
+  {
+   "id": 2373,
+   "letter": "C",
+   "title": "Find the Array",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Find the Array.pdf"
+  },
+  {
+   "id": 2374,
+   "letter": "D",
+   "title": "Cycle String?",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Cycle String_.pdf"
+  },
+  {
+   "id": 2375,
+   "letter": "E",
+   "title": "Life Transfer",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Life Transfer.pdf"
+  },
+  {
+   "id": 2376,
+   "letter": "F",
+   "title": "Game on a Tree",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Game on a Tree.pdf"
+  },
+  {
+   "id": 2377,
+   "letter": "G",
+   "title": "Projection",
+   "statement_pages": [
+    10,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Projection.pdf"
+  },
+  {
+   "id": 2378,
+   "letter": "H",
+   "title": "Tree Permutations",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Tree Permutations.pdf"
+  },
+  {
+   "id": 2379,
+   "letter": "I",
+   "title": "Absolute Game",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Absolute Game.pdf"
+  },
+  {
+   "id": 2380,
+   "letter": "J",
+   "title": "Graph and Cycles",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Graph and Cycles.pdf"
+  },
+  {
+   "id": 2381,
+   "letter": "K",
+   "title": "Stranded Robot",
+   "statement_pages": [
+    18,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Stranded Robot.pdf"
+  }
+ ]
+}

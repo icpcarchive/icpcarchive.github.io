@@ -1,0 +1,152 @@
+{
+ "id": 894,
+ "name": "The 2021 ICPC Central Europe Regional Contest",
+ "url": "https://qoj.ac/contest/894",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=894&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=894&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3847,
+   "letter": "A",
+   "title": "Airline",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Airline.pdf"
+  },
+  {
+   "id": 3848,
+   "letter": "B",
+   "title": "Building on the Moon",
+   "statement_pages": [
+    5,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Building on the Moon.pdf"
+  },
+  {
+   "id": 3849,
+   "letter": "C",
+   "title": "Cactus cutting",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cactus cutting.pdf"
+  },
+  {
+   "id": 3850,
+   "letter": "D",
+   "title": "DJ Darko",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - DJ Darko.pdf"
+  },
+  {
+   "id": 3851,
+   "letter": "E",
+   "title": "Fishing",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Fishing.pdf"
+  },
+  {
+   "id": 3852,
+   "letter": "F",
+   "title": "Letters",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Letters.pdf"
+  },
+  {
+   "id": 3853,
+   "letter": "G",
+   "title": "Lines in a grid",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Lines in a grid.pdf"
+  },
+  {
+   "id": 3854,
+   "letter": "H",
+   "title": "Radar",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Radar.pdf"
+  },
+  {
+   "id": 3855,
+   "letter": "I",
+   "title": "Regional development",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Regional development.pdf"
+  },
+  {
+   "id": 3856,
+   "letter": "J",
+   "title": "Repetitions",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Repetitions.pdf"
+  },
+  {
+   "id": 3857,
+   "letter": "K",
+   "title": "Single-track railway",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Single-track railway.pdf"
+  },
+  {
+   "id": 3858,
+   "letter": "L",
+   "title": "Systematic salesman",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Systematic salesman.pdf"
+  }
+ ]
+}

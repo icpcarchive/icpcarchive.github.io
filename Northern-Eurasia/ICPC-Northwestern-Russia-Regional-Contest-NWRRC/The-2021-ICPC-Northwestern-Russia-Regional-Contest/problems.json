@@ -1,0 +1,175 @@
+{
+ "id": 852,
+ "name": "The 2021 ICPC Northwestern Russia Regional Contest",
+ "url": "https://qoj.ac/contest/852",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Northwestern Russia Regional Contest (NWRRC) / Northern Subregional",
+  "ICPC/Regionals/Northern Eurasia/Ural Regional Contest / Ural Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=852&r=0"
+  },
+  {
+   "text": "Tutorials (ru)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=852&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2869,
+   "letter": "A",
+   "title": "Anno Domini 2022",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Anno Domini 2022.pdf"
+  },
+  {
+   "id": 2870,
+   "letter": "B",
+   "title": "Boris and Berta",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Boris and Berta.pdf"
+  },
+  {
+   "id": 2871,
+   "letter": "C",
+   "title": "Clean Up!",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Clean Up!.pdf"
+  },
+  {
+   "id": 2872,
+   "letter": "D",
+   "title": "Day Streak",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Day Streak.pdf"
+  },
+  {
+   "id": 2873,
+   "letter": "E",
+   "title": "Extreme Problem",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Extreme Problem.pdf"
+  },
+  {
+   "id": 2874,
+   "letter": "F",
+   "title": "First to Solve",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - First to Solve.pdf"
+  },
+  {
+   "id": 2875,
+   "letter": "G",
+   "title": "Grand Center",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Grand Center.pdf"
+  },
+  {
+   "id": 2876,
+   "letter": "H",
+   "title": "Halfway There",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Halfway There.pdf"
+  },
+  {
+   "id": 2877,
+   "letter": "I",
+   "title": "Imprecise Permutation Sort",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Imprecise Permutation Sort.pdf"
+  },
+  {
+   "id": 2878,
+   "letter": "J",
+   "title": "Journey in Fog",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Journey in Fog.pdf"
+  },
+  {
+   "id": 2879,
+   "letter": "K",
+   "title": "Kaleidoscopic Route",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kaleidoscopic Route.pdf"
+  },
+  {
+   "id": 2880,
+   "letter": "L",
+   "title": "Letters Q and F",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Letters Q and F.pdf"
+  },
+  {
+   "id": 2881,
+   "letter": "M",
+   "title": "Multithreaded Program",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Multithreaded Program.pdf"
+  },
+  {
+   "id": 2882,
+   "letter": "N",
+   "title": "New White-Black Tree",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - New White-Black Tree.pdf"
+  }
+ ]
+}

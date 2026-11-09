@@ -1,0 +1,81 @@
+{
+ "id": 177,
+ "name": "CTU Open Contest 2019",
+ "url": "https://qoj.ac/contest/177",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 1791,
+   "letter": "A",
+   "title": "Beer Barrels",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Beer Barrels.pdf"
+  },
+  {
+   "id": 1792,
+   "letter": "B",
+   "title": "Beer Bill",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Beer Bill.pdf"
+  },
+  {
+   "id": 1793,
+   "letter": "C",
+   "title": "Beer Coasters",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Beer Coasters.pdf"
+  },
+  {
+   "id": 1794,
+   "letter": "D",
+   "title": "Beer Flood System",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Beer Flood System.pdf"
+  },
+  {
+   "id": 1795,
+   "letter": "E",
+   "title": "Beer Can Game",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Beer Can Game.pdf"
+  },
+  {
+   "id": 1796,
+   "letter": "F",
+   "title": "Beer Marathon",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Beer Marathon.pdf"
+  },
+  {
+   "id": 1797,
+   "letter": "G",
+   "title": "Beer Mugs",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Beer Mugs.pdf"
+  },
+  {
+   "id": 1798,
+   "letter": "H",
+   "title": "Screamers in the Storm",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Screamers in the Storm.pdf"
+  },
+  {
+   "id": 1799,
+   "letter": "I",
+   "title": "Sixpack",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Sixpack.pdf"
+  },
+  {
+   "id": 1800,
+   "letter": "J",
+   "title": "Beer Vision",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Beer Vision.pdf"
+  }
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "id": 2113,
+ "name": "The 2017 ACM-ICPC Asia Ürümqi Regional Contest",
+ "url": "https://qoj.ac/contest/2113",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Ürümqi",
+  "ICPC/Regionals/Asia East Continent/The 2017 ACM-ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2113&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2113&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11936,
+   "letter": "A",
+   "title": "Coins",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Coins.pdf"
+  },
+  {
+   "id": 11937,
+   "letter": "B",
+   "title": "The Difference",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - The Difference.pdf"
+  },
+  {
+   "id": 11938,
+   "letter": "C",
+   "title": "The Number Triangle",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - The Number Triangle.pdf"
+  },
+  {
+   "id": 11939,
+   "letter": "D",
+   "title": "Fence Building",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Fence Building.pdf"
+  },
+  {
+   "id": 11940,
+   "letter": "E",
+   "title": "Friends",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Friends.pdf"
+  },
+  {
+   "id": 11941,
+   "letter": "F",
+   "title": "Gathering Minerals",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Gathering Minerals.pdf"
+  },
+  {
+   "id": 11942,
+   "letter": "G",
+   "title": "The Mountain",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - The Mountain.pdf"
+  },
+  {
+   "id": 11943,
+   "letter": "H",
+   "title": "Count Numbers",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Count Numbers.pdf"
+  },
+  {
+   "id": 11944,
+   "letter": "I",
+   "title": "A Possible Tree",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - A Possible Tree.pdf"
+  },
+  {
+   "id": 11945,
+   "letter": "J",
+   "title": "Lowest Common Ancestors",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Lowest Common Ancestors.pdf"
+  },
+  {
+   "id": 11946,
+   "letter": "K",
+   "title": "Sum of the Line",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Sum of the Line.pdf"
+  }
+ ]
+}

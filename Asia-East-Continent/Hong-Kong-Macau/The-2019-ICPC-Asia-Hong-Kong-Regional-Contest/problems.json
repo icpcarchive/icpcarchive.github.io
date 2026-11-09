@@ -1,0 +1,142 @@
+{
+ "id": 1537,
+ "name": "The 2019 ICPC Asia Hong Kong Regional Contest",
+ "url": "https://qoj.ac/contest/1537",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Hong Kong & Macau",
+  "ICPC/Regionals/Asia East Continent/The 2019 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1537&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1537&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 8294,
+   "letter": "A",
+   "title": "Axis of Symmetry",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Axis of Symmetry.pdf"
+  },
+  {
+   "id": 8295,
+   "letter": "B",
+   "title": "Binary Tree",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Binary Tree.pdf"
+  },
+  {
+   "id": 8296,
+   "letter": "C",
+   "title": "Constructing Ranches",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Constructing Ranches.pdf"
+  },
+  {
+   "id": 8297,
+   "letter": "D",
+   "title": "Defining Labels",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Defining Labels.pdf"
+  },
+  {
+   "id": 8298,
+   "letter": "E",
+   "title": "Erasing Numbers",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Erasing Numbers.pdf"
+  },
+  {
+   "id": 8299,
+   "letter": "F",
+   "title": "Falling Objects",
+   "statement_pages": [
+    10,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Falling Objects.pdf"
+  },
+  {
+   "id": 8300,
+   "letter": "G",
+   "title": "Game Design",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game Design.pdf"
+  },
+  {
+   "id": 8301,
+   "letter": "H",
+   "title": "Hold the Line",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hold the Line.pdf"
+  },
+  {
+   "id": 8302,
+   "letter": "I",
+   "title": "Incoming Asteroids",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Incoming Asteroids.pdf"
+  },
+  {
+   "id": 8303,
+   "letter": "J",
+   "title": "Junior Mathematician",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Junior Mathematician.pdf"
+  },
+  {
+   "id": 8304,
+   "letter": "K",
+   "title": "Key Project",
+   "statement_pages": [
+    19,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Key Project.pdf"
+  }
+ ]
+}

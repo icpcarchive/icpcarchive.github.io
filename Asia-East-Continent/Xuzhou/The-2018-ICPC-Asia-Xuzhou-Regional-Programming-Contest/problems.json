@@ -1,0 +1,160 @@
+{
+ "id": 1317,
+ "name": "The 2018 ICPC Asia Xuzhou Regional Programming Contest",
+ "url": "https://qoj.ac/contest/1317",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Xuzhou",
+  "ICPC/Regionals/Asia East Continent/The 2018 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1317&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7003,
+   "letter": "A",
+   "title": "Rikka with Minimum Spanning Trees",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Rikka with Minimum Spanning Trees.pdf"
+  },
+  {
+   "id": 7004,
+   "letter": "B",
+   "title": "Rikka with Line Graphs",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Rikka with Line Graphs.pdf"
+  },
+  {
+   "id": 7005,
+   "letter": "C",
+   "title": "Rikka with Consistency",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Rikka with Consistency.pdf"
+  },
+  {
+   "id": 7006,
+   "letter": "D",
+   "title": "Rikka with Subsequences",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Rikka with Subsequences.pdf"
+  },
+  {
+   "id": 7007,
+   "letter": "E",
+   "title": "Rikka with Data Structures",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Rikka with Data Structures.pdf"
+  },
+  {
+   "id": 7008,
+   "letter": "F",
+   "title": "Rikka with Nice Counting Striking Back",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Rikka with Nice Counting Striking Back.pdf"
+  },
+  {
+   "id": 7009,
+   "letter": "G",
+   "title": "Rikka with Intersections of Paths",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Rikka with Intersections of Paths.pdf"
+  },
+  {
+   "id": 7010,
+   "letter": "H",
+   "title": "Rikka with A Long Colour Palette",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Rikka with A Long Colour Palette.pdf"
+  },
+  {
+   "id": 7011,
+   "letter": "I",
+   "title": "Rikka with Sorting Networks",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Rikka with Sorting Networks.pdf"
+  },
+  {
+   "id": 7012,
+   "letter": "J",
+   "title": "Rikka with An Unnamed Temple",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Rikka with An Unnamed Temple.pdf"
+  },
+  {
+   "id": 7013,
+   "letter": "K",
+   "title": "Rikka with Ants",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Rikka with Ants.pdf"
+  },
+  {
+   "id": 7014,
+   "letter": "L",
+   "title": "Rikka with Grid Graphs",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Rikka with Grid Graphs.pdf"
+  },
+  {
+   "id": 7015,
+   "letter": "M",
+   "title": "Rikka with Illuminations",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Rikka with Illuminations.pdf"
+  }
+ ]
+}

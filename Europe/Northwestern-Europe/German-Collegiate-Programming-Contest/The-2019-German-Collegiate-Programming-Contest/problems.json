@@ -1,0 +1,163 @@
+{
+ "id": 462,
+ "name": "The 2019 German Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/462",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/German Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=462&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=462&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3513,
+   "letter": "A",
+   "title": "Assessing Genomes",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Assessing Genomes.pdf"
+  },
+  {
+   "id": 3514,
+   "letter": "B",
+   "title": "Bouldering",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bouldering.pdf"
+  },
+  {
+   "id": 3515,
+   "letter": "C",
+   "title": "Colourful Chameleons",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Colourful Chameleons.pdf"
+  },
+  {
+   "id": 3516,
+   "letter": "D",
+   "title": "Dungeon Crawler",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dungeon Crawler.pdf"
+  },
+  {
+   "id": 3517,
+   "letter": "E",
+   "title": "Election Meddling",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Election Meddling.pdf"
+  },
+  {
+   "id": 3518,
+   "letter": "F",
+   "title": "Final Standings",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Final Standings.pdf"
+  },
+  {
+   "id": 3519,
+   "letter": "G",
+   "title": "Game of Falling Blocks",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game of Falling Blocks.pdf"
+  },
+  {
+   "id": 3520,
+   "letter": "H",
+   "title": "Historical Maths",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Historical Maths.pdf"
+  },
+  {
+   "id": 3521,
+   "letter": "I",
+   "title": "Insertion Order",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Insertion Order.pdf"
+  },
+  {
+   "id": 3522,
+   "letter": "J",
+   "title": "Jazz Enthusiast",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jazz Enthusiast.pdf"
+  },
+  {
+   "id": 3523,
+   "letter": "K",
+   "title": "Keeping the Dogs Out",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Keeping the Dogs Out.pdf"
+  },
+  {
+   "id": 3524,
+   "letter": "L",
+   "title": "Long-Exposure Photography",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Long-Exposure Photography.pdf"
+  },
+  {
+   "id": 3525,
+   "letter": "M",
+   "title": "Move & Meet",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Move & Meet.pdf"
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "id": 2605,
+ "name": "The 2023 ICPC Benelux Algorithm Programming Contest",
+ "url": "https://qoj.ac/contest/2605",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2605&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2605&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 14880,
+   "letter": "A",
+   "title": "apt upgrade",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - apt upgrade.pdf"
+  },
+  {
+   "id": 14881,
+   "letter": "B",
+   "title": "Battle Bots",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Battle Bots.pdf"
+  },
+  {
+   "id": 14882,
+   "letter": "C",
+   "title": "Compressing Commands",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Compressing Commands.pdf"
+  },
+  {
+   "id": 14883,
+   "letter": "D",
+   "title": "Democratic Naming",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Democratic Naming.pdf"
+  },
+  {
+   "id": 14884,
+   "letter": "E",
+   "title": "Exam Study Planning",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Exam Study Planning.pdf"
+  },
+  {
+   "id": 14885,
+   "letter": "F",
+   "title": "Funicular Frenzy",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Funicular Frenzy.pdf"
+  },
+  {
+   "id": 14886,
+   "letter": "G",
+   "title": "Geometry Game",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Geometry Game.pdf"
+  },
+  {
+   "id": 14887,
+   "letter": "H",
+   "title": "Hidden Art",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hidden Art.pdf"
+  },
+  {
+   "id": 14888,
+   "letter": "I",
+   "title": "International Irregularities",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - International Irregularities.pdf"
+  },
+  {
+   "id": 14889,
+   "letter": "J",
+   "title": "Jungle Job",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jungle Job.pdf"
+  },
+  {
+   "id": 14890,
+   "letter": "K",
+   "title": "King of the Hill",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - King of the Hill.pdf"
+  },
+  {
+   "id": 14891,
+   "letter": "L",
+   "title": "Locking Doors",
+   "statement_pages": [
+    23,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Locking Doors.pdf"
+  }
+ ]
+}

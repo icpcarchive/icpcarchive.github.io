@@ -1,0 +1,141 @@
+{
+ "id": 406,
+ "name": "The 2016 Southwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/406",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=406&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=406&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3195,
+   "letter": "A",
+   "title": "Within Arm's Reach",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Within Arm's Reach.pdf"
+  },
+  {
+   "id": 3196,
+   "letter": "B",
+   "title": "Bribing Eve",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bribing Eve.pdf"
+  },
+  {
+   "id": 3197,
+   "letter": "C",
+   "title": "Candle Box",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Candle Box.pdf"
+  },
+  {
+   "id": 3198,
+   "letter": "D",
+   "title": "Dinner Bet",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dinner Bet.pdf"
+  },
+  {
+   "id": 3199,
+   "letter": "E",
+   "title": "Passwords",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Passwords.pdf"
+  },
+  {
+   "id": 3200,
+   "letter": "F",
+   "title": "Performance Review",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Performance Review.pdf"
+  },
+  {
+   "id": 3201,
+   "letter": "G",
+   "title": "Cairo Corridor",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Cairo Corridor.pdf"
+  },
+  {
+   "id": 3202,
+   "letter": "H",
+   "title": "Pascal's Hyper-Pyramids",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Pascal's Hyper-Pyramids.pdf"
+  },
+  {
+   "id": 3203,
+   "letter": "I",
+   "title": "The White Rabbit Pocket Watch",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - The White Rabbit Pocket Watch.pdf"
+  },
+  {
+   "id": 3204,
+   "letter": "J",
+   "title": "Risky Lottery",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Risky Lottery.pdf"
+  },
+  {
+   "id": 3205,
+   "letter": "K",
+   "title": "Balls and Needles",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Balls and Needles.pdf"
+  }
+ ]
+}

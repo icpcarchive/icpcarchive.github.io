@@ -1,0 +1,168 @@
+{
+ "id": 2641,
+ "name": "The 2025 ICPC Asia Shenyang Regional Contest",
+ "url": "https://qoj.ac/contest/2641",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Shenyang",
+  "ICPC/Regionals/Asia East Continent/The 2025 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2641&r=0"
+  },
+  {
+   "text": "Statements (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2641&r=1"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2641&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 14940,
+   "letter": "A",
+   "title": "Square Kingdom",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Square Kingdom.pdf"
+  },
+  {
+   "id": 14941,
+   "letter": "B",
+   "title": "Buggy Painting Software I",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Buggy Painting Software I.pdf"
+  },
+  {
+   "id": 14942,
+   "letter": "C",
+   "title": "Buggy Painting Software II",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Buggy Painting Software II.pdf"
+  },
+  {
+   "id": 14943,
+   "letter": "D",
+   "title": "LED Display Renovation",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - LED Display Renovation.pdf"
+  },
+  {
+   "id": 14944,
+   "letter": "E",
+   "title": "Play It by Ear",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Play It by Ear.pdf"
+  },
+  {
+   "id": 14945,
+   "letter": "F",
+   "title": "The Bond Beyond Time",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - The Bond Beyond Time.pdf"
+  },
+  {
+   "id": 14946,
+   "letter": "G",
+   "title": "Collision Damage",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Collision Damage.pdf"
+  },
+  {
+   "id": 14947,
+   "letter": "H",
+   "title": "Cute Young Diagram Counting",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Cute Young Diagram Counting.pdf"
+  },
+  {
+   "id": 14948,
+   "letter": "I",
+   "title": "Volunteer Simulator",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Volunteer Simulator.pdf"
+  },
+  {
+   "id": 14949,
+   "letter": "J",
+   "title": "The Echoes of Chronos",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - The Echoes of Chronos.pdf"
+  },
+  {
+   "id": 14950,
+   "letter": "K",
+   "title": "Relay Jump",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Relay Jump.pdf"
+  },
+  {
+   "id": 14951,
+   "letter": "L",
+   "title": "Leo",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Leo.pdf"
+  },
+  {
+   "id": 14952,
+   "letter": "M",
+   "title": "The End?",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - The End_.pdf"
+  }
+ ]
+}

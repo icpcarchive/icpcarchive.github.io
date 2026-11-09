@@ -1,0 +1,74 @@
+{
+ "id": 45,
+ "name": "Greater NY 2006",
+ "url": "https://qoj.ac/contest/45",
+ "categories": [
+  "ICPC/Regionals/North America/Greater New York"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 1466,
+   "letter": "A",
+   "title": "Quick Change",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Quick Change.pdf"
+  },
+  {
+   "id": 1467,
+   "letter": "B",
+   "title": "Triangular Sums",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Triangular Sums.pdf"
+  },
+  {
+   "id": 1468,
+   "letter": "C",
+   "title": "Shuffle'm Up",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Shuffle'm Up.pdf"
+  },
+  {
+   "id": 1469,
+   "letter": "D",
+   "title": "Push Button Lock",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Push Button Lock.pdf"
+  },
+  {
+   "id": 1470,
+   "letter": "E",
+   "title": "Sign Message Formatting",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Sign Message Formatting.pdf"
+  },
+  {
+   "id": 1471,
+   "letter": "F",
+   "title": "Visible Lattice Points",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Visible Lattice Points.pdf"
+  },
+  {
+   "id": 1472,
+   "letter": "G",
+   "title": "Triangular N-Queens Problem",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Triangular N-Queens Problem.pdf"
+  },
+  {
+   "id": 1473,
+   "letter": "H",
+   "title": "Non-divisible 2-3 Power Sums",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Non-divisible 2-3 Power Sums.pdf"
+  },
+  {
+   "id": 1474,
+   "letter": "I",
+   "title": "Margaritas on the River Walk",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Margaritas on the River Walk.pdf"
+  }
+ ]
+}

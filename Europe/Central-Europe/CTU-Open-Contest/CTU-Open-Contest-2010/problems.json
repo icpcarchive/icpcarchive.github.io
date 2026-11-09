@@ -1,0 +1,115 @@
+{
+ "id": 3677,
+ "name": "CTU Open Contest 2010",
+ "url": "https://qoj.ac/contest/3677",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3677&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19467,
+   "letter": "A",
+   "title": "Arbitrage?",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Arbitrage_.pdf"
+  },
+  {
+   "id": 19468,
+   "letter": "B",
+   "title": "Bus Schedules",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bus Schedules.pdf"
+  },
+  {
+   "id": 19469,
+   "letter": "C",
+   "title": "Bus Clock Display",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Bus Clock Display.pdf"
+  },
+  {
+   "id": 19470,
+   "letter": "D",
+   "title": "Measuring Problem Difficulty",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Measuring Problem Difficulty.pdf"
+  },
+  {
+   "id": 19471,
+   "letter": "E",
+   "title": "The Easiest Problem is This One",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - The Easiest Problem is This One.pdf"
+  },
+  {
+   "id": 19472,
+   "letter": "F",
+   "title": "Prohibición de fumar",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Prohibición de fumar.pdf"
+  },
+  {
+   "id": 19473,
+   "letter": "G",
+   "title": "Pyramid Guards",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Pyramid Guards.pdf"
+  },
+  {
+   "id": 19474,
+   "letter": "H",
+   "title": "Hack around the Lock",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hack around the Lock.pdf"
+  },
+  {
+   "id": 19475,
+   "letter": "I",
+   "title": "God Save the i-th Queen",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - God Save the i-th Queen.pdf"
+  }
+ ]
+}

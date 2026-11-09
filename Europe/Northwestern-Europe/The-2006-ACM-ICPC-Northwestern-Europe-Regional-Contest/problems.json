@@ -1,0 +1,115 @@
+{
+ "id": 3641,
+ "name": "The 2006 ACM ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/3641",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3641&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19745,
+   "letter": "A",
+   "title": "Sudoku",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Sudoku.pdf"
+  },
+  {
+   "id": 19746,
+   "letter": "B",
+   "title": "The SetStack Computer",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - The SetStack Computer.pdf"
+  },
+  {
+   "id": 19747,
+   "letter": "C",
+   "title": "Pie",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Pie.pdf"
+  },
+  {
+   "id": 19748,
+   "letter": "D",
+   "title": "Ticket to Ride",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Ticket to Ride.pdf"
+  },
+  {
+   "id": 19749,
+   "letter": "E",
+   "title": "The Bookcase",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - The Bookcase.pdf"
+  },
+  {
+   "id": 19750,
+   "letter": "F",
+   "title": "Printer Queue",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Printer Queue.pdf"
+  },
+  {
+   "id": 19751,
+   "letter": "G",
+   "title": "Prime Path",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Prime Path.pdf"
+  },
+  {
+   "id": 19752,
+   "letter": "H",
+   "title": "Lineland's Airport",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Lineland's Airport.pdf"
+  },
+  {
+   "id": 19753,
+   "letter": "I",
+   "title": "Leonardo's Notebook",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Leonardo's Notebook.pdf"
+  }
+ ]
+}

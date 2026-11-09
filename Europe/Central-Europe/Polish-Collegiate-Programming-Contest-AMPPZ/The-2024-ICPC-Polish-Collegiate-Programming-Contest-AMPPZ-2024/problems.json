@@ -1,0 +1,148 @@
+{
+ "id": 1890,
+ "name": "The 2024 ICPC Polish Collegiate Programming Contest (AMPPZ 2024)",
+ "url": "https://qoj.ac/contest/1890",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/Polish Collegiate Programming Contest (AMPPZ)"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1890&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9959,
+   "letter": "A",
+   "title": "Acronym",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Acronym.pdf"
+  },
+  {
+   "id": 9960,
+   "letter": "B",
+   "title": "Baggage",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Baggage.pdf"
+  },
+  {
+   "id": 9961,
+   "letter": "C",
+   "title": "Cows",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cows.pdf"
+  },
+  {
+   "id": 9962,
+   "letter": "D",
+   "title": "Diminishing Fractions",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Diminishing Fractions.pdf"
+  },
+  {
+   "id": 9963,
+   "letter": "E",
+   "title": "Express Rotations",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Express Rotations.pdf"
+  },
+  {
+   "id": 9964,
+   "letter": "F",
+   "title": "Frogs",
+   "statement_pages": [
+    8,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Frogs.pdf"
+  },
+  {
+   "id": 9965,
+   "letter": "G",
+   "title": "Game MPO",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game MPO.pdf"
+  },
+  {
+   "id": 9966,
+   "letter": "H",
+   "title": "High Jump",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - High Jump.pdf"
+  },
+  {
+   "id": 9967,
+   "letter": "I",
+   "title": "Imbalanced Teams",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Imbalanced Teams.pdf"
+  },
+  {
+   "id": 9968,
+   "letter": "J",
+   "title": "Just Zeros",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Just Zeros.pdf"
+  },
+  {
+   "id": 9969,
+   "letter": "K",
+   "title": "Kindergarten Square",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kindergarten Square.pdf"
+  },
+  {
+   "id": 9970,
+   "letter": "L",
+   "title": "Looping RPS",
+   "statement_pages": [
+    19,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Looping RPS.pdf"
+  }
+ ]
+}

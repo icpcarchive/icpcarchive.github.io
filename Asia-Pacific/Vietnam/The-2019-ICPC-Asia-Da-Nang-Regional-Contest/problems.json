@@ -1,0 +1,159 @@
+{
+ "id": 4117,
+ "name": "The 2019 ICPC Asia Da Nang Regional Contest",
+ "url": "https://qoj.ac/contest/4117",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Vietnam"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=4117&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 20088,
+   "letter": "A",
+   "title": "Abstract Painting",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Abstract Painting.pdf"
+  },
+  {
+   "id": 20089,
+   "letter": "B",
+   "title": "Banana Problem",
+   "statement_pages": [
+    3,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Banana Problem.pdf"
+  },
+  {
+   "id": 20090,
+   "letter": "C",
+   "title": "Counting Palindromes",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Counting Palindromes.pdf"
+  },
+  {
+   "id": 20091,
+   "letter": "D",
+   "title": "Dating time",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dating time.pdf"
+  },
+  {
+   "id": 20092,
+   "letter": "E",
+   "title": "Easy Query",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Easy Query.pdf"
+  },
+  {
+   "id": 20093,
+   "letter": "F",
+   "title": "Fair Bandwidth Sharing",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fair Bandwidth Sharing.pdf"
+  },
+  {
+   "id": 20094,
+   "letter": "G",
+   "title": "Generating Numbers",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Generating Numbers.pdf"
+  },
+  {
+   "id": 20095,
+   "letter": "H",
+   "title": "Hanjie",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hanjie.pdf"
+  },
+  {
+   "id": 20096,
+   "letter": "I",
+   "title": "Inspecting Illumination",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Inspecting Illumination.pdf"
+  },
+  {
+   "id": 20097,
+   "letter": "J",
+   "title": "Justice for Ants",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Justice for Ants.pdf"
+  },
+  {
+   "id": 20098,
+   "letter": "K",
+   "title": "Keep It Sorted",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Keep It Sorted.pdf"
+  },
+  {
+   "id": 20099,
+   "letter": "L",
+   "title": "Latin Square",
+   "statement_pages": [
+    23,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Latin Square.pdf"
+  },
+  {
+   "id": 20100,
+   "letter": "M",
+   "title": "Moscow Dream",
+   "statement_pages": [
+    24,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Moscow Dream.pdf"
+  }
+ ]
+}

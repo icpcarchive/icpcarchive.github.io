@@ -1,0 +1,126 @@
+{
+ "id": 2704,
+ "name": "The 2013 Southeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2704",
+ "categories": [
+  "ICPC/Regionals/Europe/Southeastern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2704&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15740,
+   "letter": "A",
+   "title": "Russian Dolls",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Russian Dolls.pdf"
+  },
+  {
+   "id": 15741,
+   "letter": "B",
+   "title": "Intercity",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Intercity.pdf"
+  },
+  {
+   "id": 15742,
+   "letter": "C",
+   "title": "Count",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Count.pdf"
+  },
+  {
+   "id": 15743,
+   "letter": "D",
+   "title": "Chess",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Chess.pdf"
+  },
+  {
+   "id": 15744,
+   "letter": "E",
+   "title": "A+B",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - A+B.pdf"
+  },
+  {
+   "id": 15745,
+   "letter": "F",
+   "title": "Dragon Pattern",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Dragon Pattern.pdf"
+  },
+  {
+   "id": 15746,
+   "letter": "G",
+   "title": "Points",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Points.pdf"
+  },
+  {
+   "id": 15747,
+   "letter": "H",
+   "title": "Red John Game",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Red John Game.pdf"
+  },
+  {
+   "id": 15748,
+   "letter": "I",
+   "title": "Influence",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Influence.pdf"
+  },
+  {
+   "id": 15749,
+   "letter": "J",
+   "title": "An Idea of Mr. A",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - An Idea of Mr. A.pdf"
+  }
+ ]
+}

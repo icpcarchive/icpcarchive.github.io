@@ -1,0 +1,163 @@
+{
+ "id": 1695,
+ "name": "ICPC North America Championship 2024",
+ "url": "https://qoj.ac/contest/1695",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1695&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/blogs/885"
+  }
+ ],
+ "problems": [
+  {
+   "id": 8768,
+   "letter": "A",
+   "title": "Arrested Development",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Arrested Development.pdf"
+  },
+  {
+   "id": 8769,
+   "letter": "B",
+   "title": "Champernowne Substring",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Champernowne Substring.pdf"
+  },
+  {
+   "id": 8770,
+   "letter": "C",
+   "title": "Comparator",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Comparator.pdf"
+  },
+  {
+   "id": 8771,
+   "letter": "D",
+   "title": "Dihedral Group",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dihedral Group.pdf"
+  },
+  {
+   "id": 8772,
+   "letter": "E",
+   "title": "House Deconstruction",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - House Deconstruction.pdf"
+  },
+  {
+   "id": 8773,
+   "letter": "F",
+   "title": "Magic Bean",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Magic Bean.pdf"
+  },
+  {
+   "id": 8774,
+   "letter": "G",
+   "title": "Manhattan Walk",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Manhattan Walk.pdf"
+  },
+  {
+   "id": 8775,
+   "letter": "H",
+   "title": "MountainCraft",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - MountainCraft.pdf"
+  },
+  {
+   "id": 8776,
+   "letter": "I",
+   "title": "Not Another Constructive!",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Not Another Constructive!.pdf"
+  },
+  {
+   "id": 8777,
+   "letter": "J",
+   "title": "Passport Stamps",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Passport Stamps.pdf"
+  },
+  {
+   "id": 8778,
+   "letter": "K",
+   "title": "Shadow Line",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Shadow Line.pdf"
+  },
+  {
+   "id": 8779,
+   "letter": "L",
+   "title": "Square of Triangles",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Square of Triangles.pdf"
+  },
+  {
+   "id": 8780,
+   "letter": "M",
+   "title": "Training, Round 2",
+   "statement_pages": [
+    21,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Training, Round 2.pdf"
+  }
+ ]
+}

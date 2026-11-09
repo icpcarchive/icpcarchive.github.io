@@ -1,0 +1,88 @@
+{
+ "id": 2274,
+ "name": "2015 Arab Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/2274",
+ "categories": [
+  "ICPC/Regionals/Africa and Arab/Arab Collegiate Programming Contest"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 12877,
+   "letter": "A",
+   "title": "Christmas Tree",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Christmas Tree.pdf"
+  },
+  {
+   "id": 12878,
+   "letter": "B",
+   "title": "The Lion King",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - The Lion King.pdf"
+  },
+  {
+   "id": 12879,
+   "letter": "C",
+   "title": "Cultivating Mars",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Cultivating Mars.pdf"
+  },
+  {
+   "id": 12880,
+   "letter": "D",
+   "title": "Fractionstellar",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Fractionstellar.pdf"
+  },
+  {
+   "id": 12881,
+   "letter": "E",
+   "title": "The Minions Quiz",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - The Minions Quiz.pdf"
+  },
+  {
+   "id": 12882,
+   "letter": "F",
+   "title": "Uberfication",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Uberfication.pdf"
+  },
+  {
+   "id": 12883,
+   "letter": "G",
+   "title": "DNA Evolution",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - DNA Evolution.pdf"
+  },
+  {
+   "id": 12884,
+   "letter": "H",
+   "title": "Bingo!",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Bingo!.pdf"
+  },
+  {
+   "id": 12885,
+   "letter": "I",
+   "title": "Journey",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Journey.pdf"
+  },
+  {
+   "id": 12886,
+   "letter": "J",
+   "title": "Banana",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Banana.pdf"
+  },
+  {
+   "id": 12887,
+   "letter": "K",
+   "title": "Road Network",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Road Network.pdf"
+  }
+ ]
+}

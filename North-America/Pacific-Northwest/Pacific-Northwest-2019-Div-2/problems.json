@@ -1,0 +1,163 @@
+{
+ "id": 481,
+ "name": "Pacific Northwest 2019 (Div. 2)",
+ "url": "https://qoj.ac/contest/481",
+ "categories": [
+  "ICPC/Regionals/North America/Pacific Northwest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=481&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=481&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5731,
+   "letter": "N",
+   "title": "Checkerboard",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - Checkerboard.pdf"
+  },
+  {
+   "id": 5732,
+   "letter": "O",
+   "title": "Even or Odd",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/O - Even or Odd.pdf"
+  },
+  {
+   "id": 5720,
+   "letter": "P",
+   "title": "Coloring Contention",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/P - Coloring Contention.pdf"
+  },
+  {
+   "id": 5721,
+   "letter": "Q",
+   "title": "Dividing by Two",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/Q - Dividing by Two.pdf"
+  },
+  {
+   "id": 5722,
+   "letter": "R",
+   "title": "Rainbow Strings",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/R - Rainbow Strings.pdf"
+  },
+  {
+   "id": 5733,
+   "letter": "S",
+   "title": "Speeding",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/S - Speeding.pdf"
+  },
+  {
+   "id": 5724,
+   "letter": "T",
+   "title": "Glow, Little Pixel, Glow",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/T - Glow, Little Pixel, Glow.pdf"
+  },
+  {
+   "id": 5734,
+   "letter": "U",
+   "title": "Issuing Plates",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/U - Issuing Plates.pdf"
+  },
+  {
+   "id": 5735,
+   "letter": "V",
+   "title": "Correcting Keats",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/V - Correcting Keats.pdf"
+  },
+  {
+   "id": 5736,
+   "letter": "W",
+   "title": "Black and White",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/W - Black and White.pdf"
+  },
+  {
+   "id": 5737,
+   "letter": "X",
+   "title": "Remorse",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/X - Remorse.pdf"
+  },
+  {
+   "id": 5729,
+   "letter": "Y",
+   "title": "Carry Cam Failure",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/Y - Carry Cam Failure.pdf"
+  },
+  {
+   "id": 5730,
+   "letter": "Z",
+   "title": "Maze Connect",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/Z - Maze Connect.pdf"
+  }
+ ]
+}

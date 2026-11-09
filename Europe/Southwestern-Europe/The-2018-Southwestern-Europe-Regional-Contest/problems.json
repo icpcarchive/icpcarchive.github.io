@@ -1,0 +1,137 @@
+{
+ "id": 408,
+ "name": "The 2018 Southwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/408",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=408&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2797,
+   "letter": "A",
+   "title": "City of Lights",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - City of Lights.pdf"
+  },
+  {
+   "id": 2798,
+   "letter": "B",
+   "title": "Blurred Pictures",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Blurred Pictures.pdf"
+  },
+  {
+   "id": 2799,
+   "letter": "C",
+   "title": "Crosswords",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Crosswords.pdf"
+  },
+  {
+   "id": 2800,
+   "letter": "D",
+   "title": "Monument Tour",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Monument Tour.pdf"
+  },
+  {
+   "id": 2801,
+   "letter": "E",
+   "title": "Rounding",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Rounding.pdf"
+  },
+  {
+   "id": 2802,
+   "letter": "F",
+   "title": "Paris by Night",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Paris by Night.pdf"
+  },
+  {
+   "id": 2803,
+   "letter": "G",
+   "title": "Strings",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Strings.pdf"
+  },
+  {
+   "id": 2804,
+   "letter": "H",
+   "title": "Travel Guide",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Travel Guide.pdf"
+  },
+  {
+   "id": 2805,
+   "letter": "I",
+   "title": "Mason's Mark",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Mason's Mark.pdf"
+  },
+  {
+   "id": 2806,
+   "letter": "J",
+   "title": "Mona Lisa",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Mona Lisa.pdf"
+  },
+  {
+   "id": 2807,
+   "letter": "K",
+   "title": "Dishonest Driver",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Dishonest Driver.pdf"
+  }
+ ]
+}

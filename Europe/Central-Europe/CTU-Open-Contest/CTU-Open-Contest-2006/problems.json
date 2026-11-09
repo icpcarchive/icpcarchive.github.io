@@ -1,0 +1,107 @@
+{
+ "id": 3673,
+ "name": "CTU Open Contest 2006",
+ "url": "https://qoj.ac/contest/3673",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3673&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19431,
+   "letter": "A",
+   "title": "Tree Marking Animals",
+   "statement_pages": [
+    1,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Tree Marking Animals.pdf"
+  },
+  {
+   "id": 19432,
+   "letter": "B",
+   "title": "Black Boxes",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Black Boxes.pdf"
+  },
+  {
+   "id": 19433,
+   "letter": "C",
+   "title": "Chocolate Eating",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Chocolate Eating.pdf"
+  },
+  {
+   "id": 19434,
+   "letter": "D",
+   "title": "srebmuN desreveR gniddA",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - srebmuN desreveR gniddA.pdf"
+  },
+  {
+   "id": 19435,
+   "letter": "E",
+   "title": "Extra Safety",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Extra Safety.pdf"
+  },
+  {
+   "id": 19436,
+   "letter": "F",
+   "title": "Numbers Factorization",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Numbers Factorization.pdf"
+  },
+  {
+   "id": 19437,
+   "letter": "G",
+   "title": "Random Generators",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Random Generators.pdf"
+  },
+  {
+   "id": 19438,
+   "letter": "H",
+   "title": "Ball Lightning -- Help with the Moving",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Ball Lightning -- Help with the Moving.pdf"
+  },
+  {
+   "id": 19439,
+   "letter": "I",
+   "title": "Intercal",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Intercal.pdf"
+  }
+ ]
+}

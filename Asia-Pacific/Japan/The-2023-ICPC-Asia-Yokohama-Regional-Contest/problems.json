@@ -1,0 +1,141 @@
+{
+ "id": 1447,
+ "name": "The 2023 ICPC Asia Yokohama Regional Contest",
+ "url": "https://qoj.ac/contest/1447",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1447&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1447&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7921,
+   "letter": "A",
+   "title": "Yokohama Phenomena",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Yokohama Phenomena.pdf"
+  },
+  {
+   "id": 7922,
+   "letter": "B",
+   "title": "Rank Promotion",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Rank Promotion.pdf"
+  },
+  {
+   "id": 7923,
+   "letter": "C",
+   "title": "Ferris Wheel",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Ferris Wheel.pdf"
+  },
+  {
+   "id": 7924,
+   "letter": "D",
+   "title": "Nested Repetition Compression",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Nested Repetition Compression.pdf"
+  },
+  {
+   "id": 7925,
+   "letter": "E",
+   "title": "Chayas",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Chayas.pdf"
+  },
+  {
+   "id": 7926,
+   "letter": "F",
+   "title": "Color Inversion on a Huge Chessboard",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Color Inversion on a Huge Chessboard.pdf"
+  },
+  {
+   "id": 7927,
+   "letter": "G",
+   "title": "Fortune Telling",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Fortune Telling.pdf"
+  },
+  {
+   "id": 7928,
+   "letter": "H",
+   "title": "Task Assignment to Two Employees",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Task Assignment to Two Employees.pdf"
+  },
+  {
+   "id": 7929,
+   "letter": "I",
+   "title": "Liquid Distribution",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Liquid Distribution.pdf"
+  },
+  {
+   "id": 7930,
+   "letter": "J",
+   "title": "Do It Yourself?",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Do It Yourself_.pdf"
+  },
+  {
+   "id": 7931,
+   "letter": "K",
+   "title": "Probing the Disk",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Probing the Disk.pdf"
+  }
+ ]
+}

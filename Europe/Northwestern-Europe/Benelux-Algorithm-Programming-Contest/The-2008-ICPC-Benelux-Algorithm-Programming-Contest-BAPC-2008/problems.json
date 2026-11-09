@@ -1,0 +1,104 @@
+{
+ "id": 3900,
+ "name": "The 2008 ICPC Benelux Algorithm Programming Contest (BAPC 2008)",
+ "url": "https://qoj.ac/contest/3900",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3900&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19222,
+   "letter": "A",
+   "title": "Song contest",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Song contest.pdf"
+  },
+  {
+   "id": 19223,
+   "letter": "B",
+   "title": "Message",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Message.pdf"
+  },
+  {
+   "id": 19224,
+   "letter": "C",
+   "title": "The skatepark's new ramps",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - The skatepark's new ramps.pdf"
+  },
+  {
+   "id": 19225,
+   "letter": "D",
+   "title": "Road",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Road.pdf"
+  },
+  {
+   "id": 19226,
+   "letter": "E",
+   "title": "Warfare",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Warfare.pdf"
+  },
+  {
+   "id": 19227,
+   "letter": "F",
+   "title": "Blackjack",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Blackjack.pdf"
+  },
+  {
+   "id": 19228,
+   "letter": "G",
+   "title": "Robintron",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Robintron.pdf"
+  },
+  {
+   "id": 19229,
+   "letter": "H",
+   "title": "Diamond Dealer",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Diamond Dealer.pdf"
+  }
+ ]
+}

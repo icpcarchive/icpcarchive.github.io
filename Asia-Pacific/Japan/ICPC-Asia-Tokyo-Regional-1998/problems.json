@@ -1,0 +1,72 @@
+{
+ "id": 3609,
+ "name": "ICPC Asia Tokyo Regional 1998",
+ "url": "https://qoj.ac/contest/3609",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3609&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19568,
+   "letter": "A",
+   "title": "Goldbach's Conjecture",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Goldbach's Conjecture.pdf"
+  },
+  {
+   "id": 19569,
+   "letter": "B",
+   "title": "Lattice Practices",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Lattice Practices.pdf"
+  },
+  {
+   "id": 19570,
+   "letter": "C",
+   "title": "Mobile Phone Coverage",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Mobile Phone Coverage.pdf"
+  },
+  {
+   "id": 19571,
+   "letter": "D",
+   "title": "Napoleon's Grumble",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Napoleon's Grumble.pdf"
+  },
+  {
+   "id": 19572,
+   "letter": "E",
+   "title": "Pipeline Scheduling",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Pipeline Scheduling.pdf"
+  },
+  {
+   "id": 19573,
+   "letter": "F",
+   "title": "Triangle Partition",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Triangle Partition.pdf"
+  },
+  {
+   "id": 19574,
+   "letter": "G",
+   "title": "BUT We Need a Diagram",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - BUT We Need a Diagram.pdf"
+  },
+  {
+   "id": 19575,
+   "letter": "H",
+   "title": "Digital Racing Circuit",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Digital Racing Circuit.pdf"
+  }
+ ]
+}

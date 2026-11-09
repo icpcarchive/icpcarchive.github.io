@@ -1,0 +1,168 @@
+{
+ "id": 2609,
+ "name": "The 2025 ICPC Asia Wuhan Regional Contest",
+ "url": "https://qoj.ac/contest/2609",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Wuhan",
+  "ICPC/Regionals/Asia East Continent/The 2025 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2609&r=0"
+  },
+  {
+   "text": "Statements (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2609&r=1"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2609&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 14719,
+   "letter": "A",
+   "title": "Planting Trees",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Planting Trees.pdf"
+  },
+  {
+   "id": 14720,
+   "letter": "B",
+   "title": "77G Network",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - 77G Network.pdf"
+  },
+  {
+   "id": 14721,
+   "letter": "C",
+   "title": "Not Aqre",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Not Aqre.pdf"
+  },
+  {
+   "id": 14722,
+   "letter": "D",
+   "title": "Outsmarting",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Outsmarting.pdf"
+  },
+  {
+   "id": 14723,
+   "letter": "E",
+   "title": "Magic Trick",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Magic Trick.pdf"
+  },
+  {
+   "id": 14724,
+   "letter": "F",
+   "title": "Divide and Conquer",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Divide and Conquer.pdf"
+  },
+  {
+   "id": 14725,
+   "letter": "G",
+   "title": "Projection",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Projection.pdf"
+  },
+  {
+   "id": 14726,
+   "letter": "H",
+   "title": "Restore the Array",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Restore the Array.pdf"
+  },
+  {
+   "id": 14727,
+   "letter": "I",
+   "title": "Dolls 2",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Dolls 2.pdf"
+  },
+  {
+   "id": 14728,
+   "letter": "J",
+   "title": "Circular Matching",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Circular Matching.pdf"
+  },
+  {
+   "id": 14729,
+   "letter": "K",
+   "title": "Organize the Bookshelf",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Organize the Bookshelf.pdf"
+  },
+  {
+   "id": 14730,
+   "letter": "L",
+   "title": "ICPC",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - ICPC.pdf"
+  },
+  {
+   "id": 14731,
+   "letter": "M",
+   "title": "Kingdom of Construction",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Kingdom of Construction.pdf"
+  }
+ ]
+}

@@ -1,0 +1,126 @@
+{
+ "id": 875,
+ "name": "The 2009 ACM-ICPC Asia Wuhan Regional Contest",
+ "url": "https://qoj.ac/contest/875",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Wuhan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=875&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3401,
+   "letter": "A",
+   "title": "Assembling Services",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Assembling Services.pdf"
+  },
+  {
+   "id": 3402,
+   "letter": "B",
+   "title": "Box Relations",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Box Relations.pdf"
+  },
+  {
+   "id": 3403,
+   "letter": "C",
+   "title": "Crossing Rivers",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Crossing Rivers.pdf"
+  },
+  {
+   "id": 3404,
+   "letter": "D",
+   "title": "Download Manager",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Download Manager.pdf"
+  },
+  {
+   "id": 3405,
+   "letter": "E",
+   "title": "Exclusive-OR",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Exclusive-OR.pdf"
+  },
+  {
+   "id": 3406,
+   "letter": "F",
+   "title": "Final Combat",
+   "statement_pages": [
+    8,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Final Combat.pdf"
+  },
+  {
+   "id": 3407,
+   "letter": "G",
+   "title": "Gift Hunting",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gift Hunting.pdf"
+  },
+  {
+   "id": 3408,
+   "letter": "H",
+   "title": "Help Bubu",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Help Bubu.pdf"
+  },
+  {
+   "id": 3409,
+   "letter": "I",
+   "title": "In A Crazy City",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - In A Crazy City.pdf"
+  },
+  {
+   "id": 3410,
+   "letter": "J",
+   "title": "Jiajia's Robot",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jiajia's Robot.pdf"
+  }
+ ]
+}

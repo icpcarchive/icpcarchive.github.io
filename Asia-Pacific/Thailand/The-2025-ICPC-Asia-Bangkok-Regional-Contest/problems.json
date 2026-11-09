@@ -1,0 +1,174 @@
+{
+ "id": 2826,
+ "name": "The 2025 ICPC Asia Bangkok Regional Contest",
+ "url": "https://qoj.ac/contest/2826",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Thailand"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2826&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2826&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16101,
+   "letter": "A",
+   "title": "Among Us",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Among Us.pdf"
+  },
+  {
+   "id": 16102,
+   "letter": "B",
+   "title": "Bring It To Back",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bring It To Back.pdf"
+  },
+  {
+   "id": 16103,
+   "letter": "C",
+   "title": "Challenge to the Reader",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Challenge to the Reader.pdf"
+  },
+  {
+   "id": 16104,
+   "letter": "D",
+   "title": "Dungeons and Dragons",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dungeons and Dragons.pdf"
+  },
+  {
+   "id": 16105,
+   "letter": "E",
+   "title": "Elena and Travel Pass",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Elena and Travel Pass.pdf"
+  },
+  {
+   "id": 16106,
+   "letter": "F",
+   "title": "Festival Stroll",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Festival Stroll.pdf"
+  },
+  {
+   "id": 16107,
+   "letter": "G",
+   "title": "Galactic Adventure Agency",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Galactic Adventure Agency.pdf"
+  },
+  {
+   "id": 16108,
+   "letter": "H",
+   "title": "Home Workout Playlist",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Home Workout Playlist.pdf"
+  },
+  {
+   "id": 16109,
+   "letter": "I",
+   "title": "ICPC Extractor",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - ICPC Extractor.pdf"
+  },
+  {
+   "id": 16110,
+   "letter": "J",
+   "title": "Joyeuse",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joyeuse.pdf"
+  },
+  {
+   "id": 16111,
+   "letter": "K",
+   "title": "Kickshot Tournament",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kickshot Tournament.pdf"
+  },
+  {
+   "id": 16112,
+   "letter": "L",
+   "title": "Laser",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Laser.pdf"
+  },
+  {
+   "id": 16113,
+   "letter": "M",
+   "title": "Merticulous Manipulation",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Merticulous Manipulation.pdf"
+  },
+  {
+   "id": 16114,
+   "letter": "N",
+   "title": "No Distance is Too Far Apart",
+   "statement_pages": [
+    29,
+    29
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - No Distance is Too Far Apart.pdf"
+  }
+ ]
+}

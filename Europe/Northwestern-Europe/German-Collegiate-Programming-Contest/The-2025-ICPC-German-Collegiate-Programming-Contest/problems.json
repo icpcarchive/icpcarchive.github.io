@@ -1,0 +1,163 @@
+{
+ "id": 2535,
+ "name": "The 2025 ICPC German Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/2535",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/German Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2535&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2535&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 14560,
+   "letter": "A",
+   "title": "Around the Table",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Around the Table.pdf"
+  },
+  {
+   "id": 14561,
+   "letter": "B",
+   "title": "Bustling Busride",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bustling Busride.pdf"
+  },
+  {
+   "id": 14562,
+   "letter": "C",
+   "title": "Congklak",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Congklak.pdf"
+  },
+  {
+   "id": 14563,
+   "letter": "D",
+   "title": "Demand for Cycling",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Demand for Cycling.pdf"
+  },
+  {
+   "id": 14564,
+   "letter": "E",
+   "title": "Engineering Excellence",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Engineering Excellence.pdf"
+  },
+  {
+   "id": 14565,
+   "letter": "F",
+   "title": "Fair and Square",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fair and Square.pdf"
+  },
+  {
+   "id": 14566,
+   "letter": "G",
+   "title": "Generating Cool Passwords Company",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Generating Cool Passwords Company.pdf"
+  },
+  {
+   "id": 14567,
+   "letter": "H",
+   "title": "Happy Hookup",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Happy Hookup.pdf"
+  },
+  {
+   "id": 14568,
+   "letter": "I",
+   "title": "Island Urbanism",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Island Urbanism.pdf"
+  },
+  {
+   "id": 14569,
+   "letter": "J",
+   "title": "Jumbled Packets",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jumbled Packets.pdf"
+  },
+  {
+   "id": 14570,
+   "letter": "K",
+   "title": "Karlsruhe Skyline",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Karlsruhe Skyline.pdf"
+  },
+  {
+   "id": 14571,
+   "letter": "L",
+   "title": "Labour Laws",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Labour Laws.pdf"
+  },
+  {
+   "id": 14572,
+   "letter": "M",
+   "title": "Mex Hex",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mex Hex.pdf"
+  }
+ ]
+}

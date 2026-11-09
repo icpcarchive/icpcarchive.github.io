@@ -1,0 +1,119 @@
+{
+ "id": 1026,
+ "name": "The 2022 ICPC Taiwan Online Programming Contest",
+ "url": "https://qoj.ac/contest/1026",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Taiwan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1026&r=0"
+  },
+  {
+   "text": "Tutorials (zh-tw)",
+   "href": "https://hackmd.io/@rTbBGGVYR3e0Ee1fJry9fg/Hyat7r84j"
+  }
+ ],
+ "problems": [
+  {
+   "id": 4999,
+   "letter": "A",
+   "title": "AibohphobiA",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - AibohphobiA.pdf"
+  },
+  {
+   "id": 5000,
+   "letter": "B",
+   "title": "Balanced Seesaw Array",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Balanced Seesaw Array.pdf"
+  },
+  {
+   "id": 5001,
+   "letter": "C",
+   "title": "Correct",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Correct.pdf"
+  },
+  {
+   "id": 5002,
+   "letter": "D",
+   "title": "Distance and Tree",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Distance and Tree.pdf"
+  },
+  {
+   "id": 5003,
+   "letter": "E",
+   "title": "Etched Emerald Orbs",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Etched Emerald Orbs.pdf"
+  },
+  {
+   "id": 5004,
+   "letter": "F",
+   "title": "Finalists",
+   "statement_pages": [
+    11,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Finalists.pdf"
+  },
+  {
+   "id": 5005,
+   "letter": "G",
+   "title": "Geekflix",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Geekflix.pdf"
+  },
+  {
+   "id": 5006,
+   "letter": "H",
+   "title": "Heximal",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Heximal.pdf"
+  },
+  {
+   "id": 5007,
+   "letter": "I",
+   "title": "Invitation",
+   "statement_pages": [
+    19,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Invitation.pdf"
+  }
+ ]
+}

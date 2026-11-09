@@ -1,0 +1,141 @@
+{
+ "id": 2576,
+ "name": "The 2025 ICPC Nordic Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/2576",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Nordic Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2576&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2576&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 14827,
+   "letter": "A",
+   "title": "Arithmetic Adaptation",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Arithmetic Adaptation.pdf"
+  },
+  {
+   "id": 14828,
+   "letter": "B",
+   "title": "Bohemian Bookshelf",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bohemian Bookshelf.pdf"
+  },
+  {
+   "id": 14829,
+   "letter": "C",
+   "title": "Crochet Competition",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Crochet Competition.pdf"
+  },
+  {
+   "id": 14830,
+   "letter": "D",
+   "title": "Dune Dash",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dune Dash.pdf"
+  },
+  {
+   "id": 14831,
+   "letter": "E",
+   "title": "Egyptian Equality",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Egyptian Equality.pdf"
+  },
+  {
+   "id": 14832,
+   "letter": "F",
+   "title": "Follower Forensics",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Follower Forensics.pdf"
+  },
+  {
+   "id": 14833,
+   "letter": "G",
+   "title": "Gotta Trade Some of 'Em",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gotta Trade Some of 'Em.pdf"
+  },
+  {
+   "id": 14834,
+   "letter": "H",
+   "title": "Hidden Permutation",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hidden Permutation.pdf"
+  },
+  {
+   "id": 14835,
+   "letter": "I",
+   "title": "Instagraph",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Instagraph.pdf"
+  },
+  {
+   "id": 14836,
+   "letter": "J",
+   "title": "Jump",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jump.pdf"
+  },
+  {
+   "id": 14837,
+   "letter": "K",
+   "title": "km/h",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - km_h.pdf"
+  }
+ ]
+}

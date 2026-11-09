@@ -1,0 +1,159 @@
+{
+ "id": 1952,
+ "name": "Pacific Northwest 2024 (Div. 1)",
+ "url": "https://qoj.ac/contest/1952",
+ "categories": [
+  "ICPC/Regionals/North America/Pacific Northwest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1952&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 10584,
+   "letter": "A",
+   "title": "Auto-Coin-o-Matic",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Auto-Coin-o-Matic.pdf"
+  },
+  {
+   "id": 10585,
+   "letter": "B",
+   "title": "Big Integers",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Big Integers.pdf"
+  },
+  {
+   "id": 10587,
+   "letter": "C",
+   "title": "Champernowne Subsequence",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Champernowne Subsequence.pdf"
+  },
+  {
+   "id": 10588,
+   "letter": "D",
+   "title": "Connecting Computers",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Connecting Computers.pdf"
+  },
+  {
+   "id": 10589,
+   "letter": "E",
+   "title": "Exact Change",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Exact Change.pdf"
+  },
+  {
+   "id": 10590,
+   "letter": "F",
+   "title": "Free Solo",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Free Solo.pdf"
+  },
+  {
+   "id": 10591,
+   "letter": "G",
+   "title": "GCD Pairs",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - GCD Pairs.pdf"
+  },
+  {
+   "id": 10593,
+   "letter": "H",
+   "title": "Homework Help",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Homework Help.pdf"
+  },
+  {
+   "id": 10594,
+   "letter": "I",
+   "title": "Intuitive Elements",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Intuitive Elements.pdf"
+  },
+  {
+   "id": 10596,
+   "letter": "J",
+   "title": "Rainbow Bowl Ranges",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Rainbow Bowl Ranges.pdf"
+  },
+  {
+   "id": 10598,
+   "letter": "K",
+   "title": "Sleeping on the Train",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Sleeping on the Train.pdf"
+  },
+  {
+   "id": 10600,
+   "letter": "L",
+   "title": "Training, Round 3",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Training, Round 3.pdf"
+  },
+  {
+   "id": 10601,
+   "letter": "M",
+   "title": "Word Game",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Word Game.pdf"
+  }
+ ]
+}

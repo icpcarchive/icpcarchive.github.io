@@ -1,0 +1,95 @@
+{
+ "id": 2568,
+ "name": "The 2018 Central Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2568",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 15529,
+   "letter": "A",
+   "title": "The ABCD Murderer",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - The ABCD Murderer.pdf"
+  },
+  {
+   "id": 15530,
+   "letter": "B",
+   "title": "The Bridge on the River Kawaii",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - The Bridge on the River Kawaii.pdf"
+  },
+  {
+   "id": 15531,
+   "letter": "C",
+   "title": "Clockwork ||ange",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Clockwork __ange.pdf"
+  },
+  {
+   "id": 15532,
+   "letter": "D",
+   "title": "Reservoir Dog",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Reservoir Dog.pdf"
+  },
+  {
+   "id": 15533,
+   "letter": "E",
+   "title": "Trees Gump",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Trees Gump.pdf"
+  },
+  {
+   "id": 15534,
+   "letter": "F",
+   "title": "Incredible Hull",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Incredible Hull.pdf"
+  },
+  {
+   "id": 15535,
+   "letter": "G",
+   "title": "Shooter Island",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Shooter Island.pdf"
+  },
+  {
+   "id": 15536,
+   "letter": "H",
+   "title": "The Lord of the Kings",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - The Lord of the Kings.pdf"
+  },
+  {
+   "id": 15537,
+   "letter": "I",
+   "title": "The Silence of the Lamps",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - The Silence of the Lamps.pdf"
+  },
+  {
+   "id": 15538,
+   "letter": "J",
+   "title": "Matrice",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Matrice.pdf"
+  },
+  {
+   "id": 15539,
+   "letter": "K",
+   "title": "Mirrority Report",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Mirrority Report.pdf"
+  },
+  {
+   "id": 15540,
+   "letter": "L",
+   "title": "Game of Stones",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Game of Stones.pdf"
+  }
+ ]
+}

@@ -1,0 +1,153 @@
+{
+ "id": 2524,
+ "name": "The 2025 ICPC Asia East Continent Online Contest (II)",
+ "url": "https://qoj.ac/contest/2524",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent",
+  "ICPC/Regionals/Asia East Continent/The 2025 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2524&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2524&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 14314,
+   "letter": "A",
+   "title": "Angry Birds",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Angry Birds.pdf"
+  },
+  {
+   "id": 14315,
+   "letter": "B",
+   "title": "Rectangular Wooden Block",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Rectangular Wooden Block.pdf"
+  },
+  {
+   "id": 14316,
+   "letter": "C",
+   "title": "Jiaxun!",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Jiaxun!.pdf"
+  },
+  {
+   "id": 14317,
+   "letter": "D",
+   "title": "Arcane Behemoths",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Arcane Behemoths.pdf"
+  },
+  {
+   "id": 14318,
+   "letter": "E",
+   "title": "Zero",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Zero.pdf"
+  },
+  {
+   "id": 14319,
+   "letter": "F",
+   "title": "Square Permutation I",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Square Permutation I.pdf"
+  },
+  {
+   "id": 14320,
+   "letter": "G",
+   "title": "Square Permutation II",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Square Permutation II.pdf"
+  },
+  {
+   "id": 14321,
+   "letter": "H",
+   "title": "Tree Shuffling",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Tree Shuffling.pdf"
+  },
+  {
+   "id": 14322,
+   "letter": "I",
+   "title": "DAG Query",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - DAG Query.pdf"
+  },
+  {
+   "id": 14323,
+   "letter": "J",
+   "title": "Reconstruct the tree",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Reconstruct the tree.pdf"
+  },
+  {
+   "id": 14324,
+   "letter": "K",
+   "title": "The Only Heart",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - The Only Heart.pdf"
+  },
+  {
+   "id": 14325,
+   "letter": "L",
+   "title": "Xor Mirror",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Xor Mirror.pdf"
+  }
+ ]
+}

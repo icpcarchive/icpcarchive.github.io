@@ -1,0 +1,159 @@
+{
+ "id": 861,
+ "name": "North Central NA 2021",
+ "url": "https://qoj.ac/contest/861",
+ "categories": [
+  "ICPC/Regionals/North America/North Central NA"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=861&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2917,
+   "letter": "A",
+   "title": "Even Substrings",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Even Substrings.pdf"
+  },
+  {
+   "id": 2918,
+   "letter": "B",
+   "title": "Tree Number Generator",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Tree Number Generator.pdf"
+  },
+  {
+   "id": 2919,
+   "letter": "C",
+   "title": "Subprime",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Subprime.pdf"
+  },
+  {
+   "id": 2920,
+   "letter": "D",
+   "title": "Ultimate Binary Watch",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Ultimate Binary Watch.pdf"
+  },
+  {
+   "id": 2921,
+   "letter": "E",
+   "title": "Land Equality",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Land Equality.pdf"
+  },
+  {
+   "id": 2922,
+   "letter": "F",
+   "title": "Word Puzzle",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Word Puzzle.pdf"
+  },
+  {
+   "id": 2923,
+   "letter": "G",
+   "title": "Code Guessing",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Code Guessing.pdf"
+  },
+  {
+   "id": 2924,
+   "letter": "H",
+   "title": "Lone Rook",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Lone Rook.pdf"
+  },
+  {
+   "id": 2925,
+   "letter": "I",
+   "title": "Parking Lot",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Parking Lot.pdf"
+  },
+  {
+   "id": 2926,
+   "letter": "J",
+   "title": "Stream Lag",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Stream Lag.pdf"
+  },
+  {
+   "id": 2927,
+   "letter": "K",
+   "title": "Bracket Pairing",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Bracket Pairing.pdf"
+  },
+  {
+   "id": 2928,
+   "letter": "L",
+   "title": "Espresso!",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Espresso!.pdf"
+  },
+  {
+   "id": 2929,
+   "letter": "M",
+   "title": "Concert Rehearsal",
+   "statement_pages": [
+    29,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Concert Rehearsal.pdf"
+  }
+ ]
+}

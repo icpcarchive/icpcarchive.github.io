@@ -1,0 +1,163 @@
+{
+ "id": 3815,
+ "name": "The 2018 ICPC North America Qualifier",
+ "url": "https://qoj.ac/contest/3815",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3815&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3815&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 20206,
+   "letter": "A",
+   "title": "Bingo Ties",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Bingo Ties.pdf"
+  },
+  {
+   "id": 20207,
+   "letter": "B",
+   "title": "Das Blinkenlights",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Das Blinkenlights.pdf"
+  },
+  {
+   "id": 20208,
+   "letter": "C",
+   "title": "Ebony and Ivory",
+   "statement_pages": [
+    5,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Ebony and Ivory.pdf"
+  },
+  {
+   "id": 20209,
+   "letter": "D",
+   "title": "Froggie",
+   "statement_pages": [
+    9,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Froggie.pdf"
+  },
+  {
+   "id": 20210,
+   "letter": "E",
+   "title": "Fruit Slicer",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Fruit Slicer.pdf"
+  },
+  {
+   "id": 20211,
+   "letter": "F",
+   "title": "LCM Tree",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - LCM Tree.pdf"
+  },
+  {
+   "id": 20212,
+   "letter": "G",
+   "title": "Left and Right",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Left and Right.pdf"
+  },
+  {
+   "id": 20213,
+   "letter": "H",
+   "title": "Longest Life",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Longest Life.pdf"
+  },
+  {
+   "id": 20214,
+   "letter": "I",
+   "title": "Monitoring Ski Paths",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Monitoring Ski Paths.pdf"
+  },
+  {
+   "id": 20215,
+   "letter": "J",
+   "title": "Peg Game for Two",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Peg Game for Two.pdf"
+  },
+  {
+   "id": 20216,
+   "letter": "K",
+   "title": "Run-Length Encoding, Run!",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Run-Length Encoding, Run!.pdf"
+  },
+  {
+   "id": 20217,
+   "letter": "L",
+   "title": "Superdoku",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Superdoku.pdf"
+  },
+  {
+   "id": 20218,
+   "letter": "M",
+   "title": "Triangular Clouds",
+   "statement_pages": [
+    29,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Triangular Clouds.pdf"
+  }
+ ]
+}

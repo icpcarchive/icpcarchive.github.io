@@ -1,0 +1,126 @@
+{
+ "id": 3681,
+ "name": "CTU Open Contest 2014",
+ "url": "https://qoj.ac/contest/3681",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3681&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19501,
+   "letter": "A",
+   "title": "Kolonie",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Kolonie.pdf"
+  },
+  {
+   "id": 19502,
+   "letter": "B",
+   "title": "Most",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Most.pdf"
+  },
+  {
+   "id": 19503,
+   "letter": "C",
+   "title": "Stavitel",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Stavitel.pdf"
+  },
+  {
+   "id": 19504,
+   "letter": "D",
+   "title": "Lodě",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Lodě.pdf"
+  },
+  {
+   "id": 19505,
+   "letter": "E",
+   "title": "Direct Visibility",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Direct Visibility.pdf"
+  },
+  {
+   "id": 19506,
+   "letter": "F",
+   "title": "Karel the Robot",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Karel the Robot.pdf"
+  },
+  {
+   "id": 19507,
+   "letter": "G",
+   "title": "More or Less Accurate",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - More or Less Accurate.pdf"
+  },
+  {
+   "id": 19508,
+   "letter": "H",
+   "title": "Self-Intersecting Path",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Self-Intersecting Path.pdf"
+  },
+  {
+   "id": 19509,
+   "letter": "I",
+   "title": "Lengthy Traveling Salesman",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Lengthy Traveling Salesman.pdf"
+  },
+  {
+   "id": 19510,
+   "letter": "J",
+   "title": "Picture Validator",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Picture Validator.pdf"
+  }
+ ]
+}

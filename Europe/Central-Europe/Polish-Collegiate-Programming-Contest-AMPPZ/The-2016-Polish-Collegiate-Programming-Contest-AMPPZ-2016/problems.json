@@ -1,0 +1,95 @@
+{
+ "id": 916,
+ "name": "The 2016 Polish Collegiate Programming Contest (AMPPZ 2016)",
+ "url": "https://qoj.ac/contest/916",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/Polish Collegiate Programming Contest (AMPPZ)"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 3815,
+   "letter": "A",
+   "title": "Weak pseudorandom generator",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Weak pseudorandom generator.pdf"
+  },
+  {
+   "id": 3816,
+   "letter": "B",
+   "title": "Home alone: Johnny lost in New York",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Home alone_ Johnny lost in New York.pdf"
+  },
+  {
+   "id": 3817,
+   "letter": "C",
+   "title": "Generating Polygons",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Generating Polygons.pdf"
+  },
+  {
+   "id": 3818,
+   "letter": "D",
+   "title": "Grapes",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Grapes.pdf"
+  },
+  {
+   "id": 3819,
+   "letter": "E",
+   "title": "Taxi",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Taxi.pdf"
+  },
+  {
+   "id": 3820,
+   "letter": "F",
+   "title": "Antisocial network",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Antisocial network.pdf"
+  },
+  {
+   "id": 3821,
+   "letter": "G",
+   "title": "Parking Lot",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Parking Lot.pdf"
+  },
+  {
+   "id": 3822,
+   "letter": "H",
+   "title": "Anagrams",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Anagrams.pdf"
+  },
+  {
+   "id": 3823,
+   "letter": "I",
+   "title": "Mountain hike",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Mountain hike.pdf"
+  },
+  {
+   "id": 3824,
+   "letter": "J",
+   "title": "Rock, paper, scissors",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Rock, paper, scissors.pdf"
+  },
+  {
+   "id": 3825,
+   "letter": "K",
+   "title": "Johnny-Bohr model",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Johnny-Bohr model.pdf"
+  },
+  {
+   "id": 3826,
+   "letter": "L",
+   "title": "Constitutional Tribunal",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Constitutional Tribunal.pdf"
+  }
+ ]
+}

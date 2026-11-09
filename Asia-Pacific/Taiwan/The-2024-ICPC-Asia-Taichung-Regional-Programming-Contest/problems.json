@@ -1,0 +1,174 @@
+{
+ "id": 3297,
+ "name": "The 2024 ICPC Asia Taichung Regional Programming Contest",
+ "url": "https://qoj.ac/contest/3297",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Taiwan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3297&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3297&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16908,
+   "letter": "A",
+   "title": "The Bento Box Adventure",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - The Bento Box Adventure.pdf"
+  },
+  {
+   "id": 16909,
+   "letter": "B",
+   "title": "Bowling Frame",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bowling Frame.pdf"
+  },
+  {
+   "id": 16910,
+   "letter": "C",
+   "title": "Cube",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cube.pdf"
+  },
+  {
+   "id": 16911,
+   "letter": "D",
+   "title": "Drunken Maze",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Drunken Maze.pdf"
+  },
+  {
+   "id": 16912,
+   "letter": "E",
+   "title": "Beautiful Array",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Beautiful Array.pdf"
+  },
+  {
+   "id": 16913,
+   "letter": "F",
+   "title": "Segmentation Folds",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Segmentation Folds.pdf"
+  },
+  {
+   "id": 16914,
+   "letter": "G",
+   "title": "Grid Game",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Grid Game.pdf"
+  },
+  {
+   "id": 16915,
+   "letter": "H",
+   "title": "Sheet Music",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Sheet Music.pdf"
+  },
+  {
+   "id": 16916,
+   "letter": "I",
+   "title": "Auto Complete",
+   "statement_pages": [
+    17,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Auto Complete.pdf"
+  },
+  {
+   "id": 16917,
+   "letter": "J",
+   "title": "Bottle Arrangement",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Bottle Arrangement.pdf"
+  },
+  {
+   "id": 16918,
+   "letter": "K",
+   "title": "Trophic Balance Species",
+   "statement_pages": [
+    23,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Trophic Balance Species.pdf"
+  },
+  {
+   "id": 16919,
+   "letter": "L",
+   "title": "Building Castle",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Building Castle.pdf"
+  },
+  {
+   "id": 16920,
+   "letter": "M",
+   "title": "Selection Sort",
+   "statement_pages": [
+    29,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Selection Sort.pdf"
+  },
+  {
+   "id": 16921,
+   "letter": "N",
+   "title": "Railway Construction",
+   "statement_pages": [
+    31,
+    33
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - Railway Construction.pdf"
+  }
+ ]
+}

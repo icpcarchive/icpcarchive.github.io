@@ -1,0 +1,152 @@
+{
+ "id": 2212,
+ "name": "The 2013 Central Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2212",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2212&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2212&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 12578,
+   "letter": "A",
+   "title": "Rubik's Rectangle",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Rubik's Rectangle.pdf"
+  },
+  {
+   "id": 12579,
+   "letter": "B",
+   "title": "What does the fox say?",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - What does the fox say_.pdf"
+  },
+  {
+   "id": 12580,
+   "letter": "C",
+   "title": "Magical GCD",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Magical GCD.pdf"
+  },
+  {
+   "id": 12581,
+   "letter": "D",
+   "title": "Subway",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Subway.pdf"
+  },
+  {
+   "id": 12582,
+   "letter": "E",
+   "title": "Escape",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Escape.pdf"
+  },
+  {
+   "id": 12583,
+   "letter": "F",
+   "title": "Draughts",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Draughts.pdf"
+  },
+  {
+   "id": 12584,
+   "letter": "G",
+   "title": "History course",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - History course.pdf"
+  },
+  {
+   "id": 12585,
+   "letter": "H",
+   "title": "Chain & Co.",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Chain & Co.pdf"
+  },
+  {
+   "id": 12586,
+   "letter": "I",
+   "title": "Crane",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Crane.pdf"
+  },
+  {
+   "id": 12587,
+   "letter": "J",
+   "title": "Captain Obvious and the Rabbit-Man",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Captain Obvious and the Rabbit-Man.pdf"
+  },
+  {
+   "id": 12588,
+   "letter": "K",
+   "title": "Digraphs",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Digraphs.pdf"
+  },
+  {
+   "id": 12589,
+   "letter": "L",
+   "title": "Bus",
+   "statement_pages": [
+    19,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Bus.pdf"
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "id": 3627,
+ "name": "The 2003 ACM ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/3627",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3627&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19719,
+   "letter": "A",
+   "title": "Bridging signals",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Bridging signals.pdf"
+  },
+  {
+   "id": 19720,
+   "letter": "B",
+   "title": "Vase collection",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Vase collection.pdf"
+  },
+  {
+   "id": 19721,
+   "letter": "C",
+   "title": "Gladiators",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Gladiators.pdf"
+  },
+  {
+   "id": 19722,
+   "letter": "D",
+   "title": "Who's the boss?",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Who's the boss_.pdf"
+  },
+  {
+   "id": 19723,
+   "letter": "E",
+   "title": "Subway tree systems",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Subway tree systems.pdf"
+  },
+  {
+   "id": 19724,
+   "letter": "F",
+   "title": "Prison rearrangement",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Prison rearrangement.pdf"
+  },
+  {
+   "id": 19725,
+   "letter": "G",
+   "title": "Sightseeing tour",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Sightseeing tour.pdf"
+  },
+  {
+   "id": 19726,
+   "letter": "H",
+   "title": "A number game",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - A number game.pdf"
+  }
+ ]
+}

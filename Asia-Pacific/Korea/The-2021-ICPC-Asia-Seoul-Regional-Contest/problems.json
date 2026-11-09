@@ -1,0 +1,160 @@
+{
+ "id": 792,
+ "name": "The 2021 ICPC Asia Seoul Regional Contest",
+ "url": "https://qoj.ac/contest/792",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Korea"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=792&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=792&r=1"
+  },
+  {
+   "text": "Tutorials (ko)",
+   "href": "https://koosaga.com/284"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=792&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 1954,
+   "letter": "A",
+   "title": "Ant Colonies",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Ant Colonies.pdf"
+  },
+  {
+   "id": 1955,
+   "letter": "B",
+   "title": "Double Rainbow",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Double Rainbow.pdf"
+  },
+  {
+   "id": 1956,
+   "letter": "C",
+   "title": "Find The House",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Find The House.pdf"
+  },
+  {
+   "id": 1957,
+   "letter": "D",
+   "title": "Friendship Graphs",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Friendship Graphs.pdf"
+  },
+  {
+   "id": 1958,
+   "letter": "E",
+   "title": "Grid Triangle",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Grid Triangle.pdf"
+  },
+  {
+   "id": 1959,
+   "letter": "F",
+   "title": "John's Gift",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - John's Gift.pdf"
+  },
+  {
+   "id": 1960,
+   "letter": "G",
+   "title": "Logical Warehouse 2",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Logical Warehouse 2.pdf"
+  },
+  {
+   "id": 1961,
+   "letter": "H",
+   "title": "Postman",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Postman.pdf"
+  },
+  {
+   "id": 1962,
+   "letter": "I",
+   "title": "Security System",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Security System.pdf"
+  },
+  {
+   "id": 1963,
+   "letter": "J",
+   "title": "Squid Game",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Squid Game.pdf"
+  },
+  {
+   "id": 1964,
+   "letter": "K",
+   "title": "Stock Price Prediction",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Stock Price Prediction.pdf"
+  },
+  {
+   "id": 1965,
+   "letter": "L",
+   "title": "Trio",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Trio.pdf"
+  }
+ ]
+}

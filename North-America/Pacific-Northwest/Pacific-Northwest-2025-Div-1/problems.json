@@ -1,0 +1,102 @@
+{
+ "id": 2583,
+ "name": "Pacific Northwest 2025 (Div. 1)",
+ "url": "https://qoj.ac/contest/2583",
+ "categories": [
+  "ICPC/Regionals/North America/Pacific Northwest"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 14917,
+   "letter": "A",
+   "title": "Bouquet of Balloons",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Bouquet of Balloons.pdf"
+  },
+  {
+   "id": 14918,
+   "letter": "B",
+   "title": "Bus Seating",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Bus Seating.pdf"
+  },
+  {
+   "id": 14920,
+   "letter": "C",
+   "title": "Closest Equal Pair",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Closest Equal Pair.pdf"
+  },
+  {
+   "id": 14921,
+   "letter": "D",
+   "title": "Farthest City",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Farthest City.pdf"
+  },
+  {
+   "id": 14922,
+   "letter": "E",
+   "title": "Fractal Painting",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Fractal Painting.pdf"
+  },
+  {
+   "id": 14923,
+   "letter": "F",
+   "title": "Friendships",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Friendships.pdf"
+  },
+  {
+   "id": 14925,
+   "letter": "G",
+   "title": "Honkai Stress Relief",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Honkai Stress Relief.pdf"
+  },
+  {
+   "id": 14926,
+   "letter": "H",
+   "title": "K-th King",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - K-th King.pdf"
+  },
+  {
+   "id": 14928,
+   "letter": "I",
+   "title": "Pair Linked Mokepon",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Pair Linked Mokepon.pdf"
+  },
+  {
+   "id": 14930,
+   "letter": "J",
+   "title": "Server Room",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Server Room.pdf"
+  },
+  {
+   "id": 14931,
+   "letter": "K",
+   "title": "Shh",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Shh.pdf"
+  },
+  {
+   "id": 14934,
+   "letter": "L",
+   "title": "Training, Round 4",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Training, Round 4.pdf"
+  },
+  {
+   "id": 14935,
+   "letter": "M",
+   "title": "Triangle of Triangles",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - Triangle of Triangles.pdf"
+  }
+ ]
+}

@@ -1,0 +1,107 @@
+{
+ "id": 989,
+ "name": "The 2021 ICPC Asia Jakarta Regional Contest",
+ "url": "https://qoj.ac/contest/989",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Indonesia"
+ ],
+ "files": [
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=989&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 4579,
+   "letter": "A",
+   "title": "XOR Pairs",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - XOR Pairs.pdf"
+  },
+  {
+   "id": 4580,
+   "letter": "B",
+   "title": "Bicycle Tour",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Bicycle Tour.pdf"
+  },
+  {
+   "id": 4581,
+   "letter": "C",
+   "title": "Energy Generation",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Energy Generation.pdf"
+  },
+  {
+   "id": 4582,
+   "letter": "D",
+   "title": "Uniform Maker",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Uniform Maker.pdf"
+  },
+  {
+   "id": 4583,
+   "letter": "E",
+   "title": "Concerto de Pandemic",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Concerto de Pandemic.pdf"
+  },
+  {
+   "id": 4584,
+   "letter": "F",
+   "title": "Not One",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Not One.pdf"
+  },
+  {
+   "id": 4585,
+   "letter": "G",
+   "title": "Greedy Knapsack",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Greedy Knapsack.pdf"
+  },
+  {
+   "id": 4586,
+   "letter": "H",
+   "title": "Cell Game",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Cell Game.pdf"
+  },
+  {
+   "id": 4587,
+   "letter": "I",
+   "title": "Stable Planetary System",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Stable Planetary System.pdf"
+  },
+  {
+   "id": 4588,
+   "letter": "J",
+   "title": "Feeder Robot",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Feeder Robot.pdf"
+  },
+  {
+   "id": 4589,
+   "letter": "K",
+   "title": "White-Black Tree",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - White-Black Tree.pdf"
+  },
+  {
+   "id": 4590,
+   "letter": "L",
+   "title": "Happy Travelling",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Happy Travelling.pdf"
+  },
+  {
+   "id": 4591,
+   "letter": "M",
+   "title": "Maxdifficent Group",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - Maxdifficent Group.pdf"
+  }
+ ]
+}

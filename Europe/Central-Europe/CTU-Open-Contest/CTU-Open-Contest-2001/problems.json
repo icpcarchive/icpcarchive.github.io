@@ -1,0 +1,88 @@
+{
+ "id": 3668,
+ "name": "CTU Open Contest 2001",
+ "url": "https://qoj.ac/contest/3668",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (cs)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3668&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19385,
+   "letter": "A",
+   "title": "Komunikace",
+   "statement_pages": [
+    2,
+    6
+   ],
+   "statement_source": "statements_cs.pdf",
+   "statement_file": "problems/A - Komunikace.pdf"
+  },
+  {
+   "id": 19386,
+   "letter": "B",
+   "title": "Směrnice",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Směrnice.pdf"
+  },
+  {
+   "id": 19387,
+   "letter": "C",
+   "title": "Matematické cvičení",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Matematické cvičení.pdf"
+  },
+  {
+   "id": 19388,
+   "letter": "D",
+   "title": "Červotoči",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Červotoči.pdf"
+  },
+  {
+   "id": 19389,
+   "letter": "E",
+   "title": "Algebra",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_cs.pdf",
+   "statement_file": "problems/E - Algebra.pdf"
+  },
+  {
+   "id": 19390,
+   "letter": "F",
+   "title": "Přeprava materiálu",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_cs.pdf",
+   "statement_file": "problems/F - Přeprava materiálu.pdf"
+  },
+  {
+   "id": 19391,
+   "letter": "G",
+   "title": "Dámy",
+   "statement_pages": [
+    9,
+    11
+   ],
+   "statement_source": "statements_cs.pdf",
+   "statement_file": "problems/G - Dámy.pdf"
+  },
+  {
+   "id": 19392,
+   "letter": "H",
+   "title": "Nástěnky",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Nástěnky.pdf"
+  }
+ ]
+}

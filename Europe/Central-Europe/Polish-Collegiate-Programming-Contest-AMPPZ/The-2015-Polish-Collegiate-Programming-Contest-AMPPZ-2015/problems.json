@@ -1,0 +1,160 @@
+{
+ "id": 2533,
+ "name": "The 2015 Polish Collegiate Programming Contest (AMPPZ 2015)",
+ "url": "https://qoj.ac/contest/2533",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/Polish Collegiate Programming Contest (AMPPZ)"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2533&r=0"
+  },
+  {
+   "text": "Statements (pl)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2533&r=1"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2533&r=2"
+  },
+  {
+   "text": "Tutorials (pl)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2533&r=3"
+  }
+ ],
+ "problems": [
+  {
+   "id": 14789,
+   "letter": "A",
+   "title": "Album of numbers",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Album of numbers.pdf"
+  },
+  {
+   "id": 14790,
+   "letter": "B",
+   "title": "Well Of",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Well Of.pdf"
+  },
+  {
+   "id": 14791,
+   "letter": "C",
+   "title": "Accurate shots",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Accurate shots.pdf"
+  },
+  {
+   "id": 14792,
+   "letter": "D",
+   "title": "Prom",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Prom.pdf"
+  },
+  {
+   "id": 14793,
+   "letter": "E",
+   "title": "Impressive graphs",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Impressive graphs.pdf"
+  },
+  {
+   "id": 14794,
+   "letter": "F",
+   "title": "Pen",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Pen.pdf"
+  },
+  {
+   "id": 14795,
+   "letter": "G",
+   "title": "Board game",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Board game.pdf"
+  },
+  {
+   "id": 14796,
+   "letter": "H",
+   "title": "Scouts",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Scouts.pdf"
+  },
+  {
+   "id": 14797,
+   "letter": "I",
+   "title": "Insects",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Insects.pdf"
+  },
+  {
+   "id": 14798,
+   "letter": "J",
+   "title": "Caves",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Caves.pdf"
+  },
+  {
+   "id": 14799,
+   "letter": "K",
+   "title": "Blocks",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Blocks.pdf"
+  },
+  {
+   "id": 14800,
+   "letter": "L",
+   "title": "Postman",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Postman.pdf"
+  }
+ ]
+}

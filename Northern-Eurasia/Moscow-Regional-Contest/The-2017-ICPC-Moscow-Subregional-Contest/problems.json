@@ -1,0 +1,126 @@
+{
+ "id": 3252,
+ "name": "The 2017 ICPC Moscow Subregional Contest",
+ "url": "https://qoj.ac/contest/3252",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Moscow Regional Contest / Moscow Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3252&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16708,
+   "letter": "A",
+   "title": "Advertising Strategy",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Advertising Strategy.pdf"
+  },
+  {
+   "id": 16709,
+   "letter": "B",
+   "title": "Byteland Trip",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Byteland Trip.pdf"
+  },
+  {
+   "id": 16710,
+   "letter": "C",
+   "title": "Carpet",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Carpet.pdf"
+  },
+  {
+   "id": 16711,
+   "letter": "D",
+   "title": "Decoding of Varints",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Decoding of Varints.pdf"
+  },
+  {
+   "id": 16712,
+   "letter": "E",
+   "title": "Empire History",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Empire History.pdf"
+  },
+  {
+   "id": 16713,
+   "letter": "F",
+   "title": "Fake or Leak?",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fake or Leak_.pdf"
+  },
+  {
+   "id": 16714,
+   "letter": "G",
+   "title": "God of Winds",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - God of Winds.pdf"
+  },
+  {
+   "id": 16715,
+   "letter": "H",
+   "title": "Hilarious Cooking",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hilarious Cooking.pdf"
+  },
+  {
+   "id": 16716,
+   "letter": "I",
+   "title": "Infinite Gift",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Infinite Gift.pdf"
+  },
+  {
+   "id": 16717,
+   "letter": "J",
+   "title": "Judging the Trick",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Judging the Trick.pdf"
+  }
+ ]
+}

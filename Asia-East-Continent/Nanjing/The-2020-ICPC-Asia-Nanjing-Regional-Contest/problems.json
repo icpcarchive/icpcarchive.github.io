@@ -1,0 +1,164 @@
+{
+ "id": 1235,
+ "name": "The 2020 ICPC Asia Nanjing Regional Contest",
+ "url": "https://qoj.ac/contest/1235",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Nanjing",
+  "ICPC/Regionals/Asia East Continent/The 2020 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1235&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://zhuanlan.zhihu.com/p/338249705"
+  }
+ ],
+ "problems": [
+  {
+   "id": 6418,
+   "letter": "A",
+   "title": "Ah, It's Yesterday Once More",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Ah, It's Yesterday Once More.pdf"
+  },
+  {
+   "id": 6419,
+   "letter": "B",
+   "title": "Baby's First Suffix Array Problem",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Baby's First Suffix Array Problem.pdf"
+  },
+  {
+   "id": 6420,
+   "letter": "C",
+   "title": "Certain Scientific Railgun",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Certain Scientific Railgun.pdf"
+  },
+  {
+   "id": 6421,
+   "letter": "D",
+   "title": "Degree of Spanning Tree",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Degree of Spanning Tree.pdf"
+  },
+  {
+   "id": 6422,
+   "letter": "E",
+   "title": "Evil Coordinate",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Evil Coordinate.pdf"
+  },
+  {
+   "id": 6423,
+   "letter": "F",
+   "title": "Fireworks",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fireworks.pdf"
+  },
+  {
+   "id": 6424,
+   "letter": "G",
+   "title": "Go",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Go.pdf"
+  },
+  {
+   "id": 6425,
+   "letter": "H",
+   "title": "Harmonious Rectangle",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Harmonious Rectangle.pdf"
+  },
+  {
+   "id": 6426,
+   "letter": "I",
+   "title": "Interested in Skiing",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Interested in Skiing.pdf"
+  },
+  {
+   "id": 6427,
+   "letter": "J",
+   "title": "Just Another Game of Stones",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Just Another Game of Stones.pdf"
+  },
+  {
+   "id": 6428,
+   "letter": "K",
+   "title": "K Co-prime Permutation",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - K Co-prime Permutation.pdf"
+  },
+  {
+   "id": 6429,
+   "letter": "L",
+   "title": "Let's Play Curling",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Let's Play Curling.pdf"
+  },
+  {
+   "id": 6430,
+   "letter": "M",
+   "title": "Monster Hunter",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Monster Hunter.pdf"
+  }
+ ]
+}

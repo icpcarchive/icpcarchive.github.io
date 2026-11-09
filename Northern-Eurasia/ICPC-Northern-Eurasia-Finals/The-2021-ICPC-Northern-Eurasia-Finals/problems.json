@@ -1,0 +1,152 @@
+{
+ "id": 988,
+ "name": "The 2021 ICPC Northern Eurasia Finals",
+ "url": "https://qoj.ac/contest/988",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=988&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=988&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 4567,
+   "letter": "A",
+   "title": "Admissible Map",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Admissible Map.pdf"
+  },
+  {
+   "id": 4568,
+   "letter": "B",
+   "title": "Budget Distribution",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Budget Distribution.pdf"
+  },
+  {
+   "id": 4569,
+   "letter": "C",
+   "title": "Connect the Points",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Connect the Points.pdf"
+  },
+  {
+   "id": 4570,
+   "letter": "D",
+   "title": "Deletive Editing",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Deletive Editing.pdf"
+  },
+  {
+   "id": 4571,
+   "letter": "E",
+   "title": "Even Split",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Even Split.pdf"
+  },
+  {
+   "id": 4572,
+   "letter": "F",
+   "title": "Fancy Stack",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fancy Stack.pdf"
+  },
+  {
+   "id": 4573,
+   "letter": "G",
+   "title": "Global Warming",
+   "statement_pages": [
+    7,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Global Warming.pdf"
+  },
+  {
+   "id": 4574,
+   "letter": "H",
+   "title": "Heroes of Might",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Heroes of Might.pdf"
+  },
+  {
+   "id": 4575,
+   "letter": "I",
+   "title": "Interactive Treasure Hunt",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Interactive Treasure Hunt.pdf"
+  },
+  {
+   "id": 4576,
+   "letter": "J",
+   "title": "Job Lookup",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Job Lookup.pdf"
+  },
+  {
+   "id": 4577,
+   "letter": "K",
+   "title": "Kingdom Partition",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kingdom Partition.pdf"
+  },
+  {
+   "id": 4578,
+   "letter": "L",
+   "title": "Labyrinth",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Labyrinth.pdf"
+  }
+ ]
+}

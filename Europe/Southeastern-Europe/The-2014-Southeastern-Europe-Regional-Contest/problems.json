@@ -1,0 +1,126 @@
+{
+ "id": 2703,
+ "name": "The 2014 Southeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2703",
+ "categories": [
+  "ICPC/Regionals/Europe/Southeastern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2703&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15730,
+   "letter": "A",
+   "title": "Banks",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Banks.pdf"
+  },
+  {
+   "id": 15731,
+   "letter": "B",
+   "title": "Circle of digits",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Circle of digits.pdf"
+  },
+  {
+   "id": 15732,
+   "letter": "C",
+   "title": "UFO",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - UFO.pdf"
+  },
+  {
+   "id": 15733,
+   "letter": "D",
+   "title": "Frame",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Frame.pdf"
+  },
+  {
+   "id": 15734,
+   "letter": "E",
+   "title": "Points",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Points.pdf"
+  },
+  {
+   "id": 15735,
+   "letter": "F",
+   "title": "Most Influential Pumpkin",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Most Influential Pumpkin.pdf"
+  },
+  {
+   "id": 15736,
+   "letter": "G",
+   "title": "Grammar",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Grammar.pdf"
+  },
+  {
+   "id": 15737,
+   "letter": "H",
+   "title": "Triples",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Triples.pdf"
+  },
+  {
+   "id": 15738,
+   "letter": "I",
+   "title": "Multi-Machine Scheduling of Two Applications",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Multi-Machine Scheduling of Two Applications.pdf"
+  },
+  {
+   "id": 15739,
+   "letter": "J",
+   "title": "Strange Antennas",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Strange Antennas.pdf"
+  }
+ ]
+}

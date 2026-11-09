@@ -1,0 +1,164 @@
+{
+ "id": 1071,
+ "name": "The 2022 ICPC Asia Hangzhou Regional Contest",
+ "url": "https://qoj.ac/contest/1071",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Hangzhou",
+  "ICPC/Regionals/Asia East Continent/The 2022 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1071&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1071&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5301,
+   "letter": "A",
+   "title": "Modulo Ruins the Legend",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Modulo Ruins the Legend.pdf"
+  },
+  {
+   "id": 5302,
+   "letter": "B",
+   "title": "Useful Algorithm",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Useful Algorithm.pdf"
+  },
+  {
+   "id": 5303,
+   "letter": "C",
+   "title": "No Bug No Game",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - No Bug No Game.pdf"
+  },
+  {
+   "id": 5304,
+   "letter": "D",
+   "title": "Money Game",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Money Game.pdf"
+  },
+  {
+   "id": 5305,
+   "letter": "E",
+   "title": "Oscar is All You Need",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Oscar is All You Need.pdf"
+  },
+  {
+   "id": 5306,
+   "letter": "F",
+   "title": "Da Mi Lao Shi Ai Kan De",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Da Mi Lao Shi Ai Kan De.pdf"
+  },
+  {
+   "id": 5307,
+   "letter": "G",
+   "title": "Subgraph Isomorphism",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Subgraph Isomorphism.pdf"
+  },
+  {
+   "id": 5308,
+   "letter": "H",
+   "title": "RPG Pro League",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - RPG Pro League.pdf"
+  },
+  {
+   "id": 5309,
+   "letter": "I",
+   "title": "Guess Cycle Length",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Guess Cycle Length.pdf"
+  },
+  {
+   "id": 5310,
+   "letter": "J",
+   "title": "Painting",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Painting.pdf"
+  },
+  {
+   "id": 5311,
+   "letter": "K",
+   "title": "Master of Both",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Master of Both.pdf"
+  },
+  {
+   "id": 5312,
+   "letter": "L",
+   "title": "Levenshtein Distance",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Levenshtein Distance.pdf"
+  },
+  {
+   "id": 5313,
+   "letter": "M",
+   "title": "Please Save Pigeland",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Please Save Pigeland.pdf"
+  }
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "id": 1476,
+ "name": "The 2023 ICPC Nordic Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/1476",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Nordic Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1476&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 8441,
+   "letter": "A",
+   "title": "Aperiodic Appointments",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Aperiodic Appointments.pdf"
+  },
+  {
+   "id": 8442,
+   "letter": "B",
+   "title": "Berry Battle 2",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Berry Battle 2.pdf"
+  },
+  {
+   "id": 8443,
+   "letter": "C",
+   "title": "Converting Romans",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Converting Romans.pdf"
+  },
+  {
+   "id": 8444,
+   "letter": "D",
+   "title": "Die Hard",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Die Hard.pdf"
+  },
+  {
+   "id": 8445,
+   "letter": "E",
+   "title": "Electronic Components",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Electronic Components.pdf"
+  },
+  {
+   "id": 8446,
+   "letter": "F",
+   "title": "Factor-Full Tree",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Factor-Full Tree.pdf"
+  },
+  {
+   "id": 8447,
+   "letter": "G",
+   "title": "Groups of Strangers",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Groups of Strangers.pdf"
+  },
+  {
+   "id": 8448,
+   "letter": "H",
+   "title": "Heroes of Velmar",
+   "statement_pages": [
+    17,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Heroes of Velmar.pdf"
+  },
+  {
+   "id": 8449,
+   "letter": "I",
+   "title": "Intertwined",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Intertwined.pdf"
+  },
+  {
+   "id": 8450,
+   "letter": "J",
+   "title": "Jamboree",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jamboree.pdf"
+  },
+  {
+   "id": 8451,
+   "letter": "K",
+   "title": "Karl Coder",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Karl Coder.pdf"
+  }
+ ]
+}

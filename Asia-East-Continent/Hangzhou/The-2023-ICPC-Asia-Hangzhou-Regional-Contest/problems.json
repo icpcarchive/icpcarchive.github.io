@@ -1,0 +1,164 @@
+{
+ "id": 1516,
+ "name": "The 2023 ICPC Asia Hangzhou Regional Contest",
+ "url": "https://qoj.ac/contest/1516",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Hangzhou",
+  "ICPC/Regionals/Asia East Continent/The 2023 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1516&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1516&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 8230,
+   "letter": "A",
+   "title": "Submissions",
+   "statement_pages": [
+    2,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Submissions.pdf"
+  },
+  {
+   "id": 8231,
+   "letter": "B",
+   "title": "Festival Decorating",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Festival Decorating.pdf"
+  },
+  {
+   "id": 8232,
+   "letter": "C",
+   "title": "Yet Another Shortest Path Query",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Yet Another Shortest Path Query.pdf"
+  },
+  {
+   "id": 8233,
+   "letter": "D",
+   "title": "Operator Precedence",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Operator Precedence.pdf"
+  },
+  {
+   "id": 8234,
+   "letter": "E",
+   "title": "Period of a String",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Period of a String.pdf"
+  },
+  {
+   "id": 8235,
+   "letter": "F",
+   "title": "Top Cluster",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Top Cluster.pdf"
+  },
+  {
+   "id": 8236,
+   "letter": "G",
+   "title": "Snake Move",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Snake Move.pdf"
+  },
+  {
+   "id": 8237,
+   "letter": "H",
+   "title": "Sugar Sweet II",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Sugar Sweet II.pdf"
+  },
+  {
+   "id": 8238,
+   "letter": "I",
+   "title": "Dreamy Putata",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Dreamy Putata.pdf"
+  },
+  {
+   "id": 8239,
+   "letter": "J",
+   "title": "Mysterious Tree",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Mysterious Tree.pdf"
+  },
+  {
+   "id": 8240,
+   "letter": "K",
+   "title": "Card Game",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Card Game.pdf"
+  },
+  {
+   "id": 8241,
+   "letter": "L",
+   "title": "Master of Both V",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Master of Both V.pdf"
+  },
+  {
+   "id": 8242,
+   "letter": "M",
+   "title": "V-Diagram",
+   "statement_pages": [
+    23,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - V-Diagram.pdf"
+  }
+ ]
+}

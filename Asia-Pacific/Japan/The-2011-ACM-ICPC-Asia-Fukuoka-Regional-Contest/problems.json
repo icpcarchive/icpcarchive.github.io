@@ -1,0 +1,81 @@
+{
+ "id": 3422,
+ "name": "The 2011 ACM-ICPC Asia Fukuoka Regional Contest",
+ "url": "https://qoj.ac/contest/3422",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 17456,
+   "letter": "A",
+   "title": "Gift from the Goddess of Programming",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Gift from the Goddess of Programming.pdf"
+  },
+  {
+   "id": 17457,
+   "letter": "B",
+   "title": "The Sorcerer's Donut",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - The Sorcerer's Donut.pdf"
+  },
+  {
+   "id": 17458,
+   "letter": "C",
+   "title": "Weaker than Planned",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Weaker than Planned.pdf"
+  },
+  {
+   "id": 17459,
+   "letter": "D",
+   "title": "Long Distance Taxi",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Long Distance Taxi.pdf"
+  },
+  {
+   "id": 17460,
+   "letter": "E",
+   "title": "Driving an Icosahedral Rover",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Driving an Icosahedral Rover.pdf"
+  },
+  {
+   "id": 17461,
+   "letter": "F",
+   "title": "City Merger",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - City Merger.pdf"
+  },
+  {
+   "id": 17462,
+   "letter": "G",
+   "title": "Captain Q's Treasure",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Captain Q's Treasure.pdf"
+  },
+  {
+   "id": 17463,
+   "letter": "H",
+   "title": "ASCII Expression",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - ASCII Expression.pdf"
+  },
+  {
+   "id": 17464,
+   "letter": "I",
+   "title": "Encircling Circles",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Encircling Circles.pdf"
+  },
+  {
+   "id": 17465,
+   "letter": "J",
+   "title": "Round Trip",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Round Trip.pdf"
+  }
+ ]
+}

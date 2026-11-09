@@ -1,0 +1,148 @@
+{
+ "id": 437,
+ "name": "North Central NA 2020",
+ "url": "https://qoj.ac/contest/437",
+ "categories": [
+  "ICPC/Regionals/North America/North Central NA"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=437&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3255,
+   "letter": "A",
+   "title": "LogDB",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - LogDB.pdf"
+  },
+  {
+   "id": 3253,
+   "letter": "B",
+   "title": "Ride-Hailing",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Ride-Hailing.pdf"
+  },
+  {
+   "id": 3260,
+   "letter": "C",
+   "title": "Redundant Binary Notation",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Redundant Binary Notation.pdf"
+  },
+  {
+   "id": 3259,
+   "letter": "D",
+   "title": "Substring Characters",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Substring Characters.pdf"
+  },
+  {
+   "id": 3254,
+   "letter": "E",
+   "title": "Curve Speed",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Curve Speed.pdf"
+  },
+  {
+   "id": 3281,
+   "letter": "F",
+   "title": "Agamemnon's Odyssey",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Agamemnon's Odyssey.pdf"
+  },
+  {
+   "id": 3262,
+   "letter": "G",
+   "title": "Safest Taxi",
+   "statement_pages": [
+    17,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Safest Taxi.pdf"
+  },
+  {
+   "id": 3256,
+   "letter": "H",
+   "title": "Digital Speedometer",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Digital Speedometer.pdf"
+  },
+  {
+   "id": 3261,
+   "letter": "I",
+   "title": "Staggering to the Finish",
+   "statement_pages": [
+    23,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Staggering to the Finish.pdf"
+  },
+  {
+   "id": 3257,
+   "letter": "J",
+   "title": "Ada Loveslaces",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Ada Loveslaces.pdf"
+  },
+  {
+   "id": 3252,
+   "letter": "K",
+   "title": "ICPC Record Matching",
+   "statement_pages": [
+    29,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - ICPC Record Matching.pdf"
+  },
+  {
+   "id": 3258,
+   "letter": "L",
+   "title": "Codenames",
+   "statement_pages": [
+    31,
+    34
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Codenames.pdf"
+  }
+ ]
+}

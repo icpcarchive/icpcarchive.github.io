@@ -1,0 +1,88 @@
+{
+ "id": 3247,
+ "name": "The 2012 ICPC Moscow Subregional Contest",
+ "url": "https://qoj.ac/contest/3247",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Moscow Regional Contest / Moscow Subregional"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 16766,
+   "letter": "A",
+   "title": "Ariel",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Ariel.pdf"
+  },
+  {
+   "id": 16767,
+   "letter": "B",
+   "title": "Billy, Willy and Moscow Underground",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Billy, Willy and Moscow Underground.pdf"
+  },
+  {
+   "id": 16768,
+   "letter": "C",
+   "title": "Cinderella",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Cinderella.pdf"
+  },
+  {
+   "id": 16769,
+   "letter": "D",
+   "title": "Darkwing Duck",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Darkwing Duck.pdf"
+  },
+  {
+   "id": 16770,
+   "letter": "E",
+   "title": "Epic Fail of a Genie",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Epic Fail of a Genie.pdf"
+  },
+  {
+   "id": 16771,
+   "letter": "F",
+   "title": "Flood",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Flood.pdf"
+  },
+  {
+   "id": 16772,
+   "letter": "G",
+   "title": "Gadget Hackwrench",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Gadget Hackwrench.pdf"
+  },
+  {
+   "id": 16773,
+   "letter": "H",
+   "title": "Hunt for Treasure!",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Hunt for Treasure!.pdf"
+  },
+  {
+   "id": 16774,
+   "letter": "I",
+   "title": "Innovative Business",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Innovative Business.pdf"
+  },
+  {
+   "id": 16775,
+   "letter": "J",
+   "title": "Just Another Disney Problem",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Just Another Disney Problem.pdf"
+  },
+  {
+   "id": 16776,
+   "letter": "K",
+   "title": "Key to Magica's diary",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Key to Magica's diary.pdf"
+  }
+ ]
+}

@@ -1,0 +1,167 @@
+{
+ "id": 779,
+ "name": "The 2021 ICPC Nordic Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/779",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Nordic Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=779&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=779&r=1"
+  },
+  {
+   "text": "Solutions",
+   "href": "https://qoj.ac/download.php?type=attachments&id=779&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 1772,
+   "letter": "A",
+   "title": "Antenna Analysis",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Antenna Analysis.pdf"
+  },
+  {
+   "id": 1773,
+   "letter": "B",
+   "title": "Breaking Bars",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Breaking Bars.pdf"
+  },
+  {
+   "id": 1774,
+   "letter": "C",
+   "title": "Customs Controls",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Customs Controls.pdf"
+  },
+  {
+   "id": 1775,
+   "letter": "D",
+   "title": "Deceptive Directions",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Deceptive Directions.pdf"
+  },
+  {
+   "id": 1776,
+   "letter": "E",
+   "title": "Eavesdropper Evasion",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Eavesdropper Evasion.pdf"
+  },
+  {
+   "id": 1777,
+   "letter": "F",
+   "title": "Fortune From Folly",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fortune From Folly.pdf"
+  },
+  {
+   "id": 1778,
+   "letter": "G",
+   "title": "Grazed Grains",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Grazed Grains.pdf"
+  },
+  {
+   "id": 1779,
+   "letter": "H",
+   "title": "Hiring Help",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hiring Help.pdf"
+  },
+  {
+   "id": 1780,
+   "letter": "I",
+   "title": "Intact Intervals",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Intact Intervals.pdf"
+  },
+  {
+   "id": 1781,
+   "letter": "J",
+   "title": "Joint Jog Jam",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joint Jog Jam.pdf"
+  },
+  {
+   "id": 1782,
+   "letter": "K",
+   "title": "Knot Knowledge",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Knot Knowledge.pdf"
+  },
+  {
+   "id": 1783,
+   "letter": "L",
+   "title": "Locust Locus",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Locust Locus.pdf"
+  },
+  {
+   "id": 1784,
+   "letter": "M",
+   "title": "Marvelous Marathon",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Marvelous Marathon.pdf"
+  }
+ ]
+}

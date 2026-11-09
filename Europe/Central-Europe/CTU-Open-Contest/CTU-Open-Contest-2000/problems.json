@@ -1,0 +1,84 @@
+{
+ "id": 3667,
+ "name": "CTU Open Contest 2000",
+ "url": "https://qoj.ac/contest/3667",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (cs)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3667&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19377,
+   "letter": "A",
+   "title": "Zpětné inženýrství",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Zpětné inženýrství.pdf"
+  },
+  {
+   "id": 19378,
+   "letter": "B",
+   "title": "Gnome",
+   "statement_pages": [
+    3,
+    6
+   ],
+   "statement_source": "statements_cs.pdf",
+   "statement_file": "problems/B - Gnome.pdf"
+  },
+  {
+   "id": 19379,
+   "letter": "C",
+   "title": "Herci",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Herci.pdf"
+  },
+  {
+   "id": 19380,
+   "letter": "D",
+   "title": "Linie",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Linie.pdf"
+  },
+  {
+   "id": 19381,
+   "letter": "E",
+   "title": "Počítáme ponorky",
+   "statement_pages": [
+    7,
+    10
+   ],
+   "statement_source": "statements_cs.pdf",
+   "statement_file": "problems/E - Počítáme ponorky.pdf"
+  },
+  {
+   "id": 19382,
+   "letter": "F",
+   "title": "Rozejděte se!",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Rozejděte se!.pdf"
+  },
+  {
+   "id": 19383,
+   "letter": "G",
+   "title": "Pražská spojka",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Pražská spojka.pdf"
+  },
+  {
+   "id": 19384,
+   "letter": "H",
+   "title": "Tokeny",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_cs.pdf",
+   "statement_file": "problems/H - Tokeny.pdf"
+  }
+ ]
+}

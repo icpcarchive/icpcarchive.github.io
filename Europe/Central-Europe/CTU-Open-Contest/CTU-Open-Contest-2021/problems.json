@@ -1,0 +1,148 @@
+{
+ "id": 798,
+ "name": "CTU Open Contest 2021",
+ "url": "https://qoj.ac/contest/798",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=798&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2221,
+   "letter": "A",
+   "title": "Silver Star Stands Alone",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Silver Star Stands Alone.pdf"
+  },
+  {
+   "id": 2222,
+   "letter": "B",
+   "title": "TomTom Cruise",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - TomTom Cruise.pdf"
+  },
+  {
+   "id": 2223,
+   "letter": "C",
+   "title": "Mad Diamond",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Mad Diamond.pdf"
+  },
+  {
+   "id": 2224,
+   "letter": "D",
+   "title": "Burizon Fort",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Burizon Fort.pdf"
+  },
+  {
+   "id": 2225,
+   "letter": "E",
+   "title": "Terrace Hill",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Terrace Hill.pdf"
+  },
+  {
+   "id": 2226,
+   "letter": "F",
+   "title": "Eidam-Sand Lair",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Eidam-Sand Lair.pdf"
+  },
+  {
+   "id": 2227,
+   "letter": "G",
+   "title": "Organ-free Man",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Organ-free Man.pdf"
+  },
+  {
+   "id": 2228,
+   "letter": "H",
+   "title": "Bread Pit",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Bread Pit.pdf"
+  },
+  {
+   "id": 2229,
+   "letter": "I",
+   "title": "Cyanide Rivers",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Cyanide Rivers.pdf"
+  },
+  {
+   "id": 2230,
+   "letter": "J",
+   "title": "Screamers in the Storm",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Screamers in the Storm.pdf"
+  },
+  {
+   "id": 2231,
+   "letter": "K",
+   "title": "Tone Banks",
+   "statement_pages": [
+    23,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Tone Banks.pdf"
+  },
+  {
+   "id": 2232,
+   "letter": "L",
+   "title": "Win Diesel",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Win Diesel.pdf"
+  }
+ ]
+}

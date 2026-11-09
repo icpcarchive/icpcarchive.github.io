@@ -1,0 +1,81 @@
+{
+ "id": 3709,
+ "name": "The 2008 Central Europe Regional Contest",
+ "url": "https://qoj.ac/contest/3709",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 17367,
+   "letter": "A",
+   "title": "YAPTCHA",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - YAPTCHA.pdf"
+  },
+  {
+   "id": 17368,
+   "letter": "B",
+   "title": "Skyscrapers",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Skyscrapers.pdf"
+  },
+  {
+   "id": 17369,
+   "letter": "C",
+   "title": "Business Cards",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Business Cards.pdf"
+  },
+  {
+   "id": 17370,
+   "letter": "D",
+   "title": "Museum",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Museum.pdf"
+  },
+  {
+   "id": 17371,
+   "letter": "E",
+   "title": "Morphing is fun",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Morphing is fun.pdf"
+  },
+  {
+   "id": 17372,
+   "letter": "F",
+   "title": "Tower",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Tower.pdf"
+  },
+  {
+   "id": 17373,
+   "letter": "G",
+   "title": "Suffix reconstruction",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Suffix reconstruction.pdf"
+  },
+  {
+   "id": 17374,
+   "letter": "H",
+   "title": "Two professors",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Two professors.pdf"
+  },
+  {
+   "id": 17375,
+   "letter": "I",
+   "title": "Counting heaps",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Counting heaps.pdf"
+  },
+  {
+   "id": 17376,
+   "letter": "J",
+   "title": "In case of failure",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - In case of failure.pdf"
+  }
+ ]
+}

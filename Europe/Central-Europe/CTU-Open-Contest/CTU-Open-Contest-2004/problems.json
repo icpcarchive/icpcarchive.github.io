@@ -1,0 +1,126 @@
+{
+ "id": 3671,
+ "name": "CTU Open Contest 2004",
+ "url": "https://qoj.ac/contest/3671",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3671&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19412,
+   "letter": "A",
+   "title": "Agents",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Agents.pdf"
+  },
+  {
+   "id": 19413,
+   "letter": "B",
+   "title": "Boatherds",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Boatherds.pdf"
+  },
+  {
+   "id": 19414,
+   "letter": "C",
+   "title": "C Looooops",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - C Looooops.pdf"
+  },
+  {
+   "id": 19415,
+   "letter": "D",
+   "title": "Death to Binary?",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Death to Binary_.pdf"
+  },
+  {
+   "id": 19416,
+   "letter": "E",
+   "title": "Electricity",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Electricity.pdf"
+  },
+  {
+   "id": 19417,
+   "letter": "F",
+   "title": "Firepersons",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Firepersons.pdf"
+  },
+  {
+   "id": 19418,
+   "letter": "G",
+   "title": "God of the Vile Baskers",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - God of the Vile Baskers.pdf"
+  },
+  {
+   "id": 19419,
+   "letter": "H",
+   "title": "Herbalists",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Herbalists.pdf"
+  },
+  {
+   "id": 19420,
+   "letter": "I",
+   "title": "Inglish-Number Translator",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Inglish-Number Translator.pdf"
+  },
+  {
+   "id": 19421,
+   "letter": "J",
+   "title": "Japan Plotter Driver",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Japan Plotter Driver.pdf"
+  }
+ ]
+}

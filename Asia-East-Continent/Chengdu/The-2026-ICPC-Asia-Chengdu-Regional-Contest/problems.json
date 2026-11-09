@@ -1,0 +1,172 @@
+{
+ "id": 4607,
+ "name": "The 2026 ICPC Asia Chengdu Regional Contest",
+ "url": "https://qoj.ac/contest/4607",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Chengdu",
+  "ICPC/Regionals/Asia East Continent/The 2026 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statement (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=4607&r=0"
+  },
+  {
+   "text": "B-Simulator",
+   "href": "https://qoj.ac/download.php?type=attachments&id=4607&r=1"
+  },
+  {
+   "text": "L-Simulator",
+   "href": "https://qoj.ac/download.php?type=attachments&id=4607&r=2"
+  },
+  {
+   "text": "Tutorial (zh)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=4607&r=3"
+  }
+ ],
+ "problems": [
+  {
+   "id": 23592,
+   "letter": "A",
+   "title": "Average of Averages",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statement_en.pdf",
+   "statement_file": "problems/A - Average of Averages.pdf"
+  },
+  {
+   "id": 23593,
+   "letter": "B",
+   "title": "Bouncing Particles",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statement_en.pdf",
+   "statement_file": "problems/B - Bouncing Particles.pdf"
+  },
+  {
+   "id": 23594,
+   "letter": "C",
+   "title": "Counting Arrays",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statement_en.pdf",
+   "statement_file": "problems/C - Counting Arrays.pdf"
+  },
+  {
+   "id": 23595,
+   "letter": "D",
+   "title": "Duel of Wrath",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statement_en.pdf",
+   "statement_file": "problems/D - Duel of Wrath.pdf"
+  },
+  {
+   "id": 23596,
+   "letter": "E",
+   "title": "Enclose the Point",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statement_en.pdf",
+   "statement_file": "problems/E - Enclose the Point.pdf"
+  },
+  {
+   "id": 23597,
+   "letter": "F",
+   "title": "First Word",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statement_en.pdf",
+   "statement_file": "problems/F - First Word.pdf"
+  },
+  {
+   "id": 23598,
+   "letter": "G",
+   "title": "Graph Reconstruction",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statement_en.pdf",
+   "statement_file": "problems/G - Graph Reconstruction.pdf"
+  },
+  {
+   "id": 23599,
+   "letter": "H",
+   "title": "Hidden Order",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statement_en.pdf",
+   "statement_file": "problems/H - Hidden Order.pdf"
+  },
+  {
+   "id": 23600,
+   "letter": "I",
+   "title": "Invisible Edges",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statement_en.pdf",
+   "statement_file": "problems/I - Invisible Edges.pdf"
+  },
+  {
+   "id": 23601,
+   "letter": "J",
+   "title": "Joint Relocation",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statement_en.pdf",
+   "statement_file": "problems/J - Joint Relocation.pdf"
+  },
+  {
+   "id": 23602,
+   "letter": "K",
+   "title": "Keep Your Distance",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statement_en.pdf",
+   "statement_file": "problems/K - Keep Your Distance.pdf"
+  },
+  {
+   "id": 23603,
+   "letter": "L",
+   "title": "Long Slides",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statement_en.pdf",
+   "statement_file": "problems/L - Long Slides.pdf"
+  },
+  {
+   "id": 23604,
+   "letter": "M",
+   "title": "Minimum Records",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statement_en.pdf",
+   "statement_file": "problems/M - Minimum Records.pdf"
+  }
+ ]
+}

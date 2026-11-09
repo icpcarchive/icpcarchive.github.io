@@ -1,0 +1,69 @@
+{
+ "id": 3662,
+ "name": "CTU Open Contest 1995",
+ "url": "https://qoj.ac/contest/3662",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (cs)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3662&r=0"
+  },
+  {
+   "text": "Reconstruction and verification record",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3662&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19338,
+   "letter": "A",
+   "title": "Piškvorky",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Piškvorky.pdf"
+  },
+  {
+   "id": 19339,
+   "letter": "B",
+   "title": "Octree",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Octree.pdf"
+  },
+  {
+   "id": 19340,
+   "letter": "C",
+   "title": "Šifra",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Šifra.pdf"
+  },
+  {
+   "id": 19341,
+   "letter": "D",
+   "title": "Fibonacciho posloupnost",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Fibonacciho posloupnost.pdf"
+  },
+  {
+   "id": 19342,
+   "letter": "E",
+   "title": "Vzdálenosti čísel",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Vzdálenosti čísel.pdf"
+  },
+  {
+   "id": 19343,
+   "letter": "F",
+   "title": "Mince",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Mince.pdf"
+  },
+  {
+   "id": 19344,
+   "letter": "G",
+   "title": "Drak",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Drak.pdf"
+  }
+ ]
+}

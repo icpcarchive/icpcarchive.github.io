@@ -1,0 +1,100 @@
+{
+ "id": 1429,
+ "name": "The 2022 ICPC West Siberian Regional Contest",
+ "url": "https://qoj.ac/contest/1429",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/West Siberian Regional Contest / West Siberian Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (ru)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1429&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7817,
+   "letter": "1",
+   "title": "Вирусология",
+   "statement_source": "problem page",
+   "statement_file": "problems/1 - Вирусология.pdf"
+  },
+  {
+   "id": 7818,
+   "letter": "2",
+   "title": "Жизнь по правилам",
+   "statement_source": "problem page",
+   "statement_file": "problems/2 - Жизнь по правилам.pdf"
+  },
+  {
+   "id": 7819,
+   "letter": "3",
+   "title": "Красочные часы",
+   "statement_source": "problem page",
+   "statement_file": "problems/3 - Красочные часы.pdf"
+  },
+  {
+   "id": 7820,
+   "letter": "4",
+   "title": "Черно-белый квадрат",
+   "statement_source": "problem page",
+   "statement_file": "problems/4 - Черно-белый квадрат.pdf"
+  },
+  {
+   "id": 7821,
+   "letter": "5",
+   "title": "Слонопотамы",
+   "statement_source": "problem page",
+   "statement_file": "problems/5 - Слонопотамы.pdf"
+  },
+  {
+   "id": 7822,
+   "letter": "6",
+   "title": "Мишень",
+   "statement_source": "problem page",
+   "statement_file": "problems/6 - Мишень.pdf"
+  },
+  {
+   "id": 7823,
+   "letter": "7",
+   "title": "Два броска",
+   "statement_source": "problem page",
+   "statement_file": "problems/7 - Два броска.pdf"
+  },
+  {
+   "id": 7824,
+   "letter": "8",
+   "title": "Лягушка",
+   "statement_source": "problem page",
+   "statement_file": "problems/8 - Лягушка.pdf"
+  },
+  {
+   "id": 7825,
+   "letter": "9",
+   "title": "Основы программирования",
+   "statement_source": "problem page",
+   "statement_file": "problems/9 - Основы программирования.pdf"
+  },
+  {
+   "id": 7826,
+   "letter": "10",
+   "title": "Американские горки",
+   "statement_source": "problem page",
+   "statement_file": "problems/10 - Американские горки.pdf"
+  },
+  {
+   "id": 7827,
+   "letter": "11",
+   "title": "Какая разница",
+   "statement_source": "problem page",
+   "statement_file": "problems/11 - Какая разница.pdf"
+  },
+  {
+   "id": 7828,
+   "letter": "12",
+   "title": "Палиндром",
+   "statement_source": "problem page",
+   "statement_file": "problems/12 - Палиндром.pdf"
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "id": 3893,
+ "name": "The 2015 ICPC Benelux Algorithm Programming Contest (BAPC 2015)",
+ "url": "https://qoj.ac/contest/3893",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3893&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3893&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19290,
+   "letter": "A",
+   "title": "Freight Train",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Freight Train.pdf"
+  },
+  {
+   "id": 19291,
+   "letter": "B",
+   "title": "Physical Music",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Physical Music.pdf"
+  },
+  {
+   "id": 19292,
+   "letter": "C",
+   "title": "Godzilla",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Godzilla.pdf"
+  },
+  {
+   "id": 19293,
+   "letter": "D",
+   "title": "Hotels",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Hotels.pdf"
+  },
+  {
+   "id": 19294,
+   "letter": "E",
+   "title": "The King's Walk",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - The King's Walk.pdf"
+  },
+  {
+   "id": 19295,
+   "letter": "F",
+   "title": "Map Colouring",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Map Colouring.pdf"
+  },
+  {
+   "id": 19296,
+   "letter": "G",
+   "title": "Mario",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Mario.pdf"
+  },
+  {
+   "id": 19297,
+   "letter": "H",
+   "title": "Museum",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Museum.pdf"
+  },
+  {
+   "id": 19298,
+   "letter": "I",
+   "title": "Six Degrees",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Six Degrees.pdf"
+  },
+  {
+   "id": 19299,
+   "letter": "J",
+   "title": "Tour de France",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Tour de France.pdf"
+  },
+  {
+   "id": 19300,
+   "letter": "K",
+   "title": "Wipe Your Whiteboards",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Wipe Your Whiteboards.pdf"
+  },
+  {
+   "id": 19301,
+   "letter": "L",
+   "title": "Stand on Zanzibar",
+   "statement_pages": [
+    25,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Stand on Zanzibar.pdf"
+  }
+ ]
+}

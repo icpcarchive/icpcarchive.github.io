@@ -1,0 +1,138 @@
+{
+ "id": 1321,
+ "name": "The 2019 ICPC Asia Nanjing Regional Contest",
+ "url": "https://qoj.ac/contest/1321",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Nanjing",
+  "ICPC/Regionals/Asia East Continent/The 2019 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1321&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7055,
+   "letter": "A",
+   "title": "A Hard Problem",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - A Hard Problem.pdf"
+  },
+  {
+   "id": 7056,
+   "letter": "B",
+   "title": "Chessboard",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Chessboard.pdf"
+  },
+  {
+   "id": 7057,
+   "letter": "C",
+   "title": "Digital Path",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Digital Path.pdf"
+  },
+  {
+   "id": 7058,
+   "letter": "D",
+   "title": "Holes",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Holes.pdf"
+  },
+  {
+   "id": 7059,
+   "letter": "E",
+   "title": "Observation",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Observation.pdf"
+  },
+  {
+   "id": 7060,
+   "letter": "F",
+   "title": "Paper Grading",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Paper Grading.pdf"
+  },
+  {
+   "id": 7061,
+   "letter": "G",
+   "title": "Poker Game",
+   "statement_pages": [
+    10,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Poker Game.pdf"
+  },
+  {
+   "id": 7062,
+   "letter": "H",
+   "title": "Prince and Princess",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Prince and Princess.pdf"
+  },
+  {
+   "id": 7063,
+   "letter": "I",
+   "title": "Space Station",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Space Station.pdf"
+  },
+  {
+   "id": 7064,
+   "letter": "J",
+   "title": "Spy",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Spy.pdf"
+  },
+  {
+   "id": 7065,
+   "letter": "K",
+   "title": "Triangle",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Triangle.pdf"
+  }
+ ]
+}

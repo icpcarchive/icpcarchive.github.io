@@ -1,0 +1,126 @@
+{
+ "id": 1978,
+ "name": "The 2013 ACM-ICPC Asia Aizu Regional Contest",
+ "url": "https://qoj.ac/contest/1978",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1978&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11391,
+   "letter": "A",
+   "title": "Equal Sum Sets",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Equal Sum Sets.pdf"
+  },
+  {
+   "id": 11392,
+   "letter": "B",
+   "title": "The Last Ant",
+   "statement_pages": [
+    3,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - The Last Ant.pdf"
+  },
+  {
+   "id": 11393,
+   "letter": "C",
+   "title": "Count the Regions",
+   "statement_pages": [
+    6,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Count the Regions.pdf"
+  },
+  {
+   "id": 11394,
+   "letter": "D",
+   "title": "Clock Hands",
+   "statement_pages": [
+    9,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Clock Hands.pdf"
+  },
+  {
+   "id": 11395,
+   "letter": "E",
+   "title": "Dragon’s Cruller",
+   "statement_pages": [
+    12,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Dragon’s Cruller.pdf"
+  },
+  {
+   "id": 11396,
+   "letter": "F",
+   "title": "Directional Resemblance",
+   "statement_pages": [
+    15,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Directional Resemblance.pdf"
+  },
+  {
+   "id": 11397,
+   "letter": "G",
+   "title": "Longest Chain",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Longest Chain.pdf"
+  },
+  {
+   "id": 11398,
+   "letter": "H",
+   "title": "Don’t Burst the Balloon",
+   "statement_pages": [
+    20,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Don’t Burst the Balloon.pdf"
+  },
+  {
+   "id": 11399,
+   "letter": "I",
+   "title": "Hidden Tree",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Hidden Tree.pdf"
+  },
+  {
+   "id": 11400,
+   "letter": "J",
+   "title": "C(O|W|A*RD*|S)* CROSSWORD Puzzle",
+   "statement_pages": [
+    25,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - C(O_W_A_RD__S)_ CROSSWORD Puzzle.pdf"
+  }
+ ]
+}

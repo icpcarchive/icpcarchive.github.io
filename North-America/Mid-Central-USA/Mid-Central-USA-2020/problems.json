@@ -1,0 +1,114 @@
+{
+ "id": 494,
+ "name": "Mid-Central USA 2020",
+ "url": "https://qoj.ac/contest/494",
+ "categories": [
+  "ICPC/Regionals/North America/Mid-Central USA"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 1361,
+   "letter": "A",
+   "title": "Ant Typing",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Ant Typing.pdf"
+  },
+  {
+   "id": 1366,
+   "letter": "B",
+   "title": "Exam Manipulation",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Exam Manipulation.pdf"
+  },
+  {
+   "id": 1364,
+   "letter": "C",
+   "title": "Condorcet",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Condorcet.pdf"
+  },
+  {
+   "id": 1372,
+   "letter": "D",
+   "title": "Rainbow Numbers",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Rainbow Numbers.pdf"
+  },
+  {
+   "id": 3606,
+   "letter": "E",
+   "title": "Painted Corridors",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Painted Corridors.pdf"
+  },
+  {
+   "id": 1373,
+   "letter": "F",
+   "title": "Rating Problems",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Rating Problems.pdf"
+  },
+  {
+   "id": 1367,
+   "letter": "G",
+   "title": "Exciting Tournament",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Exciting Tournament.pdf"
+  },
+  {
+   "id": 1374,
+   "letter": "H",
+   "title": "Triangular Collection",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Triangular Collection.pdf"
+  },
+  {
+   "id": 1375,
+   "letter": "I",
+   "title": "TripTik",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - TripTik.pdf"
+  },
+  {
+   "id": 1362,
+   "letter": "J",
+   "title": "Bad Packing",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Bad Packing.pdf"
+  },
+  {
+   "id": 1371,
+   "letter": "K",
+   "title": "Missing Number",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Missing Number.pdf"
+  },
+  {
+   "id": 1369,
+   "letter": "L",
+   "title": "Longest Common Subsequence",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Longest Common Subsequence.pdf"
+  },
+  {
+   "id": 1376,
+   "letter": "M",
+   "title": "Unread Messages",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - Unread Messages.pdf"
+  },
+  {
+   "id": 1363,
+   "letter": "N",
+   "title": "Bitonic Ordering",
+   "statement_source": "problem page",
+   "statement_file": "problems/N - Bitonic Ordering.pdf"
+  },
+  {
+   "id": 3611,
+   "letter": "O",
+   "title": "Smoothie Stand"
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": 3639,
+ "name": "The 2004 ACM ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/3639",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3639&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19727,
+   "letter": "A",
+   "title": "Word Encoding",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Word Encoding.pdf"
+  },
+  {
+   "id": 19728,
+   "letter": "B",
+   "title": "Watchdog",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Watchdog.pdf"
+  },
+  {
+   "id": 19729,
+   "letter": "C",
+   "title": "Taxi Cab Scheme",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Taxi Cab Scheme.pdf"
+  },
+  {
+   "id": 19730,
+   "letter": "D",
+   "title": "Pseudo-random Numbers",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Pseudo-random Numbers.pdf"
+  },
+  {
+   "id": 19731,
+   "letter": "E",
+   "title": "Card Game Cheater",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Card Game Cheater.pdf"
+  },
+  {
+   "id": 19732,
+   "letter": "F",
+   "title": "Investment",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Investment.pdf"
+  },
+  {
+   "id": 19733,
+   "letter": "G",
+   "title": "Pipes",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Pipes.pdf"
+  },
+  {
+   "id": 19734,
+   "letter": "H",
+   "title": "SETI",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - SETI.pdf"
+  },
+  {
+   "id": 19735,
+   "letter": "I",
+   "title": "Minimax Triangulation",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Minimax Triangulation.pdf"
+  }
+ ]
+}

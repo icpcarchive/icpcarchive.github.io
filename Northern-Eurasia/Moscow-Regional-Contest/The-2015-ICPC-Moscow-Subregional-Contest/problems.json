@@ -1,0 +1,148 @@
+{
+ "id": 3250,
+ "name": "The 2015 ICPC Moscow Subregional Contest",
+ "url": "https://qoj.ac/contest/3250",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Moscow Regional Contest / Moscow Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3250&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16730,
+   "letter": "A",
+   "title": "Anagrams",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Anagrams.pdf"
+  },
+  {
+   "id": 16731,
+   "letter": "B",
+   "title": "Banana Brain's Bracelet",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Banana Brain's Bracelet.pdf"
+  },
+  {
+   "id": 16732,
+   "letter": "C",
+   "title": "Colder-Hotter",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Colder-Hotter.pdf"
+  },
+  {
+   "id": 16733,
+   "letter": "D",
+   "title": "Delay Time",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Delay Time.pdf"
+  },
+  {
+   "id": 16734,
+   "letter": "E",
+   "title": "Entertainment",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Entertainment.pdf"
+  },
+  {
+   "id": 16735,
+   "letter": "F",
+   "title": "Flow Management",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Flow Management.pdf"
+  },
+  {
+   "id": 16736,
+   "letter": "G",
+   "title": "Garden Gathering",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Garden Gathering.pdf"
+  },
+  {
+   "id": 16737,
+   "letter": "H",
+   "title": "Hashing",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hashing.pdf"
+  },
+  {
+   "id": 16738,
+   "letter": "I",
+   "title": "Illegal or Not?",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Illegal or Not_.pdf"
+  },
+  {
+   "id": 16739,
+   "letter": "J",
+   "title": "Jealousy",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jealousy.pdf"
+  },
+  {
+   "id": 16740,
+   "letter": "K",
+   "title": "King's Rout",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - King's Rout.pdf"
+  },
+  {
+   "id": 16741,
+   "letter": "L",
+   "title": "Locomotive",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Locomotive.pdf"
+  }
+ ]
+}

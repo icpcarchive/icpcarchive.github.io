@@ -1,0 +1,164 @@
+{
+ "id": 1449,
+ "name": "The 2023 ICPC Asia Shenyang Regional Contest",
+ "url": "https://qoj.ac/contest/1449",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Shenyang",
+  "ICPC/Regionals/Asia East Continent/The 2023 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1449&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1449&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7777,
+   "letter": "A",
+   "title": "Intro: Dawn of a New Era",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Intro_ Dawn of a New Era.pdf"
+  },
+  {
+   "id": 7778,
+   "letter": "B",
+   "title": "Turning Permutation",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Turning Permutation.pdf"
+  },
+  {
+   "id": 7779,
+   "letter": "C",
+   "title": "Swiss Stage",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Swiss Stage.pdf"
+  },
+  {
+   "id": 7780,
+   "letter": "D",
+   "title": "Dark LaTeX vs. Light LaTeX",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dark LaTeX vs. Light LaTeX.pdf"
+  },
+  {
+   "id": 7781,
+   "letter": "E",
+   "title": "Sheep Eat Wolves",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Sheep Eat Wolves.pdf"
+  },
+  {
+   "id": 7782,
+   "letter": "F",
+   "title": "Ursa Minor",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Ursa Minor.pdf"
+  },
+  {
+   "id": 7783,
+   "letter": "G",
+   "title": "Military Maneuver",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Military Maneuver.pdf"
+  },
+  {
+   "id": 7784,
+   "letter": "H",
+   "title": "Line Graph Sequence",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Line Graph Sequence.pdf"
+  },
+  {
+   "id": 7785,
+   "letter": "I",
+   "title": "Three Rectangles",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Three Rectangles.pdf"
+  },
+  {
+   "id": 7786,
+   "letter": "J",
+   "title": "Graft and Transplant",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Graft and Transplant.pdf"
+  },
+  {
+   "id": 7787,
+   "letter": "K",
+   "title": "Maximum Rating",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Maximum Rating.pdf"
+  },
+  {
+   "id": 7788,
+   "letter": "L",
+   "title": "Rook Detection",
+   "statement_pages": [
+    21,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Rook Detection.pdf"
+  },
+  {
+   "id": 7789,
+   "letter": "M",
+   "title": "Outro: True Love Waits",
+   "statement_pages": [
+    24,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Outro_ True Love Waits.pdf"
+  }
+ ]
+}

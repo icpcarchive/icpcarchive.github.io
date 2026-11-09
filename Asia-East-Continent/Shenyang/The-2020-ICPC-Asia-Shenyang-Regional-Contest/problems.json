@@ -1,0 +1,164 @@
+{
+ "id": 1251,
+ "name": "The 2020 ICPC Asia Shenyang Regional Contest",
+ "url": "https://qoj.ac/contest/1251",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Shenyang",
+  "ICPC/Regionals/Asia East Continent/The 2020 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1251&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1251&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 6599,
+   "letter": "A",
+   "title": "The Grand Tournament",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - The Grand Tournament.pdf"
+  },
+  {
+   "id": 6600,
+   "letter": "B",
+   "title": "Whispers of the Old Gods",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Whispers of the Old Gods.pdf"
+  },
+  {
+   "id": 6601,
+   "letter": "C",
+   "title": "Mean Streets of Gadgetzan",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Mean Streets of Gadgetzan.pdf"
+  },
+  {
+   "id": 6602,
+   "letter": "D",
+   "title": "Journey to Un'Goro",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Journey to Un'Goro.pdf"
+  },
+  {
+   "id": 6603,
+   "letter": "E",
+   "title": "Knights of the Frozen Throne",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Knights of the Frozen Throne.pdf"
+  },
+  {
+   "id": 6604,
+   "letter": "F",
+   "title": "Kobolds and Catacombs",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Kobolds and Catacombs.pdf"
+  },
+  {
+   "id": 6605,
+   "letter": "G",
+   "title": "The Witchwood",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - The Witchwood.pdf"
+  },
+  {
+   "id": 6606,
+   "letter": "H",
+   "title": "The Boomsday Project",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - The Boomsday Project.pdf"
+  },
+  {
+   "id": 6607,
+   "letter": "I",
+   "title": "Rise of Shadows",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Rise of Shadows.pdf"
+  },
+  {
+   "id": 6608,
+   "letter": "J",
+   "title": "Descent of Dragons",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Descent of Dragons.pdf"
+  },
+  {
+   "id": 6609,
+   "letter": "K",
+   "title": "Scholomance Academy",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Scholomance Academy.pdf"
+  },
+  {
+   "id": 6610,
+   "letter": "L",
+   "title": "Forged in the Barrens",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Forged in the Barrens.pdf"
+  },
+  {
+   "id": 6611,
+   "letter": "M",
+   "title": "United in Stormwind",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - United in Stormwind.pdf"
+  }
+ ]
+}

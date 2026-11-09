@@ -1,0 +1,95 @@
+{
+ "id": 2342,
+ "name": "The 2018 ICPC Asia Jakarta Regional Contest",
+ "url": "https://qoj.ac/contest/2342",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Indonesia"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 13153,
+   "letter": "A",
+   "title": "Edit Distance",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Edit Distance.pdf"
+  },
+  {
+   "id": 13154,
+   "letter": "B",
+   "title": "Rotating Gears",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Rotating Gears.pdf"
+  },
+  {
+   "id": 13155,
+   "letter": "C",
+   "title": "Smart Thief",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Smart Thief.pdf"
+  },
+  {
+   "id": 13156,
+   "letter": "D",
+   "title": "Icy Land",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Icy Land.pdf"
+  },
+  {
+   "id": 13157,
+   "letter": "E",
+   "title": "Artilleries and Defensive Walls",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Artilleries and Defensive Walls.pdf"
+  },
+  {
+   "id": 13158,
+   "letter": "F",
+   "title": "Popping Balloons",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Popping Balloons.pdf"
+  },
+  {
+   "id": 13159,
+   "letter": "G",
+   "title": "Go Make It Complete",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Go Make It Complete.pdf"
+  },
+  {
+   "id": 13160,
+   "letter": "H",
+   "title": "Lexical Sign Sequence",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Lexical Sign Sequence.pdf"
+  },
+  {
+   "id": 13161,
+   "letter": "I",
+   "title": "Lie Detector",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Lie Detector.pdf"
+  },
+  {
+   "id": 13162,
+   "letter": "J",
+   "title": "Future Generation",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Future Generation.pdf"
+  },
+  {
+   "id": 13163,
+   "letter": "K",
+   "title": "Boomerangs",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Boomerangs.pdf"
+  },
+  {
+   "id": 13164,
+   "letter": "L",
+   "title": "Binary String",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Binary String.pdf"
+  }
+ ]
+}

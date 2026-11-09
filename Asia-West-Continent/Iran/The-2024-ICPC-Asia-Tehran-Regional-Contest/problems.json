@@ -1,0 +1,137 @@
+{
+ "id": 2606,
+ "name": "The 2024 ICPC Asia Tehran Regional Contest",
+ "url": "https://qoj.ac/contest/2606",
+ "categories": [
+  "ICPC/Regionals/Asia West Continent/Iran"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2606&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15665,
+   "letter": "A",
+   "title": "Yalda",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Yalda.pdf"
+  },
+  {
+   "id": 15666,
+   "letter": "B",
+   "title": "Divar's Salaries",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Divar's Salaries.pdf"
+  },
+  {
+   "id": 15667,
+   "letter": "C",
+   "title": "GPT DarkDown",
+   "statement_pages": [
+    4,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - GPT DarkDown.pdf"
+  },
+  {
+   "id": 15668,
+   "letter": "D",
+   "title": "Electromagnetic Attacks",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Electromagnetic Attacks.pdf"
+  },
+  {
+   "id": 15669,
+   "letter": "E",
+   "title": "PCB",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - PCB.pdf"
+  },
+  {
+   "id": 15670,
+   "letter": "F",
+   "title": "I am Sherlocked",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - I am Sherlocked.pdf"
+  },
+  {
+   "id": 15671,
+   "letter": "G",
+   "title": "Double Radars",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Double Radars.pdf"
+  },
+  {
+   "id": 15672,
+   "letter": "H",
+   "title": "Anti-Missile",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Anti-Missile.pdf"
+  },
+  {
+   "id": 15673,
+   "letter": "I",
+   "title": "Conference Rides",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Conference Rides.pdf"
+  },
+  {
+   "id": 15674,
+   "letter": "J",
+   "title": "Parking Theory",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Parking Theory.pdf"
+  },
+  {
+   "id": 15675,
+   "letter": "K",
+   "title": "Boat",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Boat.pdf"
+  }
+ ]
+}

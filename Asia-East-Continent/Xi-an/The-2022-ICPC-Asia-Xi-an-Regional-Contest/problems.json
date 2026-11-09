@@ -1,0 +1,153 @@
+{
+ "id": 1051,
+ "name": "The 2022 ICPC Asia Xi'an Regional Contest",
+ "url": "https://qoj.ac/contest/1051",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Xi'an",
+  "ICPC/Regionals/Asia East Continent/The 2022 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1051&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1051&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5113,
+   "letter": "A",
+   "title": "Bridge",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Bridge.pdf"
+  },
+  {
+   "id": 5114,
+   "letter": "B",
+   "title": "Cells Coloring",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Cells Coloring.pdf"
+  },
+  {
+   "id": 5115,
+   "letter": "C",
+   "title": "Clone Ranran",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Clone Ranran.pdf"
+  },
+  {
+   "id": 5116,
+   "letter": "D",
+   "title": "Contests",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Contests.pdf"
+  },
+  {
+   "id": 5117,
+   "letter": "E",
+   "title": "Find Maximum",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Find Maximum.pdf"
+  },
+  {
+   "id": 5118,
+   "letter": "F",
+   "title": "Hotel",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Hotel.pdf"
+  },
+  {
+   "id": 5119,
+   "letter": "G",
+   "title": "Perfect Word",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Perfect Word.pdf"
+  },
+  {
+   "id": 5120,
+   "letter": "H",
+   "title": "Power of Two",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Power of Two.pdf"
+  },
+  {
+   "id": 5121,
+   "letter": "I",
+   "title": "Square Grid",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Square Grid.pdf"
+  },
+  {
+   "id": 5122,
+   "letter": "J",
+   "title": "Strange Sum",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Strange Sum.pdf"
+  },
+  {
+   "id": 5123,
+   "letter": "K",
+   "title": "Streets",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Streets.pdf"
+  },
+  {
+   "id": 5124,
+   "letter": "L",
+   "title": "Tree",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Tree.pdf"
+  }
+ ]
+}

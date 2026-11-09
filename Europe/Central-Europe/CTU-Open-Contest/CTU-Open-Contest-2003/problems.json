@@ -1,0 +1,111 @@
+{
+ "id": 3670,
+ "name": "CTU Open Contest 2003",
+ "url": "https://qoj.ac/contest/3670",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3670&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19403,
+   "letter": "A",
+   "title": "Bridge Hands",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Bridge Hands.pdf"
+  },
+  {
+   "id": 19404,
+   "letter": "B",
+   "title": "Charlie's Change",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Charlie's Change.pdf"
+  },
+  {
+   "id": 19405,
+   "letter": "C",
+   "title": "Building a New Depot",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Building a New Depot.pdf"
+  },
+  {
+   "id": 19406,
+   "letter": "D",
+   "title": "Truck History",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Truck History.pdf"
+  },
+  {
+   "id": 19407,
+   "letter": "E",
+   "title": "Base Numbers",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Base Numbers.pdf"
+  },
+  {
+   "id": 19408,
+   "letter": "F",
+   "title": "Paper Cutting",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Paper Cutting.pdf"
+  },
+  {
+   "id": 19409,
+   "letter": "G",
+   "title": "Hexagonal Routes",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Hexagonal Routes.pdf"
+  },
+  {
+   "id": 19410,
+   "letter": "H",
+   "title": "Storehouse",
+   "statement_pages": [
+    15,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Storehouse.pdf"
+  },
+  {
+   "id": 19411,
+   "letter": "I",
+   "title": "Traffic Jam",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Traffic Jam.pdf"
+  }
+ ]
+}

@@ -1,0 +1,145 @@
+{
+ "id": 442,
+ "name": "The 2019 ICPC Asia Yokohama Regional Contest",
+ "url": "https://qoj.ac/contest/442",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=442&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=442&r=1"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=442&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 1187,
+   "letter": "A",
+   "title": "Fast Forwarding",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Fast Forwarding.pdf"
+  },
+  {
+   "id": 1188,
+   "letter": "B",
+   "title": "Estimating the Flood Risk",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Estimating the Flood Risk.pdf"
+  },
+  {
+   "id": 1189,
+   "letter": "C",
+   "title": "Wall Painting",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Wall Painting.pdf"
+  },
+  {
+   "id": 1190,
+   "letter": "D",
+   "title": "Twin Trees Bros.",
+   "statement_pages": [
+    7,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Twin Trees Bros.pdf"
+  },
+  {
+   "id": 1191,
+   "letter": "E",
+   "title": "Reordering the Documents",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Reordering the Documents.pdf"
+  },
+  {
+   "id": 1192,
+   "letter": "F",
+   "title": "Halting Problem",
+   "statement_pages": [
+    16,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Halting Problem.pdf"
+  },
+  {
+   "id": 1193,
+   "letter": "G",
+   "title": "Ambiguous Encoding",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Ambiguous Encoding.pdf"
+  },
+  {
+   "id": 1194,
+   "letter": "H",
+   "title": "Parentheses Editor",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Parentheses Editor.pdf"
+  },
+  {
+   "id": 1195,
+   "letter": "I",
+   "title": "One-Way Conveyors",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - One-Way Conveyors.pdf"
+  },
+  {
+   "id": 1196,
+   "letter": "J",
+   "title": "Fun Region",
+   "statement_pages": [
+    25,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Fun Region.pdf"
+  },
+  {
+   "id": 1197,
+   "letter": "K",
+   "title": "Draw in Straight Lines",
+   "statement_pages": [
+    28,
+    29
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Draw in Straight Lines.pdf"
+  }
+ ]
+}

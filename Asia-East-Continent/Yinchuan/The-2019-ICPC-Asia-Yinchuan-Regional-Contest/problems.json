@@ -1,0 +1,175 @@
+{
+ "id": 1320,
+ "name": "The 2019 ICPC Asia Yinchuan Regional Contest",
+ "url": "https://qoj.ac/contest/1320",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Yinchuan",
+  "ICPC/Regionals/Asia East Continent/The 2019 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1320&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1320&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7041,
+   "letter": "A",
+   "title": "Girls Band Party",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Girls Band Party.pdf"
+  },
+  {
+   "id": 7042,
+   "letter": "B",
+   "title": "So Easy",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - So Easy.pdf"
+  },
+  {
+   "id": 7043,
+   "letter": "C",
+   "title": "Image Processing",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Image Processing.pdf"
+  },
+  {
+   "id": 7044,
+   "letter": "D",
+   "title": "Easy Problem",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Easy Problem.pdf"
+  },
+  {
+   "id": 7045,
+   "letter": "E",
+   "title": "XOR Tree",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - XOR Tree.pdf"
+  },
+  {
+   "id": 7046,
+   "letter": "F",
+   "title": "Function!",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Function!.pdf"
+  },
+  {
+   "id": 7047,
+   "letter": "G",
+   "title": "Pot!!",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Pot!!.pdf"
+  },
+  {
+   "id": 7048,
+   "letter": "H",
+   "title": "Delivery Route",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Delivery Route.pdf"
+  },
+  {
+   "id": 7049,
+   "letter": "I",
+   "title": "Base62",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Base62.pdf"
+  },
+  {
+   "id": 7050,
+   "letter": "J",
+   "title": "Toad's Travel",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Toad's Travel.pdf"
+  },
+  {
+   "id": 7051,
+   "letter": "K",
+   "title": "Largest Common Submatrix",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Largest Common Submatrix.pdf"
+  },
+  {
+   "id": 7052,
+   "letter": "L",
+   "title": "Xian Xiang",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Xian Xiang.pdf"
+  },
+  {
+   "id": 7053,
+   "letter": "M",
+   "title": "Crazy Cake",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Crazy Cake.pdf"
+  },
+  {
+   "id": 7054,
+   "letter": "N",
+   "title": "Fibonacci Sequence",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - Fibonacci Sequence.pdf"
+  }
+ ]
+}

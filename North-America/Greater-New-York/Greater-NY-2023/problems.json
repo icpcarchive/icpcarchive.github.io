@@ -1,0 +1,95 @@
+{
+ "id": 1482,
+ "name": "Greater NY 2023",
+ "url": "https://qoj.ac/contest/1482",
+ "categories": [
+  "ICPC/Regionals/North America/Greater New York"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 7694,
+   "letter": "A",
+   "title": "Cornhusker",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Cornhusker.pdf"
+  },
+  {
+   "id": 7690,
+   "letter": "B",
+   "title": "A Pivotal Question",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - A Pivotal Question.pdf"
+  },
+  {
+   "id": 7692,
+   "letter": "C",
+   "title": "Prof. Fumblemore and the Collatz Conjecture",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Prof. Fumblemore and the Collatz Conjecture.pdf"
+  },
+  {
+   "id": 7695,
+   "letter": "D",
+   "title": "Double Up",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Double Up.pdf"
+  },
+  {
+   "id": 7702,
+   "letter": "E",
+   "title": "Three Spheres and a Tetrahedron",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Three Spheres and a Tetrahedron.pdf"
+  },
+  {
+   "id": 7696,
+   "letter": "F",
+   "title": "Forest for the Trees",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Forest for the Trees.pdf"
+  },
+  {
+   "id": 7699,
+   "letter": "G",
+   "title": "Pearls",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Pearls.pdf"
+  },
+  {
+   "id": 7701,
+   "letter": "H",
+   "title": "A (Fast) Walk in the Woods",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - A (Fast) Walk in the Woods.pdf"
+  },
+  {
+   "id": 7698,
+   "letter": "I",
+   "title": "ISBN Conversion",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - ISBN Conversion.pdf"
+  },
+  {
+   "id": 7703,
+   "letter": "J",
+   "title": "Base Hi-Lo Game",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Base Hi-Lo Game.pdf"
+  },
+  {
+   "id": 7704,
+   "letter": "K",
+   "title": "Plus Minus Four Squares",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Plus Minus Four Squares.pdf"
+  },
+  {
+   "id": 7705,
+   "letter": "L",
+   "title": "Make Your Own Morse Code Palindrome",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Make Your Own Morse Code Palindrome.pdf"
+  }
+ ]
+}

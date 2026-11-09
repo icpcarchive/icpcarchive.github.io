@@ -1,0 +1,104 @@
+{
+ "id": 3646,
+ "name": "The 1999 ICPC Southwestern Europe Regional Contest (SWERC 1999)",
+ "url": "https://qoj.ac/contest/3646",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3646&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19788,
+   "letter": "A",
+   "title": "Date Bugs",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Date Bugs.pdf"
+  },
+  {
+   "id": 19789,
+   "letter": "B",
+   "title": "The Archeologists' Dilemma",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - The Archeologists' Dilemma.pdf"
+  },
+  {
+   "id": 19790,
+   "letter": "C",
+   "title": "The Vindictive Coach",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - The Vindictive Coach.pdf"
+  },
+  {
+   "id": 19791,
+   "letter": "D",
+   "title": "Triple Ties: The Organizer's Nightmare",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Triple Ties_ The Organizer's Nightmare.pdf"
+  },
+  {
+   "id": 19792,
+   "letter": "E",
+   "title": "Colour Hash",
+   "statement_pages": [
+    8,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Colour Hash.pdf"
+  },
+  {
+   "id": 19793,
+   "letter": "F",
+   "title": "Maze",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Maze.pdf"
+  },
+  {
+   "id": 19794,
+   "letter": "G",
+   "title": "LC-Display",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - LC-Display.pdf"
+  },
+  {
+   "id": 19795,
+   "letter": "H",
+   "title": "Robbery",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Robbery.pdf"
+  }
+ ]
+}

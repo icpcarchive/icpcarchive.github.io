@@ -1,0 +1,168 @@
+{
+ "id": 2581,
+ "name": "The 2025 ICPC Asia Nanjing Regional Contest",
+ "url": "https://qoj.ac/contest/2581",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Nanjing",
+  "ICPC/Regionals/Asia East Continent/The 2025 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2581&r=0"
+  },
+  {
+   "text": "Statements (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2581&r=1"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2581&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 14801,
+   "letter": "A",
+   "title": "Wow, It’s Yesterday Six Times More",
+   "statement_pages": [
+    2,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Wow, It’s Yesterday Six Times More.pdf"
+  },
+  {
+   "id": 14802,
+   "letter": "B",
+   "title": "What, More Kangaroos?",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - What, More Kangaroos_.pdf"
+  },
+  {
+   "id": 14803,
+   "letter": "C",
+   "title": "Distributing Candies",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Distributing Candies.pdf"
+  },
+  {
+   "id": 14804,
+   "letter": "D",
+   "title": "Fallleaves01 and Golf",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Fallleaves01 and Golf.pdf"
+  },
+  {
+   "id": 14805,
+   "letter": "E",
+   "title": "Cyan White Tree",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Cyan White Tree.pdf"
+  },
+  {
+   "id": 14806,
+   "letter": "F",
+   "title": "Bitwise And Path",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Bitwise And Path.pdf"
+  },
+  {
+   "id": 14807,
+   "letter": "G",
+   "title": "Bucket Bonanza",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Bucket Bonanza.pdf"
+  },
+  {
+   "id": 14808,
+   "letter": "H",
+   "title": "Pen Pineapple Apple Pen",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Pen Pineapple Apple Pen.pdf"
+  },
+  {
+   "id": 14809,
+   "letter": "I",
+   "title": "Chi Fan",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Chi Fan.pdf"
+  },
+  {
+   "id": 14810,
+   "letter": "J",
+   "title": "Trajan Algorithm",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Trajan Algorithm.pdf"
+  },
+  {
+   "id": 14811,
+   "letter": "K",
+   "title": "Xiangqi",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Xiangqi.pdf"
+  },
+  {
+   "id": 14812,
+   "letter": "L",
+   "title": "Regional Champion",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Regional Champion.pdf"
+  },
+  {
+   "id": 14813,
+   "letter": "M",
+   "title": "Many Convex Polygons",
+   "statement_pages": [
+    21,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Many Convex Polygons.pdf"
+  }
+ ]
+}

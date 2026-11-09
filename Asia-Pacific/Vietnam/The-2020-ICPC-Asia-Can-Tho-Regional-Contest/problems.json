@@ -1,0 +1,102 @@
+{
+ "id": 4122,
+ "name": "The 2020 ICPC Asia Can Tho Regional Contest",
+ "url": "https://qoj.ac/contest/4122",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Vietnam"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 20030,
+   "letter": "A",
+   "title": "Alchemy 101",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Alchemy 101.pdf"
+  },
+  {
+   "id": 20031,
+   "letter": "B",
+   "title": "Beautiful Square",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Beautiful Square.pdf"
+  },
+  {
+   "id": 20032,
+   "letter": "C",
+   "title": "Can Tho Expressway",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Can Tho Expressway.pdf"
+  },
+  {
+   "id": 20033,
+   "letter": "D",
+   "title": "Div 2, Mul 2, Mul 3",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Div 2, Mul 2, Mul 3.pdf"
+  },
+  {
+   "id": 20034,
+   "letter": "E",
+   "title": "Edge Removal",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Edge Removal.pdf"
+  },
+  {
+   "id": 20035,
+   "letter": "F",
+   "title": "Final Exam",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Final Exam.pdf"
+  },
+  {
+   "id": 20036,
+   "letter": "G",
+   "title": "Greatest Permutation",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Greatest Permutation.pdf"
+  },
+  {
+   "id": 20037,
+   "letter": "H",
+   "title": "Hexagon coloring",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Hexagon coloring.pdf"
+  },
+  {
+   "id": 20038,
+   "letter": "I",
+   "title": "Intelligence Exchange",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Intelligence Exchange.pdf"
+  },
+  {
+   "id": 20039,
+   "letter": "J",
+   "title": "Juggling Sequence",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Juggling Sequence.pdf"
+  },
+  {
+   "id": 20040,
+   "letter": "K",
+   "title": "Kingdom of Hamsters",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Kingdom of Hamsters.pdf"
+  },
+  {
+   "id": 20041,
+   "letter": "L",
+   "title": "Lazy Students",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Lazy Students.pdf"
+  },
+  {
+   "id": 20042,
+   "letter": "M",
+   "title": "Milk Tea Battle",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - Milk Tea Battle.pdf"
+  }
+ ]
+}

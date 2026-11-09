@@ -1,0 +1,159 @@
+{
+ "id": 3204,
+ "name": "The 2019 ICPC Northwestern Russia Regional Contest",
+ "url": "https://qoj.ac/contest/3204",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Northwestern Russia Regional Contest (NWRRC) / Northern Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3204&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16789,
+   "letter": "A",
+   "title": "Accurate Movement",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Accurate Movement.pdf"
+  },
+  {
+   "id": 16790,
+   "letter": "B",
+   "title": "Bad Treap",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bad Treap.pdf"
+  },
+  {
+   "id": 16791,
+   "letter": "C",
+   "title": "Cross-Stitch",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cross-Stitch.pdf"
+  },
+  {
+   "id": 16792,
+   "letter": "D",
+   "title": "Double Palindrome",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Double Palindrome.pdf"
+  },
+  {
+   "id": 16793,
+   "letter": "E",
+   "title": "Equidistant",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Equidistant.pdf"
+  },
+  {
+   "id": 16794,
+   "letter": "F",
+   "title": "Foreach",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Foreach.pdf"
+  },
+  {
+   "id": 16795,
+   "letter": "G",
+   "title": "Golf Time",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Golf Time.pdf"
+  },
+  {
+   "id": 16796,
+   "letter": "H",
+   "title": "High Load Database",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - High Load Database.pdf"
+  },
+  {
+   "id": 16797,
+   "letter": "I",
+   "title": "Ideal Pyramid",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Ideal Pyramid.pdf"
+  },
+  {
+   "id": 16798,
+   "letter": "J",
+   "title": "Just the Last Digit",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Just the Last Digit.pdf"
+  },
+  {
+   "id": 16799,
+   "letter": "K",
+   "title": "King's Children",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - King's Children.pdf"
+  },
+  {
+   "id": 16800,
+   "letter": "L",
+   "title": "Lengths and Periods",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lengths and Periods.pdf"
+  },
+  {
+   "id": 16801,
+   "letter": "M",
+   "title": "Managing Difficulties",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Managing Difficulties.pdf"
+  }
+ ]
+}

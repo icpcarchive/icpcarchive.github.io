@@ -1,0 +1,164 @@
+{
+ "id": 1794,
+ "name": "The 2024 ICPC Asia East Continent Online Contest (I)",
+ "url": "https://qoj.ac/contest/1794",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent",
+  "ICPC/Regionals/Asia East Continent/The 2024 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1794&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/blog/bulijiojiodibuliduo/blog/994"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9308,
+   "letter": "A",
+   "title": "World Cup",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - World Cup.pdf"
+  },
+  {
+   "id": 9309,
+   "letter": "B",
+   "title": "Graph",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Graph.pdf"
+  },
+  {
+   "id": 9310,
+   "letter": "C",
+   "title": "Permutation Counting 4",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Permutation Counting 4.pdf"
+  },
+  {
+   "id": 9311,
+   "letter": "D",
+   "title": "Protection War",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Protection War.pdf"
+  },
+  {
+   "id": 9312,
+   "letter": "E",
+   "title": "Random Dungeon",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Random Dungeon.pdf"
+  },
+  {
+   "id": 9313,
+   "letter": "F",
+   "title": "Make Max",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Make Max.pdf"
+  },
+  {
+   "id": 9314,
+   "letter": "G",
+   "title": "The Median of the Median of the Median",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - The Median of the Median of the Median.pdf"
+  },
+  {
+   "id": 9315,
+   "letter": "H",
+   "title": "Rainbow Bracket Sequence",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Rainbow Bracket Sequence.pdf"
+  },
+  {
+   "id": 9316,
+   "letter": "I",
+   "title": "Boxes",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Boxes.pdf"
+  },
+  {
+   "id": 9317,
+   "letter": "J",
+   "title": "Rivals",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Rivals.pdf"
+  },
+  {
+   "id": 9318,
+   "letter": "K",
+   "title": "AC Automation Chicken",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - AC Automation Chicken.pdf"
+  },
+  {
+   "id": 9319,
+   "letter": "L",
+   "title": "Bull Farm",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Bull Farm.pdf"
+  },
+  {
+   "id": 9320,
+   "letter": "M",
+   "title": "Find the Easiest Problem",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Find the Easiest Problem.pdf"
+  }
+ ]
+}

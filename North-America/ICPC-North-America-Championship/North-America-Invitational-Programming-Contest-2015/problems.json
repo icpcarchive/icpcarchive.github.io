@@ -1,0 +1,130 @@
+{
+ "id": 2297,
+ "name": "North America Invitational Programming Contest 2015",
+ "url": "https://qoj.ac/contest/2297",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2297&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2297&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 12934,
+   "letter": "A",
+   "title": "Area of Effect",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Area of Effect.pdf"
+  },
+  {
+   "id": 12935,
+   "letter": "B",
+   "title": "Canyon Mapping",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Canyon Mapping.pdf"
+  },
+  {
+   "id": 12936,
+   "letter": "C",
+   "title": "Magic Checkerboard",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Magic Checkerboard.pdf"
+  },
+  {
+   "id": 12937,
+   "letter": "D",
+   "title": "Extensive Or",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Extensive Or.pdf"
+  },
+  {
+   "id": 12938,
+   "letter": "E",
+   "title": "Primal Partitions",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Primal Partitions.pdf"
+  },
+  {
+   "id": 12939,
+   "letter": "F",
+   "title": "Sand Art",
+   "statement_pages": [
+    11,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Sand Art.pdf"
+  },
+  {
+   "id": 12940,
+   "letter": "G",
+   "title": "String Stretching",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - String Stretching.pdf"
+  },
+  {
+   "id": 12941,
+   "letter": "H",
+   "title": "Vending Machine",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Vending Machine.pdf"
+  },
+  {
+   "id": 12942,
+   "letter": "I",
+   "title": "Rainbow Zamboni",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Rainbow Zamboni.pdf"
+  },
+  {
+   "id": 12943,
+   "letter": "J",
+   "title": "Zig Zag Nametag",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Zig Zag Nametag.pdf"
+  }
+ ]
+}

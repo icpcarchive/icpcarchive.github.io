@@ -1,0 +1,141 @@
+{
+ "id": 101,
+ "name": "The 2016 ACM-ICPC Asia Tsukuba Regional Contest",
+ "url": "https://qoj.ac/contest/101",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=101&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=101&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 173,
+   "letter": "A",
+   "title": "Rearranging a Sequence",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Rearranging a Sequence.pdf"
+  },
+  {
+   "id": 174,
+   "letter": "B",
+   "title": "Quality of Check Digits",
+   "statement_pages": [
+    3,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Quality of Check Digits.pdf"
+  },
+  {
+   "id": 175,
+   "letter": "C",
+   "title": "Distribution Center",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Distribution Center.pdf"
+  },
+  {
+   "id": 176,
+   "letter": "D",
+   "title": "Hidden Anagrams",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Hidden Anagrams.pdf"
+  },
+  {
+   "id": 177,
+   "letter": "E",
+   "title": "Infallibly Crack Perplexing Cryptarithm",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Infallibly Crack Perplexing Cryptarithm.pdf"
+  },
+  {
+   "id": 178,
+   "letter": "F",
+   "title": "Three Kingdoms of Bourdelot",
+   "statement_pages": [
+    13,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Three Kingdoms of Bourdelot.pdf"
+  },
+  {
+   "id": 179,
+   "letter": "G",
+   "title": "Placing Medals on a Binary Tree",
+   "statement_pages": [
+    17,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Placing Medals on a Binary Tree.pdf"
+  },
+  {
+   "id": 180,
+   "letter": "H",
+   "title": "Animal Companion in Maze",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Animal Companion in Maze.pdf"
+  },
+  {
+   "id": 181,
+   "letter": "I",
+   "title": "Skinny Polygon",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Skinny Polygon.pdf"
+  },
+  {
+   "id": 182,
+   "letter": "J",
+   "title": "Cover the Polygon with Your Disk",
+   "statement_pages": [
+    24,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Cover the Polygon with Your Disk.pdf"
+  },
+  {
+   "id": 183,
+   "letter": "K",
+   "title": "Black and White Boxes",
+   "statement_pages": [
+    26,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Black and White Boxes.pdf"
+  }
+ ]
+}

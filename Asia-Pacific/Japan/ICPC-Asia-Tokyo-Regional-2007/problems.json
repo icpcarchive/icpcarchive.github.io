@@ -1,0 +1,126 @@
+{
+ "id": 3616,
+ "name": "ICPC Asia Tokyo Regional 2007",
+ "url": "https://qoj.ac/contest/3616",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3616&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19625,
+   "letter": "A",
+   "title": "And Then There Was One",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - And Then There Was One.pdf"
+  },
+  {
+   "id": 19626,
+   "letter": "B",
+   "title": "Prime Gap",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Prime Gap.pdf"
+  },
+  {
+   "id": 19627,
+   "letter": "C",
+   "title": "Minimal Backgammon",
+   "statement_pages": [
+    4,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Minimal Backgammon.pdf"
+  },
+  {
+   "id": 19628,
+   "letter": "D",
+   "title": "Lowest Pyramid",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Lowest Pyramid.pdf"
+  },
+  {
+   "id": 19629,
+   "letter": "E",
+   "title": "Geometric Map",
+   "statement_pages": [
+    9,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Geometric Map.pdf"
+  },
+  {
+   "id": 19630,
+   "letter": "F",
+   "title": "Slim Span",
+   "statement_pages": [
+    12,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Slim Span.pdf"
+  },
+  {
+   "id": 19631,
+   "letter": "G",
+   "title": "The Morning after Halloween",
+   "statement_pages": [
+    15,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - The Morning after Halloween.pdf"
+  },
+  {
+   "id": 19632,
+   "letter": "H",
+   "title": "Bug Hunt",
+   "statement_pages": [
+    18,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Bug Hunt.pdf"
+  },
+  {
+   "id": 19633,
+   "letter": "I",
+   "title": "Most Distant Point from the Sea",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Most Distant Point from the Sea.pdf"
+  },
+  {
+   "id": 19634,
+   "letter": "J",
+   "title": "The Teacher's Side of Math",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - The Teacher's Side of Math.pdf"
+  }
+ ]
+}

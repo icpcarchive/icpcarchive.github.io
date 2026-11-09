@@ -1,0 +1,148 @@
+{
+ "id": 2287,
+ "name": "The 2018 ICPC Asia Seoul Regional Contest",
+ "url": "https://qoj.ac/contest/2287",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Korea"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2287&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 13085,
+   "letter": "A",
+   "title": "Circuits",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Circuits.pdf"
+  },
+  {
+   "id": 13086,
+   "letter": "B",
+   "title": "Cosmetic Survey",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Cosmetic Survey.pdf"
+  },
+  {
+   "id": 13087,
+   "letter": "C",
+   "title": "Disks Arrangement",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Disks Arrangement.pdf"
+  },
+  {
+   "id": 13088,
+   "letter": "D",
+   "title": "Go Latin",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Go Latin.pdf"
+  },
+  {
+   "id": 13089,
+   "letter": "E",
+   "title": "LED",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - LED.pdf"
+  },
+  {
+   "id": 13090,
+   "letter": "F",
+   "title": "Parentheses",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Parentheses.pdf"
+  },
+  {
+   "id": 13091,
+   "letter": "G",
+   "title": "Secret Code",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Secret Code.pdf"
+  },
+  {
+   "id": 13092,
+   "letter": "H",
+   "title": "Simple Polygon",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Simple Polygon.pdf"
+  },
+  {
+   "id": 13093,
+   "letter": "I",
+   "title": "Square Root",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Square Root.pdf"
+  },
+  {
+   "id": 13094,
+   "letter": "J",
+   "title": "Starwars",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Starwars.pdf"
+  },
+  {
+   "id": 13095,
+   "letter": "K",
+   "title": "TV Show Game",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - TV Show Game.pdf"
+  },
+  {
+   "id": 13096,
+   "letter": "L",
+   "title": "Working Plan",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Working Plan.pdf"
+  }
+ ]
+}

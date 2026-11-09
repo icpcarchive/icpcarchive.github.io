@@ -1,0 +1,95 @@
+{
+ "id": 3246,
+ "name": "The 2011 ICPC Moscow Subregional Contest",
+ "url": "https://qoj.ac/contest/3246",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Moscow Regional Contest / Moscow Subregional"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 16777,
+   "letter": "A",
+   "title": "Age of Retirement",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Age of Retirement.pdf"
+  },
+  {
+   "id": 16778,
+   "letter": "B",
+   "title": "Bridges",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Bridges.pdf"
+  },
+  {
+   "id": 16779,
+   "letter": "C",
+   "title": "Crisis",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Crisis.pdf"
+  },
+  {
+   "id": 16780,
+   "letter": "D",
+   "title": "Dining Room",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Dining Room.pdf"
+  },
+  {
+   "id": 16781,
+   "letter": "E",
+   "title": "Exhibition Hall",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Exhibition Hall.pdf"
+  },
+  {
+   "id": 16782,
+   "letter": "F",
+   "title": "File Sharing",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - File Sharing.pdf"
+  },
+  {
+   "id": 16783,
+   "letter": "G",
+   "title": "tourist",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - tourist.pdf"
+  },
+  {
+   "id": 16784,
+   "letter": "H",
+   "title": "Heroes of Money and Magic",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Heroes of Money and Magic.pdf"
+  },
+  {
+   "id": 16785,
+   "letter": "I",
+   "title": "I, V, X, L, C, D, M Problem",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - I, V, X, L, C, D, M Problem.pdf"
+  },
+  {
+   "id": 16786,
+   "letter": "J",
+   "title": "Jams",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Jams.pdf"
+  },
+  {
+   "id": 16787,
+   "letter": "K",
+   "title": "King's Palace Garden",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - King's Palace Garden.pdf"
+  },
+  {
+   "id": 16788,
+   "letter": "L",
+   "title": "Lamps of the Mind",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Lamps of the Mind.pdf"
+  }
+ ]
+}

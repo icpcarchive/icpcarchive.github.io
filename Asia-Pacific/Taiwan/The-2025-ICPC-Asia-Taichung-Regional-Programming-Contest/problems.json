@@ -1,0 +1,174 @@
+{
+ "id": 2657,
+ "name": "The 2025 ICPC Asia Taichung Regional Programming Contest",
+ "url": "https://qoj.ac/contest/2657",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Taiwan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2657&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://www.youtube.com/playlist?list=PL6sWQj-gZyf47s236pah2KSdb_MdecdXN"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15393,
+   "letter": "A",
+   "title": "ASCII Art Contest",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - ASCII Art Contest.pdf"
+  },
+  {
+   "id": 15394,
+   "letter": "B",
+   "title": "Buses",
+   "statement_pages": [
+    3,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Buses.pdf"
+  },
+  {
+   "id": 15395,
+   "letter": "C",
+   "title": "Circles Are Far from Each Other",
+   "statement_pages": [
+    7,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Circles Are Far from Each Other.pdf"
+  },
+  {
+   "id": 15396,
+   "letter": "D",
+   "title": "Divisor Card Game",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Divisor Card Game.pdf"
+  },
+  {
+   "id": 15397,
+   "letter": "E",
+   "title": "Number Maze",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Number Maze.pdf"
+  },
+  {
+   "id": 15398,
+   "letter": "F",
+   "title": "Cluster Computing System",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Cluster Computing System.pdf"
+  },
+  {
+   "id": 15399,
+   "letter": "G",
+   "title": "Gene Editor",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gene Editor.pdf"
+  },
+  {
+   "id": 15400,
+   "letter": "H",
+   "title": "Shuffling Cards with Problem Solver 68!",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Shuffling Cards with Problem Solver 68!.pdf"
+  },
+  {
+   "id": 15401,
+   "letter": "I",
+   "title": "Birthday",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Birthday.pdf"
+  },
+  {
+   "id": 15402,
+   "letter": "J",
+   "title": "Sliding Tiles",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Sliding Tiles.pdf"
+  },
+  {
+   "id": 15403,
+   "letter": "K",
+   "title": "Kindergarten Homework",
+   "statement_pages": [
+    25,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kindergarten Homework.pdf"
+  },
+  {
+   "id": 15404,
+   "letter": "L",
+   "title": "Maximum Color Segment",
+   "statement_pages": [
+    29,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Maximum Color Segment.pdf"
+  },
+  {
+   "id": 15405,
+   "letter": "M",
+   "title": "Maximum Distance To Port",
+   "statement_pages": [
+    31,
+    32
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Maximum Distance To Port.pdf"
+  },
+  {
+   "id": 15406,
+   "letter": "N",
+   "title": "New Kingdom",
+   "statement_pages": [
+    33,
+    35
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - New Kingdom.pdf"
+  }
+ ]
+}

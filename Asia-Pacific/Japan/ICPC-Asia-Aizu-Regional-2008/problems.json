@@ -1,0 +1,130 @@
+{
+ "id": 3617,
+ "name": "ICPC Asia Aizu Regional 2008",
+ "url": "https://qoj.ac/contest/3617",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3617&r=0"
+  },
+  {
+   "text": "Official ICPC Asia Aizu Regional 2008 Judge Data",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3617&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19635,
+   "letter": "A",
+   "title": "Grey Area",
+   "statement_pages": [
+    1,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Grey Area.pdf"
+  },
+  {
+   "id": 19636,
+   "letter": "B",
+   "title": "Expected Allowance",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Expected Allowance.pdf"
+  },
+  {
+   "id": 19637,
+   "letter": "C",
+   "title": "Stopped Watches",
+   "statement_pages": [
+    6,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Stopped Watches.pdf"
+  },
+  {
+   "id": 19638,
+   "letter": "D",
+   "title": "Digits on the Floor",
+   "statement_pages": [
+    9,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Digits on the Floor.pdf"
+  },
+  {
+   "id": 19639,
+   "letter": "E",
+   "title": "Spherical Mirrors",
+   "statement_pages": [
+    13,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Spherical Mirrors.pdf"
+  },
+  {
+   "id": 19640,
+   "letter": "F",
+   "title": "Traveling Cube",
+   "statement_pages": [
+    16,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Traveling Cube.pdf"
+  },
+  {
+   "id": 19641,
+   "letter": "G",
+   "title": "Search of Concatenated Strings",
+   "statement_pages": [
+    19,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Search of Concatenated Strings.pdf"
+  },
+  {
+   "id": 19642,
+   "letter": "H",
+   "title": "Top Spinning",
+   "statement_pages": [
+    22,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Top Spinning.pdf"
+  },
+  {
+   "id": 19643,
+   "letter": "I",
+   "title": "Common Polynomial",
+   "statement_pages": [
+    26,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Common Polynomial.pdf"
+  },
+  {
+   "id": 19644,
+   "letter": "J",
+   "title": "Zigzag",
+   "statement_pages": [
+    28,
+    32
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Zigzag.pdf"
+  }
+ ]
+}

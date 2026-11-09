@@ -1,0 +1,174 @@
+{
+ "id": 1432,
+ "name": "The 2023 ICPC UK & Ireland Programming Contest",
+ "url": "https://qoj.ac/contest/1432",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/UK & Ireland Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Introduction (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1432&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1432&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7840,
+   "letter": "A",
+   "title": "Assessment Disruption",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Assessment Disruption.pdf"
+  },
+  {
+   "id": 7841,
+   "letter": "B",
+   "title": "Boat Commuter",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Boat Commuter.pdf"
+  },
+  {
+   "id": 7842,
+   "letter": "C",
+   "title": "Clearing Space",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Clearing Space.pdf"
+  },
+  {
+   "id": 7843,
+   "letter": "D",
+   "title": "Delivery Forces",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Delivery Forces.pdf"
+  },
+  {
+   "id": 7844,
+   "letter": "E",
+   "title": "Enchanted Fortress",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Enchanted Fortress.pdf"
+  },
+  {
+   "id": 7845,
+   "letter": "F",
+   "title": "Fast Forward",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fast Forward.pdf"
+  },
+  {
+   "id": 7846,
+   "letter": "G",
+   "title": "Glacier Travel",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Glacier Travel.pdf"
+  },
+  {
+   "id": 7847,
+   "letter": "H",
+   "title": "History in Numbers",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - History in Numbers.pdf"
+  },
+  {
+   "id": 7848,
+   "letter": "I",
+   "title": "International Travel",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - International Travel.pdf"
+  },
+  {
+   "id": 7849,
+   "letter": "J",
+   "title": "Journey of Recovery",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Journey of Recovery.pdf"
+  },
+  {
+   "id": 7850,
+   "letter": "K",
+   "title": "Kernel Scheduler",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kernel Scheduler.pdf"
+  },
+  {
+   "id": 7851,
+   "letter": "L",
+   "title": "Last One Standing",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Last One Standing.pdf"
+  },
+  {
+   "id": 7852,
+   "letter": "M",
+   "title": "Mini-Tetris 3023",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mini-Tetris 3023.pdf"
+  },
+  {
+   "id": 7853,
+   "letter": "N",
+   "title": "Naming Wine Bottles",
+   "statement_pages": [
+    29,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - Naming Wine Bottles.pdf"
+  }
+ ]
+}

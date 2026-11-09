@@ -1,0 +1,145 @@
+{
+ "id": 3347,
+ "name": "The 2026 ICPC Europe Championship",
+ "url": "https://qoj.ac/contest/3347",
+ "categories": [
+  "ICPC/Regionals/Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3347&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3347&r=1"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/blog/jiangly/blog/2619"
+  }
+ ],
+ "problems": [
+  {
+   "id": 17150,
+   "letter": "A",
+   "title": "Three Castles",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Three Castles.pdf"
+  },
+  {
+   "id": 17151,
+   "letter": "B",
+   "title": "Bitwise Beach",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bitwise Beach.pdf"
+  },
+  {
+   "id": 17152,
+   "letter": "C",
+   "title": "Copy-paste",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Copy-paste.pdf"
+  },
+  {
+   "id": 17153,
+   "letter": "D",
+   "title": "Deque Sort",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Deque Sort.pdf"
+  },
+  {
+   "id": 17154,
+   "letter": "E",
+   "title": "Evaluation",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Evaluation.pdf"
+  },
+  {
+   "id": 17155,
+   "letter": "F",
+   "title": "Fix the Coloring",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fix the Coloring.pdf"
+  },
+  {
+   "id": 17156,
+   "letter": "G",
+   "title": "Good Permutations",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Good Permutations.pdf"
+  },
+  {
+   "id": 17157,
+   "letter": "H",
+   "title": "House",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - House.pdf"
+  },
+  {
+   "id": 17158,
+   "letter": "I",
+   "title": "Palindromes",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Palindromes.pdf"
+  },
+  {
+   "id": 17159,
+   "letter": "J",
+   "title": "Jewel Guards",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jewel Guards.pdf"
+  },
+  {
+   "id": 17160,
+   "letter": "K",
+   "title": "Multiset Variance",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Multiset Variance.pdf"
+  }
+ ]
+}

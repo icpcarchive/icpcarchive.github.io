@@ -1,0 +1,168 @@
+{
+ "id": 1096,
+ "name": "The 2022 ICPC Asia Shenyang Regional Contest",
+ "url": "https://qoj.ac/contest/1096",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Shenyang",
+  "ICPC/Regionals/Asia East Continent/The 2022 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1096&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1096&r=1"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1096&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5433,
+   "letter": "A",
+   "title": "Absolute Difference",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Absolute Difference.pdf"
+  },
+  {
+   "id": 5434,
+   "letter": "B",
+   "title": "Binary Substrings",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Binary Substrings.pdf"
+  },
+  {
+   "id": 5435,
+   "letter": "C",
+   "title": "Clamped Sequence",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Clamped Sequence.pdf"
+  },
+  {
+   "id": 5436,
+   "letter": "D",
+   "title": "DRX vs. T1",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - DRX vs. T1.pdf"
+  },
+  {
+   "id": 5437,
+   "letter": "E",
+   "title": "Graph Completing",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Graph Completing.pdf"
+  },
+  {
+   "id": 5438,
+   "letter": "F",
+   "title": "Half Mixed",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Half Mixed.pdf"
+  },
+  {
+   "id": 5439,
+   "letter": "G",
+   "title": "Meet in the Middle",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Meet in the Middle.pdf"
+  },
+  {
+   "id": 5440,
+   "letter": "H",
+   "title": "P-P-Palindrome",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - P-P-Palindrome.pdf"
+  },
+  {
+   "id": 5441,
+   "letter": "I",
+   "title": "Quartz Collection",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Quartz Collection.pdf"
+  },
+  {
+   "id": 5442,
+   "letter": "J",
+   "title": "Referee Without Red",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Referee Without Red.pdf"
+  },
+  {
+   "id": 5443,
+   "letter": "K",
+   "title": "Security at Museums",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Security at Museums.pdf"
+  },
+  {
+   "id": 5444,
+   "letter": "L",
+   "title": "Tavern Chess",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Tavern Chess.pdf"
+  },
+  {
+   "id": 5445,
+   "letter": "M",
+   "title": "Vulpecula",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Vulpecula.pdf"
+  }
+ ]
+}

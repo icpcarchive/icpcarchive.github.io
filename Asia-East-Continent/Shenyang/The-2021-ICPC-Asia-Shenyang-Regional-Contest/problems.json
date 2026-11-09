@@ -1,0 +1,160 @@
+{
+ "id": 1252,
+ "name": "The 2021 ICPC Asia Shenyang Regional Contest",
+ "url": "https://qoj.ac/contest/1252",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Shenyang",
+  "ICPC/Regionals/Asia East Continent/The 2021 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1252&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 6612,
+   "letter": "A",
+   "title": "A Bite of Teyvat",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - A Bite of Teyvat.pdf"
+  },
+  {
+   "id": 6613,
+   "letter": "B",
+   "title": "Bitwise Exclusive-OR Sequence",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bitwise Exclusive-OR Sequence.pdf"
+  },
+  {
+   "id": 6614,
+   "letter": "C",
+   "title": "Cards of Magic",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cards of Magic.pdf"
+  },
+  {
+   "id": 6615,
+   "letter": "D",
+   "title": "Cross the Maze",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Cross the Maze.pdf"
+  },
+  {
+   "id": 6616,
+   "letter": "E",
+   "title": "Edward Gaming, the Champion",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Edward Gaming, the Champion.pdf"
+  },
+  {
+   "id": 6617,
+   "letter": "F",
+   "title": "Encoded Strings I",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Encoded Strings I.pdf"
+  },
+  {
+   "id": 6618,
+   "letter": "G",
+   "title": "Encoded Strings II",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Encoded Strings II.pdf"
+  },
+  {
+   "id": 6619,
+   "letter": "H",
+   "title": "Line Graph Matching",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Line Graph Matching.pdf"
+  },
+  {
+   "id": 6620,
+   "letter": "I",
+   "title": "Linear Fractional Transformation",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Linear Fractional Transformation.pdf"
+  },
+  {
+   "id": 6621,
+   "letter": "J",
+   "title": "Luggage Lock",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Luggage Lock.pdf"
+  },
+  {
+   "id": 6622,
+   "letter": "K",
+   "title": "Matrix Operations",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Matrix Operations.pdf"
+  },
+  {
+   "id": 6623,
+   "letter": "L",
+   "title": "Perfect Matchings",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Perfect Matchings.pdf"
+  },
+  {
+   "id": 6624,
+   "letter": "M",
+   "title": "String Problem",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - String Problem.pdf"
+  }
+ ]
+}

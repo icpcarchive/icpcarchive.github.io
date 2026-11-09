@@ -1,0 +1,130 @@
+{
+ "id": 2752,
+ "name": "The 2010 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2752",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2752&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2752&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16055,
+   "letter": "A",
+   "title": "Fair Division",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Fair Division.pdf"
+  },
+  {
+   "id": 16056,
+   "letter": "B",
+   "title": "Free Goodies",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Free Goodies.pdf"
+  },
+  {
+   "id": 16057,
+   "letter": "C",
+   "title": "High Score",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - High Score.pdf"
+  },
+  {
+   "id": 16058,
+   "letter": "D",
+   "title": "Hill Driving",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Hill Driving.pdf"
+  },
+  {
+   "id": 16059,
+   "letter": "E",
+   "title": "Rankings",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Rankings.pdf"
+  },
+  {
+   "id": 16060,
+   "letter": "F",
+   "title": "Risk",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Risk.pdf"
+  },
+  {
+   "id": 16061,
+   "letter": "G",
+   "title": "Selling Land",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Selling Land.pdf"
+  },
+  {
+   "id": 16062,
+   "letter": "H",
+   "title": "Stock Prices",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Stock Prices.pdf"
+  },
+  {
+   "id": 16063,
+   "letter": "I",
+   "title": "Telephone Network",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Telephone Network.pdf"
+  },
+  {
+   "id": 16064,
+   "letter": "J",
+   "title": "Wormly",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Wormly.pdf"
+  }
+ ]
+}

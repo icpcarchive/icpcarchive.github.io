@@ -1,0 +1,175 @@
+{
+ "id": 1075,
+ "name": "The 2022 ICPC Northwestern Russia Regional Contest",
+ "url": "https://qoj.ac/contest/1075",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Northwestern Russia Regional Contest (NWRRC) / Northern Subregional",
+  "ICPC/Regionals/Northern Eurasia/Ural Regional Contest / Ural Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1075&r=0"
+  },
+  {
+   "text": "Tutorials (ru)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1075&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5266,
+   "letter": "A",
+   "title": "Absolutely Flat",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Absolutely Flat.pdf"
+  },
+  {
+   "id": 5267,
+   "letter": "B",
+   "title": "Bricks in the Wall",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bricks in the Wall.pdf"
+  },
+  {
+   "id": 5268,
+   "letter": "C",
+   "title": "Computer Network",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Computer Network.pdf"
+  },
+  {
+   "id": 5269,
+   "letter": "D",
+   "title": "Dice Grid",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dice Grid.pdf"
+  },
+  {
+   "id": 5270,
+   "letter": "E",
+   "title": "Easily Distinguishable Triangles",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Easily Distinguishable Triangles.pdf"
+  },
+  {
+   "id": 5271,
+   "letter": "F",
+   "title": "Focusing on Costs",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Focusing on Costs.pdf"
+  },
+  {
+   "id": 5272,
+   "letter": "G",
+   "title": "Greatest Common Divisor",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Greatest Common Divisor.pdf"
+  },
+  {
+   "id": 5273,
+   "letter": "H",
+   "title": "Hidden Digits",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hidden Digits.pdf"
+  },
+  {
+   "id": 5274,
+   "letter": "I",
+   "title": "IQ Game",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - IQ Game.pdf"
+  },
+  {
+   "id": 5275,
+   "letter": "J",
+   "title": "Joking?",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joking_.pdf"
+  },
+  {
+   "id": 5276,
+   "letter": "K",
+   "title": "K-Shaped Figures",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - K-Shaped Figures.pdf"
+  },
+  {
+   "id": 5277,
+   "letter": "L",
+   "title": "Limited Swaps",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Limited Swaps.pdf"
+  },
+  {
+   "id": 5278,
+   "letter": "M",
+   "title": "Mex and Cards",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mex and Cards.pdf"
+  },
+  {
+   "id": 5279,
+   "letter": "N",
+   "title": "New Time",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - New Time.pdf"
+  }
+ ]
+}

@@ -1,0 +1,107 @@
+{
+ "id": 3686,
+ "name": "The 2003 ICPC Southwestern Europe Regional Contest (SWERC 2003)",
+ "url": "https://qoj.ac/contest/3686",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3686&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19822,
+   "letter": "A",
+   "title": "Men at Work",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Men at Work.pdf"
+  },
+  {
+   "id": 19823,
+   "letter": "B",
+   "title": "Square Dance",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Square Dance.pdf"
+  },
+  {
+   "id": 19824,
+   "letter": "C",
+   "title": "Football",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Football.pdf"
+  },
+  {
+   "id": 19825,
+   "letter": "D",
+   "title": "Rent Your Airplane and Make Money",
+   "statement_pages": [
+    7,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Rent Your Airplane and Make Money.pdf"
+  },
+  {
+   "id": 19826,
+   "letter": "E",
+   "title": "Who's Next?",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Who's Next_.pdf"
+  },
+  {
+   "id": 19827,
+   "letter": "F",
+   "title": "Computer",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Computer.pdf"
+  },
+  {
+   "id": 19828,
+   "letter": "G",
+   "title": "Help R2-D2!",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Help R2-D2!.pdf"
+  },
+  {
+   "id": 19829,
+   "letter": "H",
+   "title": "Phony Primes",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Phony Primes.pdf"
+  },
+  {
+   "id": 19830,
+   "letter": "I",
+   "title": "Roof",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Roof.pdf"
+  }
+ ]
+}

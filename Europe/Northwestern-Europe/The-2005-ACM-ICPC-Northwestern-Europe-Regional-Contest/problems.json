@@ -1,0 +1,115 @@
+{
+ "id": 3640,
+ "name": "The 2005 ACM ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/3640",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3640&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19736,
+   "letter": "A",
+   "title": "Unequalled Consumption",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Unequalled Consumption.pdf"
+  },
+  {
+   "id": 19737,
+   "letter": "B",
+   "title": "Declaration of Content",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Declaration of Content.pdf"
+  },
+  {
+   "id": 19738,
+   "letter": "C",
+   "title": "Laserbox",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Laserbox.pdf"
+  },
+  {
+   "id": 19739,
+   "letter": "D",
+   "title": "Bowlstack",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Bowlstack.pdf"
+  },
+  {
+   "id": 19740,
+   "letter": "E",
+   "title": "Pesky Heroes",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Pesky Heroes.pdf"
+  },
+  {
+   "id": 19741,
+   "letter": "F",
+   "title": "Reduced ID Numbers",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Reduced ID Numbers.pdf"
+  },
+  {
+   "id": 19742,
+   "letter": "G",
+   "title": "Tantrix",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Tantrix.pdf"
+  },
+  {
+   "id": 19743,
+   "letter": "H",
+   "title": "Guardian of Decency",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Guardian of Decency.pdf"
+  },
+  {
+   "id": 19744,
+   "letter": "I",
+   "title": "Up the Stairs",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Up the Stairs.pdf"
+  }
+ ]
+}

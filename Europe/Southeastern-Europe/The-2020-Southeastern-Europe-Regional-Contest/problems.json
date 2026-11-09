@@ -1,0 +1,163 @@
+{
+ "id": 636,
+ "name": "The 2020 Southeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/636",
+ "categories": [
+  "ICPC/Regionals/Europe/Southeastern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=636&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=636&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 1643,
+   "letter": "A",
+   "title": "Archeologists",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Archeologists.pdf"
+  },
+  {
+   "id": 1644,
+   "letter": "B",
+   "title": "Reverse Game",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Reverse Game.pdf"
+  },
+  {
+   "id": 1645,
+   "letter": "C",
+   "title": "3-colorings",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - 3-colorings.pdf"
+  },
+  {
+   "id": 1646,
+   "letter": "D",
+   "title": "Disk Sort",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Disk Sort.pdf"
+  },
+  {
+   "id": 1647,
+   "letter": "E",
+   "title": "Divisible by 3",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Divisible by 3.pdf"
+  },
+  {
+   "id": 1648,
+   "letter": "F",
+   "title": "Fence Job",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fence Job.pdf"
+  },
+  {
+   "id": 1649,
+   "letter": "G",
+   "title": "Simple Hull",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Simple Hull.pdf"
+  },
+  {
+   "id": 1650,
+   "letter": "H",
+   "title": "AND = OR",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - AND = OR.pdf"
+  },
+  {
+   "id": 1651,
+   "letter": "I",
+   "title": "Modulo Permutations",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Modulo Permutations.pdf"
+  },
+  {
+   "id": 1652,
+   "letter": "J",
+   "title": "One Piece",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - One Piece.pdf"
+  },
+  {
+   "id": 1653,
+   "letter": "K",
+   "title": "Codenames",
+   "statement_pages": [
+    12,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Codenames.pdf"
+  },
+  {
+   "id": 1654,
+   "letter": "L",
+   "title": "Neo-Robin Hood",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Neo-Robin Hood.pdf"
+  },
+  {
+   "id": 1655,
+   "letter": "M",
+   "title": "Mistake",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mistake.pdf"
+  }
+ ]
+}

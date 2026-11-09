@@ -1,0 +1,119 @@
+{
+ "id": 917,
+ "name": "The 2016 ICPC Taiwan Online Programming Contest",
+ "url": "https://qoj.ac/contest/917",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Taiwan"
+ ],
+ "files": [
+  {
+   "text": "Statements (mul)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=917&r=0"
+  },
+  {
+   "text": "Tutorials (zh-tw)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=917&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3827,
+   "letter": "A",
+   "title": "Alan Turing",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_mul.pdf",
+   "statement_file": "problems/A - Alan Turing.pdf"
+  },
+  {
+   "id": 3828,
+   "letter": "B",
+   "title": "László Babai",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_mul.pdf",
+   "statement_file": "problems/B - László Babai.pdf"
+  },
+  {
+   "id": 3829,
+   "letter": "C",
+   "title": "Stephen Cook",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_mul.pdf",
+   "statement_file": "problems/C - Stephen Cook.pdf"
+  },
+  {
+   "id": 3830,
+   "letter": "D",
+   "title": "Edsger Dijkstra",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_mul.pdf",
+   "statement_file": "problems/D - Edsger Dijkstra.pdf"
+  },
+  {
+   "id": 3831,
+   "letter": "E",
+   "title": "Jack Edmonds",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_mul.pdf",
+   "statement_file": "problems/E - Jack Edmonds.pdf"
+  },
+  {
+   "id": 3832,
+   "letter": "F",
+   "title": "Robert Floyd",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_mul.pdf",
+   "statement_file": "problems/F - Robert Floyd.pdf"
+  },
+  {
+   "id": 3833,
+   "letter": "G",
+   "title": "Kurt Gödel",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_mul.pdf",
+   "statement_file": "problems/G - Kurt Gödel.pdf"
+  },
+  {
+   "id": 3834,
+   "letter": "H",
+   "title": "Richard Hamming",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_mul.pdf",
+   "statement_file": "problems/H - Richard Hamming.pdf"
+  },
+  {
+   "id": 3835,
+   "letter": "I",
+   "title": "Oracle",
+   "statement_pages": [
+    16,
+    32
+   ],
+   "statement_source": "statements_mul.pdf",
+   "statement_file": "problems/I - Oracle.pdf"
+  }
+ ]
+}

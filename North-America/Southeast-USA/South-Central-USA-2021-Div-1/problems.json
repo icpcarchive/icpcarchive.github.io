@@ -1,0 +1,138 @@
+{
+ "id": 855,
+ "name": "South Central USA 2021 (Div. 1)",
+ "url": "https://qoj.ac/contest/855",
+ "categories": [
+  "ICPC/Regionals/North America/Southeast USA",
+  "ICPC/Regionals/North America/South Central USA"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=855&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2896,
+   "letter": "A",
+   "title": "Black and White",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Black and White.pdf"
+  },
+  {
+   "id": 2897,
+   "letter": "B",
+   "title": "Circle Bounce",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Circle Bounce.pdf"
+  },
+  {
+   "id": 2898,
+   "letter": "C",
+   "title": "Diagonals",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Diagonals.pdf"
+  },
+  {
+   "id": 2899,
+   "letter": "D",
+   "title": "Dorm Room Divide",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dorm Room Divide.pdf"
+  },
+  {
+   "id": 2900,
+   "letter": "E",
+   "title": "Fail Them All!",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Fail Them All!.pdf"
+  },
+  {
+   "id": 2901,
+   "letter": "F",
+   "title": "Hopscotch 500",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Hopscotch 500.pdf"
+  },
+  {
+   "id": 2902,
+   "letter": "G",
+   "title": "Shortest Missing Subsequences",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Shortest Missing Subsequences.pdf"
+  },
+  {
+   "id": 2903,
+   "letter": "H",
+   "title": "Tetris Generation",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Tetris Generation.pdf"
+  },
+  {
+   "id": 2904,
+   "letter": "I",
+   "title": "Tournament Seeding",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Tournament Seeding.pdf"
+  },
+  {
+   "id": 2905,
+   "letter": "J",
+   "title": "Tree Hopping",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Tree Hopping.pdf"
+  },
+  {
+   "id": 2906,
+   "letter": "K",
+   "title": "XOR Island",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - XOR Island.pdf"
+  }
+ ]
+}

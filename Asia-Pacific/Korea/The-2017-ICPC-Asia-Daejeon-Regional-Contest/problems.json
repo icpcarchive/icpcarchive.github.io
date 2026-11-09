@@ -1,0 +1,95 @@
+{
+ "id": 2338,
+ "name": "The 2017 ICPC Asia Daejeon Regional Contest",
+ "url": "https://qoj.ac/contest/2338",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Korea"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 13107,
+   "letter": "A",
+   "title": "Broadcast Stations",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Broadcast Stations.pdf"
+  },
+  {
+   "id": 13108,
+   "letter": "B",
+   "title": "Connect3",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Connect3.pdf"
+  },
+  {
+   "id": 13109,
+   "letter": "C",
+   "title": "Game Map",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Game Map.pdf"
+  },
+  {
+   "id": 13110,
+   "letter": "D",
+   "title": "Happy Number",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Happy Number.pdf"
+  },
+  {
+   "id": 13111,
+   "letter": "E",
+   "title": "How Many to Be Happy?",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - How Many to Be Happy_.pdf"
+  },
+  {
+   "id": 13112,
+   "letter": "F",
+   "title": "Philosopher's Walk",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Philosopher's Walk.pdf"
+  },
+  {
+   "id": 13113,
+   "letter": "G",
+   "title": "Rectilinear Regions",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Rectilinear Regions.pdf"
+  },
+  {
+   "id": 13114,
+   "letter": "H",
+   "title": "Rock Paper Scissors",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Rock Paper Scissors.pdf"
+  },
+  {
+   "id": 13115,
+   "letter": "I",
+   "title": "Slot Machines",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Slot Machines.pdf"
+  },
+  {
+   "id": 13116,
+   "letter": "J",
+   "title": "Strongly Matchable",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Strongly Matchable.pdf"
+  },
+  {
+   "id": 13117,
+   "letter": "K",
+   "title": "Untangling Chain",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Untangling Chain.pdf"
+  },
+  {
+   "id": 13118,
+   "letter": "L",
+   "title": "Vacation Plans",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Vacation Plans.pdf"
+  }
+ ]
+}

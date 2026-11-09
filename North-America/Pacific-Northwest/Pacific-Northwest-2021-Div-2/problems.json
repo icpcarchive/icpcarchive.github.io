@@ -1,0 +1,159 @@
+{
+ "id": 858,
+ "name": "Pacific Northwest 2021 (Div. 2)",
+ "url": "https://qoj.ac/contest/858",
+ "categories": [
+  "ICPC/Regionals/North America/Pacific Northwest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=858&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2916,
+   "letter": "N",
+   "title": "Scaling Recipe",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - Scaling Recipe.pdf"
+  },
+  {
+   "id": 2902,
+   "letter": "O",
+   "title": "Shortest Missing Subsequences",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/O - Shortest Missing Subsequences.pdf"
+  },
+  {
+   "id": 2896,
+   "letter": "P",
+   "title": "Black and White",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/P - Black and White.pdf"
+  },
+  {
+   "id": 2903,
+   "letter": "Q",
+   "title": "Tetris Generation",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/Q - Tetris Generation.pdf"
+  },
+  {
+   "id": 2908,
+   "letter": "R",
+   "title": "Double Password",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/R - Double Password.pdf"
+  },
+  {
+   "id": 2910,
+   "letter": "S",
+   "title": "Rise and Fall",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/S - Rise and Fall.pdf"
+  },
+  {
+   "id": 2911,
+   "letter": "T",
+   "title": "Square Bounce",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/T - Square Bounce.pdf"
+  },
+  {
+   "id": 2915,
+   "letter": "U",
+   "title": "Reversibly Cyclic Strings",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/U - Reversibly Cyclic Strings.pdf"
+  },
+  {
+   "id": 2898,
+   "letter": "V",
+   "title": "Diagonals",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/V - Diagonals.pdf"
+  },
+  {
+   "id": 2900,
+   "letter": "W",
+   "title": "Fail Them All!",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/W - Fail Them All!.pdf"
+  },
+  {
+   "id": 2904,
+   "letter": "X",
+   "title": "Tournament Seeding",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/X - Tournament Seeding.pdf"
+  },
+  {
+   "id": 2899,
+   "letter": "Y",
+   "title": "Dorm Room Divide",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/Y - Dorm Room Divide.pdf"
+  },
+  {
+   "id": 2905,
+   "letter": "Z",
+   "title": "Tree Hopping",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/Z - Tree Hopping.pdf"
+  }
+ ]
+}

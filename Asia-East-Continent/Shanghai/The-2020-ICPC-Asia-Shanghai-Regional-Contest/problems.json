@@ -1,0 +1,164 @@
+{
+ "id": 1477,
+ "name": "The 2020 ICPC Asia Shanghai Regional Contest",
+ "url": "https://qoj.ac/contest/1477",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Shanghai",
+  "ICPC/Regionals/Asia East Continent/The 2020 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1477&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://zhuanlan.zhihu.com/p/336649300"
+  }
+ ],
+ "problems": [
+  {
+   "id": 8019,
+   "letter": "A",
+   "title": "Wowoear",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Wowoear.pdf"
+  },
+  {
+   "id": 8020,
+   "letter": "B",
+   "title": "Mine Sweeper II",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Mine Sweeper II.pdf"
+  },
+  {
+   "id": 8021,
+   "letter": "C",
+   "title": "Sum of Log",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Sum of Log.pdf"
+  },
+  {
+   "id": 8022,
+   "letter": "D",
+   "title": "Walker",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Walker.pdf"
+  },
+  {
+   "id": 8023,
+   "letter": "E",
+   "title": "The Journey of Geor Autumn",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - The Journey of Geor Autumn.pdf"
+  },
+  {
+   "id": 8024,
+   "letter": "F",
+   "title": "Fountains",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fountains.pdf"
+  },
+  {
+   "id": 8025,
+   "letter": "G",
+   "title": "Fibonacci",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Fibonacci.pdf"
+  },
+  {
+   "id": 8026,
+   "letter": "H",
+   "title": "Rice Arrangement",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Rice Arrangement.pdf"
+  },
+  {
+   "id": 8027,
+   "letter": "I",
+   "title": "Sky Garden",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Sky Garden.pdf"
+  },
+  {
+   "id": 8028,
+   "letter": "J",
+   "title": "Octasection",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Octasection.pdf"
+  },
+  {
+   "id": 8029,
+   "letter": "K",
+   "title": "Traveling Merchant",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Traveling Merchant.pdf"
+  },
+  {
+   "id": 8030,
+   "letter": "L",
+   "title": "Traveling in the Grid World",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Traveling in the Grid World.pdf"
+  },
+  {
+   "id": 8031,
+   "letter": "M",
+   "title": "Gitignore",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Gitignore.pdf"
+  }
+ ]
+}

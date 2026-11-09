@@ -1,0 +1,160 @@
+{
+ "id": 1832,
+ "name": "The 2018 ICPC Asia Nanjing Regional Contest",
+ "url": "https://qoj.ac/contest/1832",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Nanjing",
+  "ICPC/Regionals/Asia East Continent/The 2018 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1832&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 8971,
+   "letter": "A",
+   "title": "Adrien and Austin",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Adrien and Austin.pdf"
+  },
+  {
+   "id": 8972,
+   "letter": "B",
+   "title": "Tournament",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Tournament.pdf"
+  },
+  {
+   "id": 8973,
+   "letter": "C",
+   "title": "Cherry and Chocolate",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cherry and Chocolate.pdf"
+  },
+  {
+   "id": 8974,
+   "letter": "D",
+   "title": "Country Meow",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Country Meow.pdf"
+  },
+  {
+   "id": 8975,
+   "letter": "E",
+   "title": "Eva and Euro coins",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Eva and Euro coins.pdf"
+  },
+  {
+   "id": 8976,
+   "letter": "F",
+   "title": "Frank",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Frank.pdf"
+  },
+  {
+   "id": 8977,
+   "letter": "G",
+   "title": "Pyramid",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Pyramid.pdf"
+  },
+  {
+   "id": 8978,
+   "letter": "H",
+   "title": "Huge Discount",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Huge Discount.pdf"
+  },
+  {
+   "id": 8979,
+   "letter": "I",
+   "title": "Magic Potion",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Magic Potion.pdf"
+  },
+  {
+   "id": 8980,
+   "letter": "J",
+   "title": "Prime Game",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Prime Game.pdf"
+  },
+  {
+   "id": 8981,
+   "letter": "K",
+   "title": "Kangaroo Puzzle",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kangaroo Puzzle.pdf"
+  },
+  {
+   "id": 8982,
+   "letter": "L",
+   "title": "Lagrange the Chef",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lagrange the Chef.pdf"
+  },
+  {
+   "id": 8983,
+   "letter": "M",
+   "title": "Mediocre String Problem",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mediocre String Problem.pdf"
+  }
+ ]
+}

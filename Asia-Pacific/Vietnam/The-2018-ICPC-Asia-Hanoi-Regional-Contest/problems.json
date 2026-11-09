@@ -1,0 +1,148 @@
+{
+ "id": 4112,
+ "name": "The 2018 ICPC Asia Hanoi Regional Contest",
+ "url": "https://qoj.ac/contest/4112",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Vietnam"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=4112&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 20125,
+   "letter": "A",
+   "title": "Amazing Adventures",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Amazing Adventures.pdf"
+  },
+  {
+   "id": 20126,
+   "letter": "B",
+   "title": "Bipartite Battle",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bipartite Battle.pdf"
+  },
+  {
+   "id": 20127,
+   "letter": "C",
+   "title": "Conquest Campaign",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Conquest Campaign.pdf"
+  },
+  {
+   "id": 20128,
+   "letter": "D",
+   "title": "Divide Doughnut",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Divide Doughnut.pdf"
+  },
+  {
+   "id": 20129,
+   "letter": "E",
+   "title": "Enjoying Elderberries",
+   "statement_pages": [
+    9,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Enjoying Elderberries.pdf"
+  },
+  {
+   "id": 20130,
+   "letter": "F",
+   "title": "Fun with Fibonacci",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fun with Fibonacci.pdf"
+  },
+  {
+   "id": 20131,
+   "letter": "G",
+   "title": "Grab a Graph",
+   "statement_pages": [
+    14,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Grab a Graph.pdf"
+  },
+  {
+   "id": 20132,
+   "letter": "H",
+   "title": "Hydra's Heads",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hydra's Heads.pdf"
+  },
+  {
+   "id": 20133,
+   "letter": "I",
+   "title": "Insider's Identity",
+   "statement_pages": [
+    19,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Insider's Identity.pdf"
+  },
+  {
+   "id": 20134,
+   "letter": "J",
+   "title": "Jurassic Jungle",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jurassic Jungle.pdf"
+  },
+  {
+   "id": 20135,
+   "letter": "K",
+   "title": "Kingdom of Kittens",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kingdom of Kittens.pdf"
+  },
+  {
+   "id": 20136,
+   "letter": "L",
+   "title": "Lazy Learner",
+   "statement_pages": [
+    24,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lazy Learner.pdf"
+  }
+ ]
+}

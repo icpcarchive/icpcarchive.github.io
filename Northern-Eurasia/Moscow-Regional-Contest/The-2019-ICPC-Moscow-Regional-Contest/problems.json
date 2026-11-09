@@ -1,0 +1,137 @@
+{
+ "id": 1790,
+ "name": "The 2019 ICPC Moscow Regional Contest",
+ "url": "https://qoj.ac/contest/1790",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Moscow Regional Contest / Moscow Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1790&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9256,
+   "letter": "A",
+   "title": "Quantum Supremacy",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Quantum Supremacy.pdf"
+  },
+  {
+   "id": 9257,
+   "letter": "B",
+   "title": "Post-capitalism",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Post-capitalism.pdf"
+  },
+  {
+   "id": 9258,
+   "letter": "C",
+   "title": "Huawei Frequencies Selection",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Huawei Frequencies Selection.pdf"
+  },
+  {
+   "id": 9259,
+   "letter": "D",
+   "title": "JCPC Registration System",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - JCPC Registration System.pdf"
+  },
+  {
+   "id": 9260,
+   "letter": "E",
+   "title": "Raiffeisenbank Logistics",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Raiffeisenbank Logistics.pdf"
+  },
+  {
+   "id": 9261,
+   "letter": "F",
+   "title": "Toll Road",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Toll Road.pdf"
+  },
+  {
+   "id": 9262,
+   "letter": "G",
+   "title": "Yandex Museum",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Yandex Museum.pdf"
+  },
+  {
+   "id": 9263,
+   "letter": "H",
+   "title": "Rebellious Sequences",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Rebellious Sequences.pdf"
+  },
+  {
+   "id": 9264,
+   "letter": "I",
+   "title": "Minimax Limit",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Minimax Limit.pdf"
+  },
+  {
+   "id": 9265,
+   "letter": "J",
+   "title": "You Are Given a Tree",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - You Are Given a Tree.pdf"
+  },
+  {
+   "id": 9266,
+   "letter": "K",
+   "title": "Dynamic Traffic with MegaFon",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Dynamic Traffic with MegaFon.pdf"
+  }
+ ]
+}

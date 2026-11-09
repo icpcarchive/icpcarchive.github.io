@@ -1,0 +1,130 @@
+{
+ "id": 198,
+ "name": "The 2013 Southwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/198",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=198&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=198&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5339,
+   "letter": "A",
+   "title": "Mixing Colours",
+   "statement_pages": [
+    3,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Mixing Colours.pdf"
+  },
+  {
+   "id": 5340,
+   "letter": "B",
+   "title": "It Can Be Arranged",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - It Can Be Arranged.pdf"
+  },
+  {
+   "id": 5341,
+   "letter": "C",
+   "title": "Shopping Malls",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Shopping Malls.pdf"
+  },
+  {
+   "id": 5342,
+   "letter": "D",
+   "title": "Decoding the Hallway",
+   "statement_pages": [
+    11,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Decoding the Hallway.pdf"
+  },
+  {
+   "id": 5343,
+   "letter": "E",
+   "title": "Joe is learning to speak",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Joe is learning to speak.pdf"
+  },
+  {
+   "id": 5344,
+   "letter": "F",
+   "title": "Odd and Even Zeroes",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Odd and Even Zeroes.pdf"
+  },
+  {
+   "id": 5345,
+   "letter": "G",
+   "title": "VivoParc",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - VivoParc.pdf"
+  },
+  {
+   "id": 5346,
+   "letter": "H",
+   "title": "Binary Tree",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Binary Tree.pdf"
+  },
+  {
+   "id": 5347,
+   "letter": "I",
+   "title": "Trending Topic",
+   "statement_pages": [
+    23,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Trending Topic.pdf"
+  },
+  {
+   "id": 5348,
+   "letter": "J",
+   "title": "Cleaning the Hallway",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Cleaning the Hallway.pdf"
+  }
+ ]
+}

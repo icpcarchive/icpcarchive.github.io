@@ -1,0 +1,115 @@
+{
+ "id": 4071,
+ "name": "The 2026 ICPC Asia East Continent Online Contest (I)",
+ "url": "https://qoj.ac/contest/4071",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent",
+  "ICPC/Regionals/Asia East Continent/The 2026 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=4071&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 20016,
+   "letter": "A",
+   "title": "Recall",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Recall.pdf"
+  },
+  {
+   "id": 20017,
+   "letter": "B",
+   "title": "Mod",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Mod.pdf"
+  },
+  {
+   "id": 20018,
+   "letter": "C",
+   "title": "Permutation Inversions",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Permutation Inversions.pdf"
+  },
+  {
+   "id": 20019,
+   "letter": "D",
+   "title": "Sequence",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Sequence.pdf"
+  },
+  {
+   "id": 20020,
+   "letter": "E",
+   "title": "LCM Permutation",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - LCM Permutation.pdf"
+  },
+  {
+   "id": 20021,
+   "letter": "F",
+   "title": "50 Years of Excellence",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - 50 Years of Excellence.pdf"
+  },
+  {
+   "id": 20022,
+   "letter": "G",
+   "title": "Toll Gates on a Tight Schedule",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Toll Gates on a Tight Schedule.pdf"
+  },
+  {
+   "id": 20023,
+   "letter": "H",
+   "title": "The First Problem",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - The First Problem.pdf"
+  },
+  {
+   "id": 20024,
+   "letter": "I",
+   "title": "A Lamp of Moon",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - A Lamp of Moon.pdf"
+  },
+  {
+   "id": 20025,
+   "letter": "J",
+   "title": "String",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - String.pdf"
+  },
+  {
+   "id": 20026,
+   "letter": "K",
+   "title": "Wolf Game",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Wolf Game.pdf"
+  },
+  {
+   "id": 20027,
+   "letter": "L",
+   "title": "Longest Common Prefix",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Longest Common Prefix.pdf"
+  },
+  {
+   "id": 20028,
+   "letter": "M",
+   "title": "Check In",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - Check In.pdf"
+  },
+  {
+   "id": 20029,
+   "letter": "N",
+   "title": "Red Sequence",
+   "statement_source": "problem page",
+   "statement_file": "problems/N - Red Sequence.pdf"
+  }
+ ]
+}

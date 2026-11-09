@@ -1,0 +1,141 @@
+{
+ "id": 561,
+ "name": "The 2020 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/561",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=561&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=561&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2360,
+   "letter": "A",
+   "title": "Atomic Energy",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Atomic Energy.pdf"
+  },
+  {
+   "id": 2361,
+   "letter": "B",
+   "title": "Bulldozer",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bulldozer.pdf"
+  },
+  {
+   "id": 2362,
+   "letter": "C",
+   "title": "Contest Struggles",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Contest Struggles.pdf"
+  },
+  {
+   "id": 2363,
+   "letter": "D",
+   "title": "Dragon Balls",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dragon Balls.pdf"
+  },
+  {
+   "id": 2364,
+   "letter": "E",
+   "title": "Endgame",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Endgame.pdf"
+  },
+  {
+   "id": 2365,
+   "letter": "F",
+   "title": "Flight Collision",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Flight Collision.pdf"
+  },
+  {
+   "id": 2366,
+   "letter": "G",
+   "title": "Great Expectations",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Great Expectations.pdf"
+  },
+  {
+   "id": 2367,
+   "letter": "H",
+   "title": "Hot Springs",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hot Springs.pdf"
+  },
+  {
+   "id": 2368,
+   "letter": "I",
+   "title": "Island Tour",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Island Tour.pdf"
+  },
+  {
+   "id": 2369,
+   "letter": "J",
+   "title": "Joint Excavation",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joint Excavation.pdf"
+  },
+  {
+   "id": 2370,
+   "letter": "K",
+   "title": "Keyboardd",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Keyboardd.pdf"
+  }
+ ]
+}

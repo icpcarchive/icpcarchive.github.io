@@ -1,0 +1,163 @@
+{
+ "id": 1984,
+ "name": "The 2024 ICPC Northern Eurasia Finals",
+ "url": "https://qoj.ac/contest/1984",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1984&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1984&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 10414,
+   "letter": "A",
+   "title": "Adrenaline Rush",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Adrenaline Rush.pdf"
+  },
+  {
+   "id": 10415,
+   "letter": "B",
+   "title": "BitBitJump",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - BitBitJump.pdf"
+  },
+  {
+   "id": 10416,
+   "letter": "C",
+   "title": "Cactus without Bridges",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cactus without Bridges.pdf"
+  },
+  {
+   "id": 10417,
+   "letter": "D",
+   "title": "DAG Serialization",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - DAG Serialization.pdf"
+  },
+  {
+   "id": 10418,
+   "letter": "E",
+   "title": "Expression Correction",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Expression Correction.pdf"
+  },
+  {
+   "id": 10419,
+   "letter": "F",
+   "title": "Fix Flooded Floor",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fix Flooded Floor.pdf"
+  },
+  {
+   "id": 10420,
+   "letter": "G",
+   "title": "Geometric Balance",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Geometric Balance.pdf"
+  },
+  {
+   "id": 10421,
+   "letter": "H",
+   "title": "Hunting Hoglins in Hogwarts",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hunting Hoglins in Hogwarts.pdf"
+  },
+  {
+   "id": 10422,
+   "letter": "I",
+   "title": "Incompetent Delivery Guy",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Incompetent Delivery Guy.pdf"
+  },
+  {
+   "id": 10423,
+   "letter": "J",
+   "title": "Judicious Watching",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Judicious Watching.pdf"
+  },
+  {
+   "id": 10424,
+   "letter": "K",
+   "title": "Knowns and Unknowns",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Knowns and Unknowns.pdf"
+  },
+  {
+   "id": 10425,
+   "letter": "L",
+   "title": "Legacy Screensaver",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Legacy Screensaver.pdf"
+  },
+  {
+   "id": 10426,
+   "letter": "M",
+   "title": "Managing Cluster",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Managing Cluster.pdf"
+  }
+ ]
+}

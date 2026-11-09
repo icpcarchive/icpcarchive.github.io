@@ -1,0 +1,141 @@
+{
+ "id": 2754,
+ "name": "The 2014 Nordic Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/2754",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Nordic Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2754&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2754&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16033,
+   "letter": "A",
+   "title": "Amanda Lounges",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Amanda Lounges.pdf"
+  },
+  {
+   "id": 16034,
+   "letter": "B",
+   "title": "Basin City Surveillance",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Basin City Surveillance.pdf"
+  },
+  {
+   "id": 16035,
+   "letter": "C",
+   "title": "Catalan Square",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Catalan Square.pdf"
+  },
+  {
+   "id": 16036,
+   "letter": "D",
+   "title": "Dice Game",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dice Game.pdf"
+  },
+  {
+   "id": 16037,
+   "letter": "E",
+   "title": "Opening Ceremony",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Opening Ceremony.pdf"
+  },
+  {
+   "id": 16038,
+   "letter": "F",
+   "title": "Particle Swapping",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Particle Swapping.pdf"
+  },
+  {
+   "id": 16039,
+   "letter": "G",
+   "title": "Outing",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Outing.pdf"
+  },
+  {
+   "id": 16040,
+   "letter": "H",
+   "title": "Clock Pictures",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Clock Pictures.pdf"
+  },
+  {
+   "id": 16041,
+   "letter": "I",
+   "title": "How many squares?",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - How many squares_.pdf"
+  },
+  {
+   "id": 16042,
+   "letter": "J",
+   "title": "Road Work",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Road Work.pdf"
+  },
+  {
+   "id": 16043,
+   "letter": "K",
+   "title": "Train Passengers",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Train Passengers.pdf"
+  }
+ ]
+}

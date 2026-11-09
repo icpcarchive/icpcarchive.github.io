@@ -1,0 +1,102 @@
+{
+ "id": 4620,
+ "name": "Rocky Mountain 2026",
+ "url": "https://qoj.ac/contest/4620",
+ "categories": [
+  "ICPC/Regionals/North America/Rocky Mountain"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 23995,
+   "letter": "A",
+   "title": "Asynchronous Update",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Asynchronous Update.pdf"
+  },
+  {
+   "id": 23996,
+   "letter": "B",
+   "title": "Barista Schedule",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Barista Schedule.pdf"
+  },
+  {
+   "id": 23997,
+   "letter": "C",
+   "title": "Betting Simulation",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Betting Simulation.pdf"
+  },
+  {
+   "id": 23998,
+   "letter": "D",
+   "title": "Fibonacho",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Fibonacho.pdf"
+  },
+  {
+   "id": 23999,
+   "letter": "E",
+   "title": "Game Show Guessing",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Game Show Guessing.pdf"
+  },
+  {
+   "id": 24000,
+   "letter": "F",
+   "title": "ICPC Teams",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - ICPC Teams.pdf"
+  },
+  {
+   "id": 24002,
+   "letter": "G",
+   "title": "Permutastic",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Permutastic.pdf"
+  },
+  {
+   "id": 24003,
+   "letter": "H",
+   "title": "Rotate Puzzle",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Rotate Puzzle.pdf"
+  },
+  {
+   "id": 24004,
+   "letter": "I",
+   "title": "Rotation Collation",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Rotation Collation.pdf"
+  },
+  {
+   "id": 24005,
+   "letter": "J",
+   "title": "Textbook Display",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Textbook Display.pdf"
+  },
+  {
+   "id": 24001,
+   "letter": "K",
+   "title": "Minimum Transfer Wait",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Minimum Transfer Wait.pdf"
+  },
+  {
+   "id": 24006,
+   "letter": "L",
+   "title": "Vacuum A Round",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Vacuum A Round.pdf"
+  },
+  {
+   "id": 24007,
+   "letter": "M",
+   "title": "XOR Sharing",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - XOR Sharing.pdf"
+  }
+ ]
+}

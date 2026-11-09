@@ -1,0 +1,163 @@
+{
+ "id": 688,
+ "name": "North America Division Championship 2021",
+ "url": "https://qoj.ac/contest/688",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=688&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=688&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 1941,
+   "letter": "A",
+   "title": "Alien Microwave",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Alien Microwave.pdf"
+  },
+  {
+   "id": 1942,
+   "letter": "B",
+   "title": "Another Substring Query Problem",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Another Substring Query Problem.pdf"
+  },
+  {
+   "id": 1943,
+   "letter": "C",
+   "title": "Borders",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Borders.pdf"
+  },
+  {
+   "id": 1944,
+   "letter": "D",
+   "title": "Circle of Friends",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Circle of Friends.pdf"
+  },
+  {
+   "id": 1945,
+   "letter": "E",
+   "title": "Finding Polly",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Finding Polly.pdf"
+  },
+  {
+   "id": 1946,
+   "letter": "F",
+   "title": "Investigating Imposters",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Investigating Imposters.pdf"
+  },
+  {
+   "id": 1947,
+   "letter": "G",
+   "title": "Laptop Sticker",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Laptop Sticker.pdf"
+  },
+  {
+   "id": 1948,
+   "letter": "H",
+   "title": "Longest Common Substring",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Longest Common Substring.pdf"
+  },
+  {
+   "id": 1949,
+   "letter": "I",
+   "title": "Simple Cron Spec",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Simple Cron Spec.pdf"
+  },
+  {
+   "id": 1950,
+   "letter": "J",
+   "title": "Surveillance",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Surveillance.pdf"
+  },
+  {
+   "id": 1951,
+   "letter": "K",
+   "title": "Train Line",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Train Line.pdf"
+  },
+  {
+   "id": 1952,
+   "letter": "L",
+   "title": "Window Shopping",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Window Shopping.pdf"
+  },
+  {
+   "id": 1953,
+   "letter": "M",
+   "title": "You Be the Judge!",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - You Be the Judge!.pdf"
+  }
+ ]
+}

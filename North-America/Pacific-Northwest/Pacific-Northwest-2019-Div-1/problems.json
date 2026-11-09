@@ -1,0 +1,163 @@
+{
+ "id": 480,
+ "name": "Pacific Northwest 2019 (Div. 1)",
+ "url": "https://qoj.ac/contest/480",
+ "categories": [
+  "ICPC/Regionals/North America/Pacific Northwest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=480&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=480&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5718,
+   "letter": "A",
+   "title": "Radio Prize",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Radio Prize.pdf"
+  },
+  {
+   "id": 5719,
+   "letter": "B",
+   "title": "Perfect Flush",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Perfect Flush.pdf"
+  },
+  {
+   "id": 5720,
+   "letter": "C",
+   "title": "Coloring Contention",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Coloring Contention.pdf"
+  },
+  {
+   "id": 5721,
+   "letter": "D",
+   "title": "Dividing by Two",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dividing by Two.pdf"
+  },
+  {
+   "id": 5722,
+   "letter": "E",
+   "title": "Rainbow Strings",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Rainbow Strings.pdf"
+  },
+  {
+   "id": 5723,
+   "letter": "F",
+   "title": "Carny Magician",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Carny Magician.pdf"
+  },
+  {
+   "id": 5724,
+   "letter": "G",
+   "title": "Glow, Little Pixel, Glow",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Glow, Little Pixel, Glow.pdf"
+  },
+  {
+   "id": 5725,
+   "letter": "H",
+   "title": "Pivoting Points",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Pivoting Points.pdf"
+  },
+  {
+   "id": 5726,
+   "letter": "I",
+   "title": "Error Correction",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Error Correction.pdf"
+  },
+  {
+   "id": 5727,
+   "letter": "J",
+   "title": "Interstellar Travel",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Interstellar Travel.pdf"
+  },
+  {
+   "id": 5728,
+   "letter": "K",
+   "title": "Computer Cache",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Computer Cache.pdf"
+  },
+  {
+   "id": 5729,
+   "letter": "L",
+   "title": "Carry Cam Failure",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Carry Cam Failure.pdf"
+  },
+  {
+   "id": 5730,
+   "letter": "M",
+   "title": "Maze Connect",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Maze Connect.pdf"
+  }
+ ]
+}

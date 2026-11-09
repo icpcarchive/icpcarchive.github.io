@@ -1,0 +1,126 @@
+{
+ "id": 1632,
+ "name": "East Central NA 2017",
+ "url": "https://qoj.ac/contest/1632",
+ "categories": [
+  "ICPC/Regionals/North America/East Central NA"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1632&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 8652,
+   "letter": "A",
+   "title": "Abstract Art",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Abstract Art.pdf"
+  },
+  {
+   "id": 8653,
+   "letter": "B",
+   "title": "Craters",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Craters.pdf"
+  },
+  {
+   "id": 8654,
+   "letter": "C",
+   "title": "DRM Messages",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - DRM Messages.pdf"
+  },
+  {
+   "id": 8655,
+   "letter": "D",
+   "title": "Game of Throwns",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Game of Throwns.pdf"
+  },
+  {
+   "id": 8656,
+   "letter": "E",
+   "title": "Is-A? Has-A? Who Knowz-A?",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Is-A_ Has-A_ Who Knowz-A_.pdf"
+  },
+  {
+   "id": 8657,
+   "letter": "F",
+   "title": "Keeping On Track",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Keeping On Track.pdf"
+  },
+  {
+   "id": 8658,
+   "letter": "G",
+   "title": "A Question of Ingestion",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - A Question of Ingestion.pdf"
+  },
+  {
+   "id": 8659,
+   "letter": "H",
+   "title": "Sheba’s Amoebas",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Sheba’s Amoebas.pdf"
+  },
+  {
+   "id": 8660,
+   "letter": "I",
+   "title": "Twenty Four, Again",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Twenty Four, Again.pdf"
+  },
+  {
+   "id": 8661,
+   "letter": "J",
+   "title": "Workout for a Dumbbell",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Workout for a Dumbbell.pdf"
+  }
+ ]
+}

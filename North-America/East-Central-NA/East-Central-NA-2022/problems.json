@@ -1,0 +1,95 @@
+{
+ "id": 1122,
+ "name": "East Central NA 2022",
+ "url": "https://qoj.ac/contest/1122",
+ "categories": [
+  "ICPC/Regionals/North America/East Central NA"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 5605,
+   "letter": "A",
+   "title": "A-Mazing Puzzle",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - A-Mazing Puzzle.pdf"
+  },
+  {
+   "id": 5606,
+   "letter": "B",
+   "title": "A Musical Question",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - A Musical Question.pdf"
+  },
+  {
+   "id": 5607,
+   "letter": "C",
+   "title": "Cribbage On Steroids",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Cribbage On Steroids.pdf"
+  },
+  {
+   "id": 5608,
+   "letter": "D",
+   "title": "Determining Nucleotide Assortments",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Determining Nucleotide Assortments.pdf"
+  },
+  {
+   "id": 5609,
+   "letter": "E",
+   "title": "Hilbert's Hedge Maze",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Hilbert's Hedge Maze.pdf"
+  },
+  {
+   "id": 5610,
+   "letter": "F",
+   "title": "It's About Time",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - It's About Time.pdf"
+  },
+  {
+   "id": 5611,
+   "letter": "G",
+   "title": "Pea Pattern",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Pea Pattern.pdf"
+  },
+  {
+   "id": 5612,
+   "letter": "H",
+   "title": "Picking Up Steam",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Picking Up Steam.pdf"
+  },
+  {
+   "id": 5613,
+   "letter": "I",
+   "title": "Road To Savings",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Road To Savings.pdf"
+  },
+  {
+   "id": 5614,
+   "letter": "J",
+   "title": "Simple Solitaire",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Simple Solitaire.pdf"
+  },
+  {
+   "id": 5615,
+   "letter": "K",
+   "title": "Two Charts Become One",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Two Charts Become One.pdf"
+  },
+  {
+   "id": 5616,
+   "letter": "L",
+   "title": "Which Warehouse?",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Which Warehouse_.pdf"
+  }
+ ]
+}

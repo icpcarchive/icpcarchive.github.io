@@ -1,0 +1,119 @@
+{
+ "id": 3899,
+ "name": "The 2009 ICPC Benelux Algorithm Programming Contest (BAPC 2009)",
+ "url": "https://qoj.ac/contest/3899",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3899&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3899&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19230,
+   "letter": "A",
+   "title": "Penguin Bashing",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Penguin Bashing.pdf"
+  },
+  {
+   "id": 19231,
+   "letter": "B",
+   "title": "Gearbox",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Gearbox.pdf"
+  },
+  {
+   "id": 19232,
+   "letter": "C",
+   "title": "Escape from the Minefield",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Escape from the Minefield.pdf"
+  },
+  {
+   "id": 19233,
+   "letter": "D",
+   "title": "Baby's Blocks",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Baby's Blocks.pdf"
+  },
+  {
+   "id": 19234,
+   "letter": "E",
+   "title": "The Pharaoh's Curse",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - The Pharaoh's Curse.pdf"
+  },
+  {
+   "id": 19235,
+   "letter": "F",
+   "title": "Dimensional Warp Drive",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Dimensional Warp Drive.pdf"
+  },
+  {
+   "id": 19236,
+   "letter": "G",
+   "title": "Fractal Streets",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Fractal Streets.pdf"
+  },
+  {
+   "id": 19237,
+   "letter": "H",
+   "title": "No Smoking, Please",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - No Smoking, Please.pdf"
+  },
+  {
+   "id": 19238,
+   "letter": "I",
+   "title": "Arctic Polar Explorer",
+   "statement_pages": [
+    17,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Arctic Polar Explorer.pdf"
+  }
+ ]
+}

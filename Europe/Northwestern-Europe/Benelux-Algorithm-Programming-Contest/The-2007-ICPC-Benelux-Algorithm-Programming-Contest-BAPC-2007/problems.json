@@ -1,0 +1,126 @@
+{
+ "id": 3901,
+ "name": "The 2007 ICPC Benelux Algorithm Programming Contest (BAPC 2007)",
+ "url": "https://qoj.ac/contest/3901",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3901&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19212,
+   "letter": "A",
+   "title": "Average distance",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Average distance.pdf"
+  },
+  {
+   "id": 19213,
+   "letter": "B",
+   "title": "Bus Pass",
+   "statement_pages": [
+    5,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bus Pass.pdf"
+  },
+  {
+   "id": 19214,
+   "letter": "C",
+   "title": "Cutting Banknotes",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cutting Banknotes.pdf"
+  },
+  {
+   "id": 19215,
+   "letter": "D",
+   "title": "Dice Password Security",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dice Password Security.pdf"
+  },
+  {
+   "id": 19216,
+   "letter": "E",
+   "title": "Lingo",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Lingo.pdf"
+  },
+  {
+   "id": 19217,
+   "letter": "F",
+   "title": "Splitting the Loot",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Splitting the Loot.pdf"
+  },
+  {
+   "id": 19218,
+   "letter": "G",
+   "title": "Pachinko",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Pachinko.pdf"
+  },
+  {
+   "id": 19219,
+   "letter": "H",
+   "title": "Hiking",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hiking.pdf"
+  },
+  {
+   "id": 19220,
+   "letter": "I",
+   "title": "Ranking",
+   "statement_pages": [
+    21,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Ranking.pdf"
+  },
+  {
+   "id": 19221,
+   "letter": "J",
+   "title": "Stock",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Stock.pdf"
+  }
+ ]
+}

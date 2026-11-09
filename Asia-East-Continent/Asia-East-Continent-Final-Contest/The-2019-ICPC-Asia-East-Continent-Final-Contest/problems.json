@@ -1,0 +1,164 @@
+{
+ "id": 1039,
+ "name": "The 2019 ICPC Asia East Continent Final Contest",
+ "url": "https://qoj.ac/contest/1039",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent",
+  "ICPC/Regionals/Asia East Continent/The 2019 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1039&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1039&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5038,
+   "letter": "A",
+   "title": "City",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - City.pdf"
+  },
+  {
+   "id": 5039,
+   "letter": "B",
+   "title": "Black and White",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Black and White.pdf"
+  },
+  {
+   "id": 5040,
+   "letter": "C",
+   "title": "Dirichlet $k$-th root",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Dirichlet $k$-th root.pdf"
+  },
+  {
+   "id": 5041,
+   "letter": "D",
+   "title": "Fire",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Fire.pdf"
+  },
+  {
+   "id": 5042,
+   "letter": "E",
+   "title": "Flow",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Flow.pdf"
+  },
+  {
+   "id": 5043,
+   "letter": "F",
+   "title": "Game",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Game.pdf"
+  },
+  {
+   "id": 5044,
+   "letter": "G",
+   "title": "Happiness",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Happiness.pdf"
+  },
+  {
+   "id": 5045,
+   "letter": "H",
+   "title": "King",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - King.pdf"
+  },
+  {
+   "id": 5046,
+   "letter": "I",
+   "title": "Moon",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Moon.pdf"
+  },
+  {
+   "id": 5047,
+   "letter": "J",
+   "title": "Permutation",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Permutation.pdf"
+  },
+  {
+   "id": 5048,
+   "letter": "K",
+   "title": "All Pair Maximum Flow",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - All Pair Maximum Flow.pdf"
+  },
+  {
+   "id": 5049,
+   "letter": "L",
+   "title": "Travel",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Travel.pdf"
+  },
+  {
+   "id": 5050,
+   "letter": "M",
+   "title": "Value",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Value.pdf"
+  }
+ ]
+}

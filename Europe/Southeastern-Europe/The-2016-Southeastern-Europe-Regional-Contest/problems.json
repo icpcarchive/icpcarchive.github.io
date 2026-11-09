@@ -1,0 +1,137 @@
+{
+ "id": 2701,
+ "name": "The 2016 Southeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2701",
+ "categories": [
+  "ICPC/Regionals/Europe/Southeastern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2701&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15560,
+   "letter": "A",
+   "title": "Three Squares",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Three Squares.pdf"
+  },
+  {
+   "id": 15561,
+   "letter": "B",
+   "title": "Favorite music",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Favorite music.pdf"
+  },
+  {
+   "id": 15562,
+   "letter": "C",
+   "title": "Castle",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Castle.pdf"
+  },
+  {
+   "id": 15563,
+   "letter": "D",
+   "title": "Reading Digits",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Reading Digits.pdf"
+  },
+  {
+   "id": 15564,
+   "letter": "E",
+   "title": "Exam",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Exam.pdf"
+  },
+  {
+   "id": 15565,
+   "letter": "F",
+   "title": "Letters",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Letters.pdf"
+  },
+  {
+   "id": 15566,
+   "letter": "G",
+   "title": "Pokemons",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Pokemons.pdf"
+  },
+  {
+   "id": 15567,
+   "letter": "H",
+   "title": "Pub crawl",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Pub crawl.pdf"
+  },
+  {
+   "id": 15568,
+   "letter": "I",
+   "title": "Cubes",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Cubes.pdf"
+  },
+  {
+   "id": 15569,
+   "letter": "J",
+   "title": "Marathon",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Marathon.pdf"
+  },
+  {
+   "id": 15570,
+   "letter": "K",
+   "title": "Cutting",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Cutting.pdf"
+  }
+ ]
+}

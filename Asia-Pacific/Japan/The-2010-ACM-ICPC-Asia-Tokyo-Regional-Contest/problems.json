@@ -1,0 +1,81 @@
+{
+ "id": 3710,
+ "name": "The 2010 ACM-ICPC Asia Tokyo Regional Contest",
+ "url": "https://qoj.ac/contest/3710",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 17517,
+   "letter": "A",
+   "title": "Membership Management",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Membership Management.pdf"
+  },
+  {
+   "id": 17518,
+   "letter": "B",
+   "title": "Balloon Collecting",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Balloon Collecting.pdf"
+  },
+  {
+   "id": 17519,
+   "letter": "C",
+   "title": "Towns along a Highway",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Towns along a Highway.pdf"
+  },
+  {
+   "id": 17520,
+   "letter": "D",
+   "title": "Awkward Lights",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Awkward Lights.pdf"
+  },
+  {
+   "id": 17521,
+   "letter": "E",
+   "title": "The Two Men of the Japanese Alps",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - The Two Men of the Japanese Alps.pdf"
+  },
+  {
+   "id": 17522,
+   "letter": "F",
+   "title": "Find the Multiples",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Find the Multiples.pdf"
+  },
+  {
+   "id": 17523,
+   "letter": "G",
+   "title": "Test Case Tweaking",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Test Case Tweaking.pdf"
+  },
+  {
+   "id": 17524,
+   "letter": "H",
+   "title": "Where's Wally",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Where's Wally.pdf"
+  },
+  {
+   "id": 17525,
+   "letter": "I",
+   "title": "Intersection of Two Prisms",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Intersection of Two Prisms.pdf"
+  },
+  {
+   "id": 17526,
+   "letter": "J",
+   "title": "Matrix Calculator",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Matrix Calculator.pdf"
+  }
+ ]
+}

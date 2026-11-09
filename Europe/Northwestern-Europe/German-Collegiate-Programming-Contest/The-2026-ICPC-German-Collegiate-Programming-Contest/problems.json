@@ -1,0 +1,163 @@
+{
+ "id": 3957,
+ "name": "The 2026 ICPC German Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/3957",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/German Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3957&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3957&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19059,
+   "letter": "A",
+   "title": "Attracting Attendees",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Attracting Attendees.pdf"
+  },
+  {
+   "id": 19060,
+   "letter": "B",
+   "title": "Bye Bye Bilbo",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bye Bye Bilbo.pdf"
+  },
+  {
+   "id": 19061,
+   "letter": "C",
+   "title": "Crosses and Circles",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Crosses and Circles.pdf"
+  },
+  {
+   "id": 19062,
+   "letter": "D",
+   "title": "Delphi Danger",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Delphi Danger.pdf"
+  },
+  {
+   "id": 19063,
+   "letter": "E",
+   "title": "Egocentric Expedition",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Egocentric Expedition.pdf"
+  },
+  {
+   "id": 19064,
+   "letter": "F",
+   "title": "Fighting Fraud",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fighting Fraud.pdf"
+  },
+  {
+   "id": 19065,
+   "letter": "G",
+   "title": "Garbled Garden",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Garbled Garden.pdf"
+  },
+  {
+   "id": 19066,
+   "letter": "H",
+   "title": "Historical Hits",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Historical Hits.pdf"
+  },
+  {
+   "id": 19067,
+   "letter": "I",
+   "title": "Incremented Itinerary",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Incremented Itinerary.pdf"
+  },
+  {
+   "id": 19068,
+   "letter": "J",
+   "title": "Junior Joining",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Junior Joining.pdf"
+  },
+  {
+   "id": 19069,
+   "letter": "K",
+   "title": "Keeping Cows",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Keeping Cows.pdf"
+  },
+  {
+   "id": 19070,
+   "letter": "L",
+   "title": "Lyrical Leisure",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lyrical Leisure.pdf"
+  },
+  {
+   "id": 19071,
+   "letter": "M",
+   "title": "Mirror Magic",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mirror Magic.pdf"
+  }
+ ]
+}

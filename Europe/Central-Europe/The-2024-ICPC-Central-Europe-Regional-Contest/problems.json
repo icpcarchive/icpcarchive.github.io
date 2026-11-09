@@ -1,0 +1,152 @@
+{
+ "id": 1924,
+ "name": "The 2024 ICPC Central Europe Regional Contest",
+ "url": "https://qoj.ac/contest/1924",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1924&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1924&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 10114,
+   "letter": "A",
+   "title": "Anthem",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Anthem.pdf"
+  },
+  {
+   "id": 10115,
+   "letter": "B",
+   "title": "Bad Digits",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bad Digits.pdf"
+  },
+  {
+   "id": 10116,
+   "letter": "C",
+   "title": "CERC Plaques",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - CERC Plaques.pdf"
+  },
+  {
+   "id": 10117,
+   "letter": "D",
+   "title": "Divisors",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Divisors.pdf"
+  },
+  {
+   "id": 10118,
+   "letter": "E",
+   "title": "Expression",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Expression.pdf"
+  },
+  {
+   "id": 10119,
+   "letter": "F",
+   "title": "Flats",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Flats.pdf"
+  },
+  {
+   "id": 10120,
+   "letter": "G",
+   "title": "Groceries",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Groceries.pdf"
+  },
+  {
+   "id": 10121,
+   "letter": "H",
+   "title": "Hues",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hues.pdf"
+  },
+  {
+   "id": 10122,
+   "letter": "I",
+   "title": "Illuminati",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Illuminati.pdf"
+  },
+  {
+   "id": 10123,
+   "letter": "J",
+   "title": "Just Mining",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Just Mining.pdf"
+  },
+  {
+   "id": 10124,
+   "letter": "K",
+   "title": "King's Festival",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - King's Festival.pdf"
+  },
+  {
+   "id": 10125,
+   "letter": "L",
+   "title": "Labyrinth",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Labyrinth.pdf"
+  }
+ ]
+}

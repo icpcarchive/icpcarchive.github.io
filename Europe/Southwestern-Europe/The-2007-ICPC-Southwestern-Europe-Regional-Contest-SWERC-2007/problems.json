@@ -1,0 +1,79 @@
+{
+ "id": 3690,
+ "name": "The 2007 ICPC Southwestern Europe Regional Contest (SWERC 2007)",
+ "url": "https://qoj.ac/contest/3690",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3690&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19859,
+   "letter": "A",
+   "title": "BEATBIT",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - BEATBIT.pdf"
+  },
+  {
+   "id": 19860,
+   "letter": "B",
+   "title": "Prester John",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Prester John.pdf"
+  },
+  {
+   "id": 19861,
+   "letter": "C",
+   "title": "Robotruck",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Robotruck.pdf"
+  },
+  {
+   "id": 19862,
+   "letter": "D",
+   "title": "Jumping Hero",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Jumping Hero.pdf"
+  },
+  {
+   "id": 19863,
+   "letter": "E",
+   "title": "Board Games",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Board Games.pdf"
+  },
+  {
+   "id": 19864,
+   "letter": "F",
+   "title": "The Bridges of Kolsberg",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - The Bridges of Kolsberg.pdf"
+  },
+  {
+   "id": 19865,
+   "letter": "G",
+   "title": "The Finest Chef",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - The Finest Chef.pdf"
+  },
+  {
+   "id": 19866,
+   "letter": "H",
+   "title": "IP-TV",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - IP-TV.pdf"
+  },
+  {
+   "id": 19867,
+   "letter": "I",
+   "title": "Ladies' Choice",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Ladies' Choice.pdf"
+  }
+ ]
+}

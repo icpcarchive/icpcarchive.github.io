@@ -1,0 +1,159 @@
+{
+ "id": 864,
+ "name": "East Central NA 2021",
+ "url": "https://qoj.ac/contest/864",
+ "categories": [
+  "ICPC/Regionals/North America/East Central NA"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=864&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2945,
+   "letter": "A",
+   "title": "1's For All",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - 1's For All.pdf"
+  },
+  {
+   "id": 2946,
+   "letter": "B",
+   "title": "Abridged Reading",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Abridged Reading.pdf"
+  },
+  {
+   "id": 2947,
+   "letter": "C",
+   "title": "Ball of Whacks",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Ball of Whacks.pdf"
+  },
+  {
+   "id": 2948,
+   "letter": "D",
+   "title": "Downsizing",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Downsizing.pdf"
+  },
+  {
+   "id": 2949,
+   "letter": "E",
+   "title": "Gambling Game",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Gambling Game.pdf"
+  },
+  {
+   "id": 2950,
+   "letter": "F",
+   "title": "Growing Some Oobleck",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Growing Some Oobleck.pdf"
+  },
+  {
+   "id": 2951,
+   "letter": "G",
+   "title": "Noonerized Spumbers",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Noonerized Spumbers.pdf"
+  },
+  {
+   "id": 2952,
+   "letter": "H",
+   "title": "Numble",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Numble.pdf"
+  },
+  {
+   "id": 2953,
+   "letter": "I",
+   "title": "Pinned Files",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Pinned Files.pdf"
+  },
+  {
+   "id": 2954,
+   "letter": "J",
+   "title": "Recycling",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Recycling.pdf"
+  },
+  {
+   "id": 2955,
+   "letter": "K",
+   "title": "Stable Table",
+   "statement_pages": [
+    24,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Stable Table.pdf"
+  },
+  {
+   "id": 2956,
+   "letter": "L",
+   "title": "Statues",
+   "statement_pages": [
+    26,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Statues.pdf"
+  },
+  {
+   "id": 2957,
+   "letter": "M",
+   "title": "Tomb Hater",
+   "statement_pages": [
+    28,
+    29
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Tomb Hater.pdf"
+  }
+ ]
+}

@@ -1,0 +1,163 @@
+{
+ "id": 2151,
+ "name": "Rocky Mountain 2024",
+ "url": "https://qoj.ac/contest/2151",
+ "categories": [
+  "ICPC/Regionals/North America/Rocky Mountain"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2151&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2151&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 12182,
+   "letter": "A",
+   "title": "Airfare Grants",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Airfare Grants.pdf"
+  },
+  {
+   "id": 12183,
+   "letter": "B",
+   "title": "Always Know Where Your Towel Is",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Always Know Where Your Towel Is.pdf"
+  },
+  {
+   "id": 12184,
+   "letter": "C",
+   "title": "Big And",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Big And.pdf"
+  },
+  {
+   "id": 12185,
+   "letter": "D",
+   "title": "Emoticons",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Emoticons.pdf"
+  },
+  {
+   "id": 12186,
+   "letter": "E",
+   "title": "Enchanted Maze",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Enchanted Maze.pdf"
+  },
+  {
+   "id": 12187,
+   "letter": "F",
+   "title": "Garage Door Code",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Garage Door Code.pdf"
+  },
+  {
+   "id": 12188,
+   "letter": "G",
+   "title": "Palindromic Word Search",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Palindromic Word Search.pdf"
+  },
+  {
+   "id": 12189,
+   "letter": "H",
+   "title": "Pillow Stacking",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Pillow Stacking.pdf"
+  },
+  {
+   "id": 12190,
+   "letter": "I",
+   "title": "Rectangle Tiling",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Rectangle Tiling.pdf"
+  },
+  {
+   "id": 12191,
+   "letter": "J",
+   "title": "Rocky Mountain",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Rocky Mountain.pdf"
+  },
+  {
+   "id": 12192,
+   "letter": "K",
+   "title": "Sandwich Art",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Sandwich Art.pdf"
+  },
+  {
+   "id": 12193,
+   "letter": "L",
+   "title": "Sauna",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Sauna.pdf"
+  },
+  {
+   "id": 12194,
+   "letter": "M",
+   "title": "Space Elevator",
+   "statement_pages": [
+    29,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Space Elevator.pdf"
+  }
+ ]
+}

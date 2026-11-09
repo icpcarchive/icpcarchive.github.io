@@ -1,0 +1,159 @@
+{
+ "id": 1953,
+ "name": "Pacific Northwest 2024 (Div. 2)",
+ "url": "https://qoj.ac/contest/1953",
+ "categories": [
+  "ICPC/Regionals/North America/Pacific Northwest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1953&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 10585,
+   "letter": "A",
+   "title": "Big Integers",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Big Integers.pdf"
+  },
+  {
+   "id": 10586,
+   "letter": "B",
+   "title": "Bus Assignment",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bus Assignment.pdf"
+  },
+  {
+   "id": 10592,
+   "letter": "C",
+   "title": "Generalized FizzBuzz",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Generalized FizzBuzz.pdf"
+  },
+  {
+   "id": 10594,
+   "letter": "D",
+   "title": "Intuitive Elements",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Intuitive Elements.pdf"
+  },
+  {
+   "id": 10595,
+   "letter": "E",
+   "title": "Mouse Pursuit",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Mouse Pursuit.pdf"
+  },
+  {
+   "id": 10597,
+   "letter": "F",
+   "title": "Ruffians",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Ruffians.pdf"
+  },
+  {
+   "id": 10598,
+   "letter": "G",
+   "title": "Sleeping on the Train",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Sleeping on the Train.pdf"
+  },
+  {
+   "id": 10587,
+   "letter": "H",
+   "title": "Champernowne Subsequence",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Champernowne Subsequence.pdf"
+  },
+  {
+   "id": 10589,
+   "letter": "I",
+   "title": "Exact Change",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Exact Change.pdf"
+  },
+  {
+   "id": 10593,
+   "letter": "J",
+   "title": "Homework Help",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Homework Help.pdf"
+  },
+  {
+   "id": 10596,
+   "letter": "K",
+   "title": "Rainbow Bowl Ranges",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Rainbow Bowl Ranges.pdf"
+  },
+  {
+   "id": 10599,
+   "letter": "L",
+   "title": "Taking Out the Trash",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Taking Out the Trash.pdf"
+  },
+  {
+   "id": 10601,
+   "letter": "M",
+   "title": "Word Game",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Word Game.pdf"
+  }
+ ]
+}

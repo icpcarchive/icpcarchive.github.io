@@ -1,0 +1,104 @@
+{
+ "id": 3505,
+ "name": "Mid-Atlantic USA 2024 (Div. 2)",
+ "url": "https://qoj.ac/contest/3505",
+ "categories": [
+  "ICPC/Regionals/North America/Mid-Atlantic USA",
+  "ICPC/Regionals/North America/Southeast USA",
+  "ICPC/Regionals/North America/South Central USA"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 16821,
+   "letter": "A",
+   "title": "Welcome Sign",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Welcome Sign.pdf"
+  },
+  {
+   "id": 16822,
+   "letter": "B",
+   "title": "Triangles of a Square",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Triangles of a Square.pdf"
+  },
+  {
+   "id": 16823,
+   "letter": "C",
+   "title": "Traffic Lights",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Traffic Lights.pdf"
+  },
+  {
+   "id": 16824,
+   "letter": "D",
+   "title": "Duel of Cards",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Duel of Cards.pdf"
+  },
+  {
+   "id": 16825,
+   "letter": "E",
+   "title": "Which One is Larger",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Which One is Larger.pdf"
+  },
+  {
+   "id": 16826,
+   "letter": "F",
+   "title": "Office Building",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Office Building.pdf"
+  },
+  {
+   "id": 16827,
+   "letter": "G",
+   "title": "Intergalactic Team",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Intergalactic Team.pdf"
+  },
+  {
+   "id": 16828,
+   "letter": "H",
+   "title": "Herb Mixing",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Herb Mixing.pdf"
+  },
+  {
+   "id": 16829,
+   "letter": "I",
+   "title": "Island Memories",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Island Memories.pdf"
+  },
+  {
+   "id": 16830,
+   "letter": "J",
+   "title": "Perfect Squares",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Perfect Squares.pdf"
+  },
+  {
+   "id": 16837,
+   "letter": "K",
+   "title": "Optimized Cheating",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Optimized Cheating.pdf"
+  },
+  {
+   "id": 16831,
+   "letter": "L",
+   "title": "Pianissimo",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Pianissimo.pdf"
+  },
+  {
+   "id": 16832,
+   "letter": "M",
+   "title": "Memories of Passport Stamps",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - Memories of Passport Stamps.pdf"
+  }
+ ]
+}

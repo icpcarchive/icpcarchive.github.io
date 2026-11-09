@@ -1,0 +1,95 @@
+{
+ "id": 2341,
+ "name": "The 2019 ICPC Asia Jakarta Regional Contest",
+ "url": "https://qoj.ac/contest/2341",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Indonesia"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 13141,
+   "letter": "A",
+   "title": "Copying Homework",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Copying Homework.pdf"
+  },
+  {
+   "id": 13142,
+   "letter": "B",
+   "title": "Cleaning Robots",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Cleaning Robots.pdf"
+  },
+  {
+   "id": 13143,
+   "letter": "C",
+   "title": "Even Path",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Even Path.pdf"
+  },
+  {
+   "id": 13144,
+   "letter": "D",
+   "title": "Find String in a Grid",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Find String in a Grid.pdf"
+  },
+  {
+   "id": 13145,
+   "letter": "E",
+   "title": "Songwriter",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Songwriter.pdf"
+  },
+  {
+   "id": 13146,
+   "letter": "F",
+   "title": "Regular Forestation",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Regular Forestation.pdf"
+  },
+  {
+   "id": 13147,
+   "letter": "G",
+   "title": "Performance Review",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Performance Review.pdf"
+  },
+  {
+   "id": 13148,
+   "letter": "H",
+   "title": "Twin Buildings",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Twin Buildings.pdf"
+  },
+  {
+   "id": 13149,
+   "letter": "I",
+   "title": "Mission Possible",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Mission Possible.pdf"
+  },
+  {
+   "id": 13150,
+   "letter": "J",
+   "title": "Tiling Terrace",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Tiling Terrace.pdf"
+  },
+  {
+   "id": 13151,
+   "letter": "K",
+   "title": "Addition Robot",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Addition Robot.pdf"
+  },
+  {
+   "id": 13152,
+   "letter": "L",
+   "title": "Road Construction",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Road Construction.pdf"
+  }
+ ]
+}

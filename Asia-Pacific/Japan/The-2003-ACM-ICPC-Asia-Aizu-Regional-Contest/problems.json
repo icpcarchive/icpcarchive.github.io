@@ -1,0 +1,104 @@
+{
+ "id": 3614,
+ "name": "The 2003 ACM-ICPC Asia Aizu Regional Contest",
+ "url": "https://qoj.ac/contest/3614",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3614&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19608,
+   "letter": "A",
+   "title": "Unreliable Messengers",
+   "statement_pages": [
+    1,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Unreliable Messengers.pdf"
+  },
+  {
+   "id": 19609,
+   "letter": "B",
+   "title": "Lagrange's Four-Square Theorem",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Lagrange's Four-Square Theorem.pdf"
+  },
+  {
+   "id": 19610,
+   "letter": "C",
+   "title": "Area of Polygons",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Area of Polygons.pdf"
+  },
+  {
+   "id": 19611,
+   "letter": "D",
+   "title": "Weather Forecast",
+   "statement_pages": [
+    8,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Weather Forecast.pdf"
+  },
+  {
+   "id": 19612,
+   "letter": "E",
+   "title": "Molecular Formula",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Molecular Formula.pdf"
+  },
+  {
+   "id": 19613,
+   "letter": "F",
+   "title": "Gap",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Gap.pdf"
+  },
+  {
+   "id": 19614,
+   "letter": "G",
+   "title": "Concert Hall Scheduling",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Concert Hall Scheduling.pdf"
+  },
+  {
+   "id": 19615,
+   "letter": "H",
+   "title": "Monster Trap",
+   "statement_pages": [
+    17,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Monster Trap.pdf"
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "id": 2177,
+ "name": "The 2017 ACM-ICPC Northern Subregional Contest",
+ "url": "https://qoj.ac/contest/2177",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Northwestern Russia Regional Contest (NWRRC) / Northern Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2177&r=0"
+  },
+  {
+   "text": "Tutorials (ru)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2177&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 12712,
+   "letter": "A",
+   "title": "Auxiliary Project",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Auxiliary Project.pdf"
+  },
+  {
+   "id": 12713,
+   "letter": "B",
+   "title": "Boolean Satisfiability",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Boolean Satisfiability.pdf"
+  },
+  {
+   "id": 12714,
+   "letter": "C",
+   "title": "Consonant Fencity",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Consonant Fencity.pdf"
+  },
+  {
+   "id": 12715,
+   "letter": "D",
+   "title": "Dividing Marbles",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dividing Marbles.pdf"
+  },
+  {
+   "id": 12716,
+   "letter": "E",
+   "title": "Equal Numbers",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Equal Numbers.pdf"
+  },
+  {
+   "id": 12717,
+   "letter": "F",
+   "title": "Fygon 2.0",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fygon 2.0.pdf"
+  },
+  {
+   "id": 12718,
+   "letter": "G",
+   "title": "Grand Test",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Grand Test.pdf"
+  },
+  {
+   "id": 12719,
+   "letter": "H",
+   "title": "Hidden Supervisors",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hidden Supervisors.pdf"
+  },
+  {
+   "id": 12720,
+   "letter": "I",
+   "title": "Intelligence in Perpendicularia",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Intelligence in Perpendicularia.pdf"
+  },
+  {
+   "id": 12721,
+   "letter": "J",
+   "title": "Joker",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joker.pdf"
+  },
+  {
+   "id": 12722,
+   "letter": "K",
+   "title": "Kotlin Island",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kotlin Island.pdf"
+  },
+  {
+   "id": 12723,
+   "letter": "L",
+   "title": "Little Difference",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Little Difference.pdf"
+  }
+ ]
+}

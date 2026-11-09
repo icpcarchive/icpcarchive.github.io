@@ -1,0 +1,163 @@
+{
+ "id": 1110,
+ "name": "The 2022 ICPC German Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/1110",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/German Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1110&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1110&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5553,
+   "letter": "A",
+   "title": "Alternative Architecture",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Alternative Architecture.pdf"
+  },
+  {
+   "id": 5554,
+   "letter": "B",
+   "title": "Breeding Bugs",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Breeding Bugs.pdf"
+  },
+  {
+   "id": 5555,
+   "letter": "C",
+   "title": "Chaotic Construction",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Chaotic Construction.pdf"
+  },
+  {
+   "id": 5556,
+   "letter": "D",
+   "title": "Diabolic Doofenshmirtz",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Diabolic Doofenshmirtz.pdf"
+  },
+  {
+   "id": 5557,
+   "letter": "E",
+   "title": "Enjoyable Entree",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Enjoyable Entree.pdf"
+  },
+  {
+   "id": 5558,
+   "letter": "F",
+   "title": "Formula Flatland",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Formula Flatland.pdf"
+  },
+  {
+   "id": 5559,
+   "letter": "G",
+   "title": "Guessing Game",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Guessing Game.pdf"
+  },
+  {
+   "id": 5560,
+   "letter": "H",
+   "title": "Hardcore Hangman",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hardcore Hangman.pdf"
+  },
+  {
+   "id": 5561,
+   "letter": "I",
+   "title": "Improving IT",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Improving IT.pdf"
+  },
+  {
+   "id": 5562,
+   "letter": "J",
+   "title": "Jesting Jabberwocky",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jesting Jabberwocky.pdf"
+  },
+  {
+   "id": 5563,
+   "letter": "K",
+   "title": "K.O. Kids",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - K.O. Kids.pdf"
+  },
+  {
+   "id": 5564,
+   "letter": "L",
+   "title": "Lots of Land",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lots of Land.pdf"
+  },
+  {
+   "id": 5565,
+   "letter": "M",
+   "title": "Mirror Madness",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mirror Madness.pdf"
+  }
+ ]
+}

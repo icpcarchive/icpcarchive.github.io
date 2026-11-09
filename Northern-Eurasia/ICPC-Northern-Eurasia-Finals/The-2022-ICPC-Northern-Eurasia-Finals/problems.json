@@ -1,0 +1,152 @@
+{
+ "id": 1062,
+ "name": "The 2022 ICPC Northern Eurasia Finals",
+ "url": "https://qoj.ac/contest/1062",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1062&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1062&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5199,
+   "letter": "A",
+   "title": "Amazing Trick",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Amazing Trick.pdf"
+  },
+  {
+   "id": 5200,
+   "letter": "B",
+   "title": "BinCoin",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - BinCoin.pdf"
+  },
+  {
+   "id": 5201,
+   "letter": "C",
+   "title": "Cactus Meets Torus",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cactus Meets Torus.pdf"
+  },
+  {
+   "id": 5202,
+   "letter": "D",
+   "title": "Dominoes",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dominoes.pdf"
+  },
+  {
+   "id": 5203,
+   "letter": "E",
+   "title": "Easy Assembly",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Easy Assembly.pdf"
+  },
+  {
+   "id": 5204,
+   "letter": "F",
+   "title": "Football",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Football.pdf"
+  },
+  {
+   "id": 5205,
+   "letter": "G",
+   "title": "Game of Questions",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game of Questions.pdf"
+  },
+  {
+   "id": 5206,
+   "letter": "H",
+   "title": "Hot and Cold",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hot and Cold.pdf"
+  },
+  {
+   "id": 5207,
+   "letter": "I",
+   "title": "Interactive Factorial Guessing",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Interactive Factorial Guessing.pdf"
+  },
+  {
+   "id": 5208,
+   "letter": "J",
+   "title": "Jumbled Trees",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jumbled Trees.pdf"
+  },
+  {
+   "id": 5209,
+   "letter": "K",
+   "title": "King's Puzzle",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - King's Puzzle.pdf"
+  },
+  {
+   "id": 5210,
+   "letter": "L",
+   "title": "Lisa's Sequences",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lisa's Sequences.pdf"
+  }
+ ]
+}

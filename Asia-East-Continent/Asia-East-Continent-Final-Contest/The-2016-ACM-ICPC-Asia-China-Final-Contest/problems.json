@@ -1,0 +1,153 @@
+{
+ "id": 2028,
+ "name": "The 2016 ACM-ICPC Asia China-Final Contest",
+ "url": "https://qoj.ac/contest/2028",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent",
+  "ICPC/Regionals/Asia East Continent/The 2016 ACM-ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2028&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2028&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11226,
+   "letter": "A",
+   "title": "Number Theory Problem",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Number Theory Problem.pdf"
+  },
+  {
+   "id": 11227,
+   "letter": "B",
+   "title": "Hemi Palindrome",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Hemi Palindrome.pdf"
+  },
+  {
+   "id": 11228,
+   "letter": "C",
+   "title": "Mr. Panda and Strips",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Mr. Panda and Strips.pdf"
+  },
+  {
+   "id": 11229,
+   "letter": "D",
+   "title": "Ice Cream Tower",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Ice Cream Tower.pdf"
+  },
+  {
+   "id": 11230,
+   "letter": "E",
+   "title": "Bet",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Bet.pdf"
+  },
+  {
+   "id": 11231,
+   "letter": "F",
+   "title": "Mr. Panda and Fantastic Beasts",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Mr. Panda and Fantastic Beasts.pdf"
+  },
+  {
+   "id": 11232,
+   "letter": "G",
+   "title": "Pandaria",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Pandaria.pdf"
+  },
+  {
+   "id": 11233,
+   "letter": "H",
+   "title": "Great Cells",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Great Cells.pdf"
+  },
+  {
+   "id": 11234,
+   "letter": "I",
+   "title": "Cherry Pick",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Cherry Pick.pdf"
+  },
+  {
+   "id": 11235,
+   "letter": "J",
+   "title": "Mr.Panda and TubeMaster",
+   "statement_pages": [
+    16,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Mr.Panda and TubeMaster.pdf"
+  },
+  {
+   "id": 11236,
+   "letter": "K",
+   "title": "Justice Rains From Above",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Justice Rains From Above.pdf"
+  },
+  {
+   "id": 11237,
+   "letter": "L",
+   "title": "World Cup",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - World Cup.pdf"
+  }
+ ]
+}

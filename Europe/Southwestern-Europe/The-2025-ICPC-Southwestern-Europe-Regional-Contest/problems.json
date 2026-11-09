@@ -1,0 +1,152 @@
+{
+ "id": 2692,
+ "name": "The 2025 ICPC Southwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2692",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2692&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2692&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15708,
+   "letter": "A",
+   "title": "Adjusting Drones",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Adjusting Drones.pdf"
+  },
+  {
+   "id": 15709,
+   "letter": "B",
+   "title": "Billion Players Game",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Billion Players Game.pdf"
+  },
+  {
+   "id": 15710,
+   "letter": "C",
+   "title": "Chamber of Secrets 2",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Chamber of Secrets 2.pdf"
+  },
+  {
+   "id": 15711,
+   "letter": "D",
+   "title": "Dungeon Equilibrium",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dungeon Equilibrium.pdf"
+  },
+  {
+   "id": 15712,
+   "letter": "E",
+   "title": "Expansion Plan 2",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Expansion Plan 2.pdf"
+  },
+  {
+   "id": 15713,
+   "letter": "F",
+   "title": "Factory Table",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Factory Table.pdf"
+  },
+  {
+   "id": 15714,
+   "letter": "G",
+   "title": "Git Gud",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Git Gud.pdf"
+  },
+  {
+   "id": 15715,
+   "letter": "H",
+   "title": "Hyper Smawk Bros",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hyper Smawk Bros.pdf"
+  },
+  {
+   "id": 15716,
+   "letter": "I",
+   "title": "Isaac's Queries",
+   "statement_pages": [
+    19,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Isaac's Queries.pdf"
+  },
+  {
+   "id": 15717,
+   "letter": "J",
+   "title": "Jewels Building",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jewels Building.pdf"
+  },
+  {
+   "id": 15718,
+   "letter": "K",
+   "title": "Keygen 3",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Keygen 3.pdf"
+  },
+  {
+   "id": 15719,
+   "letter": "L",
+   "title": "LFS",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - LFS.pdf"
+  }
+ ]
+}

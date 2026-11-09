@@ -1,0 +1,88 @@
+{
+ "id": 2724,
+ "name": "The 2012 Central Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2724",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 15906,
+   "letter": "A",
+   "title": "Kingdoms",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Kingdoms.pdf"
+  },
+  {
+   "id": 15907,
+   "letter": "B",
+   "title": "Who wants to live forever?",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Who wants to live forever_.pdf"
+  },
+  {
+   "id": 15908,
+   "letter": "C",
+   "title": "Chemist's vows",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Chemist's vows.pdf"
+  },
+  {
+   "id": 15909,
+   "letter": "D",
+   "title": "Non-boring sequences",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Non-boring sequences.pdf"
+  },
+  {
+   "id": 15910,
+   "letter": "E",
+   "title": "Word equations",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Word equations.pdf"
+  },
+  {
+   "id": 15911,
+   "letter": "F",
+   "title": "Farm and factory",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Farm and factory.pdf"
+  },
+  {
+   "id": 15912,
+   "letter": "G",
+   "title": "Jewel heist",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Jewel heist.pdf"
+  },
+  {
+   "id": 15913,
+   "letter": "H",
+   "title": "Darts",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Darts.pdf"
+  },
+  {
+   "id": 15914,
+   "letter": "I",
+   "title": "The Dragon and the knights",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - The Dragon and the knights.pdf"
+  },
+  {
+   "id": 15915,
+   "letter": "J",
+   "title": "Conservation",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Conservation.pdf"
+  },
+  {
+   "id": 15916,
+   "letter": "K",
+   "title": "Graphic Madness",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Graphic Madness.pdf"
+  }
+ ]
+}

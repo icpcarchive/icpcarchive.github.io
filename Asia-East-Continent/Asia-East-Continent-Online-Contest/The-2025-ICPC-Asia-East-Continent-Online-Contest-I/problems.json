@@ -1,0 +1,160 @@
+{
+ "id": 2513,
+ "name": "The 2025 ICPC Asia East Continent Online Contest (I)",
+ "url": "https://qoj.ac/contest/2513",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent",
+  "ICPC/Regionals/Asia East Continent/The 2025 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2513&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 14301,
+   "letter": "A",
+   "title": "Who Can Win",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Who Can Win.pdf"
+  },
+  {
+   "id": 14302,
+   "letter": "B",
+   "title": "Creating Chaos",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Creating Chaos.pdf"
+  },
+  {
+   "id": 14303,
+   "letter": "C",
+   "title": "Canvas Painting",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Canvas Painting.pdf"
+  },
+  {
+   "id": 14304,
+   "letter": "D",
+   "title": "Min-Max Tree",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Min-Max Tree.pdf"
+  },
+  {
+   "id": 14305,
+   "letter": "E",
+   "title": "tetrart",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - tetrart.pdf"
+  },
+  {
+   "id": 14306,
+   "letter": "F",
+   "title": "Robot",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Robot.pdf"
+  },
+  {
+   "id": 14307,
+   "letter": "G",
+   "title": "Sorting",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Sorting.pdf"
+  },
+  {
+   "id": 14308,
+   "letter": "H",
+   "title": "Walk",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Walk.pdf"
+  },
+  {
+   "id": 14309,
+   "letter": "I",
+   "title": "Knapsack Problem",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Knapsack Problem.pdf"
+  },
+  {
+   "id": 14310,
+   "letter": "J",
+   "title": "Moving on the Plane",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Moving on the Plane.pdf"
+  },
+  {
+   "id": 14311,
+   "letter": "K",
+   "title": "Counting",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Counting.pdf"
+  },
+  {
+   "id": 14312,
+   "letter": "L",
+   "title": "cover",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - cover.pdf"
+  },
+  {
+   "id": 14313,
+   "letter": "M",
+   "title": "Teleporter",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Teleporter.pdf"
+  }
+ ]
+}

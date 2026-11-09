@@ -1,0 +1,152 @@
+{
+ "id": 1329,
+ "name": "The 2022 ICPC Moscow Regional Contest",
+ "url": "https://qoj.ac/contest/1329",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Moscow Regional Contest / Moscow Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1329&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1329&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7524,
+   "letter": "A",
+   "title": "A Challenge For a Tourist",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - A Challenge For a Tourist.pdf"
+  },
+  {
+   "id": 7525,
+   "letter": "B",
+   "title": "Brackets",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Brackets.pdf"
+  },
+  {
+   "id": 7526,
+   "letter": "C",
+   "title": "Credit Cards",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Credit Cards.pdf"
+  },
+  {
+   "id": 7527,
+   "letter": "D",
+   "title": "Doors of the Wardrobe",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Doors of the Wardrobe.pdf"
+  },
+  {
+   "id": 7528,
+   "letter": "E",
+   "title": "Effective Management",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Effective Management.pdf"
+  },
+  {
+   "id": 7529,
+   "letter": "F",
+   "title": "Form Processing",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Form Processing.pdf"
+  },
+  {
+   "id": 7530,
+   "letter": "G",
+   "title": "Go Play Wall-nut Bowling!",
+   "statement_pages": [
+    9,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Go Play Wall-nut Bowling!.pdf"
+  },
+  {
+   "id": 7531,
+   "letter": "H",
+   "title": "Hacking the Project",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hacking the Project.pdf"
+  },
+  {
+   "id": 7532,
+   "letter": "I",
+   "title": "Inspection (32 MB  ML!)",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Inspection (32 MB  ML!).pdf"
+  },
+  {
+   "id": 7533,
+   "letter": "J",
+   "title": "Jeopardized Betting",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jeopardized Betting.pdf"
+  },
+  {
+   "id": 7534,
+   "letter": "K",
+   "title": "KPI Calculation",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - KPI Calculation.pdf"
+  },
+  {
+   "id": 7535,
+   "letter": "L",
+   "title": "Limited Shuffle Restoring",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Limited Shuffle Restoring.pdf"
+  }
+ ]
+}

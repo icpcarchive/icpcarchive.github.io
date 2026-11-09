@@ -1,0 +1,164 @@
+{
+ "id": 1522,
+ "name": "The 2023 ICPC Asia East Continent Final Contest",
+ "url": "https://qoj.ac/contest/1522",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent",
+  "ICPC/Regionals/Asia East Continent/The 2023 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1522&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1522&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 8047,
+   "letter": "A",
+   "title": "DFS Order 4",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - DFS Order 4.pdf"
+  },
+  {
+   "id": 8048,
+   "letter": "B",
+   "title": "Roman Master",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Roman Master.pdf"
+  },
+  {
+   "id": 8049,
+   "letter": "C",
+   "title": "Equal Sums",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Equal Sums.pdf"
+  },
+  {
+   "id": 8050,
+   "letter": "D",
+   "title": "Random Permutation",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Random Permutation.pdf"
+  },
+  {
+   "id": 8051,
+   "letter": "E",
+   "title": "Colorful Graph",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Colorful Graph.pdf"
+  },
+  {
+   "id": 8052,
+   "letter": "F",
+   "title": "Dot Product",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Dot Product.pdf"
+  },
+  {
+   "id": 8053,
+   "letter": "G",
+   "title": "Flow 2",
+   "statement_pages": [
+    12,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Flow 2.pdf"
+  },
+  {
+   "id": 8054,
+   "letter": "H",
+   "title": "Map 2",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Map 2.pdf"
+  },
+  {
+   "id": 8055,
+   "letter": "I",
+   "title": "Balance",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Balance.pdf"
+  },
+  {
+   "id": 8056,
+   "letter": "J",
+   "title": "Travel 2",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Travel 2.pdf"
+  },
+  {
+   "id": 8057,
+   "letter": "K",
+   "title": "Best Carry Player 4",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Best Carry Player 4.pdf"
+  },
+  {
+   "id": 8058,
+   "letter": "L",
+   "title": "Binary vs Ternary",
+   "statement_pages": [
+    23,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Binary vs Ternary.pdf"
+  },
+  {
+   "id": 8059,
+   "letter": "M",
+   "title": "Circular Route",
+   "statement_pages": [
+    24,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Circular Route.pdf"
+  }
+ ]
+}

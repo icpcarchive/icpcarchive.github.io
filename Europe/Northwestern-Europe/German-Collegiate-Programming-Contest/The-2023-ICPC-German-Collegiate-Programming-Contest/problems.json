@@ -1,0 +1,159 @@
+{
+ "id": 1402,
+ "name": "The 2023 ICPC German Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/1402",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/German Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1402&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7652,
+   "letter": "A",
+   "title": "Adolescent Architecture 2",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Adolescent Architecture 2.pdf"
+  },
+  {
+   "id": 7653,
+   "letter": "B",
+   "title": "Balloon Darts",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Balloon Darts.pdf"
+  },
+  {
+   "id": 7654,
+   "letter": "C",
+   "title": "Cosmic Commute",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cosmic Commute.pdf"
+  },
+  {
+   "id": 7655,
+   "letter": "D",
+   "title": "DnD Dice",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - DnD Dice.pdf"
+  },
+  {
+   "id": 7656,
+   "letter": "E",
+   "title": "Eszett",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Eszett.pdf"
+  },
+  {
+   "id": 7657,
+   "letter": "F",
+   "title": "Freestyle Masonry",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Freestyle Masonry.pdf"
+  },
+  {
+   "id": 7658,
+   "letter": "G",
+   "title": "German Conference for Public Counting",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - German Conference for Public Counting.pdf"
+  },
+  {
+   "id": 7659,
+   "letter": "H",
+   "title": "Highway Combinatorics",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Highway Combinatorics.pdf"
+  },
+  {
+   "id": 7660,
+   "letter": "I",
+   "title": "Investigating Frog Behaviour on Lily Pad Patterns",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Investigating Frog Behaviour on Lily Pad Patterns.pdf"
+  },
+  {
+   "id": 7661,
+   "letter": "J",
+   "title": "Japanese Lottery",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Japanese Lottery.pdf"
+  },
+  {
+   "id": 7662,
+   "letter": "K",
+   "title": "Kaldorian Knights",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kaldorian Knights.pdf"
+  },
+  {
+   "id": 7663,
+   "letter": "L",
+   "title": "Loop Invariant",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Loop Invariant.pdf"
+  },
+  {
+   "id": 7664,
+   "letter": "M",
+   "title": "Mischievous Math",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mischievous Math.pdf"
+  }
+ ]
+}

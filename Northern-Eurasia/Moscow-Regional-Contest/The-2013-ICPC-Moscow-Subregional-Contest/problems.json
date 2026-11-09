@@ -1,0 +1,148 @@
+{
+ "id": 3248,
+ "name": "The 2013 ICPC Moscow Subregional Contest",
+ "url": "https://qoj.ac/contest/3248",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Moscow Regional Contest / Moscow Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3248&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16754,
+   "letter": "A",
+   "title": "Augmented Reality Game",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Augmented Reality Game.pdf"
+  },
+  {
+   "id": 16755,
+   "letter": "B",
+   "title": "Blacklist",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Blacklist.pdf"
+  },
+  {
+   "id": 16756,
+   "letter": "C",
+   "title": "Charisma and Skill",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Charisma and Skill.pdf"
+  },
+  {
+   "id": 16757,
+   "letter": "D",
+   "title": "Darkside",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Darkside.pdf"
+  },
+  {
+   "id": 16758,
+   "letter": "E",
+   "title": "Edges Are Too Sharp!",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Edges Are Too Sharp!.pdf"
+  },
+  {
+   "id": 16759,
+   "letter": "F",
+   "title": "Four Ways to Travel",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Four Ways to Travel.pdf"
+  },
+  {
+   "id": 16760,
+   "letter": "G",
+   "title": "Global Elephant Market",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Global Elephant Market.pdf"
+  },
+  {
+   "id": 16761,
+   "letter": "H",
+   "title": "Hanmattan",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hanmattan.pdf"
+  },
+  {
+   "id": 16762,
+   "letter": "I",
+   "title": "Intersections",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Intersections.pdf"
+  },
+  {
+   "id": 16763,
+   "letter": "J",
+   "title": "Jigsaw Puzzle",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jigsaw Puzzle.pdf"
+  },
+  {
+   "id": 16764,
+   "letter": "K",
+   "title": "Top K Elements",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Top K Elements.pdf"
+  },
+  {
+   "id": 16765,
+   "letter": "L",
+   "title": "Liar, Liar!",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Liar, Liar!.pdf"
+  }
+ ]
+}

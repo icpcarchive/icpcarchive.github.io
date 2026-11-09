@@ -1,0 +1,152 @@
+{
+ "id": 2781,
+ "name": "The 2022 ICPC Asia Manila Regional Contest",
+ "url": "https://qoj.ac/contest/2781",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Philippines"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2781&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2781&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15845,
+   "letter": "A",
+   "title": "An Easy Calculus Problem",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - An Easy Calculus Problem.pdf"
+  },
+  {
+   "id": 15846,
+   "letter": "B",
+   "title": "Better than Bitcoin",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Better than Bitcoin.pdf"
+  },
+  {
+   "id": 15847,
+   "letter": "C",
+   "title": "Conform Conforme",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Conform Conforme.pdf"
+  },
+  {
+   "id": 15848,
+   "letter": "D",
+   "title": "Domination Devil",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Domination Devil.pdf"
+  },
+  {
+   "id": 15849,
+   "letter": "E",
+   "title": "Escape from Markov",
+   "statement_pages": [
+    12,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Escape from Markov.pdf"
+  },
+  {
+   "id": 15850,
+   "letter": "F",
+   "title": "Factions vs The Hegemon",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Factions vs The Hegemon.pdf"
+  },
+  {
+   "id": 15851,
+   "letter": "G",
+   "title": "Gallivanting Merchant",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gallivanting Merchant.pdf"
+  },
+  {
+   "id": 15852,
+   "letter": "H",
+   "title": "HIIT",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - HIIT.pdf"
+  },
+  {
+   "id": 15853,
+   "letter": "I",
+   "title": "Item Crafting",
+   "statement_pages": [
+    21,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Item Crafting.pdf"
+  },
+  {
+   "id": 15854,
+   "letter": "J",
+   "title": "Junior Steiner Three",
+   "statement_pages": [
+    24,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Junior Steiner Three.pdf"
+  },
+  {
+   "id": 15855,
+   "letter": "K",
+   "title": "Kapitan Amazing",
+   "statement_pages": [
+    26,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kapitan Amazing.pdf"
+  },
+  {
+   "id": 15856,
+   "letter": "L",
+   "title": "LCG Manipulation",
+   "statement_pages": [
+    28,
+    29
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - LCG Manipulation.pdf"
+  }
+ ]
+}

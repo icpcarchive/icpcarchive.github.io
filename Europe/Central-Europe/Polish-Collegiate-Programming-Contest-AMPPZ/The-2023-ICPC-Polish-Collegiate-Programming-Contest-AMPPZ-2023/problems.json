@@ -1,0 +1,159 @@
+{
+ "id": 1774,
+ "name": "The 2023 ICPC Polish Collegiate Programming Contest (AMPPZ 2023)",
+ "url": "https://qoj.ac/contest/1774",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/Polish Collegiate Programming Contest (AMPPZ)"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1774&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9220,
+   "letter": "A",
+   "title": "Bus Analysis",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Bus Analysis.pdf"
+  },
+  {
+   "id": 9221,
+   "letter": "B",
+   "title": "Missing Boundaries",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Missing Boundaries.pdf"
+  },
+  {
+   "id": 9222,
+   "letter": "C",
+   "title": "Price Combo",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Price Combo.pdf"
+  },
+  {
+   "id": 9223,
+   "letter": "D",
+   "title": "Data Determination",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Data Determination.pdf"
+  },
+  {
+   "id": 9224,
+   "letter": "E",
+   "title": "Express Eviction",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Express Eviction.pdf"
+  },
+  {
+   "id": 9225,
+   "letter": "F",
+   "title": "Fibonacci Fusion",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fibonacci Fusion.pdf"
+  },
+  {
+   "id": 9226,
+   "letter": "G",
+   "title": "Game of Geniuses",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game of Geniuses.pdf"
+  },
+  {
+   "id": 9227,
+   "letter": "H",
+   "title": "Henry the Plumber",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Henry the Plumber.pdf"
+  },
+  {
+   "id": 9228,
+   "letter": "I",
+   "title": "ICPC Inference",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - ICPC Inference.pdf"
+  },
+  {
+   "id": 9229,
+   "letter": "J",
+   "title": "Juliet Unifies Ones",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Juliet Unifies Ones.pdf"
+  },
+  {
+   "id": 9230,
+   "letter": "K",
+   "title": "Routing K-Codes",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Routing K-Codes.pdf"
+  },
+  {
+   "id": 9231,
+   "letter": "L",
+   "title": "Random Numbers",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Random Numbers.pdf"
+  },
+  {
+   "id": 9232,
+   "letter": "M",
+   "title": "Mathematics Championships",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mathematics Championships.pdf"
+  }
+ ]
+}

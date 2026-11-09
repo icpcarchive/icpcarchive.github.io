@@ -1,0 +1,170 @@
+{
+ "id": 1791,
+ "name": "The 2020 ICPC Moscow Regional Contest",
+ "url": "https://qoj.ac/contest/1791",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Moscow Regional Contest / Moscow Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1791&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9267,
+   "letter": "A",
+   "title": "Adventure in Flatland",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Adventure in Flatland.pdf"
+  },
+  {
+   "id": 9268,
+   "letter": "B",
+   "title": "Basketball Plus-Minus",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Basketball Plus-Minus.pdf"
+  },
+  {
+   "id": 9269,
+   "letter": "C",
+   "title": "C and Pascal Strings",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - C and Pascal Strings.pdf"
+  },
+  {
+   "id": 9270,
+   "letter": "D",
+   "title": "Deep Primes",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Deep Primes.pdf"
+  },
+  {
+   "id": 9271,
+   "letter": "E",
+   "title": "Easy Money",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Easy Money.pdf"
+  },
+  {
+   "id": 9272,
+   "letter": "F",
+   "title": "Fun at Luggage Claim",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fun at Luggage Claim.pdf"
+  },
+  {
+   "id": 9273,
+   "letter": "G",
+   "title": "Game With Stones",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game With Stones.pdf"
+  },
+  {
+   "id": 9274,
+   "letter": "H",
+   "title": "Hungry Cannibals",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hungry Cannibals.pdf"
+  },
+  {
+   "id": 9275,
+   "letter": "I",
+   "title": "Integer Number Format",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Integer Number Format.pdf"
+  },
+  {
+   "id": 9276,
+   "letter": "J",
+   "title": "Just Different Rules...",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Just Different Rules.pdf"
+  },
+  {
+   "id": 9277,
+   "letter": "K",
+   "title": "King and Zeroing",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - King and Zeroing.pdf"
+  },
+  {
+   "id": 9278,
+   "letter": "L",
+   "title": "Linear Algebra Intensifies",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Linear Algebra Intensifies.pdf"
+  },
+  {
+   "id": 9279,
+   "letter": "M",
+   "title": "Matrix 4",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Matrix 4.pdf"
+  },
+  {
+   "id": 9280,
+   "letter": "N",
+   "title": "New Randomized Go",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - New Randomized Go.pdf"
+  }
+ ]
+}

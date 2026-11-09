@@ -1,0 +1,164 @@
+{
+ "id": 2029,
+ "name": "The 2015 ACM-ICPC Asia East Continent Final Contest",
+ "url": "https://qoj.ac/contest/2029",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent",
+  "ICPC/Regionals/Asia East Continent/The 2015 ACM-ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2029&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2029&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11238,
+   "letter": "A",
+   "title": "Boxes and Balls",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Boxes and Balls.pdf"
+  },
+  {
+   "id": 11239,
+   "letter": "B",
+   "title": "Business Cycle",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Business Cycle.pdf"
+  },
+  {
+   "id": 11240,
+   "letter": "C",
+   "title": "Suffixes and Palindromes",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Suffixes and Palindromes.pdf"
+  },
+  {
+   "id": 11241,
+   "letter": "D",
+   "title": "Change",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Change.pdf"
+  },
+  {
+   "id": 11242,
+   "letter": "E",
+   "title": "Colorful Floor",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Colorful Floor.pdf"
+  },
+  {
+   "id": 11243,
+   "letter": "F",
+   "title": "Hungry Game of Ants",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Hungry Game of Ants.pdf"
+  },
+  {
+   "id": 11244,
+   "letter": "G",
+   "title": "Legacy of the Void",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Legacy of the Void.pdf"
+  },
+  {
+   "id": 11245,
+   "letter": "H",
+   "title": "Open Face Chinese Poker",
+   "statement_pages": [
+    14,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Open Face Chinese Poker.pdf"
+  },
+  {
+   "id": 11246,
+   "letter": "I",
+   "title": "Champions League",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Champions League.pdf"
+  },
+  {
+   "id": 11247,
+   "letter": "J",
+   "title": "Dome and Steles",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Dome and Steles.pdf"
+  },
+  {
+   "id": 11248,
+   "letter": "K",
+   "title": "Convex Polyhedron",
+   "statement_pages": [
+    23,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Convex Polyhedron.pdf"
+  },
+  {
+   "id": 11249,
+   "letter": "L",
+   "title": "Multiplication Table",
+   "statement_pages": [
+    24,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Multiplication Table.pdf"
+  },
+  {
+   "id": 11250,
+   "letter": "M",
+   "title": "November 11th",
+   "statement_pages": [
+    26,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - November 11th.pdf"
+  }
+ ]
+}

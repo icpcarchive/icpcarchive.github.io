@@ -1,0 +1,141 @@
+{
+ "id": 3885,
+ "name": "The 2014 German Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/3885",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/German Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3885&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3885&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19150,
+   "letter": "A",
+   "title": "Algebraic Teamwork",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Algebraic Teamwork.pdf"
+  },
+  {
+   "id": 19151,
+   "letter": "B",
+   "title": "Beam me out!",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Beam me out!.pdf"
+  },
+  {
+   "id": 19152,
+   "letter": "C",
+   "title": "Bounty Hunter",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Bounty Hunter.pdf"
+  },
+  {
+   "id": 19153,
+   "letter": "D",
+   "title": "Connected Caves",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Connected Caves.pdf"
+  },
+  {
+   "id": 19154,
+   "letter": "E",
+   "title": "Equator",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Equator.pdf"
+  },
+  {
+   "id": 19155,
+   "letter": "F",
+   "title": "Gold Rush",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Gold Rush.pdf"
+  },
+  {
+   "id": 19156,
+   "letter": "G",
+   "title": "Jewelry Exhibition",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Jewelry Exhibition.pdf"
+  },
+  {
+   "id": 19157,
+   "letter": "H",
+   "title": "JuQueen",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - JuQueen.pdf"
+  },
+  {
+   "id": 19158,
+   "letter": "I",
+   "title": "Laser Cutting",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Laser Cutting.pdf"
+  },
+  {
+   "id": 19159,
+   "letter": "J",
+   "title": "Not a subsequence",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Not a subsequence.pdf"
+  },
+  {
+   "id": 19160,
+   "letter": "K",
+   "title": "Pizza voting",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Pizza voting.pdf"
+  }
+ ]
+}

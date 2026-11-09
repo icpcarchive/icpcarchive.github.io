@@ -1,0 +1,130 @@
+{
+ "id": 3896,
+ "name": "The 2012 ICPC Benelux Algorithm Programming Contest (BAPC 2012)",
+ "url": "https://qoj.ac/contest/3896",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3896&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3896&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19259,
+   "letter": "A",
+   "title": "Another Dice Game",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Another Dice Game.pdf"
+  },
+  {
+   "id": 19260,
+   "letter": "B",
+   "title": "Black Out",
+   "statement_pages": [
+    5,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Black Out.pdf"
+  },
+  {
+   "id": 19261,
+   "letter": "C",
+   "title": "Chess Competition",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Chess Competition.pdf"
+  },
+  {
+   "id": 19262,
+   "letter": "D",
+   "title": "Digit Sum",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Digit Sum.pdf"
+  },
+  {
+   "id": 19263,
+   "letter": "E",
+   "title": "Encoded Message",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Encoded Message.pdf"
+  },
+  {
+   "id": 19264,
+   "letter": "F",
+   "title": "Fire",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fire.pdf"
+  },
+  {
+   "id": 19265,
+   "letter": "G",
+   "title": "Good Coalition",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Good Coalition.pdf"
+  },
+  {
+   "id": 19266,
+   "letter": "H",
+   "title": "Hot Dogs in Manhattan",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hot Dogs in Manhattan.pdf"
+  },
+  {
+   "id": 19267,
+   "letter": "I",
+   "title": "Integer Lists",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Integer Lists.pdf"
+  },
+  {
+   "id": 19268,
+   "letter": "J",
+   "title": "John's Book Stack",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - John's Book Stack.pdf"
+  }
+ ]
+}

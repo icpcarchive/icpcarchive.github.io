@@ -1,0 +1,168 @@
+{
+ "id": 1865,
+ "name": "The 2024 ICPC Asia Shenyang Regional Contest",
+ "url": "https://qoj.ac/contest/1865",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Shenyang",
+  "ICPC/Regionals/Asia East Continent/The 2024 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1865&r=0"
+  },
+  {
+   "text": "Statements (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1865&r=1"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1865&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9798,
+   "letter": "A",
+   "title": "Safety First",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Safety First.pdf"
+  },
+  {
+   "id": 9799,
+   "letter": "B",
+   "title": "Magical Palette",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Magical Palette.pdf"
+  },
+  {
+   "id": 9800,
+   "letter": "C",
+   "title": "Crisis Event: Meteorite",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Crisis Event_ Meteorite.pdf"
+  },
+  {
+   "id": 9801,
+   "letter": "D",
+   "title": "Dot Product Game",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dot Product Game.pdf"
+  },
+  {
+   "id": 9802,
+   "letter": "E",
+   "title": "Light Up the Grid",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Light Up the Grid.pdf"
+  },
+  {
+   "id": 9803,
+   "letter": "F",
+   "title": "Light Up the Hypercube",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Light Up the Hypercube.pdf"
+  },
+  {
+   "id": 9804,
+   "letter": "G",
+   "title": "Guess the Polygon",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Guess the Polygon.pdf"
+  },
+  {
+   "id": 9805,
+   "letter": "H",
+   "title": "Guide Map",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Guide Map.pdf"
+  },
+  {
+   "id": 9806,
+   "letter": "I",
+   "title": "Growing Tree",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Growing Tree.pdf"
+  },
+  {
+   "id": 9807,
+   "letter": "J",
+   "title": "Make Them Believe",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Make Them Believe.pdf"
+  },
+  {
+   "id": 9808,
+   "letter": "K",
+   "title": "Fragile Pinball",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Fragile Pinball.pdf"
+  },
+  {
+   "id": 9809,
+   "letter": "L",
+   "title": "The Grand Contest",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - The Grand Contest.pdf"
+  },
+  {
+   "id": 9810,
+   "letter": "M",
+   "title": "Obliviate, Then Reincarnate",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Obliviate, Then Reincarnate.pdf"
+  }
+ ]
+}

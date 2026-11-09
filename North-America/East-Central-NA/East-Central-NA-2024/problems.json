@@ -1,0 +1,161 @@
+{
+ "id": 1844,
+ "name": "East Central NA 2024",
+ "url": "https://qoj.ac/contest/1844",
+ "categories": [
+  "ICPC/Regionals/North America/East Central NA",
+  "ICPC/Regionals/North America/Greater New York",
+  "ICPC/Regionals/North America/Northeast North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1844&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9754,
+   "letter": "A",
+   "title": "A Stack of Gold",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - A Stack of Gold.pdf"
+  },
+  {
+   "id": 9755,
+   "letter": "B",
+   "title": "Average Substring Value",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Average Substring Value.pdf"
+  },
+  {
+   "id": 9756,
+   "letter": "C",
+   "title": "Balancing Art",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Balancing Art.pdf"
+  },
+  {
+   "id": 9757,
+   "letter": "D",
+   "title": "Brownian Bears",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Brownian Bears.pdf"
+  },
+  {
+   "id": 9758,
+   "letter": "E",
+   "title": "Fences Make Good Neighbors",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Fences Make Good Neighbors.pdf"
+  },
+  {
+   "id": 9759,
+   "letter": "F",
+   "title": "Leapfrog Encryption",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Leapfrog Encryption.pdf"
+  },
+  {
+   "id": 9760,
+   "letter": "G",
+   "title": "Letter Balloons",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Letter Balloons.pdf"
+  },
+  {
+   "id": 9761,
+   "letter": "H",
+   "title": "Marching Orders",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Marching Orders.pdf"
+  },
+  {
+   "id": 9762,
+   "letter": "I",
+   "title": "Oooh I See",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Oooh I See.pdf"
+  },
+  {
+   "id": 9763,
+   "letter": "J",
+   "title": "Pascal Meets Boole",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Pascal Meets Boole.pdf"
+  },
+  {
+   "id": 9764,
+   "letter": "K",
+   "title": "Pony-less Express",
+   "statement_pages": [
+    24,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Pony-less Express.pdf"
+  },
+  {
+   "id": 9765,
+   "letter": "L",
+   "title": "Repetitive Routes",
+   "statement_pages": [
+    26,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Repetitive Routes.pdf"
+  },
+  {
+   "id": 9766,
+   "letter": "M",
+   "title": "Smart Password Validation",
+   "statement_pages": [
+    28,
+    29
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Smart Password Validation.pdf"
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "id": 3762,
+ "name": "The 2026 ICPC Latin America Championship",
+ "url": "https://qoj.ac/contest/3762",
+ "categories": [
+  "ICPC/Regionals/Latin America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3762&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 17989,
+   "letter": "A",
+   "title": "Ants on a Ring",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Ants on a Ring.pdf"
+  },
+  {
+   "id": 17990,
+   "letter": "B",
+   "title": "Booksort",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Booksort.pdf"
+  },
+  {
+   "id": 17991,
+   "letter": "C",
+   "title": "Crop Circles",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Crop Circles.pdf"
+  },
+  {
+   "id": 17992,
+   "letter": "D",
+   "title": "Dropshipping",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dropshipping.pdf"
+  },
+  {
+   "id": 17993,
+   "letter": "E",
+   "title": "Eye Exam",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Eye Exam.pdf"
+  },
+  {
+   "id": 17994,
+   "letter": "F",
+   "title": "Fun with Balls",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fun with Balls.pdf"
+  },
+  {
+   "id": 17995,
+   "letter": "G",
+   "title": "GATA-CAT",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - GATA-CAT.pdf"
+  },
+  {
+   "id": 17996,
+   "letter": "H",
+   "title": "Holes and Tunnels",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Holes and Tunnels.pdf"
+  },
+  {
+   "id": 17997,
+   "letter": "I",
+   "title": "Inversion Game",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Inversion Game.pdf"
+  },
+  {
+   "id": 17998,
+   "letter": "J",
+   "title": "Jaime's Palace",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jaime's Palace.pdf"
+  },
+  {
+   "id": 17999,
+   "letter": "K",
+   "title": "Kitten Greetings",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kitten Greetings.pdf"
+  },
+  {
+   "id": 18000,
+   "letter": "L",
+   "title": "Late and Disobedient",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Late and Disobedient.pdf"
+  }
+ ]
+}

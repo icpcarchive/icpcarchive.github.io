@@ -1,0 +1,107 @@
+{
+ "id": 1109,
+ "name": "The 2022 ICPC Asia Jakarta Onsite Regional Contest",
+ "url": "https://qoj.ac/contest/1109",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Indonesia"
+ ],
+ "files": [
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1109&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5537,
+   "letter": "A",
+   "title": "Storing Eggs",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Storing Eggs.pdf"
+  },
+  {
+   "id": 5538,
+   "letter": "B",
+   "title": "Magical Barrier",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Magical Barrier.pdf"
+  },
+  {
+   "id": 5539,
+   "letter": "C",
+   "title": "Nightmare Brother",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Nightmare Brother.pdf"
+  },
+  {
+   "id": 5540,
+   "letter": "D",
+   "title": "City Hall",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - City Hall.pdf"
+  },
+  {
+   "id": 5541,
+   "letter": "E",
+   "title": "Substring Sort",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Substring Sort.pdf"
+  },
+  {
+   "id": 5542,
+   "letter": "F",
+   "title": "Doubled GCD",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Doubled GCD.pdf"
+  },
+  {
+   "id": 5543,
+   "letter": "G",
+   "title": "The Only Mode",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - The Only Mode.pdf"
+  },
+  {
+   "id": 5544,
+   "letter": "H",
+   "title": "Grid Game",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Grid Game.pdf"
+  },
+  {
+   "id": 5545,
+   "letter": "I",
+   "title": "Contingency Plan",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Contingency Plan.pdf"
+  },
+  {
+   "id": 5546,
+   "letter": "J",
+   "title": "Sharing Bread",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Sharing Bread.pdf"
+  },
+  {
+   "id": 5547,
+   "letter": "K",
+   "title": "Short Function",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Short Function.pdf"
+  },
+  {
+   "id": 5548,
+   "letter": "L",
+   "title": "Increase the Toll Fees",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Increase the Toll Fees.pdf"
+  },
+  {
+   "id": 5549,
+   "letter": "M",
+   "title": "Game Show",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - Game Show.pdf"
+  }
+ ]
+}

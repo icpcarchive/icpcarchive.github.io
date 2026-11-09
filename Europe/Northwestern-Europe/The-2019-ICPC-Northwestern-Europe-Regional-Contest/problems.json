@@ -1,0 +1,141 @@
+{
+ "id": 521,
+ "name": "The 2019 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/521",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=521&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=521&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2410,
+   "letter": "A",
+   "title": "Average Rank",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Average Rank.pdf"
+  },
+  {
+   "id": 2411,
+   "letter": "B",
+   "title": "Balanced Cut",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Balanced Cut.pdf"
+  },
+  {
+   "id": 2412,
+   "letter": "C",
+   "title": "Canvas Line",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Canvas Line.pdf"
+  },
+  {
+   "id": 2413,
+   "letter": "D",
+   "title": "Disposable Switches",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Disposable Switches.pdf"
+  },
+  {
+   "id": 2414,
+   "letter": "E",
+   "title": "Expeditious Cubing",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Expeditious Cubing.pdf"
+  },
+  {
+   "id": 2415,
+   "letter": "F",
+   "title": "Firetrucks Are Red",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Firetrucks Are Red.pdf"
+  },
+  {
+   "id": 2416,
+   "letter": "G",
+   "title": "Gnoll Hypothesis",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gnoll Hypothesis.pdf"
+  },
+  {
+   "id": 2417,
+   "letter": "H",
+   "title": "Height Profile",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Height Profile.pdf"
+  },
+  {
+   "id": 2418,
+   "letter": "I",
+   "title": "Inverted Deck",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Inverted Deck.pdf"
+  },
+  {
+   "id": 2419,
+   "letter": "J",
+   "title": "Jackdaws And Crows",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jackdaws And Crows.pdf"
+  },
+  {
+   "id": 2420,
+   "letter": "K",
+   "title": "Kitesurfing",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kitesurfing.pdf"
+  }
+ ]
+}

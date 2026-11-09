@@ -1,0 +1,141 @@
+{
+ "id": 2174,
+ "name": "The 2014 ACM-ICPC Northern Subregional Contest",
+ "url": "https://qoj.ac/contest/2174",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Northwestern Russia Regional Contest (NWRRC) / Northern Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2174&r=0"
+  },
+  {
+   "text": "Tutorials (ru)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2174&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 12747,
+   "letter": "A",
+   "title": "Alarm Clock",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Alarm Clock.pdf"
+  },
+  {
+   "id": 12748,
+   "letter": "B",
+   "title": "Buffcraft",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Buffcraft.pdf"
+  },
+  {
+   "id": 12749,
+   "letter": "C",
+   "title": "Combinator Expression",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Combinator Expression.pdf"
+  },
+  {
+   "id": 12750,
+   "letter": "D",
+   "title": "Digits",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Digits.pdf"
+  },
+  {
+   "id": 12751,
+   "letter": "E",
+   "title": "Expression",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Expression.pdf"
+  },
+  {
+   "id": 12752,
+   "letter": "F",
+   "title": "Fragmentation",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fragmentation.pdf"
+  },
+  {
+   "id": 12753,
+   "letter": "G",
+   "title": "Grave",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Grave.pdf"
+  },
+  {
+   "id": 12754,
+   "letter": "H",
+   "title": "Hiking in the Hills",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hiking in the Hills.pdf"
+  },
+  {
+   "id": 12755,
+   "letter": "I",
+   "title": "Instruction",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Instruction.pdf"
+  },
+  {
+   "id": 12756,
+   "letter": "J",
+   "title": "Joy of Flight",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joy of Flight.pdf"
+  },
+  {
+   "id": 12757,
+   "letter": "K",
+   "title": "Kebab House",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kebab House.pdf"
+  }
+ ]
+}

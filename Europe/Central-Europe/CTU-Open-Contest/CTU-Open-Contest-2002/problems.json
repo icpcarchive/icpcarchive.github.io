@@ -1,0 +1,126 @@
+{
+ "id": 3669,
+ "name": "CTU Open Contest 2002",
+ "url": "https://qoj.ac/contest/3669",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3669&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19393,
+   "letter": "A",
+   "title": "Sea Battle",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Sea Battle.pdf"
+  },
+  {
+   "id": 19394,
+   "letter": "B",
+   "title": "The Die Is Cast",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - The Die Is Cast.pdf"
+  },
+  {
+   "id": 19395,
+   "letter": "C",
+   "title": "Defragmentation",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Defragmentation.pdf"
+  },
+  {
+   "id": 19396,
+   "letter": "D",
+   "title": "Formatting Text",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Formatting Text.pdf"
+  },
+  {
+   "id": 19397,
+   "letter": "E",
+   "title": "Hole Cutter",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Hole Cutter.pdf"
+  },
+  {
+   "id": 19398,
+   "letter": "F",
+   "title": "Interesting Maze Game",
+   "statement_pages": [
+    12,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Interesting Maze Game.pdf"
+  },
+  {
+   "id": 19399,
+   "letter": "G",
+   "title": "Complicated Route",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Complicated Route.pdf"
+  },
+  {
+   "id": 19400,
+   "letter": "H",
+   "title": "The Perfect Symmetry",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - The Perfect Symmetry.pdf"
+  },
+  {
+   "id": 19401,
+   "letter": "I",
+   "title": "Mysterious Villa",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Mysterious Villa.pdf"
+  },
+  {
+   "id": 19402,
+   "letter": "J",
+   "title": "Too Much Water",
+   "statement_pages": [
+    21,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Too Much Water.pdf"
+  }
+ ]
+}

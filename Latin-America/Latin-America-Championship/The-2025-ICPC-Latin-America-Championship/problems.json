@@ -1,0 +1,148 @@
+{
+ "id": 2080,
+ "name": "The 2025 ICPC Latin America Championship",
+ "url": "https://qoj.ac/contest/2080",
+ "categories": [
+  "ICPC/Regionals/Latin America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2080&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11632,
+   "letter": "A",
+   "title": "Ananna",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Ananna.pdf"
+  },
+  {
+   "id": 11633,
+   "letter": "B",
+   "title": "Brazilian FootXOR",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Brazilian FootXOR.pdf"
+  },
+  {
+   "id": 11634,
+   "letter": "C",
+   "title": "Coatless in Yakutsk",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Coatless in Yakutsk.pdf"
+  },
+  {
+   "id": 11635,
+   "letter": "D",
+   "title": "Dangerous City",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dangerous City.pdf"
+  },
+  {
+   "id": 11636,
+   "letter": "E",
+   "title": "Exciting Business Opportunities",
+   "statement_pages": [
+    11,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Exciting Business Opportunities.pdf"
+  },
+  {
+   "id": 11637,
+   "letter": "F",
+   "title": "Festival Signs",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Festival Signs.pdf"
+  },
+  {
+   "id": 11638,
+   "letter": "G",
+   "title": "Game of Pieces",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game of Pieces.pdf"
+  },
+  {
+   "id": 11639,
+   "letter": "H",
+   "title": "Horrible Restaurants",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Horrible Restaurants.pdf"
+  },
+  {
+   "id": 11640,
+   "letter": "I",
+   "title": "Infinite Arrays",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Infinite Arrays.pdf"
+  },
+  {
+   "id": 11641,
+   "letter": "J",
+   "title": "Just Look Up",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Just Look Up.pdf"
+  },
+  {
+   "id": 11642,
+   "letter": "K",
+   "title": "Keep Fighting",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Keep Fighting.pdf"
+  },
+  {
+   "id": 11643,
+   "letter": "L",
+   "title": "LED Counter",
+   "statement_pages": [
+    27,
+    29
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - LED Counter.pdf"
+  }
+ ]
+}

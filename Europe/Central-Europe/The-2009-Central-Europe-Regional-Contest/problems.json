@@ -1,0 +1,88 @@
+{
+ "id": 3605,
+ "name": "The 2009 Central Europe Regional Contest",
+ "url": "https://qoj.ac/contest/3605",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 17506,
+   "letter": "A",
+   "title": "Accountant notes",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Accountant notes.pdf"
+  },
+  {
+   "id": 17507,
+   "letter": "B",
+   "title": "Better and faster!",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Better and faster!.pdf"
+  },
+  {
+   "id": 17508,
+   "letter": "C",
+   "title": "Cave",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Cave.pdf"
+  },
+  {
+   "id": 17509,
+   "letter": "D",
+   "title": "Decision",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Decision.pdf"
+  },
+  {
+   "id": 17510,
+   "letter": "E",
+   "title": "Everybody may get lost in space",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Everybody may get lost in space.pdf"
+  },
+  {
+   "id": 17511,
+   "letter": "F",
+   "title": "(False) faces",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - (False) faces.pdf"
+  },
+  {
+   "id": 17512,
+   "letter": "G",
+   "title": "Garlands",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Garlands.pdf"
+  },
+  {
+   "id": 17513,
+   "letter": "H",
+   "title": "Hypervisor MacrOS",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Hypervisor MacrOS.pdf"
+  },
+  {
+   "id": 17514,
+   "letter": "I",
+   "title": "Island",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Island.pdf"
+  },
+  {
+   "id": 17515,
+   "letter": "J",
+   "title": "Jack's socks",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Jack's socks.pdf"
+  },
+  {
+   "id": 17516,
+   "letter": "K",
+   "title": "Knowledge for the masses",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Knowledge for the masses.pdf"
+  }
+ ]
+}

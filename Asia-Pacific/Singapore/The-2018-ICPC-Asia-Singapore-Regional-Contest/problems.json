@@ -1,0 +1,71 @@
+{
+ "id": 4076,
+ "name": "The 2018 ICPC Asia Singapore Regional Contest",
+ "url": "https://qoj.ac/contest/4076",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Singapore"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 20113,
+   "letter": "A",
+   "title": "Largest Triangle"
+  },
+  {
+   "id": 20114,
+   "letter": "B",
+   "title": "Hoppers"
+  },
+  {
+   "id": 20115,
+   "letter": "C",
+   "title": "SG Coin"
+  },
+  {
+   "id": 20116,
+   "letter": "D",
+   "title": "Bitwise"
+  },
+  {
+   "id": 20117,
+   "letter": "E",
+   "title": "Magical String"
+  },
+  {
+   "id": 20118,
+   "letter": "F",
+   "title": "Wi Know"
+  },
+  {
+   "id": 20119,
+   "letter": "G",
+   "title": "Rectangular City"
+  },
+  {
+   "id": 20120,
+   "letter": "H",
+   "title": "Sliding Blocks"
+  },
+  {
+   "id": 20121,
+   "letter": "I",
+   "title": "Prolonged Password"
+  },
+  {
+   "id": 20122,
+   "letter": "J",
+   "title": "Free Food"
+  },
+  {
+   "id": 20123,
+   "letter": "K",
+   "title": "Conveyor Belts"
+  },
+  {
+   "id": 20124,
+   "letter": "L",
+   "title": "Non-Prime Factors"
+  }
+ ]
+}

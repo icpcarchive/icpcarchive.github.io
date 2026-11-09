@@ -1,0 +1,102 @@
+{
+ "id": 1019,
+ "name": "The 2020 ICPC Asia Jakarta Regional Contest",
+ "url": "https://qoj.ac/contest/1019",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Indonesia"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 4931,
+   "letter": "A",
+   "title": "Comic Binge",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Comic Binge.pdf"
+  },
+  {
+   "id": 4932,
+   "letter": "B",
+   "title": "Moon and Sun",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Moon and Sun.pdf"
+  },
+  {
+   "id": 4933,
+   "letter": "C",
+   "title": "Cul-De-Sac Parades",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Cul-De-Sac Parades.pdf"
+  },
+  {
+   "id": 4934,
+   "letter": "D",
+   "title": "Forbidden Card",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Forbidden Card.pdf"
+  },
+  {
+   "id": 4935,
+   "letter": "E",
+   "title": "Exchange Bottleneck",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Exchange Bottleneck.pdf"
+  },
+  {
+   "id": 4936,
+   "letter": "F",
+   "title": "Shopping Changes",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Shopping Changes.pdf"
+  },
+  {
+   "id": 4937,
+   "letter": "G",
+   "title": "Permutation Transformation",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Permutation Transformation.pdf"
+  },
+  {
+   "id": 4938,
+   "letter": "H",
+   "title": "Writing Tasks",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Writing Tasks.pdf"
+  },
+  {
+   "id": 4939,
+   "letter": "I",
+   "title": "Red Black Ball",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Red Black Ball.pdf"
+  },
+  {
+   "id": 4940,
+   "letter": "J",
+   "title": "Token Distance",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Token Distance.pdf"
+  },
+  {
+   "id": 4941,
+   "letter": "K",
+   "title": "Tree Beauty",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Tree Beauty.pdf"
+  },
+  {
+   "id": 4942,
+   "letter": "L",
+   "title": "Robust Defense",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Robust Defense.pdf"
+  },
+  {
+   "id": 4943,
+   "letter": "M",
+   "title": "Police Stations",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - Police Stations.pdf"
+  }
+ ]
+}

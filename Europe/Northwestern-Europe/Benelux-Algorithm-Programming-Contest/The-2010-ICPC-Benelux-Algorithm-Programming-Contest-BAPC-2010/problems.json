@@ -1,0 +1,130 @@
+{
+ "id": 3898,
+ "name": "The 2010 ICPC Benelux Algorithm Programming Contest (BAPC 2010)",
+ "url": "https://qoj.ac/contest/3898",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3898&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3898&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19239,
+   "letter": "A",
+   "title": "Gene Shuffle",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Gene Shuffle.pdf"
+  },
+  {
+   "id": 19240,
+   "letter": "B",
+   "title": "Top 2000",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Top 2000.pdf"
+  },
+  {
+   "id": 19241,
+   "letter": "C",
+   "title": "The Twin Tower",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - The Twin Tower.pdf"
+  },
+  {
+   "id": 19242,
+   "letter": "D",
+   "title": "Collatz",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Collatz.pdf"
+  },
+  {
+   "id": 19243,
+   "letter": "E",
+   "title": "Clocks",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Clocks.pdf"
+  },
+  {
+   "id": 19244,
+   "letter": "F",
+   "title": "Maze Recognition",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Maze Recognition.pdf"
+  },
+  {
+   "id": 19245,
+   "letter": "G",
+   "title": "Snooker",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Snooker.pdf"
+  },
+  {
+   "id": 19246,
+   "letter": "H",
+   "title": "Pie Division",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Pie Division.pdf"
+  },
+  {
+   "id": 19247,
+   "letter": "I",
+   "title": "Keylogger",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Keylogger.pdf"
+  },
+  {
+   "id": 19248,
+   "letter": "J",
+   "title": "Wrong Answer",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Wrong Answer.pdf"
+  }
+ ]
+}

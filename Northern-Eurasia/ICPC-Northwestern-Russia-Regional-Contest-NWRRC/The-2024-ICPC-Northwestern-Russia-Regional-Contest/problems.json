@@ -1,0 +1,167 @@
+{
+ "id": 1864,
+ "name": "The 2024 ICPC Northwestern Russia Regional Contest",
+ "url": "https://qoj.ac/contest/1864",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Northwestern Russia Regional Contest (NWRRC) / Northern Subregional",
+  "ICPC/Regionals/Northern Eurasia/Ural Regional Contest / Ural Subregional",
+  "ICPC/Regionals/Northern Eurasia/Taurida Regional Contest / Taurida Subregional",
+  "ICPC/Regionals/Northern Eurasia/Armenia Regional Contest / Armenia Subregional",
+  "ICPC/Regionals/Northern Eurasia/Kazakhstan Regional Contest / Kazakhstan Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1864&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1864&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9824,
+   "letter": "A",
+   "title": "Another Brick in the Wall",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Another Brick in the Wall.pdf"
+  },
+  {
+   "id": 9825,
+   "letter": "B",
+   "title": "Brick in the Wall, Part 2",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Brick in the Wall, Part 2.pdf"
+  },
+  {
+   "id": 9826,
+   "letter": "C",
+   "title": "Capybara Cozy Carnival",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Capybara Cozy Carnival.pdf"
+  },
+  {
+   "id": 9827,
+   "letter": "D",
+   "title": "Defective Script",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Defective Script.pdf"
+  },
+  {
+   "id": 9828,
+   "letter": "E",
+   "title": "Eight-Shaped Figures",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Eight-Shaped Figures.pdf"
+  },
+  {
+   "id": 9829,
+   "letter": "F",
+   "title": "False Alarm",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - False Alarm.pdf"
+  },
+  {
+   "id": 9830,
+   "letter": "G",
+   "title": "Game of Annihilation",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game of Annihilation.pdf"
+  },
+  {
+   "id": 9831,
+   "letter": "H",
+   "title": "Hanoi Towers Reloaded",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hanoi Towers Reloaded.pdf"
+  },
+  {
+   "id": 9832,
+   "letter": "I",
+   "title": "If I Could Turn Back Time",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - If I Could Turn Back Time.pdf"
+  },
+  {
+   "id": 9833,
+   "letter": "J",
+   "title": "Just Half is Enough",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Just Half is Enough.pdf"
+  },
+  {
+   "id": 9834,
+   "letter": "K",
+   "title": "Keyboard Chaos",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Keyboard Chaos.pdf"
+  },
+  {
+   "id": 9835,
+   "letter": "L",
+   "title": "Longest Common Substring",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Longest Common Substring.pdf"
+  },
+  {
+   "id": 9836,
+   "letter": "M",
+   "title": "Misère",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Misère.pdf"
+  }
+ ]
+}

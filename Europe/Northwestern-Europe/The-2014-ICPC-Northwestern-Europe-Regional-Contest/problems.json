@@ -1,0 +1,141 @@
+{
+ "id": 452,
+ "name": "The 2014 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/452",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=452&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=452&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3184,
+   "letter": "A",
+   "title": "Around the Track",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Around the Track.pdf"
+  },
+  {
+   "id": 3185,
+   "letter": "B",
+   "title": "Biking Duck",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Biking Duck.pdf"
+  },
+  {
+   "id": 3186,
+   "letter": "C",
+   "title": "Cent Savings",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cent Savings.pdf"
+  },
+  {
+   "id": 3187,
+   "letter": "D",
+   "title": "Digi Comp II",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Digi Comp II.pdf"
+  },
+  {
+   "id": 3188,
+   "letter": "E",
+   "title": "Euclidean TSP",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Euclidean TSP.pdf"
+  },
+  {
+   "id": 3189,
+   "letter": "F",
+   "title": "Finding Lines",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Finding Lines.pdf"
+  },
+  {
+   "id": 3190,
+   "letter": "G",
+   "title": "Gathering",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gathering.pdf"
+  },
+  {
+   "id": 3191,
+   "letter": "H",
+   "title": "Hyacinth",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hyacinth.pdf"
+  },
+  {
+   "id": 3192,
+   "letter": "I",
+   "title": "Indoorienteering",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Indoorienteering.pdf"
+  },
+  {
+   "id": 3193,
+   "letter": "J",
+   "title": "Judging Troubles",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Judging Troubles.pdf"
+  },
+  {
+   "id": 3194,
+   "letter": "K",
+   "title": "Knapsack Collection",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Knapsack Collection.pdf"
+  }
+ ]
+}

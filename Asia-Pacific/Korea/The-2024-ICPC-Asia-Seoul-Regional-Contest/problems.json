@@ -1,0 +1,156 @@
+{
+ "id": 1989,
+ "name": "The 2024 ICPC Asia Seoul Regional Contest",
+ "url": "https://qoj.ac/contest/1989",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Korea"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1989&r=0"
+  },
+  {
+   "text": "Tutorials (ko)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1989&r=1"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1989&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 10535,
+   "letter": "A",
+   "title": "Bottles",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Bottles.pdf"
+  },
+  {
+   "id": 10536,
+   "letter": "B",
+   "title": "Card Flipping",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Card Flipping.pdf"
+  },
+  {
+   "id": 10537,
+   "letter": "C",
+   "title": "Colorful Quadrants",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Colorful Quadrants.pdf"
+  },
+  {
+   "id": 10538,
+   "letter": "D",
+   "title": "Ladder Update",
+   "statement_pages": [
+    9,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Ladder Update.pdf"
+  },
+  {
+   "id": 10539,
+   "letter": "E",
+   "title": "Mausoleum",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Mausoleum.pdf"
+  },
+  {
+   "id": 10540,
+   "letter": "F",
+   "title": "Pair Sorting",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Pair Sorting.pdf"
+  },
+  {
+   "id": 10541,
+   "letter": "G",
+   "title": "Palindromic Length",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Palindromic Length.pdf"
+  },
+  {
+   "id": 10542,
+   "letter": "H",
+   "title": "Protecting Kingdom",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Protecting Kingdom.pdf"
+  },
+  {
+   "id": 10543,
+   "letter": "I",
+   "title": "Square Stamping",
+   "statement_pages": [
+    20,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Square Stamping.pdf"
+  },
+  {
+   "id": 10544,
+   "letter": "J",
+   "title": "Street Development",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Street Development.pdf"
+  },
+  {
+   "id": 10545,
+   "letter": "K",
+   "title": "String Rank",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - String Rank.pdf"
+  },
+  {
+   "id": 10546,
+   "letter": "L",
+   "title": "Triangle",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Triangle.pdf"
+  }
+ ]
+}

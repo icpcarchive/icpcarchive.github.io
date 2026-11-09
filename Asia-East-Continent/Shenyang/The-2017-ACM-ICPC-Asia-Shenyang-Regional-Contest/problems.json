@@ -1,0 +1,160 @@
+{
+ "id": 2109,
+ "name": "The 2017 ACM-ICPC Asia Shenyang Regional Contest",
+ "url": "https://qoj.ac/contest/2109",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Shenyang",
+  "ICPC/Regionals/Asia East Continent/The 2017 ACM-ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2109&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11923,
+   "letter": "A",
+   "title": "BBP Formula",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - BBP Formula.pdf"
+  },
+  {
+   "id": 11924,
+   "letter": "B",
+   "title": "Bridge",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bridge.pdf"
+  },
+  {
+   "id": 11925,
+   "letter": "C",
+   "title": "Empty Convex Polygons",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Empty Convex Polygons.pdf"
+  },
+  {
+   "id": 11926,
+   "letter": "D",
+   "title": "Defense of the Ancients",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Defense of the Ancients.pdf"
+  },
+  {
+   "id": 11927,
+   "letter": "E",
+   "title": "Five-round Show Hand",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Five-round Show Hand.pdf"
+  },
+  {
+   "id": 11928,
+   "letter": "F",
+   "title": "Heron and His Triangle",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Heron and His Triangle.pdf"
+  },
+  {
+   "id": 11929,
+   "letter": "G",
+   "title": "Infinite Fraction Path",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Infinite Fraction Path.pdf"
+  },
+  {
+   "id": 11930,
+   "letter": "H",
+   "title": "Legends of the Three Kingdoms",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Legends of the Three Kingdoms.pdf"
+  },
+  {
+   "id": 11931,
+   "letter": "I",
+   "title": "Little Boxes",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Little Boxes.pdf"
+  },
+  {
+   "id": 11932,
+   "letter": "J",
+   "title": "New Self-describing Sequence",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - New Self-describing Sequence.pdf"
+  },
+  {
+   "id": 11933,
+   "letter": "K",
+   "title": "Rabbits",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Rabbits.pdf"
+  },
+  {
+   "id": 11934,
+   "letter": "L",
+   "title": "Tree",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Tree.pdf"
+  },
+  {
+   "id": 11935,
+   "letter": "M",
+   "title": "Wandering Robots",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Wandering Robots.pdf"
+  }
+ ]
+}

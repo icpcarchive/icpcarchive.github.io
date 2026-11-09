@@ -1,0 +1,159 @@
+{
+ "id": 4111,
+ "name": "The 2021 ICPC Asia Hanoi Regional Contest",
+ "url": "https://qoj.ac/contest/4111",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Vietnam"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=4111&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 20702,
+   "letter": "A",
+   "title": "Awesome MST Problem",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Awesome MST Problem.pdf"
+  },
+  {
+   "id": 20703,
+   "letter": "B",
+   "title": "Backbone Network",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Backbone Network.pdf"
+  },
+  {
+   "id": 20704,
+   "letter": "C",
+   "title": "Coloring Polygon",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Coloring Polygon.pdf"
+  },
+  {
+   "id": 20705,
+   "letter": "D",
+   "title": "Distinctive Number",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Distinctive Number.pdf"
+  },
+  {
+   "id": 20706,
+   "letter": "E",
+   "title": "Even Paths",
+   "statement_pages": [
+    8,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Even Paths.pdf"
+  },
+  {
+   "id": 20707,
+   "letter": "F",
+   "title": "Final Ranking",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Final Ranking.pdf"
+  },
+  {
+   "id": 20708,
+   "letter": "G",
+   "title": "Group Testing",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Group Testing.pdf"
+  },
+  {
+   "id": 20709,
+   "letter": "H",
+   "title": "Hoang & Vuong",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hoang & Vuong.pdf"
+  },
+  {
+   "id": 20710,
+   "letter": "I",
+   "title": "ICPC Hardest Problem",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - ICPC Hardest Problem.pdf"
+  },
+  {
+   "id": 20711,
+   "letter": "J",
+   "title": "Joining Strings",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joining Strings.pdf"
+  },
+  {
+   "id": 20712,
+   "letter": "K",
+   "title": "K Query",
+   "statement_pages": [
+    20,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - K Query.pdf"
+  },
+  {
+   "id": 20713,
+   "letter": "L",
+   "title": "Left Or Right",
+   "statement_pages": [
+    21,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Left Or Right.pdf"
+  },
+  {
+   "id": 20714,
+   "letter": "M",
+   "title": "Millionplex",
+   "statement_pages": [
+    22,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Millionplex.pdf"
+  }
+ ]
+}

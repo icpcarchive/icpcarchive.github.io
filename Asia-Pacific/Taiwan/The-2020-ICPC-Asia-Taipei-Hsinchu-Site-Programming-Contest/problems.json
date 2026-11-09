@@ -1,0 +1,163 @@
+{
+ "id": 469,
+ "name": "The 2020 ICPC Asia Taipei-Hsinchu Site Programming Contest",
+ "url": "https://qoj.ac/contest/469",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Taiwan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=469&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=469&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2509,
+   "letter": "A",
+   "title": "Right-Coupled Numbers",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Right-Coupled Numbers.pdf"
+  },
+  {
+   "id": 2510,
+   "letter": "B",
+   "title": "Make Numbers",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Make Numbers.pdf"
+  },
+  {
+   "id": 2511,
+   "letter": "C",
+   "title": "Pyramid",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Pyramid.pdf"
+  },
+  {
+   "id": 2512,
+   "letter": "D",
+   "title": "Quality Monitoring",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Quality Monitoring.pdf"
+  },
+  {
+   "id": 2513,
+   "letter": "E",
+   "title": "A Color Game",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - A Color Game.pdf"
+  },
+  {
+   "id": 2514,
+   "letter": "F",
+   "title": "Cable Protection",
+   "statement_pages": [
+    11,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Cable Protection.pdf"
+  },
+  {
+   "id": 2515,
+   "letter": "G",
+   "title": "Graph Cards",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Graph Cards.pdf"
+  },
+  {
+   "id": 2516,
+   "letter": "H",
+   "title": "Optimization for UltraNet",
+   "statement_pages": [
+    17,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Optimization for UltraNet.pdf"
+  },
+  {
+   "id": 2517,
+   "letter": "I",
+   "title": "Critical Structures",
+   "statement_pages": [
+    21,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Critical Structures.pdf"
+  },
+  {
+   "id": 2518,
+   "letter": "J",
+   "title": "Puzzle Game",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Puzzle Game.pdf"
+  },
+  {
+   "id": 2519,
+   "letter": "K",
+   "title": "Number with Bachelors",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Number with Bachelors.pdf"
+  },
+  {
+   "id": 2520,
+   "letter": "L",
+   "title": "Save lives or money",
+   "statement_pages": [
+    29,
+    34
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Save lives or money.pdf"
+  },
+  {
+   "id": 2521,
+   "letter": "M",
+   "title": "Keystroke",
+   "statement_pages": [
+    35,
+    36
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Keystroke.pdf"
+  }
+ ]
+}

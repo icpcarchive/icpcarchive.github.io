@@ -1,0 +1,153 @@
+{
+ "id": 3295,
+ "name": "The 2025 ICPC Asia East Continent Final Contest",
+ "url": "https://qoj.ac/contest/3295",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent",
+  "ICPC/Regionals/Asia East Continent/The 2025 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3295&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3295&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16328,
+   "letter": "A",
+   "title": "Outstanding Outlines",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Outstanding Outlines.pdf"
+  },
+  {
+   "id": 16329,
+   "letter": "B",
+   "title": "Batching Badges",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Batching Badges.pdf"
+  },
+  {
+   "id": 16330,
+   "letter": "C",
+   "title": "Potential Peak",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Potential Peak.pdf"
+  },
+  {
+   "id": 16331,
+   "letter": "D",
+   "title": "Strategic Stones",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Strategic Stones.pdf"
+  },
+  {
+   "id": 16332,
+   "letter": "E",
+   "title": "Efficient Express",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Efficient Express.pdf"
+  },
+  {
+   "id": 16333,
+   "letter": "F",
+   "title": "Set of Intervals 2",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Set of Intervals 2.pdf"
+  },
+  {
+   "id": 16334,
+   "letter": "G",
+   "title": "Revolver Roulette",
+   "statement_pages": [
+    14,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Revolver Roulette.pdf"
+  },
+  {
+   "id": 16335,
+   "letter": "H",
+   "title": "Hextech High-roll",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hextech High-roll.pdf"
+  },
+  {
+   "id": 16336,
+   "letter": "I",
+   "title": "Redundancy Refrain",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Redundancy Refrain.pdf"
+  },
+  {
+   "id": 16337,
+   "letter": "J",
+   "title": "Tree-mendous Transmission",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Tree-mendous Transmission.pdf"
+  },
+  {
+   "id": 16338,
+   "letter": "K",
+   "title": "Magically Marked Matching Master",
+   "statement_pages": [
+    24,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Magically Marked Matching Master.pdf"
+  },
+  {
+   "id": 16339,
+   "letter": "L",
+   "title": "Logical Resonance",
+   "statement_pages": [
+    26,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Logical Resonance.pdf"
+  }
+ ]
+}

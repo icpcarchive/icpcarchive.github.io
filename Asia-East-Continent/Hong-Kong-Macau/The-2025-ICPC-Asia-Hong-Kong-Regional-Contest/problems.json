@@ -1,0 +1,153 @@
+{
+ "id": 3169,
+ "name": "The 2025 ICPC Asia Hong Kong Regional Contest",
+ "url": "https://qoj.ac/contest/3169",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Hong Kong & Macau",
+  "ICPC/Regionals/Asia East Continent/The 2025 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3169&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3169&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15432,
+   "letter": "A",
+   "title": "Bipartite Graph Matching Problem",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Bipartite Graph Matching Problem.pdf"
+  },
+  {
+   "id": 15433,
+   "letter": "B",
+   "title": "Travelling",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Travelling.pdf"
+  },
+  {
+   "id": 15434,
+   "letter": "C",
+   "title": "Stonebag",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Stonebag.pdf"
+  },
+  {
+   "id": 15435,
+   "letter": "D",
+   "title": "Dumb Problem",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dumb Problem.pdf"
+  },
+  {
+   "id": 15436,
+   "letter": "E",
+   "title": "Bipartite Graph Weighting Problem",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Bipartite Graph Weighting Problem.pdf"
+  },
+  {
+   "id": 15437,
+   "letter": "F",
+   "title": "Find the Circuit",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Find the Circuit.pdf"
+  },
+  {
+   "id": 15438,
+   "letter": "G",
+   "title": "Watering System",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Watering System.pdf"
+  },
+  {
+   "id": 15439,
+   "letter": "H",
+   "title": "Longest Common Prefix",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Longest Common Prefix.pdf"
+  },
+  {
+   "id": 15440,
+   "letter": "I",
+   "title": "DFS Order - Extra Stage",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - DFS Order - Extra Stage.pdf"
+  },
+  {
+   "id": 15441,
+   "letter": "J",
+   "title": "Re: Becoming the Programming Champion",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Re_ Becoming the Programming Champion.pdf"
+  },
+  {
+   "id": 15442,
+   "letter": "K",
+   "title": "Cyclic Shift",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Cyclic Shift.pdf"
+  },
+  {
+   "id": 15443,
+   "letter": "L",
+   "title": "Cyclic Shift II",
+   "statement_pages": [
+    18,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Cyclic Shift II.pdf"
+  }
+ ]
+}

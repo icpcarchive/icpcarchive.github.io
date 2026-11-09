@@ -1,0 +1,126 @@
+{
+ "id": 1116,
+ "name": "North Central NA 2022",
+ "url": "https://qoj.ac/contest/1116",
+ "categories": [
+  "ICPC/Regionals/North America/North Central NA"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1116&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5599,
+   "letter": "A",
+   "title": "Repetitive Song",
+   "statement_pages": [
+    5,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Repetitive Song.pdf"
+  },
+  {
+   "id": 5590,
+   "letter": "B",
+   "title": "Exponent Exchange",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Exponent Exchange.pdf"
+  },
+  {
+   "id": 5582,
+   "letter": "C",
+   "title": "Chocolate Chip Fabrication",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Chocolate Chip Fabrication.pdf"
+  },
+  {
+   "id": 5576,
+   "letter": "D",
+   "title": "Advertising ICPC",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Advertising ICPC.pdf"
+  },
+  {
+   "id": 5602,
+   "letter": "E",
+   "title": "Sun and Moon",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Sun and Moon.pdf"
+  },
+  {
+   "id": 5601,
+   "letter": "F",
+   "title": "Streets Ahead",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Streets Ahead.pdf"
+  },
+  {
+   "id": 5600,
+   "letter": "G",
+   "title": "Restaurant Opening",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Restaurant Opening.pdf"
+  },
+  {
+   "id": 5604,
+   "letter": "H",
+   "title": "Triangle Containment",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Triangle Containment.pdf"
+  },
+  {
+   "id": 5586,
+   "letter": "I",
+   "title": "Digits of Unity",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Digits of Unity.pdf"
+  },
+  {
+   "id": 5579,
+   "letter": "J",
+   "title": "Bog of Eternal Stench",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Bog of Eternal Stench.pdf"
+  }
+ ]
+}

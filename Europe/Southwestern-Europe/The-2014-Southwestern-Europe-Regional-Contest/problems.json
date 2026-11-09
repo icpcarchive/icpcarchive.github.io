@@ -1,0 +1,130 @@
+{
+ "id": 249,
+ "name": "The 2014 Southwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/249",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=249&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=249&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 4501,
+   "letter": "A",
+   "title": "GREAT + SWERC = PORTO",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - GREAT + SWERC = PORTO.pdf"
+  },
+  {
+   "id": 4502,
+   "letter": "B",
+   "title": "Flowery Trails",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Flowery Trails.pdf"
+  },
+  {
+   "id": 4503,
+   "letter": "C",
+   "title": "Golf Bot",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Golf Bot.pdf"
+  },
+  {
+   "id": 4504,
+   "letter": "D",
+   "title": "Book Club",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Book Club.pdf"
+  },
+  {
+   "id": 4505,
+   "letter": "E",
+   "title": "Ricochet Robots",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Ricochet Robots.pdf"
+  },
+  {
+   "id": 4506,
+   "letter": "F",
+   "title": "City Park",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - City Park.pdf"
+  },
+  {
+   "id": 4507,
+   "letter": "G",
+   "title": "Playing with Geometry",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Playing with Geometry.pdf"
+  },
+  {
+   "id": 4508,
+   "letter": "H",
+   "title": "Money Transfers",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Money Transfers.pdf"
+  },
+  {
+   "id": 4509,
+   "letter": "I",
+   "title": "The Safe Secret",
+   "statement_pages": [
+    19,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - The Safe Secret.pdf"
+  },
+  {
+   "id": 4510,
+   "letter": "J",
+   "title": "The Big Painting",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - The Big Painting.pdf"
+  }
+ ]
+}

@@ -1,0 +1,126 @@
+{
+ "id": 3897,
+ "name": "The 2011 ICPC Benelux Algorithm Programming Contest (BAPC 2011)",
+ "url": "https://qoj.ac/contest/3897",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3897&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19249,
+   "letter": "A",
+   "title": "Popping Balloons",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Popping Balloons.pdf"
+  },
+  {
+   "id": 19250,
+   "letter": "B",
+   "title": "Quick out of the Harbour",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Quick out of the Harbour.pdf"
+  },
+  {
+   "id": 19251,
+   "letter": "C",
+   "title": "Find the Treasure",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Find the Treasure.pdf"
+  },
+  {
+   "id": 19252,
+   "letter": "D",
+   "title": "Bad Wiring",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Bad Wiring.pdf"
+  },
+  {
+   "id": 19253,
+   "letter": "E",
+   "title": "Undercover Pirate",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Undercover Pirate.pdf"
+  },
+  {
+   "id": 19254,
+   "letter": "F",
+   "title": "Ultimate Finishing Strike",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Ultimate Finishing Strike.pdf"
+  },
+  {
+   "id": 19255,
+   "letter": "G",
+   "title": "Doubloon Game",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Doubloon Game.pdf"
+  },
+  {
+   "id": 19256,
+   "letter": "H",
+   "title": "Walking the Plank",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Walking the Plank.pdf"
+  },
+  {
+   "id": 19257,
+   "letter": "I",
+   "title": "Parking Ships",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Parking Ships.pdf"
+  },
+  {
+   "id": 19258,
+   "letter": "J",
+   "title": "Treasure Map",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Treasure Map.pdf"
+  }
+ ]
+}

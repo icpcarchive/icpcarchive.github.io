@@ -1,0 +1,104 @@
+{
+ "id": 3626,
+ "name": "The 2002 ACM ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/3626",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3626&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19711,
+   "letter": "A",
+   "title": "Euro Efficiency",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Euro Efficiency.pdf"
+  },
+  {
+   "id": 19712,
+   "letter": "B",
+   "title": "Markov Trains",
+   "statement_pages": [
+    5,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Markov Trains.pdf"
+  },
+  {
+   "id": 19713,
+   "letter": "C",
+   "title": "Hansel and Grethel",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Hansel and Grethel.pdf"
+  },
+  {
+   "id": 19714,
+   "letter": "D",
+   "title": "Floors",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Floors.pdf"
+  },
+  {
+   "id": 19715,
+   "letter": "E",
+   "title": "The Picnic",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - The Picnic.pdf"
+  },
+  {
+   "id": 19716,
+   "letter": "F",
+   "title": "Pearls",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Pearls.pdf"
+  },
+  {
+   "id": 19717,
+   "letter": "G",
+   "title": "Huffman Trees",
+   "statement_pages": [
+    17,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Huffman Trees.pdf"
+  },
+  {
+   "id": 19718,
+   "letter": "H",
+   "title": "Input",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Input.pdf"
+  }
+ ]
+}

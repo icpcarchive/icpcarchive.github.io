@@ -1,0 +1,152 @@
+{
+ "id": 2658,
+ "name": "The 2025 ICPC Northwestern Russia Regional Contest",
+ "url": "https://qoj.ac/contest/2658",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Northwestern Russia Regional Contest (NWRRC) / Northern Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2658&r=0"
+  },
+  {
+   "text": "Tutorials (ru)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2658&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15407,
+   "letter": "A",
+   "title": "Asynchronous Processor",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Asynchronous Processor.pdf"
+  },
+  {
+   "id": 15408,
+   "letter": "B",
+   "title": "Bounding Boxes",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bounding Boxes.pdf"
+  },
+  {
+   "id": 15409,
+   "letter": "C",
+   "title": "Compact Encoding",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Compact Encoding.pdf"
+  },
+  {
+   "id": 15410,
+   "letter": "D",
+   "title": "Defense Distance",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Defense Distance.pdf"
+  },
+  {
+   "id": 15411,
+   "letter": "E",
+   "title": "Eight-Connected Figures",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Eight-Connected Figures.pdf"
+  },
+  {
+   "id": 15412,
+   "letter": "F",
+   "title": "Faulty Fraction",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Faulty Fraction.pdf"
+  },
+  {
+   "id": 15413,
+   "letter": "G",
+   "title": "Games of Chess",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Games of Chess.pdf"
+  },
+  {
+   "id": 15414,
+   "letter": "H",
+   "title": "High Score",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - High Score.pdf"
+  },
+  {
+   "id": 15415,
+   "letter": "I",
+   "title": "Infection Investigation",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Infection Investigation.pdf"
+  },
+  {
+   "id": 15416,
+   "letter": "J",
+   "title": "Judging Problem",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Judging Problem.pdf"
+  },
+  {
+   "id": 15417,
+   "letter": "K",
+   "title": "Keys and Grates",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Keys and Grates.pdf"
+  },
+  {
+   "id": 15418,
+   "letter": "L",
+   "title": "Lucky Number Theory",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lucky Number Theory.pdf"
+  }
+ ]
+}

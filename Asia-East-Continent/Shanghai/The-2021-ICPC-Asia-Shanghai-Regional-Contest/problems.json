@@ -1,0 +1,160 @@
+{
+ "id": 2016,
+ "name": "The 2021 ICPC Asia Shanghai Regional Contest",
+ "url": "https://qoj.ac/contest/2016",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Shanghai",
+  "ICPC/Regionals/Asia East Continent/The 2021 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2016&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2016&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 10900,
+   "letter": "A",
+   "title": "Strange Functions",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Strange Functions.pdf"
+  },
+  {
+   "id": 10901,
+   "letter": "B",
+   "title": "Strange Permutations",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Strange Permutations.pdf"
+  },
+  {
+   "id": 10902,
+   "letter": "C",
+   "title": "Strange Matrices",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Strange Matrices.pdf"
+  },
+  {
+   "id": 10903,
+   "letter": "D",
+   "title": "Strange Fractions",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Strange Fractions.pdf"
+  },
+  {
+   "id": 10904,
+   "letter": "E",
+   "title": "Strange Integers",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Strange Integers.pdf"
+  },
+  {
+   "id": 10905,
+   "letter": "F",
+   "title": "Kaiji!",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Kaiji!.pdf"
+  },
+  {
+   "id": 10906,
+   "letter": "G",
+   "title": "Edge Groups",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Edge Groups.pdf"
+  },
+  {
+   "id": 10907,
+   "letter": "H",
+   "title": "Life is a Game",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Life is a Game.pdf"
+  },
+  {
+   "id": 10908,
+   "letter": "I",
+   "title": "Steadily Growing Steam",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Steadily Growing Steam.pdf"
+  },
+  {
+   "id": 10909,
+   "letter": "J",
+   "title": "Two Binary Strings Problem",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Two Binary Strings Problem.pdf"
+  },
+  {
+   "id": 10910,
+   "letter": "K",
+   "title": "Circle of Life",
+   "statement_pages": [
+    17,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Circle of Life.pdf"
+  },
+  {
+   "id": 10911,
+   "letter": "L",
+   "title": "Tri-Regular Graph Problem",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Tri-Regular Graph Problem.pdf"
+  },
+  {
+   "id": 10912,
+   "letter": "M",
+   "title": "Harmony in Harmony",
+   "statement_pages": [
+    21,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Harmony in Harmony.pdf"
+  }
+ ]
+}

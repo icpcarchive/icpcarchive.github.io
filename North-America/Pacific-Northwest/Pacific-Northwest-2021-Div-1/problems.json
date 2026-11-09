@@ -1,0 +1,159 @@
+{
+ "id": 857,
+ "name": "Pacific Northwest 2021 (Div. 1)",
+ "url": "https://qoj.ac/contest/857",
+ "categories": [
+  "ICPC/Regionals/North America/Pacific Northwest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=857&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2897,
+   "letter": "A",
+   "title": "Circle Bounce",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Circle Bounce.pdf"
+  },
+  {
+   "id": 2902,
+   "letter": "B",
+   "title": "Shortest Missing Subsequences",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Shortest Missing Subsequences.pdf"
+  },
+  {
+   "id": 2906,
+   "letter": "C",
+   "title": "XOR Island",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - XOR Island.pdf"
+  },
+  {
+   "id": 2913,
+   "letter": "D",
+   "title": "Archery Accuracy",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Archery Accuracy.pdf"
+  },
+  {
+   "id": 2914,
+   "letter": "E",
+   "title": "Problem Set Construction",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Problem Set Construction.pdf"
+  },
+  {
+   "id": 2910,
+   "letter": "F",
+   "title": "Rise and Fall",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Rise and Fall.pdf"
+  },
+  {
+   "id": 2901,
+   "letter": "G",
+   "title": "Hopscotch 500",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Hopscotch 500.pdf"
+  },
+  {
+   "id": 2915,
+   "letter": "H",
+   "title": "Reversibly Cyclic Strings",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Reversibly Cyclic Strings.pdf"
+  },
+  {
+   "id": 2898,
+   "letter": "I",
+   "title": "Diagonals",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Diagonals.pdf"
+  },
+  {
+   "id": 2900,
+   "letter": "J",
+   "title": "Fail Them All!",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Fail Them All!.pdf"
+  },
+  {
+   "id": 2904,
+   "letter": "K",
+   "title": "Tournament Seeding",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Tournament Seeding.pdf"
+  },
+  {
+   "id": 2899,
+   "letter": "L",
+   "title": "Dorm Room Divide",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Dorm Room Divide.pdf"
+  },
+  {
+   "id": 2905,
+   "letter": "M",
+   "title": "Tree Hopping",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Tree Hopping.pdf"
+  }
+ ]
+}

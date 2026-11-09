@@ -1,0 +1,171 @@
+{
+ "id": 3604,
+ "name": "The 2018 Polish Collegiate Programming Contest (AMPPZ 2018)",
+ "url": "https://qoj.ac/contest/3604",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/Polish Collegiate Programming Contest (AMPPZ)"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3604&r=0"
+  },
+  {
+   "text": "Statements (pl)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3604&r=1"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3604&r=2"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3604&r=3"
+  }
+ ],
+ "problems": [
+  {
+   "id": 17908,
+   "letter": "A",
+   "title": "Drone With a Camera",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Drone With a Camera.pdf"
+  },
+  {
+   "id": 17909,
+   "letter": "B",
+   "title": "Fibonaccis' vouchers",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Fibonaccis' vouchers.pdf"
+  },
+  {
+   "id": 17910,
+   "letter": "C",
+   "title": "Chinese Remainder Theorem",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Chinese Remainder Theorem.pdf"
+  },
+  {
+   "id": 17911,
+   "letter": "D",
+   "title": "Road",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Road.pdf"
+  },
+  {
+   "id": 17912,
+   "letter": "E",
+   "title": "Evaluation",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Evaluation.pdf"
+  },
+  {
+   "id": 17913,
+   "letter": "F",
+   "title": "Baking Pans",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Baking Pans.pdf"
+  },
+  {
+   "id": 17914,
+   "letter": "G",
+   "title": "Taste in Art",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Taste in Art.pdf"
+  },
+  {
+   "id": 17915,
+   "letter": "H",
+   "title": "Hobby",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hobby.pdf"
+  },
+  {
+   "id": 17916,
+   "letter": "I",
+   "title": "Grade Book",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Grade Book.pdf"
+  },
+  {
+   "id": 17917,
+   "letter": "J",
+   "title": "Identical Scarves",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Identical Scarves.pdf"
+  },
+  {
+   "id": 17918,
+   "letter": "K",
+   "title": "Pocket Money",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Pocket Money.pdf"
+  },
+  {
+   "id": 17919,
+   "letter": "L",
+   "title": "Lines",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lines.pdf"
+  },
+  {
+   "id": 17920,
+   "letter": "M",
+   "title": "Magical Maze",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Magical Maze.pdf"
+  }
+ ]
+}

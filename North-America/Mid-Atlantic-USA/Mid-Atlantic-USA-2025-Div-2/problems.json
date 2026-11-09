@@ -1,0 +1,165 @@
+{
+ "id": 3503,
+ "name": "Mid-Atlantic USA 2025 (Div. 2)",
+ "url": "https://qoj.ac/contest/3503",
+ "categories": [
+  "ICPC/Regionals/North America/Mid-Atlantic USA",
+  "ICPC/Regionals/North America/Southeast USA",
+  "ICPC/Regionals/North America/South Central USA"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3503&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3503&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16818,
+   "letter": "A",
+   "title": "Snakey String",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Snakey String.pdf"
+  },
+  {
+   "id": 16802,
+   "letter": "B",
+   "title": "Blind Bottles",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Blind Bottles.pdf"
+  },
+  {
+   "id": 16813,
+   "letter": "C",
+   "title": "One Way Only",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - One Way Only.pdf"
+  },
+  {
+   "id": 16806,
+   "letter": "D",
+   "title": "GUID Generator",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - GUID Generator.pdf"
+  },
+  {
+   "id": 16815,
+   "letter": "E",
+   "title": "Photo Encoding",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Photo Encoding.pdf"
+  },
+  {
+   "id": 16803,
+   "letter": "F",
+   "title": "Breakout",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Breakout.pdf"
+  },
+  {
+   "id": 16817,
+   "letter": "G",
+   "title": "Shinjuku Station",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Shinjuku Station.pdf"
+  },
+  {
+   "id": 16810,
+   "letter": "H",
+   "title": "Memories of Passport Control",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Memories of Passport Control.pdf"
+  },
+  {
+   "id": 16807,
+   "letter": "I",
+   "title": "Inazuma Cube Device",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Inazuma Cube Device.pdf"
+  },
+  {
+   "id": 16805,
+   "letter": "J",
+   "title": "Game of Nines",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Game of Nines.pdf"
+  },
+  {
+   "id": 16819,
+   "letter": "K",
+   "title": "Swap for Palindrome",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Swap for Palindrome.pdf"
+  },
+  {
+   "id": 16811,
+   "letter": "L",
+   "title": "Moonlit Time Machine",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Moonlit Time Machine.pdf"
+  },
+  {
+   "id": 16812,
+   "letter": "M",
+   "title": "Much Room for Mushrooms",
+   "statement_pages": [
+    27,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Much Room for Mushrooms.pdf"
+  }
+ ]
+}

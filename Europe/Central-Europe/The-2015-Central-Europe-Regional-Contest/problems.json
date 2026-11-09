@@ -1,0 +1,148 @@
+{
+ "id": 817,
+ "name": "The 2015 Central Europe Regional Contest",
+ "url": "https://qoj.ac/contest/817",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=817&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11077,
+   "letter": "A",
+   "title": "ASCII Addition",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - ASCII Addition.pdf"
+  },
+  {
+   "id": 11078,
+   "letter": "B",
+   "title": "Book Borders",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Book Borders.pdf"
+  },
+  {
+   "id": 11079,
+   "letter": "C",
+   "title": "Cow Confinement",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cow Confinement.pdf"
+  },
+  {
+   "id": 11080,
+   "letter": "D",
+   "title": "Digit Division",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Digit Division.pdf"
+  },
+  {
+   "id": 11081,
+   "letter": "E",
+   "title": "Export Estimate",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Export Estimate.pdf"
+  },
+  {
+   "id": 11082,
+   "letter": "F",
+   "title": "Frightful Formula",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Frightful Formula.pdf"
+  },
+  {
+   "id": 11083,
+   "letter": "G",
+   "title": "Greenhouse Growth",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Greenhouse Growth.pdf"
+  },
+  {
+   "id": 11084,
+   "letter": "H",
+   "title": "Hovering Hornet",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hovering Hornet.pdf"
+  },
+  {
+   "id": 11085,
+   "letter": "I",
+   "title": "Ice Igloos",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Ice Igloos.pdf"
+  },
+  {
+   "id": 11086,
+   "letter": "J",
+   "title": "Juice Junctions",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Juice Junctions.pdf"
+  },
+  {
+   "id": 11087,
+   "letter": "K",
+   "title": "Kernel Knights",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kernel Knights.pdf"
+  },
+  {
+   "id": 11088,
+   "letter": "L",
+   "title": "Looping Labyrinth",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Looping Labyrinth.pdf"
+  }
+ ]
+}

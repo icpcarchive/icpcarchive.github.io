@@ -1,0 +1,157 @@
+{
+ "id": 1099,
+ "name": "The 2022 ICPC Asia Hong Kong Regional Contest",
+ "url": "https://qoj.ac/contest/1099",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Hong Kong & Macau",
+  "ICPC/Regionals/Asia East Continent/The 2022 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1099&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1099&r=1"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1099&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5455,
+   "letter": "A",
+   "title": "TreeScript",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - TreeScript.pdf"
+  },
+  {
+   "id": 5456,
+   "letter": "B",
+   "title": "Big Picture",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Big Picture.pdf"
+  },
+  {
+   "id": 5457,
+   "letter": "C",
+   "title": "Painting Grid",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Painting Grid.pdf"
+  },
+  {
+   "id": 5458,
+   "letter": "D",
+   "title": "Shortest Path Query",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Shortest Path Query.pdf"
+  },
+  {
+   "id": 5459,
+   "letter": "E",
+   "title": "Goose, goose, DUCK?",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Goose, goose, DUCK_.pdf"
+  },
+  {
+   "id": 5460,
+   "letter": "F",
+   "title": "Sum of Numbers",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Sum of Numbers.pdf"
+  },
+  {
+   "id": 5461,
+   "letter": "G",
+   "title": "Paddle Star",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Paddle Star.pdf"
+  },
+  {
+   "id": 5462,
+   "letter": "H",
+   "title": "Another Goose Goose Duck Problem",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Another Goose Goose Duck Problem.pdf"
+  },
+  {
+   "id": 5463,
+   "letter": "I",
+   "title": "Range Closest Pair of Points Query",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Range Closest Pair of Points Query.pdf"
+  },
+  {
+   "id": 5464,
+   "letter": "J",
+   "title": "Dice Game",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Dice Game.pdf"
+  },
+  {
+   "id": 5465,
+   "letter": "K",
+   "title": "Maximum GCD",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Maximum GCD.pdf"
+  },
+  {
+   "id": 5466,
+   "letter": "L",
+   "title": "Permutation Compression",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Permutation Compression.pdf"
+  }
+ ]
+}

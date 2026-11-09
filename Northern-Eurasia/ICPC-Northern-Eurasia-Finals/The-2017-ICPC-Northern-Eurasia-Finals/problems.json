@@ -1,0 +1,152 @@
+{
+ "id": 1113,
+ "name": "The 2017 ICPC Northern Eurasia Finals",
+ "url": "https://qoj.ac/contest/1113",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1113&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1113&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11785,
+   "letter": "A",
+   "title": "Archery Tournament",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Archery Tournament.pdf"
+  },
+  {
+   "id": 11786,
+   "letter": "B",
+   "title": "Box",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Box.pdf"
+  },
+  {
+   "id": 11787,
+   "letter": "C",
+   "title": "Connections",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Connections.pdf"
+  },
+  {
+   "id": 11788,
+   "letter": "D",
+   "title": "Designing the Toy",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Designing the Toy.pdf"
+  },
+  {
+   "id": 11789,
+   "letter": "E",
+   "title": "Easy Quest",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Easy Quest.pdf"
+  },
+  {
+   "id": 11790,
+   "letter": "F",
+   "title": "The Final Level",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - The Final Level.pdf"
+  },
+  {
+   "id": 11791,
+   "letter": "G",
+   "title": "The Great Wall",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - The Great Wall.pdf"
+  },
+  {
+   "id": 11792,
+   "letter": "H",
+   "title": "Hack",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hack.pdf"
+  },
+  {
+   "id": 11793,
+   "letter": "I",
+   "title": "Interactive Sort",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Interactive Sort.pdf"
+  },
+  {
+   "id": 11794,
+   "letter": "J",
+   "title": "Journey from Petersburg to Moscow",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Journey from Petersburg to Moscow.pdf"
+  },
+  {
+   "id": 11795,
+   "letter": "K",
+   "title": "Knapsack Cryptosystem",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Knapsack Cryptosystem.pdf"
+  },
+  {
+   "id": 11796,
+   "letter": "L",
+   "title": "Laminar Family",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Laminar Family.pdf"
+  }
+ ]
+}

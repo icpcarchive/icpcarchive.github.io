@@ -1,0 +1,95 @@
+{
+ "id": 2272,
+ "name": "2016 Arab Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/2272",
+ "categories": [
+  "ICPC/Regionals/Africa and Arab/Arab Collegiate Programming Contest"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 11820,
+   "letter": "A",
+   "title": "Valar Morghulis",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Valar Morghulis.pdf"
+  },
+  {
+   "id": 11821,
+   "letter": "B",
+   "title": "Rains",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Rains.pdf"
+  },
+  {
+   "id": 11822,
+   "letter": "C",
+   "title": "Man in the middle",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Man in the middle.pdf"
+  },
+  {
+   "id": 11823,
+   "letter": "D",
+   "title": "Lumbo Jumbo",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Lumbo Jumbo.pdf"
+  },
+  {
+   "id": 11824,
+   "letter": "E",
+   "title": "Scrambled Digits",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Scrambled Digits.pdf"
+  },
+  {
+   "id": 11825,
+   "letter": "F",
+   "title": "Andorra",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Andorra.pdf"
+  },
+  {
+   "id": 11826,
+   "letter": "G",
+   "title": "Gotta Catch 'Em All",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Gotta Catch 'Em All.pdf"
+  },
+  {
+   "id": 11827,
+   "letter": "H",
+   "title": "Military Service",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Military Service.pdf"
+  },
+  {
+   "id": 11828,
+   "letter": "I",
+   "title": "Baklawa",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Baklawa.pdf"
+  },
+  {
+   "id": 11829,
+   "letter": "J",
+   "title": "Football Hooliganism",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Football Hooliganism.pdf"
+  },
+  {
+   "id": 11830,
+   "letter": "K",
+   "title": "Pokemon Buddy",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Pokemon Buddy.pdf"
+  },
+  {
+   "id": 11831,
+   "letter": "L",
+   "title": "Shika Bika",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Shika Bika.pdf"
+  }
+ ]
+}

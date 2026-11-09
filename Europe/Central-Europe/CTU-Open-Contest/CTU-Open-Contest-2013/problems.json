@@ -1,0 +1,104 @@
+{
+ "id": 3680,
+ "name": "CTU Open Contest 2013",
+ "url": "https://qoj.ac/contest/3680",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3680&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19493,
+   "letter": "A",
+   "title": "Fractional Lotion",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Fractional Lotion.pdf"
+  },
+  {
+   "id": 19494,
+   "letter": "B",
+   "title": "Folded Map",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Folded Map.pdf"
+  },
+  {
+   "id": 19495,
+   "letter": "C",
+   "title": "Furry Nuisance",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Furry Nuisance.pdf"
+  },
+  {
+   "id": 19496,
+   "letter": "D",
+   "title": "Fence Orthogonality",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Fence Orthogonality.pdf"
+  },
+  {
+   "id": 19497,
+   "letter": "E",
+   "title": "Flower Pots",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Flower Pots.pdf"
+  },
+  {
+   "id": 19498,
+   "letter": "F",
+   "title": "Frustrated Queue",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Frustrated Queue.pdf"
+  },
+  {
+   "id": 19499,
+   "letter": "G",
+   "title": "Frozen Rose-Heads",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Frozen Rose-Heads.pdf"
+  },
+  {
+   "id": 19500,
+   "letter": "H",
+   "title": "False Sense of Security",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - False Sense of Security.pdf"
+  }
+ ]
+}

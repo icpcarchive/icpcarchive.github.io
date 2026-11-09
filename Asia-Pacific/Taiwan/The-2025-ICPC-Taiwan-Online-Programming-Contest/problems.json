@@ -1,0 +1,148 @@
+{
+ "id": 2621,
+ "name": "The 2025 ICPC Taiwan Online Programming Contest",
+ "url": "https://qoj.ac/contest/2621",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Taiwan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2621&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15114,
+   "letter": "A",
+   "title": "Take It or Double It",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Take It or Double It.pdf"
+  },
+  {
+   "id": 15115,
+   "letter": "B",
+   "title": "Twin Guardians",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Twin Guardians.pdf"
+  },
+  {
+   "id": 15116,
+   "letter": "C",
+   "title": "One-Way Abyss",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - One-Way Abyss.pdf"
+  },
+  {
+   "id": 15117,
+   "letter": "D",
+   "title": "Palindromic Distance",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Palindromic Distance.pdf"
+  },
+  {
+   "id": 15118,
+   "letter": "E",
+   "title": "Explosive Slabstones Rearrangement",
+   "statement_pages": [
+    9,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Explosive Slabstones Rearrangement.pdf"
+  },
+  {
+   "id": 15119,
+   "letter": "F",
+   "title": "Fruitful Compression",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fruitful Compression.pdf"
+  },
+  {
+   "id": 15120,
+   "letter": "G",
+   "title": "Gamer Bafuko",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gamer Bafuko.pdf"
+  },
+  {
+   "id": 15121,
+   "letter": "H",
+   "title": "Chopsticks",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Chopsticks.pdf"
+  },
+  {
+   "id": 15122,
+   "letter": "I",
+   "title": "Reactor",
+   "statement_pages": [
+    19,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Reactor.pdf"
+  },
+  {
+   "id": 15123,
+   "letter": "J",
+   "title": "Gas Station",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Gas Station.pdf"
+  },
+  {
+   "id": 15124,
+   "letter": "K",
+   "title": "Move Stone",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Move Stone.pdf"
+  },
+  {
+   "id": 15125,
+   "letter": "L",
+   "title": "Stapler",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Stapler.pdf"
+  }
+ ]
+}

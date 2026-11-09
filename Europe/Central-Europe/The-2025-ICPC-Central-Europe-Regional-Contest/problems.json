@@ -1,0 +1,152 @@
+{
+ "id": 2814,
+ "name": "The 2025 ICPC Central Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2814",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2814&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2814&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16000,
+   "letter": "A",
+   "title": "Automatized Mineral Classification",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Automatized Mineral Classification.pdf"
+  },
+  {
+   "id": 16001,
+   "letter": "B",
+   "title": "Bit Recovery",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bit Recovery.pdf"
+  },
+  {
+   "id": 16002,
+   "letter": "C",
+   "title": "Connecting Railway Stations",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Connecting Railway Stations.pdf"
+  },
+  {
+   "id": 16003,
+   "letter": "D",
+   "title": "DNA",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - DNA.pdf"
+  },
+  {
+   "id": 16004,
+   "letter": "E",
+   "title": "Easy Tetris",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Easy Tetris.pdf"
+  },
+  {
+   "id": 16005,
+   "letter": "F",
+   "title": "Foxes",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Foxes.pdf"
+  },
+  {
+   "id": 16006,
+   "letter": "G",
+   "title": "Game of Darts",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game of Darts.pdf"
+  },
+  {
+   "id": 16007,
+   "letter": "H",
+   "title": "Hiking",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hiking.pdf"
+  },
+  {
+   "id": 16008,
+   "letter": "I",
+   "title": "Identical Fences",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Identical Fences.pdf"
+  },
+  {
+   "id": 16009,
+   "letter": "J",
+   "title": "Joyful Guided Tour",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joyful Guided Tour.pdf"
+  },
+  {
+   "id": 16010,
+   "letter": "K",
+   "title": "Key Properties",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Key Properties.pdf"
+  },
+  {
+   "id": 16011,
+   "letter": "L",
+   "title": "Letters on T-shirts",
+   "statement_pages": [
+    20,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Letters on T-shirts.pdf"
+  }
+ ]
+}

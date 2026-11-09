@@ -1,0 +1,130 @@
+{
+ "id": 3693,
+ "name": "The 2010 ICPC Southwestern Europe Regional Contest (SWERC 2010)",
+ "url": "https://qoj.ac/contest/3693",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3693&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3693&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19888,
+   "letter": "A",
+   "title": "Lawn mower",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Lawn mower.pdf"
+  },
+  {
+   "id": 19889,
+   "letter": "B",
+   "title": "Periodic points",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Periodic points.pdf"
+  },
+  {
+   "id": 19890,
+   "letter": "C",
+   "title": "Comparing answers",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Comparing answers.pdf"
+  },
+  {
+   "id": 19891,
+   "letter": "D",
+   "title": "Fake scoreboard",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Fake scoreboard.pdf"
+  },
+  {
+   "id": 19892,
+   "letter": "E",
+   "title": "Palindromic DNA",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Palindromic DNA.pdf"
+  },
+  {
+   "id": 19893,
+   "letter": "F",
+   "title": "Jumping monkey",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Jumping monkey.pdf"
+  },
+  {
+   "id": 19894,
+   "letter": "G",
+   "title": "Sensor network",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Sensor network.pdf"
+  },
+  {
+   "id": 19895,
+   "letter": "H",
+   "title": "Assembly line",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Assembly line.pdf"
+  },
+  {
+   "id": 19896,
+   "letter": "I",
+   "title": "Locks and keys",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Locks and keys.pdf"
+  },
+  {
+   "id": 19897,
+   "letter": "J",
+   "title": "3-sided dice",
+   "statement_pages": [
+    23,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - 3-sided dice.pdf"
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "id": 3685,
+ "name": "CTU Open Contest 2023",
+ "url": "https://qoj.ac/contest/3685",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3685&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3685&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19544,
+   "letter": "A",
+   "title": "Beth’s Cookies",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Beth’s Cookies.pdf"
+  },
+  {
+   "id": 19545,
+   "letter": "B",
+   "title": "Clubbing",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Clubbing.pdf"
+  },
+  {
+   "id": 19546,
+   "letter": "C",
+   "title": "Digitalisation",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Digitalisation.pdf"
+  },
+  {
+   "id": 19547,
+   "letter": "D",
+   "title": "Expressions",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Expressions.pdf"
+  },
+  {
+   "id": 19548,
+   "letter": "E",
+   "title": "Fragmentation",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Fragmentation.pdf"
+  },
+  {
+   "id": 19549,
+   "letter": "F",
+   "title": "Golem Coordinated Derby",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Golem Coordinated Derby.pdf"
+  },
+  {
+   "id": 19550,
+   "letter": "G",
+   "title": "Hamster",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Hamster.pdf"
+  },
+  {
+   "id": 19551,
+   "letter": "H",
+   "title": "Movers",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Movers.pdf"
+  },
+  {
+   "id": 19552,
+   "letter": "I",
+   "title": "Natatorium",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Natatorium.pdf"
+  },
+  {
+   "id": 19553,
+   "letter": "J",
+   "title": "Proglute",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Proglute.pdf"
+  },
+  {
+   "id": 19554,
+   "letter": "K",
+   "title": "Screamers in the Storm",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Screamers in the Storm.pdf"
+  },
+  {
+   "id": 19555,
+   "letter": "L",
+   "title": "Wall",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Wall.pdf"
+  }
+ ]
+}

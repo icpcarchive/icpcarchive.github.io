@@ -1,0 +1,145 @@
+{
+ "id": 1967,
+ "name": "The 2024 ICPC Europe Championship",
+ "url": "https://qoj.ac/contest/1967",
+ "categories": [
+  "ICPC/Regionals/Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1967&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1967&r=1"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1967&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 10336,
+   "letter": "A",
+   "title": "Grove",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Grove.pdf"
+  },
+  {
+   "id": 10337,
+   "letter": "B",
+   "title": "Charming Meals",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Charming Meals.pdf"
+  },
+  {
+   "id": 10338,
+   "letter": "C",
+   "title": "Annual Ants' Gathering",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Annual Ants' Gathering.pdf"
+  },
+  {
+   "id": 10339,
+   "letter": "D",
+   "title": "Funny or Scary?",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Funny or Scary_.pdf"
+  },
+  {
+   "id": 10340,
+   "letter": "E",
+   "title": "Damage per Second",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Damage per Second.pdf"
+  },
+  {
+   "id": 10341,
+   "letter": "F",
+   "title": "Dating",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Dating.pdf"
+  },
+  {
+   "id": 10342,
+   "letter": "G",
+   "title": "Scooter",
+   "statement_pages": [
+    15,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Scooter.pdf"
+  },
+  {
+   "id": 10343,
+   "letter": "H",
+   "title": "Division Avoidance",
+   "statement_pages": [
+    19,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Division Avoidance.pdf"
+  },
+  {
+   "id": 10344,
+   "letter": "I",
+   "title": "Disks",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Disks.pdf"
+  },
+  {
+   "id": 10345,
+   "letter": "J",
+   "title": "Amanda the Amoeba",
+   "statement_pages": [
+    25,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Amanda the Amoeba.pdf"
+  },
+  {
+   "id": 10346,
+   "letter": "K",
+   "title": "Make Triangle",
+   "statement_pages": [
+    29,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Make Triangle.pdf"
+  }
+ ]
+}

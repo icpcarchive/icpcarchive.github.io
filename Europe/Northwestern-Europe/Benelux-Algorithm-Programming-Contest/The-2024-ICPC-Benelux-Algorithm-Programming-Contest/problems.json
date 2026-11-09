@@ -1,0 +1,163 @@
+{
+ "id": 2604,
+ "name": "The 2024 ICPC Benelux Algorithm Programming Contest",
+ "url": "https://qoj.ac/contest/2604",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2604&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2604&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 14867,
+   "letter": "A",
+   "title": "\"Aaawww...\" or \"Aaayyy!!!\"",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - _Aaawww..._ or _Aaayyy!!!_.pdf"
+  },
+  {
+   "id": 14868,
+   "letter": "B",
+   "title": "Buggy Blinkers",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Buggy Blinkers.pdf"
+  },
+  {
+   "id": 14869,
+   "letter": "C",
+   "title": "Concurrent Contests",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Concurrent Contests.pdf"
+  },
+  {
+   "id": 14870,
+   "letter": "D",
+   "title": "Disgruntled Diner",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Disgruntled Diner.pdf"
+  },
+  {
+   "id": 14871,
+   "letter": "E",
+   "title": "Extraterrestrial Exploration",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Extraterrestrial Exploration.pdf"
+  },
+  {
+   "id": 14872,
+   "letter": "F",
+   "title": "Failing Factory",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Failing Factory.pdf"
+  },
+  {
+   "id": 14873,
+   "letter": "G",
+   "title": "Grocery Greed",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Grocery Greed.pdf"
+  },
+  {
+   "id": 14874,
+   "letter": "H",
+   "title": "Horse Habitat",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Horse Habitat.pdf"
+  },
+  {
+   "id": 14875,
+   "letter": "I",
+   "title": "Interrail Pass",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Interrail Pass.pdf"
+  },
+  {
+   "id": 14876,
+   "letter": "J",
+   "title": "Jumbled Scoreboards",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jumbled Scoreboards.pdf"
+  },
+  {
+   "id": 14877,
+   "letter": "K",
+   "title": "Karaoke Compression",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Karaoke Compression.pdf"
+  },
+  {
+   "id": 14878,
+   "letter": "L",
+   "title": "Levelling Locks",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Levelling Locks.pdf"
+  },
+  {
+   "id": 14879,
+   "letter": "M",
+   "title": "Museum Visit",
+   "statement_pages": [
+    27,
+    29
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Museum Visit.pdf"
+  }
+ ]
+}

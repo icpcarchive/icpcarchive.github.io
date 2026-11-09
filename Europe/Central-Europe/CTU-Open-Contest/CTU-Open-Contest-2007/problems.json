@@ -1,0 +1,115 @@
+{
+ "id": 3674,
+ "name": "CTU Open Contest 2007",
+ "url": "https://qoj.ac/contest/3674",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3674&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19440,
+   "letter": "A",
+   "title": "Catch the Bus!",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Catch the Bus!.pdf"
+  },
+  {
+   "id": 19441,
+   "letter": "B",
+   "title": "Calendar of Events",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Calendar of Events.pdf"
+  },
+  {
+   "id": 19442,
+   "letter": "C",
+   "title": "Roman Expressions",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Roman Expressions.pdf"
+  },
+  {
+   "id": 19443,
+   "letter": "D",
+   "title": "Geometric Shapes",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Geometric Shapes.pdf"
+  },
+  {
+   "id": 19444,
+   "letter": "E",
+   "title": "Corporate Identity",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Corporate Identity.pdf"
+  },
+  {
+   "id": 19445,
+   "letter": "F",
+   "title": "Money Money Money, Must Be Funny",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Money Money Money, Must Be Funny.pdf"
+  },
+  {
+   "id": 19446,
+   "letter": "G",
+   "title": "Railway Transportation",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Railway Transportation.pdf"
+  },
+  {
+   "id": 19447,
+   "letter": "H",
+   "title": "Soccer Tournament",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Soccer Tournament.pdf"
+  },
+  {
+   "id": 19448,
+   "letter": "I",
+   "title": "Hypertheseus",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Hypertheseus.pdf"
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+ "id": 3687,
+ "name": "The 2004 ICPC Southwestern Europe Regional Contest (SWERC 2004)",
+ "url": "https://qoj.ac/contest/3687",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3687&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19831,
+   "letter": "A",
+   "title": "Stormy Versailles",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Stormy Versailles.pdf"
+  },
+  {
+   "id": 19832,
+   "letter": "B",
+   "title": "Charles Frédéric Gros",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Charles Frédéric Gros.pdf"
+  },
+  {
+   "id": 19833,
+   "letter": "C",
+   "title": "Count Wireless Links",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Count Wireless Links.pdf"
+  },
+  {
+   "id": 19834,
+   "letter": "D",
+   "title": "Fighting the Heat",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Fighting the Heat.pdf"
+  },
+  {
+   "id": 19835,
+   "letter": "E",
+   "title": "Fighting the Heat II",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Fighting the Heat II.pdf"
+  },
+  {
+   "id": 19836,
+   "letter": "F",
+   "title": "Find the Walls",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Find the Walls.pdf"
+  },
+  {
+   "id": 19837,
+   "letter": "G",
+   "title": "War",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - War.pdf"
+  },
+  {
+   "id": 19838,
+   "letter": "H",
+   "title": "Now or Later",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Now or Later.pdf"
+  },
+  {
+   "id": 19839,
+   "letter": "I",
+   "title": "Crime",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Crime.pdf"
+  }
+ ]
+}

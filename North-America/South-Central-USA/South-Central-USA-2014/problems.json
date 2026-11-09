@@ -1,0 +1,56 @@
+{
+ "id": 248,
+ "name": "South Central USA 2014",
+ "url": "https://qoj.ac/contest/248",
+ "categories": [
+  "ICPC/Regionals/North America/South Central USA"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 250,
+   "letter": "A",
+   "title": "Map Puzzle"
+  },
+  {
+   "id": 251,
+   "letter": "B",
+   "title": "Ancient Numerals"
+  },
+  {
+   "id": 252,
+   "letter": "C",
+   "title": "Cipher"
+  },
+  {
+   "id": 253,
+   "letter": "D",
+   "title": "Runners"
+  },
+  {
+   "id": 254,
+   "letter": "E",
+   "title": "Palindrome Numbers"
+  },
+  {
+   "id": 255,
+   "letter": "F",
+   "title": "Factorial Factors"
+  },
+  {
+   "id": 256,
+   "letter": "G",
+   "title": "Chuck's Challenge"
+  },
+  {
+   "id": 257,
+   "letter": "H",
+   "title": "Optic Communication"
+  },
+  {
+   "id": 258,
+   "letter": "I",
+   "title": "Resources"
+  }
+ ]
+}

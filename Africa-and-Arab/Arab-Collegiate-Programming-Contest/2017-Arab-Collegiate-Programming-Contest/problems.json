@@ -1,0 +1,88 @@
+{
+ "id": 2262,
+ "name": "2017 Arab Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/2262",
+ "categories": [
+  "ICPC/Regionals/Africa and Arab/Arab Collegiate Programming Contest"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 12632,
+   "letter": "A",
+   "title": "Count the Graphs",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Count the Graphs.pdf"
+  },
+  {
+   "id": 12633,
+   "letter": "B",
+   "title": "Game of Nim Everywhere",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Game of Nim Everywhere.pdf"
+  },
+  {
+   "id": 12634,
+   "letter": "C",
+   "title": "FIFA World Cup",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - FIFA World Cup.pdf"
+  },
+  {
+   "id": 12635,
+   "letter": "D",
+   "title": "Crazy LCP",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Crazy LCP.pdf"
+  },
+  {
+   "id": 12636,
+   "letter": "E",
+   "title": "This Means War",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - This Means War.pdf"
+  },
+  {
+   "id": 12637,
+   "letter": "F",
+   "title": "The Walking Adam",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - The Walking Adam.pdf"
+  },
+  {
+   "id": 12638,
+   "letter": "G",
+   "title": "Darts Game",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Darts Game.pdf"
+  },
+  {
+   "id": 12639,
+   "letter": "H",
+   "title": "Stock Exchange",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Stock Exchange.pdf"
+  },
+  {
+   "id": 12640,
+   "letter": "I",
+   "title": "Winter is Here",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Winter is Here.pdf"
+  },
+  {
+   "id": 12641,
+   "letter": "J",
+   "title": "Array Queries",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Array Queries.pdf"
+  },
+  {
+   "id": 12642,
+   "letter": "K",
+   "title": "Duplicate Files",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Duplicate Files.pdf"
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "id": 2750,
+ "name": "The 2008 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2750",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2750&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2750&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16075,
+   "letter": "A",
+   "title": "Equilibrium Mobile",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Equilibrium Mobile.pdf"
+  },
+  {
+   "id": 16076,
+   "letter": "B",
+   "title": "Proving Equivalences",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Proving Equivalences.pdf"
+  },
+  {
+   "id": 16077,
+   "letter": "C",
+   "title": "Cat vs. Dog",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cat vs. Dog.pdf"
+  },
+  {
+   "id": 16078,
+   "letter": "D",
+   "title": "Disgruntled Judge",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Disgruntled Judge.pdf"
+  },
+  {
+   "id": 16079,
+   "letter": "E",
+   "title": "Easy Climb",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Easy Climb.pdf"
+  },
+  {
+   "id": 16080,
+   "letter": "F",
+   "title": "Sculpture",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Sculpture.pdf"
+  },
+  {
+   "id": 16081,
+   "letter": "H",
+   "title": "Matchsticks",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Matchsticks.pdf"
+  },
+  {
+   "id": 16082,
+   "letter": "I",
+   "title": "White Water Rafting",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - White Water Rafting.pdf"
+  },
+  {
+   "id": 16083,
+   "letter": "J",
+   "title": "Shuffle",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Shuffle.pdf"
+  },
+  {
+   "id": 16084,
+   "letter": "K",
+   "title": "Videopoker",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Videopoker.pdf"
+  }
+ ]
+}

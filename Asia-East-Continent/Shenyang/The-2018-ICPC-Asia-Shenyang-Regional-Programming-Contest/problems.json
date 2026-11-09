@@ -1,0 +1,160 @@
+{
+ "id": 1318,
+ "name": "The 2018 ICPC Asia Shenyang Regional Programming Contest",
+ "url": "https://qoj.ac/contest/1318",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Shenyang",
+  "ICPC/Regionals/Asia East Continent/The 2018 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1318&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7016,
+   "letter": "A",
+   "title": "Sockpuppets",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Sockpuppets.pdf"
+  },
+  {
+   "id": 7017,
+   "letter": "B",
+   "title": "Sequences Generator",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Sequences Generator.pdf"
+  },
+  {
+   "id": 7018,
+   "letter": "C",
+   "title": "Insertion Sort",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Insertion Sort.pdf"
+  },
+  {
+   "id": 7019,
+   "letter": "D",
+   "title": "Diameter of a Tree",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Diameter of a Tree.pdf"
+  },
+  {
+   "id": 7020,
+   "letter": "E",
+   "title": "The Kouga Ninja Scrolls",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - The Kouga Ninja Scrolls.pdf"
+  },
+  {
+   "id": 7021,
+   "letter": "F",
+   "title": "Counting Sheep in Ami Dongsuo",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Counting Sheep in Ami Dongsuo.pdf"
+  },
+  {
+   "id": 7022,
+   "letter": "G",
+   "title": "Best ACMer Solves the Hardest Problem",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Best ACMer Solves the Hardest Problem.pdf"
+  },
+  {
+   "id": 7023,
+   "letter": "H",
+   "title": "Rainbow Graph",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Rainbow Graph.pdf"
+  },
+  {
+   "id": 7024,
+   "letter": "I",
+   "title": "Distance Between Sweethearts",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Distance Between Sweethearts.pdf"
+  },
+  {
+   "id": 7025,
+   "letter": "J",
+   "title": "How Much Memory Your Code Is Using?",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - How Much Memory Your Code Is Using_.pdf"
+  },
+  {
+   "id": 7026,
+   "letter": "K",
+   "title": "Let the Flames Begin",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Let the Flames Begin.pdf"
+  },
+  {
+   "id": 7027,
+   "letter": "L",
+   "title": "Machining Disc Rotors",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Machining Disc Rotors.pdf"
+  },
+  {
+   "id": 7028,
+   "letter": "M",
+   "title": "Renaissance Past in Nancy",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Renaissance Past in Nancy.pdf"
+  }
+ ]
+}

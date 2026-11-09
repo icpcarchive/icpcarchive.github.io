@@ -1,0 +1,95 @@
+{
+ "id": 3249,
+ "name": "The 2014 ICPC Moscow Subregional Contest",
+ "url": "https://qoj.ac/contest/3249",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Moscow Regional Contest / Moscow Subregional"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 16742,
+   "letter": "A",
+   "title": "Game 2048 again",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Game 2048 again.pdf"
+  },
+  {
+   "id": 16743,
+   "letter": "B",
+   "title": "Bring Your Own Bombs",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Bring Your Own Bombs.pdf"
+  },
+  {
+   "id": 16744,
+   "letter": "C",
+   "title": "CIA Datacenter",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - CIA Datacenter.pdf"
+  },
+  {
+   "id": 16745,
+   "letter": "D",
+   "title": "Do it Right!",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Do it Right!.pdf"
+  },
+  {
+   "id": 16746,
+   "letter": "E",
+   "title": "Equal Digits",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Equal Digits.pdf"
+  },
+  {
+   "id": 16747,
+   "letter": "F",
+   "title": "Friends",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Friends.pdf"
+  },
+  {
+   "id": 16748,
+   "letter": "G",
+   "title": "Genealogy",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Genealogy.pdf"
+  },
+  {
+   "id": 16749,
+   "letter": "H",
+   "title": "Holes",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Holes.pdf"
+  },
+  {
+   "id": 16750,
+   "letter": "I",
+   "title": "Interactive problem",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Interactive problem.pdf"
+  },
+  {
+   "id": 16751,
+   "letter": "J",
+   "title": "JPEG is Awesome!",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - JPEG is Awesome!.pdf"
+  },
+  {
+   "id": 16752,
+   "letter": "K",
+   "title": "Killing The Time",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Killing The Time.pdf"
+  },
+  {
+   "id": 16753,
+   "letter": "L",
+   "title": "Linear Systems",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Linear Systems.pdf"
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "id": 2622,
+ "name": "The 2024 ICPC Taiwan Online Programming Contest",
+ "url": "https://qoj.ac/contest/2622",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Taiwan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2622&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15126,
+   "letter": "A",
+   "title": "Animal Farm",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Animal Farm.pdf"
+  },
+  {
+   "id": 15127,
+   "letter": "B",
+   "title": "Business Magic",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Business Magic.pdf"
+  },
+  {
+   "id": 15128,
+   "letter": "C",
+   "title": "Cards",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cards.pdf"
+  },
+  {
+   "id": 15129,
+   "letter": "D",
+   "title": "Disbursement on Quarantine Policy",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Disbursement on Quarantine Policy.pdf"
+  },
+  {
+   "id": 15130,
+   "letter": "E",
+   "title": "Efficient Slabstones Rearrangement",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Efficient Slabstones Rearrangement.pdf"
+  },
+  {
+   "id": 15131,
+   "letter": "F",
+   "title": "Fibonacci Lucky Numbers",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fibonacci Lucky Numbers.pdf"
+  },
+  {
+   "id": 15132,
+   "letter": "G",
+   "title": "Game of Rounding",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game of Rounding.pdf"
+  },
+  {
+   "id": 15133,
+   "letter": "H",
+   "title": "Harmonious Passage of Magicians",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Harmonious Passage of Magicians.pdf"
+  },
+  {
+   "id": 15134,
+   "letter": "I",
+   "title": "In Search of the Lost Array",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - In Search of the Lost Array.pdf"
+  },
+  {
+   "id": 15135,
+   "letter": "J",
+   "title": "Just Round Down",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Just Round Down.pdf"
+  },
+  {
+   "id": 15136,
+   "letter": "K",
+   "title": "Kingdom's Development Plan",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kingdom's Development Plan.pdf"
+  },
+  {
+   "id": 15137,
+   "letter": "L",
+   "title": "Lexicopolis",
+   "statement_pages": [
+    23,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lexicopolis.pdf"
+  }
+ ]
+}

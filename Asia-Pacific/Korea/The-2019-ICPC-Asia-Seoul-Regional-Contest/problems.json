@@ -1,0 +1,95 @@
+{
+ "id": 2048,
+ "name": "The 2019 ICPC Asia Seoul Regional Contest",
+ "url": "https://qoj.ac/contest/2048",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Korea"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 10946,
+   "letter": "A",
+   "title": "Fire on Field",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Fire on Field.pdf"
+  },
+  {
+   "id": 10947,
+   "letter": "B",
+   "title": "Gene Tree",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Gene Tree.pdf"
+  },
+  {
+   "id": 10948,
+   "letter": "C",
+   "title": "Islands",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Islands.pdf"
+  },
+  {
+   "id": 10949,
+   "letter": "D",
+   "title": "Ladder Game",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Ladder Game.pdf"
+  },
+  {
+   "id": 10950,
+   "letter": "E",
+   "title": "Network Vulnerability",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Network Vulnerability.pdf"
+  },
+  {
+   "id": 10951,
+   "letter": "F",
+   "title": "Quadrilaterals",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Quadrilaterals.pdf"
+  },
+  {
+   "id": 10952,
+   "letter": "G",
+   "title": "Same Color",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Same Color.pdf"
+  },
+  {
+   "id": 10953,
+   "letter": "H",
+   "title": "Strike Zone",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Strike Zone.pdf"
+  },
+  {
+   "id": 10954,
+   "letter": "I",
+   "title": "Thread Knots",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Thread Knots.pdf"
+  },
+  {
+   "id": 10955,
+   "letter": "J",
+   "title": "Triangulation",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Triangulation.pdf"
+  },
+  {
+   "id": 10956,
+   "letter": "K",
+   "title": "Washer",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Washer.pdf"
+  },
+  {
+   "id": 10957,
+   "letter": "L",
+   "title": "What's Mine is Mine",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - What's Mine is Mine.pdf"
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+ "id": 3689,
+ "name": "The 2006 ICPC Southwestern Europe Regional Contest (SWERC 2006)",
+ "url": "https://qoj.ac/contest/3689",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3689&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19850,
+   "letter": "A",
+   "title": "CubesSquared",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - CubesSquared.pdf"
+  },
+  {
+   "id": 19851,
+   "letter": "B",
+   "title": "BlindFold",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - BlindFold.pdf"
+  },
+  {
+   "id": 19852,
+   "letter": "C",
+   "title": "X-Plosives",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - X-Plosives.pdf"
+  },
+  {
+   "id": 19853,
+   "letter": "D",
+   "title": "Objective: Berlin",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Objective_ Berlin.pdf"
+  },
+  {
+   "id": 19854,
+   "letter": "E",
+   "title": "Transcript",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Transcript.pdf"
+  },
+  {
+   "id": 19855,
+   "letter": "F",
+   "title": "The Right Tip",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - The Right Tip.pdf"
+  },
+  {
+   "id": 19856,
+   "letter": "G",
+   "title": "Booby Traps",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Booby Traps.pdf"
+  },
+  {
+   "id": 19857,
+   "letter": "H",
+   "title": "Fire Lane",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Fire Lane.pdf"
+  },
+  {
+   "id": 19858,
+   "letter": "I",
+   "title": "Gap",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Gap.pdf"
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "id": 339,
+ "name": "The 2016 ICPC East Siberian Subregional Contest",
+ "url": "https://qoj.ac/contest/339",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/East Siberian Regional Contest / East Siberian Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (ru)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=339&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=339&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2051,
+   "letter": "A",
+   "title": "Count The Ones",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Count The Ones.pdf"
+  },
+  {
+   "id": 2052,
+   "letter": "B",
+   "title": "Craters",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Craters.pdf"
+  },
+  {
+   "id": 2053,
+   "letter": "C",
+   "title": "Closing Ceremony",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Closing Ceremony.pdf"
+  },
+  {
+   "id": 2054,
+   "letter": "D",
+   "title": "Skyscrapers",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Skyscrapers.pdf"
+  },
+  {
+   "id": 2055,
+   "letter": "E",
+   "title": "Blackboard",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Blackboard.pdf"
+  },
+  {
+   "id": 2056,
+   "letter": "F",
+   "title": "Buddy Numbers",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Buddy Numbers.pdf"
+  },
+  {
+   "id": 2057,
+   "letter": "G",
+   "title": "Gmoogle",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gmoogle.pdf"
+  },
+  {
+   "id": 2058,
+   "letter": "H",
+   "title": "Generator",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Generator.pdf"
+  },
+  {
+   "id": 2059,
+   "letter": "I",
+   "title": "Addition",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Addition.pdf"
+  },
+  {
+   "id": 2060,
+   "letter": "J",
+   "title": "White Mage",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - White Mage.pdf"
+  },
+  {
+   "id": 2061,
+   "letter": "K",
+   "title": "Inspection",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Inspection.pdf"
+  },
+  {
+   "id": 2062,
+   "letter": "L",
+   "title": "Fibonacci Equation",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Fibonacci Equation.pdf"
+  }
+ ]
+}

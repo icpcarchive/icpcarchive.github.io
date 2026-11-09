@@ -1,0 +1,126 @@
+{
+ "id": 2722,
+ "name": "The 2010 Central Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2722",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2722&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15990,
+   "letter": "A",
+   "title": "Ardenia",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Ardenia.pdf"
+  },
+  {
+   "id": 15991,
+   "letter": "B",
+   "title": "Beasts",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Beasts.pdf"
+  },
+  {
+   "id": 15992,
+   "letter": "C",
+   "title": "Casting Spells",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Casting Spells.pdf"
+  },
+  {
+   "id": 15993,
+   "letter": "D",
+   "title": "Defense Lines",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Defense Lines.pdf"
+  },
+  {
+   "id": 15994,
+   "letter": "E",
+   "title": "Enter The Dragon",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Enter The Dragon.pdf"
+  },
+  {
+   "id": 15995,
+   "letter": "F",
+   "title": "Fields and Farmers",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fields and Farmers.pdf"
+  },
+  {
+   "id": 15996,
+   "letter": "G",
+   "title": "Game",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game.pdf"
+  },
+  {
+   "id": 15997,
+   "letter": "H",
+   "title": "Hanging Hats",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hanging Hats.pdf"
+  },
+  {
+   "id": 15998,
+   "letter": "I",
+   "title": "Insults",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Insults.pdf"
+  },
+  {
+   "id": 15999,
+   "letter": "J",
+   "title": "Justice for All",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Justice for All.pdf"
+  }
+ ]
+}

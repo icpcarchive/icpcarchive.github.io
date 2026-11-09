@@ -1,0 +1,164 @@
+{
+ "id": 2181,
+ "name": "The 2020 ICPC Asia Jinan Regional Contest",
+ "url": "https://qoj.ac/contest/2181",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Jinan",
+  "ICPC/Regionals/Asia East Continent/The 2020 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2181&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2181&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 12398,
+   "letter": "A",
+   "title": "Matrix Equation",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Matrix Equation.pdf"
+  },
+  {
+   "id": 12399,
+   "letter": "B",
+   "title": "Number Game",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Number Game.pdf"
+  },
+  {
+   "id": 12400,
+   "letter": "C",
+   "title": "Stone Game",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Stone Game.pdf"
+  },
+  {
+   "id": 12401,
+   "letter": "D",
+   "title": "Fight against involution",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Fight against involution.pdf"
+  },
+  {
+   "id": 12402,
+   "letter": "E",
+   "title": "Tree Transform",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Tree Transform.pdf"
+  },
+  {
+   "id": 12403,
+   "letter": "F",
+   "title": "Gcd Product",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Gcd Product.pdf"
+  },
+  {
+   "id": 12404,
+   "letter": "G",
+   "title": "Xor Transformation",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Xor Transformation.pdf"
+  },
+  {
+   "id": 12405,
+   "letter": "H",
+   "title": "Path Killer",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Path Killer.pdf"
+  },
+  {
+   "id": 12406,
+   "letter": "I",
+   "title": "Random Walk On Tree",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Random Walk On Tree.pdf"
+  },
+  {
+   "id": 12407,
+   "letter": "J",
+   "title": "Tree Constructer",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Tree Constructer.pdf"
+  },
+  {
+   "id": 12408,
+   "letter": "K",
+   "title": "Kth Query",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kth Query.pdf"
+  },
+  {
+   "id": 12409,
+   "letter": "L",
+   "title": "Bit Sequence",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Bit Sequence.pdf"
+  },
+  {
+   "id": 12410,
+   "letter": "M",
+   "title": "Cook Pancakes!",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Cook Pancakes!.pdf"
+  }
+ ]
+}

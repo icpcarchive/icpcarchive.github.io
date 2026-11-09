@@ -1,0 +1,104 @@
+{
+ "id": 3643,
+ "name": "The 1996 ICPC Southwestern Europe Regional Contest (SWERC 1996)",
+ "url": "https://qoj.ac/contest/3643",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3643&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19763,
+   "letter": "A",
+   "title": "Stars",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Stars.pdf"
+  },
+  {
+   "id": 19764,
+   "letter": "B",
+   "title": "Hexagon",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Hexagon.pdf"
+  },
+  {
+   "id": 19765,
+   "letter": "C",
+   "title": "Domino Effect",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Domino Effect.pdf"
+  },
+  {
+   "id": 19766,
+   "letter": "D",
+   "title": "Pendulum",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Pendulum.pdf"
+  },
+  {
+   "id": 19767,
+   "letter": "E",
+   "title": "Border",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Border.pdf"
+  },
+  {
+   "id": 19768,
+   "letter": "F",
+   "title": "The New Villa",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - The New Villa.pdf"
+  },
+  {
+   "id": 19769,
+   "letter": "G",
+   "title": "Ships",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Ships.pdf"
+  },
+  {
+   "id": 19770,
+   "letter": "H",
+   "title": "Jury Compromise",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Jury Compromise.pdf"
+  }
+ ]
+}

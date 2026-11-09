@@ -1,0 +1,72 @@
+{
+ "id": 3619,
+ "name": "The 1995 ACM ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/3619",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3619&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19655,
+   "letter": "A",
+   "title": "Modern Art",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Modern Art.pdf"
+  },
+  {
+   "id": 19656,
+   "letter": "B",
+   "title": "Bank (Not Quite O.C.R.)",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Bank (Not Quite O.C.R.).pdf"
+  },
+  {
+   "id": 19657,
+   "letter": "C",
+   "title": "Matty's Blocks",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Matty's Blocks.pdf"
+  },
+  {
+   "id": 19658,
+   "letter": "D",
+   "title": "Block Voting",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Block Voting.pdf"
+  },
+  {
+   "id": 19659,
+   "letter": "E",
+   "title": "Donkey",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Donkey.pdf"
+  },
+  {
+   "id": 19660,
+   "letter": "F",
+   "title": "Islands",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Islands.pdf"
+  },
+  {
+   "id": 19661,
+   "letter": "G",
+   "title": "Maze",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Maze.pdf"
+  },
+  {
+   "id": 19662,
+   "letter": "H",
+   "title": "Syntrax",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Syntrax.pdf"
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "id": 2508,
+ "name": "The 2019 ICPC Latin America Regional Contests",
+ "url": "https://qoj.ac/contest/2508",
+ "categories": [
+  "ICPC/Regionals/Latin America/Latin American Regional Contests"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 15682,
+   "letter": "A",
+   "title": "Algorithm Teaching",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Algorithm Teaching.pdf"
+  },
+  {
+   "id": 15683,
+   "letter": "B",
+   "title": "Build the Perfect House",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Build the Perfect House.pdf"
+  },
+  {
+   "id": 15684,
+   "letter": "C",
+   "title": "Cut Inequality Down",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Cut Inequality Down.pdf"
+  },
+  {
+   "id": 15685,
+   "letter": "D",
+   "title": "Dazzling Stars",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Dazzling Stars.pdf"
+  },
+  {
+   "id": 15686,
+   "letter": "E",
+   "title": "Eggfruit Cake",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Eggfruit Cake.pdf"
+  },
+  {
+   "id": 15687,
+   "letter": "F",
+   "title": "Fabricating Sculptures",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Fabricating Sculptures.pdf"
+  },
+  {
+   "id": 15688,
+   "letter": "G",
+   "title": "Gluing Pictures",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Gluing Pictures.pdf"
+  },
+  {
+   "id": 15689,
+   "letter": "H",
+   "title": "Hold or Continue?",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Hold or Continue_.pdf"
+  },
+  {
+   "id": 15690,
+   "letter": "I",
+   "title": "Improve SPAM",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Improve SPAM.pdf"
+  },
+  {
+   "id": 15691,
+   "letter": "J",
+   "title": "Jumping Grasshopper",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Jumping Grasshopper.pdf"
+  },
+  {
+   "id": 15692,
+   "letter": "K",
+   "title": "Know your Aliens",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Know your Aliens.pdf"
+  },
+  {
+   "id": 15693,
+   "letter": "L",
+   "title": "Leverage MDT",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Leverage MDT.pdf"
+  },
+  {
+   "id": 15694,
+   "letter": "M",
+   "title": "Mountain Ranges",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - Mountain Ranges.pdf"
+  }
+ ]
+}

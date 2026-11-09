@@ -1,0 +1,127 @@
+{
+ "id": 1809,
+ "name": "The 2017 ICPC Asia Beijing Regional Contest",
+ "url": "https://qoj.ac/contest/1809",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Beijing",
+  "ICPC/Regionals/Asia East Continent/The 2017 ACM-ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1809&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9466,
+   "letter": "A",
+   "title": "Domains",
+   "statement_pages": [
+    1,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Domains.pdf"
+  },
+  {
+   "id": 9467,
+   "letter": "B",
+   "title": "K-Dimensional Foil",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - K-Dimensional Foil.pdf"
+  },
+  {
+   "id": 9468,
+   "letter": "C",
+   "title": "Graph",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Graph.pdf"
+  },
+  {
+   "id": 9469,
+   "letter": "D",
+   "title": "Chinese Checkers",
+   "statement_pages": [
+    7,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Chinese Checkers.pdf"
+  },
+  {
+   "id": 9470,
+   "letter": "E",
+   "title": "Cats and Fish",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Cats and Fish.pdf"
+  },
+  {
+   "id": 9471,
+   "letter": "F",
+   "title": "Secret Poems",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Secret Poems.pdf"
+  },
+  {
+   "id": 9472,
+   "letter": "G",
+   "title": "Liaoning Ship’s Voyage",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Liaoning Ship’s Voyage.pdf"
+  },
+  {
+   "id": 9473,
+   "letter": "H",
+   "title": "Puzzle Game",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Puzzle Game.pdf"
+  },
+  {
+   "id": 9474,
+   "letter": "I",
+   "title": "Colored Nodes",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Colored Nodes.pdf"
+  },
+  {
+   "id": 9475,
+   "letter": "J",
+   "title": "Pangu and Stones",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Pangu and Stones.pdf"
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "id": 2681,
+ "name": "Rocky Mountain 2018",
+ "url": "https://qoj.ac/contest/2681",
+ "categories": [
+  "ICPC/Regionals/North America/Rocky Mountain"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 15917,
+   "letter": "A",
+   "title": "Quality-Adjusted Life-Year",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Quality-Adjusted Life-Year.pdf"
+  },
+  {
+   "id": 15918,
+   "letter": "B",
+   "title": "Gwen's Gift",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Gwen's Gift.pdf"
+  },
+  {
+   "id": 15919,
+   "letter": "C",
+   "title": "Forest for the Trees",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Forest for the Trees.pdf"
+  },
+  {
+   "id": 15920,
+   "letter": "D",
+   "title": "H-Index",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - H-Index.pdf"
+  },
+  {
+   "id": 15921,
+   "letter": "E",
+   "title": "Driving Lanes",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Driving Lanes.pdf"
+  },
+  {
+   "id": 15922,
+   "letter": "F",
+   "title": "Treasure Spotting",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Treasure Spotting.pdf"
+  },
+  {
+   "id": 15923,
+   "letter": "G",
+   "title": "Neighborhood Watch",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Neighborhood Watch.pdf"
+  },
+  {
+   "id": 15924,
+   "letter": "H",
+   "title": "Small Schedule",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Small Schedule.pdf"
+  },
+  {
+   "id": 15925,
+   "letter": "I",
+   "title": "Mr. Plow King",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Mr. Plow King.pdf"
+  },
+  {
+   "id": 15926,
+   "letter": "J",
+   "title": "Rainbow Road Race",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Rainbow Road Race.pdf"
+  }
+ ]
+}

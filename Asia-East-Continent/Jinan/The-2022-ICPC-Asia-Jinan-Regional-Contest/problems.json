@@ -1,0 +1,164 @@
+{
+ "id": 1053,
+ "name": "The 2022 ICPC Asia Jinan Regional Contest",
+ "url": "https://qoj.ac/contest/1053",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Jinan",
+  "ICPC/Regionals/Asia East Continent/The 2022 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1053&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1053&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5137,
+   "letter": "A",
+   "title": "Tower",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Tower.pdf"
+  },
+  {
+   "id": 5138,
+   "letter": "B",
+   "title": "Torch",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Torch.pdf"
+  },
+  {
+   "id": 5139,
+   "letter": "C",
+   "title": "DFS Order 2",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - DFS Order 2.pdf"
+  },
+  {
+   "id": 5140,
+   "letter": "D",
+   "title": "Frozen Scoreboard",
+   "statement_pages": [
+    5,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Frozen Scoreboard.pdf"
+  },
+  {
+   "id": 5141,
+   "letter": "E",
+   "title": "Identical Parity",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Identical Parity.pdf"
+  },
+  {
+   "id": 5142,
+   "letter": "F",
+   "title": "Grid Points",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Grid Points.pdf"
+  },
+  {
+   "id": 5143,
+   "letter": "G",
+   "title": "Quick Sort",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Quick Sort.pdf"
+  },
+  {
+   "id": 5144,
+   "letter": "H",
+   "title": "Set of Intervals",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Set of Intervals.pdf"
+  },
+  {
+   "id": 5145,
+   "letter": "I",
+   "title": "Shortest Path",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Shortest Path.pdf"
+  },
+  {
+   "id": 5146,
+   "letter": "J",
+   "title": "Skills",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Skills.pdf"
+  },
+  {
+   "id": 5147,
+   "letter": "K",
+   "title": "Stack Sort",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Stack Sort.pdf"
+  },
+  {
+   "id": 5148,
+   "letter": "L",
+   "title": "Tree Distance",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Tree Distance.pdf"
+  },
+  {
+   "id": 5149,
+   "letter": "M",
+   "title": "Best Carry Player",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Best Carry Player.pdf"
+  }
+ ]
+}

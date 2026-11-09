@@ -1,0 +1,163 @@
+{
+ "id": 893,
+ "name": "The 2021 ICPC Latin America Regional Contests",
+ "url": "https://qoj.ac/contest/893",
+ "categories": [
+  "ICPC/Regionals/Latin America/Latin American Regional Contests"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=893&r=0"
+  },
+  {
+   "text": "Time Limit",
+   "href": "https://qoj.ac/download.php?type=attachments&id=893&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3581,
+   "letter": "A",
+   "title": "Ancient Towers",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Ancient Towers.pdf"
+  },
+  {
+   "id": 3582,
+   "letter": "B",
+   "title": "Because, Art!",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Because, Art!.pdf"
+  },
+  {
+   "id": 3583,
+   "letter": "C",
+   "title": "Cyclists versus Clouds",
+   "statement_pages": [
+    6,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cyclists versus Clouds.pdf"
+  },
+  {
+   "id": 3584,
+   "letter": "D",
+   "title": "Daily Turnovers",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Daily Turnovers.pdf"
+  },
+  {
+   "id": 3585,
+   "letter": "E",
+   "title": "Expedition Plans",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Expedition Plans.pdf"
+  },
+  {
+   "id": 3586,
+   "letter": "F",
+   "title": "Fields Division",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fields Division.pdf"
+  },
+  {
+   "id": 3587,
+   "letter": "G",
+   "title": "Generator Tree",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Generator Tree.pdf"
+  },
+  {
+   "id": 3588,
+   "letter": "H",
+   "title": "Hamilton - The Musical",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hamilton - The Musical.pdf"
+  },
+  {
+   "id": 3589,
+   "letter": "I",
+   "title": "Invested Money",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Invested Money.pdf"
+  },
+  {
+   "id": 3590,
+   "letter": "J",
+   "title": "Joining Pairs",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joining Pairs.pdf"
+  },
+  {
+   "id": 3591,
+   "letter": "K",
+   "title": "KIARA is a Recursive Acronym",
+   "statement_pages": [
+    20,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - KIARA is a Recursive Acronym.pdf"
+  },
+  {
+   "id": 3592,
+   "letter": "L",
+   "title": "Leaving Yharnam",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Leaving Yharnam.pdf"
+  },
+  {
+   "id": 3593,
+   "letter": "M",
+   "title": "Most Ordered Way",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Most Ordered Way.pdf"
+  }
+ ]
+}

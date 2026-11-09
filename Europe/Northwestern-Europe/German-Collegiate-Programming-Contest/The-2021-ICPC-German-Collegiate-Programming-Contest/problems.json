@@ -1,0 +1,174 @@
+{
+ "id": 946,
+ "name": "The 2021 ICPC German Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/946",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/German Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=946&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=946&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 4184,
+   "letter": "A",
+   "title": "Amusement Arcade",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Amusement Arcade.pdf"
+  },
+  {
+   "id": 4185,
+   "letter": "B",
+   "title": "Brexiting and Brentering",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Brexiting and Brentering.pdf"
+  },
+  {
+   "id": 4186,
+   "letter": "C",
+   "title": "Card Trading",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Card Trading.pdf"
+  },
+  {
+   "id": 4187,
+   "letter": "D",
+   "title": "Decrypting Zodiac",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Decrypting Zodiac.pdf"
+  },
+  {
+   "id": 4188,
+   "letter": "E",
+   "title": "Excursion to Porvoo",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Excursion to Porvoo.pdf"
+  },
+  {
+   "id": 4189,
+   "letter": "F",
+   "title": "Flappy Bird",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Flappy Bird.pdf"
+  },
+  {
+   "id": 4190,
+   "letter": "G",
+   "title": "Grid Delivery",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Grid Delivery.pdf"
+  },
+  {
+   "id": 4191,
+   "letter": "H",
+   "title": "Hectic Harbour II",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hectic Harbour II.pdf"
+  },
+  {
+   "id": 4192,
+   "letter": "I",
+   "title": "Index Case",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Index Case.pdf"
+  },
+  {
+   "id": 4193,
+   "letter": "J",
+   "title": "Joined Sessions",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joined Sessions.pdf"
+  },
+  {
+   "id": 4194,
+   "letter": "K",
+   "title": "Killjoys' Conference",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Killjoys' Conference.pdf"
+  },
+  {
+   "id": 4195,
+   "letter": "L",
+   "title": "Looking for Waldo",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Looking for Waldo.pdf"
+  },
+  {
+   "id": 4196,
+   "letter": "M",
+   "title": "Monty's Hall",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Monty's Hall.pdf"
+  },
+  {
+   "id": 4197,
+   "letter": "N",
+   "title": "Natural Navigation",
+   "statement_pages": [
+    29,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - Natural Navigation.pdf"
+  }
+ ]
+}

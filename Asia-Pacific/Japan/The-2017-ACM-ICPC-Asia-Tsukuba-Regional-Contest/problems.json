@@ -1,0 +1,137 @@
+{
+ "id": 435,
+ "name": "The 2017 ACM-ICPC Asia Tsukuba Regional Contest",
+ "url": "https://qoj.ac/contest/435",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=435&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3282,
+   "letter": "A",
+   "title": "Secret of Chocolate Poles",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Secret of Chocolate Poles.pdf"
+  },
+  {
+   "id": 3283,
+   "letter": "B",
+   "title": "Parallel Lines",
+   "statement_pages": [
+    3,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Parallel Lines.pdf"
+  },
+  {
+   "id": 3284,
+   "letter": "C",
+   "title": "Medical Checkup",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Medical Checkup.pdf"
+  },
+  {
+   "id": 3285,
+   "letter": "D",
+   "title": "Making Perimeter of the Convex Hull Shortest",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Making Perimeter of the Convex Hull Shortest.pdf"
+  },
+  {
+   "id": 3286,
+   "letter": "E",
+   "title": "Black or White",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Black or White.pdf"
+  },
+  {
+   "id": 3287,
+   "letter": "F",
+   "title": "Pizza Delivery",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Pizza Delivery.pdf"
+  },
+  {
+   "id": 3288,
+   "letter": "G",
+   "title": "Rendezvous on a Tetrahedron",
+   "statement_pages": [
+    14,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Rendezvous on a Tetrahedron.pdf"
+  },
+  {
+   "id": 3289,
+   "letter": "H",
+   "title": "Homework",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Homework.pdf"
+  },
+  {
+   "id": 3290,
+   "letter": "I",
+   "title": "Starting a Scenic Railroad Service",
+   "statement_pages": [
+    19,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Starting a Scenic Railroad Service.pdf"
+  },
+  {
+   "id": 3291,
+   "letter": "J",
+   "title": "String Puzzle",
+   "statement_pages": [
+    22,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - String Puzzle.pdf"
+  },
+  {
+   "id": 3292,
+   "letter": "K",
+   "title": "Counting Cycles",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Counting Cycles.pdf"
+  }
+ ]
+}

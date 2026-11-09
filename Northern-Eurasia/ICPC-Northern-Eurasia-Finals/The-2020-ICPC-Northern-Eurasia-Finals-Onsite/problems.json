@@ -1,0 +1,141 @@
+{
+ "id": 639,
+ "name": "The 2020 ICPC Northern Eurasia Finals, Onsite",
+ "url": "https://qoj.ac/contest/639",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=639&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=639&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 1662,
+   "letter": "A",
+   "title": "ASCII Automata Art",
+   "statement_pages": [
+    1,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - ASCII Automata Art.pdf"
+  },
+  {
+   "id": 1663,
+   "letter": "B",
+   "title": "Button Lock",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Button Lock.pdf"
+  },
+  {
+   "id": 1664,
+   "letter": "C",
+   "title": "Cactus Not Enough",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cactus Not Enough.pdf"
+  },
+  {
+   "id": 1665,
+   "letter": "D",
+   "title": "Digits",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Digits.pdf"
+  },
+  {
+   "id": 1666,
+   "letter": "E",
+   "title": "Equilibrium Point /\\/\\",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Equilibrium Point ____.pdf"
+  },
+  {
+   "id": 1667,
+   "letter": "F",
+   "title": "Fiber Shape",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fiber Shape.pdf"
+  },
+  {
+   "id": 1668,
+   "letter": "G",
+   "title": "Guide",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Guide.pdf"
+  },
+  {
+   "id": 1669,
+   "letter": "H",
+   "title": "Hard Optimization",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hard Optimization.pdf"
+  },
+  {
+   "id": 1670,
+   "letter": "I",
+   "title": "Is it rated?",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Is it rated_.pdf"
+  },
+  {
+   "id": 1671,
+   "letter": "J",
+   "title": "Japanese Game",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Japanese Game.pdf"
+  },
+  {
+   "id": 1672,
+   "letter": "K",
+   "title": "King's Task",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - King's Task.pdf"
+  }
+ ]
+}

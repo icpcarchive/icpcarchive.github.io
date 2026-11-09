@@ -1,0 +1,95 @@
+{
+ "id": 173,
+ "name": "The 2017 Central Europe Regional Contest",
+ "url": "https://qoj.ac/contest/173",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 3058,
+   "letter": "A",
+   "title": "Assignment Algorithm",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Assignment Algorithm.pdf"
+  },
+  {
+   "id": 3059,
+   "letter": "B",
+   "title": "Buffalo Barricades",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Buffalo Barricades.pdf"
+  },
+  {
+   "id": 3060,
+   "letter": "C",
+   "title": "Cumulative Code",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Cumulative Code.pdf"
+  },
+  {
+   "id": 3061,
+   "letter": "D",
+   "title": "Donut Drone",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Donut Drone.pdf"
+  },
+  {
+   "id": 3062,
+   "letter": "E",
+   "title": "Embedding Enumeration",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Embedding Enumeration.pdf"
+  },
+  {
+   "id": 3063,
+   "letter": "F",
+   "title": "Faulty Factorial",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Faulty Factorial.pdf"
+  },
+  {
+   "id": 3064,
+   "letter": "G",
+   "title": "Gambling Guide",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Gambling Guide.pdf"
+  },
+  {
+   "id": 3065,
+   "letter": "H",
+   "title": "Hidden Hierarchy",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Hidden Hierarchy.pdf"
+  },
+  {
+   "id": 3066,
+   "letter": "I",
+   "title": "Intrinsic Interval",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Intrinsic Interval.pdf"
+  },
+  {
+   "id": 3067,
+   "letter": "J",
+   "title": "Justified Jungle",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Justified Jungle.pdf"
+  },
+  {
+   "id": 3068,
+   "letter": "K",
+   "title": "Kitchen Knobs",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Kitchen Knobs.pdf"
+  },
+  {
+   "id": 3069,
+   "letter": "L",
+   "title": "Lunar Landscape",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Lunar Landscape.pdf"
+  }
+ ]
+}

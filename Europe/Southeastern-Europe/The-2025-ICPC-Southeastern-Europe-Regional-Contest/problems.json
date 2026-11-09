@@ -1,0 +1,152 @@
+{
+ "id": 2828,
+ "name": "The 2025 ICPC Southeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2828",
+ "categories": [
+  "ICPC/Regionals/Europe/Southeastern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2828&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2828&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16115,
+   "letter": "A",
+   "title": "Sum Game",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Sum Game.pdf"
+  },
+  {
+   "id": 16116,
+   "letter": "B",
+   "title": "AND Reconstruction",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - AND Reconstruction.pdf"
+  },
+  {
+   "id": 16117,
+   "letter": "C",
+   "title": "XOR-Excluding Sets",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - XOR-Excluding Sets.pdf"
+  },
+  {
+   "id": 16118,
+   "letter": "D",
+   "title": "Two Options",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Two Options.pdf"
+  },
+  {
+   "id": 16119,
+   "letter": "E",
+   "title": "Phone Company",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Phone Company.pdf"
+  },
+  {
+   "id": 16120,
+   "letter": "F",
+   "title": "Language Barrier",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Language Barrier.pdf"
+  },
+  {
+   "id": 16121,
+   "letter": "G",
+   "title": "Intervals from Triplets",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Intervals from Triplets.pdf"
+  },
+  {
+   "id": 16122,
+   "letter": "H",
+   "title": "Sorted Pairs",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Sorted Pairs.pdf"
+  },
+  {
+   "id": 16123,
+   "letter": "I",
+   "title": "Colorful Components",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Colorful Components.pdf"
+  },
+  {
+   "id": 16124,
+   "letter": "J",
+   "title": "Triangle Hull",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Triangle Hull.pdf"
+  },
+  {
+   "id": 16125,
+   "letter": "K",
+   "title": "Connect the Points",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Connect the Points.pdf"
+  },
+  {
+   "id": 16126,
+   "letter": "L",
+   "title": "Neo-Nim",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Neo-Nim.pdf"
+  }
+ ]
+}

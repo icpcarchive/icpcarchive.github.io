@@ -1,0 +1,163 @@
+{
+ "id": 1124,
+ "name": "The 2022 ICPC Asia Taoyuan Regional Programming Contest",
+ "url": "https://qoj.ac/contest/1124",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Taiwan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1124&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1124&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5660,
+   "letter": "A",
+   "title": "Simplified Genome Translation",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Simplified Genome Translation.pdf"
+  },
+  {
+   "id": 5661,
+   "letter": "B",
+   "title": "Multi-Ladders",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Multi-Ladders.pdf"
+  },
+  {
+   "id": 5662,
+   "letter": "C",
+   "title": "Distance Calculator",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Distance Calculator.pdf"
+  },
+  {
+   "id": 5663,
+   "letter": "D",
+   "title": "Tangle: A DAG for storing transactions",
+   "statement_pages": [
+    7,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Tangle_ A DAG for storing transactions.pdf"
+  },
+  {
+   "id": 5664,
+   "letter": "E",
+   "title": "Printing Stickers",
+   "statement_pages": [
+    10,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Printing Stickers.pdf"
+  },
+  {
+   "id": 5665,
+   "letter": "F",
+   "title": "AA Country and King Dreamoon",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - AA Country and King Dreamoon.pdf"
+  },
+  {
+   "id": 5666,
+   "letter": "G",
+   "title": "Repetitive Elements",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Repetitive Elements.pdf"
+  },
+  {
+   "id": 5667,
+   "letter": "H",
+   "title": "Meeting Places",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Meeting Places.pdf"
+  },
+  {
+   "id": 5668,
+   "letter": "I",
+   "title": "Cell Nuclei Detection",
+   "statement_pages": [
+    18,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Cell Nuclei Detection.pdf"
+  },
+  {
+   "id": 5669,
+   "letter": "J",
+   "title": "Traveling in Jade City",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Traveling in Jade City.pdf"
+  },
+  {
+   "id": 5670,
+   "letter": "K",
+   "title": "Group Guests",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Group Guests.pdf"
+  },
+  {
+   "id": 5671,
+   "letter": "L",
+   "title": "Programmable Virus",
+   "statement_pages": [
+    25,
+    32
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Programmable Virus.pdf"
+  },
+  {
+   "id": 5672,
+   "letter": "M",
+   "title": "Connectivity Problem",
+   "statement_pages": [
+    33,
+    34
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Connectivity Problem.pdf"
+  }
+ ]
+}

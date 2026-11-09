@@ -1,0 +1,152 @@
+{
+ "id": 2694,
+ "name": "The 2025 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2694",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2694&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2694&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15629,
+   "letter": "A",
+   "title": "Arcade Crane",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Arcade Crane.pdf"
+  },
+  {
+   "id": 15630,
+   "letter": "B",
+   "title": "Bisecting Bargain",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bisecting Bargain.pdf"
+  },
+  {
+   "id": 15631,
+   "letter": "C",
+   "title": "Canal Crossing",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Canal Crossing.pdf"
+  },
+  {
+   "id": 15632,
+   "letter": "D",
+   "title": "Dreamcatcher",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dreamcatcher.pdf"
+  },
+  {
+   "id": 15633,
+   "letter": "E",
+   "title": "Erratic Lights",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Erratic Lights.pdf"
+  },
+  {
+   "id": 15634,
+   "letter": "F",
+   "title": "Fair Share",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fair Share.pdf"
+  },
+  {
+   "id": 15635,
+   "letter": "G",
+   "title": "Group Photo",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Group Photo.pdf"
+  },
+  {
+   "id": 15636,
+   "letter": "H",
+   "title": "Hasty Haul",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hasty Haul.pdf"
+  },
+  {
+   "id": 15637,
+   "letter": "I",
+   "title": "Illuminated Stalls",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Illuminated Stalls.pdf"
+  },
+  {
+   "id": 15638,
+   "letter": "J",
+   "title": "Juggling Keys",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Juggling Keys.pdf"
+  },
+  {
+   "id": 15639,
+   "letter": "K",
+   "title": "KIT Finding",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - KIT Finding.pdf"
+  },
+  {
+   "id": 15640,
+   "letter": "L",
+   "title": "Last Christmas",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Last Christmas.pdf"
+  }
+ ]
+}

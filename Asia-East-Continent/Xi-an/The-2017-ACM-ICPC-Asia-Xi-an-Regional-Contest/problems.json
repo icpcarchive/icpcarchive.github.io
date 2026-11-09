@@ -1,0 +1,89 @@
+{
+ "id": 2112,
+ "name": "The 2017 ACM-ICPC Asia Xi'an Regional Contest",
+ "url": "https://qoj.ac/contest/2112",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Xi'an",
+  "ICPC/Regionals/Asia East Continent/The 2017 ACM-ICPC Asia East Regionals"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 11947,
+   "letter": "A",
+   "title": "XOR",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - XOR.pdf"
+  },
+  {
+   "id": 11948,
+   "letter": "B",
+   "title": "Lovers",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Lovers.pdf"
+  },
+  {
+   "id": 11949,
+   "letter": "C",
+   "title": "Naomi with Array",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Naomi with Array.pdf"
+  },
+  {
+   "id": 11950,
+   "letter": "D",
+   "title": "Island",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Island.pdf"
+  },
+  {
+   "id": 11951,
+   "letter": "E",
+   "title": "Naomi with the Graph",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Naomi with the Graph.pdf"
+  },
+  {
+   "id": 11952,
+   "letter": "F",
+   "title": "God of Gamblers",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - God of Gamblers.pdf"
+  },
+  {
+   "id": 11953,
+   "letter": "G",
+   "title": "Sum of xor sums",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Sum of xor sums.pdf"
+  },
+  {
+   "id": 11954,
+   "letter": "H",
+   "title": "Arrangement for Contests",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Arrangement for Contests.pdf"
+  },
+  {
+   "id": 11955,
+   "letter": "I",
+   "title": "Acedia",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Acedia.pdf"
+  },
+  {
+   "id": 11956,
+   "letter": "J",
+   "title": "LOL",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - LOL.pdf"
+  },
+  {
+   "id": 11957,
+   "letter": "K",
+   "title": "Lovers II",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Lovers II.pdf"
+  }
+ ]
+}

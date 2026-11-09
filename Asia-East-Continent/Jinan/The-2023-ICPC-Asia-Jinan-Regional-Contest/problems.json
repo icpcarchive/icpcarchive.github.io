@@ -1,0 +1,168 @@
+{
+ "id": 1472,
+ "name": "The 2023 ICPC Asia Jinan Regional Contest",
+ "url": "https://qoj.ac/contest/1472",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Jinan",
+  "ICPC/Regionals/Asia East Continent/The 2023 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1472&r=0"
+  },
+  {
+   "text": "Statements (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1472&r=1"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1472&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7894,
+   "letter": "A",
+   "title": "Many Many Heads",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Many Many Heads.pdf"
+  },
+  {
+   "id": 7895,
+   "letter": "B",
+   "title": "Graph Partitioning 2",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Graph Partitioning 2.pdf"
+  },
+  {
+   "id": 7896,
+   "letter": "C",
+   "title": "Turn on the Light 2",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Turn on the Light 2.pdf"
+  },
+  {
+   "id": 7897,
+   "letter": "D",
+   "title": "Largest Digit",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Largest Digit.pdf"
+  },
+  {
+   "id": 7898,
+   "letter": "E",
+   "title": "I Just Want... One More...",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - I Just Want... One More.pdf"
+  },
+  {
+   "id": 7899,
+   "letter": "F",
+   "title": "Say Hello to the Future",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Say Hello to the Future.pdf"
+  },
+  {
+   "id": 7900,
+   "letter": "G",
+   "title": "Gifts from Knowledge",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gifts from Knowledge.pdf"
+  },
+  {
+   "id": 7901,
+   "letter": "H",
+   "title": "Basic Substring Structure",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Basic Substring Structure.pdf"
+  },
+  {
+   "id": 7902,
+   "letter": "I",
+   "title": "Strange Sorting",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Strange Sorting.pdf"
+  },
+  {
+   "id": 7903,
+   "letter": "J",
+   "title": "Computational Intelligence",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Computational Intelligence.pdf"
+  },
+  {
+   "id": 7904,
+   "letter": "K",
+   "title": "Rainbow Subarray",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Rainbow Subarray.pdf"
+  },
+  {
+   "id": 7905,
+   "letter": "L",
+   "title": "Ticket to Ride",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Ticket to Ride.pdf"
+  },
+  {
+   "id": 7906,
+   "letter": "M",
+   "title": "Almost Convex",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Almost Convex.pdf"
+  }
+ ]
+}

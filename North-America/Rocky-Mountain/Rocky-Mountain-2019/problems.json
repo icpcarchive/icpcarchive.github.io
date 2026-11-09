@@ -1,0 +1,137 @@
+{
+ "id": 491,
+ "name": "Rocky Mountain 2019",
+ "url": "https://qoj.ac/contest/491",
+ "categories": [
+  "ICPC/Regionals/North America/Rocky Mountain"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=491&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3656,
+   "letter": "A",
+   "title": "Piece of Cake!",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Piece of Cake!.pdf"
+  },
+  {
+   "id": 3657,
+   "letter": "B",
+   "title": "Fantasy Draft",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Fantasy Draft.pdf"
+  },
+  {
+   "id": 3658,
+   "letter": "C",
+   "title": "Folding a Cube",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Folding a Cube.pdf"
+  },
+  {
+   "id": 3659,
+   "letter": "D",
+   "title": "Integer Division",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Integer Division.pdf"
+  },
+  {
+   "id": 3660,
+   "letter": "E",
+   "title": "Hogwarts",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Hogwarts.pdf"
+  },
+  {
+   "id": 3661,
+   "letter": "F",
+   "title": "Molecules",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Molecules.pdf"
+  },
+  {
+   "id": 3662,
+   "letter": "G",
+   "title": "Typo",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Typo.pdf"
+  },
+  {
+   "id": 3663,
+   "letter": "H",
+   "title": "The Biggest Triangle",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - The Biggest Triangle.pdf"
+  },
+  {
+   "id": 3664,
+   "letter": "I",
+   "title": "Tired Terry",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Tired Terry.pdf"
+  },
+  {
+   "id": 3665,
+   "letter": "J",
+   "title": "Watch Later",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Watch Later.pdf"
+  },
+  {
+   "id": 3666,
+   "letter": "K",
+   "title": "Lost Lineup",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Lost Lineup.pdf"
+  }
+ ]
+}

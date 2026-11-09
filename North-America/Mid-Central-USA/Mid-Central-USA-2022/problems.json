@@ -1,0 +1,107 @@
+{
+ "id": 1117,
+ "name": "Mid-Central USA 2022",
+ "url": "https://qoj.ac/contest/1117",
+ "categories": [
+  "ICPC/Regionals/North America/Mid-Central USA"
+ ],
+ "files": [
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1117&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5578,
+   "letter": "A",
+   "title": "Blueberry Waffle",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Blueberry Waffle.pdf"
+  },
+  {
+   "id": 5604,
+   "letter": "B",
+   "title": "Triangle Containment",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Triangle Containment.pdf"
+  },
+  {
+   "id": 5589,
+   "letter": "C",
+   "title": "Everything Is A Nail",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Everything Is A Nail.pdf"
+  },
+  {
+   "id": 5581,
+   "letter": "D",
+   "title": "Champernowne Count",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Champernowne Count.pdf"
+  },
+  {
+   "id": 5583,
+   "letter": "E",
+   "title": "Color Tubes",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Color Tubes.pdf"
+  },
+  {
+   "id": 5593,
+   "letter": "F",
+   "title": "Food Processor",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Food Processor.pdf"
+  },
+  {
+   "id": 5586,
+   "letter": "G",
+   "title": "Digits of Unity",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Digits of Unity.pdf"
+  },
+  {
+   "id": 5595,
+   "letter": "H",
+   "title": "Hunt the Wumpus",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Hunt the Wumpus.pdf"
+  },
+  {
+   "id": 5580,
+   "letter": "I",
+   "title": "Branch Manager",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Branch Manager.pdf"
+  },
+  {
+   "id": 5576,
+   "letter": "J",
+   "title": "Advertising ICPC",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Advertising ICPC.pdf"
+  },
+  {
+   "id": 5579,
+   "letter": "K",
+   "title": "Bog of Eternal Stench",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Bog of Eternal Stench.pdf"
+  },
+  {
+   "id": 5596,
+   "letter": "L",
+   "title": "I Could Have Won",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - I Could Have Won.pdf"
+  },
+  {
+   "id": 5585,
+   "letter": "M",
+   "title": "Creative Accounting",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - Creative Accounting.pdf"
+  }
+ ]
+}

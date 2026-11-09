@@ -1,0 +1,152 @@
+{
+ "id": 1102,
+ "name": "The 2022 ICPC North America Qualifier",
+ "url": "https://qoj.ac/contest/1102",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1102&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1102&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5481,
+   "letter": "A",
+   "title": "Beast Bullies",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Beast Bullies.pdf"
+  },
+  {
+   "id": 5482,
+   "letter": "B",
+   "title": "Birthday Gift",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Birthday Gift.pdf"
+  },
+  {
+   "id": 5483,
+   "letter": "C",
+   "title": "Class Field Trip",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Class Field Trip.pdf"
+  },
+  {
+   "id": 5484,
+   "letter": "D",
+   "title": "Ghost Leg",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Ghost Leg.pdf"
+  },
+  {
+   "id": 5485,
+   "letter": "E",
+   "title": "MazeMan",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - MazeMan.pdf"
+  },
+  {
+   "id": 5486,
+   "letter": "F",
+   "title": "Metronome",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Metronome.pdf"
+  },
+  {
+   "id": 5487,
+   "letter": "G",
+   "title": "Movie Night",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Movie Night.pdf"
+  },
+  {
+   "id": 5488,
+   "letter": "H",
+   "title": "Platform Placing",
+   "statement_pages": [
+    15,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Platform Placing.pdf"
+  },
+  {
+   "id": 5489,
+   "letter": "J",
+   "title": "Room Evacuation",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Room Evacuation.pdf"
+  },
+  {
+   "id": 5490,
+   "letter": "K",
+   "title": "Smallest Calculated Value",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Smallest Calculated Value.pdf"
+  },
+  {
+   "id": 5491,
+   "letter": "L",
+   "title": "Spidey Distance",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Spidey Distance.pdf"
+  },
+  {
+   "id": 5492,
+   "letter": "M",
+   "title": "Toll Roads",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Toll Roads.pdf"
+  }
+ ]
+}

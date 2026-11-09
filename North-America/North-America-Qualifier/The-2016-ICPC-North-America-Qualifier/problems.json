@@ -1,0 +1,152 @@
+{
+ "id": 3813,
+ "name": "The 2016 ICPC North America Qualifier",
+ "url": "https://qoj.ac/contest/3813",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3813&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3813&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 20181,
+   "letter": "A",
+   "title": "A New Alphabet",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - A New Alphabet.pdf"
+  },
+  {
+   "id": 20182,
+   "letter": "B",
+   "title": "Arcade!",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Arcade!.pdf"
+  },
+  {
+   "id": 20183,
+   "letter": "C",
+   "title": "Big Truck",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Big Truck.pdf"
+  },
+  {
+   "id": 20184,
+   "letter": "D",
+   "title": "Brackets",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Brackets.pdf"
+  },
+  {
+   "id": 20185,
+   "letter": "E",
+   "title": "Dots and Boxes",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Dots and Boxes.pdf"
+  },
+  {
+   "id": 20186,
+   "letter": "F",
+   "title": "Free Desserts",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Free Desserts.pdf"
+  },
+  {
+   "id": 20187,
+   "letter": "G",
+   "title": "Inverse Factorial",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Inverse Factorial.pdf"
+  },
+  {
+   "id": 20188,
+   "letter": "H",
+   "title": "Nine Packs",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Nine Packs.pdf"
+  },
+  {
+   "id": 20189,
+   "letter": "I",
+   "title": "Primonimo",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Primonimo.pdf"
+  },
+  {
+   "id": 20190,
+   "letter": "J",
+   "title": "Quick Estimates",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Quick Estimates.pdf"
+  },
+  {
+   "id": 20191,
+   "letter": "K",
+   "title": "Robotopia",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Robotopia.pdf"
+  },
+  {
+   "id": 20192,
+   "letter": "L",
+   "title": "Unusual Darts",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Unusual Darts.pdf"
+  }
+ ]
+}

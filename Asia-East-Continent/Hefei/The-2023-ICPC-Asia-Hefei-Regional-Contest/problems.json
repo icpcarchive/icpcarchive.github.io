@@ -1,0 +1,153 @@
+{
+ "id": 1440,
+ "name": "The 2023 ICPC Asia Hefei Regional Contest",
+ "url": "https://qoj.ac/contest/1440",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Hefei",
+  "ICPC/Regionals/Asia East Continent/The 2023 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1440&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1440&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7874,
+   "letter": "A",
+   "title": "SQRT Problem",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - SQRT Problem.pdf"
+  },
+  {
+   "id": 7875,
+   "letter": "B",
+   "title": "Queue Sorting",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Queue Sorting.pdf"
+  },
+  {
+   "id": 7876,
+   "letter": "C",
+   "title": "Cyclic Substrings",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cyclic Substrings.pdf"
+  },
+  {
+   "id": 7877,
+   "letter": "D",
+   "title": "Balanced Array",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Balanced Array.pdf"
+  },
+  {
+   "id": 7878,
+   "letter": "E",
+   "title": "Matrix Distances",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Matrix Distances.pdf"
+  },
+  {
+   "id": 7879,
+   "letter": "F",
+   "title": "Colorful Balloons",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Colorful Balloons.pdf"
+  },
+  {
+   "id": 7880,
+   "letter": "G",
+   "title": "Streak Manipulation",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Streak Manipulation.pdf"
+  },
+  {
+   "id": 7881,
+   "letter": "H",
+   "title": "Computational Complexity",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Computational Complexity.pdf"
+  },
+  {
+   "id": 7882,
+   "letter": "I",
+   "title": "Linguistics Puzzle",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Linguistics Puzzle.pdf"
+  },
+  {
+   "id": 7883,
+   "letter": "J",
+   "title": "Takeout Delivering",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Takeout Delivering.pdf"
+  },
+  {
+   "id": 7884,
+   "letter": "K",
+   "title": "Campus Partition",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Campus Partition.pdf"
+  },
+  {
+   "id": 7885,
+   "letter": "L",
+   "title": "Information Spread",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Information Spread.pdf"
+  }
+ ]
+}

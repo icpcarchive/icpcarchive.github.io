@@ -1,0 +1,126 @@
+{
+ "id": 3688,
+ "name": "The 2005 ICPC Southwestern Europe Regional Contest (SWERC 2005)",
+ "url": "https://qoj.ac/contest/3688",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3688&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19840,
+   "letter": "A",
+   "title": "The Mysterious X Network",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - The Mysterious X Network.pdf"
+  },
+  {
+   "id": 19841,
+   "letter": "B",
+   "title": "Bin Packing",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bin Packing.pdf"
+  },
+  {
+   "id": 19842,
+   "letter": "C",
+   "title": "On Storing Clothes",
+   "statement_pages": [
+    4,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - On Storing Clothes.pdf"
+  },
+  {
+   "id": 19843,
+   "letter": "D",
+   "title": "Buy or Build",
+   "statement_pages": [
+    8,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Buy or Build.pdf"
+  },
+  {
+   "id": 19844,
+   "letter": "E",
+   "title": "4 Values Whose Sum Is 0",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - 4 Values Whose Sum Is 0.pdf"
+  },
+  {
+   "id": 19845,
+   "letter": "F",
+   "title": "Keep the Customer Satisfied",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Keep the Customer Satisfied.pdf"
+  },
+  {
+   "id": 19846,
+   "letter": "G",
+   "title": "UFO Cubes in Roswell",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - UFO Cubes in Roswell.pdf"
+  },
+  {
+   "id": 19847,
+   "letter": "H",
+   "title": "Black Box",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Black Box.pdf"
+  },
+  {
+   "id": 19848,
+   "letter": "I",
+   "title": "Pixel Shuffle",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Pixel Shuffle.pdf"
+  },
+  {
+   "id": 19849,
+   "letter": "J",
+   "title": "Consecutive Ones",
+   "statement_pages": [
+    21,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Consecutive Ones.pdf"
+  }
+ ]
+}

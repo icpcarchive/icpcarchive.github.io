@@ -1,0 +1,178 @@
+{
+ "id": 813,
+ "name": "The 2021 ICPC North America Qualifier",
+ "url": "https://qoj.ac/contest/813",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=813&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=813&r=1"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=813&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2393,
+   "letter": "A",
+   "title": "Alien Integers",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Alien Integers.pdf"
+  },
+  {
+   "id": 2394,
+   "letter": "B",
+   "title": "Avoiding Asteroids",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Avoiding Asteroids.pdf"
+  },
+  {
+   "id": 2395,
+   "letter": "C",
+   "title": "Common Factors",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Common Factors.pdf"
+  },
+  {
+   "id": 2396,
+   "letter": "D",
+   "title": "Dimensional Analysis",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dimensional Analysis.pdf"
+  },
+  {
+   "id": 2397,
+   "letter": "E",
+   "title": "Eye of Sauron",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Eye of Sauron.pdf"
+  },
+  {
+   "id": 2398,
+   "letter": "F",
+   "title": "ilove Strings",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - ilove Strings.pdf"
+  },
+  {
+   "id": 2399,
+   "letter": "G",
+   "title": "MrCodeFormatGrader",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - MrCodeFormatGrader.pdf"
+  },
+  {
+   "id": 2400,
+   "letter": "H",
+   "title": "Mult!",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Mult!.pdf"
+  },
+  {
+   "id": 2401,
+   "letter": "I",
+   "title": "Pizza Party!",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Pizza Party!.pdf"
+  },
+  {
+   "id": 2402,
+   "letter": "J",
+   "title": "Stacking Up",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Stacking Up.pdf"
+  },
+  {
+   "id": 2403,
+   "letter": "K",
+   "title": "Stamp Combinations",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Stamp Combinations.pdf"
+  },
+  {
+   "id": 2404,
+   "letter": "L",
+   "title": "Sword Counting",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Sword Counting.pdf"
+  },
+  {
+   "id": 2405,
+   "letter": "M",
+   "title": "Tic-Tac State",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Tic-Tac State.pdf"
+  },
+  {
+   "id": 2406,
+   "letter": "N",
+   "title": "Venn Intervals",
+   "statement_pages": [
+    27,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - Venn Intervals.pdf"
+  }
+ ]
+}

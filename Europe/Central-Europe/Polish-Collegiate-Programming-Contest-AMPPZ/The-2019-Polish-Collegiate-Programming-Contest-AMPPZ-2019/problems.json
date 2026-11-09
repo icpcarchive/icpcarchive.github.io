@@ -1,0 +1,152 @@
+{
+ "id": 559,
+ "name": "The 2019 Polish Collegiate Programming Contest (AMPPZ 2019)",
+ "url": "https://qoj.ac/contest/559",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/Polish Collegiate Programming Contest (AMPPZ)"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=559&r=0"
+  },
+  {
+   "text": "Tutorials (pl)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=559&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3025,
+   "letter": "A",
+   "title": "Assimilation",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Assimilation.pdf"
+  },
+  {
+   "id": 3026,
+   "letter": "B",
+   "title": "Little Worm",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Little Worm.pdf"
+  },
+  {
+   "id": 3027,
+   "letter": "C",
+   "title": "Polygon",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Polygon.pdf"
+  },
+  {
+   "id": 3028,
+   "letter": "D",
+   "title": "Frogs",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Frogs.pdf"
+  },
+  {
+   "id": 3029,
+   "letter": "E",
+   "title": "The Great Drone Show",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - The Great Drone Show.pdf"
+  },
+  {
+   "id": 3030,
+   "letter": "F",
+   "title": "Fantastic Compression",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fantastic Compression.pdf"
+  },
+  {
+   "id": 3031,
+   "letter": "G",
+   "title": "Bookstore",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Bookstore.pdf"
+  },
+  {
+   "id": 3032,
+   "letter": "H",
+   "title": "Cheese Game",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Cheese Game.pdf"
+  },
+  {
+   "id": 3033,
+   "letter": "I",
+   "title": "Harry Potter and the Palindromic Radius",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Harry Potter and the Palindromic Radius.pdf"
+  },
+  {
+   "id": 3034,
+   "letter": "J",
+   "title": "Antennas",
+   "statement_pages": [
+    19,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Antennas.pdf"
+  },
+  {
+   "id": 3035,
+   "letter": "K",
+   "title": "Ghost",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Ghost.pdf"
+  },
+  {
+   "id": 3036,
+   "letter": "L",
+   "title": "Donuts",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Donuts.pdf"
+  }
+ ]
+}

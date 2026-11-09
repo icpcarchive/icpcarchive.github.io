@@ -1,0 +1,153 @@
+{
+ "id": 1894,
+ "name": "The 2024 ICPC Asia East Continent Final Contest",
+ "url": "https://qoj.ac/contest/1894",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent",
+  "ICPC/Regionals/Asia East Continent/The 2024 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1894&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1894&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9975,
+   "letter": "A",
+   "title": "Hitoshizuku",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Hitoshizuku.pdf"
+  },
+  {
+   "id": 9976,
+   "letter": "B",
+   "title": "Guess the Polygon 2",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Guess the Polygon 2.pdf"
+  },
+  {
+   "id": 9977,
+   "letter": "C",
+   "title": "Norte da Universidade",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Norte da Universidade.pdf"
+  },
+  {
+   "id": 9978,
+   "letter": "D",
+   "title": "Keystone Correction",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Keystone Correction.pdf"
+  },
+  {
+   "id": 9979,
+   "letter": "E",
+   "title": "Corrupted Scoreboard Log",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Corrupted Scoreboard Log.pdf"
+  },
+  {
+   "id": 9980,
+   "letter": "F",
+   "title": "Boolean Function Reconstruction",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Boolean Function Reconstruction.pdf"
+  },
+  {
+   "id": 9981,
+   "letter": "G",
+   "title": "Collatz Conjecture",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Collatz Conjecture.pdf"
+  },
+  {
+   "id": 9982,
+   "letter": "H",
+   "title": "Staircase Museum",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Staircase Museum.pdf"
+  },
+  {
+   "id": 9983,
+   "letter": "I",
+   "title": "Color-Balanced Tree",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Color-Balanced Tree.pdf"
+  },
+  {
+   "id": 9984,
+   "letter": "J",
+   "title": "The Mysterious Shop",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - The Mysterious Shop.pdf"
+  },
+  {
+   "id": 9985,
+   "letter": "K",
+   "title": "Exploration Boundary",
+   "statement_pages": [
+    21,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Exploration Boundary.pdf"
+  },
+  {
+   "id": 9986,
+   "letter": "L",
+   "title": "Shiori",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Shiori.pdf"
+  }
+ ]
+}

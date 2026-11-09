@@ -1,0 +1,152 @@
+{
+ "id": 801,
+ "name": "The 2014 Central Europe Regional Contest",
+ "url": "https://qoj.ac/contest/801",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=801&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=801&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11065,
+   "letter": "A",
+   "title": "Parades",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Parades.pdf"
+  },
+  {
+   "id": 11066,
+   "letter": "B",
+   "title": "Mountainous landscape",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Mountainous landscape.pdf"
+  },
+  {
+   "id": 11067,
+   "letter": "C",
+   "title": "Sums",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Sums.pdf"
+  },
+  {
+   "id": 11068,
+   "letter": "D",
+   "title": "Wheels",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Wheels.pdf"
+  },
+  {
+   "id": 11069,
+   "letter": "E",
+   "title": "Can't stop playing",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Can't stop playing.pdf"
+  },
+  {
+   "id": 11070,
+   "letter": "F",
+   "title": "Vocabulary",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Vocabulary.pdf"
+  },
+  {
+   "id": 11071,
+   "letter": "G",
+   "title": "Virus synthesis",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Virus synthesis.pdf"
+  },
+  {
+   "id": 11072,
+   "letter": "H",
+   "title": "Good morning!",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Good morning!.pdf"
+  },
+  {
+   "id": 11073,
+   "letter": "I",
+   "title": "Bricks",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Bricks.pdf"
+  },
+  {
+   "id": 11074,
+   "letter": "J",
+   "title": "Pork barrel",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Pork barrel.pdf"
+  },
+  {
+   "id": 11075,
+   "letter": "K",
+   "title": "The Imp",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - The Imp.pdf"
+  },
+  {
+   "id": 11076,
+   "letter": "L",
+   "title": "Outer space invaders",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Outer space invaders.pdf"
+  }
+ ]
+}

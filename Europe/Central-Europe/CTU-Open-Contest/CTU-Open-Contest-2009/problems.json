@@ -1,0 +1,115 @@
+{
+ "id": 3676,
+ "name": "CTU Open Contest 2009",
+ "url": "https://qoj.ac/contest/3676",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3676&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19458,
+   "letter": "A",
+   "title": "Arable Area",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Arable Area.pdf"
+  },
+  {
+   "id": 19459,
+   "letter": "B",
+   "title": "Clock Captcha",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Clock Captcha.pdf"
+  },
+  {
+   "id": 19460,
+   "letter": "C",
+   "title": "Digital Display",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Digital Display.pdf"
+  },
+  {
+   "id": 19461,
+   "letter": "D",
+   "title": "Intriguing Identifiers",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Intriguing Identifiers.pdf"
+  },
+  {
+   "id": 19462,
+   "letter": "E",
+   "title": "Letters Lies",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Letters Lies.pdf"
+  },
+  {
+   "id": 19463,
+   "letter": "F",
+   "title": "Odd Opportunities",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Odd Opportunities.pdf"
+  },
+  {
+   "id": 19464,
+   "letter": "G",
+   "title": "Peculiar Primes",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Peculiar Primes.pdf"
+  },
+  {
+   "id": 19465,
+   "letter": "H",
+   "title": "Robotic Rails",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Robotic Rails.pdf"
+  },
+  {
+   "id": 19466,
+   "letter": "I",
+   "title": "Suspicious Stocks",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Suspicious Stocks.pdf"
+  }
+ ]
+}

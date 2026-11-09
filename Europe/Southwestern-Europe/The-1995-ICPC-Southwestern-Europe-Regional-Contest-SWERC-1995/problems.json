@@ -1,0 +1,115 @@
+{
+ "id": 3642,
+ "name": "The 1995 ICPC Southwestern Europe Regional Contest (SWERC 1995)",
+ "url": "https://qoj.ac/contest/3642",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3642&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19754,
+   "letter": "A",
+   "title": "Intersection",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Intersection.pdf"
+  },
+  {
+   "id": 19755,
+   "letter": "B",
+   "title": "Synchronous Design",
+   "statement_pages": [
+    4,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Synchronous Design.pdf"
+  },
+  {
+   "id": 19756,
+   "letter": "C",
+   "title": "Graph Coloring",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Graph Coloring.pdf"
+  },
+  {
+   "id": 19757,
+   "letter": "D",
+   "title": "Triangle",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Triangle.pdf"
+  },
+  {
+   "id": 19758,
+   "letter": "E",
+   "title": "Anagram",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Anagram.pdf"
+  },
+  {
+   "id": 19759,
+   "letter": "F",
+   "title": "Spreadsheet",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Spreadsheet.pdf"
+  },
+  {
+   "id": 19760,
+   "letter": "G",
+   "title": "Cube",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Cube.pdf"
+  },
+  {
+   "id": 19761,
+   "letter": "H",
+   "title": "Peter's Calculator",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Peter's Calculator.pdf"
+  },
+  {
+   "id": 19762,
+   "letter": "J",
+   "title": "Partial Differential Equations",
+   "statement_pages": [
+    17,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Partial Differential Equations.pdf"
+  }
+ ]
+}

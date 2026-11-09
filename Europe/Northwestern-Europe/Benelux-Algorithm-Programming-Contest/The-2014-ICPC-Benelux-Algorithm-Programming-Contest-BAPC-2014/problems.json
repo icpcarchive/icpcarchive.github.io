@@ -1,0 +1,141 @@
+{
+ "id": 3894,
+ "name": "The 2014 ICPC Benelux Algorithm Programming Contest (BAPC 2014)",
+ "url": "https://qoj.ac/contest/3894",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3894&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3894&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19279,
+   "letter": "A",
+   "title": "Avoiding the Apocalypse",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Avoiding the Apocalypse.pdf"
+  },
+  {
+   "id": 19280,
+   "letter": "B",
+   "title": "Button Bashing",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Button Bashing.pdf"
+  },
+  {
+   "id": 19281,
+   "letter": "C",
+   "title": "Citadel Construction",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Citadel Construction.pdf"
+  },
+  {
+   "id": 19282,
+   "letter": "D",
+   "title": "Dropping Directions",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dropping Directions.pdf"
+  },
+  {
+   "id": 19283,
+   "letter": "E",
+   "title": "Excellent Engineers",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Excellent Engineers.pdf"
+  },
+  {
+   "id": 19284,
+   "letter": "F",
+   "title": "Floating Formation",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Floating Formation.pdf"
+  },
+  {
+   "id": 19285,
+   "letter": "G",
+   "title": "Growling Gears",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Growling Gears.pdf"
+  },
+  {
+   "id": 19286,
+   "letter": "H",
+   "title": "Highway Hassle",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Highway Hassle.pdf"
+  },
+  {
+   "id": 19287,
+   "letter": "I",
+   "title": "Interesting Integers",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Interesting Integers.pdf"
+  },
+  {
+   "id": 19288,
+   "letter": "J",
+   "title": "Jury Jeopardy",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jury Jeopardy.pdf"
+  },
+  {
+   "id": 19289,
+   "letter": "K",
+   "title": "Key to Knowledge",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Key to Knowledge.pdf"
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "id": 493,
+ "name": "East Central NA 2020",
+ "url": "https://qoj.ac/contest/493",
+ "categories": [
+  "ICPC/Regionals/North America/East Central NA"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 3612,
+   "letter": "A",
+   "title": "All in the Family",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - All in the Family.pdf"
+  },
+  {
+   "id": 3613,
+   "letter": "B",
+   "title": "Kinky Word Searches",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Kinky Word Searches.pdf"
+  },
+  {
+   "id": 3614,
+   "letter": "C",
+   "title": "Math Trade",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Math Trade.pdf"
+  },
+  {
+   "id": 3615,
+   "letter": "D",
+   "title": "Oreperations Research",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Oreperations Research.pdf"
+  },
+  {
+   "id": 3616,
+   "letter": "E",
+   "title": "Over the Hill, Part 1",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Over the Hill, Part 1.pdf"
+  },
+  {
+   "id": 3617,
+   "letter": "F",
+   "title": "Over the Hill, Part 2",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Over the Hill, Part 2.pdf"
+  },
+  {
+   "id": 3618,
+   "letter": "G",
+   "title": "A Rank Problem",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - A Rank Problem.pdf"
+  },
+  {
+   "id": 3619,
+   "letter": "H",
+   "title": "Restroom Monitor",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Restroom Monitor.pdf"
+  },
+  {
+   "id": 3620,
+   "letter": "I",
+   "title": "Scholar's Lawn",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Scholar's Lawn.pdf"
+  },
+  {
+   "id": 3621,
+   "letter": "J",
+   "title": "Simply Sudoku",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Simply Sudoku.pdf"
+  },
+  {
+   "id": 3622,
+   "letter": "K",
+   "title": "Weighty Tomes",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Weighty Tomes.pdf"
+  },
+  {
+   "id": 3623,
+   "letter": "L",
+   "title": "Workers of the World Unite! Just Not Too Close.",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Workers of the World Unite! Just Not Too Close.pdf"
+  }
+ ]
+}

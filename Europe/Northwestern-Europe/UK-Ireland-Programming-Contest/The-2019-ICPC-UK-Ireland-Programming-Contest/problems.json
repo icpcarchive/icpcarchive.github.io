@@ -1,0 +1,167 @@
+{
+ "id": 700,
+ "name": "The 2019 ICPC UK & Ireland Programming Contest",
+ "url": "https://qoj.ac/contest/700",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/UK & Ireland Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=700&r=0"
+  },
+  {
+   "text": "Introduction (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=700&r=1"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=700&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 1751,
+   "letter": "A",
+   "title": "Automatic Accountant",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Automatic Accountant.pdf"
+  },
+  {
+   "id": 1752,
+   "letter": "B",
+   "title": "Ballpark Estimate",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Ballpark Estimate.pdf"
+  },
+  {
+   "id": 1753,
+   "letter": "C",
+   "title": "Crooked Dealing",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Crooked Dealing.pdf"
+  },
+  {
+   "id": 1754,
+   "letter": "D",
+   "title": "Dome Construction",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dome Construction.pdf"
+  },
+  {
+   "id": 1755,
+   "letter": "E",
+   "title": "Estate Agent",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Estate Agent.pdf"
+  },
+  {
+   "id": 1756,
+   "letter": "F",
+   "title": "Feeding Seals",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Feeding Seals.pdf"
+  },
+  {
+   "id": 1757,
+   "letter": "G",
+   "title": "Grand Central Station",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Grand Central Station.pdf"
+  },
+  {
+   "id": 1758,
+   "letter": "H",
+   "title": "Hat Stand",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hat Stand.pdf"
+  },
+  {
+   "id": 1759,
+   "letter": "I",
+   "title": "Integral Pyramid",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Integral Pyramid.pdf"
+  },
+  {
+   "id": 1760,
+   "letter": "J",
+   "title": "Jammed Gym",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jammed Gym.pdf"
+  },
+  {
+   "id": 1761,
+   "letter": "K",
+   "title": "Knocked Ink",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Knocked Ink.pdf"
+  },
+  {
+   "id": 1762,
+   "letter": "L",
+   "title": "Low Effort League",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Low Effort League.pdf"
+  },
+  {
+   "id": 1763,
+   "letter": "M",
+   "title": "Mosaic Mansion",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mosaic Mansion.pdf"
+  }
+ ]
+}

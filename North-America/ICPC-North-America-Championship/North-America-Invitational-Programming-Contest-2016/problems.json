@@ -1,0 +1,137 @@
+{
+ "id": 115,
+ "name": "North America Invitational Programming Contest 2016",
+ "url": "https://qoj.ac/contest/115",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=115&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 6455,
+   "letter": "A",
+   "title": "Fancy Antiques",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Fancy Antiques.pdf"
+  },
+  {
+   "id": 6456,
+   "letter": "B",
+   "title": "Alternative Bracket Notation",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Alternative Bracket Notation.pdf"
+  },
+  {
+   "id": 6457,
+   "letter": "C",
+   "title": "Greetings!",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Greetings!.pdf"
+  },
+  {
+   "id": 6458,
+   "letter": "D",
+   "title": "Programming Team",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Programming Team.pdf"
+  },
+  {
+   "id": 6459,
+   "letter": "E",
+   "title": "K-Inversions",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - K-Inversions.pdf"
+  },
+  {
+   "id": 6460,
+   "letter": "F",
+   "title": "Mountain Scenes",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Mountain Scenes.pdf"
+  },
+  {
+   "id": 6461,
+   "letter": "G",
+   "title": "Symmetry",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Symmetry.pdf"
+  },
+  {
+   "id": 6462,
+   "letter": "H",
+   "title": "Jewel Thief",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Jewel Thief.pdf"
+  },
+  {
+   "id": 6463,
+   "letter": "I",
+   "title": "Tourists",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Tourists.pdf"
+  },
+  {
+   "id": 6464,
+   "letter": "J",
+   "title": "Whiteboard",
+   "statement_pages": [
+    19,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Whiteboard.pdf"
+  },
+  {
+   "id": 6465,
+   "letter": "K",
+   "title": "YATP",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - YATP.pdf"
+  }
+ ]
+}

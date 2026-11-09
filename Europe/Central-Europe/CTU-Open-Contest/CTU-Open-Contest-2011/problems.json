@@ -1,0 +1,115 @@
+{
+ "id": 3678,
+ "name": "CTU Open Contest 2011",
+ "url": "https://qoj.ac/contest/3678",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3678&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19476,
+   "letter": "A",
+   "title": "Analog Clock Display",
+   "statement_pages": [
+    2,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Analog Clock Display.pdf"
+  },
+  {
+   "id": 19477,
+   "letter": "B",
+   "title": "Collatz Conjecture",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Collatz Conjecture.pdf"
+  },
+  {
+   "id": 19478,
+   "letter": "C",
+   "title": "Text Encryption",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Text Encryption.pdf"
+  },
+  {
+   "id": 19479,
+   "letter": "D",
+   "title": "Mine the Gradient",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Mine the Gradient.pdf"
+  },
+  {
+   "id": 19480,
+   "letter": "E",
+   "title": "Invasion",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Invasion.pdf"
+  },
+  {
+   "id": 19481,
+   "letter": "F",
+   "title": "Intergalactic Mortgage",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Intergalactic Mortgage.pdf"
+  },
+  {
+   "id": 19482,
+   "letter": "G",
+   "title": "Simple Polygon",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Simple Polygon.pdf"
+  },
+  {
+   "id": 19483,
+   "letter": "H",
+   "title": "Ambiguous Result",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Ambiguous Result.pdf"
+  },
+  {
+   "id": 19484,
+   "letter": "I",
+   "title": "Domino tiling",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Domino tiling.pdf"
+  }
+ ]
+}

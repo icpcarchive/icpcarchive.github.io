@@ -1,0 +1,159 @@
+{
+ "id": 2686,
+ "name": "The 2023 ICPC Asia Tehran Regional Contest",
+ "url": "https://qoj.ac/contest/2686",
+ "categories": [
+  "ICPC/Regionals/Asia West Continent/Iran"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2686&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15652,
+   "letter": "A",
+   "title": "Micromasters",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Micromasters.pdf"
+  },
+  {
+   "id": 15653,
+   "letter": "B",
+   "title": "Hezardastan's Annual Report",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Hezardastan's Annual Report.pdf"
+  },
+  {
+   "id": 15654,
+   "letter": "C",
+   "title": "Moderation in all things",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Moderation in all things.pdf"
+  },
+  {
+   "id": 15655,
+   "letter": "D",
+   "title": "Cup of Tea",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Cup of Tea.pdf"
+  },
+  {
+   "id": 15656,
+   "letter": "E",
+   "title": "Largest Triangle",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Largest Triangle.pdf"
+  },
+  {
+   "id": 15657,
+   "letter": "F",
+   "title": "Micromasters Certificates",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Micromasters Certificates.pdf"
+  },
+  {
+   "id": 15658,
+   "letter": "G",
+   "title": "Jackson House",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Jackson House.pdf"
+  },
+  {
+   "id": 15659,
+   "letter": "H",
+   "title": "Star Wars",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Star Wars.pdf"
+  },
+  {
+   "id": 15660,
+   "letter": "I",
+   "title": "Pistons",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Pistons.pdf"
+  },
+  {
+   "id": 15661,
+   "letter": "J",
+   "title": "Cafebazaar's Applications",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Cafebazaar's Applications.pdf"
+  },
+  {
+   "id": 15662,
+   "letter": "K",
+   "title": "Monster Warehouse",
+   "statement_pages": [
+    12,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Monster Warehouse.pdf"
+  },
+  {
+   "id": 15663,
+   "letter": "L",
+   "title": "Rolling-Dice Puzzle",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Rolling-Dice Puzzle.pdf"
+  },
+  {
+   "id": 15664,
+   "letter": "M",
+   "title": "Colorful Intervals",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Colorful Intervals.pdf"
+  }
+ ]
+}

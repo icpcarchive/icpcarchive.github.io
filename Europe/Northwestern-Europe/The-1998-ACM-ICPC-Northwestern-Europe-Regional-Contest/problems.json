@@ -1,0 +1,104 @@
+{
+ "id": 3622,
+ "name": "The 1998 ACM ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/3622",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3622&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19679,
+   "letter": "A",
+   "title": "Space Management",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Space Management.pdf"
+  },
+  {
+   "id": 19680,
+   "letter": "B",
+   "title": "Plane Spotting",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Plane Spotting.pdf"
+  },
+  {
+   "id": 19681,
+   "letter": "C",
+   "title": "Kroket",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Kroket.pdf"
+  },
+  {
+   "id": 19682,
+   "letter": "D",
+   "title": "Psychic Yahtzee",
+   "statement_pages": [
+    7,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Psychic Yahtzee.pdf"
+  },
+  {
+   "id": 19683,
+   "letter": "E",
+   "title": "Super Snooker",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Super Snooker.pdf"
+  },
+  {
+   "id": 19684,
+   "letter": "F",
+   "title": "Inverso",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Inverso.pdf"
+  },
+  {
+   "id": 19685,
+   "letter": "G",
+   "title": "Mondriaan",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Mondriaan.pdf"
+  },
+  {
+   "id": 19686,
+   "letter": "H",
+   "title": "Numbers & Letters",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Numbers & Letters.pdf"
+  }
+ ]
+}

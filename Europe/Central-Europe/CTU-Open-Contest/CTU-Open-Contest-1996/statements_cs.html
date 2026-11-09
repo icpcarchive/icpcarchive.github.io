@@ -1,0 +1,517 @@
+
+<!-- saved from url=(0083)https://web.archive.org/web/19971028164538/http://vorvan.sh.cvut.cz/acm/ulohy2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB6D90S3RZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YB6D90S3RZ');
+</script>
+<!-- is_embed=False -->
+<script>
+  const observer = new PerformanceObserver((list) => {
+    list.getEntries().forEach((entry) => {
+      console.log('%o', entry);
+    })
+  });
+  observer.observe({type: "navigation", buffered: true});
+</script>
+<script src="./athena.js" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app204.us.archive.org';v.server_ms=412;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="./bundle-playback.js" charset="utf-8"></script>
+<script type="text/javascript" src="./wombat.js" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="./ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://vorvan.sh.cvut.cz:80/acm/ulohy2.html","19971028164538","https://web.archive.org/","web","/_static/",
+	      "878057138");
+</script>
+<link rel="stylesheet" type="text/css" href="./banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+   <title>Zadani uloh</title>
+</head>
+<body background="./back01.jpg" data-new-gr-c-s-check-loaded="14.1202.0" data-gr-ext-installed="">
+<h1 align="center"><img src="./acmlogo.gif" alt="ACM" border="0" height="95" width="96" align="left"><img src="./acmlogo.gif" alt="ACM" border="0" height="95" width="96" align="right">Zadani uloh</h1>
+
+<p>
+</p><hr><p></p>
+
+<ul>
+<li><a href="./ulohy2.html#UVOD">Uvod</a></li>
+
+<li><a href="./ulohy2.html#A">Problem A</a> - Hyperoxni hypergony </li>
+
+<li><a href="./ulohy2.html#B">Problem B</a> - Prunik hyperkvadru </li>
+
+<li><a href="./ulohy2.html#C">Problem C</a> - Posadka </li>
+
+<li><a href="./ulohy2.html#D">Problem D</a> - Kolonie </li>
+
+<li><a href="./ulohy2.html#E">Problem E</a> - Vyplneni prostoru </li>
+
+<li><a href="./ulohy2.html#F">Problem F</a> - Prstencove generatory </li>
+
+<li><a href="./ulohy2.html#G">Problem G</a> - Optimalni trasa </li>
+
+<li><a href="./ulohy2.html#H">Problem H</a> - Posloupnost planet </li>
+
+
+</ul>
+
+
+<center><p>
+</p><hr><p></p></center>
+
+<h1 align="CENTER"><a name="UVOD"></a>Uvod</h1>
+<p>Pise se rok 2047. Nejvyznamejsi udalosti letosniho roku bude bezesporu start hyperprostorove kosmicke lodi Nostromo na vyzkumnou vypravu ke vzdalenym galaxiim. Kosmicka lod Nostromo je prvni hyperprostorova kosmicka lod vyrobena na planete Zemi. Stavbe teto lodi predchazelo mnoho let teoretickych vyzkumu a praktickych experimentu. Nostromo je vysledkem neunavne prace stovek fyziku, matematiku, konstrukteru, pocitacovych specialistu a mnoha dalsich odborniku. </p>
+
+<p>Material, ktery se vam prave dostal do ruky, popularni formou priblizuje nektere problemy, se kterymi se museli tvurci kosmicke lodi Nostromo potykat.</p>
+
+
+<center><p> 
+</p><hr><p></p></center>
+
+<h1 align="CENTER"><a name="A"></a>Problem A</h1>
+<h2 align="center">Hyperoxni hypergony</h2>
+
+<p>V souvislosti s konstrukci nove hyperkosmicke lodi bylo pochopitelne nutne rozsirit celou radu stavajicich vedeckych disciplin a zalozit nekolik zcela novych. Kuprikladu jednim z fundamentalnich problemu aplikovane hypermaticke hypermetrie, ktery ma radu praktickych aplikaci zejmena pri navrhu umisteni hyperlacnich hyperuzic slouzicich ke komunikaci hyperkosmicke lodi se Zemi pomoci hypervln, je problem hyperoxnosti hypergonu. Tento problem byl teoreticky popsan teprve nedavno, ale vzhledem k tomu, ze na jeho reseni zavisi mnoho konstrukcnich rozhodnuti stavitelu hyperkosmicke lodi, je nutne co nejrychleji najit efektivni algoritmus pro jeho reseni. Jelikoz se jedna o problematiku ve vedeckych kruzich znamou, muze ted vetsina z vas prejit rovnou na bod ‘Specifikace vstupu’. Pro jistotu zde vsak strucne zopakujeme potrebne zakladni pojmy z hypermaticke hypermetrie:</p>
+
+<p>Mnozinu vsech usporadanych k-tic realnych cisel nazyvame <i>k-hyperostor</i>. Jednotlive prvky <i>k-hyperostoru</i> jsou <i>k-hypery</i>. k je prirozene cislo a nazyvame<i> ho hyperzi</i>.</p>
+
+<p>Nad <i>k-hypery</i> definujeme operaci scitani:</p>
+
+<p><i>a+b = (a<sub>1</sub>, a<sub>2</sub>, ...,a<sub>k</sub>) + (b<sub>1</sub>, b<sub>2</sub>, ...,b<sub>k</sub>) = (a<sub>1</sub> + b<sub>1</sub>, a<sub>2</sub> + b<sub>2</sub>, ..., a<sub>k</sub> + b<sub>k</sub>)</i></p>
+
+<p>Definujeme rovnez operaci nasobeni <i>k-hyperu</i> realnym cislem:</p>
+<p><i> xa = xa(a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>k</sub>) = (xa<sub>1</sub>, xa<sub>2</sub>, ..., xa<sub>k</sub>)</i></p>
+
+<p>Definujeme zobrazeni zvane <i>hypernost</i> z mnozniny vsech dvojic <i>k-hyperu</i> do mnoziny realnych cisel nasledujicim vztahem:</p>
+<p><i>h(a,b) = SQRT((a<sub>1</sub> - b<sub>1</sub>)<sup>2</sup> + (a<sub>2</sub> - b<sub>2</sub>)<sup>2</sup> + ... + (a<sub>k</sub> - b<sub>k</sub>)<sup>2</sup>)</i></p>
+
+<p>Rekneme, ze <i>k-hyper</i> y je <i>hyperaci</i> <i>k-hyperu</i> x<sub>1</sub>, x<sub>2</sub>, ...,x<sub>n</sub>, pokud existuji realne konstanty a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub> takove, ze y = a<sub>1</sub>x<sub>1</sub> + a<sub>2</sub>x<sub>2</sub> + ... + a<sub>n</sub>x<sub>n</sub></p>
+
+<p>Mejme danu mnozinu <i>k-hyperu</i> g<sub>1</sub>, g<sub>2</sub>, ... g<sub>l</sub>, ktere nazyvame <i>hyperatory</i>, takovou, ze zadny z <i>hyperatoru</i> neni<i> hyperaci</i> ostatnich. Pak mnozinu vsech <i>k-hyperu</i>, ktere jsou <i>hyperacemi</i> <i>hyperatoru </i>nazyvame <i>l-hypostor</i>. Vsimnete si, ze <i>k-hyperostor</i> je rovnez <i>k-hypostorem</i>.</p>
+
+<p><i>Hyperoli</i> o polomeru r <i>k-hyperu x</i> (znacime <i>d(x,r)</i>) vzhledem k danemu <i>l-hypostoru</i> H je mnozina vsech <i>k-hyperu</i> y z H, takovych, ze <i>h(x,y) &lt; r </i>.</p>
+
+<p><i>Hypertrek</i> resp. <i>hypersek</i> podmnoziny P<i> l-hypostoru</i> H vzhledem k H je mnozina vsech takovych <i>k-hyperu</i> y z H, ze pro ne existuje realne r tak, aby <i>hyperoli d(y,r)</i> vzhledem k H bylo podmnozinou P resp. H-P. Mnozinu vsech<i> k-hyperu</i> z P, ktere nepatri ani do <i>hypertrku</i>, ani do <i>hypersku</i> P pak nazyvame<i> hyperanici</i> P.</p>
+
+<p>Podmnozinu Q <i>k-hyperostoru</i> nazyvame <i>hypervislou</i>, pokud pro kazde dva <i>k-hypery</i> x, y z Q existuje posloupnost <i>k-hyperu</i> l<sub>1</sub>, l<sub>2</sub>, ... , l<sub>n</sub> takova, ze l<sub>1</sub> = x, l<sub>n</sub> = y a pro vsechna realna a, 0 &lt;= a &lt;= 1, a vsechna prirozena i, i &lt; n, plati, ze al<sub>i</sub> +(1 - a) l<sub>i+1</sub> je prvkem Q.</p> 
+
+<p><i>Hypervislou</i> podmnozinu R <i>l-hyperostoru</i> H nazyvame <i>hyperlasti</i>, pokud <i>hypernost</i> libovolnych dvojic z R je shora omezena, R je sjednocenim <i>hypertrku</i> R a <i>hyperanice</i> R a navic je <i>hyperanice</i> R <i>hypervisla</i>.
+<i> Hyperlast</i> S, podmnozinu <i>l-hypostoru</i> H nazyvame <i>l-hypergonem</i>, pokud bud l = 0 a S obsahuje jen jediny <i>k-hyper</i> nebo pokud l&gt;0 a plati nasledujici podminky:</p>
+
+<ol>
+<li>Neexistuje <i>(l-1)-hypostor</i> obsahujici S.
+</li><li>Existuji <i>(l-1)-hypergony</i> M<sub>1</sub>, M<sub>2</sub>, ..., M<sub>q</sub> takove,ze :
+  <ul>	
+  <li>sjednoceni vsech M<sub>i</sub> je hyperanice S
+  </li><li>pro vsechna i, j, i ruzne od j je M<sub>i</sub> prunik s M<sub>j</sub> bud prazdnou mnozinou a nebo  podmnozinou <i>hyperanice</i> M<sub>i</sub> a neexistuje takovy <i>(l-1) hypostor</i> J, 			aby M<sub>i</sub> byla podmnozinou J a M<sub>j</sub> podmnozinou J
+  </li></ul>
+</li></ol>
+
+<p><i>Hypostory</i> M1 az Mq nazyvame <i>hyperanami</i>.</p>
+
+<p>Konecne <i>hyperoxni hypergon</i> S je takovy, kdy pro kazde dva <i>k-hypery</i> x,y z S plati, ze pro vsechna realna a, 0 &lt;= a &lt;= 1, ax + (1-a)y nalezi S.</p>
+
+<p>Vasim ukolem je navrhnout algoritmus, ktery pro dany <i>(k-1)-hypergon</i> z <i>k-hyperostoru</i> zjisti, zda je <i>hyperoxni.</i></p>
+
+<h3>Specifikace vstupu</h3>
+<p>Vstup se sklada z N zadani. Prvni radek vstupniho souboru obsahuje prirozene cislo N. Dale nasleduji jednotliva zadani. Prvnim radek kazdeho zadani obsahuje prirozene cislo K oznacujici <i>hyperzi hyperostoru</i>, v nemz budeme pracovat. 1 &lt; K &lt;= 10. Pak nasleduje K podbloku, kazdy popisujici <i>hypergony hyperze</i> 0 az K-1.</p>
+
+<p>Prvni podblok, popisujici <i>0-hypergony</i>, tedy <i>K-hypery</i>, zacina radkem obsahujicim prirozene cislo L reprezentujici pocet <i>0-hypergonu</i> v rozsahu 3 az 1000. Pak nasleduje L radku kazdy obsahujici K celych cisel v rozsahu -10000 az +10000 reprezentujici kazdy slozky jednotlivych <i>K-hyperu</i>. Pro ucely pozdejsich odkazu oznacime <i>K-hypery</i> po rade cisly 1 az L. To je konec prvniho podbloku.</p>
+
+<p>Dalsich K-1 podbloku ma podobnou strukturu. m-ty podblok popisujici <i>m-hypergony</i> zacina radkem obsahujicim jejich pocet L (coz je prirozene cislo od 3 do 1000). Dale kazdy z nasledujicich L radku obsahuje popis jednoho <i>m-hypergonu</i>. Kazdy zacina prirozenym cislem Q v rozsahu 2 az 100, coz je pocet <i>hyperan</i> a pokracuje Q indexy, coz jsou poradova cisla tech <i>(m-1)-hypergonu</i>, ktere jsou <i>hyperanami</i> prave popisovaneho <i>m-hypergonu</i>.</p>
+
+<p>Posledni, K-ty podblok popisuje vzdy jen jeden <i>(L = 1) (K-1)-hypergon</i>, ktery je treba analyzovat. Muzete predpokladat, ze vstupni data popisuji vzdy <i>hypergon</i> dle vyse uvedene definice.</p>
+
+<p>Ne vsechny <i>hypergony</i> nizsi urovne musi byt pouzity pri popisu <i>hypergonu</i> vyssi urovne. Poradi <i>hyperan</i> neni urceno.
+</p><h3> Specifikace vystupu</h3>
+<p>Pro kazde zadani musi vystup obsahovat prave jeden radek, na kterem je slovo ‘Ano’, pokud je dany <i>hypergon hyperoxni</i> nebo slovo ‘Ne’, pokud <i>hyperoxni</i> neni.</p>
+
+<h3> Priklad vstupu</h3>
+<p>Pro vyssi srozumitelnost je priklad vstupu doplnen komentari, ktere se ve skutecnem vstupu nevyskytuji.</p>
+
+<pre>3	tri zadani
+2	K
+3	pocet 0-hypergonu
+0 0	slozky 0-hypergonu
+1 0
+0 1
+3	pocet 1-hypergonu
+2 1 2	pocet hyperan a indexy do seznamu 0-hypergonu
+2 2 3
+2 3 1
+1	pocet 2-hypergonu, vzdy jen jeden
+3 1 2 3	pocet hyperan a indexy do seznamu 1-hypergonu 
+2	K pro druhe zadani
+4	pocet 0-hypergonu
+10 -5	slozky 0-hypergonu
+ 0 5
+-10 -5
+0 0
+4	pocet 1-hypergonu
+2 1 2	pocet hyperan a indexy do seznamu 0-hypergonu
+2 2 3
+2 3 4
+2 4 1
+1	pocet 2-hypergonu ... vzdy jen jeden
+4 1 2 3 4	pocet hyperan a indexy do seznamu 1-hypergonu
+3	K pro treti zadani
+8	pocet 0-hypergonu
+0 0 0	slozky 0-hypergonu
+1 0 0
+1 0 1 
+0 0 1
+0 1 0
+1 1 0
+1 1 1
+0 1 1
+12	pocet 1-hypergonu
+2 1 2	pocet hyperan a indexy do seznamu 0-hypergonu
+2 2 3
+2 3 4
+2 4 1
+2 5 6
+2 6 7
+2 7 8
+2 8 5
+2 1 5
+2 2 6
+2 3 7
+2 4 8
+6	pocet 2-hypergonu
+4 1 2 3 4	pocet hyperan a indexy do seznamu 1-hypergonu
+4 5 6 7 8
+4 1 10 5 9
+4 2 11 6 10
+4 3 11 7 12
+4 4 9 8 12
+1	jen jeden 3-hypergon
+6 1 2 3 4 5 6	pocet hyperan a indexy do seznamu 2-hypergonu
+</pre>
+
+<h3>Priklad vystupu</h3>
+
+<pre>Ano
+Ne
+Ano
+ </pre>
+
+<center><p> 
+</p><hr><p></p></center>
+
+<h1 align="CENTER"><a name="B"></a>Problem B</h1>
+<h2 align="center">Prunik hyperkvadru</h2>
+<p>Jak jiz bylo receno, pri konstrukci hyperkosmicke lodi je nutne vyuzit mnoha novych teoretickych poznatku, zejmena z oblasti hypermetrie. Jednim z mnoha oboru, ktere tezi z poznatku hypermetrie, je take navigace a konstrukce navigacnich systemu. Dulezitou soucasti navigacniho systemu hyperkosmicke lodi Nostromo je jeho cast, ktera vypocitava objem pruniku hyperprostorovych kvadru, jejichz hrany jsou rovnobezne s hranami pravouhleho souradneho systemu.</p>
+
+<p>Vasim ukolem je napsat takovy program.</p>
+<h3>Specifikace vstupu</h3>
+<p>Vstup se sklada z N zadani. Prvni radek vstupniho souboru obsahuje prirozene cislo N. Dale nasleduji jednotliva zadani. Na prvnim radku zadani jsou uvedena dve cela cisla D a T oddelena mezerou, 2 &lt;= D &lt;= 1000000, 1 &lt;= T &lt;= 1000000. D je dimenze hyperkvadru, T je pocet jednotlivych hyperkvadru. Dale nasleduje T radku. Kazdy z techto T radku obsahuje 2D celych cisel. Kazda dvojice omezuje velikost hyperkvadru v jednom rozmeru, tj. X<sub>min</sub> X<sub>max</sub> Y<sub>min</sub> Y<sub>max</sub> Z<sub>min</sub> Z<sub>max</sub>...</p>
+
+<h3> Specifikace vystupu</h3>
+<p>Pro kazde zadani musi vystup obsahovat prave jeden radek, na kterem je prave jedno cele cislo V - objem pruniku vsech zadanych hyperkvadru.</p>
+
+<h3>Priklad vstupu</h3>
+
+<pre>2
+2 3
+1 4 1 10
+5 8 1 10
+3 6 1 2
+3 2
+1 10 1 10 1 10
+1 10 9 11 1 9
+</pre>
+
+<h3>Priklad vystupu</h3>
+
+<pre>0
+72
+ </pre>
+
+<center><p>
+</p><hr><p></p></center>
+
+<h1 align="CENTER"><a name="C"></a>Problem C</h1>
+<h2 align="center">Posadka</h2>
+<p>Pri planovani rozsahle vypravy hyperkosmicke lodi, jakou je Nostromo, je nutne venovat velkou peci tez sestaveni vhodne posadky. Kazdy z clenu vypravy ma ruznou uroven znalosti v ruznych oblastech pruzkumu vesmiru a tudiz ma i pro ruzne oblasti ruznou hodnost. Jeden a tentyz clen vypravy muze byt zaroven kapitanem pro navigaci a desatnikem pro styk s mimozemskymi civilizacemi. S ohledem na stabilitu posadky je nutne, aby posadka byla sestavena hierarchicky, tj. aby zadni dva clenove posadky si nebyli navzajem nadrizeni v ruznych oborech.</p>
+
+<p>Vasim ukolem je napsat program, ktery pro danou sestavu posadky urci, je-li tato sestavena dobre ci spatne.</p>
+<h3>Specifikace vstupu</h3>
+<p>Vstup se sklada z N zadani. Prvni radek vstupniho souboru obsahuje prirozene cislo N. Dale nasleduji jednotliva zadani. Kazde zadani zacina radkem obsahujicim prirozene cislo X, 1 &lt;= X &lt;= 500, ktere udava pocet clenu posadky. Kazdy clen posadky ma prideleno osobni cislo. Osobni cisla jsou pridelena souvisle pocinaje cislem 1. Na dalsich radcich zadani nasleduje popis pro kazdeho clena posadky, tedy celkem X popisu. Popis clena s osobnim cislem i je i-ta dvojice radku. Na prvnim radku z kazde dvojice je pocet osobnich cisel, ktera jsou uvedena na druhem radku. Na druhem radku jsou osobni cisla jeho primych nadrizenych pro ruzne obory oddelena mezerou. Osobni cisla primych nadrizenych se mohou opakovat. Cislo i se zde nevyskytne - tedy zadny clen posadky neni primo nadrizen sam sobe.</p>
+
+<h3> Specifikace vystupu</h3>
+<p>Rekneme, ze A je nadrizeny osobe B, jestlize A je primo nadrizeny osobe B nebo existuje osoba C takova, ze A je primo nadrizeny osobe C a zaroven C je nadrizeny osobe B. Za spatne navrzenou posadku povazujeme takovou posadku, kde v posadce existuji takove osoby A a B, ze osoba A je nadrizena osobe B v nekterem oboru a zaroven osoba B je nadrizena osobe A v jinem oboru. Pro kazde zadani musi vystup obsahovat prave jeden radek s textem 'Posadka je navrzena spatne.', pokud je spatne navrzena, jinak s textem 'Posadka je navrzena dobre.' </p>
+
+<h3> Priklad vstupu</h3>
+
+<pre>3
+2
+0
+
+1
+1
+4
+4
+2 4 3 2
+1
+3
+1
+4
+0
+
+2
+1
+2
+1
+1
+</pre>
+
+<h3>Priklad vystupu</h3>
+
+<pre>Posadka je navrzena dobre.
+Posadka je navrzena dobre.
+Posadka je navrzena spatne.
+</pre>
+ 
+<center><p>
+</p><hr><p></p></center>
+
+<h1 align="CENTER"><a name="D"></a>Problem D</h1>
+<h2 align="center">Kolonie</h2>
+<p>Dulezitym ukolem vypravy hyperkosmicke lodi Nostromo na jeji ceste je zalozeni trvale zakladny na obezne draze planety MX8-26B v souhvezdi Kentaura. Pro tyto ucely ma posadka k dispozici celky slozene z koji s podstavou ve tvaru sestiuhelniku. Vsechny koje jsou konstruovany stejnym zpusobem: V kazde ze sesti stran koje je otvor, ktery slouzi jako pruchod do sousedni koje v pripade, ze je touto stranou smontovana s jinou koji, nebo jako okno do mezihvezdneho prostoru, kdyz je tato strana vnejsi stenou zakladny. Kazdy celek muze byt slozen z jednotlivych koji libovolnym zpusobem. Vyprava ma k dispozici urcity pocet typu takovychto celku a od kazdeho typu urcity pocet kusu. V kazde koji ve vysledne zakladne muze byt ubytovano tolik lidi, kolik ma tato koje oken do mezihvezdneho prostoru.</p>
+
+<p>Vasim ukolem je napsat program, ktery z popisu jednotlivych typu celku a z jejich poctu dokaze urcit, je-li mozne sestavit zakladnu pro dany pocet lidi.</p>
+
+<h3>Specifikace vstupu</h3>
+<p>Vstup se sklada z N zadani. Prvni radek vstupniho souboru obsahuje prirozene cislo N. Dale nasleduji jednotliva zadani. Na prvnim radku zadani jsou uvedena dve prirozena cisla P a T oddelena mezerou, kde P je pocet lidi, pro ktere ma byt postavena zakladna a T pocet typu celku, ktere ma vyprava k dispozici. Dale nasleduje T radku. Na kazdem z techto T radku jsou uvedena dve prirozena C, S a dale S dvojic prirozenych cisel. Vsechna cisla na radku jsou oddelena mezerou. C je pocet celku, ktere ma vyprava od daneho typu celku k dispozici. S je pocet koji, ze kterych je dany typ celku slozen. Popsany celek je vzdy souvisly. Dany celek je popsan souradnicemi stredu podstav koji v souradnem systemu x, y. Kazda dvojice cisel nasledujici za cislem S je souradnice stredu podstavy. Osa x naseho souradneho systemu svira s osou x pravouhleho souradneho systemu uhel -30°. Osa y naseho souradneho systemu svira s osou x pravouhleho souradneho systemu uhel +30°. Pro lepsi ilustraci je na nasledujicim obrazku nakres peti typu celku z prvniho zadani z prikladu vstupu. Celky jdou na obrazku za sebou v tom poradi (zleva doprava a shora dolu), v jakem jsou uvedeny v prikladu vstupu.</p>
+
+<center><img alt="OBR. 1" src="./d.gif"></center>
+
+<h3> Specifikace vystupu</h3>
+<p>Pro kazde zadani musi vystup obsahovat prave jeden radek, na kterem je uvedena veta ‘Je treba X celku.’, kde X je minimalni pocet celku, ktere jsou potreba pri optimalnim vyberu typu a optimalnim sestaveni nebo veta ‘Kapacita zakladny je pouze X lidi.’, pokud neni mozne z daneho poctu danych typu celku sestavit zakladnu pro dany pocet lidi.</p>
+
+<h3>Priklad vstupu</h3>
+
+<pre>3
+50 5
+10 1 0 0
+3 4 0 0 1 0 2 0 2 1
+4 5 0 0 0 1 0 2 1 1 2 0
+6 6 0 0 1 0 2 0 0 1 1 1 0 2
+1 7 1 0 2 0 0 1 1 1 2 1 0 2 1 2
+11 1
+2 1 0 0
+10 2
+100 1 1 1
+0 2 0 0 1 0
+</pre>
+
+<h3>Priklad vystupu</h3>
+
+<pre>Je treba 3 celku.
+Kapacita zakladny je pouze 10 lidi.
+Je treba 2 celku.
+</pre>
+ 
+<center><p>
+</p><hr><p></p></center>
+
+<h1 align="CENTER"><a name="E"></a>Problem E</h1>
+<h2 align="center">Vyplneni prostoru</h2>
+<p>Hlavni sklad hyperkosmicke lodi Nostromo ma tvar trirozmerne krychle. Delka hrany krychle je mocninou 2. Ve skladu maji byt ulozeny baliky potravin a materialu ve tvaru krychle o delce hrany 2 bez jedne rohove elementarni krychlicky (viz obr. 1). Protoze objem baliku je pouze 7 elementarnich krychlicek, neda se sklad vyplnit beze zbytku. Organizatori vypravy tak museli resit problem, jak vyplnit sklad co nejlepe a to pokud mozno tak, aby zustala volny prostor jen o velikosti jedne elementarni krychlicky na definovanych souradnicich x, y, a z.</p>
+
+<p>Vasim ukolem je napsat program, ktery dokaze rozhodnout, jestli pro danou velikost skladu a dane souradnice existuje rozmisteni baliku, ktere by splnovalo pozadavky konstrukteru a v kladnem pripade takove rozmisteni najit.</p>
+
+<center><img alt="OBR. 1" src="./e.gif"><br>
+Obr. 1</center>
+
+<h3>Specifikace vstupu</h3>
+<p>Vstup se sklada z N zadani. Prvni radek vstupniho souboru obsahuje prirozene cislo N. Dale nasleduji jednotliva zadani. Kazde zadani tvori jeden radek, na kterem se nachazi ctyri cela cisla K, X, Y, Z oddelena mezerou, 1 &lt;= k &lt;= 8, 0 &lt;= X &lt;= 255, 0 &lt;= Y &lt;= 255, 0 &lt;= Z &lt;= 255. Velikost hrany krychle je 2K, volne misto o velikosti jedne elementarni krychlicky musi zustat na souradnicich X, Y, Z.</p>
+
+<h3> Specifikace vystupu</h3>
+<p>Pro kazde zadani musi vystup obsahovat prave jeden radek. V pripade, ze prostor nelze vyplnit podle pozadavku, musi tento radek obsahovat text ‘Prostor nelze optimalne vyplnit.’. Existuje-li reseni, musi radek obsahovat cele cislo M a dale pak M ctveric cisel X, Y, Z a O. Vsechna cisla na radku musi byt oddelena mezerou. M je pocet baliku, ktere se vejdou do skladu. X, Y, Z jsou souradnice kazdeho baliku a O je jeho otoceni. Otoceni O je definovano pozici chybejici osme elementarni krychlicky doplnujici balik na krychli 2x2x2 podle nasledujici tabulky:</p>
+
+
+<table border="" noflow="">
+<tbody><tr class="HEAD"><td> O </td><td> X </td><td> Y </td><td> Z 
+</td></tr><tr class="BODY"><td>0</td><td>0</td><td>0</td><td>0
+</td></tr><tr class="BODY"><td>1</td><td>1</td><td>0</td><td>0
+</td></tr><tr class="BODY"><td>2</td><td>0</td><td>1</td><td>0
+</td></tr><tr class="BODY"><td>3</td><td>1</td><td>1</td><td>0
+</td></tr><tr class="BODY"><td>4</td><td>0</td><td>0</td><td>1
+</td></tr><tr class="BODY"><td>5</td><td>1</td><td>0</td><td>1
+</td></tr><tr class="BODY"><td>6</td><td>0</td><td>1</td><td>1
+</td></tr><tr class="BODY"><td>7</td><td>1</td><td>1</td><td>1
+</td></tr></tbody></table> 
+
+<h3> Priklad vstupu</h3>
+
+<pre>2
+1 1 0 1
+2 2 3 3
+</pre>
+
+<h3>Priklad vystupu</h3>
+
+<pre>1 0 0 0 5
+9 1 1 1 7 0 2 2 1 2 0 2 2 0 0 2 3 2 2 0 4 0 2 0 5 2 0 0 6 0 0 0 7 2 2 2 6
+ </pre>
+
+<center><p>
+</p><hr><p></p></center>
+
+<h1 align="CENTER"><a name="F"></a>Problem F</h1>
+<h2 align="center">Prstencove generatory</h2>
+<p>Konstrukteri motoru hyperkosmicke lodi Nostromo museli vyresit problem se skladanim prstencovych generatoru. Tyto generatory slouzi k vedeni a tvarovani struktury proudu castic vytvarejicich hnaci pole. Generatory se skladaji z jednotlivych prstencu. Nektere prstence slouzi pouze jako distancni vlozky a proud castic nijak neovlivnuji, to jsou prstence ‘K’,’O’ a ‘Z’. Dalsi prstence urychluji nebo zpomaluji proudeni castic, ‘Q’ urychluje proud o 105 m/s, ‘B’ ho urychluje o 5.105 m/s, ‘M’ ho zpomaluje o 5.105 m/s a ‘T’ proud zpomaluje o 105 m/s. Castice proudi v koncentrickych vrstvach vzdalenych od sebe 0.1mm, tyto vrstvy se nemisi a urcite prstence pridavaji nebo ubiraji vrchni vrstvu. Prstenec ‘A’ pridava vrstvu elektronu, ‘E’ vrstvu neutronu a ‘I’ vrstvu pozitronu, prstenec ‘F’ odebira vrstvu elektronu, ‘W’ vrstvu neutronu a ‘U’ vrstvu pozitronu. Kazdy prstenec odebirajici nekterou vrstvu se poskodi neni-li na povrchu proudu castic ta vrstva kterou umi zpracovat. Zadny generator nesmi zacinat nebo koncit prstencem menicim rychlost proudeni a na konci z nej nesmi proudit jiz zadne castice. Jednotlive prstence nemohou nasledovat po sobe libovolne, ale musi splnovat omezeni shrnute v nasledujici tabulce:</p>
+
+<table border="" noflow="">
+<tbody><tr class="HEAD"><td>Smi predchazet</td><td>Generator</td><td>Smi nasledovat
+</td></tr><tr class="BODY"><td>AEIQBMT</td><td>KOZ</td><td>QBMTFWU
+</td></tr><tr class="BODY"><td>FWUKOZ</td><td>QBMT</td><td>AEIKOZ
+</td></tr><tr class="BODY"><td>QBMTAEI</td><td>AEI</td><td>AEIKOZ
+</td></tr><tr class="BODY"><td>FWUKOZ</td><td>FWU</td><td>FWUQBMT
+</td></tr></tbody></table>
+
+<p>Kterykoliv prstenec z prvniho sloupce tabulky smi predchazet kterykoliv prstenec z prostredniho sloupce. Kterykoliv prstenec z tretiho sloupce tabulky smi nasledovat za kterykoliv prstencem z prostredniho sloupce. Priklad sestavy prstencu je na nasledujicim obrazku:</p>
+
+<center><img alt="OBR. 1" src="./f.gif"></center>
+
+<p>Vasim ukolem je napsat program, ktery overi navrh prstencoveho generatoru.</p>
+
+<h3>Specifikace vstupu</h3>
+
+<p>Vstup se sklada z N zadani. Prvni radek vstupniho souboru obsahuje prirozene cislo N. Dale nasleduji jednotliva zadani. Kazde zadani je popsano jednim radkem. Na tomto radku se nachazi pismena velke anglicke abecedy. Pismena na sebe bezprostredne navazuji.</p>
+
+<h3> Specifikace vystupu</h3>
+
+<p>Pro kazde zadani musi vystup obsahovat prave jeden radek, na kterem je text ‘Tento prstencovy generator je funkcni.’, kdyz generator splnuje vyse uvedene podminky, jinak text ‘Tento prstencovy generator neni funkcni.’</p>
+
+<h3> Priklad vstupu</h3>
+
+<pre>3
+AKMKBAZMEKQKWTEMOWFFTEKW
+AKFMEOW
+EWEFW
+</pre>
+
+<h3>Priklad vystupu</h3>
+
+<pre>Tento prstencovy generator je nefunkcni.
+Tento prstencovy generator je funkcni.
+Tento prstencovy generator je nefunkcni.
+</pre> 
+ 
+<center><p>
+</p><hr><p></p></center>
+
+<h1 align="CENTER"><a name="G"></a>Problem G</h1>
+<h2 align="center">Optimalni trasa</h2>
+<p>Pri cestovani hyperprostorem patri zmena rychlosti nebo smeru hyperkosmicke lodi mezi velmi energticky narocne ukony. Z tohoto duvodu se tvurci lodi Nostromo rozhodli implementovat v palubnim pocitaci algoritmus, ktery pomuze naplanovat optimalni trasu. Za optimalni trasu povazujeme takovou trasu, kterou lze proletet s nejmensim energetickym vydajem. Soucasti tohoto algoritmu je i prohledani mnoziny bodu a nalezeni maximalniho poctu bodu, ktere lezi na jedne primce. Tato primka, vzhledem k vlastnostem pohonneho systemu, musi svirat s osou x nebo s osou y uhel 0°, +45° nebo -45°.</p>
+
+<p>Vasim ukolem je napsat takovy program.</p>
+<h3>Specifikace vstupu</h3>
+<p>Vstup se sklada z N zadani. Prvni radek vstupniho souboru obsahuje prirozene cislo N. Dale nasleduji jednotliva zadani. Prvni radek kazdeho zadani obsahuje prirozene cislo V - pocet zadanych bodu, V je z intervalu 1..1000000. Dale nasleduje V radku. Kazdy radek obsahuje prave dve cela cisla, oddelena mezerou, reprezentujici souradnice x a y jednotlivych bodu v rovine. Souradnice x a y jsou z intervalu 0..1000000.</p>
+
+<h3> Specifikace vystupu</h3>
+<p>Pro kazde zadani musi vystup obsahovat prave jeden radek, na kterem se nachazi prave jedno cele nezaporne cislo udavajici maximalni pocet bodu, ktere lezi v jedne primce.</p>
+
+<h3>Priklad vstupu</h3>
+
+<pre>2
+5
+1 2
+3 4
+7 24
+2 3
+8 9
+6
+2 4
+3 2
+2 6
+4 1
+3 5
+4 4
+</pre>
+
+<h3>Priklad vystupu</h3>
+
+<pre>4
+3
+</pre>
+ 
+<center><p>
+</p><hr><p></p></center>
+
+<h1 align="CENTER"><a name="H"></a>Problem H</h1>
+<h2 align="center">Posloupnost planet</h2>
+<p>Hyperkosmicka lod Nostromo na sve ceste vesmirem navstivi velke mnozstvi planet v poradi jejich zajimavosti pro osidleni. Pri navrhu trasy lodi narazili organizatori vypravy na problem, ktery se pokusime zjednodusit a priblizit na problemu posloupnosti prirozenych cisel.</p>
+
+<p>Mejme posloupnost prirozenych cisel A = {a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ..., a<sub>N</sub>}, kde N je velke prirozene cislo. Rekneme, ze posloupnost B = {b<sub>1</sub>, b<sub>2</sub>, b<sub>3</sub>, ..., b<sub>M</sub>} je posloupnosti vybranou z posloupnosti A, prave tehdy, kdyz existuje takova posloupnost prirozenych cisel K = {k<sub>1</sub>, k<sub>2</sub>, k<sub>3</sub>, ..., k<sub>M</sub>}, ktera je rostouci a pokud pro kazde prirozene i, 1 &lt;=  i &lt;= M, plati, ze b<sub>i</sub> = a<sub>k<sub>i</sub></sub>.
+
+</p><p>Vasim ukolem je napsat program, ktery najde pocet clenu nejdelsi neklesajici posloupnosti vybrane ze zadane posloupnosti A.</p>Specifikace vstupu
+
+<p>Vstup se sklada z N zadani. Prvni radek vstupniho souboru obsahuje prirozene cislo N. Dale nasleduji jednotliva zadani. Kazde zadani obsahuje prvky urcite posloupnosti A pocinaje prvnim clenem a ukoncene cislem 0. Delka vstupni posloupnosti neni omezena. Hodnota kazdeho prvku je na samostatnem radku. Jednotliva zadani nasleduji bezprostredne za sebou.</p>
+
+<h3> Specifikace vystupu</h3>
+
+<p>Pro kazde zadani musi vystup obsahovat prave jeden radek, na kterem je prave jedno prirozene cislo L - delka nejdelsi neklesajici vybrane posloupnosti. Delka nejdelsi neklesajici vybrane posloupnosti nepresahne 100000.</p>
+
+<h3>Priklad vstupu</h3>
+
+<pre>2
+1
+8
+2
+3
+0
+11
+18
+12
+4
+13
+567
+623
+14
+15
+1
+16
+0
+</pre>
+
+<h3>Priklad vystupu</h3>
+<pre>3
+6
+</pre>
+
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

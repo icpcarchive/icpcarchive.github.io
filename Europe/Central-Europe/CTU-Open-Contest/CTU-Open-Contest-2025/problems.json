@@ -1,0 +1,95 @@
+{
+ "id": 3394,
+ "name": "CTU Open Contest 2025",
+ "url": "https://qoj.ac/contest/3394",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 17444,
+   "letter": "A",
+   "title": "Archery",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Archery.pdf"
+  },
+  {
+   "id": 17445,
+   "letter": "B",
+   "title": "Book Burning",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Book Burning.pdf"
+  },
+  {
+   "id": 17446,
+   "letter": "C",
+   "title": "Constantine of Thessaloniki",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Constantine of Thessaloniki.pdf"
+  },
+  {
+   "id": 17447,
+   "letter": "D",
+   "title": "Ducks",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Ducks.pdf"
+  },
+  {
+   "id": 17448,
+   "letter": "E",
+   "title": "Emigrants",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Emigrants.pdf"
+  },
+  {
+   "id": 17449,
+   "letter": "G",
+   "title": "Grooves",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Grooves.pdf"
+  },
+  {
+   "id": 17450,
+   "letter": "H",
+   "title": "Hussites",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Hussites.pdf"
+  },
+  {
+   "id": 17451,
+   "letter": "J",
+   "title": "JJ the Almighty",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - JJ the Almighty.pdf"
+  },
+  {
+   "id": 17452,
+   "letter": "M",
+   "title": "Meetings",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - Meetings.pdf"
+  },
+  {
+   "id": 17453,
+   "letter": "O",
+   "title": "Ornithology",
+   "statement_source": "problem page",
+   "statement_file": "problems/O - Ornithology.pdf"
+  },
+  {
+   "id": 17454,
+   "letter": "S",
+   "title": "Snow",
+   "statement_source": "problem page",
+   "statement_file": "problems/S - Snow.pdf"
+  },
+  {
+   "id": 17455,
+   "letter": "T",
+   "title": "Theatre",
+   "statement_source": "problem page",
+   "statement_file": "problems/T - Theatre.pdf"
+  }
+ ]
+}

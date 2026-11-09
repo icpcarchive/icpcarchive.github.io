@@ -1,0 +1,104 @@
+{
+ "id": 1119,
+ "name": "Mid-Atlantic USA 2022 (Div. 2)",
+ "url": "https://qoj.ac/contest/1119",
+ "categories": [
+  "ICPC/Regionals/North America/Mid-Atlantic USA",
+  "ICPC/Regionals/North America/Southeast USA",
+  "ICPC/Regionals/North America/South Central USA"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 5578,
+   "letter": "A",
+   "title": "Blueberry Waffle",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Blueberry Waffle.pdf"
+  },
+  {
+   "id": 5591,
+   "letter": "B",
+   "title": "Fading Wind",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Fading Wind.pdf"
+  },
+  {
+   "id": 5585,
+   "letter": "C",
+   "title": "Creative Accounting",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Creative Accounting.pdf"
+  },
+  {
+   "id": 5582,
+   "letter": "D",
+   "title": "Chocolate Chip Fabrication",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Chocolate Chip Fabrication.pdf"
+  },
+  {
+   "id": 5589,
+   "letter": "E",
+   "title": "Everything Is A Nail",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Everything Is A Nail.pdf"
+  },
+  {
+   "id": 5592,
+   "letter": "F",
+   "title": "Family Visits",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Family Visits.pdf"
+  },
+  {
+   "id": 5601,
+   "letter": "G",
+   "title": "Streets Ahead",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Streets Ahead.pdf"
+  },
+  {
+   "id": 5602,
+   "letter": "H",
+   "title": "Sun and Moon",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Sun and Moon.pdf"
+  },
+  {
+   "id": 5583,
+   "letter": "I",
+   "title": "Color Tubes",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Color Tubes.pdf"
+  },
+  {
+   "id": 5603,
+   "letter": "J",
+   "title": "Three Dice",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Three Dice.pdf"
+  },
+  {
+   "id": 5593,
+   "letter": "K",
+   "title": "Food Processor",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Food Processor.pdf"
+  },
+  {
+   "id": 5580,
+   "letter": "L",
+   "title": "Branch Manager",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Branch Manager.pdf"
+  },
+  {
+   "id": 5577,
+   "letter": "M",
+   "title": "Alchemy",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - Alchemy.pdf"
+  }
+ ]
+}

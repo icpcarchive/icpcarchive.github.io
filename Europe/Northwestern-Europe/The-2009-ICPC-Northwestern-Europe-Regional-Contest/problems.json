@@ -1,0 +1,130 @@
+{
+ "id": 2751,
+ "name": "The 2009 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2751",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2751&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2751&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16065,
+   "letter": "A",
+   "title": "An Industrial Spy",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - An Industrial Spy.pdf"
+  },
+  {
+   "id": 16066,
+   "letter": "B",
+   "title": "Common Subexpression Elimination",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Common Subexpression Elimination.pdf"
+  },
+  {
+   "id": 16067,
+   "letter": "C",
+   "title": "Divisible Subsequences",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Divisible Subsequences.pdf"
+  },
+  {
+   "id": 16068,
+   "letter": "D",
+   "title": "Fractal",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Fractal.pdf"
+  },
+  {
+   "id": 16069,
+   "letter": "E",
+   "title": "Mountain Road",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Mountain Road.pdf"
+  },
+  {
+   "id": 16070,
+   "letter": "F",
+   "title": "Moving to Nuremberg",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Moving to Nuremberg.pdf"
+  },
+  {
+   "id": 16071,
+   "letter": "G",
+   "title": "Room Assignments",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Room Assignments.pdf"
+  },
+  {
+   "id": 16072,
+   "letter": "H",
+   "title": "Settlers of Catan",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Settlers of Catan.pdf"
+  },
+  {
+   "id": 16073,
+   "letter": "I",
+   "title": "Simple Polygon",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Simple Polygon.pdf"
+  },
+  {
+   "id": 16074,
+   "letter": "J",
+   "title": "Wormholes",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Wormholes.pdf"
+  }
+ ]
+}

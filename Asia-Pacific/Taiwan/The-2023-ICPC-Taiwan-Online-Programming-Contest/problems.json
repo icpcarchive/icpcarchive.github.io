@@ -1,0 +1,148 @@
+{
+ "id": 2623,
+ "name": "The 2023 ICPC Taiwan Online Programming Contest",
+ "url": "https://qoj.ac/contest/2623",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Taiwan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2623&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15181,
+   "letter": "A",
+   "title": "Advance to Taoyuan Regional",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Advance to Taoyuan Regional.pdf"
+  },
+  {
+   "id": 15182,
+   "letter": "B",
+   "title": "Better Chance",
+   "statement_pages": [
+    3,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Better Chance.pdf"
+  },
+  {
+   "id": 15183,
+   "letter": "C",
+   "title": "Cutting into Monotone Increasing Sequence",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cutting into Monotone Increasing Sequence.pdf"
+  },
+  {
+   "id": 15184,
+   "letter": "D",
+   "title": "Divide a Convex",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Divide a Convex.pdf"
+  },
+  {
+   "id": 15185,
+   "letter": "E",
+   "title": "Exponentiation",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Exponentiation.pdf"
+  },
+  {
+   "id": 15186,
+   "letter": "F",
+   "title": "Finding Bridges",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Finding Bridges.pdf"
+  },
+  {
+   "id": 15187,
+   "letter": "G",
+   "title": "Gadget Construction",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gadget Construction.pdf"
+  },
+  {
+   "id": 15188,
+   "letter": "H",
+   "title": "Heap Structure",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Heap Structure.pdf"
+  },
+  {
+   "id": 15189,
+   "letter": "I",
+   "title": "Introversion",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Introversion.pdf"
+  },
+  {
+   "id": 15190,
+   "letter": "J",
+   "title": "Java Warriors",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Java Warriors.pdf"
+  },
+  {
+   "id": 15191,
+   "letter": "K",
+   "title": "Kick",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kick.pdf"
+  },
+  {
+   "id": 15192,
+   "letter": "L",
+   "title": "Location, Location, Location",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Location, Location, Location.pdf"
+  }
+ ]
+}

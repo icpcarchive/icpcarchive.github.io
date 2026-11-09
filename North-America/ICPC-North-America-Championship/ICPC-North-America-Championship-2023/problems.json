@@ -1,0 +1,159 @@
+{
+ "id": 1248,
+ "name": "ICPC North America Championship 2023",
+ "url": "https://qoj.ac/contest/1248",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1248&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 6558,
+   "letter": "A",
+   "title": "Allergen Testing",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Allergen Testing.pdf"
+  },
+  {
+   "id": 6559,
+   "letter": "B",
+   "title": "A Tree and Two Edges",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - A Tree and Two Edges.pdf"
+  },
+  {
+   "id": 6560,
+   "letter": "C",
+   "title": "Broken Minimum Spanning Tree",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Broken Minimum Spanning Tree.pdf"
+  },
+  {
+   "id": 6561,
+   "letter": "D",
+   "title": "Fail Fast",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Fail Fast.pdf"
+  },
+  {
+   "id": 6562,
+   "letter": "E",
+   "title": "First Last",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - First Last.pdf"
+  },
+  {
+   "id": 6563,
+   "letter": "F",
+   "title": "Four Square",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Four Square.pdf"
+  },
+  {
+   "id": 6564,
+   "letter": "G",
+   "title": "Frequent Flier",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Frequent Flier.pdf"
+  },
+  {
+   "id": 6565,
+   "letter": "H",
+   "title": "Game Show Elimination",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Game Show Elimination.pdf"
+  },
+  {
+   "id": 6566,
+   "letter": "I",
+   "title": "Power of Divisors",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Power of Divisors.pdf"
+  },
+  {
+   "id": 6567,
+   "letter": "J",
+   "title": "Repetitive String Invention",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Repetitive String Invention.pdf"
+  },
+  {
+   "id": 6568,
+   "letter": "K",
+   "title": "Space Alignment",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Space Alignment.pdf"
+  },
+  {
+   "id": 6569,
+   "letter": "L",
+   "title": "Splitting Pairs",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Splitting Pairs.pdf"
+  },
+  {
+   "id": 6570,
+   "letter": "M",
+   "title": "Who Watches the Watchmen?",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Who Watches the Watchmen_.pdf"
+  }
+ ]
+}

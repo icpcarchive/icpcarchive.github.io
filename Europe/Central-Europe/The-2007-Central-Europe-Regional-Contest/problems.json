@@ -1,0 +1,81 @@
+{
+ "id": 2795,
+ "name": "The 2007 Central Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2795",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 16127,
+   "letter": "A",
+   "title": "Strange Billboard",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Strange Billboard.pdf"
+  },
+  {
+   "id": 16128,
+   "letter": "B",
+   "title": "Phone Cell",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Phone Cell.pdf"
+  },
+  {
+   "id": 16129,
+   "letter": "C",
+   "title": "Hexagonal Parcels",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Hexagonal Parcels.pdf"
+  },
+  {
+   "id": 16130,
+   "letter": "D",
+   "title": "Key Task",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Key Task.pdf"
+  },
+  {
+   "id": 16131,
+   "letter": "E",
+   "title": "Gates of Logic",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Gates of Logic.pdf"
+  },
+  {
+   "id": 16132,
+   "letter": "F",
+   "title": "Weird Numbers",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Weird Numbers.pdf"
+  },
+  {
+   "id": 16133,
+   "letter": "G",
+   "title": "Rectangular Polygons",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Rectangular Polygons.pdf"
+  },
+  {
+   "id": 16134,
+   "letter": "H",
+   "title": "Reaux! Sham! Beaux!",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Reaux! Sham! Beaux!.pdf"
+  },
+  {
+   "id": 16135,
+   "letter": "I",
+   "title": "Robotic Sort",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Robotic Sort.pdf"
+  },
+  {
+   "id": 16136,
+   "letter": "J",
+   "title": "Rough Water Level",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Rough Water Level.pdf"
+  }
+ ]
+}

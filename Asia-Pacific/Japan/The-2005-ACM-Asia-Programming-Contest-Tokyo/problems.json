@@ -1,0 +1,74 @@
+{
+ "id": 140,
+ "name": "The 2005 ACM Asia Programming Contest - Tokyo",
+ "url": "https://qoj.ac/contest/140",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 1932,
+   "letter": "A",
+   "title": "Sum of Consecutive Prime Numbers",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Sum of Consecutive Prime Numbers.pdf"
+  },
+  {
+   "id": 1933,
+   "letter": "B",
+   "title": "Book Replacement",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Book Replacement.pdf"
+  },
+  {
+   "id": 1934,
+   "letter": "C",
+   "title": "Colored Cubes",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Colored Cubes.pdf"
+  },
+  {
+   "id": 1935,
+   "letter": "D",
+   "title": "Organize Your Train",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Organize Your Train.pdf"
+  },
+  {
+   "id": 1936,
+   "letter": "E",
+   "title": "Mobile Computing",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Mobile Computing.pdf"
+  },
+  {
+   "id": 1937,
+   "letter": "F",
+   "title": "Atomic Car Race",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Atomic Car Race.pdf"
+  },
+  {
+   "id": 1938,
+   "letter": "G",
+   "title": "Network Mess",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Network Mess.pdf"
+  },
+  {
+   "id": 1939,
+   "letter": "H",
+   "title": "Bingo",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Bingo.pdf"
+  },
+  {
+   "id": 1940,
+   "letter": "I",
+   "title": "Shy Polygons",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Shy Polygons.pdf"
+  }
+ ]
+}

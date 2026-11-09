@@ -1,0 +1,141 @@
+{
+ "id": 791,
+ "name": "The 2020 ICPC Asia Yokohama Regional Contest",
+ "url": "https://qoj.ac/contest/791",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=791&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=791&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2263,
+   "letter": "A",
+   "title": "Three-Axis Views",
+   "statement_pages": [
+    2,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Three-Axis Views.pdf"
+  },
+  {
+   "id": 2264,
+   "letter": "B",
+   "title": "Secrets of Legendary Treasure",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Secrets of Legendary Treasure.pdf"
+  },
+  {
+   "id": 2265,
+   "letter": "C",
+   "title": "Short Coding",
+   "statement_pages": [
+    8,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Short Coding.pdf"
+  },
+  {
+   "id": 2266,
+   "letter": "D",
+   "title": "Colorful Rectangle",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Colorful Rectangle.pdf"
+  },
+  {
+   "id": 2267,
+   "letter": "E",
+   "title": "Jewelry Size",
+   "statement_pages": [
+    13,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Jewelry Size.pdf"
+  },
+  {
+   "id": 2268,
+   "letter": "F",
+   "title": "Solar Car",
+   "statement_pages": [
+    16,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Solar Car.pdf"
+  },
+  {
+   "id": 2269,
+   "letter": "G",
+   "title": "To be Connected, or not to be, that is the Question",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - To be Connected, or not to be, that is the Question.pdf"
+  },
+  {
+   "id": 2270,
+   "letter": "H",
+   "title": "LCM of GCDs",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - LCM of GCDs.pdf"
+  },
+  {
+   "id": 2271,
+   "letter": "I",
+   "title": "High-Tech Detective",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - High-Tech Detective.pdf"
+  },
+  {
+   "id": 2272,
+   "letter": "J",
+   "title": "Formica Sokobanica",
+   "statement_pages": [
+    25,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Formica Sokobanica.pdf"
+  },
+  {
+   "id": 2273,
+   "letter": "K",
+   "title": "Suffixes may Contain Prefixes",
+   "statement_pages": [
+    28,
+    29
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Suffixes may Contain Prefixes.pdf"
+  }
+ ]
+}

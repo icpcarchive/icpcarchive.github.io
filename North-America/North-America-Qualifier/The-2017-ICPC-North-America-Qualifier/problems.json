@@ -1,0 +1,163 @@
+{
+ "id": 3814,
+ "name": "The 2017 ICPC North America Qualifier",
+ "url": "https://qoj.ac/contest/3814",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3814&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3814&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 20193,
+   "letter": "A",
+   "title": "Birthday Cake",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Birthday Cake.pdf"
+  },
+  {
+   "id": 20194,
+   "letter": "B",
+   "title": "Bumped!",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bumped!.pdf"
+  },
+  {
+   "id": 20195,
+   "letter": "C",
+   "title": "Canonical Coin Systems",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Canonical Coin Systems.pdf"
+  },
+  {
+   "id": 20196,
+   "letter": "D",
+   "title": "Cat and Mice",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Cat and Mice.pdf"
+  },
+  {
+   "id": 20197,
+   "letter": "E",
+   "title": "Company Picnic",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Company Picnic.pdf"
+  },
+  {
+   "id": 20198,
+   "letter": "F",
+   "title": "GlitchBot",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - GlitchBot.pdf"
+  },
+  {
+   "id": 20199,
+   "letter": "G",
+   "title": "Greeting Card",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Greeting Card.pdf"
+  },
+  {
+   "id": 20200,
+   "letter": "H",
+   "title": "Imperfect GPS",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Imperfect GPS.pdf"
+  },
+  {
+   "id": 20201,
+   "letter": "I",
+   "title": "Odd Gnome",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Odd Gnome.pdf"
+  },
+  {
+   "id": 20202,
+   "letter": "J",
+   "title": "Progressive Scramble",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Progressive Scramble.pdf"
+  },
+  {
+   "id": 20203,
+   "letter": "K",
+   "title": "Space Probe",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Space Probe.pdf"
+  },
+  {
+   "id": 20204,
+   "letter": "L",
+   "title": "Suspension Bridges",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Suspension Bridges.pdf"
+  },
+  {
+   "id": 20205,
+   "letter": "M",
+   "title": "Umbral Decoding",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Umbral Decoding.pdf"
+  }
+ ]
+}

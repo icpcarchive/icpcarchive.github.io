@@ -1,0 +1,163 @@
+{
+ "id": 1849,
+ "name": "The 2024 ICPC Southeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/1849",
+ "categories": [
+  "ICPC/Regionals/Europe/Southeastern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1849&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1849&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9781,
+   "letter": "A",
+   "title": "All-Star",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - All-Star.pdf"
+  },
+  {
+   "id": 9782,
+   "letter": "B",
+   "title": "NonZero PrefSuf Sums",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - NonZero PrefSuf Sums.pdf"
+  },
+  {
+   "id": 9783,
+   "letter": "C",
+   "title": "Duloc Network",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Duloc Network.pdf"
+  },
+  {
+   "id": 9784,
+   "letter": "D",
+   "title": "Donkey and Puss in Boots",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Donkey and Puss in Boots.pdf"
+  },
+  {
+   "id": 9785,
+   "letter": "E",
+   "title": "Shrooks",
+   "statement_pages": [
+    7,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Shrooks.pdf"
+  },
+  {
+   "id": 9786,
+   "letter": "F",
+   "title": "Magical Bags",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Magical Bags.pdf"
+  },
+  {
+   "id": 9787,
+   "letter": "G",
+   "title": "Shrek's Song of the Swamp",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Shrek's Song of the Swamp.pdf"
+  },
+  {
+   "id": 9788,
+   "letter": "H",
+   "title": "Shreckless",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Shreckless.pdf"
+  },
+  {
+   "id": 9789,
+   "letter": "I",
+   "title": "Donkey, Keep Watch",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Donkey, Keep Watch.pdf"
+  },
+  {
+   "id": 9790,
+   "letter": "J",
+   "title": "Make Swamp Great Again",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Make Swamp Great Again.pdf"
+  },
+  {
+   "id": 9791,
+   "letter": "K",
+   "title": "Intrusive Donkey",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Intrusive Donkey.pdf"
+  },
+  {
+   "id": 9792,
+   "letter": "L",
+   "title": "Ogre Sort",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Ogre Sort.pdf"
+  },
+  {
+   "id": 9793,
+   "letter": "M",
+   "title": "Enchanted Lawns Quest",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Enchanted Lawns Quest.pdf"
+  }
+ ]
+}

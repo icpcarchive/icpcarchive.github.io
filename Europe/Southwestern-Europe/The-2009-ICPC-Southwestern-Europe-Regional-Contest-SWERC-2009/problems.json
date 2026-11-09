@@ -1,0 +1,130 @@
+{
+ "id": 3692,
+ "name": "The 2009 ICPC Southwestern Europe Regional Contest (SWERC 2009)",
+ "url": "https://qoj.ac/contest/3692",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3692&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3692&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19878,
+   "letter": "A",
+   "title": "Trick or Treat",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Trick or Treat.pdf"
+  },
+  {
+   "id": 19879,
+   "letter": "B",
+   "title": "Working at the Restaurant",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Working at the Restaurant.pdf"
+  },
+  {
+   "id": 19880,
+   "letter": "C",
+   "title": "Lights",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Lights.pdf"
+  },
+  {
+   "id": 19881,
+   "letter": "D",
+   "title": "Darts",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Darts.pdf"
+  },
+  {
+   "id": 19882,
+   "letter": "E",
+   "title": "Genetics",
+   "statement_pages": [
+    11,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Genetics.pdf"
+  },
+  {
+   "id": 19883,
+   "letter": "F",
+   "title": "Haunted Graveyard",
+   "statement_pages": [
+    15,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Haunted Graveyard.pdf"
+  },
+  {
+   "id": 19884,
+   "letter": "G",
+   "title": "Slalom",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Slalom.pdf"
+  },
+  {
+   "id": 19885,
+   "letter": "H",
+   "title": "Routing",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Routing.pdf"
+  },
+  {
+   "id": 19886,
+   "letter": "I",
+   "title": "Happy Telephones",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Happy Telephones.pdf"
+  },
+  {
+   "id": 19887,
+   "letter": "J",
+   "title": "Stammering Aliens",
+   "statement_pages": [
+    25,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Stammering Aliens.pdf"
+  }
+ ]
+}

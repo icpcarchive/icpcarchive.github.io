@@ -1,0 +1,163 @@
+{
+ "id": 2041,
+ "name": "ICPC North America Championship 2025",
+ "url": "https://qoj.ac/contest/2041",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2041&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2041&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11356,
+   "letter": "A",
+   "title": "A Totient Quotient",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - A Totient Quotient.pdf"
+  },
+  {
+   "id": 11357,
+   "letter": "B",
+   "title": "Circle of Leaf",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Circle of Leaf.pdf"
+  },
+  {
+   "id": 11358,
+   "letter": "C",
+   "title": "Entrapment",
+   "statement_pages": [
+    5,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Entrapment.pdf"
+  },
+  {
+   "id": 11359,
+   "letter": "D",
+   "title": "Geometry Rush",
+   "statement_pages": [
+    9,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Geometry Rush.pdf"
+  },
+  {
+   "id": 11360,
+   "letter": "E",
+   "title": "Humans vs AI",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Humans vs AI.pdf"
+  },
+  {
+   "id": 11361,
+   "letter": "F",
+   "title": "Mob Grinder",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Mob Grinder.pdf"
+  },
+  {
+   "id": 11362,
+   "letter": "G",
+   "title": "Most Scenic Cycle",
+   "statement_pages": [
+    17,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Most Scenic Cycle.pdf"
+  },
+  {
+   "id": 11363,
+   "letter": "H",
+   "title": "Ornaments on a Tree",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Ornaments on a Tree.pdf"
+  },
+  {
+   "id": 11364,
+   "letter": "I",
+   "title": "Polygon Partition",
+   "statement_pages": [
+    23,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Polygon Partition.pdf"
+  },
+  {
+   "id": 11365,
+   "letter": "J",
+   "title": "Popping Balloons",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Popping Balloons.pdf"
+  },
+  {
+   "id": 11366,
+   "letter": "K",
+   "title": "SLA Tomography",
+   "statement_pages": [
+    29,
+    32
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - SLA Tomography.pdf"
+  },
+  {
+   "id": 11367,
+   "letter": "L",
+   "title": "Solar Farm",
+   "statement_pages": [
+    33,
+    34
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Solar Farm.pdf"
+  },
+  {
+   "id": 11368,
+   "letter": "M",
+   "title": "This Is Sparta!",
+   "statement_pages": [
+    35,
+    36
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - This Is Sparta!.pdf"
+  }
+ ]
+}

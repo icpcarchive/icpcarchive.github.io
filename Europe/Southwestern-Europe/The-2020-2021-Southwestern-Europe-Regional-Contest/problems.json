@@ -1,0 +1,159 @@
+{
+ "id": 711,
+ "name": "The 2020-2021 Southwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/711",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=711&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 1979,
+   "letter": "A",
+   "title": "Gratitude",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Gratitude.pdf"
+  },
+  {
+   "id": 1980,
+   "letter": "B",
+   "title": "Rule 110",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Rule 110.pdf"
+  },
+  {
+   "id": 1981,
+   "letter": "C",
+   "title": "Safe Distance",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Safe Distance.pdf"
+  },
+  {
+   "id": 1982,
+   "letter": "D",
+   "title": "Jogging",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Jogging.pdf"
+  },
+  {
+   "id": 1983,
+   "letter": "E",
+   "title": "Cakes",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Cakes.pdf"
+  },
+  {
+   "id": 1984,
+   "letter": "F",
+   "title": "Mentors",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Mentors.pdf"
+  },
+  {
+   "id": 1985,
+   "letter": "G",
+   "title": "Decoration",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Decoration.pdf"
+  },
+  {
+   "id": 1986,
+   "letter": "H",
+   "title": "Figurines",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Figurines.pdf"
+  },
+  {
+   "id": 1987,
+   "letter": "I",
+   "title": "Emails",
+   "statement_pages": [
+    19,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Emails.pdf"
+  },
+  {
+   "id": 1988,
+   "letter": "J",
+   "title": "Daisy's Mazes",
+   "statement_pages": [
+    23,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Daisy's Mazes.pdf"
+  },
+  {
+   "id": 1989,
+   "letter": "K",
+   "title": "Unique Activities",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Unique Activities.pdf"
+  },
+  {
+   "id": 1990,
+   "letter": "L",
+   "title": "Restaurants",
+   "statement_pages": [
+    29,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Restaurants.pdf"
+  },
+  {
+   "id": 1991,
+   "letter": "M",
+   "title": "Fantasmagorie",
+   "statement_pages": [
+    31,
+    33
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Fantasmagorie.pdf"
+  }
+ ]
+}

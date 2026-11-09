@@ -1,0 +1,126 @@
+{
+ "id": 3895,
+ "name": "The 2013 ICPC Benelux Algorithm Programming Contest (BAPC 2013)",
+ "url": "https://qoj.ac/contest/3895",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3895&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19269,
+   "letter": "A",
+   "title": "Administrative Difficulties",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Administrative Difficulties.pdf"
+  },
+  {
+   "id": 19270,
+   "letter": "B",
+   "title": "Bribe",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bribe.pdf"
+  },
+  {
+   "id": 19271,
+   "letter": "C",
+   "title": "Cracking the Code",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cracking the Code.pdf"
+  },
+  {
+   "id": 19272,
+   "letter": "D",
+   "title": "Destination Unknown",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Destination Unknown.pdf"
+  },
+  {
+   "id": 19273,
+   "letter": "E",
+   "title": "Encoded Coordinates",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Encoded Coordinates.pdf"
+  },
+  {
+   "id": 19274,
+   "letter": "F",
+   "title": "Flying Safely",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Flying Safely.pdf"
+  },
+  {
+   "id": 19275,
+   "letter": "G",
+   "title": "Getting Through",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Getting Through.pdf"
+  },
+  {
+   "id": 19276,
+   "letter": "H",
+   "title": "Hidden Camera",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hidden Camera.pdf"
+  },
+  {
+   "id": 19277,
+   "letter": "I",
+   "title": "Incognito",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Incognito.pdf"
+  },
+  {
+   "id": 19278,
+   "letter": "J",
+   "title": "Jailbreak",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jailbreak.pdf"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "id": 2138,
+ "name": "The 2024 ICPC Nordic Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/2138",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Nordic Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2138&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2138&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11958,
+   "letter": "A",
+   "title": "Avoiding the Abyss",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Avoiding the Abyss.pdf"
+  },
+  {
+   "id": 11959,
+   "letter": "B",
+   "title": "Baseball Court",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Baseball Court.pdf"
+  },
+  {
+   "id": 11960,
+   "letter": "C",
+   "title": "Composed Rhythms",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Composed Rhythms.pdf"
+  },
+  {
+   "id": 11961,
+   "letter": "D",
+   "title": "Double Deck",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Double Deck.pdf"
+  },
+  {
+   "id": 11962,
+   "letter": "E",
+   "title": "Elapid Errands",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Elapid Errands.pdf"
+  },
+  {
+   "id": 11963,
+   "letter": "F",
+   "title": "Fence Fee",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fence Fee.pdf"
+  },
+  {
+   "id": 11964,
+   "letter": "G",
+   "title": "Guessing Passwords",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Guessing Passwords.pdf"
+  },
+  {
+   "id": 11965,
+   "letter": "H",
+   "title": "Hotfix",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hotfix.pdf"
+  },
+  {
+   "id": 11966,
+   "letter": "I",
+   "title": "Infinite Cash",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Infinite Cash.pdf"
+  },
+  {
+   "id": 11967,
+   "letter": "J",
+   "title": "Jungle Game",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jungle Game.pdf"
+  },
+  {
+   "id": 11968,
+   "letter": "K",
+   "title": "Knitting Pattern",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Knitting Pattern.pdf"
+  }
+ ]
+}

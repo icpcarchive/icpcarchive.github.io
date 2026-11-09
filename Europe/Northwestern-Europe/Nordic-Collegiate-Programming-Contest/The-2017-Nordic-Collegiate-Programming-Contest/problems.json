@@ -1,0 +1,141 @@
+{
+ "id": 328,
+ "name": "The 2017 Nordic Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/328",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Nordic Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=328&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=328&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 4065,
+   "letter": "A",
+   "title": "Airport Coffee",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Airport Coffee.pdf"
+  },
+  {
+   "id": 4066,
+   "letter": "B",
+   "title": "Best Relay Team",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Best Relay Team.pdf"
+  },
+  {
+   "id": 4067,
+   "letter": "C",
+   "title": "Compass Card Sales",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Compass Card Sales.pdf"
+  },
+  {
+   "id": 4068,
+   "letter": "D",
+   "title": "Distinctive Character",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Distinctive Character.pdf"
+  },
+  {
+   "id": 4069,
+   "letter": "E",
+   "title": "Emptying the Baltic",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Emptying the Baltic.pdf"
+  },
+  {
+   "id": 4070,
+   "letter": "F",
+   "title": "Fractal Tree",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fractal Tree.pdf"
+  },
+  {
+   "id": 4071,
+   "letter": "G",
+   "title": "Galactic Collegiate Programming Contest",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Galactic Collegiate Programming Contest.pdf"
+  },
+  {
+   "id": 4072,
+   "letter": "H",
+   "title": "Hubtown",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hubtown.pdf"
+  },
+  {
+   "id": 4073,
+   "letter": "I",
+   "title": "Import Spaghetti",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Import Spaghetti.pdf"
+  },
+  {
+   "id": 4074,
+   "letter": "J",
+   "title": "Judging Moose",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Judging Moose.pdf"
+  },
+  {
+   "id": 4075,
+   "letter": "K",
+   "title": "Kayaking Trip",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kayaking Trip.pdf"
+  }
+ ]
+}

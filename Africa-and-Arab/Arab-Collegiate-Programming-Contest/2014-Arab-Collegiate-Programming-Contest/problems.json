@@ -1,0 +1,81 @@
+{
+ "id": 2275,
+ "name": "2014 Arab Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/2275",
+ "categories": [
+  "ICPC/Regionals/Africa and Arab/Arab Collegiate Programming Contest"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 12888,
+   "letter": "A",
+   "title": "Game of Peace",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Game of Peace.pdf"
+  },
+  {
+   "id": 12889,
+   "letter": "B",
+   "title": "Tawla",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Tawla.pdf"
+  },
+  {
+   "id": 12890,
+   "letter": "C",
+   "title": "Feast Coins",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Feast Coins.pdf"
+  },
+  {
+   "id": 12891,
+   "letter": "D",
+   "title": "Wedding Selfie",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Wedding Selfie.pdf"
+  },
+  {
+   "id": 12892,
+   "letter": "E",
+   "title": "Connect the Cells",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Connect the Cells.pdf"
+  },
+  {
+   "id": 12893,
+   "letter": "F",
+   "title": "Bike Sharing",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Bike Sharing.pdf"
+  },
+  {
+   "id": 12894,
+   "letter": "G",
+   "title": "Special Christmas Tree",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Special Christmas Tree.pdf"
+  },
+  {
+   "id": 12895,
+   "letter": "H",
+   "title": "Messed up Pictures",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Messed up Pictures.pdf"
+  },
+  {
+   "id": 12896,
+   "letter": "I",
+   "title": "Equivalent Passwords",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Equivalent Passwords.pdf"
+  },
+  {
+   "id": 12897,
+   "letter": "J",
+   "title": "Mario and Evil Toad",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Mario and Evil Toad.pdf"
+  }
+ ]
+}

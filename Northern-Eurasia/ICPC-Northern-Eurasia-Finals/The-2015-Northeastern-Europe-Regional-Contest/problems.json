@@ -1,0 +1,152 @@
+{
+ "id": 1100,
+ "name": "The 2015 Northeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/1100",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1100&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1100&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 12547,
+   "letter": "A",
+   "title": "Adjustment Office",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Adjustment Office.pdf"
+  },
+  {
+   "id": 12548,
+   "letter": "B",
+   "title": "Binary vs Decimal",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Binary vs Decimal.pdf"
+  },
+  {
+   "id": 12549,
+   "letter": "C",
+   "title": "Cactus Jubilee",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cactus Jubilee.pdf"
+  },
+  {
+   "id": 12550,
+   "letter": "D",
+   "title": "Distance on Triangulation",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Distance on Triangulation.pdf"
+  },
+  {
+   "id": 12551,
+   "letter": "E",
+   "title": "Easy Problemset",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Easy Problemset.pdf"
+  },
+  {
+   "id": 12552,
+   "letter": "F",
+   "title": "Froggy Ford",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Froggy Ford.pdf"
+  },
+  {
+   "id": 12553,
+   "letter": "G",
+   "title": "Generators",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Generators.pdf"
+  },
+  {
+   "id": 12554,
+   "letter": "H",
+   "title": "Hypercube",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hypercube.pdf"
+  },
+  {
+   "id": 12555,
+   "letter": "I",
+   "title": "Iceberg Orders",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Iceberg Orders.pdf"
+  },
+  {
+   "id": 12556,
+   "letter": "J",
+   "title": "Jump",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jump.pdf"
+  },
+  {
+   "id": 12557,
+   "letter": "K",
+   "title": "King's Inspection",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - King's Inspection.pdf"
+  },
+  {
+   "id": 12558,
+   "letter": "L",
+   "title": "Landscape Improved",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Landscape Improved.pdf"
+  }
+ ]
+}

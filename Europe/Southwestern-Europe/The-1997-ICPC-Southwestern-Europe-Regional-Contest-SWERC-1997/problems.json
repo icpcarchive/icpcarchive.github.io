@@ -1,0 +1,115 @@
+{
+ "id": 3644,
+ "name": "The 1997 ICPC Southwestern Europe Regional Contest (SWERC 1997)",
+ "url": "https://qoj.ac/contest/3644",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3644&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19771,
+   "letter": "A",
+   "title": "Triangles",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Triangles.pdf"
+  },
+  {
+   "id": 19772,
+   "letter": "B",
+   "title": "Instant Complexity",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Instant Complexity.pdf"
+  },
+  {
+   "id": 19773,
+   "letter": "C",
+   "title": "There's Treasure Everywhere!",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - There's Treasure Everywhere!.pdf"
+  },
+  {
+   "id": 19774,
+   "letter": "D",
+   "title": "Video Surveillance",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Video Surveillance.pdf"
+  },
+  {
+   "id": 19775,
+   "letter": "E",
+   "title": "Pushing Boxes",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Pushing Boxes.pdf"
+  },
+  {
+   "id": 19776,
+   "letter": "F",
+   "title": "Always on the Run",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Always on the Run.pdf"
+  },
+  {
+   "id": 19777,
+   "letter": "G",
+   "title": "Box of Bricks",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Box of Bricks.pdf"
+  },
+  {
+   "id": 19778,
+   "letter": "H",
+   "title": "Island of Logic",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Island of Logic.pdf"
+  },
+  {
+   "id": 19779,
+   "letter": "I",
+   "title": "MBone",
+   "statement_pages": [
+    18,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - MBone.pdf"
+  }
+ ]
+}

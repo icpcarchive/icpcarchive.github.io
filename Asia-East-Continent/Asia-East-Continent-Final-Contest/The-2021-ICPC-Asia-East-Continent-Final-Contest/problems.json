@@ -1,0 +1,164 @@
+{
+ "id": 1041,
+ "name": "The 2021 ICPC Asia East Continent Final Contest",
+ "url": "https://qoj.ac/contest/1041",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent",
+  "ICPC/Regionals/Asia East Continent/The 2021 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1041&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1041&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5064,
+   "letter": "A",
+   "title": "DFS Order",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - DFS Order.pdf"
+  },
+  {
+   "id": 5065,
+   "letter": "B",
+   "title": "Beautiful String",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Beautiful String.pdf"
+  },
+  {
+   "id": 5066,
+   "letter": "C",
+   "title": "String-dle Count",
+   "statement_pages": [
+    6,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - String-dle Count.pdf"
+  },
+  {
+   "id": 5067,
+   "letter": "D",
+   "title": "Two Walls",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Two Walls.pdf"
+  },
+  {
+   "id": 5068,
+   "letter": "E",
+   "title": "Prof. Pang and Poker",
+   "statement_pages": [
+    11,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Prof. Pang and Poker.pdf"
+  },
+  {
+   "id": 5069,
+   "letter": "F",
+   "title": "Vacation",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Vacation.pdf"
+  },
+  {
+   "id": 5070,
+   "letter": "G",
+   "title": "Check Pattern is Bad",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Check Pattern is Bad.pdf"
+  },
+  {
+   "id": 5071,
+   "letter": "H",
+   "title": "Check Pattern is Good",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Check Pattern is Good.pdf"
+  },
+  {
+   "id": 5072,
+   "letter": "I",
+   "title": "Future Coder",
+   "statement_pages": [
+    20,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Future Coder.pdf"
+  },
+  {
+   "id": 5073,
+   "letter": "J",
+   "title": "Elden Ring",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Elden Ring.pdf"
+  },
+  {
+   "id": 5074,
+   "letter": "K",
+   "title": "Vision Test",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Vision Test.pdf"
+  },
+  {
+   "id": 5075,
+   "letter": "L",
+   "title": "Fenwick Tree",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Fenwick Tree.pdf"
+  },
+  {
+   "id": 5076,
+   "letter": "M",
+   "title": "Prof. Pang and Ants",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Prof. Pang and Ants.pdf"
+  }
+ ]
+}

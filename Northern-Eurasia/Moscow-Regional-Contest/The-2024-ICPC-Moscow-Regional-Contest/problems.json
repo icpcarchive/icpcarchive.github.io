@@ -1,0 +1,163 @@
+{
+ "id": 2620,
+ "name": "The 2024 ICPC Moscow Regional Contest",
+ "url": "https://qoj.ac/contest/2620",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Moscow Regional Contest / Moscow Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2620&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2620&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15101,
+   "letter": "A",
+   "title": "An Experiment in Optics Lab",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - An Experiment in Optics Lab.pdf"
+  },
+  {
+   "id": 15102,
+   "letter": "B",
+   "title": "Bring Order, Stop Havoc!",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bring Order, Stop Havoc!.pdf"
+  },
+  {
+   "id": 15103,
+   "letter": "C",
+   "title": "Choosing Best Friend",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Choosing Best Friend.pdf"
+  },
+  {
+   "id": 15104,
+   "letter": "D",
+   "title": "Definitely Not Prime",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Definitely Not Prime.pdf"
+  },
+  {
+   "id": 15105,
+   "letter": "E",
+   "title": "Expose The Werewolf",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Expose The Werewolf.pdf"
+  },
+  {
+   "id": 15106,
+   "letter": "F",
+   "title": "Fix The Bad Ping",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fix The Bad Ping.pdf"
+  },
+  {
+   "id": 15107,
+   "letter": "G",
+   "title": "Good Coach",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Good Coach.pdf"
+  },
+  {
+   "id": 15108,
+   "letter": "H",
+   "title": "Hero of Sushi",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hero of Sushi.pdf"
+  },
+  {
+   "id": 15109,
+   "letter": "I",
+   "title": "ICJ",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - ICJ.pdf"
+  },
+  {
+   "id": 15110,
+   "letter": "J",
+   "title": "Just A Friendly Trick",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Just A Friendly Trick.pdf"
+  },
+  {
+   "id": 15111,
+   "letter": "K",
+   "title": "Keyword and Numeral",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Keyword and Numeral.pdf"
+  },
+  {
+   "id": 15112,
+   "letter": "L",
+   "title": "Long and Random",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Long and Random.pdf"
+  },
+  {
+   "id": 15113,
+   "letter": "M",
+   "title": "Math, Nero and Seneca",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Math, Nero and Seneca.pdf"
+  }
+ ]
+}

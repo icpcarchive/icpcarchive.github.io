@@ -1,0 +1,164 @@
+{
+ "id": 2562,
+ "name": "The 2025 ICPC Asia Xi'an Regional Contest",
+ "url": "https://qoj.ac/contest/2562",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Xi'an",
+  "ICPC/Regionals/Asia East Continent/The 2025 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2562&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2562&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 14681,
+   "letter": "A",
+   "title": "Azalea Garden",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Azalea Garden.pdf"
+  },
+  {
+   "id": 14682,
+   "letter": "B",
+   "title": "Beautiful Dangos",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Beautiful Dangos.pdf"
+  },
+  {
+   "id": 14683,
+   "letter": "C",
+   "title": "Catch the Monster",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Catch the Monster.pdf"
+  },
+  {
+   "id": 14684,
+   "letter": "D",
+   "title": "Directed Acyclic Graph",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Directed Acyclic Graph.pdf"
+  },
+  {
+   "id": 14685,
+   "letter": "E",
+   "title": "Epilogue of Happiness",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Epilogue of Happiness.pdf"
+  },
+  {
+   "id": 14686,
+   "letter": "F",
+   "title": "Follow the Penguins",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Follow the Penguins.pdf"
+  },
+  {
+   "id": 14687,
+   "letter": "G",
+   "title": "Grand Voting",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Grand Voting.pdf"
+  },
+  {
+   "id": 14688,
+   "letter": "H",
+   "title": "Heart of Darkness",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Heart of Darkness.pdf"
+  },
+  {
+   "id": 14689,
+   "letter": "I",
+   "title": "Imagined Holly",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Imagined Holly.pdf"
+  },
+  {
+   "id": 14690,
+   "letter": "J",
+   "title": "January's Color",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - January's Color.pdf"
+  },
+  {
+   "id": 14691,
+   "letter": "K",
+   "title": "Killing Bits",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Killing Bits.pdf"
+  },
+  {
+   "id": 14692,
+   "letter": "L",
+   "title": "Let's Make a Convex!",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Let's Make a Convex!.pdf"
+  },
+  {
+   "id": 14693,
+   "letter": "M",
+   "title": "Mystique as Iris",
+   "statement_pages": [
+    23,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mystique as Iris.pdf"
+  }
+ ]
+}

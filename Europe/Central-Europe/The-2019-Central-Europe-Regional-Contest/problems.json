@@ -1,0 +1,152 @@
+{
+ "id": 2561,
+ "name": "The 2019 Central Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2561",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2561&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2561&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 14694,
+   "letter": "A",
+   "title": "ABB",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - ABB.pdf"
+  },
+  {
+   "id": 14695,
+   "letter": "B",
+   "title": "Be Geeks!",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Be Geeks!.pdf"
+  },
+  {
+   "id": 14696,
+   "letter": "C",
+   "title": "Bob in Wonderland",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Bob in Wonderland.pdf"
+  },
+  {
+   "id": 14697,
+   "letter": "D",
+   "title": "Crimson Sexy Jalapeños",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Crimson Sexy Jalapeños.pdf"
+  },
+  {
+   "id": 14698,
+   "letter": "E",
+   "title": "Deep800080",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Deep800080.pdf"
+  },
+  {
+   "id": 14699,
+   "letter": "F",
+   "title": "Zeldain Garden",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Zeldain Garden.pdf"
+  },
+  {
+   "id": 14700,
+   "letter": "G",
+   "title": "Light Emitting Hindenburg",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Light Emitting Hindenburg.pdf"
+  },
+  {
+   "id": 14701,
+   "letter": "H",
+   "title": "K==S",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - K==S.pdf"
+  },
+  {
+   "id": 14702,
+   "letter": "I",
+   "title": "Ponk Warshall",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Ponk Warshall.pdf"
+  },
+  {
+   "id": 14703,
+   "letter": "J",
+   "title": "Saba1000kg",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Saba1000kg.pdf"
+  },
+  {
+   "id": 14704,
+   "letter": "K",
+   "title": "Screamers in the Storm",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Screamers in the Storm.pdf"
+  },
+  {
+   "id": 14705,
+   "letter": "L",
+   "title": "The Bugs",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - The Bugs.pdf"
+  }
+ ]
+}

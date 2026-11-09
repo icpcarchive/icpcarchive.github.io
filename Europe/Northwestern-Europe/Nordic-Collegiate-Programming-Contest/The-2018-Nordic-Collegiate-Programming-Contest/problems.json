@@ -1,0 +1,141 @@
+{
+ "id": 329,
+ "name": "The 2018 Nordic Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/329",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Nordic Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=329&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=329&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3973,
+   "letter": "A",
+   "title": "Altruistic Amphibians",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Altruistic Amphibians.pdf"
+  },
+  {
+   "id": 3974,
+   "letter": "B",
+   "title": "Baby Bites",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Baby Bites.pdf"
+  },
+  {
+   "id": 3975,
+   "letter": "C",
+   "title": "Code Cleanups",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Code Cleanups.pdf"
+  },
+  {
+   "id": 3976,
+   "letter": "D",
+   "title": "Delivery Delays",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Delivery Delays.pdf"
+  },
+  {
+   "id": 3977,
+   "letter": "E",
+   "title": "Explosion Exploit",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Explosion Exploit.pdf"
+  },
+  {
+   "id": 3978,
+   "letter": "F",
+   "title": "Firing the Phaser",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Firing the Phaser.pdf"
+  },
+  {
+   "id": 3979,
+   "letter": "G",
+   "title": "Game Scheduling",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game Scheduling.pdf"
+  },
+  {
+   "id": 3980,
+   "letter": "H",
+   "title": "House Lawn",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - House Lawn.pdf"
+  },
+  {
+   "id": 3981,
+   "letter": "I",
+   "title": "Intergalactic Bidding",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Intergalactic Bidding.pdf"
+  },
+  {
+   "id": 3982,
+   "letter": "J",
+   "title": "Jumbled String",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jumbled String.pdf"
+  },
+  {
+   "id": 3983,
+   "letter": "K",
+   "title": "King's Colors",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - King's Colors.pdf"
+  }
+ ]
+}

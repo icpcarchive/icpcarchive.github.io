@@ -1,0 +1,163 @@
+{
+ "id": 2691,
+ "name": "The 2024 ICPC Southwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2691",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2691&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2691&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15695,
+   "letter": "A",
+   "title": "Titanomachy",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Titanomachy.pdf"
+  },
+  {
+   "id": 15696,
+   "letter": "B",
+   "title": "Divine Gifting",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Divine Gifting.pdf"
+  },
+  {
+   "id": 15697,
+   "letter": "C",
+   "title": "Phryctoria",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Phryctoria.pdf"
+  },
+  {
+   "id": 15698,
+   "letter": "D",
+   "title": "Temple Architecture",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Temple Architecture.pdf"
+  },
+  {
+   "id": 15699,
+   "letter": "E",
+   "title": "Building the Fort",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Building the Fort.pdf"
+  },
+  {
+   "id": 15700,
+   "letter": "F",
+   "title": "Yaxchilán Maze",
+   "statement_pages": [
+    12,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Yaxchilán Maze.pdf"
+  },
+  {
+   "id": 15701,
+   "letter": "G",
+   "title": "Guess How the Ballet Will End",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Guess How the Ballet Will End.pdf"
+  },
+  {
+   "id": 15702,
+   "letter": "H",
+   "title": "The king of SWERC",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - The king of SWERC.pdf"
+  },
+  {
+   "id": 15703,
+   "letter": "I",
+   "title": "Divination",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Divination.pdf"
+  },
+  {
+   "id": 15704,
+   "letter": "J",
+   "title": "Recovering the Tablet",
+   "statement_pages": [
+    22,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Recovering the Tablet.pdf"
+  },
+  {
+   "id": 15705,
+   "letter": "K",
+   "title": "Disk Covering",
+   "statement_pages": [
+    26,
+    29
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Disk Covering.pdf"
+  },
+  {
+   "id": 15706,
+   "letter": "L",
+   "title": "The Charioteer",
+   "statement_pages": [
+    30,
+    31
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - The Charioteer.pdf"
+  },
+  {
+   "id": 15707,
+   "letter": "M",
+   "title": "Ook? Ook!",
+   "statement_pages": [
+    32,
+    33
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Ook_ Ook!.pdf"
+  }
+ ]
+}

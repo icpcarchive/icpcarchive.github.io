@@ -1,0 +1,160 @@
+{
+ "id": 2114,
+ "name": "The 2017 ACM-ICPC Asia Nanning Regional Contest",
+ "url": "https://qoj.ac/contest/2114",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Nanning",
+  "ICPC/Regionals/Asia East Continent/The 2017 ACM-ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2114&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11807,
+   "letter": "A",
+   "title": "Abiyoyo",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Abiyoyo.pdf"
+  },
+  {
+   "id": 11808,
+   "letter": "B",
+   "title": "Attacker-Defender Game",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Attacker-Defender Game.pdf"
+  },
+  {
+   "id": 11809,
+   "letter": "C",
+   "title": "The Ball",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - The Ball.pdf"
+  },
+  {
+   "id": 11810,
+   "letter": "D",
+   "title": "Banned Patterns",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Banned Patterns.pdf"
+  },
+  {
+   "id": 11811,
+   "letter": "E",
+   "title": "The Champion",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - The Champion.pdf"
+  },
+  {
+   "id": 11812,
+   "letter": "F",
+   "title": "The Chosen One",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - The Chosen One.pdf"
+  },
+  {
+   "id": 11813,
+   "letter": "G",
+   "title": "Five Dimensional Discrete Fourier Transform",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Five Dimensional Discrete Fourier Transform.pdf"
+  },
+  {
+   "id": 11814,
+   "letter": "H",
+   "title": "The Game of Life",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - The Game of Life.pdf"
+  },
+  {
+   "id": 11815,
+   "letter": "I",
+   "title": "Rake It In",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Rake It In.pdf"
+  },
+  {
+   "id": 11816,
+   "letter": "J",
+   "title": "Rearrangement",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Rearrangement.pdf"
+  },
+  {
+   "id": 11817,
+   "letter": "K",
+   "title": "Resonators",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Resonators.pdf"
+  },
+  {
+   "id": 11818,
+   "letter": "L",
+   "title": "Twice Equation",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Twice Equation.pdf"
+  },
+  {
+   "id": 11819,
+   "letter": "M",
+   "title": "The Maximum Unreachable Node Set",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - The Maximum Unreachable Node Set.pdf"
+  }
+ ]
+}

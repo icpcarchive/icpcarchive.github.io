@@ -1,0 +1,163 @@
+{
+ "id": 2030,
+ "name": "The 2023 ICPC Southwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2030",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2030&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2030&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 10675,
+   "letter": "A",
+   "title": "Cards",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Cards.pdf"
+  },
+  {
+   "id": 10676,
+   "letter": "B",
+   "title": "Supporting everyone",
+   "statement_pages": [
+    4,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Supporting everyone.pdf"
+  },
+  {
+   "id": 10677,
+   "letter": "C",
+   "title": "Metro quiz",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Metro quiz.pdf"
+  },
+  {
+   "id": 10678,
+   "letter": "D",
+   "title": "Flag performance",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Flag performance.pdf"
+  },
+  {
+   "id": 10679,
+   "letter": "E",
+   "title": "Nicest view",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Nicest view.pdf"
+  },
+  {
+   "id": 10680,
+   "letter": "F",
+   "title": "Programming-trampoline-athlon!",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Programming-trampoline-athlon!.pdf"
+  },
+  {
+   "id": 10681,
+   "letter": "G",
+   "title": "Favourite dish",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Favourite dish.pdf"
+  },
+  {
+   "id": 10682,
+   "letter": "H",
+   "title": "Break a leg!",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Break a leg!.pdf"
+  },
+  {
+   "id": 10683,
+   "letter": "I",
+   "title": "Throwing dice",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Throwing dice.pdf"
+  },
+  {
+   "id": 10684,
+   "letter": "J",
+   "title": "Olympic goodies",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Olympic goodies.pdf"
+  },
+  {
+   "id": 10685,
+   "letter": "K",
+   "title": "Team selection",
+   "statement_pages": [
+    24,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Team selection.pdf"
+  },
+  {
+   "id": 10686,
+   "letter": "L",
+   "title": "Broken trophy",
+   "statement_pages": [
+    26,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Broken trophy.pdf"
+  },
+  {
+   "id": 10687,
+   "letter": "M",
+   "title": "In-order",
+   "statement_pages": [
+    28,
+    29
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - In-order.pdf"
+  }
+ ]
+}

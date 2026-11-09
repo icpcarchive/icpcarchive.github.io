@@ -1,0 +1,137 @@
+{
+ "id": 3810,
+ "name": "The 2013 ICPC North America Qualifier",
+ "url": "https://qoj.ac/contest/3810",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3810&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 20148,
+   "letter": "A",
+   "title": "Oddities",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Oddities.pdf"
+  },
+  {
+   "id": 20149,
+   "letter": "B",
+   "title": "Ternarian Weights",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Ternarian Weights.pdf"
+  },
+  {
+   "id": 20150,
+   "letter": "C",
+   "title": "Goldbach's Conjecture",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Goldbach's Conjecture.pdf"
+  },
+  {
+   "id": 20151,
+   "letter": "D",
+   "title": "Shotcube",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Shotcube.pdf"
+  },
+  {
+   "id": 20152,
+   "letter": "E",
+   "title": "Erratic Ants",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Erratic Ants.pdf"
+  },
+  {
+   "id": 20153,
+   "letter": "F",
+   "title": "Plotting Polynomials",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Plotting Polynomials.pdf"
+  },
+  {
+   "id": 20154,
+   "letter": "G",
+   "title": "Trapezoid Walkway",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Trapezoid Walkway.pdf"
+  },
+  {
+   "id": 20155,
+   "letter": "H",
+   "title": "4 thought",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - 4 thought.pdf"
+  },
+  {
+   "id": 20156,
+   "letter": "I",
+   "title": "Biggest Slice",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Biggest Slice.pdf"
+  },
+  {
+   "id": 20157,
+   "letter": "J",
+   "title": "Even Up Solitaire",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Even Up Solitaire.pdf"
+  },
+  {
+   "id": 20158,
+   "letter": "K",
+   "title": "Island Buses",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Island Buses.pdf"
+  }
+ ]
+}

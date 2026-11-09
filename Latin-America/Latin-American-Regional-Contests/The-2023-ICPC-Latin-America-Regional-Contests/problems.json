@@ -1,0 +1,163 @@
+{
+ "id": 2574,
+ "name": "The 2023 ICPC Latin America Regional Contests",
+ "url": "https://qoj.ac/contest/2574",
+ "categories": [
+  "ICPC/Regionals/Latin America/Latin American Regional Contests"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2574&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2574&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16178,
+   "letter": "A",
+   "title": "Analyzing Contracts",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Analyzing Contracts.pdf"
+  },
+  {
+   "id": 16179,
+   "letter": "B",
+   "title": "Blackboard Game",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Blackboard Game.pdf"
+  },
+  {
+   "id": 16180,
+   "letter": "C",
+   "title": "Candy Rush",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Candy Rush.pdf"
+  },
+  {
+   "id": 16181,
+   "letter": "D",
+   "title": "Deciphering WordWhiz",
+   "statement_pages": [
+    9,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Deciphering WordWhiz.pdf"
+  },
+  {
+   "id": 16182,
+   "letter": "E",
+   "title": "Elevated Profits",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Elevated Profits.pdf"
+  },
+  {
+   "id": 16183,
+   "letter": "F",
+   "title": "Forward and Backward",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Forward and Backward.pdf"
+  },
+  {
+   "id": 16184,
+   "letter": "G",
+   "title": "GPS on a Flat Earth",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - GPS on a Flat Earth.pdf"
+  },
+  {
+   "id": 16185,
+   "letter": "H",
+   "title": "Health in Hazard",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Health in Hazard.pdf"
+  },
+  {
+   "id": 16186,
+   "letter": "I",
+   "title": "Inversions",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Inversions.pdf"
+  },
+  {
+   "id": 16187,
+   "letter": "J",
+   "title": "Journey of the Robber",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Journey of the Robber.pdf"
+  },
+  {
+   "id": 16188,
+   "letter": "K",
+   "title": "Keen on Order",
+   "statement_pages": [
+    19,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Keen on Order.pdf"
+  },
+  {
+   "id": 16189,
+   "letter": "L",
+   "title": "Latam++",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Latam++.pdf"
+  },
+  {
+   "id": 16190,
+   "letter": "M",
+   "title": "Meeting Point",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Meeting Point.pdf"
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "id": 451,
+ "name": "The 2013 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/451",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=451&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=451&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3411,
+   "letter": "A",
+   "title": "Absurdistan Roads",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Absurdistan Roads.pdf"
+  },
+  {
+   "id": 3412,
+   "letter": "B",
+   "title": "Battle for Silver",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Battle for Silver.pdf"
+  },
+  {
+   "id": 3413,
+   "letter": "C",
+   "title": "Card Trick",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Card Trick.pdf"
+  },
+  {
+   "id": 3414,
+   "letter": "D",
+   "title": "Diagrams & Tableaux",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Diagrams & Tableaux.pdf"
+  },
+  {
+   "id": 3415,
+   "letter": "E",
+   "title": "Exponential Towers",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Exponential Towers.pdf"
+  },
+  {
+   "id": 3416,
+   "letter": "F",
+   "title": "First Date",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - First Date.pdf"
+  },
+  {
+   "id": 3417,
+   "letter": "G",
+   "title": "Grachten",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Grachten.pdf"
+  },
+  {
+   "id": 3418,
+   "letter": "H",
+   "title": "Highway of the Future",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Highway of the Future.pdf"
+  },
+  {
+   "id": 3419,
+   "letter": "I",
+   "title": "Infix to Prefix",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Infix to Prefix.pdf"
+  },
+  {
+   "id": 3420,
+   "letter": "J",
+   "title": "Jingle Balls",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jingle Balls.pdf"
+  }
+ ]
+}

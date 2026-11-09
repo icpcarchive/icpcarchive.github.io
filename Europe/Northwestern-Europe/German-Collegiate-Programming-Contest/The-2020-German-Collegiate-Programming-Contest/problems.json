@@ -1,0 +1,163 @@
+{
+ "id": 670,
+ "name": "The 2020 German Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/670",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/German Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=670&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=670&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2693,
+   "letter": "A",
+   "title": "Adolescent Architecture",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Adolescent Architecture.pdf"
+  },
+  {
+   "id": 2694,
+   "letter": "B",
+   "title": "Bookshelf Building",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bookshelf Building.pdf"
+  },
+  {
+   "id": 2695,
+   "letter": "C",
+   "title": "Confined Catching",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Confined Catching.pdf"
+  },
+  {
+   "id": 2696,
+   "letter": "D",
+   "title": "Decorative Dominoes",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Decorative Dominoes.pdf"
+  },
+  {
+   "id": 2697,
+   "letter": "E",
+   "title": "Exhausting Errands",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Exhausting Errands.pdf"
+  },
+  {
+   "id": 2698,
+   "letter": "F",
+   "title": "Flip Flow",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Flip Flow.pdf"
+  },
+  {
+   "id": 2699,
+   "letter": "G",
+   "title": "Gravity Grid",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gravity Grid.pdf"
+  },
+  {
+   "id": 2700,
+   "letter": "H",
+   "title": "Hectic Harbour",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hectic Harbour.pdf"
+  },
+  {
+   "id": 2701,
+   "letter": "I",
+   "title": "Impressive Integers",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Impressive Integers.pdf"
+  },
+  {
+   "id": 2702,
+   "letter": "J",
+   "title": "Jeopardised Journey",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jeopardised Journey.pdf"
+  },
+  {
+   "id": 2703,
+   "letter": "K",
+   "title": "Knightly Knowledge",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Knightly Knowledge.pdf"
+  },
+  {
+   "id": 2704,
+   "letter": "L",
+   "title": "Lexicographical Lecturing",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lexicographical Lecturing.pdf"
+  },
+  {
+   "id": 2705,
+   "letter": "M",
+   "title": "Mixtape Management",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mixtape Management.pdf"
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "id": 208,
+ "name": "The 2011 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/208",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=208&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=208&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 4770,
+   "letter": "A",
+   "title": "Binomial coefficients",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Binomial coefficients.pdf"
+  },
+  {
+   "id": 4771,
+   "letter": "B",
+   "title": "Bird tree",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bird tree.pdf"
+  },
+  {
+   "id": 4772,
+   "letter": "C",
+   "title": "Movie collection",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Movie collection.pdf"
+  },
+  {
+   "id": 4773,
+   "letter": "D",
+   "title": "Piece it together",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Piece it together.pdf"
+  },
+  {
+   "id": 4774,
+   "letter": "E",
+   "title": "Please, go first",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Please, go first.pdf"
+  },
+  {
+   "id": 4775,
+   "letter": "F",
+   "title": "Pool construction",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Pool construction.pdf"
+  },
+  {
+   "id": 4776,
+   "letter": "G",
+   "title": "Smoking gun",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Smoking gun.pdf"
+  },
+  {
+   "id": 4777,
+   "letter": "H",
+   "title": "Tichu",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Tichu.pdf"
+  },
+  {
+   "id": 4778,
+   "letter": "I",
+   "title": "Tracking RFIDs",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Tracking RFIDs.pdf"
+  },
+  {
+   "id": 4779,
+   "letter": "J",
+   "title": "Train delays",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Train delays.pdf"
+  }
+ ]
+}

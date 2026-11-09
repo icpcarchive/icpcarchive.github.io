@@ -1,0 +1,142 @@
+{
+ "id": 2111,
+ "name": "The 2017 ACM-ICPC Asia Hong Kong Regional Contest",
+ "url": "https://qoj.ac/contest/2111",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Hong Kong & Macau",
+  "ICPC/Regionals/Asia East Continent/The 2017 ACM-ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2111&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2111&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11774,
+   "letter": "A",
+   "title": "Fermat's Optimization Problem",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Fermat's Optimization Problem.pdf"
+  },
+  {
+   "id": 11775,
+   "letter": "B",
+   "title": "Black and White",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Black and White.pdf"
+  },
+  {
+   "id": 11776,
+   "letter": "C",
+   "title": "Equivalence of Sudoku",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Equivalence of Sudoku.pdf"
+  },
+  {
+   "id": 11777,
+   "letter": "D",
+   "title": "Card collection",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Card collection.pdf"
+  },
+  {
+   "id": 11778,
+   "letter": "E",
+   "title": "Base Station Sites",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Base Station Sites.pdf"
+  },
+  {
+   "id": 11779,
+   "letter": "F",
+   "title": "Nearby Bicycles",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Nearby Bicycles.pdf"
+  },
+  {
+   "id": 11780,
+   "letter": "G",
+   "title": "Optimal Coin Change",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Optimal Coin Change.pdf"
+  },
+  {
+   "id": 11781,
+   "letter": "H",
+   "title": "Sets",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Sets.pdf"
+  },
+  {
+   "id": 11782,
+   "letter": "I",
+   "title": "Count the Even Integers",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Count the Even Integers.pdf"
+  },
+  {
+   "id": 11783,
+   "letter": "J",
+   "title": "Triangle",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Triangle.pdf"
+  },
+  {
+   "id": 11784,
+   "letter": "K",
+   "title": "Marine",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Marine.pdf"
+  }
+ ]
+}

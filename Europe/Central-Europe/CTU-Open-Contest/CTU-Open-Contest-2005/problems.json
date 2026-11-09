@@ -1,0 +1,115 @@
+{
+ "id": 3672,
+ "name": "CTU Open Contest 2005",
+ "url": "https://qoj.ac/contest/3672",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3672&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19422,
+   "letter": "A",
+   "title": "All Friends",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - All Friends.pdf"
+  },
+  {
+   "id": 19423,
+   "letter": "B",
+   "title": "Board Game",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Board Game.pdf"
+  },
+  {
+   "id": 19424,
+   "letter": "C",
+   "title": "Crane",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Crane.pdf"
+  },
+  {
+   "id": 19425,
+   "letter": "D",
+   "title": "Divisors",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Divisors.pdf"
+  },
+  {
+   "id": 19426,
+   "letter": "E",
+   "title": "Emag eht htiw Em Pleh",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Emag eht htiw Em Pleh.pdf"
+  },
+  {
+   "id": 19427,
+   "letter": "F",
+   "title": "Failing Roads",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Failing Roads.pdf"
+  },
+  {
+   "id": 19428,
+   "letter": "G",
+   "title": "Go Endgame",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Go Endgame.pdf"
+  },
+  {
+   "id": 19429,
+   "letter": "H",
+   "title": "Help Me with the Game",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Help Me with the Game.pdf"
+  },
+  {
+   "id": 19430,
+   "letter": "I",
+   "title": "IVXLCDM",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - IVXLCDM.pdf"
+  }
+ ]
+}

@@ -1,0 +1,163 @@
+{
+ "id": 434,
+ "name": "The 2018 German Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/434",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/German Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=434&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=434&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3876,
+   "letter": "A",
+   "title": "Attack on Alpha-Zet",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Attack on Alpha-Zet.pdf"
+  },
+  {
+   "id": 3877,
+   "letter": "B",
+   "title": "Battle Royale",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Battle Royale.pdf"
+  },
+  {
+   "id": 3878,
+   "letter": "C",
+   "title": "Coolest Ski Route",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Coolest Ski Route.pdf"
+  },
+  {
+   "id": 3879,
+   "letter": "D",
+   "title": "Down the Pyramid",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Down the Pyramid.pdf"
+  },
+  {
+   "id": 3880,
+   "letter": "E",
+   "title": "Expired License",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Expired License.pdf"
+  },
+  {
+   "id": 3881,
+   "letter": "F",
+   "title": "Fighting Monsters",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fighting Monsters.pdf"
+  },
+  {
+   "id": 3882,
+   "letter": "G",
+   "title": "GPS",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - GPS.pdf"
+  },
+  {
+   "id": 3883,
+   "letter": "H",
+   "title": "Hyper Illuminati",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hyper Illuminati.pdf"
+  },
+  {
+   "id": 3884,
+   "letter": "I",
+   "title": "It's Time for a Montage",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - It's Time for a Montage.pdf"
+  },
+  {
+   "id": 3885,
+   "letter": "J",
+   "title": "Jigsaw Puzzle",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jigsaw Puzzle.pdf"
+  },
+  {
+   "id": 3886,
+   "letter": "K",
+   "title": "Kitchen Cable Chaos",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kitchen Cable Chaos.pdf"
+  },
+  {
+   "id": 3887,
+   "letter": "L",
+   "title": "Logic Puzzle",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Logic Puzzle.pdf"
+  },
+  {
+   "id": 3888,
+   "letter": "M",
+   "title": "Mountaineers",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mountaineers.pdf"
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "id": 3251,
+ "name": "The 2016 ICPC Moscow Subregional Contest",
+ "url": "https://qoj.ac/contest/3251",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Moscow Regional Contest / Moscow Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3251&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16718,
+   "letter": "A",
+   "title": "Altitude",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Altitude.pdf"
+  },
+  {
+   "id": 16719,
+   "letter": "B",
+   "title": "Blocking Buffer",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Blocking Buffer.pdf"
+  },
+  {
+   "id": 16720,
+   "letter": "C",
+   "title": "Catch Me If You Can",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Catch Me If You Can.pdf"
+  },
+  {
+   "id": 16721,
+   "letter": "D",
+   "title": "Demolition Time",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Demolition Time.pdf"
+  },
+  {
+   "id": 16722,
+   "letter": "E",
+   "title": "Economy Printing",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Economy Printing.pdf"
+  },
+  {
+   "id": 16723,
+   "letter": "F",
+   "title": "Format",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Format.pdf"
+  },
+  {
+   "id": 16724,
+   "letter": "G",
+   "title": "Great Guest Gathering",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Great Guest Gathering.pdf"
+  },
+  {
+   "id": 16725,
+   "letter": "H",
+   "title": "Hockey Cup",
+   "statement_pages": [
+    11,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hockey Cup.pdf"
+  },
+  {
+   "id": 16726,
+   "letter": "I",
+   "title": "Interesting Interactive Idea",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Interesting Interactive Idea.pdf"
+  },
+  {
+   "id": 16727,
+   "letter": "J",
+   "title": "Juice Degustation",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Juice Degustation.pdf"
+  },
+  {
+   "id": 16728,
+   "letter": "K",
+   "title": "Knights of the Old Republic",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Knights of the Old Republic.pdf"
+  },
+  {
+   "id": 16729,
+   "letter": "L",
+   "title": "Lazy Coordinator",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lazy Coordinator.pdf"
+  }
+ ]
+}

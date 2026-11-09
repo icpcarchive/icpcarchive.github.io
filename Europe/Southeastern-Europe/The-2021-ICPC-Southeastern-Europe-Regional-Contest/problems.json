@@ -1,0 +1,170 @@
+{
+ "id": 2509,
+ "name": "The 2021 ICPC Southeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2509",
+ "categories": [
+  "ICPC/Regionals/Europe/Southeastern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2509&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 14089,
+   "letter": "A",
+   "title": "King of String Comparison",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - King of String Comparison.pdf"
+  },
+  {
+   "id": 14090,
+   "letter": "B",
+   "title": "New Queries On Segment Deluxe",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - New Queries On Segment Deluxe.pdf"
+  },
+  {
+   "id": 14091,
+   "letter": "C",
+   "title": "Werewolves",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Werewolves.pdf"
+  },
+  {
+   "id": 14092,
+   "letter": "D",
+   "title": "Many LCS",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Many LCS.pdf"
+  },
+  {
+   "id": 14093,
+   "letter": "E",
+   "title": "Replace Sort",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Replace Sort.pdf"
+  },
+  {
+   "id": 14094,
+   "letter": "F",
+   "title": "to Pay Respects",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - to Pay Respects.pdf"
+  },
+  {
+   "id": 14095,
+   "letter": "G",
+   "title": "Max Pair Matching",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Max Pair Matching.pdf"
+  },
+  {
+   "id": 14096,
+   "letter": "H",
+   "title": "Colourful Permutation Sorting",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Colourful Permutation Sorting.pdf"
+  },
+  {
+   "id": 14097,
+   "letter": "I",
+   "title": "Flood Fill",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Flood Fill.pdf"
+  },
+  {
+   "id": 14098,
+   "letter": "J",
+   "title": "ABC Legacy",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - ABC Legacy.pdf"
+  },
+  {
+   "id": 14099,
+   "letter": "K",
+   "title": "Amazing Tree",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Amazing Tree.pdf"
+  },
+  {
+   "id": 14100,
+   "letter": "L",
+   "title": "Jason ABC",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Jason ABC.pdf"
+  },
+  {
+   "id": 14101,
+   "letter": "M",
+   "title": "Counting Phenomenal Arrays",
+   "statement_pages": [
+    19,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Counting Phenomenal Arrays.pdf"
+  },
+  {
+   "id": 14102,
+   "letter": "N",
+   "title": "A-series",
+   "statement_pages": [
+    20,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - A-series.pdf"
+  }
+ ]
+}

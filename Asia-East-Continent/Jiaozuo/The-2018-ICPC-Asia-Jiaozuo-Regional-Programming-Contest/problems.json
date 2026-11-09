@@ -1,0 +1,149 @@
+{
+ "id": 1319,
+ "name": "The 2018 ICPC Asia Jiaozuo Regional Programming Contest",
+ "url": "https://qoj.ac/contest/1319",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Jiaozuo",
+  "ICPC/Regionals/Asia East Continent/The 2018 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1319&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7029,
+   "letter": "A",
+   "title": "Xu Xiake in Henan Province",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Xu Xiake in Henan Province.pdf"
+  },
+  {
+   "id": 7030,
+   "letter": "B",
+   "title": "Ultraman vs. Aodzilla and Bodzilla",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Ultraman vs. Aodzilla and Bodzilla.pdf"
+  },
+  {
+   "id": 7031,
+   "letter": "C",
+   "title": "Supreme Command",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Supreme Command.pdf"
+  },
+  {
+   "id": 7032,
+   "letter": "D",
+   "title": "Keiichi Tsuchiya the Drift King",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Keiichi Tsuchiya the Drift King.pdf"
+  },
+  {
+   "id": 7033,
+   "letter": "E",
+   "title": "Resistors in Parallel",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Resistors in Parallel.pdf"
+  },
+  {
+   "id": 7034,
+   "letter": "F",
+   "title": "Honeycomb",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Honeycomb.pdf"
+  },
+  {
+   "id": 7035,
+   "letter": "G",
+   "title": "Shortest Paths on Random Forests",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Shortest Paths on Random Forests.pdf"
+  },
+  {
+   "id": 7036,
+   "letter": "H",
+   "title": "Can You Solve the Harder Problem?",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Can You Solve the Harder Problem_.pdf"
+  },
+  {
+   "id": 7037,
+   "letter": "I",
+   "title": "Distance",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Distance.pdf"
+  },
+  {
+   "id": 7038,
+   "letter": "J",
+   "title": "Carpets Removal",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Carpets Removal.pdf"
+  },
+  {
+   "id": 7039,
+   "letter": "K",
+   "title": "Counting Failures on a Trie",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Counting Failures on a Trie.pdf"
+  },
+  {
+   "id": 7040,
+   "letter": "L",
+   "title": "Connected Subgraphs",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Connected Subgraphs.pdf"
+  }
+ ]
+}

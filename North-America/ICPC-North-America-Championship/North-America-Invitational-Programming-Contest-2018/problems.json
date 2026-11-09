@@ -1,0 +1,145 @@
+{
+ "id": 554,
+ "name": "North America Invitational Programming Contest 2018",
+ "url": "https://qoj.ac/contest/554",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=554&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=554&r=1"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=554&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3014,
+   "letter": "A",
+   "title": "Cut it Out!",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Cut it Out!.pdf"
+  },
+  {
+   "id": 3015,
+   "letter": "B",
+   "title": "Double Clique",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Double Clique.pdf"
+  },
+  {
+   "id": 3016,
+   "letter": "C",
+   "title": "Flashing Fluorescents",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Flashing Fluorescents.pdf"
+  },
+  {
+   "id": 3017,
+   "letter": "D",
+   "title": "Missing Gnomes",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Missing Gnomes.pdf"
+  },
+  {
+   "id": 3018,
+   "letter": "E",
+   "title": "Prefix Free Code",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Prefix Free Code.pdf"
+  },
+  {
+   "id": 3019,
+   "letter": "F",
+   "title": "Probe Droids",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Probe Droids.pdf"
+  },
+  {
+   "id": 3020,
+   "letter": "G",
+   "title": "Rainbow Graph",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Rainbow Graph.pdf"
+  },
+  {
+   "id": 3021,
+   "letter": "H",
+   "title": "Recovery",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Recovery.pdf"
+  },
+  {
+   "id": 3022,
+   "letter": "I",
+   "title": "Red Black Tree",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Red Black Tree.pdf"
+  },
+  {
+   "id": 3023,
+   "letter": "J",
+   "title": "Winter Festival",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Winter Festival.pdf"
+  },
+  {
+   "id": 3024,
+   "letter": "K",
+   "title": "Zoning Houses",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Zoning Houses.pdf"
+  }
+ ]
+}

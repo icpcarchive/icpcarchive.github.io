@@ -1,0 +1,163 @@
+{
+ "id": 3891,
+ "name": "The 2017 ICPC Benelux Algorithm Programming Contest (BAPC 2017)",
+ "url": "https://qoj.ac/contest/3891",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3891&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3891&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19314,
+   "letter": "A",
+   "title": "Amsterdam Distance",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Amsterdam Distance.pdf"
+  },
+  {
+   "id": 19315,
+   "letter": "B",
+   "title": "Bearly Made It",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bearly Made It.pdf"
+  },
+  {
+   "id": 19316,
+   "letter": "C",
+   "title": "Collatz Conjecture",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Collatz Conjecture.pdf"
+  },
+  {
+   "id": 19317,
+   "letter": "D",
+   "title": "Detour",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Detour.pdf"
+  },
+  {
+   "id": 19318,
+   "letter": "E",
+   "title": "Easter Eggs",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Easter Eggs.pdf"
+  },
+  {
+   "id": 19319,
+   "letter": "F",
+   "title": "Falling Apart",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Falling Apart.pdf"
+  },
+  {
+   "id": 19320,
+   "letter": "G",
+   "title": "Going Dutch",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Going Dutch.pdf"
+  },
+  {
+   "id": 19321,
+   "letter": "H",
+   "title": "Hoarse Horses",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hoarse Horses.pdf"
+  },
+  {
+   "id": 19322,
+   "letter": "I",
+   "title": "Irrational Division",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Irrational Division.pdf"
+  },
+  {
+   "id": 19323,
+   "letter": "J",
+   "title": "Jumping Choreography",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jumping Choreography.pdf"
+  },
+  {
+   "id": 19324,
+   "letter": "K",
+   "title": "King of the Waves",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - King of the Waves.pdf"
+  },
+  {
+   "id": 19325,
+   "letter": "L",
+   "title": "Lemonade Trade",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lemonade Trade.pdf"
+  },
+  {
+   "id": 19326,
+   "letter": "M",
+   "title": "Manhattan Mornings",
+   "statement_pages": [
+    27,
+    29
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Manhattan Mornings.pdf"
+  }
+ ]
+}

@@ -1,0 +1,163 @@
+{
+ "id": 3603,
+ "name": "The 2017 Polish Collegiate Programming Contest (AMPPZ 2017)",
+ "url": "https://qoj.ac/contest/3603",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/Polish Collegiate Programming Contest (AMPPZ)"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3603&r=0"
+  },
+  {
+   "text": "Tutorials (pl)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3603&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 17895,
+   "letter": "A",
+   "title": "Alternative Permutations",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Alternative Permutations.pdf"
+  },
+  {
+   "id": 17896,
+   "letter": "B",
+   "title": "Cartoons",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Cartoons.pdf"
+  },
+  {
+   "id": 17897,
+   "letter": "C",
+   "title": "Identifier Sequence",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Identifier Sequence.pdf"
+  },
+  {
+   "id": 17898,
+   "letter": "D",
+   "title": "Daycare Children",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Daycare Children.pdf"
+  },
+  {
+   "id": 17899,
+   "letter": "E",
+   "title": "English",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - English.pdf"
+  },
+  {
+   "id": 17900,
+   "letter": "F",
+   "title": "Encryption Function",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Encryption Function.pdf"
+  },
+  {
+   "id": 17901,
+   "letter": "G",
+   "title": "Printer's Head",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Printer's Head.pdf"
+  },
+  {
+   "id": 17902,
+   "letter": "H",
+   "title": "Passwords",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Passwords.pdf"
+  },
+  {
+   "id": 17903,
+   "letter": "I",
+   "title": "Laser Intensification",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Laser Intensification.pdf"
+  },
+  {
+   "id": 17904,
+   "letter": "J",
+   "title": "Autumn Cleaning (16 MiB ML!)",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Autumn Cleaning (16 MiB ML!).pdf"
+  },
+  {
+   "id": 17905,
+   "letter": "K",
+   "title": "Chip Cards (16 MiB ML!)",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Chip Cards (16 MiB ML!).pdf"
+  },
+  {
+   "id": 17906,
+   "letter": "L",
+   "title": "Camping in the woods",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Camping in the woods.pdf"
+  },
+  {
+   "id": 17907,
+   "letter": "M",
+   "title": "Minimal Variance Tree",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Minimal Variance Tree.pdf"
+  }
+ ]
+}

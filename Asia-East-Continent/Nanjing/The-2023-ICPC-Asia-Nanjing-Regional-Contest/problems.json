@@ -1,0 +1,164 @@
+{
+ "id": 1435,
+ "name": "The 2023 ICPC Asia Nanjing Regional Contest",
+ "url": "https://qoj.ac/contest/1435",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Nanjing",
+  "ICPC/Regionals/Asia East Continent/The 2023 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1435&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1435&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7733,
+   "letter": "A",
+   "title": "Cool, It’s Yesterday Four Times More",
+   "statement_pages": [
+    2,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Cool, It’s Yesterday Four Times More.pdf"
+  },
+  {
+   "id": 7734,
+   "letter": "B",
+   "title": "Intersection over Union",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Intersection over Union.pdf"
+  },
+  {
+   "id": 7735,
+   "letter": "C",
+   "title": "Primitive Root",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Primitive Root.pdf"
+  },
+  {
+   "id": 7736,
+   "letter": "D",
+   "title": "Red Black Tree",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Red Black Tree.pdf"
+  },
+  {
+   "id": 7737,
+   "letter": "E",
+   "title": "Extending Distance",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Extending Distance.pdf"
+  },
+  {
+   "id": 7738,
+   "letter": "F",
+   "title": "Equivalent Rewriting",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Equivalent Rewriting.pdf"
+  },
+  {
+   "id": 7739,
+   "letter": "G",
+   "title": "Knapsack",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Knapsack.pdf"
+  },
+  {
+   "id": 7740,
+   "letter": "H",
+   "title": "Puzzle: Question Mark",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Puzzle_ Question Mark.pdf"
+  },
+  {
+   "id": 7741,
+   "letter": "I",
+   "title": "Counter",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Counter.pdf"
+  },
+  {
+   "id": 7742,
+   "letter": "J",
+   "title": "Suffix Structure",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Suffix Structure.pdf"
+  },
+  {
+   "id": 7743,
+   "letter": "K",
+   "title": "Grand Finale",
+   "statement_pages": [
+    23,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Grand Finale.pdf"
+  },
+  {
+   "id": 7744,
+   "letter": "L",
+   "title": "Elevator",
+   "statement_pages": [
+    26,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Elevator.pdf"
+  },
+  {
+   "id": 7745,
+   "letter": "M",
+   "title": "Trapping Rain Water",
+   "statement_pages": [
+    28,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Trapping Rain Water.pdf"
+  }
+ ]
+}

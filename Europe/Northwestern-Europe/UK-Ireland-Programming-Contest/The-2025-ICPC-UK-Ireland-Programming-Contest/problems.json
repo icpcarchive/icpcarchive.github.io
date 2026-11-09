@@ -1,0 +1,163 @@
+{
+ "id": 2580,
+ "name": "The 2025 ICPC UK & Ireland Programming Contest",
+ "url": "https://qoj.ac/contest/2580",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/UK & Ireland Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2580&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2580&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 14842,
+   "letter": "A",
+   "title": "Arboreal Challenge",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Arboreal Challenge.pdf"
+  },
+  {
+   "id": 14843,
+   "letter": "B",
+   "title": "Brickwork",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Brickwork.pdf"
+  },
+  {
+   "id": 14844,
+   "letter": "C",
+   "title": "Colourful Captcha",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Colourful Captcha.pdf"
+  },
+  {
+   "id": 14845,
+   "letter": "D",
+   "title": "Depot",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Depot.pdf"
+  },
+  {
+   "id": 14846,
+   "letter": "E",
+   "title": "Enclosure",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Enclosure.pdf"
+  },
+  {
+   "id": 14847,
+   "letter": "F",
+   "title": "Fell Walking",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fell Walking.pdf"
+  },
+  {
+   "id": 14848,
+   "letter": "G",
+   "title": "Get Good",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Get Good.pdf"
+  },
+  {
+   "id": 14849,
+   "letter": "H",
+   "title": "Hybrid Search",
+   "statement_pages": [
+    17,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hybrid Search.pdf"
+  },
+  {
+   "id": 14850,
+   "letter": "I",
+   "title": "Itsy Bits",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Itsy Bits.pdf"
+  },
+  {
+   "id": 14851,
+   "letter": "J",
+   "title": "Joust Sort",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joust Sort.pdf"
+  },
+  {
+   "id": 14852,
+   "letter": "K",
+   "title": "Klaus",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Klaus.pdf"
+  },
+  {
+   "id": 14853,
+   "letter": "L",
+   "title": "Last Orders",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Last Orders.pdf"
+  },
+  {
+   "id": 14854,
+   "letter": "M",
+   "title": "Motorway Stops",
+   "statement_pages": [
+    29,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Motorway Stops.pdf"
+  }
+ ]
+}

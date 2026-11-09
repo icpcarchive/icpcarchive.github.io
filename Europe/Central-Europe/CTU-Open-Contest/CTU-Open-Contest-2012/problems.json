@@ -1,0 +1,108 @@
+{
+ "id": 3679,
+ "name": "CTU Open Contest 2012",
+ "url": "https://qoj.ac/contest/3679",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3679&r=0"
+  },
+  {
+   "text": "Provenance and checker verification",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3679&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19485,
+   "letter": "A",
+   "title": "Andrew the Ant",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Andrew the Ant.pdf"
+  },
+  {
+   "id": 19486,
+   "letter": "B",
+   "title": "Software Bugs",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Software Bugs.pdf"
+  },
+  {
+   "id": 19487,
+   "letter": "C",
+   "title": "Charlie the Cockchafer",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Charlie the Cockchafer.pdf"
+  },
+  {
+   "id": 19488,
+   "letter": "D",
+   "title": "Gregory the Grasshopper",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Gregory the Grasshopper.pdf"
+  },
+  {
+   "id": 19489,
+   "letter": "E",
+   "title": "Lisa the Ladybug",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Lisa the Ladybug.pdf"
+  },
+  {
+   "id": 19490,
+   "letter": "F",
+   "title": "Mosquito Multiplication",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Mosquito Multiplication.pdf"
+  },
+  {
+   "id": 19491,
+   "letter": "G",
+   "title": "Rhinoceros Beetle",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Rhinoceros Beetle.pdf"
+  },
+  {
+   "id": 19492,
+   "letter": "H",
+   "title": "Simon the Spider",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Simon the Spider.pdf"
+  }
+ ]
+}

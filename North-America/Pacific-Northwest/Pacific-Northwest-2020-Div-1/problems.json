@@ -1,0 +1,130 @@
+{
+ "id": 496,
+ "name": "Pacific Northwest 2020 (Div. 1)",
+ "url": "https://qoj.ac/contest/496",
+ "categories": [
+  "ICPC/Regionals/North America/Pacific Northwest"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 3605,
+   "letter": "A",
+   "title": "No Thanks!",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - No Thanks!.pdf"
+  },
+  {
+   "id": 1366,
+   "letter": "B",
+   "title": "Exam Manipulation",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Exam Manipulation.pdf"
+  },
+  {
+   "id": 3606,
+   "letter": "C",
+   "title": "Painted Corridors",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Painted Corridors.pdf"
+  },
+  {
+   "id": 3607,
+   "letter": "D",
+   "title": "Basic Basis",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Basic Basis.pdf"
+  },
+  {
+   "id": 1363,
+   "letter": "E",
+   "title": "Bitonic Ordering",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Bitonic Ordering.pdf"
+  },
+  {
+   "id": 3608,
+   "letter": "F",
+   "title": "Derangement Rotations",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Derangement Rotations.pdf"
+  },
+  {
+   "id": 1361,
+   "letter": "G",
+   "title": "Ant Typing",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Ant Typing.pdf"
+  },
+  {
+   "id": 1365,
+   "letter": "H",
+   "title": "Dominating Duos",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Dominating Duos.pdf"
+  },
+  {
+   "id": 1375,
+   "letter": "I",
+   "title": "TripTik",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - TripTik.pdf"
+  },
+  {
+   "id": 1369,
+   "letter": "J",
+   "title": "Longest Common Subsequence",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Longest Common Subsequence.pdf"
+  },
+  {
+   "id": 1364,
+   "letter": "K",
+   "title": "Condorcet",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Condorcet.pdf"
+  },
+  {
+   "id": 1368,
+   "letter": "L",
+   "title": "Kth Subtree",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Kth Subtree.pdf"
+  },
+  {
+   "id": 1362,
+   "letter": "M",
+   "title": "Bad Packing",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - Bad Packing.pdf"
+  },
+  {
+   "id": 1367,
+   "letter": "N",
+   "title": "Exciting Tournament",
+   "statement_source": "problem page",
+   "statement_file": "problems/N - Exciting Tournament.pdf"
+  },
+  {
+   "id": 1372,
+   "letter": "O",
+   "title": "Rainbow Numbers",
+   "statement_source": "problem page",
+   "statement_file": "problems/O - Rainbow Numbers.pdf"
+  },
+  {
+   "id": 3609,
+   "letter": "P",
+   "title": "Reconstruct Sum",
+   "statement_source": "problem page",
+   "statement_file": "problems/P - Reconstruct Sum.pdf"
+  },
+  {
+   "id": 1374,
+   "letter": "Q",
+   "title": "Triangular Collection",
+   "statement_source": "problem page",
+   "statement_file": "problems/Q - Triangular Collection.pdf"
+  }
+ ]
+}

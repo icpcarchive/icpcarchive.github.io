@@ -1,0 +1,141 @@
+{
+ "id": 512,
+ "name": "The 2019 Nordic Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/512",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Nordic Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=512&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=512&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3921,
+   "letter": "A",
+   "title": "Alphabet Animals",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Alphabet Animals.pdf"
+  },
+  {
+   "id": 3922,
+   "letter": "B",
+   "title": "Building Boundaries",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Building Boundaries.pdf"
+  },
+  {
+   "id": 3923,
+   "letter": "C",
+   "title": "Cocoa Coalition",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cocoa Coalition.pdf"
+  },
+  {
+   "id": 3924,
+   "letter": "D",
+   "title": "Dungeon Dawdler",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dungeon Dawdler.pdf"
+  },
+  {
+   "id": 3925,
+   "letter": "E",
+   "title": "Eeny Meeny",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Eeny Meeny.pdf"
+  },
+  {
+   "id": 3926,
+   "letter": "F",
+   "title": "Flow Finder",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Flow Finder.pdf"
+  },
+  {
+   "id": 3927,
+   "letter": "G",
+   "title": "Game of Gnomes",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game of Gnomes.pdf"
+  },
+  {
+   "id": 3928,
+   "letter": "H",
+   "title": "Hot Hike",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hot Hike.pdf"
+  },
+  {
+   "id": 3929,
+   "letter": "I",
+   "title": "Incremental Induction",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Incremental Induction.pdf"
+  },
+  {
+   "id": 3930,
+   "letter": "J",
+   "title": "Jealous Youngsters",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jealous Youngsters.pdf"
+  },
+  {
+   "id": 3931,
+   "letter": "K",
+   "title": "Keep it Cool",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Keep it Cool.pdf"
+  }
+ ]
+}

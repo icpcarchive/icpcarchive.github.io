@@ -1,0 +1,164 @@
+{
+ "id": 2116,
+ "name": "The 2015 ACM-ICPC Asia Changchun Regional Contest",
+ "url": "https://qoj.ac/contest/2116",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Changchun",
+  "ICPC/Regionals/Asia East Continent/The 2015 ACM-ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2116&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2116&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11969,
+   "letter": "A",
+   "title": "Too Rich",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Too Rich.pdf"
+  },
+  {
+   "id": 11970,
+   "letter": "B",
+   "title": "Count a * b",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Count a _ b.pdf"
+  },
+  {
+   "id": 11971,
+   "letter": "C",
+   "title": "Play a game",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Play a game.pdf"
+  },
+  {
+   "id": 11972,
+   "letter": "D",
+   "title": "Pipes selection",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Pipes selection.pdf"
+  },
+  {
+   "id": 11973,
+   "letter": "E",
+   "title": "Rebuild",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Rebuild.pdf"
+  },
+  {
+   "id": 11974,
+   "letter": "F",
+   "title": "Almost Sorted Array",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Almost Sorted Array.pdf"
+  },
+  {
+   "id": 11975,
+   "letter": "G",
+   "title": "Dancing Stars on Me",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Dancing Stars on Me.pdf"
+  },
+  {
+   "id": 11976,
+   "letter": "H",
+   "title": "Partial Tree",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Partial Tree.pdf"
+  },
+  {
+   "id": 11977,
+   "letter": "I",
+   "title": "Chess Puzzle",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Chess Puzzle.pdf"
+  },
+  {
+   "id": 11978,
+   "letter": "J",
+   "title": "Chip Factory",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Chip Factory.pdf"
+  },
+  {
+   "id": 11979,
+   "letter": "K",
+   "title": "Maximum Spanning Forest",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Maximum Spanning Forest.pdf"
+  },
+  {
+   "id": 11980,
+   "letter": "L",
+   "title": "House Building",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - House Building.pdf"
+  },
+  {
+   "id": 11981,
+   "letter": "M",
+   "title": "Security Corporation",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Security Corporation.pdf"
+  }
+ ]
+}

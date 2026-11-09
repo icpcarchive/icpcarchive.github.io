@@ -1,0 +1,142 @@
+{
+ "id": 2108,
+ "name": "The 2017 ACM-ICPC Asia Qingdao Regional Contest",
+ "url": "https://qoj.ac/contest/2108",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Qingdao",
+  "ICPC/Regionals/Asia East Continent/The 2017 ACM-ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2108&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2108&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11912,
+   "letter": "A",
+   "title": "Battle in Two Pairs of Heroes",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Battle in Two Pairs of Heroes.pdf"
+  },
+  {
+   "id": 11913,
+   "letter": "B",
+   "title": "Chenchen, Tangtang and ZengZeng",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Chenchen, Tangtang and ZengZeng.pdf"
+  },
+  {
+   "id": 11914,
+   "letter": "C",
+   "title": "Collecting Cents",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Collecting Cents.pdf"
+  },
+  {
+   "id": 11915,
+   "letter": "D",
+   "title": "Enclosure of Land and Water",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Enclosure of Land and Water.pdf"
+  },
+  {
+   "id": 11916,
+   "letter": "E",
+   "title": "Floppy Cube",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Floppy Cube.pdf"
+  },
+  {
+   "id": 11917,
+   "letter": "F",
+   "title": "Hex Game",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Hex Game.pdf"
+  },
+  {
+   "id": 11918,
+   "letter": "G",
+   "title": "Pythagoras, One More Time",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Pythagoras, One More Time.pdf"
+  },
+  {
+   "id": 11919,
+   "letter": "H",
+   "title": "Spacecraft",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Spacecraft.pdf"
+  },
+  {
+   "id": 11920,
+   "letter": "I",
+   "title": "The Squared Mosquito Coil",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - The Squared Mosquito Coil.pdf"
+  },
+  {
+   "id": 11921,
+   "letter": "J",
+   "title": "Suffix",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Suffix.pdf"
+  },
+  {
+   "id": 11922,
+   "letter": "K",
+   "title": "Our Journey of Xian Ends",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Our Journey of Xian Ends.pdf"
+  }
+ ]
+}

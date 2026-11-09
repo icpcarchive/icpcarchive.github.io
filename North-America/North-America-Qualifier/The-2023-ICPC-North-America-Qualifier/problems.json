@@ -1,0 +1,148 @@
+{
+ "id": 1517,
+ "name": "The 2023 ICPC North America Qualifier",
+ "url": "https://qoj.ac/contest/1517",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1517&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 8243,
+   "letter": "A",
+   "title": "Contest Advancement",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Contest Advancement.pdf"
+  },
+  {
+   "id": 8244,
+   "letter": "B",
+   "title": "Digit Translation",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Digit Translation.pdf"
+  },
+  {
+   "id": 8245,
+   "letter": "C",
+   "title": "Don’t Hunger Together",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Don’t Hunger Together.pdf"
+  },
+  {
+   "id": 8246,
+   "letter": "D",
+   "title": "Garden of Thorns",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Garden of Thorns.pdf"
+  },
+  {
+   "id": 8247,
+   "letter": "E",
+   "title": "ICPC Team Generation",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - ICPC Team Generation.pdf"
+  },
+  {
+   "id": 8248,
+   "letter": "F",
+   "title": "Is Y a Vowel?",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Is Y a Vowel_.pdf"
+  },
+  {
+   "id": 8249,
+   "letter": "G",
+   "title": "Lines Per Hour",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Lines Per Hour.pdf"
+  },
+  {
+   "id": 8250,
+   "letter": "H",
+   "title": "Magnesium Supplementation",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Magnesium Supplementation.pdf"
+  },
+  {
+   "id": 8251,
+   "letter": "I",
+   "title": "Missing Number",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Missing Number.pdf"
+  },
+  {
+   "id": 8252,
+   "letter": "J",
+   "title": "Tip of Your Tongue",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Tip of Your Tongue.pdf"
+  },
+  {
+   "id": 8253,
+   "letter": "K",
+   "title": "Very Important Edge",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Very Important Edge.pdf"
+  },
+  {
+   "id": 8254,
+   "letter": "L",
+   "title": "Water Journal",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Water Journal.pdf"
+  }
+ ]
+}

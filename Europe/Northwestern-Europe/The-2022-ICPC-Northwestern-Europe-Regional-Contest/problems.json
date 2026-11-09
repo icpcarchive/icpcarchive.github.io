@@ -1,0 +1,152 @@
+{
+ "id": 1054,
+ "name": "The 2022 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/1054",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1054&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1054&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5150,
+   "letter": "A",
+   "title": "Alternating Algorithm",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Alternating Algorithm.pdf"
+  },
+  {
+   "id": 5151,
+   "letter": "B",
+   "title": "Bottle Flip",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bottle Flip.pdf"
+  },
+  {
+   "id": 5152,
+   "letter": "C",
+   "title": "Circular Caramel Cookie",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Circular Caramel Cookie.pdf"
+  },
+  {
+   "id": 5153,
+   "letter": "D",
+   "title": "Delft Distance",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Delft Distance.pdf"
+  },
+  {
+   "id": 5154,
+   "letter": "E",
+   "title": "ETA",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - ETA.pdf"
+  },
+  {
+   "id": 5155,
+   "letter": "F",
+   "title": "Faster Than Light",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Faster Than Light.pdf"
+  },
+  {
+   "id": 5156,
+   "letter": "G",
+   "title": "Going in Circles",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Going in Circles.pdf"
+  },
+  {
+   "id": 5157,
+   "letter": "H",
+   "title": "High-quality Tree",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - High-quality Tree.pdf"
+  },
+  {
+   "id": 5158,
+   "letter": "I",
+   "title": "Interview Question",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Interview Question.pdf"
+  },
+  {
+   "id": 5159,
+   "letter": "J",
+   "title": "Justice Served",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Justice Served.pdf"
+  },
+  {
+   "id": 5160,
+   "letter": "K",
+   "title": "Kebab Pizza",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kebab Pizza.pdf"
+  },
+  {
+   "id": 5161,
+   "letter": "L",
+   "title": "Last Guess",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Last Guess.pdf"
+  }
+ ]
+}

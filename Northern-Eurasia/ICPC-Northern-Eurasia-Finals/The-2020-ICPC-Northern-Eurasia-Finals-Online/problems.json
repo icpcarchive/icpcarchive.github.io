@@ -1,0 +1,185 @@
+{
+ "id": 2862,
+ "name": "The 2020 ICPC Northern Eurasia Finals, Online",
+ "url": "https://qoj.ac/contest/2862",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2862&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2862&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16950,
+   "letter": "A",
+   "title": "Almost Balanced Tree",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Almost Balanced Tree.pdf"
+  },
+  {
+   "id": 16951,
+   "letter": "B",
+   "title": "Brain-teaser",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Brain-teaser.pdf"
+  },
+  {
+   "id": 16952,
+   "letter": "C",
+   "title": "Color the Tree",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Color the Tree.pdf"
+  },
+  {
+   "id": 16953,
+   "letter": "D",
+   "title": "Down We Dig",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Down We Dig.pdf"
+  },
+  {
+   "id": 16954,
+   "letter": "E",
+   "title": "Easy Measurements",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Easy Measurements.pdf"
+  },
+  {
+   "id": 16955,
+   "letter": "F",
+   "title": "Find a Square",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Find a Square.pdf"
+  },
+  {
+   "id": 16956,
+   "letter": "G",
+   "title": "Geometrical Combinatorics",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Geometrical Combinatorics.pdf"
+  },
+  {
+   "id": 16957,
+   "letter": "H",
+   "title": "Hit the Hay",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hit the Hay.pdf"
+  },
+  {
+   "id": 16958,
+   "letter": "I",
+   "title": "Interactive Knockout",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Interactive Knockout.pdf"
+  },
+  {
+   "id": 16959,
+   "letter": "J",
+   "title": "Jumping Cat",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jumping Cat.pdf"
+  },
+  {
+   "id": 16960,
+   "letter": "K",
+   "title": "Kate’s 2021 Celebration",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kate’s 2021 Celebration.pdf"
+  },
+  {
+   "id": 16961,
+   "letter": "L",
+   "title": "Lookup Performance",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lookup Performance.pdf"
+  },
+  {
+   "id": 16962,
+   "letter": "M",
+   "title": "Miser",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Miser.pdf"
+  },
+  {
+   "id": 16963,
+   "letter": "N",
+   "title": "New Flat",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - New Flat.pdf"
+  },
+  {
+   "id": 16964,
+   "letter": "O",
+   "title": "Optimum Server Location",
+   "statement_pages": [
+    19,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/O - Optimum Server Location.pdf"
+  }
+ ]
+}

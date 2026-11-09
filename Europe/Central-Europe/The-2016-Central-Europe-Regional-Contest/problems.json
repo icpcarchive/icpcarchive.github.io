@@ -1,0 +1,148 @@
+{
+ "id": 843,
+ "name": "The 2016 Central Europe Regional Contest",
+ "url": "https://qoj.ac/contest/843",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=843&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11089,
+   "letter": "A",
+   "title": "Appearance Analysis",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Appearance Analysis.pdf"
+  },
+  {
+   "id": 11090,
+   "letter": "B",
+   "title": "Bipartite Blanket",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bipartite Blanket.pdf"
+  },
+  {
+   "id": 11091,
+   "letter": "C",
+   "title": "Convex Contour",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Convex Contour.pdf"
+  },
+  {
+   "id": 11092,
+   "letter": "D",
+   "title": "Dancing Disks",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dancing Disks.pdf"
+  },
+  {
+   "id": 11093,
+   "letter": "E",
+   "title": "Easy Equation",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Easy Equation.pdf"
+  },
+  {
+   "id": 11094,
+   "letter": "F",
+   "title": "Free Figurines",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Free Figurines.pdf"
+  },
+  {
+   "id": 11095,
+   "letter": "G",
+   "title": "Geohash Grid",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Geohash Grid.pdf"
+  },
+  {
+   "id": 11096,
+   "letter": "H",
+   "title": "Hangar Hurdles",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hangar Hurdles.pdf"
+  },
+  {
+   "id": 11097,
+   "letter": "I",
+   "title": "Invisible Integers",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Invisible Integers.pdf"
+  },
+  {
+   "id": 11098,
+   "letter": "J",
+   "title": "Jazz Journey",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jazz Journey.pdf"
+  },
+  {
+   "id": 11099,
+   "letter": "K",
+   "title": "Key Knocking",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Key Knocking.pdf"
+  },
+  {
+   "id": 11100,
+   "letter": "L",
+   "title": "Lost Logic",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lost Logic.pdf"
+  }
+ ]
+}

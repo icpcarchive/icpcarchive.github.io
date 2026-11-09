@@ -1,0 +1,164 @@
+{
+ "id": 1040,
+ "name": "The 2020 ICPC Asia East Continent Final Contest",
+ "url": "https://qoj.ac/contest/1040",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent",
+  "ICPC/Regionals/Asia East Continent/The 2020 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1040&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1040&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5051,
+   "letter": "A",
+   "title": "Namomo Subsequence",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Namomo Subsequence.pdf"
+  },
+  {
+   "id": 5052,
+   "letter": "B",
+   "title": "Rectangle Flip 2",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Rectangle Flip 2.pdf"
+  },
+  {
+   "id": 5053,
+   "letter": "C",
+   "title": "Random Shuffle",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Random Shuffle.pdf"
+  },
+  {
+   "id": 5054,
+   "letter": "D",
+   "title": "City Brain",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - City Brain.pdf"
+  },
+  {
+   "id": 5055,
+   "letter": "E",
+   "title": "Tube Master III",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Tube Master III.pdf"
+  },
+  {
+   "id": 5056,
+   "letter": "F",
+   "title": "Rooks",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Rooks.pdf"
+  },
+  {
+   "id": 5057,
+   "letter": "G",
+   "title": "Prof. Pang's sequence",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Prof. Pang's sequence.pdf"
+  },
+  {
+   "id": 5058,
+   "letter": "H",
+   "title": "Prof. Pang Earning Aus",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Prof. Pang Earning Aus.pdf"
+  },
+  {
+   "id": 5059,
+   "letter": "I",
+   "title": "Plants vs Zombies",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Plants vs Zombies.pdf"
+  },
+  {
+   "id": 5060,
+   "letter": "J",
+   "title": "Circle",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Circle.pdf"
+  },
+  {
+   "id": 5061,
+   "letter": "K",
+   "title": "Allin",
+   "statement_pages": [
+    13,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Allin.pdf"
+  },
+  {
+   "id": 5062,
+   "letter": "L",
+   "title": "Square",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Square.pdf"
+  },
+  {
+   "id": 5063,
+   "letter": "M",
+   "title": "Fillomino",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Fillomino.pdf"
+  }
+ ]
+}

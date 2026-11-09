@@ -1,0 +1,81 @@
+{
+ "id": 54,
+ "name": "Greater NY 2016",
+ "url": "https://qoj.ac/contest/54",
+ "categories": [
+  "ICPC/Regionals/North America/Greater New York"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 5635,
+   "letter": "A",
+   "title": "Which Base is it Anyway?",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Which Base is it Anyway_.pdf"
+  },
+  {
+   "id": 5636,
+   "letter": "B",
+   "title": "FBI Universal Control Numbers",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - FBI Universal Control Numbers.pdf"
+  },
+  {
+   "id": 5637,
+   "letter": "C",
+   "title": "M-ary Partitions",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - M-ary Partitions.pdf"
+  },
+  {
+   "id": 5638,
+   "letter": "D",
+   "title": "A Rational Sequence (Take 3)",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - A Rational Sequence (Take 3).pdf"
+  },
+  {
+   "id": 5639,
+   "letter": "E",
+   "title": "Permutation Descent Counts",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Permutation Descent Counts.pdf"
+  },
+  {
+   "id": 5640,
+   "letter": "F",
+   "title": "Tight-Fit Sudoku",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Tight-Fit Sudoku.pdf"
+  },
+  {
+   "id": 5641,
+   "letter": "G",
+   "title": "Magical Mystery Knight's Tour",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Magical Mystery Knight's Tour.pdf"
+  },
+  {
+   "id": 5642,
+   "letter": "H",
+   "title": "DA-Sort",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - DA-Sort.pdf"
+  },
+  {
+   "id": 5643,
+   "letter": "I",
+   "title": "A Mazing!",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - A Mazing!.pdf"
+  },
+  {
+   "id": 5644,
+   "letter": "J",
+   "title": "Smoothed Gardens",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Smoothed Gardens.pdf"
+  }
+ ]
+}

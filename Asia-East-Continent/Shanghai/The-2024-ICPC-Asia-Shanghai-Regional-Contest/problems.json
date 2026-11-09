@@ -1,0 +1,164 @@
+{
+ "id": 1913,
+ "name": "The 2024 ICPC Asia Shanghai Regional Contest",
+ "url": "https://qoj.ac/contest/1913",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Shanghai",
+  "ICPC/Regionals/Asia East Continent/The 2024 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1913&r=0"
+  },
+  {
+   "text": "Tutorials (zh-tw)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1913&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9037,
+   "letter": "A",
+   "title": "Ancient Maps, Hidden Danger",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Ancient Maps, Hidden Danger.pdf"
+  },
+  {
+   "id": 9038,
+   "letter": "B",
+   "title": "Basic Graph Algorithm",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Basic Graph Algorithm.pdf"
+  },
+  {
+   "id": 9039,
+   "letter": "C",
+   "title": "Conquer the Multiples",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Conquer the Multiples.pdf"
+  },
+  {
+   "id": 9040,
+   "letter": "D",
+   "title": "Decrease and Swap",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Decrease and Swap.pdf"
+  },
+  {
+   "id": 9041,
+   "letter": "E",
+   "title": "Equal Measure",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Equal Measure.pdf"
+  },
+  {
+   "id": 9042,
+   "letter": "F",
+   "title": "Fast Bogosort",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fast Bogosort.pdf"
+  },
+  {
+   "id": 9043,
+   "letter": "G",
+   "title": "Geometry Task",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Geometry Task.pdf"
+  },
+  {
+   "id": 9044,
+   "letter": "H",
+   "title": "Hexagon Puzzle",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hexagon Puzzle.pdf"
+  },
+  {
+   "id": 9045,
+   "letter": "I",
+   "title": "In Search of the Ultimate Artifact",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - In Search of the Ultimate Artifact.pdf"
+  },
+  {
+   "id": 9046,
+   "letter": "J",
+   "title": "Just-in-Time Render Analysis",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Just-in-Time Render Analysis.pdf"
+  },
+  {
+   "id": 9047,
+   "letter": "K",
+   "title": "Knights of Night",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Knights of Night.pdf"
+  },
+  {
+   "id": 9048,
+   "letter": "L",
+   "title": "Lazy Susan",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lazy Susan.pdf"
+  },
+  {
+   "id": 9049,
+   "letter": "M",
+   "title": "Machine Learning with Penguins",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Machine Learning with Penguins.pdf"
+  }
+ ]
+}

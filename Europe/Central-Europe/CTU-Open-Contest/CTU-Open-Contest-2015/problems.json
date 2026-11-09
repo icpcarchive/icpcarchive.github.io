@@ -1,0 +1,126 @@
+{
+ "id": 3682,
+ "name": "CTU Open Contest 2015",
+ "url": "https://qoj.ac/contest/3682",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3682&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19511,
+   "letter": "A",
+   "title": "Chasing the Cheetahs",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Chasing the Cheetahs.pdf"
+  },
+  {
+   "id": 19512,
+   "letter": "B",
+   "title": "Falcon Dive",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Falcon Dive.pdf"
+  },
+  {
+   "id": 19513,
+   "letter": "C",
+   "title": "The Fox and the Owl",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - The Fox and the Owl.pdf"
+  },
+  {
+   "id": 19514,
+   "letter": "D",
+   "title": "Feeding the Herrings",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Feeding the Herrings.pdf"
+  },
+  {
+   "id": 19515,
+   "letter": "E",
+   "title": "Jumping Yoshi",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Jumping Yoshi.pdf"
+  },
+  {
+   "id": 19516,
+   "letter": "F",
+   "title": "Lunch Menu",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Lunch Menu.pdf"
+  },
+  {
+   "id": 19517,
+   "letter": "G",
+   "title": "The Owl and the Fox",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - The Owl and the Fox.pdf"
+  },
+  {
+   "id": 19518,
+   "letter": "H",
+   "title": "Plankton Food",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Plankton Food.pdf"
+  },
+  {
+   "id": 19519,
+   "letter": "I",
+   "title": "Hacking the Screen",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Hacking the Screen.pdf"
+  },
+  {
+   "id": 19520,
+   "letter": "J",
+   "title": "Visitors' Train",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Visitors' Train.pdf"
+  }
+ ]
+}

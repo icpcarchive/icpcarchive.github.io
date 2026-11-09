@@ -1,0 +1,168 @@
+{
+ "id": 1093,
+ "name": "The 2022 ICPC Asia Nanjing Regional Contest",
+ "url": "https://qoj.ac/contest/1093",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Nanjing",
+  "ICPC/Regionals/Asia East Continent/The 2022 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1093&r=0"
+  },
+  {
+   "text": "Statements (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1093&r=1"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1093&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5414,
+   "letter": "A",
+   "title": "Stop, Yesterday Please No More",
+   "statement_pages": [
+    3,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Stop, Yesterday Please No More.pdf"
+  },
+  {
+   "id": 5415,
+   "letter": "B",
+   "title": "Ropeway",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Ropeway.pdf"
+  },
+  {
+   "id": 5416,
+   "letter": "C",
+   "title": "Fabulous Fungus Frenzy",
+   "statement_pages": [
+    8,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Fabulous Fungus Frenzy.pdf"
+  },
+  {
+   "id": 5417,
+   "letter": "D",
+   "title": "Chat Program",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Chat Program.pdf"
+  },
+  {
+   "id": 5418,
+   "letter": "E",
+   "title": "Color the Tree",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Color the Tree.pdf"
+  },
+  {
+   "id": 5419,
+   "letter": "F",
+   "title": "Triangles",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Triangles.pdf"
+  },
+  {
+   "id": 5420,
+   "letter": "G",
+   "title": "Inscryption",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Inscryption.pdf"
+  },
+  {
+   "id": 5421,
+   "letter": "H",
+   "title": "Factories Once More",
+   "statement_pages": [
+    21,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Factories Once More.pdf"
+  },
+  {
+   "id": 5422,
+   "letter": "I",
+   "title": "Perfect Palindrome",
+   "statement_pages": [
+    22,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Perfect Palindrome.pdf"
+  },
+  {
+   "id": 5423,
+   "letter": "J",
+   "title": "Perfect Matching",
+   "statement_pages": [
+    23,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Perfect Matching.pdf"
+  },
+  {
+   "id": 5424,
+   "letter": "K",
+   "title": "NaN in a Heap",
+   "statement_pages": [
+    24,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - NaN in a Heap.pdf"
+  },
+  {
+   "id": 5425,
+   "letter": "L",
+   "title": "Proposition Composition",
+   "statement_pages": [
+    26,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Proposition Composition.pdf"
+  },
+  {
+   "id": 5426,
+   "letter": "M",
+   "title": "Drain the Water Tank",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Drain the Water Tank.pdf"
+  }
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "id": 3809,
+ "name": "The 2012 ICPC North America Qualifier",
+ "url": "https://qoj.ac/contest/3809",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3809&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 20137,
+   "letter": "A",
+   "title": "Quite a problem",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Quite a problem.pdf"
+  },
+  {
+   "id": 20138,
+   "letter": "B",
+   "title": "Multi-touch gesture classification",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Multi-touch gesture classification.pdf"
+  },
+  {
+   "id": 20139,
+   "letter": "C",
+   "title": "Stacking Curvy Blocks",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Stacking Curvy Blocks.pdf"
+  },
+  {
+   "id": 20140,
+   "letter": "D",
+   "title": "Unicycle counting",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Unicycle counting.pdf"
+  },
+  {
+   "id": 20141,
+   "letter": "E",
+   "title": "Choosing Numbers",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Choosing Numbers.pdf"
+  },
+  {
+   "id": 20142,
+   "letter": "F",
+   "title": "Loopy transit",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Loopy transit.pdf"
+  },
+  {
+   "id": 20143,
+   "letter": "G",
+   "title": "Hitting the Targets",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Hitting the Targets.pdf"
+  },
+  {
+   "id": 20144,
+   "letter": "H",
+   "title": "Texas Summers",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Texas Summers.pdf"
+  },
+  {
+   "id": 20145,
+   "letter": "I",
+   "title": "Out of context",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Out of context.pdf"
+  },
+  {
+   "id": 20146,
+   "letter": "J",
+   "title": "Maze movement",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Maze movement.pdf"
+  },
+  {
+   "id": 20147,
+   "letter": "K",
+   "title": "Ragged Right",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Ragged Right.pdf"
+  }
+ ]
+}

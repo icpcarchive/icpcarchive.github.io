@@ -1,0 +1,141 @@
+{
+ "id": 3887,
+ "name": "The 2012 German Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/3887",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/German Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3887&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3887&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19128,
+   "letter": "A",
+   "title": "Battleship",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Battleship.pdf"
+  },
+  {
+   "id": 19129,
+   "letter": "B",
+   "title": "BrainFuckVM",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - BrainFuckVM.pdf"
+  },
+  {
+   "id": 19130,
+   "letter": "C",
+   "title": "Candy Distribution",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Candy Distribution.pdf"
+  },
+  {
+   "id": 19131,
+   "letter": "D",
+   "title": "Outsourcing",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Outsourcing.pdf"
+  },
+  {
+   "id": 19132,
+   "letter": "E",
+   "title": "Pizza Hawaii",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Pizza Hawaii.pdf"
+  },
+  {
+   "id": 19133,
+   "letter": "F",
+   "title": "Roller coaster fun",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Roller coaster fun.pdf"
+  },
+  {
+   "id": 19134,
+   "letter": "G",
+   "title": "Ski Jumping",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Ski Jumping.pdf"
+  },
+  {
+   "id": 19135,
+   "letter": "H",
+   "title": "Suffix Array Re-construction",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Suffix Array Re-construction.pdf"
+  },
+  {
+   "id": 19136,
+   "letter": "I",
+   "title": "Touchscreen Keyboard",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Touchscreen Keyboard.pdf"
+  },
+  {
+   "id": 19137,
+   "letter": "J",
+   "title": "Track Smoothing",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Track Smoothing.pdf"
+  },
+  {
+   "id": 19138,
+   "letter": "K",
+   "title": "Treasure Diving",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Treasure Diving.pdf"
+  }
+ ]
+}

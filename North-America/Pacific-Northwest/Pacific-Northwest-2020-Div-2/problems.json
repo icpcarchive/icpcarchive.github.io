@@ -1,0 +1,203 @@
+{
+ "id": 497,
+ "name": "Pacific Northwest 2020 (Div. 2)",
+ "url": "https://qoj.ac/contest/497",
+ "categories": [
+  "ICPC/Regionals/North America/Pacific Northwest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=497&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3605,
+   "letter": "R",
+   "title": "No Thanks!",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/R - No Thanks!.pdf"
+  },
+  {
+   "id": 1366,
+   "letter": "S",
+   "title": "Exam Manipulation",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/S - Exam Manipulation.pdf"
+  },
+  {
+   "id": 3606,
+   "letter": "T",
+   "title": "Painted Corridors",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/T - Painted Corridors.pdf"
+  },
+  {
+   "id": 3607,
+   "letter": "U",
+   "title": "Basic Basis",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/U - Basic Basis.pdf"
+  },
+  {
+   "id": 1363,
+   "letter": "V",
+   "title": "Bitonic Ordering",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/V - Bitonic Ordering.pdf"
+  },
+  {
+   "id": 3608,
+   "letter": "W",
+   "title": "Derangement Rotations",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/W - Derangement Rotations.pdf"
+  },
+  {
+   "id": 1361,
+   "letter": "X",
+   "title": "Ant Typing",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/X - Ant Typing.pdf"
+  },
+  {
+   "id": 1365,
+   "letter": "Y",
+   "title": "Dominating Duos",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/Y - Dominating Duos.pdf"
+  },
+  {
+   "id": 1371,
+   "letter": "Z",
+   "title": "Missing Number",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/Z - Missing Number.pdf"
+  },
+  {
+   "id": 1369,
+   "letter": "AA",
+   "title": "Longest Common Subsequence",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/AA - Longest Common Subsequence.pdf"
+  },
+  {
+   "id": 1373,
+   "letter": "AB",
+   "title": "Rating Problems",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/AB - Rating Problems.pdf"
+  },
+  {
+   "id": 1370,
+   "letter": "AC",
+   "title": "Magic Trick",
+   "statement_pages": [
+    20,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/AC - Magic Trick.pdf"
+  },
+  {
+   "id": 1362,
+   "letter": "AD",
+   "title": "Bad Packing",
+   "statement_pages": [
+    21,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/AD - Bad Packing.pdf"
+  },
+  {
+   "id": 3610,
+   "letter": "AE",
+   "title": "Kangaroo Party",
+   "statement_pages": [
+    22,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/AE - Kangaroo Party.pdf"
+  },
+  {
+   "id": 1372,
+   "letter": "AF",
+   "title": "Rainbow Numbers",
+   "statement_pages": [
+    23,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/AF - Rainbow Numbers.pdf"
+  },
+  {
+   "id": 3609,
+   "letter": "AG",
+   "title": "Reconstruct Sum",
+   "statement_pages": [
+    24,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/AG - Reconstruct Sum.pdf"
+  },
+  {
+   "id": 1374,
+   "letter": "AH",
+   "title": "Triangular Collection",
+   "statement_pages": [
+    26,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/AH - Triangular Collection.pdf"
+  }
+ ]
+}

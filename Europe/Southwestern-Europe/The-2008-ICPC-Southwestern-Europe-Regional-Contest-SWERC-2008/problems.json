@@ -1,0 +1,126 @@
+{
+ "id": 3691,
+ "name": "The 2008 ICPC Southwestern Europe Regional Contest (SWERC 2008)",
+ "url": "https://qoj.ac/contest/3691",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3691&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19868,
+   "letter": "A",
+   "title": "Bring Your Own Horse",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Bring Your Own Horse.pdf"
+  },
+  {
+   "id": 19869,
+   "letter": "B",
+   "title": "First Knight",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - First Knight.pdf"
+  },
+  {
+   "id": 19870,
+   "letter": "C",
+   "title": "Postal Charges",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Postal Charges.pdf"
+  },
+  {
+   "id": 19871,
+   "letter": "D",
+   "title": "Randomly-priced Tickets",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Randomly-priced Tickets.pdf"
+  },
+  {
+   "id": 19872,
+   "letter": "E",
+   "title": "The Game",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - The Game.pdf"
+  },
+  {
+   "id": 19873,
+   "letter": "F",
+   "title": "The Merchant Guild",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - The Merchant Guild.pdf"
+  },
+  {
+   "id": 19874,
+   "letter": "G",
+   "title": "Toll Road",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Toll Road.pdf"
+  },
+  {
+   "id": 19875,
+   "letter": "H",
+   "title": "Top Secret",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Top Secret.pdf"
+  },
+  {
+   "id": 19876,
+   "letter": "I",
+   "title": "Transcribed Books",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Transcribed Books.pdf"
+  },
+  {
+   "id": 19877,
+   "letter": "J",
+   "title": "Wizards",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Wizards.pdf"
+  }
+ ]
+}

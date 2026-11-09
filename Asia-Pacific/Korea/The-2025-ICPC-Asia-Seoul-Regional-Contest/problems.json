@@ -1,0 +1,163 @@
+{
+ "id": 2673,
+ "name": "The 2025 ICPC Asia Seoul Regional Contest",
+ "url": "https://qoj.ac/contest/2673",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Korea"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2673&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2673&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15461,
+   "letter": "A",
+   "title": "Adventurer Dabi",
+   "statement_pages": [
+    3,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Adventurer Dabi.pdf"
+  },
+  {
+   "id": 15462,
+   "letter": "B",
+   "title": "Badge Relay",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Badge Relay.pdf"
+  },
+  {
+   "id": 15463,
+   "letter": "C",
+   "title": "Bay",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Bay.pdf"
+  },
+  {
+   "id": 15464,
+   "letter": "D",
+   "title": "Bookshelf",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Bookshelf.pdf"
+  },
+  {
+   "id": 15465,
+   "letter": "E",
+   "title": "Clean Arrangements",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Clean Arrangements.pdf"
+  },
+  {
+   "id": 15466,
+   "letter": "F",
+   "title": "CPEquivalence",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - CPEquivalence.pdf"
+  },
+  {
+   "id": 15467,
+   "letter": "G",
+   "title": "Extraterrestrial Creatures",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Extraterrestrial Creatures.pdf"
+  },
+  {
+   "id": 15468,
+   "letter": "H",
+   "title": "Fair Problemset",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Fair Problemset.pdf"
+  },
+  {
+   "id": 15469,
+   "letter": "I",
+   "title": "Magic Door",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Magic Door.pdf"
+  },
+  {
+   "id": 15470,
+   "letter": "J",
+   "title": "Mex Culpa",
+   "statement_pages": [
+    24,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Mex Culpa.pdf"
+  },
+  {
+   "id": 15471,
+   "letter": "K",
+   "title": "Quadrants",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Quadrants.pdf"
+  },
+  {
+   "id": 15472,
+   "letter": "L",
+   "title": "Segments",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Segments.pdf"
+  },
+  {
+   "id": 15473,
+   "letter": "M",
+   "title": "Triple Fairness",
+   "statement_pages": [
+    29,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Triple Fairness.pdf"
+  }
+ ]
+}

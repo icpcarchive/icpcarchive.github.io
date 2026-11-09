@@ -1,0 +1,152 @@
+{
+ "id": 1446,
+ "name": "The 2023 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/1446",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1446&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1446&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7907,
+   "letter": "A",
+   "title": "Arranging Adapters",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Arranging Adapters.pdf"
+  },
+  {
+   "id": 7908,
+   "letter": "B",
+   "title": "Brickwork",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Brickwork.pdf"
+  },
+  {
+   "id": 7909,
+   "letter": "C",
+   "title": "Chair Dance",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Chair Dance.pdf"
+  },
+  {
+   "id": 7910,
+   "letter": "D",
+   "title": "Data Picker",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Data Picker.pdf"
+  },
+  {
+   "id": 7911,
+   "letter": "E",
+   "title": "Exponentiation",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Exponentiation.pdf"
+  },
+  {
+   "id": 7912,
+   "letter": "F",
+   "title": "Fixing Fractions",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fixing Fractions.pdf"
+  },
+  {
+   "id": 7913,
+   "letter": "G",
+   "title": "Galaxy Quest",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Galaxy Quest.pdf"
+  },
+  {
+   "id": 7914,
+   "letter": "H",
+   "title": "Higher Arithmetic",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Higher Arithmetic.pdf"
+  },
+  {
+   "id": 7915,
+   "letter": "I",
+   "title": "Isolated Island",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Isolated Island.pdf"
+  },
+  {
+   "id": 7916,
+   "letter": "J",
+   "title": "Jogging Tour",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jogging Tour.pdf"
+  },
+  {
+   "id": 7917,
+   "letter": "K",
+   "title": "Klompendans",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Klompendans.pdf"
+  },
+  {
+   "id": 7918,
+   "letter": "L",
+   "title": "Lateral Damage",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lateral Damage.pdf"
+  }
+ ]
+}

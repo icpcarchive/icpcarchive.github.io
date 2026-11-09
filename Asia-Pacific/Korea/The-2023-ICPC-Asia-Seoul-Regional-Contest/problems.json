@@ -1,0 +1,148 @@
+{
+ "id": 1450,
+ "name": "The 2023 ICPC Asia Seoul Regional Contest",
+ "url": "https://qoj.ac/contest/1450",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Korea"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1450&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7945,
+   "letter": "A",
+   "title": "Apricot Seeds",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Apricot Seeds.pdf"
+  },
+  {
+   "id": 7946,
+   "letter": "B",
+   "title": "Black Box",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Black Box.pdf"
+  },
+  {
+   "id": 7947,
+   "letter": "C",
+   "title": "Farm",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Farm.pdf"
+  },
+  {
+   "id": 7948,
+   "letter": "D",
+   "title": "Fraction",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Fraction.pdf"
+  },
+  {
+   "id": 7949,
+   "letter": "E",
+   "title": "K-Lottery",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - K-Lottery.pdf"
+  },
+  {
+   "id": 7950,
+   "letter": "F",
+   "title": "Lucky Draws",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Lucky Draws.pdf"
+  },
+  {
+   "id": 7951,
+   "letter": "G",
+   "title": "Magic Cards",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Magic Cards.pdf"
+  },
+  {
+   "id": 7952,
+   "letter": "H",
+   "title": "M. S. I. S.",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - M. S. I. S.pdf"
+  },
+  {
+   "id": 7953,
+   "letter": "I",
+   "title": "Product Delivery",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Product Delivery.pdf"
+  },
+  {
+   "id": 7954,
+   "letter": "J",
+   "title": "Special Numbers",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Special Numbers.pdf"
+  },
+  {
+   "id": 7955,
+   "letter": "K",
+   "title": "Tandem Copy",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Tandem Copy.pdf"
+  },
+  {
+   "id": 7956,
+   "letter": "L",
+   "title": "Walk Swapping",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Walk Swapping.pdf"
+  }
+ ]
+}

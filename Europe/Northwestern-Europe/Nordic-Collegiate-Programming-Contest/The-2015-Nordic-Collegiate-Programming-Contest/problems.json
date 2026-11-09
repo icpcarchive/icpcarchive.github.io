@@ -1,0 +1,130 @@
+{
+ "id": 326,
+ "name": "The 2015 Nordic Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/326",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Nordic Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=326&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=326&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5379,
+   "letter": "A",
+   "title": "Adjoin the Networks",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Adjoin the Networks.pdf"
+  },
+  {
+   "id": 5380,
+   "letter": "B",
+   "title": "Bell Ringing",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bell Ringing.pdf"
+  },
+  {
+   "id": 5381,
+   "letter": "C",
+   "title": "Cryptographer's Conundrum",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cryptographer's Conundrum.pdf"
+  },
+  {
+   "id": 5382,
+   "letter": "D",
+   "title": "Disastrous Downtime",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Disastrous Downtime.pdf"
+  },
+  {
+   "id": 5383,
+   "letter": "E",
+   "title": "Entertainment Box",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Entertainment Box.pdf"
+  },
+  {
+   "id": 5384,
+   "letter": "F",
+   "title": "Floppy Music",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Floppy Music.pdf"
+  },
+  {
+   "id": 5385,
+   "letter": "G",
+   "title": "Goblin Garden Guards",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Goblin Garden Guards.pdf"
+  },
+  {
+   "id": 5386,
+   "letter": "H",
+   "title": "Hero Power",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hero Power.pdf"
+  },
+  {
+   "id": 5387,
+   "letter": "I",
+   "title": "iCar",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - iCar.pdf"
+  },
+  {
+   "id": 5388,
+   "letter": "J",
+   "title": "Just a Quiz",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Just a Quiz.pdf"
+  }
+ ]
+}

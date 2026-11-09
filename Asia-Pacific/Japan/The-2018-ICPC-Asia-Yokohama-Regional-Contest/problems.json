@@ -1,0 +1,145 @@
+{
+ "id": 750,
+ "name": "The 2018 ICPC Asia Yokohama Regional Contest",
+ "url": "https://qoj.ac/contest/750",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=750&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=750&r=1"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=750&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3311,
+   "letter": "A",
+   "title": "Digits Are Not Just Characters",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Digits Are Not Just Characters.pdf"
+  },
+  {
+   "id": 3312,
+   "letter": "B",
+   "title": "Arithmetic Progressions",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Arithmetic Progressions.pdf"
+  },
+  {
+   "id": 3313,
+   "letter": "C",
+   "title": "Emergency Evacuation",
+   "statement_pages": [
+    4,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Emergency Evacuation.pdf"
+  },
+  {
+   "id": 3314,
+   "letter": "D",
+   "title": "Shortest Common Non-Subsequence",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Shortest Common Non-Subsequence.pdf"
+  },
+  {
+   "id": 3315,
+   "letter": "E",
+   "title": "Eulerian Flight Tour",
+   "statement_pages": [
+    8,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Eulerian Flight Tour.pdf"
+  },
+  {
+   "id": 3316,
+   "letter": "F",
+   "title": "Fair Chocolate-Cutting",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fair Chocolate-Cutting.pdf"
+  },
+  {
+   "id": 3317,
+   "letter": "G",
+   "title": "What Goes Up Must Come Down",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - What Goes Up Must Come Down.pdf"
+  },
+  {
+   "id": 3318,
+   "letter": "H",
+   "title": "Four-Coloring",
+   "statement_pages": [
+    15,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Four-Coloring.pdf"
+  },
+  {
+   "id": 3319,
+   "letter": "I",
+   "title": "Ranks",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Ranks.pdf"
+  },
+  {
+   "id": 3320,
+   "letter": "J",
+   "title": "Colorful Tree",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Colorful Tree.pdf"
+  },
+  {
+   "id": 3321,
+   "letter": "K",
+   "title": "Sixth Sense",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Sixth Sense.pdf"
+  }
+ ]
+}

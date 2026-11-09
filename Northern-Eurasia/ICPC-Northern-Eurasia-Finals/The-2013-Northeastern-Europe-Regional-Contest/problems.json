@@ -1,0 +1,141 @@
+{
+ "id": 2201,
+ "name": "The 2013 Northeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2201",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2201&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2201&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 12701,
+   "letter": "A",
+   "title": "ASCII Puzzle",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - ASCII Puzzle.pdf"
+  },
+  {
+   "id": 12702,
+   "letter": "B",
+   "title": "Bonus Cards",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bonus Cards.pdf"
+  },
+  {
+   "id": 12703,
+   "letter": "C",
+   "title": "Cactus Automorphisms",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cactus Automorphisms.pdf"
+  },
+  {
+   "id": 12704,
+   "letter": "D",
+   "title": "Dictionary",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dictionary.pdf"
+  },
+  {
+   "id": 12705,
+   "letter": "E",
+   "title": "Easy Geometry",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Easy Geometry.pdf"
+  },
+  {
+   "id": 12706,
+   "letter": "F",
+   "title": "Fraud Busters",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fraud Busters.pdf"
+  },
+  {
+   "id": 12707,
+   "letter": "G",
+   "title": "Green Energy",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Green Energy.pdf"
+  },
+  {
+   "id": 12708,
+   "letter": "H",
+   "title": "Hack Protection",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hack Protection.pdf"
+  },
+  {
+   "id": 12709,
+   "letter": "I",
+   "title": "Interactive Interception",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Interactive Interception.pdf"
+  },
+  {
+   "id": 12710,
+   "letter": "J",
+   "title": "Join the Conversation",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Join the Conversation.pdf"
+  },
+  {
+   "id": 12711,
+   "letter": "K",
+   "title": "Kabaleo Lite",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kabaleo Lite.pdf"
+  }
+ ]
+}

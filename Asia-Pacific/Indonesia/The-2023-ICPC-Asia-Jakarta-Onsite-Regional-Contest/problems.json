@@ -1,0 +1,163 @@
+{
+ "id": 1991,
+ "name": "The 2023 ICPC Asia Jakarta Onsite Regional Contest",
+ "url": "https://qoj.ac/contest/1991",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Indonesia"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1991&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1991&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 10558,
+   "letter": "A",
+   "title": "Easy as ABC",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Easy as ABC.pdf"
+  },
+  {
+   "id": 10559,
+   "letter": "B",
+   "title": "Button Pressing",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Button Pressing.pdf"
+  },
+  {
+   "id": 10560,
+   "letter": "C",
+   "title": "Cursed Game",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cursed Game.pdf"
+  },
+  {
+   "id": 10561,
+   "letter": "D",
+   "title": "Spaceship Exploration",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Spaceship Exploration.pdf"
+  },
+  {
+   "id": 10562,
+   "letter": "E",
+   "title": "Merge Not Sort",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Merge Not Sort.pdf"
+  },
+  {
+   "id": 10563,
+   "letter": "F",
+   "title": "Maximize The Value",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Maximize The Value.pdf"
+  },
+  {
+   "id": 10564,
+   "letter": "G",
+   "title": "Grid Game 2",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Grid Game 2.pdf"
+  },
+  {
+   "id": 10565,
+   "letter": "H",
+   "title": "Twin Friends",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Twin Friends.pdf"
+  },
+  {
+   "id": 10566,
+   "letter": "I",
+   "title": "Contingency Plan 2",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Contingency Plan 2.pdf"
+  },
+  {
+   "id": 10567,
+   "letter": "J",
+   "title": "Count BFS Graph",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Count BFS Graph.pdf"
+  },
+  {
+   "id": 10568,
+   "letter": "K",
+   "title": "Deck-Building Game",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Deck-Building Game.pdf"
+  },
+  {
+   "id": 10569,
+   "letter": "L",
+   "title": "Palindromic Parentheses",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Palindromic Parentheses.pdf"
+  },
+  {
+   "id": 10570,
+   "letter": "M",
+   "title": "Triangle Construction",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Triangle Construction.pdf"
+  }
+ ]
+}

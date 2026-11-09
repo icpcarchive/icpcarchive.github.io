@@ -1,0 +1,152 @@
+{
+ "id": 511,
+ "name": "The 2019-2020 Southwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/511",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=511&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=511&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2647,
+   "letter": "A",
+   "title": "Environment-Friendly Travel",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Environment-Friendly Travel.pdf"
+  },
+  {
+   "id": 2648,
+   "letter": "B",
+   "title": "Biodiversity",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Biodiversity.pdf"
+  },
+  {
+   "id": 2649,
+   "letter": "C",
+   "title": "Ants",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Ants.pdf"
+  },
+  {
+   "id": 2650,
+   "letter": "D",
+   "title": "Gnalcats",
+   "statement_pages": [
+    9,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Gnalcats.pdf"
+  },
+  {
+   "id": 2651,
+   "letter": "E",
+   "title": "Pixels",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Pixels.pdf"
+  },
+  {
+   "id": 2652,
+   "letter": "F",
+   "title": "Icebergs",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Icebergs.pdf"
+  },
+  {
+   "id": 2653,
+   "letter": "G",
+   "title": "Swapping Places",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Swapping Places.pdf"
+  },
+  {
+   "id": 2654,
+   "letter": "H",
+   "title": "Pseudo-Random Number Generator",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Pseudo-Random Number Generator.pdf"
+  },
+  {
+   "id": 2655,
+   "letter": "I",
+   "title": "Rats",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Rats.pdf"
+  },
+  {
+   "id": 2656,
+   "letter": "J",
+   "title": "Counting Trees",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Counting Trees.pdf"
+  },
+  {
+   "id": 2657,
+   "letter": "K",
+   "title": "Bird Watching",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Bird Watching.pdf"
+  },
+  {
+   "id": 2658,
+   "letter": "L",
+   "title": "River Game",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - River Game.pdf"
+  }
+ ]
+}

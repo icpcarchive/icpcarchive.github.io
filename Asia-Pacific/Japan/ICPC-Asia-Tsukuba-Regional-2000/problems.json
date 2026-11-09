@@ -1,0 +1,104 @@
+{
+ "id": 3611,
+ "name": "ICPC Asia Tsukuba Regional 2000",
+ "url": "https://qoj.ac/contest/3611",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3611&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19584,
+   "letter": "A",
+   "title": "Lost in Space",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Lost in Space.pdf"
+  },
+  {
+   "id": 19585,
+   "letter": "B",
+   "title": "Family Tree",
+   "statement_pages": [
+    3,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Family Tree.pdf"
+  },
+  {
+   "id": 19586,
+   "letter": "C",
+   "title": "Push!!",
+   "statement_pages": [
+    6,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Push!!.pdf"
+  },
+  {
+   "id": 19587,
+   "letter": "D",
+   "title": "Pump up Batteries",
+   "statement_pages": [
+    9,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Pump up Batteries.pdf"
+  },
+  {
+   "id": 19588,
+   "letter": "E",
+   "title": "The Devil of Gravity",
+   "statement_pages": [
+    12,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - The Devil of Gravity.pdf"
+  },
+  {
+   "id": 19589,
+   "letter": "F",
+   "title": "Numoeba",
+   "statement_pages": [
+    16,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Numoeba.pdf"
+  },
+  {
+   "id": 19590,
+   "letter": "G",
+   "title": "Telescope",
+   "statement_pages": [
+    21,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Telescope.pdf"
+  },
+  {
+   "id": 19591,
+   "letter": "H",
+   "title": "Ether Geometry",
+   "statement_pages": [
+    24,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Ether Geometry.pdf"
+  }
+ ]
+}

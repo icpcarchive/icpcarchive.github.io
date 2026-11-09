@@ -1,0 +1,74 @@
+{
+ "id": 52,
+ "name": "Greater NY 2014",
+ "url": "https://qoj.ac/contest/52",
+ "categories": [
+  "ICPC/Regionals/North America/Greater New York"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 5617,
+   "letter": "A",
+   "title": "Height Ordering",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Height Ordering.pdf"
+  },
+  {
+   "id": 5618,
+   "letter": "B",
+   "title": "Islands in the Data Stream",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Islands in the Data Stream.pdf"
+  },
+  {
+   "id": 5619,
+   "letter": "C",
+   "title": "Floating-Point Format Conversion",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Floating-Point Format Conversion.pdf"
+  },
+  {
+   "id": 5620,
+   "letter": "D",
+   "title": "Happy Happy Prime Prime",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Happy Happy Prime Prime.pdf"
+  },
+  {
+   "id": 5621,
+   "letter": "E",
+   "title": "Mancala",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Mancala.pdf"
+  },
+  {
+   "id": 5622,
+   "letter": "F",
+   "title": "A Rational Sequence",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - A Rational Sequence.pdf"
+  },
+  {
+   "id": 5623,
+   "letter": "G",
+   "title": "Growing Rectangular Spiral",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Growing Rectangular Spiral.pdf"
+  },
+  {
+   "id": 5624,
+   "letter": "H",
+   "title": "Farey Sums",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Farey Sums.pdf"
+  },
+  {
+   "id": 5625,
+   "letter": "I",
+   "title": "The Queen's Super-circular Patio",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - The Queen's Super-circular Patio.pdf"
+  }
+ ]
+}

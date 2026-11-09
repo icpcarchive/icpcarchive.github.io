@@ -1,0 +1,141 @@
+{
+ "id": 460,
+ "name": "The 2015 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/460",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=460&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=460&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3104,
+   "letter": "A",
+   "title": "Assigning Workstations",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Assigning Workstations.pdf"
+  },
+  {
+   "id": 3105,
+   "letter": "B",
+   "title": "Better Productivity",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Better Productivity.pdf"
+  },
+  {
+   "id": 3106,
+   "letter": "C",
+   "title": "Cleaning Pipes",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cleaning Pipes.pdf"
+  },
+  {
+   "id": 3107,
+   "letter": "D",
+   "title": "Debugging",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Debugging.pdf"
+  },
+  {
+   "id": 3108,
+   "letter": "E",
+   "title": "Elementary Math",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Elementary Math.pdf"
+  },
+  {
+   "id": 3109,
+   "letter": "F",
+   "title": "Flight Plan Evaluation",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Flight Plan Evaluation.pdf"
+  },
+  {
+   "id": 3110,
+   "letter": "G",
+   "title": "Guessing Camels",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Guessing Camels.pdf"
+  },
+  {
+   "id": 3111,
+   "letter": "H",
+   "title": "Hole in One",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hole in One.pdf"
+  },
+  {
+   "id": 3112,
+   "letter": "I",
+   "title": "Identifying Map Tiles",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Identifying Map Tiles.pdf"
+  },
+  {
+   "id": 3113,
+   "letter": "J",
+   "title": "Jumbled Communication",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jumbled Communication.pdf"
+  },
+  {
+   "id": 3114,
+   "letter": "K",
+   "title": "Kitchen Combinatorics",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kitchen Combinatorics.pdf"
+  }
+ ]
+}

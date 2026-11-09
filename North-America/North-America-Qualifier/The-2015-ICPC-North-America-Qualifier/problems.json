@@ -1,0 +1,137 @@
+{
+ "id": 3812,
+ "name": "The 2015 ICPC North America Qualifier",
+ "url": "https://qoj.ac/contest/3812",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3812&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 20170,
+   "letter": "A",
+   "title": "All about that base",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - All about that base.pdf"
+  },
+  {
+   "id": 20171,
+   "letter": "B",
+   "title": "Bobby's Bet",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bobby's Bet.pdf"
+  },
+  {
+   "id": 20172,
+   "letter": "C",
+   "title": "Cantina of Babel",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cantina of Babel.pdf"
+  },
+  {
+   "id": 20173,
+   "letter": "D",
+   "title": "Circuit Counting",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Circuit Counting.pdf"
+  },
+  {
+   "id": 20174,
+   "letter": "E",
+   "title": "Cutting Brownies",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Cutting Brownies.pdf"
+  },
+  {
+   "id": 20175,
+   "letter": "F",
+   "title": "Quick Brown Fox",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Quick Brown Fox.pdf"
+  },
+  {
+   "id": 20176,
+   "letter": "G",
+   "title": "Safe Passage",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Safe Passage.pdf"
+  },
+  {
+   "id": 20177,
+   "letter": "H",
+   "title": "Secret Message",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Secret Message.pdf"
+  },
+  {
+   "id": 20178,
+   "letter": "I",
+   "title": "Simon Says",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Simon Says.pdf"
+  },
+  {
+   "id": 20179,
+   "letter": "J",
+   "title": "Torn To Pieces",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Torn To Pieces.pdf"
+  },
+  {
+   "id": 20180,
+   "letter": "K",
+   "title": "UnDetected",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - UnDetected.pdf"
+  }
+ ]
+}

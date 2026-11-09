@@ -1,0 +1,152 @@
+{
+ "id": 2603,
+ "name": "The 2025 ICPC Benelux Algorithm Programming Contest",
+ "url": "https://qoj.ac/contest/2603",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2603&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2603&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 14855,
+   "letter": "A",
+   "title": "Accidental Arithmetic",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Accidental Arithmetic.pdf"
+  },
+  {
+   "id": 14856,
+   "letter": "B",
+   "title": "Boggle Sort",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Boggle Sort.pdf"
+  },
+  {
+   "id": 14857,
+   "letter": "C",
+   "title": "Coherency",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Coherency.pdf"
+  },
+  {
+   "id": 14858,
+   "letter": "D",
+   "title": "Duo Detection",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Duo Detection.pdf"
+  },
+  {
+   "id": 14859,
+   "letter": "E",
+   "title": "Excruciating Elevators",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Excruciating Elevators.pdf"
+  },
+  {
+   "id": 14860,
+   "letter": "F",
+   "title": "Faulty Connection",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Faulty Connection.pdf"
+  },
+  {
+   "id": 14861,
+   "letter": "G",
+   "title": "Garbage In, Garbage Out",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Garbage In, Garbage Out.pdf"
+  },
+  {
+   "id": 14862,
+   "letter": "H",
+   "title": "Homesick",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Homesick.pdf"
+  },
+  {
+   "id": 14863,
+   "letter": "I",
+   "title": "Intermill Logistics",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Intermill Logistics.pdf"
+  },
+  {
+   "id": 14864,
+   "letter": "J",
+   "title": "Jacobi Numbers",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jacobi Numbers.pdf"
+  },
+  {
+   "id": 14865,
+   "letter": "K",
+   "title": "Knowing the Clock",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Knowing the Clock.pdf"
+  },
+  {
+   "id": 14866,
+   "letter": "L",
+   "title": "Linguistic Labyrinth",
+   "statement_pages": [
+    25,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Linguistic Labyrinth.pdf"
+  }
+ ]
+}

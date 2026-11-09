@@ -1,0 +1,95 @@
+{
+ "id": 2276,
+ "name": "2013 Arab Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/2276",
+ "categories": [
+  "ICPC/Regionals/Africa and Arab/Arab Collegiate Programming Contest"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 12954,
+   "letter": "A",
+   "title": "The Alphabet Sticker",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - The Alphabet Sticker.pdf"
+  },
+  {
+   "id": 12955,
+   "letter": "B",
+   "title": "Swyper Keyboard",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Swyper Keyboard.pdf"
+  },
+  {
+   "id": 12956,
+   "letter": "C",
+   "title": "Increasing Shortest Path",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Increasing Shortest Path.pdf"
+  },
+  {
+   "id": 12957,
+   "letter": "D",
+   "title": "Cup of Cowards",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Cup of Cowards.pdf"
+  },
+  {
+   "id": 12958,
+   "letter": "E",
+   "title": "Balloons Colors",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Balloons Colors.pdf"
+  },
+  {
+   "id": 12959,
+   "letter": "F",
+   "title": "NASSA's Robot",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - NASSA's Robot.pdf"
+  },
+  {
+   "id": 12960,
+   "letter": "G",
+   "title": "The Stones Game",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - The Stones Game.pdf"
+  },
+  {
+   "id": 12961,
+   "letter": "H",
+   "title": "Super Ants",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Super Ants.pdf"
+  },
+  {
+   "id": 12962,
+   "letter": "I",
+   "title": "Omar Loves Candies",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Omar Loves Candies.pdf"
+  },
+  {
+   "id": 12963,
+   "letter": "J",
+   "title": "Modified LCS",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Modified LCS.pdf"
+  },
+  {
+   "id": 12964,
+   "letter": "K",
+   "title": "Mario Kart",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Mario Kart.pdf"
+  },
+  {
+   "id": 12965,
+   "letter": "L",
+   "title": "Omar's Bug",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Omar's Bug.pdf"
+  }
+ ]
+}

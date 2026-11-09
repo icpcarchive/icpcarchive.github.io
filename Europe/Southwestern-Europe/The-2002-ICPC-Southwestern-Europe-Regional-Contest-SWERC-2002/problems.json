@@ -1,0 +1,119 @@
+{
+ "id": 3650,
+ "name": "The 2002 ICPC Southwestern Europe Regional Contest (SWERC 2002)",
+ "url": "https://qoj.ac/contest/3650",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3650&r=0"
+  },
+  {
+   "text": "Official public test data",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3650&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19813,
+   "letter": "A",
+   "title": "Solitaire",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Solitaire.pdf"
+  },
+  {
+   "id": 19814,
+   "letter": "B",
+   "title": "Left Labyrinths",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Left Labyrinths.pdf"
+  },
+  {
+   "id": 19815,
+   "letter": "C",
+   "title": "Crazy Search",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Crazy Search.pdf"
+  },
+  {
+   "id": 19816,
+   "letter": "D",
+   "title": "Intervals",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Intervals.pdf"
+  },
+  {
+   "id": 19817,
+   "letter": "E",
+   "title": "Family",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Family.pdf"
+  },
+  {
+   "id": 19818,
+   "letter": "F",
+   "title": "Timetable",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Timetable.pdf"
+  },
+  {
+   "id": 19819,
+   "letter": "G",
+   "title": "Word Puzzles",
+   "statement_pages": [
+    15,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Word Puzzles.pdf"
+  },
+  {
+   "id": 19820,
+   "letter": "H",
+   "title": "Water Treatment Plants",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Water Treatment Plants.pdf"
+  },
+  {
+   "id": 19821,
+   "letter": "I",
+   "title": "Servers",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Servers.pdf"
+  }
+ ]
+}

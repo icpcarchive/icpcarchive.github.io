@@ -1,0 +1,159 @@
+{
+ "id": 4606,
+ "name": "The 2026 ICPC UK & Ireland Programming Contest",
+ "url": "https://qoj.ac/contest/4606",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/UK & Ireland Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=4606&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 23618,
+   "letter": "A",
+   "title": "Austere Sign",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Austere Sign.pdf"
+  },
+  {
+   "id": 23619,
+   "letter": "B",
+   "title": "Bust Blasting",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bust Blasting.pdf"
+  },
+  {
+   "id": 23620,
+   "letter": "C",
+   "title": "Cryptlet",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cryptlet.pdf"
+  },
+  {
+   "id": 23621,
+   "letter": "D",
+   "title": "Dire Strait",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dire Strait.pdf"
+  },
+  {
+   "id": 23622,
+   "letter": "E",
+   "title": "Elderberry Wine",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Elderberry Wine.pdf"
+  },
+  {
+   "id": 23623,
+   "letter": "F",
+   "title": "Footnotes",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Footnotes.pdf"
+  },
+  {
+   "id": 23624,
+   "letter": "G",
+   "title": "Gloucester Somersault",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gloucester Somersault.pdf"
+  },
+  {
+   "id": 23625,
+   "letter": "H",
+   "title": "Hoptimisation",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hoptimisation.pdf"
+  },
+  {
+   "id": 23626,
+   "letter": "I",
+   "title": "Inverse Sum",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Inverse Sum.pdf"
+  },
+  {
+   "id": 23627,
+   "letter": "J",
+   "title": "Jammer Jam",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jammer Jam.pdf"
+  },
+  {
+   "id": 23628,
+   "letter": "K",
+   "title": "Kilt Quilt",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kilt Quilt.pdf"
+  },
+  {
+   "id": 23629,
+   "letter": "L",
+   "title": "Lawn Stripes",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lawn Stripes.pdf"
+  },
+  {
+   "id": 23630,
+   "letter": "M",
+   "title": "Mid Clocking",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mid Clocking.pdf"
+  }
+ ]
+}

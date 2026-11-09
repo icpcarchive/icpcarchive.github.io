@@ -1,0 +1,160 @@
+{
+ "id": 1866,
+ "name": "The 2019 ICPC Asia Shanghai Regional Contest",
+ "url": "https://qoj.ac/contest/1866",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Shanghai",
+  "ICPC/Regionals/Asia East Continent/The 2019 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1866&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11004,
+   "letter": "A",
+   "title": "Mr. Panda and Dominoes",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Mr. Panda and Dominoes.pdf"
+  },
+  {
+   "id": 11005,
+   "letter": "B",
+   "title": "Prefix Code",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Prefix Code.pdf"
+  },
+  {
+   "id": 11006,
+   "letter": "C",
+   "title": "Maze",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Maze.pdf"
+  },
+  {
+   "id": 11007,
+   "letter": "D",
+   "title": "Spanning Tree Removal",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Spanning Tree Removal.pdf"
+  },
+  {
+   "id": 11008,
+   "letter": "E",
+   "title": "Cave Escape",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Cave Escape.pdf"
+  },
+  {
+   "id": 11009,
+   "letter": "F",
+   "title": "A Simple Problem On A Tree",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - A Simple Problem On A Tree.pdf"
+  },
+  {
+   "id": 11010,
+   "letter": "G",
+   "title": "Play the game SET",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Play the game SET.pdf"
+  },
+  {
+   "id": 11011,
+   "letter": "H",
+   "title": "Tree Partition",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Tree Partition.pdf"
+  },
+  {
+   "id": 11012,
+   "letter": "I",
+   "title": "Portal",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Portal.pdf"
+  },
+  {
+   "id": 11013,
+   "letter": "J",
+   "title": "Bob's Poor Math",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Bob's Poor Math.pdf"
+  },
+  {
+   "id": 11014,
+   "letter": "K",
+   "title": "Color Graph",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Color Graph.pdf"
+  },
+  {
+   "id": 11015,
+   "letter": "L",
+   "title": "Light It Down",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Light It Down.pdf"
+  },
+  {
+   "id": 11016,
+   "letter": "M",
+   "title": "Blood Pressure Game",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Blood Pressure Game.pdf"
+  }
+ ]
+}

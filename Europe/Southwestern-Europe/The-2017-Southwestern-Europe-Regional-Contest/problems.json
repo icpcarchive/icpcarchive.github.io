@@ -1,0 +1,137 @@
+{
+ "id": 407,
+ "name": "The 2017 Southwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/407",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=407&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3173,
+   "letter": "A",
+   "title": "Cakey McCakeFace",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Cakey McCakeFace.pdf"
+  },
+  {
+   "id": 3174,
+   "letter": "B",
+   "title": "Table",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Table.pdf"
+  },
+  {
+   "id": 3175,
+   "letter": "C",
+   "title": "Macarons",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Macarons.pdf"
+  },
+  {
+   "id": 3176,
+   "letter": "D",
+   "title": "Candy Chain",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Candy Chain.pdf"
+  },
+  {
+   "id": 3177,
+   "letter": "E",
+   "title": "Ingredients",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Ingredients.pdf"
+  },
+  {
+   "id": 3178,
+   "letter": "F",
+   "title": "Shattered Cake",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Shattered Cake.pdf"
+  },
+  {
+   "id": 3179,
+   "letter": "G",
+   "title": "Cordon Bleu",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Cordon Bleu.pdf"
+  },
+  {
+   "id": 3180,
+   "letter": "H",
+   "title": "Kabobs",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Kabobs.pdf"
+  },
+  {
+   "id": 3181,
+   "letter": "I",
+   "title": "Burglary",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Burglary.pdf"
+  },
+  {
+   "id": 3182,
+   "letter": "J",
+   "title": "Frosting on the Cake",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Frosting on the Cake.pdf"
+  },
+  {
+   "id": 3183,
+   "letter": "K",
+   "title": "Blowing Candles",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Blowing Candles.pdf"
+  }
+ ]
+}

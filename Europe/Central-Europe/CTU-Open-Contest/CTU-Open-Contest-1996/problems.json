@@ -1,0 +1,60 @@
+{
+ "id": 3663,
+ "name": "CTU Open Contest 1996",
+ "url": "https://qoj.ac/contest/3663",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (cs)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3663&r=0"
+  },
+  {
+   "text": "Archived Official Source (HTML and Figures)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3663&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19345,
+   "letter": "A",
+   "title": "Hyperoxní hypergony"
+  },
+  {
+   "id": 19346,
+   "letter": "B",
+   "title": "Průnik hyperkvádrů"
+  },
+  {
+   "id": 19347,
+   "letter": "C",
+   "title": "Posádka"
+  },
+  {
+   "id": 19348,
+   "letter": "D",
+   "title": "Kolonie"
+  },
+  {
+   "id": 19349,
+   "letter": "E",
+   "title": "Vyplnění prostoru"
+  },
+  {
+   "id": 19350,
+   "letter": "F",
+   "title": "Prstencové generátory"
+  },
+  {
+   "id": 19351,
+   "letter": "G",
+   "title": "Optimální trasa"
+  },
+  {
+   "id": 19352,
+   "letter": "H",
+   "title": "Posloupnost planet"
+  }
+ ]
+}

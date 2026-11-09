@@ -1,0 +1,72 @@
+{
+ "id": 3613,
+ "name": "The 2002 ACM-ICPC Asia Kanazawa Regional Contest",
+ "url": "https://qoj.ac/contest/3613",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3613&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19600,
+   "letter": "A",
+   "title": "Calling Extraterrestrial Intelligence Again",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Calling Extraterrestrial Intelligence Again.pdf"
+  },
+  {
+   "id": 19601,
+   "letter": "B",
+   "title": "Equals are Equals",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Equals are Equals.pdf"
+  },
+  {
+   "id": 19602,
+   "letter": "C",
+   "title": "GIGA Universe Cup",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - GIGA Universe Cup.pdf"
+  },
+  {
+   "id": 19603,
+   "letter": "D",
+   "title": "Life Line",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Life Line.pdf"
+  },
+  {
+   "id": 19604,
+   "letter": "E",
+   "title": "Map of Ninja House",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Map of Ninja House.pdf"
+  },
+  {
+   "id": 19605,
+   "letter": "F",
+   "title": "Shredding Company",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Shredding Company.pdf"
+  },
+  {
+   "id": 19606,
+   "letter": "G",
+   "title": "True Liars",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - True Liars.pdf"
+  },
+  {
+   "id": 19607,
+   "letter": "H",
+   "title": "Viva Confetti",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Viva Confetti.pdf"
+  }
+ ]
+}

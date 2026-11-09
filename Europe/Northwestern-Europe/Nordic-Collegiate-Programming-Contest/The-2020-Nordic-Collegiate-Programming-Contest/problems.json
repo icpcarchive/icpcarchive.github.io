@@ -1,0 +1,163 @@
+{
+ "id": 528,
+ "name": "The 2020 Nordic Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/528",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Nordic Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=528&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=528&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3322,
+   "letter": "A",
+   "title": "Array of Discord",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Array of Discord.pdf"
+  },
+  {
+   "id": 876,
+   "letter": "B",
+   "title": "Big Brother",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Big Brother.pdf"
+  },
+  {
+   "id": 3323,
+   "letter": "C",
+   "title": "Coin Stacks",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Coin Stacks.pdf"
+  },
+  {
+   "id": 878,
+   "letter": "D",
+   "title": "Dams in Distress",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dams in Distress.pdf"
+  },
+  {
+   "id": 879,
+   "letter": "E",
+   "title": "Exhaustive Experiment",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Exhaustive Experiment.pdf"
+  },
+  {
+   "id": 880,
+   "letter": "F",
+   "title": "Film Critics",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Film Critics.pdf"
+  },
+  {
+   "id": 881,
+   "letter": "G",
+   "title": "Gig Combinatorics",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gig Combinatorics.pdf"
+  },
+  {
+   "id": 882,
+   "letter": "H",
+   "title": "Hiring and Firing",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hiring and Firing.pdf"
+  },
+  {
+   "id": 883,
+   "letter": "I",
+   "title": "Infection Estimation",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Infection Estimation.pdf"
+  },
+  {
+   "id": 3324,
+   "letter": "J",
+   "title": "Joining Flows",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joining Flows.pdf"
+  },
+  {
+   "id": 885,
+   "letter": "K",
+   "title": "Keep Calm And Carry Off",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Keep Calm And Carry Off.pdf"
+  },
+  {
+   "id": 886,
+   "letter": "L",
+   "title": "Languages",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Languages.pdf"
+  },
+  {
+   "id": 3325,
+   "letter": "M",
+   "title": "Methodic Multiplication",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Methodic Multiplication.pdf"
+  }
+ ]
+}

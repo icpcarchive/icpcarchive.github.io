@@ -1,0 +1,92 @@
+{
+ "id": 3817,
+ "name": "The 2020 ICPC North America Qualifier",
+ "url": "https://qoj.ac/contest/3817",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3817&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3817&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 20172,
+   "letter": "A",
+   "title": "Cantina of Babel",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Cantina of Babel.pdf"
+  },
+  {
+   "id": 20232,
+   "letter": "B",
+   "title": "Drawing Circles",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Drawing Circles.pdf"
+  },
+  {
+   "id": 20159,
+   "letter": "C",
+   "title": "Eight Queens",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Eight Queens.pdf"
+  },
+  {
+   "id": 20161,
+   "letter": "D",
+   "title": "Flexible Spaces",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Flexible Spaces.pdf"
+  },
+  {
+   "id": 20233,
+   "letter": "E",
+   "title": "Perfect Path Patrol",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Perfect Path Patrol.pdf"
+  },
+  {
+   "id": 20178,
+   "letter": "F",
+   "title": "Simon Says",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Simon Says.pdf"
+  },
+  {
+   "id": 20234,
+   "letter": "G",
+   "title": "Sky's the Limit",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Sky's the Limit.pdf"
+  },
+  {
+   "id": 20235,
+   "letter": "H",
+   "title": "Using Digits",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Using Digits.pdf"
+  }
+ ]
+}

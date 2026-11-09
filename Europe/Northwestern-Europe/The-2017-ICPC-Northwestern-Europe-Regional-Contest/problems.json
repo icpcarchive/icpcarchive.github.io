@@ -1,0 +1,141 @@
+{
+ "id": 513,
+ "name": "The 2017 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/513",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=513&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=513&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2632,
+   "letter": "A",
+   "title": "Ascending Photo",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Ascending Photo.pdf"
+  },
+  {
+   "id": 2633,
+   "letter": "B",
+   "title": "Boss Battle",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Boss Battle.pdf"
+  },
+  {
+   "id": 2634,
+   "letter": "C",
+   "title": "Connect the Dots",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Connect the Dots.pdf"
+  },
+  {
+   "id": 2635,
+   "letter": "D",
+   "title": "Dunglish",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dunglish.pdf"
+  },
+  {
+   "id": 2636,
+   "letter": "E",
+   "title": "English Restaurant",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - English Restaurant.pdf"
+  },
+  {
+   "id": 2637,
+   "letter": "F",
+   "title": "Factor-Free Tree",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Factor-Free Tree.pdf"
+  },
+  {
+   "id": 2638,
+   "letter": "G",
+   "title": "Glyph Recognition",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Glyph Recognition.pdf"
+  },
+  {
+   "id": 2639,
+   "letter": "H",
+   "title": "High Score",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - High Score.pdf"
+  },
+  {
+   "id": 2640,
+   "letter": "I",
+   "title": "Installing Apps",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Installing Apps.pdf"
+  },
+  {
+   "id": 2641,
+   "letter": "J",
+   "title": "Juggling Troupe",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Juggling Troupe.pdf"
+  },
+  {
+   "id": 2642,
+   "letter": "K",
+   "title": "Knockout Tournament",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Knockout Tournament.pdf"
+  }
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "id": 1459,
+ "name": "The 2023 ICPC Asia Macau Regional Contest",
+ "url": "https://qoj.ac/contest/1459",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Hong Kong & Macau",
+  "ICPC/Regionals/Asia East Continent/The 2023 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1459&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1459&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7857,
+   "letter": "A",
+   "title": "(-1,1)-Sumplete",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - (-1,1)-Sumplete.pdf"
+  },
+  {
+   "id": 7858,
+   "letter": "B",
+   "title": "Basic Equation Solving",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Basic Equation Solving.pdf"
+  },
+  {
+   "id": 7859,
+   "letter": "C",
+   "title": "Bladestorm",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Bladestorm.pdf"
+  },
+  {
+   "id": 7860,
+   "letter": "D",
+   "title": "Graph of Maximum Degree 3",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Graph of Maximum Degree 3.pdf"
+  },
+  {
+   "id": 7861,
+   "letter": "E",
+   "title": "Inverse Topological Sort",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Inverse Topological Sort.pdf"
+  },
+  {
+   "id": 7862,
+   "letter": "F",
+   "title": "Land Trade",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Land Trade.pdf"
+  },
+  {
+   "id": 7863,
+   "letter": "G",
+   "title": "Parity Game",
+   "statement_pages": [
+    13,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Parity Game.pdf"
+  },
+  {
+   "id": 7864,
+   "letter": "H",
+   "title": "Random Tree Parking",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Random Tree Parking.pdf"
+  },
+  {
+   "id": 7865,
+   "letter": "I",
+   "title": "Refresher into Midas",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Refresher into Midas.pdf"
+  },
+  {
+   "id": 7866,
+   "letter": "J",
+   "title": "Teleportation",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Teleportation.pdf"
+  },
+  {
+   "id": 7867,
+   "letter": "K",
+   "title": "Understand",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Understand.pdf"
+  }
+ ]
+}

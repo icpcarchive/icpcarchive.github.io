@@ -1,0 +1,137 @@
+{
+ "id": 2685,
+ "name": "The 2022 ICPC Asia Tehran Regional Contest",
+ "url": "https://qoj.ac/contest/2685",
+ "categories": [
+  "ICPC/Regionals/Asia West Continent/Iran"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2685&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15641,
+   "letter": "A",
+   "title": "Final Price",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Final Price.pdf"
+  },
+  {
+   "id": 15642,
+   "letter": "B",
+   "title": "Flower Festival",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Flower Festival.pdf"
+  },
+  {
+   "id": 15643,
+   "letter": "C",
+   "title": "Simplification",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Simplification.pdf"
+  },
+  {
+   "id": 15644,
+   "letter": "D",
+   "title": "Dominoes",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dominoes.pdf"
+  },
+  {
+   "id": 15645,
+   "letter": "E",
+   "title": "Parking Party",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Parking Party.pdf"
+  },
+  {
+   "id": 15646,
+   "letter": "F",
+   "title": "Ammunition Storage",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Ammunition Storage.pdf"
+  },
+  {
+   "id": 15647,
+   "letter": "G",
+   "title": "Laboratory Report",
+   "statement_pages": [
+    9,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Laboratory Report.pdf"
+  },
+  {
+   "id": 15648,
+   "letter": "H",
+   "title": "Network Topology in Hezardastan",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Network Topology in Hezardastan.pdf"
+  },
+  {
+   "id": 15649,
+   "letter": "I",
+   "title": "Windcatchers",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Windcatchers.pdf"
+  },
+  {
+   "id": 15650,
+   "letter": "J",
+   "title": "Magic with Cards",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Magic with Cards.pdf"
+  },
+  {
+   "id": 15651,
+   "letter": "K",
+   "title": "Iranian Hazfi Cup",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Iranian Hazfi Cup.pdf"
+  }
+ ]
+}

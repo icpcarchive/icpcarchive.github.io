@@ -1,0 +1,126 @@
+{
+ "id": 3618,
+ "name": "The 2009 ACM-ICPC Asia Tokyo Regional Contest",
+ "url": "https://qoj.ac/contest/3618",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3618&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19645,
+   "letter": "A",
+   "title": "Cubist Artwork",
+   "statement_pages": [
+    1,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Cubist Artwork.pdf"
+  },
+  {
+   "id": 19646,
+   "letter": "B",
+   "title": "Repeated Substitution with Sed",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Repeated Substitution with Sed.pdf"
+  },
+  {
+   "id": 19647,
+   "letter": "C",
+   "title": "Swimming Jam",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Swimming Jam.pdf"
+  },
+  {
+   "id": 19648,
+   "letter": "D",
+   "title": "Separate Points",
+   "statement_pages": [
+    9,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Separate Points.pdf"
+  },
+  {
+   "id": 19649,
+   "letter": "E",
+   "title": "Origami Through-Hole",
+   "statement_pages": [
+    12,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Origami Through-Hole.pdf"
+  },
+  {
+   "id": 19650,
+   "letter": "F",
+   "title": "Chemist's Math",
+   "statement_pages": [
+    16,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Chemist's Math.pdf"
+  },
+  {
+   "id": 19651,
+   "letter": "G",
+   "title": "Malfatti Circles",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Malfatti Circles.pdf"
+  },
+  {
+   "id": 19652,
+   "letter": "H",
+   "title": "Twenty Questions",
+   "statement_pages": [
+    21,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Twenty Questions.pdf"
+  },
+  {
+   "id": 19653,
+   "letter": "I",
+   "title": "Hobby on Rails",
+   "statement_pages": [
+    24,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Hobby on Rails.pdf"
+  },
+  {
+   "id": 19654,
+   "letter": "J",
+   "title": "Infected Land",
+   "statement_pages": [
+    29,
+    32
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Infected Land.pdf"
+  }
+ ]
+}

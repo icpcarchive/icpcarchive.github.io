@@ -1,0 +1,77 @@
+{
+ "id": 1834,
+ "name": "The 2019 ICPC Asia Xuzhou Regional Programming Contest",
+ "url": "https://qoj.ac/contest/1834",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Xuzhou",
+  "ICPC/Regionals/Asia East Continent/The 2019 ICPC Asia East Regionals"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 9701,
+   "letter": "A",
+   "title": "Cat"
+  },
+  {
+   "id": 9702,
+   "letter": "B",
+   "title": "Cats line up"
+  },
+  {
+   "id": 9703,
+   "letter": "C",
+   "title": "<3 numbers"
+  },
+  {
+   "id": 9704,
+   "letter": "D",
+   "title": "Polycut"
+  },
+  {
+   "id": 9705,
+   "letter": "E",
+   "title": "Multiply"
+  },
+  {
+   "id": 9706,
+   "letter": "F",
+   "title": "The Answer to the Ultimate Question of Life, The Universe, and Everything."
+  },
+  {
+   "id": 9707,
+   "letter": "G",
+   "title": "Factory"
+  },
+  {
+   "id": 9708,
+   "letter": "H",
+   "title": "Yuuki and a problem"
+  },
+  {
+   "id": 9709,
+   "letter": "I",
+   "title": "Interesting game"
+  },
+  {
+   "id": 9710,
+   "letter": "J",
+   "title": "Loli, Yen-Jen, and a graph problem"
+  },
+  {
+   "id": 9711,
+   "letter": "K",
+   "title": "K-rectangle"
+  },
+  {
+   "id": 9712,
+   "letter": "L",
+   "title": "Loli, Yen-Jen, and a cool problem"
+  },
+  {
+   "id": 9713,
+   "letter": "M",
+   "title": "Kill the tree"
+  }
+ ]
+}

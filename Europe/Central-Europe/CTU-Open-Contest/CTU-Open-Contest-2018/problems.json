@@ -1,0 +1,130 @@
+{
+ "id": 2697,
+ "name": "CTU Open Contest 2018",
+ "url": "https://qoj.ac/contest/2697",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2697&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2697&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 16191,
+   "letter": "A",
+   "title": "Die",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Die.pdf"
+  },
+  {
+   "id": 16192,
+   "letter": "B",
+   "title": "Escalators",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Escalators.pdf"
+  },
+  {
+   "id": 16193,
+   "letter": "C",
+   "title": "Moving Furniture",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Moving Furniture.pdf"
+  },
+  {
+   "id": 16194,
+   "letter": "D",
+   "title": "Split Game",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Split Game.pdf"
+  },
+  {
+   "id": 16195,
+   "letter": "E",
+   "title": "Horsemeet",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Horsemeet.pdf"
+  },
+  {
+   "id": 16196,
+   "letter": "F",
+   "title": "Lighting",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Lighting.pdf"
+  },
+  {
+   "id": 16197,
+   "letter": "G",
+   "title": "Locker Room",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Locker Room.pdf"
+  },
+  {
+   "id": 16198,
+   "letter": "H",
+   "title": "Numbers Generator",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Numbers Generator.pdf"
+  },
+  {
+   "id": 16199,
+   "letter": "I",
+   "title": "Rullete",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Rullete.pdf"
+  },
+  {
+   "id": 16200,
+   "letter": "J",
+   "title": "Security Guards",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Security Guards.pdf"
+  }
+ ]
+}

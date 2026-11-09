@@ -1,0 +1,163 @@
+{
+ "id": 144,
+ "name": "North America Invitational Programming Contest 2019",
+ "url": "https://qoj.ac/contest/144",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=144&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=144&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3001,
+   "letter": "A",
+   "title": "Piece of Cake",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Piece of Cake.pdf"
+  },
+  {
+   "id": 3002,
+   "letter": "B",
+   "title": "Busy Board",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Busy Board.pdf"
+  },
+  {
+   "id": 3003,
+   "letter": "C",
+   "title": "Cost of Living",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cost of Living.pdf"
+  },
+  {
+   "id": 3004,
+   "letter": "D",
+   "title": "It's a Mod, Mod, Mod, Mod World",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - It's a Mod, Mod, Mod, Mod World.pdf"
+  },
+  {
+   "id": 3005,
+   "letter": "E",
+   "title": "Monotony",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Monotony.pdf"
+  },
+  {
+   "id": 3006,
+   "letter": "F",
+   "title": "Heaps of Fun",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Heaps of Fun.pdf"
+  },
+  {
+   "id": 3007,
+   "letter": "G",
+   "title": "Intersecting Rectangles",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Intersecting Rectangles.pdf"
+  },
+  {
+   "id": 3008,
+   "letter": "H",
+   "title": "Rocket Powered Hovercraft",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Rocket Powered Hovercraft.pdf"
+  },
+  {
+   "id": 3009,
+   "letter": "I",
+   "title": "Cutting Strings",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Cutting Strings.pdf"
+  },
+  {
+   "id": 3010,
+   "letter": "J",
+   "title": "Subsequences in Substrings",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Subsequences in Substrings.pdf"
+  },
+  {
+   "id": 3011,
+   "letter": "K",
+   "title": "Knight of the Tarot Cards",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Knight of the Tarot Cards.pdf"
+  },
+  {
+   "id": 3012,
+   "letter": "L",
+   "title": "Planes, Trains, but not Automobiles",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Planes, Trains, but not Automobiles.pdf"
+  },
+  {
+   "id": 3013,
+   "letter": "M",
+   "title": "XOR Sequences",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - XOR Sequences.pdf"
+  }
+ ]
+}

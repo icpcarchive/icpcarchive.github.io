@@ -1,0 +1,137 @@
+{
+ "id": 1988,
+ "name": "The 2014 ACM-ICPC Asia Tokyo Regional Contest",
+ "url": "https://qoj.ac/contest/1988",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1988&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 10524,
+   "letter": "A",
+   "title": "Bit String Reordering",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Bit String Reordering.pdf"
+  },
+  {
+   "id": 10525,
+   "letter": "B",
+   "title": "Miscalculation",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Miscalculation.pdf"
+  },
+  {
+   "id": 10526,
+   "letter": "C",
+   "title": "Shopping",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Shopping.pdf"
+  },
+  {
+   "id": 10527,
+   "letter": "D",
+   "title": "Space Golf",
+   "statement_pages": [
+    7,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Space Golf.pdf"
+  },
+  {
+   "id": 10528,
+   "letter": "E",
+   "title": "Automotive Navigation",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Automotive Navigation.pdf"
+  },
+  {
+   "id": 10529,
+   "letter": "F",
+   "title": "There is No Alternative",
+   "statement_pages": [
+    13,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - There is No Alternative.pdf"
+  },
+  {
+   "id": 10530,
+   "letter": "G",
+   "title": "Flipping Parentheses",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Flipping Parentheses.pdf"
+  },
+  {
+   "id": 10531,
+   "letter": "H",
+   "title": "Cornering at Poles",
+   "statement_pages": [
+    18,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Cornering at Poles.pdf"
+  },
+  {
+   "id": 10532,
+   "letter": "I",
+   "title": "Sweet War",
+   "statement_pages": [
+    22,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Sweet War.pdf"
+  },
+  {
+   "id": 10533,
+   "letter": "J",
+   "title": "Exhibition",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Exhibition.pdf"
+  },
+  {
+   "id": 10534,
+   "letter": "K",
+   "title": "$L_{\\infty}$ Jumps",
+   "statement_pages": [
+    27,
+    29
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - $L_{_infty}$ Jumps.pdf"
+  }
+ ]
+}

@@ -1,0 +1,164 @@
+{
+ "id": 2567,
+ "name": "The 2025 ICPC Asia Chengdu Regional Contest",
+ "url": "https://qoj.ac/contest/2567",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Chengdu",
+  "ICPC/Regionals/Asia East Continent/The 2025 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2567&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2567&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 14706,
+   "letter": "A",
+   "title": "A Lot of Paintings",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - A Lot of Paintings.pdf"
+  },
+  {
+   "id": 14707,
+   "letter": "B",
+   "title": "Blood Memories",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Blood Memories.pdf"
+  },
+  {
+   "id": 14708,
+   "letter": "C",
+   "title": "Crossing River",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Crossing River.pdf"
+  },
+  {
+   "id": 14709,
+   "letter": "D",
+   "title": "Deductive Snooker Scoring",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Deductive Snooker Scoring.pdf"
+  },
+  {
+   "id": 14710,
+   "letter": "E",
+   "title": "Escaping from Trap",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Escaping from Trap.pdf"
+  },
+  {
+   "id": 14711,
+   "letter": "F",
+   "title": "Following Arrows",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Following Arrows.pdf"
+  },
+  {
+   "id": 14712,
+   "letter": "G",
+   "title": "GCD of Subsets",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - GCD of Subsets.pdf"
+  },
+  {
+   "id": 14713,
+   "letter": "H",
+   "title": "Heuristic Knapsack",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Heuristic Knapsack.pdf"
+  },
+  {
+   "id": 14714,
+   "letter": "I",
+   "title": "Inside Triangle",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Inside Triangle.pdf"
+  },
+  {
+   "id": 14715,
+   "letter": "J",
+   "title": "Judging Papers",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Judging Papers.pdf"
+  },
+  {
+   "id": 14716,
+   "letter": "K",
+   "title": "K-Coverage",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - K-Coverage.pdf"
+  },
+  {
+   "id": 14717,
+   "letter": "L",
+   "title": "Label Matching",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Label Matching.pdf"
+  },
+  {
+   "id": 14718,
+   "letter": "M",
+   "title": "Meeting for Meals",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Meeting for Meals.pdf"
+  }
+ ]
+}

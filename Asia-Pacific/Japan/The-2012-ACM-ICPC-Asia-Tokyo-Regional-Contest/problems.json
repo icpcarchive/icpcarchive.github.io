@@ -1,0 +1,126 @@
+{
+ "id": 3395,
+ "name": "The 2012 ACM-ICPC Asia Tokyo Regional Contest",
+ "url": "https://qoj.ac/contest/3395",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3395&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 17332,
+   "letter": "A",
+   "title": "Ginkgo Numbers",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Ginkgo Numbers.pdf"
+  },
+  {
+   "id": 17333,
+   "letter": "B",
+   "title": "Stylish",
+   "statement_pages": [
+    3,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Stylish.pdf"
+  },
+  {
+   "id": 17334,
+   "letter": "C",
+   "title": "One-Dimensional Cellular Automaton",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - One-Dimensional Cellular Automaton.pdf"
+  },
+  {
+   "id": 17335,
+   "letter": "D",
+   "title": "Find the Outlier",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Find the Outlier.pdf"
+  },
+  {
+   "id": 17336,
+   "letter": "E",
+   "title": "Sliding Block Puzzle",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Sliding Block Puzzle.pdf"
+  },
+  {
+   "id": 17337,
+   "letter": "F",
+   "title": "Never Wait for Weights",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Never Wait for Weights.pdf"
+  },
+  {
+   "id": 17338,
+   "letter": "G",
+   "title": "Let There Be Light",
+   "statement_pages": [
+    15,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Let There Be Light.pdf"
+  },
+  {
+   "id": 17339,
+   "letter": "H",
+   "title": "Company Organization",
+   "statement_pages": [
+    19,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Company Organization.pdf"
+  },
+  {
+   "id": 17340,
+   "letter": "I",
+   "title": "Beautiful Spacing",
+   "statement_pages": [
+    22,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Beautiful Spacing.pdf"
+  },
+  {
+   "id": 17341,
+   "letter": "J",
+   "title": "Cubic Colonies",
+   "statement_pages": [
+    25,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Cubic Colonies.pdf"
+  }
+ ]
+}

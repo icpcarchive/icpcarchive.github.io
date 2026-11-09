@@ -1,0 +1,175 @@
+{
+ "id": 969,
+ "name": "The 2021 ICPC Polish Collegiate Programming Contest (AMPPZ 2021)",
+ "url": "https://qoj.ac/contest/969",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/Polish Collegiate Programming Contest (AMPPZ)"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=969&r=0"
+  },
+  {
+   "text": "Statements (pl)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=969&r=1"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=969&r=2"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=969&r=3"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=969&r=4"
+  }
+ ],
+ "problems": [
+  {
+   "id": 4423,
+   "letter": "A",
+   "title": "AMPPZ in the times of disease",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - AMPPZ in the times of disease.pdf"
+  },
+  {
+   "id": 4424,
+   "letter": "B",
+   "title": "Babushka and her pierogi",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Babushka and her pierogi.pdf"
+  },
+  {
+   "id": 4425,
+   "letter": "C",
+   "title": "Cake",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cake.pdf"
+  },
+  {
+   "id": 4426,
+   "letter": "D",
+   "title": "Divided Mechanism",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Divided Mechanism.pdf"
+  },
+  {
+   "id": 4427,
+   "letter": "E",
+   "title": "Epidemic",
+   "statement_pages": [
+    9,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Epidemic.pdf"
+  },
+  {
+   "id": 4428,
+   "letter": "F",
+   "title": "Fence",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fence.pdf"
+  },
+  {
+   "id": 4429,
+   "letter": "G",
+   "title": "Gebyte's Grind",
+   "statement_pages": [
+    15,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gebyte's Grind.pdf"
+  },
+  {
+   "id": 4430,
+   "letter": "H",
+   "title": "Hidden Password",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hidden Password.pdf"
+  },
+  {
+   "id": 4431,
+   "letter": "I",
+   "title": "Interesting Numbers",
+   "statement_pages": [
+    19,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Interesting Numbers.pdf"
+  },
+  {
+   "id": 4432,
+   "letter": "J",
+   "title": "Jungle Trail",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jungle Trail.pdf"
+  },
+  {
+   "id": 4433,
+   "letter": "K",
+   "title": "Kitten and Roomba",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kitten and Roomba.pdf"
+  },
+  {
+   "id": 4434,
+   "letter": "L",
+   "title": "Lemurs",
+   "statement_pages": [
+    24,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lemurs.pdf"
+  },
+  {
+   "id": 4435,
+   "letter": "M",
+   "title": "Median",
+   "statement_pages": [
+    26,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Median.pdf"
+  }
+ ]
+}

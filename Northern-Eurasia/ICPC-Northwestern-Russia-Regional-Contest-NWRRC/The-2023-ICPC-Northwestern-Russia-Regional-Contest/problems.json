@@ -1,0 +1,164 @@
+{
+ "id": 1426,
+ "name": "The 2023 ICPC Northwestern Russia Regional Contest",
+ "url": "https://qoj.ac/contest/1426",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Northwestern Russia Regional Contest (NWRRC) / Northern Subregional",
+  "ICPC/Regionals/Northern Eurasia/Azerbaijan Regional Contest / Azerbaijan Subregional",
+  "ICPC/Regionals/Northern Eurasia/Ural Regional Contest / Ural Subregional",
+  "ICPC/Regionals/Northern Eurasia/Taurida Regional Contest / Taurida Subregional",
+  "ICPC/Regionals/Northern Eurasia/Armenia Regional Contest / Armenia Subregional",
+  "ICPC/Regionals/Northern Eurasia/Kazakhstan Regional Contest / Kazakhstan Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1426&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7796,
+   "letter": "A",
+   "title": "Axis-Aligned Area",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Axis-Aligned Area.pdf"
+  },
+  {
+   "id": 7797,
+   "letter": "B",
+   "title": "Based Zeros",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Based Zeros.pdf"
+  },
+  {
+   "id": 7798,
+   "letter": "C",
+   "title": "Colorful Village",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Colorful Village.pdf"
+  },
+  {
+   "id": 7799,
+   "letter": "D",
+   "title": "Divisibility Trick",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Divisibility Trick.pdf"
+  },
+  {
+   "id": 7800,
+   "letter": "E",
+   "title": "Every Queen",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Every Queen.pdf"
+  },
+  {
+   "id": 7801,
+   "letter": "F",
+   "title": "First Solved, Last Coded",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - First Solved, Last Coded.pdf"
+  },
+  {
+   "id": 7802,
+   "letter": "G",
+   "title": "Game of Nim",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game of Nim.pdf"
+  },
+  {
+   "id": 7803,
+   "letter": "H",
+   "title": "H-Shaped Figures",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - H-Shaped Figures.pdf"
+  },
+  {
+   "id": 7804,
+   "letter": "I",
+   "title": "Intersegment Activation",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Intersegment Activation.pdf"
+  },
+  {
+   "id": 7805,
+   "letter": "J",
+   "title": "Jumping Frogs",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jumping Frogs.pdf"
+  },
+  {
+   "id": 7806,
+   "letter": "K",
+   "title": "Kitchen Timer",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kitchen Timer.pdf"
+  },
+  {
+   "id": 7807,
+   "letter": "L",
+   "title": "Loops",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Loops.pdf"
+  },
+  {
+   "id": 7808,
+   "letter": "M",
+   "title": "Missing Vowels",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Missing Vowels.pdf"
+  }
+ ]
+}

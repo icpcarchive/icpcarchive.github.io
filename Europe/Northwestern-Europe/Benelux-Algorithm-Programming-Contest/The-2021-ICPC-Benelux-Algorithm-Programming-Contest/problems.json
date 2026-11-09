@@ -1,0 +1,157 @@
+{
+ "id": 805,
+ "name": "The 2021 ICPC Benelux Algorithm Programming Contest",
+ "url": "https://qoj.ac/contest/805",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest",
+  "ICPC/Regionals/Europe/Northwestern Europe/UK & Ireland Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=805&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=805&r=1"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=805&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2280,
+   "letter": "A",
+   "title": "Arm Coordination",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Arm Coordination.pdf"
+  },
+  {
+   "id": 2281,
+   "letter": "B",
+   "title": "BnPC",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - BnPC.pdf"
+  },
+  {
+   "id": 2282,
+   "letter": "C",
+   "title": "Cangaroo",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cangaroo.pdf"
+  },
+  {
+   "id": 2283,
+   "letter": "D",
+   "title": "Decelerating Jump",
+   "statement_pages": [
+    9,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Decelerating Jump.pdf"
+  },
+  {
+   "id": 2284,
+   "letter": "E",
+   "title": "Evolutionary Excerpt",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en_2.pdf",
+   "statement_file": "problems/E - Evolutionary Excerpt.pdf"
+  },
+  {
+   "id": 2285,
+   "letter": "F",
+   "title": "Fair Play",
+   "statement_pages": [
+    13,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fair Play.pdf"
+  },
+  {
+   "id": 2286,
+   "letter": "G",
+   "title": "Gyrating Glyphs",
+   "statement_pages": [
+    1,
+    27
+   ],
+   "statement_source": "statements_en_2.pdf",
+   "statement_file": "problems/G - Gyrating Glyphs.pdf"
+  },
+  {
+   "id": 2287,
+   "letter": "H",
+   "title": "Hamiltooonian Hike",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hamiltooonian Hike.pdf"
+  },
+  {
+   "id": 2288,
+   "letter": "I",
+   "title": "Implementation Irregularities",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Implementation Irregularities.pdf"
+  },
+  {
+   "id": 2289,
+   "letter": "J",
+   "title": "Jail or Joyride",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jail or Joyride.pdf"
+  },
+  {
+   "id": 2290,
+   "letter": "K",
+   "title": "Kinking Cables",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kinking Cables.pdf"
+  },
+  {
+   "id": 2291,
+   "letter": "L",
+   "title": "Lopsided Lineup",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lopsided Lineup.pdf"
+  }
+ ]
+}

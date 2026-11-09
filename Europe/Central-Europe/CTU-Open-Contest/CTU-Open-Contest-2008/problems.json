@@ -1,0 +1,115 @@
+{
+ "id": 3675,
+ "name": "CTU Open Contest 2008",
+ "url": "https://qoj.ac/contest/3675",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3675&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19449,
+   "letter": "A",
+   "title": "Alea iacta est",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Alea iacta est.pdf"
+  },
+  {
+   "id": 19450,
+   "letter": "B",
+   "title": "On-Line Banking",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - On-Line Banking.pdf"
+  },
+  {
+   "id": 19451,
+   "letter": "C",
+   "title": "International Collegiate Programming Contest",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - International Collegiate Programming Contest.pdf"
+  },
+  {
+   "id": 19452,
+   "letter": "D",
+   "title": "Careful Declaration",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Careful Declaration.pdf"
+  },
+  {
+   "id": 19453,
+   "letter": "E",
+   "title": "Stock Exchange",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Stock Exchange.pdf"
+  },
+  {
+   "id": 19454,
+   "letter": "F",
+   "title": "Wooden Fence",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Wooden Fence.pdf"
+  },
+  {
+   "id": 19455,
+   "letter": "G",
+   "title": "Safe Gambling",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Safe Gambling.pdf"
+  },
+  {
+   "id": 19456,
+   "letter": "H",
+   "title": "Government Help",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Government Help.pdf"
+  },
+  {
+   "id": 19457,
+   "letter": "I",
+   "title": "Tree Insertions",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Tree Insertions.pdf"
+  }
+ ]
+}

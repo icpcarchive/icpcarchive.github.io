@@ -1,0 +1,152 @@
+{
+ "id": 2175,
+ "name": "The 2015 ACM-ICPC Northern Subregional Contest",
+ "url": "https://qoj.ac/contest/2175",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Northwestern Russia Regional Contest (NWRRC) / Northern Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2175&r=0"
+  },
+  {
+   "text": "Tutorials (ru)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2175&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 12735,
+   "letter": "A",
+   "title": "Alex Origami Squares",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Alex Origami Squares.pdf"
+  },
+  {
+   "id": 12736,
+   "letter": "B",
+   "title": "Black and White",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Black and White.pdf"
+  },
+  {
+   "id": 12737,
+   "letter": "C",
+   "title": "Concatenation",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Concatenation.pdf"
+  },
+  {
+   "id": 12738,
+   "letter": "D",
+   "title": "Distribution in Metagonia",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Distribution in Metagonia.pdf"
+  },
+  {
+   "id": 12739,
+   "letter": "E",
+   "title": "Easy Arithmetic",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Easy Arithmetic.pdf"
+  },
+  {
+   "id": 12740,
+   "letter": "F",
+   "title": "Fygon",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fygon.pdf"
+  },
+  {
+   "id": 12741,
+   "letter": "G",
+   "title": "Graph",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Graph.pdf"
+  },
+  {
+   "id": 12742,
+   "letter": "H",
+   "title": "Hash Code Hacker",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hash Code Hacker.pdf"
+  },
+  {
+   "id": 12743,
+   "letter": "I",
+   "title": "Insider's Information",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Insider's Information.pdf"
+  },
+  {
+   "id": 12744,
+   "letter": "J",
+   "title": "Journey to the “The World's Start”",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Journey to the “The World's Start”.pdf"
+  },
+  {
+   "id": 12745,
+   "letter": "K",
+   "title": "Kingdom Trip",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kingdom Trip.pdf"
+  },
+  {
+   "id": 12746,
+   "letter": "L",
+   "title": "Lucky Chances",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lucky Chances.pdf"
+  }
+ ]
+}

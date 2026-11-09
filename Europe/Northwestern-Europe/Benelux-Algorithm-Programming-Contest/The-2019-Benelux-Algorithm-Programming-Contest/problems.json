@@ -1,0 +1,152 @@
+{
+ "id": 475,
+ "name": "The 2019 Benelux Algorithm Programming Contest",
+ "url": "https://qoj.ac/contest/475",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=475&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=475&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 6253,
+   "letter": "A",
+   "title": "Appeal to the Audience",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Appeal to the Audience.pdf"
+  },
+  {
+   "id": 6254,
+   "letter": "B",
+   "title": "Breaking Branches",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Breaking Branches.pdf"
+  },
+  {
+   "id": 6255,
+   "letter": "C",
+   "title": "Conveyor Belts",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Conveyor Belts.pdf"
+  },
+  {
+   "id": 6256,
+   "letter": "D",
+   "title": "Deck Randomisation",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Deck Randomisation.pdf"
+  },
+  {
+   "id": 6257,
+   "letter": "E",
+   "title": "Efficient Exchange",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Efficient Exchange.pdf"
+  },
+  {
+   "id": 6258,
+   "letter": "F",
+   "title": "Find my Family",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Find my Family.pdf"
+  },
+  {
+   "id": 6259,
+   "letter": "G",
+   "title": "Gluttonous Goop",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gluttonous Goop.pdf"
+  },
+  {
+   "id": 6260,
+   "letter": "H",
+   "title": "Historic Exhibition",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Historic Exhibition.pdf"
+  },
+  {
+   "id": 6261,
+   "letter": "I",
+   "title": "Inquiry II",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Inquiry II.pdf"
+  },
+  {
+   "id": 6262,
+   "letter": "J",
+   "title": "Jazz it Up!",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jazz it Up!.pdf"
+  },
+  {
+   "id": 6263,
+   "letter": "K",
+   "title": "Keep Him Inside",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Keep Him Inside.pdf"
+  },
+  {
+   "id": 6264,
+   "letter": "L",
+   "title": "Lucky Draw",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Lucky Draw.pdf"
+  }
+ ]
+}

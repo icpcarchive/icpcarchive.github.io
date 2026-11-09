@@ -1,0 +1,155 @@
+{
+ "id": 2755,
+ "name": "The 2025 ICPC Asia Jakarta Onsite Regional Contest",
+ "url": "https://qoj.ac/contest/2755",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Indonesia"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2755&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15784,
+   "letter": "A",
+   "title": "A. Nihilation",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - A. Nihilation.pdf"
+  },
+  {
+   "id": 15785,
+   "letter": "B",
+   "title": "Burning Block",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Burning Block.pdf"
+  },
+  {
+   "id": 15786,
+   "letter": "C",
+   "title": "Binary Grid",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Binary Grid.pdf"
+  },
+  {
+   "id": 15787,
+   "letter": "D",
+   "title": "Count DFS Graph",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Count DFS Graph.pdf"
+  },
+  {
+   "id": 15788,
+   "letter": "E",
+   "title": "Mugen E",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Mugen E.pdf"
+  },
+  {
+   "id": 15789,
+   "letter": "F",
+   "title": "Two Sets",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Two Sets.pdf"
+  },
+  {
+   "id": 15790,
+   "letter": "G",
+   "title": "Grid Game 2×2",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Grid Game 2×2.pdf"
+  },
+  {
+   "id": 15791,
+   "letter": "H",
+   "title": "Maximeter",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Maximeter.pdf"
+  },
+  {
+   "id": 15792,
+   "letter": "I",
+   "title": "International Olympiad in ICPC",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - International Olympiad in ICPC.pdf"
+  },
+  {
+   "id": 15793,
+   "letter": "J",
+   "title": "AND and/or OR",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - AND and_or OR.pdf"
+  },
+  {
+   "id": 15794,
+   "letter": "K",
+   "title": "Travelling Taro Trains",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Travelling Taro Trains.pdf"
+  },
+  {
+   "id": 15795,
+   "letter": "L",
+   "title": "Down Right Chips",
+   "statement_pages": [
+    23,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Down Right Chips.pdf"
+  },
+  {
+   "id": 15796,
+   "letter": "M",
+   "title": "Scrambled Scrabble",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - Scrambled Scrabble.pdf"
+  }
+ ]
+}

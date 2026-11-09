@@ -1,0 +1,164 @@
+{
+ "id": 1871,
+ "name": "The 2024 ICPC Asia Kunming Regional Contest",
+ "url": "https://qoj.ac/contest/1871",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Kunming",
+  "ICPC/Regionals/Asia East Continent/The 2024 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1871&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1871&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9862,
+   "letter": "A",
+   "title": "Antivirus",
+   "statement_pages": [
+    2,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Antivirus.pdf"
+  },
+  {
+   "id": 9863,
+   "letter": "B",
+   "title": "Brackets",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Brackets.pdf"
+  },
+  {
+   "id": 9864,
+   "letter": "C",
+   "title": "Coin",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Coin.pdf"
+  },
+  {
+   "id": 9865,
+   "letter": "D",
+   "title": "Dolls",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dolls.pdf"
+  },
+  {
+   "id": 9866,
+   "letter": "E",
+   "title": "Extracting Weights",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Extracting Weights.pdf"
+  },
+  {
+   "id": 9867,
+   "letter": "F",
+   "title": "Flowers",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Flowers.pdf"
+  },
+  {
+   "id": 9868,
+   "letter": "G",
+   "title": "GCD",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - GCD.pdf"
+  },
+  {
+   "id": 9869,
+   "letter": "H",
+   "title": "Horizon Scanning",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Horizon Scanning.pdf"
+  },
+  {
+   "id": 9870,
+   "letter": "I",
+   "title": "Items",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Items.pdf"
+  },
+  {
+   "id": 9871,
+   "letter": "J",
+   "title": "Just another Sorting Problem",
+   "statement_pages": [
+    19,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Just another Sorting Problem.pdf"
+  },
+  {
+   "id": 9872,
+   "letter": "K",
+   "title": "Key Recovery",
+   "statement_pages": [
+    20,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Key Recovery.pdf"
+  },
+  {
+   "id": 9873,
+   "letter": "L",
+   "title": "Last Chance: Threads of Despair",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Last Chance_ Threads of Despair.pdf"
+  },
+  {
+   "id": 9874,
+   "letter": "M",
+   "title": "Matrix Construction",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Matrix Construction.pdf"
+  }
+ ]
+}

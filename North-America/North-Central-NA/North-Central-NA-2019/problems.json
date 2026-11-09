@@ -1,0 +1,137 @@
+{
+ "id": 436,
+ "name": "North Central NA 2019",
+ "url": "https://qoj.ac/contest/436",
+ "categories": [
+  "ICPC/Regionals/North America/North Central NA"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=436&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3594,
+   "letter": "A",
+   "title": "Weird Flecks, But OK",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Weird Flecks, But OK.pdf"
+  },
+  {
+   "id": 3595,
+   "letter": "B",
+   "title": "Code Names",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Code Names.pdf"
+  },
+  {
+   "id": 3596,
+   "letter": "C",
+   "title": "New Maths",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - New Maths.pdf"
+  },
+  {
+   "id": 3597,
+   "letter": "D",
+   "title": "Some Sum",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Some Sum.pdf"
+  },
+  {
+   "id": 3598,
+   "letter": "E",
+   "title": "Early Orders",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Early Orders.pdf"
+  },
+  {
+   "id": 3599,
+   "letter": "F",
+   "title": "Pulling Their Weight",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Pulling Their Weight.pdf"
+  },
+  {
+   "id": 3600,
+   "letter": "G",
+   "title": "Birthday Paradox",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Birthday Paradox.pdf"
+  },
+  {
+   "id": 3601,
+   "letter": "H",
+   "title": "On Average They're Purple",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - On Average They're Purple.pdf"
+  },
+  {
+   "id": 3602,
+   "letter": "I",
+   "title": "Full Depth Morning Show",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Full Depth Morning Show.pdf"
+  },
+  {
+   "id": 3603,
+   "letter": "J",
+   "title": "This Ain't Your Grandpa's Checkerboard",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - This Ain't Your Grandpa's Checkerboard.pdf"
+  },
+  {
+   "id": 3604,
+   "letter": "K",
+   "title": "Solar Energy",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Solar Energy.pdf"
+  }
+ ]
+}

@@ -1,0 +1,145 @@
+{
+ "id": 1964,
+ "name": "The 2025 ICPC Europe Championship",
+ "url": "https://qoj.ac/contest/1964",
+ "categories": [
+  "ICPC/Regionals/Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1964&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1964&r=1"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1964&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 10310,
+   "letter": "A",
+   "title": "Condorcet Elections",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Condorcet Elections.pdf"
+  },
+  {
+   "id": 10311,
+   "letter": "B",
+   "title": "Urban Planning",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Urban Planning.pdf"
+  },
+  {
+   "id": 10312,
+   "letter": "C",
+   "title": "Ads",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Ads.pdf"
+  },
+  {
+   "id": 10313,
+   "letter": "D",
+   "title": "Morse Code",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Morse Code.pdf"
+  },
+  {
+   "id": 10314,
+   "letter": "E",
+   "title": "Porto Vs. Benfica",
+   "statement_pages": [
+    11,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Porto Vs. Benfica.pdf"
+  },
+  {
+   "id": 10315,
+   "letter": "F",
+   "title": "Mascot Naming",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Mascot Naming.pdf"
+  },
+  {
+   "id": 10316,
+   "letter": "G",
+   "title": "A Very Long Hike",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - A Very Long Hike.pdf"
+  },
+  {
+   "id": 10317,
+   "letter": "H",
+   "title": "Statues",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Statues.pdf"
+  },
+  {
+   "id": 10318,
+   "letter": "I",
+   "title": "Pinball",
+   "statement_pages": [
+    21,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Pinball.pdf"
+  },
+  {
+   "id": 10319,
+   "letter": "J",
+   "title": "The Ultimate Wine Tasting Event",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - The Ultimate Wine Tasting Event.pdf"
+  },
+  {
+   "id": 10320,
+   "letter": "K",
+   "title": "Amusement Park Rides",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Amusement Park Rides.pdf"
+  }
+ ]
+}

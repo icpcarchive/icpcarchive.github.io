@@ -1,0 +1,163 @@
+{
+ "id": 3518,
+ "name": "ICPC North America Championship 2026",
+ "url": "https://qoj.ac/contest/3518",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3518&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3518&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 17319,
+   "letter": "A",
+   "title": "Acorn Quarrels",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Acorn Quarrels.pdf"
+  },
+  {
+   "id": 17320,
+   "letter": "B",
+   "title": "Boss Rush",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Boss Rush.pdf"
+  },
+  {
+   "id": 17321,
+   "letter": "C",
+   "title": "Cable Pruning",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cable Pruning.pdf"
+  },
+  {
+   "id": 17322,
+   "letter": "D",
+   "title": "Draw Your Deck",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Draw Your Deck.pdf"
+  },
+  {
+   "id": 17323,
+   "letter": "E",
+   "title": "Evil Judges",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Evil Judges.pdf"
+  },
+  {
+   "id": 17324,
+   "letter": "F",
+   "title": "Friend Meetup",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Friend Meetup.pdf"
+  },
+  {
+   "id": 17325,
+   "letter": "G",
+   "title": "Gemstone Dowsing",
+   "statement_pages": [
+    13,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gemstone Dowsing.pdf"
+  },
+  {
+   "id": 17326,
+   "letter": "H",
+   "title": "Heist of the Century",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Heist of the Century.pdf"
+  },
+  {
+   "id": 17327,
+   "letter": "I",
+   "title": "I Don't Miss Pennies",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - I Don't Miss Pennies.pdf"
+  },
+  {
+   "id": 17328,
+   "letter": "J",
+   "title": "Jelly Fusion",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jelly Fusion.pdf"
+  },
+  {
+   "id": 17329,
+   "letter": "K",
+   "title": "Kindergarten Revisited",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kindergarten Revisited.pdf"
+  },
+  {
+   "id": 17330,
+   "letter": "L",
+   "title": "Leaking Santa's Secrets",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Leaking Santa's Secrets.pdf"
+  },
+  {
+   "id": 17331,
+   "letter": "M",
+   "title": "Maki Conveyor Belt",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Maki Conveyor Belt.pdf"
+  }
+ ]
+}

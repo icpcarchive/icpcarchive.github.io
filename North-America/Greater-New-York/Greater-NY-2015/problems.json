@@ -1,0 +1,74 @@
+{
+ "id": 53,
+ "name": "Greater NY 2015",
+ "url": "https://qoj.ac/contest/53",
+ "categories": [
+  "ICPC/Regionals/North America/Greater New York"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 5626,
+   "letter": "A",
+   "title": "Sum Kind of Problem",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Sum Kind of Problem.pdf"
+  },
+  {
+   "id": 5627,
+   "letter": "B",
+   "title": "Running Steps",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Running Steps.pdf"
+  },
+  {
+   "id": 5628,
+   "letter": "C",
+   "title": "Immortal Porpoises",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Immortal Porpoises.pdf"
+  },
+  {
+   "id": 5629,
+   "letter": "D",
+   "title": "Farey Sequence Length",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Farey Sequence Length.pdf"
+  },
+  {
+   "id": 5630,
+   "letter": "E",
+   "title": "A Rational Sequence",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - A Rational Sequence.pdf"
+  },
+  {
+   "id": 5631,
+   "letter": "F",
+   "title": "Robots",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Robots.pdf"
+  },
+  {
+   "id": 5632,
+   "letter": "G",
+   "title": "Composition",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Composition.pdf"
+  },
+  {
+   "id": 5633,
+   "letter": "H",
+   "title": "Brocard Point of a Triangle",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Brocard Point of a Triangle.pdf"
+  },
+  {
+   "id": 5634,
+   "letter": "I",
+   "title": "RATS",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - RATS.pdf"
+  }
+ ]
+}

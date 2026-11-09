@@ -1,0 +1,137 @@
+{
+ "id": 438,
+ "name": "Southern California 2020",
+ "url": "https://qoj.ac/contest/438",
+ "categories": [
+  "ICPC/Regionals/North America/Southern California"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=438&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3252,
+   "letter": "A",
+   "title": "ICPC Record Matching",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - ICPC Record Matching.pdf"
+  },
+  {
+   "id": 3253,
+   "letter": "B",
+   "title": "Ride-Hailing",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Ride-Hailing.pdf"
+  },
+  {
+   "id": 3254,
+   "letter": "C",
+   "title": "Curve Speed",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Curve Speed.pdf"
+  },
+  {
+   "id": 3255,
+   "letter": "D",
+   "title": "LogDB",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - LogDB.pdf"
+  },
+  {
+   "id": 3256,
+   "letter": "E",
+   "title": "Digital Speedometer",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Digital Speedometer.pdf"
+  },
+  {
+   "id": 3257,
+   "letter": "F",
+   "title": "Ada Loveslaces",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Ada Loveslaces.pdf"
+  },
+  {
+   "id": 3258,
+   "letter": "G",
+   "title": "Codenames",
+   "statement_pages": [
+    14,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Codenames.pdf"
+  },
+  {
+   "id": 3259,
+   "letter": "H",
+   "title": "Substring Characters",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Substring Characters.pdf"
+  },
+  {
+   "id": 3260,
+   "letter": "I",
+   "title": "Redundant Binary Notation",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Redundant Binary Notation.pdf"
+  },
+  {
+   "id": 3261,
+   "letter": "J",
+   "title": "Staggering to the Finish",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Staggering to the Finish.pdf"
+  },
+  {
+   "id": 3262,
+   "letter": "K",
+   "title": "Safest Taxi",
+   "statement_pages": [
+    22,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Safest Taxi.pdf"
+  }
+ ]
+}

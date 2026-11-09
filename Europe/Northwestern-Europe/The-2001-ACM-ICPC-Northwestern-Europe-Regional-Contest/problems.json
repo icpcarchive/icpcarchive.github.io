@@ -1,0 +1,104 @@
+{
+ "id": 3625,
+ "name": "The 2001 ACM ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/3625",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3625&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19703,
+   "letter": "A",
+   "title": "Area",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Area.pdf"
+  },
+  {
+   "id": 19704,
+   "letter": "B",
+   "title": "Ambiguous Dates",
+   "statement_pages": [
+    5,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Ambiguous Dates.pdf"
+  },
+  {
+   "id": 19705,
+   "letter": "C",
+   "title": "Cube",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cube.pdf"
+  },
+  {
+   "id": 19706,
+   "letter": "D",
+   "title": "Enigma",
+   "statement_pages": [
+    11,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Enigma.pdf"
+  },
+  {
+   "id": 19707,
+   "letter": "E",
+   "title": "Gridland",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Gridland.pdf"
+  },
+  {
+   "id": 19708,
+   "letter": "F",
+   "title": "T9",
+   "statement_pages": [
+    16,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - T9.pdf"
+  },
+  {
+   "id": 19709,
+   "letter": "G",
+   "title": "Number Game",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Number Game.pdf"
+  },
+  {
+   "id": 19710,
+   "letter": "H",
+   "title": "Signal Box",
+   "statement_pages": [
+    21,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Signal Box.pdf"
+  }
+ ]
+}

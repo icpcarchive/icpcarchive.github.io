@@ -1,0 +1,163 @@
+{
+ "id": 1992,
+ "name": "The 2024 ICPC Asia Jakarta Onsite Regional Contest",
+ "url": "https://qoj.ac/contest/1992",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Indonesia"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1992&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1992&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 10571,
+   "letter": "A",
+   "title": "Scrambled Scrabble",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Scrambled Scrabble.pdf"
+  },
+  {
+   "id": 10572,
+   "letter": "B",
+   "title": "ICPC Square",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - ICPC Square.pdf"
+  },
+  {
+   "id": 10573,
+   "letter": "C",
+   "title": "Saraga",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Saraga.pdf"
+  },
+  {
+   "id": 10574,
+   "letter": "D",
+   "title": "Aquatic Dragon",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Aquatic Dragon.pdf"
+  },
+  {
+   "id": 10575,
+   "letter": "E",
+   "title": "Narrower Passageway",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Narrower Passageway.pdf"
+  },
+  {
+   "id": 10576,
+   "letter": "F",
+   "title": "Grid Game 3-angle",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Grid Game 3-angle.pdf"
+  },
+  {
+   "id": 10577,
+   "letter": "G",
+   "title": "X Aura",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - X Aura.pdf"
+  },
+  {
+   "id": 10578,
+   "letter": "H",
+   "title": "Missing Separators",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Missing Separators.pdf"
+  },
+  {
+   "id": 10579,
+   "letter": "I",
+   "title": "Microwavable Subsequence",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Microwavable Subsequence.pdf"
+  },
+  {
+   "id": 10580,
+   "letter": "J",
+   "title": "Xorderable Array",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Xorderable Array.pdf"
+  },
+  {
+   "id": 10581,
+   "letter": "K",
+   "title": "GCDDCG",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - GCDDCG.pdf"
+  },
+  {
+   "id": 10582,
+   "letter": "L",
+   "title": "Buggy DFS",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Buggy DFS.pdf"
+  },
+  {
+   "id": 10583,
+   "letter": "M",
+   "title": "Mirror Maze",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mirror Maze.pdf"
+  }
+ ]
+}

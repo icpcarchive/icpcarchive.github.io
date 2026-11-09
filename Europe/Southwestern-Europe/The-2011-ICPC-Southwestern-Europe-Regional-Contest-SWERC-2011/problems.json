@@ -1,0 +1,130 @@
+{
+ "id": 3694,
+ "name": "The 2011 ICPC Southwestern Europe Regional Contest (SWERC 2011)",
+ "url": "https://qoj.ac/contest/3694",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3694&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3694&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19898,
+   "letter": "A",
+   "title": "Alphabet Soup",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Alphabet Soup.pdf"
+  },
+  {
+   "id": 19899,
+   "letter": "B",
+   "title": "Coin Collecting",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Coin Collecting.pdf"
+  },
+  {
+   "id": 19900,
+   "letter": "C",
+   "title": "Cybercrime Donut Investigation",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cybercrime Donut Investigation.pdf"
+  },
+  {
+   "id": 19901,
+   "letter": "D",
+   "title": "Distributing Ballot Boxes",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Distributing Ballot Boxes.pdf"
+  },
+  {
+   "id": 19902,
+   "letter": "E",
+   "title": "Game, Set and Match",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Game, Set and Match.pdf"
+  },
+  {
+   "id": 19903,
+   "letter": "F",
+   "title": "Guess the Numbers",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Guess the Numbers.pdf"
+  },
+  {
+   "id": 19904,
+   "letter": "G",
+   "title": "Non-negative Partial Sums",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Non-negative Partial Sums.pdf"
+  },
+  {
+   "id": 19905,
+   "letter": "H",
+   "title": "Peer Review",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Peer Review.pdf"
+  },
+  {
+   "id": 19906,
+   "letter": "I",
+   "title": "Regular Convex Polygon",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Regular Convex Polygon.pdf"
+  },
+  {
+   "id": 19907,
+   "letter": "J",
+   "title": "Remoteland",
+   "statement_pages": [
+    23,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Remoteland.pdf"
+  }
+ ]
+}

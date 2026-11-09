@@ -1,0 +1,141 @@
+{
+ "id": 327,
+ "name": "The 2016 Nordic Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/327",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Nordic Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=327&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=327&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 4759,
+   "letter": "A",
+   "title": "Artwork",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Artwork.pdf"
+  },
+  {
+   "id": 4760,
+   "letter": "B",
+   "title": "Bless You Autocorrect!",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bless You Autocorrect!.pdf"
+  },
+  {
+   "id": 4761,
+   "letter": "C",
+   "title": "Card Hand Sorting",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Card Hand Sorting.pdf"
+  },
+  {
+   "id": 4762,
+   "letter": "D",
+   "title": "Daydreaming Stockbroker",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Daydreaming Stockbroker.pdf"
+  },
+  {
+   "id": 4763,
+   "letter": "E",
+   "title": "Exponial",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Exponial.pdf"
+  },
+  {
+   "id": 4764,
+   "letter": "F",
+   "title": "Fleecing the Raffle",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fleecing the Raffle.pdf"
+  },
+  {
+   "id": 4765,
+   "letter": "G",
+   "title": "Game Rank",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game Rank.pdf"
+  },
+  {
+   "id": 4766,
+   "letter": "H",
+   "title": "Highest Tower",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Highest Tower.pdf"
+  },
+  {
+   "id": 4767,
+   "letter": "I",
+   "title": "Interception",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Interception.pdf"
+  },
+  {
+   "id": 4768,
+   "letter": "J",
+   "title": "Jumbled Compass",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jumbled Compass.pdf"
+  },
+  {
+   "id": 4769,
+   "letter": "K",
+   "title": "Keeping the Dogs Apart",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Keeping the Dogs Apart.pdf"
+  }
+ ]
+}

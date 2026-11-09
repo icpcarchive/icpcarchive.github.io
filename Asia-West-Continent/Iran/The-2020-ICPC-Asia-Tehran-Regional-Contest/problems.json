@@ -1,0 +1,159 @@
+{
+ "id": 795,
+ "name": "The 2020 ICPC Asia Tehran Regional Contest",
+ "url": "https://qoj.ac/contest/795",
+ "categories": [
+  "ICPC/Regionals/Asia West Continent/Iran"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=795&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 1966,
+   "letter": "A",
+   "title": "Covid-19",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Covid-19.pdf"
+  },
+  {
+   "id": 1967,
+   "letter": "B",
+   "title": "Statistics",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Statistics.pdf"
+  },
+  {
+   "id": 1968,
+   "letter": "C",
+   "title": "Science Fiction",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Science Fiction.pdf"
+  },
+  {
+   "id": 1969,
+   "letter": "D",
+   "title": "Necklace Construction",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Necklace Construction.pdf"
+  },
+  {
+   "id": 1970,
+   "letter": "E",
+   "title": "Social Distancing",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Social Distancing.pdf"
+  },
+  {
+   "id": 1971,
+   "letter": "F",
+   "title": "Hezardastan",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Hezardastan.pdf"
+  },
+  {
+   "id": 1972,
+   "letter": "G",
+   "title": "JJ Rally",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - JJ Rally.pdf"
+  },
+  {
+   "id": 1973,
+   "letter": "H",
+   "title": "Birds Rituals",
+   "statement_pages": [
+    12,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Birds Rituals.pdf"
+  },
+  {
+   "id": 1974,
+   "letter": "I",
+   "title": "Black Family Tree",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Black Family Tree.pdf"
+  },
+  {
+   "id": 1975,
+   "letter": "J",
+   "title": "Vaccination Against Corona",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Vaccination Against Corona.pdf"
+  },
+  {
+   "id": 1976,
+   "letter": "K",
+   "title": "McFly",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - McFly.pdf"
+  },
+  {
+   "id": 1977,
+   "letter": "L",
+   "title": "The Last Supper",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - The Last Supper.pdf"
+  },
+  {
+   "id": 1978,
+   "letter": "M",
+   "title": "Stabbing Number",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Stabbing Number.pdf"
+  }
+ ]
+}

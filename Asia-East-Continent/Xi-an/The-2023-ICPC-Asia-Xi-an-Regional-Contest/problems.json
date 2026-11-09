@@ -1,0 +1,175 @@
+{
+ "id": 1784,
+ "name": "The 2023 ICPC Asia Xi'an Regional Contest",
+ "url": "https://qoj.ac/contest/1784",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Xi'an",
+  "ICPC/Regionals/Asia East Continent/The 2023 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1784&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1784&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9242,
+   "letter": "A",
+   "title": "An Easy Geometry Problem",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - An Easy Geometry Problem.pdf"
+  },
+  {
+   "id": 9243,
+   "letter": "B",
+   "title": "Counting Multisets",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Counting Multisets.pdf"
+  },
+  {
+   "id": 9244,
+   "letter": "C",
+   "title": "Counting Strings",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Counting Strings.pdf"
+  },
+  {
+   "id": 9245,
+   "letter": "D",
+   "title": "Bracket Sequence",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Bracket Sequence.pdf"
+  },
+  {
+   "id": 9246,
+   "letter": "E",
+   "title": "Dominating Point",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Dominating Point.pdf"
+  },
+  {
+   "id": 9247,
+   "letter": "F",
+   "title": "An Easy Counting Problem",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - An Easy Counting Problem.pdf"
+  },
+  {
+   "id": 9248,
+   "letter": "G",
+   "title": "An Easy Math Problem",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - An Easy Math Problem.pdf"
+  },
+  {
+   "id": 9249,
+   "letter": "H",
+   "title": "Elimination Series Once More",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Elimination Series Once More.pdf"
+  },
+  {
+   "id": 9250,
+   "letter": "I",
+   "title": "Max GCD",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Max GCD.pdf"
+  },
+  {
+   "id": 9251,
+   "letter": "J",
+   "title": "Graph Changing",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Graph Changing.pdf"
+  },
+  {
+   "id": 9252,
+   "letter": "K",
+   "title": "Penguins in Refrigerator",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Penguins in Refrigerator.pdf"
+  },
+  {
+   "id": 9253,
+   "letter": "L",
+   "title": "Prism Palace",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Prism Palace.pdf"
+  },
+  {
+   "id": 9254,
+   "letter": "M",
+   "title": "Random Variables",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Random Variables.pdf"
+  },
+  {
+   "id": 9255,
+   "letter": "N",
+   "title": "Python Program",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - Python Program.pdf"
+  }
+ ]
+}

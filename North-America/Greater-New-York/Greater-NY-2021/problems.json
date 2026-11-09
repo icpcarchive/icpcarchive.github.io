@@ -1,0 +1,116 @@
+{
+ "id": 863,
+ "name": "Greater NY 2021",
+ "url": "https://qoj.ac/contest/863",
+ "categories": [
+  "ICPC/Regionals/North America/Greater New York"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 2930,
+   "letter": "A",
+   "title": "Football Scoring",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Football Scoring.pdf"
+  },
+  {
+   "id": 2931,
+   "letter": "B",
+   "title": "Tri-Color Puzzle",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Tri-Color Puzzle.pdf"
+  },
+  {
+   "id": 2932,
+   "letter": "C",
+   "title": "Checker Slide",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Checker Slide.pdf"
+  },
+  {
+   "id": 2933,
+   "letter": "D",
+   "title": "Sequinary Numerals",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Sequinary Numerals.pdf"
+  },
+  {
+   "id": 2934,
+   "letter": "E",
+   "title": "How Many Unicycles in a Broken Wheel",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - How Many Unicycles in a Broken Wheel.pdf"
+  },
+  {
+   "id": 2935,
+   "letter": "F",
+   "title": "Spider-Fly",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Spider-Fly.pdf"
+  },
+  {
+   "id": 2936,
+   "letter": "G",
+   "title": "Simple Collatz Sequence",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Simple Collatz Sequence.pdf"
+  },
+  {
+   "id": 2937,
+   "letter": "H",
+   "title": "CIDR",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - CIDR.pdf"
+  },
+  {
+   "id": 7702,
+   "letter": "I",
+   "title": "Three Spheres and a Tetrahedron",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Three Spheres and a Tetrahedron.pdf"
+  },
+  {
+   "id": 2939,
+   "letter": "J",
+   "title": "Morse Code Palindromes",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Morse Code Palindromes.pdf"
+  },
+  {
+   "id": 2940,
+   "letter": "K",
+   "title": "Pooling PCR Tests",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Pooling PCR Tests.pdf"
+  },
+  {
+   "id": 2941,
+   "letter": "L",
+   "title": "Letterle",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Letterle.pdf"
+  },
+  {
+   "id": 2942,
+   "letter": "M",
+   "title": "7 Segments You Say?",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - 7 Segments You Say_.pdf"
+  },
+  {
+   "id": 2943,
+   "letter": "N",
+   "title": "Neighbors",
+   "statement_source": "problem page",
+   "statement_file": "problems/N - Neighbors.pdf"
+  },
+  {
+   "id": 2944,
+   "letter": "O",
+   "title": "Transporting Spaghetti",
+   "statement_source": "problem page",
+   "statement_file": "problems/O - Transporting Spaghetti.pdf"
+  }
+ ]
+}

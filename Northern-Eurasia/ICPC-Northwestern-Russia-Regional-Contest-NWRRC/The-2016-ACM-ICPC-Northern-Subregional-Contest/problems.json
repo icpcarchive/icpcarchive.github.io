@@ -1,0 +1,141 @@
+{
+ "id": 2176,
+ "name": "The 2016 ACM-ICPC Northern Subregional Contest",
+ "url": "https://qoj.ac/contest/2176",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Northwestern Russia Regional Contest (NWRRC) / Northern Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2176&r=0"
+  },
+  {
+   "text": "Tutorials (ru)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2176&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 12724,
+   "letter": "A",
+   "title": "Anniversary Cake",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Anniversary Cake.pdf"
+  },
+  {
+   "id": 12725,
+   "letter": "B",
+   "title": "Boys and Girls",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Boys and Girls.pdf"
+  },
+  {
+   "id": 12726,
+   "letter": "C",
+   "title": "CodeCoder vs TopForces",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - CodeCoder vs TopForces.pdf"
+  },
+  {
+   "id": 12727,
+   "letter": "D",
+   "title": "Digital Addition",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Digital Addition.pdf"
+  },
+  {
+   "id": 12728,
+   "letter": "E",
+   "title": "Easy Reading",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Easy Reading.pdf"
+  },
+  {
+   "id": 12729,
+   "letter": "F",
+   "title": "Folding",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Folding.pdf"
+  },
+  {
+   "id": 12730,
+   "letter": "G",
+   "title": "Gangsters in Central City",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gangsters in Central City.pdf"
+  },
+  {
+   "id": 12731,
+   "letter": "H",
+   "title": "Hard Cuts",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hard Cuts.pdf"
+  },
+  {
+   "id": 12732,
+   "letter": "I",
+   "title": "Integral Polygons",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Integral Polygons.pdf"
+  },
+  {
+   "id": 12733,
+   "letter": "J",
+   "title": "Java2016",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Java2016.pdf"
+  },
+  {
+   "id": 12734,
+   "letter": "K",
+   "title": "King's Heir",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - King's Heir.pdf"
+  }
+ ]
+}

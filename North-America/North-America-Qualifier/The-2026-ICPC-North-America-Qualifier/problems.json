@@ -1,0 +1,76 @@
+{
+ "id": 4566,
+ "name": "The 2026 ICPC North America Qualifier",
+ "url": "https://qoj.ac/contest/4566",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 24214,
+   "letter": "A",
+   "title": "The n Days of Christmas"
+  },
+  {
+   "id": 24215,
+   "letter": "B",
+   "title": "Airtime"
+  },
+  {
+   "id": 24216,
+   "letter": "C",
+   "title": "Babylon"
+  },
+  {
+   "id": 24217,
+   "letter": "D",
+   "title": "Brownie Cutting"
+  },
+  {
+   "id": 24218,
+   "letter": "E",
+   "title": "Espresso Macchiato"
+  },
+  {
+   "id": 24219,
+   "letter": "F",
+   "title": "Fairytale"
+  },
+  {
+   "id": 24220,
+   "letter": "G",
+   "title": "Last Dance"
+  },
+  {
+   "id": 24221,
+   "letter": "H",
+   "title": "My System"
+  },
+  {
+   "id": 24222,
+   "letter": "I",
+   "title": "Only One Order"
+  },
+  {
+   "id": 24223,
+   "letter": "J",
+   "title": "Regarde!"
+  },
+  {
+   "id": 24224,
+   "letter": "K",
+   "title": "Six Seven"
+  },
+  {
+   "id": 24225,
+   "letter": "L",
+   "title": "Stardust Curry"
+  },
+  {
+   "id": 24226,
+   "letter": "M",
+   "title": "Tourism Balance"
+  }
+ ]
+}

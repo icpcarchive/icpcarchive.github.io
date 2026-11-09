@@ -1,0 +1,137 @@
+{
+ "id": 3811,
+ "name": "The 2014 ICPC North America Qualifier",
+ "url": "https://qoj.ac/contest/3811",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3811&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 20159,
+   "letter": "A",
+   "title": "Eight Queens",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Eight Queens.pdf"
+  },
+  {
+   "id": 20160,
+   "letter": "B",
+   "title": "Color Walk",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Color Walk.pdf"
+  },
+  {
+   "id": 20161,
+   "letter": "C",
+   "title": "Flexible Spaces",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Flexible Spaces.pdf"
+  },
+  {
+   "id": 20162,
+   "letter": "D",
+   "title": "Flip Five",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Flip Five.pdf"
+  },
+  {
+   "id": 20163,
+   "letter": "E",
+   "title": "Human Cannonball Run",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Human Cannonball Run.pdf"
+  },
+  {
+   "id": 20164,
+   "letter": "F",
+   "title": "Mixed Fractions",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Mixed Fractions.pdf"
+  },
+  {
+   "id": 20165,
+   "letter": "G",
+   "title": "Pesky Mosquitoes",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Pesky Mosquitoes.pdf"
+  },
+  {
+   "id": 20166,
+   "letter": "H",
+   "title": "Narrow Art Gallery",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Narrow Art Gallery.pdf"
+  },
+  {
+   "id": 20167,
+   "letter": "I",
+   "title": "Tractor",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Tractor.pdf"
+  },
+  {
+   "id": 20168,
+   "letter": "J",
+   "title": "Units",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Units.pdf"
+  },
+  {
+   "id": 20169,
+   "letter": "K",
+   "title": "Yikes - Bikes!",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Yikes - Bikes!.pdf"
+  }
+ ]
+}

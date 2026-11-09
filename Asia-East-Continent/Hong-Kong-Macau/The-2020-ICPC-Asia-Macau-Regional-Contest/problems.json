@@ -1,0 +1,153 @@
+{
+ "id": 1538,
+ "name": "The 2020 ICPC Asia Macau Regional Contest",
+ "url": "https://qoj.ac/contest/1538",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Hong Kong & Macau",
+  "ICPC/Regionals/Asia East Continent/The 2020 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1538&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1538&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 8305,
+   "letter": "A",
+   "title": "Accelerator",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Accelerator.pdf"
+  },
+  {
+   "id": 8306,
+   "letter": "B",
+   "title": "Boring Problem",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Boring Problem.pdf"
+  },
+  {
+   "id": 8307,
+   "letter": "C",
+   "title": "Club Assignment",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Club Assignment.pdf"
+  },
+  {
+   "id": 8308,
+   "letter": "D",
+   "title": "Artifacts",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Artifacts.pdf"
+  },
+  {
+   "id": 8309,
+   "letter": "E",
+   "title": "Mountain",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Mountain.pdf"
+  },
+  {
+   "id": 8310,
+   "letter": "F",
+   "title": "Fixing Networks",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fixing Networks.pdf"
+  },
+  {
+   "id": 8311,
+   "letter": "G",
+   "title": "Game on Sequence",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game on Sequence.pdf"
+  },
+  {
+   "id": 8312,
+   "letter": "H",
+   "title": "Fly Me To The Moon",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Fly Me To The Moon.pdf"
+  },
+  {
+   "id": 8313,
+   "letter": "I",
+   "title": "Nim Cheater",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Nim Cheater.pdf"
+  },
+  {
+   "id": 8314,
+   "letter": "J",
+   "title": "Jewel Grab",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jewel Grab.pdf"
+  },
+  {
+   "id": 8315,
+   "letter": "K",
+   "title": "Candy Ads",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Candy Ads.pdf"
+  },
+  {
+   "id": 8316,
+   "letter": "L",
+   "title": "Random Permutation",
+   "statement_pages": [
+    21,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Random Permutation.pdf"
+  }
+ ]
+}

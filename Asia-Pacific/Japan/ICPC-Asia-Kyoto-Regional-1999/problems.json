@@ -1,0 +1,104 @@
+{
+ "id": 3610,
+ "name": "ICPC Asia Kyoto Regional 1999",
+ "url": "https://qoj.ac/contest/3610",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3610&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19576,
+   "letter": "A",
+   "title": "Rational Irrationals",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Rational Irrationals.pdf"
+  },
+  {
+   "id": 19577,
+   "letter": "B",
+   "title": "Square Coins",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Square Coins.pdf"
+  },
+  {
+   "id": 19578,
+   "letter": "C",
+   "title": "Die Game",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Die Game.pdf"
+  },
+  {
+   "id": 19579,
+   "letter": "D",
+   "title": "Trapezoids",
+   "statement_pages": [
+    6,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Trapezoids.pdf"
+  },
+  {
+   "id": 19580,
+   "letter": "E",
+   "title": "Mirror Illusion",
+   "statement_pages": [
+    9,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Mirror Illusion.pdf"
+  },
+  {
+   "id": 19581,
+   "letter": "F",
+   "title": "Heavenly Jewels",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Heavenly Jewels.pdf"
+  },
+  {
+   "id": 19582,
+   "letter": "G",
+   "title": "Walking Ant",
+   "statement_pages": [
+    14,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Walking Ant.pdf"
+  },
+  {
+   "id": 19583,
+   "letter": "H",
+   "title": "Co-occurrence Search",
+   "statement_pages": [
+    18,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Co-occurrence Search.pdf"
+  }
+ ]
+}

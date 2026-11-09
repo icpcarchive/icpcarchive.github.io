@@ -1,0 +1,152 @@
+{
+ "id": 1697,
+ "name": "The 2023 ICPC Central Europe Regional Contest",
+ "url": "https://qoj.ac/contest/1697",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1697&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1697&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 8863,
+   "letter": "A",
+   "title": "Attendance",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Attendance.pdf"
+  },
+  {
+   "id": 8864,
+   "letter": "B",
+   "title": "Ball Passing",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Ball Passing.pdf"
+  },
+  {
+   "id": 8865,
+   "letter": "C",
+   "title": "Cakes",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cakes.pdf"
+  },
+  {
+   "id": 8866,
+   "letter": "D",
+   "title": "Drying Laundry",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Drying Laundry.pdf"
+  },
+  {
+   "id": 8867,
+   "letter": "E",
+   "title": "Equal Schedules",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Equal Schedules.pdf"
+  },
+  {
+   "id": 8868,
+   "letter": "F",
+   "title": "Phylogenetics",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Phylogenetics.pdf"
+  },
+  {
+   "id": 8869,
+   "letter": "G",
+   "title": "Going to the Moon",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Going to the Moon.pdf"
+  },
+  {
+   "id": 8870,
+   "letter": "H",
+   "title": "Human Resources",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Human Resources.pdf"
+  },
+  {
+   "id": 8871,
+   "letter": "I",
+   "title": "Interactive Reconstruction",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Interactive Reconstruction.pdf"
+  },
+  {
+   "id": 8872,
+   "letter": "J",
+   "title": "Jumbled Stacks",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jumbled Stacks.pdf"
+  },
+  {
+   "id": 8873,
+   "letter": "K",
+   "title": "Keys",
+   "statement_pages": [
+    23,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Keys.pdf"
+  },
+  {
+   "id": 8874,
+   "letter": "L",
+   "title": "Labelled Paths",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Labelled Paths.pdf"
+  }
+ ]
+}

@@ -1,0 +1,159 @@
+{
+ "id": 2068,
+ "name": "The 2023 ICPC Moscow Regional Contest",
+ "url": "https://qoj.ac/contest/2068",
+ "categories": [
+  "ICPC/Regionals/Northern Eurasia/Moscow Regional Contest / Moscow Subregional"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2068&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11497,
+   "letter": "A",
+   "title": "Anxious About Airdrops",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Anxious About Airdrops.pdf"
+  },
+  {
+   "id": 11498,
+   "letter": "B",
+   "title": "Base By Base",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Base By Base.pdf"
+  },
+  {
+   "id": 11499,
+   "letter": "C",
+   "title": "Cheater Changes Costs",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cheater Changes Costs.pdf"
+  },
+  {
+   "id": 11500,
+   "letter": "D",
+   "title": "Different Dominoes Divisions",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Different Dominoes Divisions.pdf"
+  },
+  {
+   "id": 11501,
+   "letter": "E",
+   "title": "Eirt Eht Esrever",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Eirt Eht Esrever.pdf"
+  },
+  {
+   "id": 11502,
+   "letter": "F",
+   "title": "F For Function",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - F For Function.pdf"
+  },
+  {
+   "id": 11503,
+   "letter": "G",
+   "title": "Giant Gorilla's Gift",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Giant Gorilla's Gift.pdf"
+  },
+  {
+   "id": 11504,
+   "letter": "H",
+   "title": "Hidden Hierarchy Hints",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hidden Hierarchy Hints.pdf"
+  },
+  {
+   "id": 11505,
+   "letter": "I",
+   "title": "Interpreting Indicated Integers",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Interpreting Indicated Integers.pdf"
+  },
+  {
+   "id": 11506,
+   "letter": "J",
+   "title": "Jumping Jumbo Jets",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jumping Jumbo Jets.pdf"
+  },
+  {
+   "id": 11507,
+   "letter": "K",
+   "title": "Kalevich's Key Knowledge",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kalevich's Key Knowledge.pdf"
+  },
+  {
+   "id": 11508,
+   "letter": "L",
+   "title": "Latin Language Lesson",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Latin Language Lesson.pdf"
+  },
+  {
+   "id": 11509,
+   "letter": "M",
+   "title": "Minor Maze Modifications",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Minor Maze Modifications.pdf"
+  }
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "id": 1990,
+ "name": "The 2014 ACM-ICPC Asia Xi'an Regional Contest",
+ "url": "https://qoj.ac/contest/1990",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Xi'an"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1990&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 10547,
+   "letter": "A",
+   "title": "Built with Qinghuai and Ari Factor",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Built with Qinghuai and Ari Factor.pdf"
+  },
+  {
+   "id": 10548,
+   "letter": "B",
+   "title": "Puzzle & Dragons",
+   "statement_pages": [
+    4,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Puzzle & Dragons.pdf"
+  },
+  {
+   "id": 10549,
+   "letter": "C",
+   "title": "The Problem Needs 3D Arrays",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - The Problem Needs 3D Arrays.pdf"
+  },
+  {
+   "id": 10550,
+   "letter": "D",
+   "title": "The Diameter of Tree",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - The Diameter of Tree.pdf"
+  },
+  {
+   "id": 10551,
+   "letter": "E",
+   "title": "Brushing King",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Brushing King.pdf"
+  },
+  {
+   "id": 10552,
+   "letter": "F",
+   "title": "Color",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Color.pdf"
+  },
+  {
+   "id": 10553,
+   "letter": "G",
+   "title": "The Problem to Slow Down You",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - The Problem to Slow Down You.pdf"
+  },
+  {
+   "id": 10554,
+   "letter": "H",
+   "title": "The Problem to Make You Happy",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - The Problem to Make You Happy.pdf"
+  },
+  {
+   "id": 10555,
+   "letter": "I",
+   "title": "International Collegiate Routing Contest",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - International Collegiate Routing Contest.pdf"
+  },
+  {
+   "id": 10556,
+   "letter": "J",
+   "title": "Unlimited Battery Works",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Unlimited Battery Works.pdf"
+  },
+  {
+   "id": 10557,
+   "letter": "K",
+   "title": "Last Defence",
+   "statement_pages": [
+    21,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Last Defence.pdf"
+  }
+ ]
+}

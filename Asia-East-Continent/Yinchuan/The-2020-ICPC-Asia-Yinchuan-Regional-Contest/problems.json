@@ -1,0 +1,160 @@
+{
+ "id": 1322,
+ "name": "The 2020 ICPC Asia Yinchuan Regional Contest",
+ "url": "https://qoj.ac/contest/1322",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Yinchuan",
+  "ICPC/Regionals/Asia East Continent/The 2020 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1322&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 7066,
+   "letter": "A",
+   "title": "Best Player",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Best Player.pdf"
+  },
+  {
+   "id": 7067,
+   "letter": "B",
+   "title": "The Great Wall",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - The Great Wall.pdf"
+  },
+  {
+   "id": 7068,
+   "letter": "C",
+   "title": "Lucky Sequence",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Lucky Sequence.pdf"
+  },
+  {
+   "id": 7069,
+   "letter": "D",
+   "title": "Farm",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Farm.pdf"
+  },
+  {
+   "id": 7070,
+   "letter": "E",
+   "title": "Isomerism",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Isomerism.pdf"
+  },
+  {
+   "id": 7071,
+   "letter": "F",
+   "title": "Maximize the Ratio",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Maximize the Ratio.pdf"
+  },
+  {
+   "id": 7072,
+   "letter": "G",
+   "title": "Photograph",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Photograph.pdf"
+  },
+  {
+   "id": 7073,
+   "letter": "H",
+   "title": "Absolute Space",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Absolute Space.pdf"
+  },
+  {
+   "id": 7074,
+   "letter": "I",
+   "title": "The Answer!",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - The Answer!.pdf"
+  },
+  {
+   "id": 7075,
+   "letter": "J",
+   "title": "Let's Play Jigsaw Puzzles!",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Let's Play Jigsaw Puzzles!.pdf"
+  },
+  {
+   "id": 7076,
+   "letter": "K",
+   "title": "Browser Games",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Browser Games.pdf"
+  },
+  {
+   "id": 7077,
+   "letter": "L",
+   "title": "Sheep Village",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Sheep Village.pdf"
+  },
+  {
+   "id": 7078,
+   "letter": "M",
+   "title": "Tower of the Sorcerer",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Tower of the Sorcerer.pdf"
+  }
+ ]
+}

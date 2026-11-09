@@ -1,0 +1,137 @@
+{
+ "id": 98,
+ "name": "The 2015 ACM-ICPC Asia Tsukuba Regional Contest",
+ "url": "https://qoj.ac/contest/98",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=98&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 4701,
+   "letter": "A",
+   "title": "Decimal Sequences",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Decimal Sequences.pdf"
+  },
+  {
+   "id": 4702,
+   "letter": "B",
+   "title": "Squeeze the Cylinders",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Squeeze the Cylinders.pdf"
+  },
+  {
+   "id": 4703,
+   "letter": "C",
+   "title": "Sibling Rivalry",
+   "statement_pages": [
+    5,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Sibling Rivalry.pdf"
+  },
+  {
+   "id": 4704,
+   "letter": "D",
+   "title": "Wall Clocks",
+   "statement_pages": [
+    8,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Wall Clocks.pdf"
+  },
+  {
+   "id": 4705,
+   "letter": "E",
+   "title": "Bringing Order to Disorder",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Bringing Order to Disorder.pdf"
+  },
+  {
+   "id": 4706,
+   "letter": "F",
+   "title": "Deadlock Detection",
+   "statement_pages": [
+    13,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Deadlock Detection.pdf"
+  },
+  {
+   "id": 4707,
+   "letter": "G",
+   "title": "Do Geese See God?",
+   "statement_pages": [
+    16,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Do Geese See God_.pdf"
+  },
+  {
+   "id": 4708,
+   "letter": "H",
+   "title": "Rotating Cutter Bits",
+   "statement_pages": [
+    19,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Rotating Cutter Bits.pdf"
+  },
+  {
+   "id": 4709,
+   "letter": "I",
+   "title": "Routing a Marathon Race",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Routing a Marathon Race.pdf"
+  },
+  {
+   "id": 4710,
+   "letter": "J",
+   "title": "Post Office Investigation",
+   "statement_pages": [
+    27,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Post Office Investigation.pdf"
+  },
+  {
+   "id": 4711,
+   "letter": "K",
+   "title": "Min-Max Distance Game",
+   "statement_pages": [
+    31,
+    31
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Min-Max Distance Game.pdf"
+  }
+ ]
+}

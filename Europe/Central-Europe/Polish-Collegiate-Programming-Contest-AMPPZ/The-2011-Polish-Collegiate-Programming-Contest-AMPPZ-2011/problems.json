@@ -1,0 +1,141 @@
+{
+ "id": 873,
+ "name": "The 2011 Polish Collegiate Programming Contest (AMPPZ 2011)",
+ "url": "https://qoj.ac/contest/873",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/Polish Collegiate Programming Contest (AMPPZ)"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=873&r=0"
+  },
+  {
+   "text": "Statements (pl)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=873&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11580,
+   "letter": "A",
+   "title": "Arithmetic Rectangle",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Arithmetic Rectangle.pdf"
+  },
+  {
+   "id": 11581,
+   "letter": "B",
+   "title": "Bytean Road Race",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bytean Road Race.pdf"
+  },
+  {
+   "id": 11582,
+   "letter": "C",
+   "title": "Will It Stop?",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Will It Stop_.pdf"
+  },
+  {
+   "id": 11583,
+   "letter": "D",
+   "title": "Ants",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Ants.pdf"
+  },
+  {
+   "id": 11584,
+   "letter": "E",
+   "title": "Gophers",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Gophers.pdf"
+  },
+  {
+   "id": 11585,
+   "letter": "F",
+   "title": "Laundry",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Laundry.pdf"
+  },
+  {
+   "id": 11586,
+   "letter": "G",
+   "title": "Bits Generator",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Bits Generator.pdf"
+  },
+  {
+   "id": 11587,
+   "letter": "H",
+   "title": "Afternoon Tea",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Afternoon Tea.pdf"
+  },
+  {
+   "id": 11588,
+   "letter": "I",
+   "title": "Intelligence Quotient",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Intelligence Quotient.pdf"
+  },
+  {
+   "id": 11589,
+   "letter": "J",
+   "title": "Cave",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Cave.pdf"
+  },
+  {
+   "id": 11590,
+   "letter": "K",
+   "title": "Cross Spider",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Cross Spider.pdf"
+  }
+ ]
+}

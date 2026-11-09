@@ -1,0 +1,86 @@
+{
+ "id": 2723,
+ "name": "The 2011 Central Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2723",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe"
+ ],
+ "files": [
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2723&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15980,
+   "letter": "A",
+   "title": "Boring Card Game",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Boring Card Game.pdf"
+  },
+  {
+   "id": 15981,
+   "letter": "B",
+   "title": "Vigenére Cipher Encryption",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Vigenére Cipher Encryption.pdf"
+  },
+  {
+   "id": 15982,
+   "letter": "C",
+   "title": "Unique Encryption Keys",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Unique Encryption Keys.pdf"
+  },
+  {
+   "id": 15983,
+   "letter": "D",
+   "title": "Racing Car Trail",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Racing Car Trail.pdf"
+  },
+  {
+   "id": 15984,
+   "letter": "E",
+   "title": "Stack Machine Programmer",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Stack Machine Programmer.pdf"
+  },
+  {
+   "id": 15985,
+   "letter": "F",
+   "title": "Strange Regulations",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Strange Regulations.pdf"
+  },
+  {
+   "id": 15986,
+   "letter": "G",
+   "title": "Vigenére Cipher Analysis",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Vigenére Cipher Analysis.pdf"
+  },
+  {
+   "id": 15987,
+   "letter": "H",
+   "title": "The Grille",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - The Grille.pdf"
+  },
+  {
+   "id": 15988,
+   "letter": "I",
+   "title": "Unchanged Picture",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Unchanged Picture.pdf"
+  },
+  {
+   "id": 15989,
+   "letter": "J",
+   "title": "Stack Machine Executor",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Stack Machine Executor.pdf"
+  }
+ ]
+}

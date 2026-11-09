@@ -1,0 +1,163 @@
+{
+ "id": 3816,
+ "name": "The 2019 ICPC North America Qualifier",
+ "url": "https://qoj.ac/contest/3816",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3816&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3816&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 20219,
+   "letter": "A",
+   "title": "Circuit Math",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Circuit Math.pdf"
+  },
+  {
+   "id": 20220,
+   "letter": "B",
+   "title": "Diagonal Cut",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Diagonal Cut.pdf"
+  },
+  {
+   "id": 20221,
+   "letter": "C",
+   "title": "Gerrymandering",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Gerrymandering.pdf"
+  },
+  {
+   "id": 20222,
+   "letter": "D",
+   "title": "Missing Numbers",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Missing Numbers.pdf"
+  },
+  {
+   "id": 20223,
+   "letter": "E",
+   "title": "NVWLS",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - NVWLS.pdf"
+  },
+  {
+   "id": 20224,
+   "letter": "F",
+   "title": "Prospecting",
+   "statement_pages": [
+    11,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Prospecting.pdf"
+  },
+  {
+   "id": 20225,
+   "letter": "G",
+   "title": "Research Productivity Index",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Research Productivity Index.pdf"
+  },
+  {
+   "id": 20226,
+   "letter": "H",
+   "title": "Running Routes",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Running Routes.pdf"
+  },
+  {
+   "id": 20227,
+   "letter": "I",
+   "title": "Slow Leak",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Slow Leak.pdf"
+  },
+  {
+   "id": 20228,
+   "letter": "J",
+   "title": "Stop Counting!",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Stop Counting!.pdf"
+  },
+  {
+   "id": 20229,
+   "letter": "K",
+   "title": "Summer Trip",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Summer Trip.pdf"
+  },
+  {
+   "id": 20230,
+   "letter": "L",
+   "title": "Traveling Merchant",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Traveling Merchant.pdf"
+  },
+  {
+   "id": 20231,
+   "letter": "M",
+   "title": "Zipline",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Zipline.pdf"
+  }
+ ]
+}

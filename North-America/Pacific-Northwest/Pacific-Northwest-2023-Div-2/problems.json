@@ -1,0 +1,159 @@
+{
+ "id": 1752,
+ "name": "Pacific Northwest 2023 (Div. 2)",
+ "url": "https://qoj.ac/contest/1752",
+ "categories": [
+  "ICPC/Regionals/North America/Pacific Northwest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1752&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9064,
+   "letter": "A",
+   "title": "A Cappella Recording",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - A Cappella Recording.pdf"
+  },
+  {
+   "id": 9063,
+   "letter": "B",
+   "title": "Champernowne Verification",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Champernowne Verification.pdf"
+  },
+  {
+   "id": 9066,
+   "letter": "C",
+   "title": "Four Die Rolls",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Four Die Rolls.pdf"
+  },
+  {
+   "id": 9054,
+   "letter": "D",
+   "title": "Ordered Problem Set",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Ordered Problem Set.pdf"
+  },
+  {
+   "id": 9069,
+   "letter": "E",
+   "title": "Training",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Training.pdf"
+  },
+  {
+   "id": 9068,
+   "letter": "F",
+   "title": "Triple Sevens",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Triple Sevens.pdf"
+  },
+  {
+   "id": 9051,
+   "letter": "G",
+   "title": "ABC String",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - ABC String.pdf"
+  },
+  {
+   "id": 9065,
+   "letter": "H",
+   "title": "Acceptable Seating Arrangements",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Acceptable Seating Arrangements.pdf"
+  },
+  {
+   "id": 9052,
+   "letter": "I",
+   "title": "Balanced Tree Path",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Balanced Tree Path.pdf"
+  },
+  {
+   "id": 9070,
+   "letter": "J",
+   "title": "Candy Factory",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Candy Factory.pdf"
+  },
+  {
+   "id": 9059,
+   "letter": "K",
+   "title": "Item Selection",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Item Selection.pdf"
+  },
+  {
+   "id": 9071,
+   "letter": "L",
+   "title": "Magic Cube",
+   "statement_pages": [
+    25,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Magic Cube.pdf"
+  },
+  {
+   "id": 9060,
+   "letter": "M",
+   "title": "Sequence Guessing",
+   "statement_pages": [
+    29,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Sequence Guessing.pdf"
+  }
+ ]
+}

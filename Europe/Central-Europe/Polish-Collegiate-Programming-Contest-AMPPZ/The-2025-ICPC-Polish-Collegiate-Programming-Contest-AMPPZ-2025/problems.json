@@ -1,0 +1,163 @@
+{
+ "id": 2668,
+ "name": "The 2025 ICPC Polish Collegiate Programming Contest (AMPPZ 2025)",
+ "url": "https://qoj.ac/contest/2668",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/Polish Collegiate Programming Contest (AMPPZ)"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2668&r=0"
+  },
+  {
+   "text": "Tutorials (pl)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2668&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15444,
+   "letter": "A",
+   "title": "AIMPPZ",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - AIMPPZ.pdf"
+  },
+  {
+   "id": 15445,
+   "letter": "B",
+   "title": "Beats",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Beats.pdf"
+  },
+  {
+   "id": 15446,
+   "letter": "C",
+   "title": "Count Triangular Sequences",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Count Triangular Sequences.pdf"
+  },
+  {
+   "id": 15447,
+   "letter": "D",
+   "title": "Division with Polylines",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Division with Polylines.pdf"
+  },
+  {
+   "id": 15448,
+   "letter": "E",
+   "title": "Enigma",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Enigma.pdf"
+  },
+  {
+   "id": 15449,
+   "letter": "F",
+   "title": "Finances",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Finances.pdf"
+  },
+  {
+   "id": 15450,
+   "letter": "G",
+   "title": "Game of Pipes",
+   "statement_pages": [
+    10,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game of Pipes.pdf"
+  },
+  {
+   "id": 15451,
+   "letter": "H",
+   "title": "Hacking",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hacking.pdf"
+  },
+  {
+   "id": 15452,
+   "letter": "I",
+   "title": "ICPC Isolation",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - ICPC Isolation.pdf"
+  },
+  {
+   "id": 15453,
+   "letter": "J",
+   "title": "Jury of AMPPZ",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jury of AMPPZ.pdf"
+  },
+  {
+   "id": 15454,
+   "letter": "K",
+   "title": "Kids' Blocks",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kids' Blocks.pdf"
+  },
+  {
+   "id": 15455,
+   "letter": "L",
+   "title": "Linear Averaging",
+   "statement_pages": [
+    19,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Linear Averaging.pdf"
+  },
+  {
+   "id": 15456,
+   "letter": "M",
+   "title": "Market",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Market.pdf"
+  }
+ ]
+}

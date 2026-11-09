@@ -1,0 +1,159 @@
+{
+ "id": 2554,
+ "name": "The 2025 ICPC North America Qualifier",
+ "url": "https://qoj.ac/contest/2554",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2554&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 14437,
+   "letter": "A",
+   "title": "Art Installation",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Art Installation.pdf"
+  },
+  {
+   "id": 14438,
+   "letter": "B",
+   "title": "Backup Towers",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Backup Towers.pdf"
+  },
+  {
+   "id": 14439,
+   "letter": "C",
+   "title": "Call for Problems, Round 2",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Call for Problems, Round 2.pdf"
+  },
+  {
+   "id": 14440,
+   "letter": "D",
+   "title": "Carl's Maze-Solving Algorithm",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Carl's Maze-Solving Algorithm.pdf"
+  },
+  {
+   "id": 14441,
+   "letter": "E",
+   "title": "Curling",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Curling.pdf"
+  },
+  {
+   "id": 14442,
+   "letter": "F",
+   "title": "Figure Skating Judging",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Figure Skating Judging.pdf"
+  },
+  {
+   "id": 14443,
+   "letter": "G",
+   "title": "Mingle",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Mingle.pdf"
+  },
+  {
+   "id": 14444,
+   "letter": "H",
+   "title": "Seesaw",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Seesaw.pdf"
+  },
+  {
+   "id": 14445,
+   "letter": "I",
+   "title": "Star Guardians",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Star Guardians.pdf"
+  },
+  {
+   "id": 14446,
+   "letter": "J",
+   "title": "Ten Player Bingo",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Ten Player Bingo.pdf"
+  },
+  {
+   "id": 14447,
+   "letter": "K",
+   "title": "Treasure Hunt",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Treasure Hunt.pdf"
+  },
+  {
+   "id": 14448,
+   "letter": "L",
+   "title": "Triple Jump",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Triple Jump.pdf"
+  },
+  {
+   "id": 14449,
+   "letter": "M",
+   "title": "Utopia Relationships",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Utopia Relationships.pdf"
+  }
+ ]
+}

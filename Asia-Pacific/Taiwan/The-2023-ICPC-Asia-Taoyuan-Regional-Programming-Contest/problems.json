@@ -1,0 +1,163 @@
+{
+ "id": 2768,
+ "name": "The 2023 ICPC Asia Taoyuan Regional Programming Contest",
+ "url": "https://qoj.ac/contest/2768",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Taiwan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2768&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2768&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15819,
+   "letter": "A",
+   "title": "Counterfeit Money",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Counterfeit Money.pdf"
+  },
+  {
+   "id": 15820,
+   "letter": "B",
+   "title": "Recurring Decimal to Fractions",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Recurring Decimal to Fractions.pdf"
+  },
+  {
+   "id": 15821,
+   "letter": "C",
+   "title": "Where the Lantern Lights are Dimming",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Where the Lantern Lights are Dimming.pdf"
+  },
+  {
+   "id": 15822,
+   "letter": "D",
+   "title": "Quarantine Policy",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Quarantine Policy.pdf"
+  },
+  {
+   "id": 15823,
+   "letter": "E",
+   "title": "Slabstones Rearrangement",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Slabstones Rearrangement.pdf"
+  },
+  {
+   "id": 15824,
+   "letter": "F",
+   "title": "Baker’s Dilemma",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Baker’s Dilemma.pdf"
+  },
+  {
+   "id": 15825,
+   "letter": "G",
+   "title": "A Packing Problem",
+   "statement_pages": [
+    13,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - A Packing Problem.pdf"
+  },
+  {
+   "id": 15826,
+   "letter": "H",
+   "title": "Bank Deposit Challenge",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Bank Deposit Challenge.pdf"
+  },
+  {
+   "id": 15827,
+   "letter": "I",
+   "title": "The Pentagon Conjecture",
+   "statement_pages": [
+    18,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - The Pentagon Conjecture.pdf"
+  },
+  {
+   "id": 15828,
+   "letter": "J",
+   "title": "Lead Time Estimation",
+   "statement_pages": [
+    21,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Lead Time Estimation.pdf"
+  },
+  {
+   "id": 15829,
+   "letter": "K",
+   "title": "Chemical Storage",
+   "statement_pages": [
+    24,
+    27
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Chemical Storage.pdf"
+  },
+  {
+   "id": 15830,
+   "letter": "L",
+   "title": "Nine Never",
+   "statement_pages": [
+    28,
+    29
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Nine Never.pdf"
+  },
+  {
+   "id": 15831,
+   "letter": "M",
+   "title": "Task scheduler",
+   "statement_pages": [
+    30,
+    31
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Task scheduler.pdf"
+  }
+ ]
+}

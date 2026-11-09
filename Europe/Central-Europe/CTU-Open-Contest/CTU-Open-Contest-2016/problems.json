@@ -1,0 +1,81 @@
+{
+ "id": 22,
+ "name": "CTU Open Contest 2016",
+ "url": "https://qoj.ac/contest/22",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 4516,
+   "letter": "A",
+   "title": "Aerial Archeology / Gregor's Vacations",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Aerial Archeology _ Gregor's Vacations.pdf"
+  },
+  {
+   "id": 4517,
+   "letter": "B",
+   "title": "Hot Air Ballooning / Jumps",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Hot Air Ballooning _ Jumps.pdf"
+  },
+  {
+   "id": 4518,
+   "letter": "C",
+   "title": "Cable Connection / Industrial Buildings",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Cable Connection _ Industrial Buildings.pdf"
+  },
+  {
+   "id": 4519,
+   "letter": "D",
+   "title": "Rotating Display / Barbara's Robot",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Rotating Display _ Barbara's Robot.pdf"
+  },
+  {
+   "id": 4520,
+   "letter": "E",
+   "title": "Fence / Fox and Goose",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Fence _ Fox and Goose.pdf"
+  },
+  {
+   "id": 4521,
+   "letter": "F",
+   "title": "Tree Stands / Elves",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Tree Stands _ Elves.pdf"
+  },
+  {
+   "id": 4522,
+   "letter": "G",
+   "title": "Orchard Division / Divide and Sell",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Orchard Division _ Divide and Sell.pdf"
+  },
+  {
+   "id": 4523,
+   "letter": "H",
+   "title": "It's Raining, Man / Ancient Cards",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - It's Raining, Man _ Ancient Cards.pdf"
+  },
+  {
+   "id": 4524,
+   "letter": "I",
+   "title": "Suspicious Samples / Hydrology",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Suspicious Samples _ Hydrology.pdf"
+  },
+  {
+   "id": 4525,
+   "letter": "J",
+   "title": "Colorful Tribune / Colors on a Stadium",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Colorful Tribune _ Colors on a Stadium.pdf"
+  }
+ ]
+}

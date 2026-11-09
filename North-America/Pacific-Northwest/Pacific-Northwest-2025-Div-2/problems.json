@@ -1,0 +1,102 @@
+{
+ "id": 2582,
+ "name": "Pacific Northwest 2025 (Div. 2)",
+ "url": "https://qoj.ac/contest/2582",
+ "categories": [
+  "ICPC/Regionals/North America/Pacific Northwest"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 14916,
+   "letter": "A",
+   "title": "An Elephant Problem",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - An Elephant Problem.pdf"
+  },
+  {
+   "id": 14919,
+   "letter": "B",
+   "title": "Call For Problems, Round 3",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Call For Problems, Round 3.pdf"
+  },
+  {
+   "id": 14924,
+   "letter": "C",
+   "title": "GPA Computation",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - GPA Computation.pdf"
+  },
+  {
+   "id": 14925,
+   "letter": "D",
+   "title": "Honkai Stress Relief",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Honkai Stress Relief.pdf"
+  },
+  {
+   "id": 14927,
+   "letter": "E",
+   "title": "Missed Alarm",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Missed Alarm.pdf"
+  },
+  {
+   "id": 14933,
+   "letter": "F",
+   "title": "Strawberry",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Strawberry.pdf"
+  },
+  {
+   "id": 14917,
+   "letter": "G",
+   "title": "Bouquet of Balloons",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Bouquet of Balloons.pdf"
+  },
+  {
+   "id": 14922,
+   "letter": "H",
+   "title": "Fractal Painting",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Fractal Painting.pdf"
+  },
+  {
+   "id": 14929,
+   "letter": "I",
+   "title": "Server Corridor",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Server Corridor.pdf"
+  },
+  {
+   "id": 14931,
+   "letter": "J",
+   "title": "Shh",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Shh.pdf"
+  },
+  {
+   "id": 14932,
+   "letter": "K",
+   "title": "Solidarity of the Happy Cats",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Solidarity of the Happy Cats.pdf"
+  },
+  {
+   "id": 14934,
+   "letter": "L",
+   "title": "Training, Round 4",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Training, Round 4.pdf"
+  },
+  {
+   "id": 14935,
+   "letter": "M",
+   "title": "Triangle of Triangles",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - Triangle of Triangles.pdf"
+  }
+ ]
+}

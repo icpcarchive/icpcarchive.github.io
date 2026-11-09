@@ -1,0 +1,168 @@
+{
+ "id": 1197,
+ "name": "The 2022 ICPC Asia East Continent Final Contest",
+ "url": "https://qoj.ac/contest/1197",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent",
+  "ICPC/Regionals/Asia East Continent/The 2022 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1197&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1197&r=1"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1197&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 6298,
+   "letter": "A",
+   "title": "Coloring",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Coloring.pdf"
+  },
+  {
+   "id": 6299,
+   "letter": "B",
+   "title": "Binary String",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Binary String.pdf"
+  },
+  {
+   "id": 6300,
+   "letter": "C",
+   "title": "Best Carry Player 2",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Best Carry Player 2.pdf"
+  },
+  {
+   "id": 6301,
+   "letter": "D",
+   "title": "Minimum Suffix",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Minimum Suffix.pdf"
+  },
+  {
+   "id": 6302,
+   "letter": "E",
+   "title": "Map",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Map.pdf"
+  },
+  {
+   "id": 6303,
+   "letter": "F",
+   "title": "Inversion",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Inversion.pdf"
+  },
+  {
+   "id": 6304,
+   "letter": "G",
+   "title": "Rectangle",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Rectangle.pdf"
+  },
+  {
+   "id": 6305,
+   "letter": "H",
+   "title": "Chinese Checker",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Chinese Checker.pdf"
+  },
+  {
+   "id": 6306,
+   "letter": "I",
+   "title": "Chase Game",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Chase Game.pdf"
+  },
+  {
+   "id": 6307,
+   "letter": "J",
+   "title": "Chase Game 2",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Chase Game 2.pdf"
+  },
+  {
+   "id": 6308,
+   "letter": "K",
+   "title": "Magic",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Magic.pdf"
+  },
+  {
+   "id": 6309,
+   "letter": "L",
+   "title": "Aqre",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Aqre.pdf"
+  },
+  {
+   "id": 6310,
+   "letter": "M",
+   "title": "Dining Professors",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Dining Professors.pdf"
+  }
+ ]
+}

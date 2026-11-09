@@ -1,0 +1,141 @@
+{
+ "id": 1024,
+ "name": "The 2022 ICPC Nordic Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/1024",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Nordic Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1024&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1024&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 4988,
+   "letter": "A",
+   "title": "Ace Arbiter",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Ace Arbiter.pdf"
+  },
+  {
+   "id": 4989,
+   "letter": "B",
+   "title": "Berry Battle",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Berry Battle.pdf"
+  },
+  {
+   "id": 4990,
+   "letter": "C",
+   "title": "Coffee Cup Combo",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Coffee Cup Combo.pdf"
+  },
+  {
+   "id": 4991,
+   "letter": "D",
+   "title": "Disc District",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Disc District.pdf"
+  },
+  {
+   "id": 4992,
+   "letter": "E",
+   "title": "Enigmatic Enumeration",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Enigmatic Enumeration.pdf"
+  },
+  {
+   "id": 4993,
+   "letter": "F",
+   "title": "Foreign Football",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Foreign Football.pdf"
+  },
+  {
+   "id": 4994,
+   "letter": "G",
+   "title": "Graduation Guarantee",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Graduation Guarantee.pdf"
+  },
+  {
+   "id": 4995,
+   "letter": "H",
+   "title": "Highest Hill",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Highest Hill.pdf"
+  },
+  {
+   "id": 4996,
+   "letter": "I",
+   "title": "Icy Itinerary",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Icy Itinerary.pdf"
+  },
+  {
+   "id": 4997,
+   "letter": "J",
+   "title": "Junk Journey",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Junk Journey.pdf"
+  },
+  {
+   "id": 4998,
+   "letter": "K",
+   "title": "Keyboard Queries",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Keyboard Queries.pdf"
+  }
+ ]
+}

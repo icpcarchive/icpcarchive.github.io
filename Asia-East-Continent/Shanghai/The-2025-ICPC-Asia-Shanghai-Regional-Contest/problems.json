@@ -1,0 +1,164 @@
+{
+ "id": 2908,
+ "name": "The 2025 ICPC Asia Shanghai Regional Contest",
+ "url": "https://qoj.ac/contest/2908",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Shanghai",
+  "ICPC/Regionals/Asia East Continent/The 2025 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2908&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2908&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15314,
+   "letter": "A",
+   "title": "Menji, we miss you!",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Menji, we miss you!.pdf"
+  },
+  {
+   "id": 15315,
+   "letter": "B",
+   "title": "Hamu",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Hamu.pdf"
+  },
+  {
+   "id": 15316,
+   "letter": "C",
+   "title": "Singularity",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Singularity.pdf"
+  },
+  {
+   "id": 15317,
+   "letter": "D",
+   "title": "Not a subset sum",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Not a subset sum.pdf"
+  },
+  {
+   "id": 15318,
+   "letter": "E",
+   "title": "Flower's land 3",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Flower's land 3.pdf"
+  },
+  {
+   "id": 15319,
+   "letter": "F",
+   "title": "Flower's land 4",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Flower's land 4.pdf"
+  },
+  {
+   "id": 15320,
+   "letter": "G",
+   "title": "Gemcrate",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gemcrate.pdf"
+  },
+  {
+   "id": 15321,
+   "letter": "H",
+   "title": "AGI",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - AGI.pdf"
+  },
+  {
+   "id": 15322,
+   "letter": "I",
+   "title": "Round screws",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Round screws.pdf"
+  },
+  {
+   "id": 15323,
+   "letter": "J",
+   "title": "Yet another mailbox problem",
+   "statement_pages": [
+    14,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Yet another mailbox problem.pdf"
+  },
+  {
+   "id": 15324,
+   "letter": "K",
+   "title": "No more regrets",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - No more regrets.pdf"
+  },
+  {
+   "id": 15325,
+   "letter": "L",
+   "title": "Yet another permutation problem",
+   "statement_pages": [
+    19,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Yet another permutation problem.pdf"
+  },
+  {
+   "id": 15326,
+   "letter": "M",
+   "title": "Yet another 01 problem",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Yet another 01 problem.pdf"
+  }
+ ]
+}

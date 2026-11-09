@@ -1,0 +1,163 @@
+{
+ "id": 1863,
+ "name": "The 2024 ICPC Northwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/1863",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1863&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1863&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9811,
+   "letter": "A",
+   "title": "Alphabetical Aristocrats",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Alphabetical Aristocrats.pdf"
+  },
+  {
+   "id": 9812,
+   "letter": "B",
+   "title": "Binary Search",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Binary Search.pdf"
+  },
+  {
+   "id": 9813,
+   "letter": "C",
+   "title": "Connect Five",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Connect Five.pdf"
+  },
+  {
+   "id": 9814,
+   "letter": "D",
+   "title": "Dutch Democracy",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dutch Democracy.pdf"
+  },
+  {
+   "id": 9815,
+   "letter": "E",
+   "title": "Evolving Etymology",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Evolving Etymology.pdf"
+  },
+  {
+   "id": 9816,
+   "letter": "F",
+   "title": "Flowing Fountain",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Flowing Fountain.pdf"
+  },
+  {
+   "id": 9817,
+   "letter": "G",
+   "title": "Glued Grid",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Glued Grid.pdf"
+  },
+  {
+   "id": 9818,
+   "letter": "H",
+   "title": "Hash Collision",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hash Collision.pdf"
+  },
+  {
+   "id": 9819,
+   "letter": "I",
+   "title": "It's a Kind of Magic",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - It's a Kind of Magic.pdf"
+  },
+  {
+   "id": 9820,
+   "letter": "J",
+   "title": "Jib Job",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jib Job.pdf"
+  },
+  {
+   "id": 9821,
+   "letter": "K",
+   "title": "Kruidnoten",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kruidnoten.pdf"
+  },
+  {
+   "id": 9822,
+   "letter": "L",
+   "title": "Limited Library",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Limited Library.pdf"
+  },
+  {
+   "id": 9823,
+   "letter": "M",
+   "title": "Mouse Trap",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mouse Trap.pdf"
+  }
+ ]
+}

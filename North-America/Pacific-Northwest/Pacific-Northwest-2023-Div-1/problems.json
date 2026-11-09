@@ -1,0 +1,159 @@
+{
+ "id": 1753,
+ "name": "Pacific Northwest 2023 (Div. 1)",
+ "url": "https://qoj.ac/contest/1753",
+ "categories": [
+  "ICPC/Regionals/North America/Pacific Northwest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1753&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9051,
+   "letter": "A",
+   "title": "ABC String",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - ABC String.pdf"
+  },
+  {
+   "id": 9065,
+   "letter": "B",
+   "title": "Acceptable Seating Arrangements",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Acceptable Seating Arrangements.pdf"
+  },
+  {
+   "id": 9070,
+   "letter": "C",
+   "title": "Candy Factory",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Candy Factory.pdf"
+  },
+  {
+   "id": 9053,
+   "letter": "D",
+   "title": "Cramming for Finals",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Cramming for Finals.pdf"
+  },
+  {
+   "id": 9055,
+   "letter": "E",
+   "title": "Eccentric Excursion",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Eccentric Excursion.pdf"
+  },
+  {
+   "id": 9059,
+   "letter": "F",
+   "title": "Item Selection",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Item Selection.pdf"
+  },
+  {
+   "id": 9056,
+   "letter": "G",
+   "title": "Matrix Fraud",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Matrix Fraud.pdf"
+  },
+  {
+   "id": 9057,
+   "letter": "H",
+   "title": "On-Call Team",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - On-Call Team.pdf"
+  },
+  {
+   "id": 9058,
+   "letter": "I",
+   "title": "Range Editing",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Range Editing.pdf"
+  },
+  {
+   "id": 9062,
+   "letter": "J",
+   "title": "Segment Drawing",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Segment Drawing.pdf"
+  },
+  {
+   "id": 9060,
+   "letter": "K",
+   "title": "Sequence Guessing",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Sequence Guessing.pdf"
+  },
+  {
+   "id": 9069,
+   "letter": "L",
+   "title": "Training",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Training.pdf"
+  },
+  {
+   "id": 9068,
+   "letter": "M",
+   "title": "Triple Sevens",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Triple Sevens.pdf"
+  }
+ ]
+}

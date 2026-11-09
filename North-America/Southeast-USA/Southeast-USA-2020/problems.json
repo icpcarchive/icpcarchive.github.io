@@ -1,0 +1,193 @@
+{
+ "id": 728,
+ "name": "Southeast USA 2020",
+ "url": "https://qoj.ac/contest/728",
+ "categories": [
+  "ICPC/Regionals/North America/Southeast USA",
+  "ICPC/Regionals/North America/South Central USA"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=728&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 1361,
+   "letter": "A",
+   "title": "Ant Typing",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Ant Typing.pdf"
+  },
+  {
+   "id": 1362,
+   "letter": "B",
+   "title": "Bad Packing",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bad Packing.pdf"
+  },
+  {
+   "id": 1363,
+   "letter": "C",
+   "title": "Bitonic Ordering",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Bitonic Ordering.pdf"
+  },
+  {
+   "id": 1364,
+   "letter": "D",
+   "title": "Condorcet",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Condorcet.pdf"
+  },
+  {
+   "id": 1365,
+   "letter": "E",
+   "title": "Dominating Duos",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Dominating Duos.pdf"
+  },
+  {
+   "id": 1366,
+   "letter": "F",
+   "title": "Exam Manipulation",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Exam Manipulation.pdf"
+  },
+  {
+   "id": 1367,
+   "letter": "G",
+   "title": "Exciting Tournament",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Exciting Tournament.pdf"
+  },
+  {
+   "id": 1368,
+   "letter": "H",
+   "title": "Kth Subtree",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Kth Subtree.pdf"
+  },
+  {
+   "id": 1369,
+   "letter": "I",
+   "title": "Longest Common Subsequence",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Longest Common Subsequence.pdf"
+  },
+  {
+   "id": 1370,
+   "letter": "J",
+   "title": "Magic Trick",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Magic Trick.pdf"
+  },
+  {
+   "id": 1371,
+   "letter": "K",
+   "title": "Missing Number",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Missing Number.pdf"
+  },
+  {
+   "id": 1372,
+   "letter": "L",
+   "title": "Rainbow Numbers",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Rainbow Numbers.pdf"
+  },
+  {
+   "id": 1373,
+   "letter": "M",
+   "title": "Rating Problems",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Rating Problems.pdf"
+  },
+  {
+   "id": 1374,
+   "letter": "N",
+   "title": "Triangular Collection",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - Triangular Collection.pdf"
+  },
+  {
+   "id": 1375,
+   "letter": "O",
+   "title": "TripTik",
+   "statement_pages": [
+    29,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/O - TripTik.pdf"
+  },
+  {
+   "id": 1376,
+   "letter": "P",
+   "title": "Unread Messages",
+   "statement_pages": [
+    31,
+    32
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/P - Unread Messages.pdf"
+  }
+ ]
+}

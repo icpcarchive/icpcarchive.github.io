@@ -1,0 +1,156 @@
+{
+ "id": 2690,
+ "name": "The 2025 ICPC Asia Yokohama Regional Contest",
+ "url": "https://qoj.ac/contest/2690",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2690&r=0"
+  },
+  {
+   "text": "Tutorials (jp)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2690&r=1"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2690&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15617,
+   "letter": "A",
+   "title": "Tatami Renovation",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Tatami Renovation.pdf"
+  },
+  {
+   "id": 15618,
+   "letter": "B",
+   "title": "Minimizing Wildlife Damage",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Minimizing Wildlife Damage.pdf"
+  },
+  {
+   "id": 15619,
+   "letter": "C",
+   "title": "Seagull Population",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Seagull Population.pdf"
+  },
+  {
+   "id": 15620,
+   "letter": "D",
+   "title": "Decompose and Concatenate",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Decompose and Concatenate.pdf"
+  },
+  {
+   "id": 15621,
+   "letter": "E",
+   "title": "Cutting Tofu",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Cutting Tofu.pdf"
+  },
+  {
+   "id": 15622,
+   "letter": "F",
+   "title": "Astral Geometry",
+   "statement_pages": [
+    11,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Astral Geometry.pdf"
+  },
+  {
+   "id": 15623,
+   "letter": "G",
+   "title": "Charity Raffle",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Charity Raffle.pdf"
+  },
+  {
+   "id": 15624,
+   "letter": "H",
+   "title": "U-Shaped Panels",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - U-Shaped Panels.pdf"
+  },
+  {
+   "id": 15625,
+   "letter": "I",
+   "title": "Game of Names",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Game of Names.pdf"
+  },
+  {
+   "id": 15626,
+   "letter": "J",
+   "title": "ICPC Board",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - ICPC Board.pdf"
+  },
+  {
+   "id": 15627,
+   "letter": "K",
+   "title": "Membership Structure of a Secret Society",
+   "statement_pages": [
+    21,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Membership Structure of a Secret Society.pdf"
+  },
+  {
+   "id": 15628,
+   "letter": "L",
+   "title": "Common Tangent Lines",
+   "statement_pages": [
+    24,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Common Tangent Lines.pdf"
+  }
+ ]
+}

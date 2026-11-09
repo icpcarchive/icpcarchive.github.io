@@ -1,0 +1,152 @@
+{
+ "id": 3684,
+ "name": "CTU Open Contest 2022",
+ "url": "https://qoj.ac/contest/3684",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3684&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3684&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19532,
+   "letter": "A",
+   "title": "Array",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Array.pdf"
+  },
+  {
+   "id": 19533,
+   "letter": "B",
+   "title": "Canoes",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Canoes.pdf"
+  },
+  {
+   "id": 19534,
+   "letter": "C",
+   "title": "Earthquake",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Earthquake.pdf"
+  },
+  {
+   "id": 19535,
+   "letter": "D",
+   "title": "Journals",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Journals.pdf"
+  },
+  {
+   "id": 19536,
+   "letter": "E",
+   "title": "Mower",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Mower.pdf"
+  },
+  {
+   "id": 19537,
+   "letter": "F",
+   "title": "Needle",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Needle.pdf"
+  },
+  {
+   "id": 19538,
+   "letter": "G",
+   "title": "Patio",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Patio.pdf"
+  },
+  {
+   "id": 19539,
+   "letter": "H",
+   "title": "Robots",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Robots.pdf"
+  },
+  {
+   "id": 19540,
+   "letter": "I",
+   "title": "Shamans",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Shamans.pdf"
+  },
+  {
+   "id": 19541,
+   "letter": "J",
+   "title": "Transmitter",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Transmitter.pdf"
+  },
+  {
+   "id": 19542,
+   "letter": "K",
+   "title": "Volcanoes",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Volcanoes.pdf"
+  },
+  {
+   "id": 19543,
+   "letter": "L",
+   "title": "Wagon",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Wagon.pdf"
+  }
+ ]
+}

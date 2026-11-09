@@ -1,0 +1,141 @@
+{
+ "id": 3884,
+ "name": "The 2015 German Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/3884",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/German Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3884&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3884&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19161,
+   "letter": "A",
+   "title": "A Journey to Greece",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - A Journey to Greece.pdf"
+  },
+  {
+   "id": 19162,
+   "letter": "B",
+   "title": "Bounty Hunter II",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bounty Hunter II.pdf"
+  },
+  {
+   "id": 19163,
+   "letter": "C",
+   "title": "Cake",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cake.pdf"
+  },
+  {
+   "id": 19164,
+   "letter": "D",
+   "title": "Carpets",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Carpets.pdf"
+  },
+  {
+   "id": 19165,
+   "letter": "E",
+   "title": "Change of Scenery",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Change of Scenery.pdf"
+  },
+  {
+   "id": 19166,
+   "letter": "F",
+   "title": "Divisions",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Divisions.pdf"
+  },
+  {
+   "id": 19167,
+   "letter": "G",
+   "title": "Extreme Sort",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Extreme Sort.pdf"
+  },
+  {
+   "id": 19168,
+   "letter": "H",
+   "title": "Legacy Code",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Legacy Code.pdf"
+  },
+  {
+   "id": 19169,
+   "letter": "I",
+   "title": "Milling machines",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Milling machines.pdf"
+  },
+  {
+   "id": 19170,
+   "letter": "J",
+   "title": "Souvenirs",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Souvenirs.pdf"
+  },
+  {
+   "id": 19171,
+   "letter": "K",
+   "title": "Upside down primes",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Upside down primes.pdf"
+  }
+ ]
+}

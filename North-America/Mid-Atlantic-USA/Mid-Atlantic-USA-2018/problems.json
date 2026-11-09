@@ -1,0 +1,104 @@
+{
+ "id": 176,
+ "name": "Mid-Atlantic USA 2018",
+ "url": "https://qoj.ac/contest/176",
+ "categories": [
+  "ICPC/Regionals/North America/Mid-Atlantic USA"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=176&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2748,
+   "letter": "A",
+   "title": "Lost is Close to Lose",
+   "statement_pages": [
+    3,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Lost is Close to Lose.pdf"
+  },
+  {
+   "id": 2749,
+   "letter": "B",
+   "title": "Orphan Backups",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Orphan Backups.pdf"
+  },
+  {
+   "id": 2750,
+   "letter": "C",
+   "title": "Collusion on Two Wheels",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Collusion on Two Wheels.pdf"
+  },
+  {
+   "id": 2751,
+   "letter": "D",
+   "title": "Find Poly",
+   "statement_pages": [
+    10,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Find Poly.pdf"
+  },
+  {
+   "id": 2752,
+   "letter": "E",
+   "title": "Neutral Ground",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Neutral Ground.pdf"
+  },
+  {
+   "id": 2753,
+   "letter": "F",
+   "title": "Picking Up the Dice",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Picking Up the Dice.pdf"
+  },
+  {
+   "id": 2754,
+   "letter": "G",
+   "title": "Playing the Slots",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Playing the Slots.pdf"
+  },
+  {
+   "id": 2755,
+   "letter": "H",
+   "title": "Tightly Packed",
+   "statement_pages": [
+    19,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Tightly Packed.pdf"
+  }
+ ]
+}

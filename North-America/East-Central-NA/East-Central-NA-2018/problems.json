@@ -1,0 +1,126 @@
+{
+ "id": 162,
+ "name": "East Central NA 2018",
+ "url": "https://qoj.ac/contest/162",
+ "categories": [
+  "ICPC/Regionals/North America/East Central NA"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=162&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 510,
+   "letter": "A",
+   "title": "Car Vet",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Car Vet.pdf"
+  },
+  {
+   "id": 511,
+   "letter": "B",
+   "title": "Difference",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Difference.pdf"
+  },
+  {
+   "id": 512,
+   "letter": "C",
+   "title": "Pear-wise Voting",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Pear-wise Voting.pdf"
+  },
+  {
+   "id": 513,
+   "letter": "D",
+   "title": "Pizza Cutting",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Pizza Cutting.pdf"
+  },
+  {
+   "id": 514,
+   "letter": "E",
+   "title": "The Punctilious Cruciverbalist",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - The Punctilious Cruciverbalist.pdf"
+  },
+  {
+   "id": 515,
+   "letter": "F",
+   "title": "A Random Problem",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - A Random Problem.pdf"
+  },
+  {
+   "id": 516,
+   "letter": "G",
+   "title": "Roman Holidays",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Roman Holidays.pdf"
+  },
+  {
+   "id": 517,
+   "letter": "H",
+   "title": "Sequential Yahtzee",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Sequential Yahtzee.pdf"
+  },
+  {
+   "id": 518,
+   "letter": "I",
+   "title": "Tours de Sales Force",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Tours de Sales Force.pdf"
+  },
+  {
+   "id": 519,
+   "letter": "J",
+   "title": "Watch Where You Step",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Watch Where You Step.pdf"
+  }
+ ]
+}

@@ -1,0 +1,159 @@
+{
+ "id": 432,
+ "name": "The 2019 ICPC Asia Taipei-Hsinchu Site Programming Contest",
+ "url": "https://qoj.ac/contest/432",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Taiwan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=432&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3128,
+   "letter": "A",
+   "title": "Rush Hour Puzzle",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Rush Hour Puzzle.pdf"
+  },
+  {
+   "id": 3129,
+   "letter": "B",
+   "title": "The Power Monitor System",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - The Power Monitor System.pdf"
+  },
+  {
+   "id": 3130,
+   "letter": "C",
+   "title": "Are They All Integers?",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Are They All Integers_.pdf"
+  },
+  {
+   "id": 3131,
+   "letter": "D",
+   "title": "Tapioka",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Tapioka.pdf"
+  },
+  {
+   "id": 3132,
+   "letter": "E",
+   "title": "The League of Sequence Designers",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - The League of Sequence Designers.pdf"
+  },
+  {
+   "id": 3133,
+   "letter": "F",
+   "title": "Miss Sloane",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Miss Sloane.pdf"
+  },
+  {
+   "id": 3134,
+   "letter": "G",
+   "title": "Optimal Selection",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Optimal Selection.pdf"
+  },
+  {
+   "id": 3135,
+   "letter": "H",
+   "title": "Mining a",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Mining a.pdf"
+  },
+  {
+   "id": 3136,
+   "letter": "I",
+   "title": "The Spectrum",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - The Spectrum.pdf"
+  },
+  {
+   "id": 3137,
+   "letter": "J",
+   "title": "Automatic Control Machine",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Automatic Control Machine.pdf"
+  },
+  {
+   "id": 3138,
+   "letter": "K",
+   "title": "Length of Bundle Rope",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Length of Bundle Rope.pdf"
+  },
+  {
+   "id": 3139,
+   "letter": "L",
+   "title": "Largest Quadrilateral",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Largest Quadrilateral.pdf"
+  },
+  {
+   "id": 3140,
+   "letter": "M",
+   "title": "DivModulo",
+   "statement_pages": [
+    25,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - DivModulo.pdf"
+  }
+ ]
+}

@@ -1,0 +1,168 @@
+{
+ "id": 1828,
+ "name": "The 2024 ICPC Asia Nanjing Regional Contest",
+ "url": "https://qoj.ac/contest/1828",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Nanjing",
+  "ICPC/Regionals/Asia East Continent/The 2024 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1828&r=0"
+  },
+  {
+   "text": "Statements (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1828&r=1"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1828&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 9564,
+   "letter": "A",
+   "title": "Hey, Have You Seen My Kangaroo?",
+   "statement_pages": [
+    2,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Hey, Have You Seen My Kangaroo_.pdf"
+  },
+  {
+   "id": 9565,
+   "letter": "B",
+   "title": "Birthday Gift",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Birthday Gift.pdf"
+  },
+  {
+   "id": 9566,
+   "letter": "C",
+   "title": "Topology",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Topology.pdf"
+  },
+  {
+   "id": 9567,
+   "letter": "D",
+   "title": "Toe-Tac-Tics",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Toe-Tac-Tics.pdf"
+  },
+  {
+   "id": 9568,
+   "letter": "E",
+   "title": "Left Shifting 3",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Left Shifting 3.pdf"
+  },
+  {
+   "id": 9569,
+   "letter": "F",
+   "title": "Subway",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Subway.pdf"
+  },
+  {
+   "id": 9570,
+   "letter": "G",
+   "title": "Binary Tree",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Binary Tree.pdf"
+  },
+  {
+   "id": 9571,
+   "letter": "H",
+   "title": "Border Jump 2",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Border Jump 2.pdf"
+  },
+  {
+   "id": 9572,
+   "letter": "I",
+   "title": "Bingo",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Bingo.pdf"
+  },
+  {
+   "id": 9573,
+   "letter": "J",
+   "title": "Social Media",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Social Media.pdf"
+  },
+  {
+   "id": 9574,
+   "letter": "K",
+   "title": "Strips",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Strips.pdf"
+  },
+  {
+   "id": 9575,
+   "letter": "L",
+   "title": "$P \\oplus Q = R$",
+   "statement_pages": [
+    18,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - $P _oplus Q = R$.pdf"
+  },
+  {
+   "id": 9576,
+   "letter": "M",
+   "title": "Ordainer of Inexorable Judgment",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Ordainer of Inexorable Judgment.pdf"
+  }
+ ]
+}

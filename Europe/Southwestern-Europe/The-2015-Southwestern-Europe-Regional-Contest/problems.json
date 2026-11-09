@@ -1,0 +1,130 @@
+{
+ "id": 405,
+ "name": "The 2015 Southwestern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/405",
+ "categories": [
+  "ICPC/Regionals/Europe/Southwestern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=405&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=405&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3805,
+   "letter": "A",
+   "title": "Promotions",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Promotions.pdf"
+  },
+  {
+   "id": 3806,
+   "letter": "B",
+   "title": "Black Vienna",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Black Vienna.pdf"
+  },
+  {
+   "id": 3807,
+   "letter": "C",
+   "title": "Canvas Painting",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Canvas Painting.pdf"
+  },
+  {
+   "id": 3808,
+   "letter": "D",
+   "title": "Dice Cup",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dice Cup.pdf"
+  },
+  {
+   "id": 3809,
+   "letter": "E",
+   "title": "Wooden Signs",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Wooden Signs.pdf"
+  },
+  {
+   "id": 3810,
+   "letter": "F",
+   "title": "Landscaping",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Landscaping.pdf"
+  },
+  {
+   "id": 3811,
+   "letter": "G",
+   "title": "Game of Cards",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game of Cards.pdf"
+  },
+  {
+   "id": 3812,
+   "letter": "H",
+   "title": "Sheldon Numbers",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Sheldon Numbers.pdf"
+  },
+  {
+   "id": 3813,
+   "letter": "I",
+   "title": "Text Processor",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Text Processor.pdf"
+  },
+  {
+   "id": 3814,
+   "letter": "J",
+   "title": "Saint John Festival",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Saint John Festival.pdf"
+  }
+ ]
+}

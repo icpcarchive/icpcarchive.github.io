@@ -1,0 +1,171 @@
+{
+ "id": 692,
+ "name": "ICPC North America Championship 2021",
+ "url": "https://qoj.ac/contest/692",
+ "categories": [
+  "ICPC/Regionals/North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=692&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=692&r=1"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "http://serjudging.vanb.org/?p=1687"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=692&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 1817,
+   "letter": "A",
+   "title": "AND Permutation",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - AND Permutation.pdf"
+  },
+  {
+   "id": 1818,
+   "letter": "B",
+   "title": "Apple Orchard",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Apple Orchard.pdf"
+  },
+  {
+   "id": 1819,
+   "letter": "C",
+   "title": "Cleaning Robot",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Cleaning Robot.pdf"
+  },
+  {
+   "id": 1820,
+   "letter": "D",
+   "title": "Contest Construction",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Contest Construction.pdf"
+  },
+  {
+   "id": 1821,
+   "letter": "E",
+   "title": "Ketek Counting",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Ketek Counting.pdf"
+  },
+  {
+   "id": 1822,
+   "letter": "F",
+   "title": "Mountainous Palindromic Subarray",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Mountainous Palindromic Subarray.pdf"
+  },
+  {
+   "id": 1823,
+   "letter": "G",
+   "title": "Permutation CFG",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Permutation CFG.pdf"
+  },
+  {
+   "id": 1824,
+   "letter": "H",
+   "title": "Special Cycle",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Special Cycle.pdf"
+  },
+  {
+   "id": 1825,
+   "letter": "I",
+   "title": "The King's Guards",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - The King's Guards.pdf"
+  },
+  {
+   "id": 1826,
+   "letter": "J",
+   "title": "The Paladin",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - The Paladin.pdf"
+  },
+  {
+   "id": 1827,
+   "letter": "K",
+   "title": "Token Game",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Token Game.pdf"
+  },
+  {
+   "id": 1828,
+   "letter": "L",
+   "title": "TraveLog",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - TraveLog.pdf"
+  },
+  {
+   "id": 1829,
+   "letter": "M",
+   "title": "You be The Judge, Again",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - You be The Judge, Again.pdf"
+  }
+ ]
+}

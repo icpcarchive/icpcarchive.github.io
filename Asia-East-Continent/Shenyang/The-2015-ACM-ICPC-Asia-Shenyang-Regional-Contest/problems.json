@@ -1,0 +1,160 @@
+{
+ "id": 2115,
+ "name": "The 2015 ACM-ICPC Asia Shenyang Regional Contest",
+ "url": "https://qoj.ac/contest/2115",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Shenyang",
+  "ICPC/Regionals/Asia East Continent/The 2015 ACM-ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2115&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11982,
+   "letter": "A",
+   "title": "Pattern String",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Pattern String.pdf"
+  },
+  {
+   "id": 11983,
+   "letter": "B",
+   "title": "Bazinga",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bazinga.pdf"
+  },
+  {
+   "id": 11984,
+   "letter": "C",
+   "title": "Minimum Cut-Cut",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Minimum Cut-Cut.pdf"
+  },
+  {
+   "id": 11985,
+   "letter": "D",
+   "title": "Pagodas",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Pagodas.pdf"
+  },
+  {
+   "id": 11986,
+   "letter": "E",
+   "title": "Efficient Tree",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Efficient Tree.pdf"
+  },
+  {
+   "id": 11987,
+   "letter": "F",
+   "title": "Frogs",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Frogs.pdf"
+  },
+  {
+   "id": 11988,
+   "letter": "G",
+   "title": "Game of Flying Circus",
+   "statement_pages": [
+    15,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Game of Flying Circus.pdf"
+  },
+  {
+   "id": 11989,
+   "letter": "H",
+   "title": "Chessboard",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Chessboard.pdf"
+  },
+  {
+   "id": 11990,
+   "letter": "I",
+   "title": "Triple",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Triple.pdf"
+  },
+  {
+   "id": 11991,
+   "letter": "J",
+   "title": "John's Fences",
+   "statement_pages": [
+    23,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - John's Fences.pdf"
+  },
+  {
+   "id": 11992,
+   "letter": "K",
+   "title": "Kykneion asma",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kykneion asma.pdf"
+  },
+  {
+   "id": 11993,
+   "letter": "L",
+   "title": "Number Link",
+   "statement_pages": [
+    29,
+    32
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Number Link.pdf"
+  },
+  {
+   "id": 11994,
+   "letter": "M",
+   "title": "Meeting",
+   "statement_pages": [
+    33,
+    34
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Meeting.pdf"
+  }
+ ]
+}

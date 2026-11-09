@@ -1,0 +1,104 @@
+{
+ "id": 3903,
+ "name": "The 2005 ICPC Benelux Algorithm Programming Contest (BAPC 2005)",
+ "url": "https://qoj.ac/contest/3903",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3903&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19195,
+   "letter": "A",
+   "title": "ASM – The Abelian Sandpile Model",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - ASM – The Abelian Sandpile Model.pdf"
+  },
+  {
+   "id": 19196,
+   "letter": "B",
+   "title": "Cell Phones",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Cell Phones.pdf"
+  },
+  {
+   "id": 19197,
+   "letter": "C",
+   "title": "Evacuation",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Evacuation.pdf"
+  },
+  {
+   "id": 19198,
+   "letter": "D",
+   "title": "Giant Cover",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Giant Cover.pdf"
+  },
+  {
+   "id": 19199,
+   "letter": "E",
+   "title": "North-Western Winds",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - North-Western Winds.pdf"
+  },
+  {
+   "id": 19200,
+   "letter": "F",
+   "title": "Shepherds and Engineers",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Shepherds and Engineers.pdf"
+  },
+  {
+   "id": 19201,
+   "letter": "G",
+   "title": "Ski Lifts",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Ski Lifts.pdf"
+  },
+  {
+   "id": 19202,
+   "letter": "H",
+   "title": "Tables",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Tables.pdf"
+  }
+ ]
+}

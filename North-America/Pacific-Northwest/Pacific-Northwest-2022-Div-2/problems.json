@@ -1,0 +1,159 @@
+{
+ "id": 1121,
+ "name": "Pacific Northwest 2022 (Div. 2)",
+ "url": "https://qoj.ac/contest/1121",
+ "categories": [
+  "ICPC/Regionals/North America/Pacific Northwest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1121&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5603,
+   "letter": "A",
+   "title": "Three Dice",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Three Dice.pdf"
+  },
+  {
+   "id": 5577,
+   "letter": "B",
+   "title": "Alchemy",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Alchemy.pdf"
+  },
+  {
+   "id": 5581,
+   "letter": "C",
+   "title": "Champernowne Count",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Champernowne Count.pdf"
+  },
+  {
+   "id": 5595,
+   "letter": "D",
+   "title": "Hunt the Wumpus",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Hunt the Wumpus.pdf"
+  },
+  {
+   "id": 5583,
+   "letter": "E",
+   "title": "Color Tubes",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Color Tubes.pdf"
+  },
+  {
+   "id": 5593,
+   "letter": "F",
+   "title": "Food Processor",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Food Processor.pdf"
+  },
+  {
+   "id": 5591,
+   "letter": "G",
+   "title": "Fading Wind",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Fading Wind.pdf"
+  },
+  {
+   "id": 5585,
+   "letter": "H",
+   "title": "Creative Accounting",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Creative Accounting.pdf"
+  },
+  {
+   "id": 5596,
+   "letter": "I",
+   "title": "I Could Have Won",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - I Could Have Won.pdf"
+  },
+  {
+   "id": 5602,
+   "letter": "J",
+   "title": "Sun and Moon",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Sun and Moon.pdf"
+  },
+  {
+   "id": 5582,
+   "letter": "K",
+   "title": "Chocolate Chip Fabrication",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Chocolate Chip Fabrication.pdf"
+  },
+  {
+   "id": 5587,
+   "letter": "L",
+   "title": "Distinct Parity Excess",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Distinct Parity Excess.pdf"
+  },
+  {
+   "id": 5600,
+   "letter": "M",
+   "title": "Restaurant Opening",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Restaurant Opening.pdf"
+  }
+ ]
+}

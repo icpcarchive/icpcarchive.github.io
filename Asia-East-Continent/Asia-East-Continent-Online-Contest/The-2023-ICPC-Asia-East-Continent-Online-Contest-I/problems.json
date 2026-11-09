@@ -1,0 +1,149 @@
+{
+ "id": 1485,
+ "name": "The 2023 ICPC Asia East Continent Online Contest (I)",
+ "url": "https://qoj.ac/contest/1485",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent",
+  "ICPC/Regionals/Asia East Continent/The 2023 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1485&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 8072,
+   "letter": "A",
+   "title": "Qualifiers Ranking Rules",
+   "statement_pages": [
+    1,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Qualifiers Ranking Rules.pdf"
+  },
+  {
+   "id": 8073,
+   "letter": "B",
+   "title": "String",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - String.pdf"
+  },
+  {
+   "id": 8074,
+   "letter": "C",
+   "title": "Multiply Then Plus",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Multiply Then Plus.pdf"
+  },
+  {
+   "id": 8075,
+   "letter": "D",
+   "title": "Transitivity",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Transitivity.pdf"
+  },
+  {
+   "id": 8076,
+   "letter": "E",
+   "title": "Magical Pair",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Magical Pair.pdf"
+  },
+  {
+   "id": 8077,
+   "letter": "F",
+   "title": "Alice and Bob",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Alice and Bob.pdf"
+  },
+  {
+   "id": 8078,
+   "letter": "G",
+   "title": "Spanning Tree",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Spanning Tree.pdf"
+  },
+  {
+   "id": 8079,
+   "letter": "H",
+   "title": "Range Periodicity Query",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Range Periodicity Query.pdf"
+  },
+  {
+   "id": 8080,
+   "letter": "I",
+   "title": "Pa?sWorD",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Pa_sWorD.pdf"
+  },
+  {
+   "id": 8081,
+   "letter": "J",
+   "title": "Minimum Manhattan Distance",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Minimum Manhattan Distance.pdf"
+  },
+  {
+   "id": 8082,
+   "letter": "K",
+   "title": "Minimum Euclidean Distance",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Minimum Euclidean Distance.pdf"
+  },
+  {
+   "id": 8083,
+   "letter": "L",
+   "title": "KaChang!",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - KaChang!.pdf"
+  }
+ ]
+}

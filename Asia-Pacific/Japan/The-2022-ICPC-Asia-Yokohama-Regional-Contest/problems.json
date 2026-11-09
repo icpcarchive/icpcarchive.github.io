@@ -1,0 +1,137 @@
+{
+ "id": 1101,
+ "name": "The 2022 ICPC Asia Yokohama Regional Contest",
+ "url": "https://qoj.ac/contest/1101",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1101&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5470,
+   "letter": "A",
+   "title": "Hasty Santa Claus",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Hasty Santa Claus.pdf"
+  },
+  {
+   "id": 5471,
+   "letter": "B",
+   "title": "Interactive Number Guessing",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Interactive Number Guessing.pdf"
+  },
+  {
+   "id": 5472,
+   "letter": "C",
+   "title": "Secure the Top Secret",
+   "statement_pages": [
+    6,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Secure the Top Secret.pdf"
+  },
+  {
+   "id": 5473,
+   "letter": "D",
+   "title": "Move One Coin",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Move One Coin.pdf"
+  },
+  {
+   "id": 5474,
+   "letter": "E",
+   "title": "Incredibly Cute Penguin Chicks",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Incredibly Cute Penguin Chicks.pdf"
+  },
+  {
+   "id": 5475,
+   "letter": "F",
+   "title": "Make a Loop",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Make a Loop.pdf"
+  },
+  {
+   "id": 5476,
+   "letter": "G",
+   "title": "Remodeling the Dungeon",
+   "statement_pages": [
+    15,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Remodeling the Dungeon.pdf"
+  },
+  {
+   "id": 5477,
+   "letter": "H",
+   "title": "Cake Decoration",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Cake Decoration.pdf"
+  },
+  {
+   "id": 5478,
+   "letter": "I",
+   "title": "Quiz Contest",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Quiz Contest.pdf"
+  },
+  {
+   "id": 5479,
+   "letter": "J",
+   "title": "Traveling Salesperson in an Island",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Traveling Salesperson in an Island.pdf"
+  },
+  {
+   "id": 5480,
+   "letter": "K",
+   "title": "New Year Festival",
+   "statement_pages": [
+    24,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - New Year Festival.pdf"
+  }
+ ]
+}

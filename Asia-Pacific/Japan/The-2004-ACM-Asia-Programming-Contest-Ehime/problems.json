@@ -1,0 +1,74 @@
+{
+ "id": 139,
+ "name": "The 2004 ACM Asia Programming Contest - Ehime",
+ "url": "https://qoj.ac/contest/139",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 2042,
+   "letter": "A",
+   "title": "The Balance",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - The Balance.pdf"
+  },
+  {
+   "id": 2043,
+   "letter": "B",
+   "title": "Make a Sequence",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Make a Sequence.pdf"
+  },
+  {
+   "id": 2044,
+   "letter": "C",
+   "title": "Leaky Cryptography",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Leaky Cryptography.pdf"
+  },
+  {
+   "id": 2045,
+   "letter": "D",
+   "title": "Pathological Paths",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Pathological Paths.pdf"
+  },
+  {
+   "id": 2046,
+   "letter": "E",
+   "title": "Confusing Login Names",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Confusing Login Names.pdf"
+  },
+  {
+   "id": 2047,
+   "letter": "F",
+   "title": "Dice Puzzle",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Dice Puzzle.pdf"
+  },
+  {
+   "id": 2048,
+   "letter": "G",
+   "title": "Color the Map",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Color the Map.pdf"
+  },
+  {
+   "id": 2049,
+   "letter": "H",
+   "title": "Inherit the Spheres",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - Inherit the Spheres.pdf"
+  },
+  {
+   "id": 2050,
+   "letter": "I",
+   "title": "Crossing Prisms",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Crossing Prisms.pdf"
+  }
+ ]
+}

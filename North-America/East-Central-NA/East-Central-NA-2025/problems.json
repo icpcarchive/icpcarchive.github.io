@@ -1,0 +1,150 @@
+{
+ "id": 2797,
+ "name": "East Central NA 2025",
+ "url": "https://qoj.ac/contest/2797",
+ "categories": [
+  "ICPC/Regionals/North America/East Central NA",
+  "ICPC/Regionals/North America/Greater New York",
+  "ICPC/Regionals/North America/Northeast North America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2797&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 15948,
+   "letter": "A",
+   "title": "A Little Leftover Pizza",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - A Little Leftover Pizza.pdf"
+  },
+  {
+   "id": 15949,
+   "letter": "B",
+   "title": "Andor Strikes Again",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Andor Strikes Again.pdf"
+  },
+  {
+   "id": 15950,
+   "letter": "C",
+   "title": "AROD",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - AROD.pdf"
+  },
+  {
+   "id": 15951,
+   "letter": "D",
+   "title": "But I Want to Win",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - But I Want to Win.pdf"
+  },
+  {
+   "id": 15952,
+   "letter": "E",
+   "title": "Chess Solitaire",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Chess Solitaire.pdf"
+  },
+  {
+   "id": 15953,
+   "letter": "F",
+   "title": "Fractional Sequence",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fractional Sequence.pdf"
+  },
+  {
+   "id": 15954,
+   "letter": "G",
+   "title": "How Many Balls?",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - How Many Balls_.pdf"
+  },
+  {
+   "id": 15955,
+   "letter": "H",
+   "title": "Move It, Slowpoke!",
+   "statement_pages": [
+    15,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Move It, Slowpoke!.pdf"
+  },
+  {
+   "id": 15956,
+   "letter": "I",
+   "title": "Number Pyramid",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Number Pyramid.pdf"
+  },
+  {
+   "id": 15957,
+   "letter": "J",
+   "title": "Polyomino Tiling",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Polyomino Tiling.pdf"
+  },
+  {
+   "id": 15958,
+   "letter": "K",
+   "title": "Triptych",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Triptych.pdf"
+  },
+  {
+   "id": 15959,
+   "letter": "L",
+   "title": "Valley Gulls",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Valley Gulls.pdf"
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "id": 450,
+ "name": "The 2020 ICPC Asia Seoul Regional Contest",
+ "url": "https://qoj.ac/contest/450",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Korea"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=450&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2522,
+   "letter": "A",
+   "title": "Autonomous Vehicle",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Autonomous Vehicle.pdf"
+  },
+  {
+   "id": 2523,
+   "letter": "B",
+   "title": "Commemorative Dice",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Commemorative Dice.pdf"
+  },
+  {
+   "id": 2524,
+   "letter": "C",
+   "title": "Dessert Café",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Dessert Café.pdf"
+  },
+  {
+   "id": 2525,
+   "letter": "D",
+   "title": "Electric Vehicle",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Electric Vehicle.pdf"
+  },
+  {
+   "id": 2526,
+   "letter": "E",
+   "title": "Imprecise Computer",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Imprecise Computer.pdf"
+  },
+  {
+   "id": 2527,
+   "letter": "F",
+   "title": "Ink Mix",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Ink Mix.pdf"
+  },
+  {
+   "id": 2528,
+   "letter": "G",
+   "title": "Mobile Robot",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Mobile Robot.pdf"
+  },
+  {
+   "id": 2529,
+   "letter": "H",
+   "title": "Needle",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Needle.pdf"
+  },
+  {
+   "id": 2530,
+   "letter": "I",
+   "title": "Stock Analysis",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Stock Analysis.pdf"
+  },
+  {
+   "id": 2531,
+   "letter": "J",
+   "title": "Switches",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Switches.pdf"
+  },
+  {
+   "id": 2532,
+   "letter": "K",
+   "title": "Tiling Polyomino",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Tiling Polyomino.pdf"
+  },
+  {
+   "id": 2533,
+   "letter": "L",
+   "title": "Two Buildings",
+   "statement_pages": [
+    24,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Two Buildings.pdf"
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "id": 1072,
+ "name": "The 2011 ACM-ICPC Asia Shanghai Regional Contest",
+ "url": "https://qoj.ac/contest/1072",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Shanghai"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1072&r=0"
+  },
+  {
+   "text": "Notice (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1072&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5314,
+   "letter": "A",
+   "title": "Zombie's Treasure Chest",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Zombie's Treasure Chest.pdf"
+  },
+  {
+   "id": 5315,
+   "letter": "B",
+   "title": "Yummy Triangular Pizza",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Yummy Triangular Pizza.pdf"
+  },
+  {
+   "id": 5316,
+   "letter": "C",
+   "title": "Xavier is Learning to Count",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Xavier is Learning to Count.pdf"
+  },
+  {
+   "id": 5317,
+   "letter": "D",
+   "title": "Winmine.exe",
+   "statement_pages": [
+    6,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Winmine.exe.pdf"
+  },
+  {
+   "id": 5318,
+   "letter": "E",
+   "title": "Very Boring Homework",
+   "statement_pages": [
+    9,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Very Boring Homework.pdf"
+  },
+  {
+   "id": 5319,
+   "letter": "F",
+   "title": "Universal Question Answering System",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Universal Question Answering System.pdf"
+  },
+  {
+   "id": 5320,
+   "letter": "G",
+   "title": "Triangles and Quadrangle",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Triangles and Quadrangle.pdf"
+  },
+  {
+   "id": 5321,
+   "letter": "H",
+   "title": "Share the Cakes",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Share the Cakes.pdf"
+  },
+  {
+   "id": 5322,
+   "letter": "I",
+   "title": "Revenge of Fibonacci",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Revenge of Fibonacci.pdf"
+  },
+  {
+   "id": 5323,
+   "letter": "J",
+   "title": "Quelling Blade",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Quelling Blade.pdf"
+  }
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "id": 1982,
+ "name": "The 2014 Polish Collegiate Programming Contest (AMPPZ 2014)",
+ "url": "https://qoj.ac/contest/1982",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/Polish Collegiate Programming Contest (AMPPZ)"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1982&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 11550,
+   "letter": "A",
+   "title": "The Lawyer",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - The Lawyer.pdf"
+  },
+  {
+   "id": 11551,
+   "letter": "B",
+   "title": "Petrol",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Petrol.pdf"
+  },
+  {
+   "id": 11552,
+   "letter": "C",
+   "title": "The Prices",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - The Prices.pdf"
+  },
+  {
+   "id": 11553,
+   "letter": "D",
+   "title": "Divisors",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Divisors.pdf"
+  },
+  {
+   "id": 11554,
+   "letter": "E",
+   "title": "Euclidean Nim",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Euclidean Nim.pdf"
+  },
+  {
+   "id": 11555,
+   "letter": "F",
+   "title": "Pillars",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Pillars.pdf"
+  },
+  {
+   "id": 11556,
+   "letter": "G",
+   "title": "Global Warming",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Global Warming.pdf"
+  },
+  {
+   "id": 11557,
+   "letter": "H",
+   "title": "Hit of the Season",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hit of the Season.pdf"
+  },
+  {
+   "id": 11558,
+   "letter": "I",
+   "title": "The Staging",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - The Staging.pdf"
+  },
+  {
+   "id": 11559,
+   "letter": "J",
+   "title": "The Cave",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - The Cave.pdf"
+  },
+  {
+   "id": 11560,
+   "letter": "K",
+   "title": "The Captain",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - The Captain.pdf"
+  }
+ ]
+}

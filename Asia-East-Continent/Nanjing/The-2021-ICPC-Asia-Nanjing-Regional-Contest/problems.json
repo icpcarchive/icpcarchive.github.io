@@ -1,0 +1,160 @@
+{
+ "id": 1236,
+ "name": "The 2021 ICPC Asia Nanjing Regional Contest",
+ "url": "https://qoj.ac/contest/1236",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Nanjing",
+  "ICPC/Regionals/Asia East Continent/The 2021 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1236&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 6431,
+   "letter": "A",
+   "title": "Oops, It's Yesterday Twice More",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Oops, It's Yesterday Twice More.pdf"
+  },
+  {
+   "id": 6432,
+   "letter": "B",
+   "title": "Puzzle in Inazuma",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Puzzle in Inazuma.pdf"
+  },
+  {
+   "id": 6433,
+   "letter": "C",
+   "title": "Klee in Solitary Confinement",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Klee in Solitary Confinement.pdf"
+  },
+  {
+   "id": 6434,
+   "letter": "D",
+   "title": "Paimon Sorting",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Paimon Sorting.pdf"
+  },
+  {
+   "id": 6435,
+   "letter": "E",
+   "title": "Paimon Segment Tree",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Paimon Segment Tree.pdf"
+  },
+  {
+   "id": 6436,
+   "letter": "F",
+   "title": "Paimon Polygon",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Paimon Polygon.pdf"
+  },
+  {
+   "id": 6437,
+   "letter": "G",
+   "title": "Paimon's Tree",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Paimon's Tree.pdf"
+  },
+  {
+   "id": 6438,
+   "letter": "H",
+   "title": "Crystalfly",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Crystalfly.pdf"
+  },
+  {
+   "id": 6439,
+   "letter": "I",
+   "title": "Cloud Retainer's Game",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Cloud Retainer's Game.pdf"
+  },
+  {
+   "id": 6440,
+   "letter": "J",
+   "title": "Xingqiu's Joke",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Xingqiu's Joke.pdf"
+  },
+  {
+   "id": 6441,
+   "letter": "K",
+   "title": "Ancient Magic Circle in Teyvat",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Ancient Magic Circle in Teyvat.pdf"
+  },
+  {
+   "id": 6442,
+   "letter": "L",
+   "title": "Secret of Tianqiu Valley",
+   "statement_pages": [
+    22,
+    23
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Secret of Tianqiu Valley.pdf"
+  },
+  {
+   "id": 6443,
+   "letter": "M",
+   "title": "Windblume Festival",
+   "statement_pages": [
+    24,
+    25
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Windblume Festival.pdf"
+  }
+ ]
+}

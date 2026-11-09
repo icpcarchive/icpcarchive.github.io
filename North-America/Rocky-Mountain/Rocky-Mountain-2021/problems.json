@@ -1,0 +1,178 @@
+{
+ "id": 867,
+ "name": "Rocky Mountain 2021",
+ "url": "https://qoj.ac/contest/867",
+ "categories": [
+  "ICPC/Regionals/North America/Rocky Mountain"
+ ],
+ "files": [
+  {
+   "text": "Slide Count",
+   "href": "https://qoj.ac/contest/867/problem/2966"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=867&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=867&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 2958,
+   "letter": "A",
+   "title": "Betting",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Betting.pdf"
+  },
+  {
+   "id": 2959,
+   "letter": "B",
+   "title": "Antialiasing",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Antialiasing.pdf"
+  },
+  {
+   "id": 2960,
+   "letter": "C",
+   "title": "Social Distancing",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Social Distancing.pdf"
+  },
+  {
+   "id": 2961,
+   "letter": "D",
+   "title": "Pawn Shop",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Pawn Shop.pdf"
+  },
+  {
+   "id": 2962,
+   "letter": "E",
+   "title": "Election Paradox",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Election Paradox.pdf"
+  },
+  {
+   "id": 2963,
+   "letter": "F",
+   "title": "Protect the Pollen!",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Protect the Pollen!.pdf"
+  },
+  {
+   "id": 2964,
+   "letter": "G",
+   "title": "Loot Chest",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Loot Chest.pdf"
+  },
+  {
+   "id": 2965,
+   "letter": "H",
+   "title": "RSA Mistake",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - RSA Mistake.pdf"
+  },
+  {
+   "id": 2966,
+   "letter": "I",
+   "title": "Slide Count",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Slide Count.pdf"
+  },
+  {
+   "id": 2967,
+   "letter": "J",
+   "title": "Snowball Fight",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Snowball Fight.pdf"
+  },
+  {
+   "id": 2968,
+   "letter": "K",
+   "title": "Team Change",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Team Change.pdf"
+  },
+  {
+   "id": 2969,
+   "letter": "L",
+   "title": "Ticket Completed?",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Ticket Completed_.pdf"
+  },
+  {
+   "id": 2970,
+   "letter": "M",
+   "title": "Trade Routes",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Trade Routes.pdf"
+  },
+  {
+   "id": 2971,
+   "letter": "N",
+   "title": "Wordle with Friends",
+   "statement_pages": [
+    27,
+    30
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - Wordle with Friends.pdf"
+  }
+ ]
+}

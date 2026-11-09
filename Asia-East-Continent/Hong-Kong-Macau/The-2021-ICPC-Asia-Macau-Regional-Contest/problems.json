@@ -1,0 +1,142 @@
+{
+ "id": 911,
+ "name": "The 2021 ICPC Asia Macau Regional Contest",
+ "url": "https://qoj.ac/contest/911",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Hong Kong & Macau",
+  "ICPC/Regionals/Asia East Continent/The 2021 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=911&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=911&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 3836,
+   "letter": "A",
+   "title": "So I'll Max Out My Constructive Algorithm Skills",
+   "statement_pages": [
+    3,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - So I'll Max Out My Constructive Algorithm Skills.pdf"
+  },
+  {
+   "id": 3837,
+   "letter": "B",
+   "title": "The Matching System",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - The Matching System.pdf"
+  },
+  {
+   "id": 3838,
+   "letter": "C",
+   "title": "Laser Trap",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Laser Trap.pdf"
+  },
+  {
+   "id": 3839,
+   "letter": "D",
+   "title": "Shortest Path Fast Algorithm",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Shortest Path Fast Algorithm.pdf"
+  },
+  {
+   "id": 3840,
+   "letter": "E",
+   "title": "Pass the Ball!",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Pass the Ball!.pdf"
+  },
+  {
+   "id": 3841,
+   "letter": "F",
+   "title": "Sandpile on Clique",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Sandpile on Clique.pdf"
+  },
+  {
+   "id": 3842,
+   "letter": "G",
+   "title": "Cyclic Buffer",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Cyclic Buffer.pdf"
+  },
+  {
+   "id": 3843,
+   "letter": "H",
+   "title": "Permutation on Tree",
+   "statement_pages": [
+    13,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Permutation on Tree.pdf"
+  },
+  {
+   "id": 3844,
+   "letter": "I",
+   "title": "LCS Spanning Tree",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - LCS Spanning Tree.pdf"
+  },
+  {
+   "id": 3845,
+   "letter": "J",
+   "title": "Colorful Tree",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Colorful Tree.pdf"
+  },
+  {
+   "id": 3846,
+   "letter": "K",
+   "title": "Link-Cut Tree",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Link-Cut Tree.pdf"
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "id": 3417,
+ "name": "CTU Open Contest 2024",
+ "url": "https://qoj.ac/contest/3417",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3417&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3417&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19556,
+   "letter": "A",
+   "title": "Flag Bearer",
+   "statement_pages": [
+    3,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Flag Bearer.pdf"
+  },
+  {
+   "id": 19557,
+   "letter": "B",
+   "title": "Cowpproximation",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Cowpproximation.pdf"
+  },
+  {
+   "id": 19558,
+   "letter": "C",
+   "title": "Reptile Eggs",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Reptile Eggs.pdf"
+  },
+  {
+   "id": 19559,
+   "letter": "D",
+   "title": "Fishception",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Fishception.pdf"
+  },
+  {
+   "id": 19560,
+   "letter": "E",
+   "title": "Pigpartite Giraffe",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Pigpartite Giraffe.pdf"
+  },
+  {
+   "id": 19561,
+   "letter": "F",
+   "title": "Hamster",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Hamster.pdf"
+  },
+  {
+   "id": 19562,
+   "letter": "G",
+   "title": "Pray Mink",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Pray Mink.pdf"
+  },
+  {
+   "id": 19563,
+   "letter": "H",
+   "title": "Ornithology",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Ornithology.pdf"
+  },
+  {
+   "id": 19564,
+   "letter": "I",
+   "title": "P||k Cutting",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - P__k Cutting.pdf"
+  },
+  {
+   "id": 19565,
+   "letter": "J",
+   "title": "Rabid Rabbit",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Rabid Rabbit.pdf"
+  },
+  {
+   "id": 19566,
+   "letter": "K",
+   "title": "Fellow Sheep",
+   "statement_pages": [
+    25,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Fellow Sheep.pdf"
+  },
+  {
+   "id": 19567,
+   "letter": "L",
+   "title": "Watchdogs",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Watchdogs.pdf"
+  }
+ ]
+}

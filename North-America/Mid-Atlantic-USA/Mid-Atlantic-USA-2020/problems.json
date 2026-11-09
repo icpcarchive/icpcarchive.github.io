@@ -1,0 +1,109 @@
+{
+ "id": 495,
+ "name": "Mid-Atlantic USA 2020",
+ "url": "https://qoj.ac/contest/495",
+ "categories": [
+  "ICPC/Regionals/North America/Mid-Atlantic USA"
+ ],
+ "files": [],
+ "problems": [
+  {
+   "id": 1373,
+   "letter": "A",
+   "title": "Rating Problems",
+   "statement_source": "problem page",
+   "statement_file": "problems/A - Rating Problems.pdf"
+  },
+  {
+   "id": 1376,
+   "letter": "B",
+   "title": "Unread Messages",
+   "statement_source": "problem page",
+   "statement_file": "problems/B - Unread Messages.pdf"
+  },
+  {
+   "id": 1361,
+   "letter": "C",
+   "title": "Ant Typing",
+   "statement_source": "problem page",
+   "statement_file": "problems/C - Ant Typing.pdf"
+  },
+  {
+   "id": 1365,
+   "letter": "D",
+   "title": "Dominating Duos",
+   "statement_source": "problem page",
+   "statement_file": "problems/D - Dominating Duos.pdf"
+  },
+  {
+   "id": 1367,
+   "letter": "E",
+   "title": "Exciting Tournament",
+   "statement_source": "problem page",
+   "statement_file": "problems/E - Exciting Tournament.pdf"
+  },
+  {
+   "id": 1362,
+   "letter": "F",
+   "title": "Bad Packing",
+   "statement_source": "problem page",
+   "statement_file": "problems/F - Bad Packing.pdf"
+  },
+  {
+   "id": 3606,
+   "letter": "G",
+   "title": "Painted Corridors",
+   "statement_source": "problem page",
+   "statement_file": "problems/G - Painted Corridors.pdf"
+  },
+  {
+   "id": 1375,
+   "letter": "H",
+   "title": "TripTik",
+   "statement_source": "problem page",
+   "statement_file": "problems/H - TripTik.pdf"
+  },
+  {
+   "id": 1363,
+   "letter": "I",
+   "title": "Bitonic Ordering",
+   "statement_source": "problem page",
+   "statement_file": "problems/I - Bitonic Ordering.pdf"
+  },
+  {
+   "id": 3607,
+   "letter": "J",
+   "title": "Basic Basis",
+   "statement_source": "problem page",
+   "statement_file": "problems/J - Basic Basis.pdf"
+  },
+  {
+   "id": 1368,
+   "letter": "K",
+   "title": "Kth Subtree",
+   "statement_source": "problem page",
+   "statement_file": "problems/K - Kth Subtree.pdf"
+  },
+  {
+   "id": 1369,
+   "letter": "L",
+   "title": "Longest Common Subsequence",
+   "statement_source": "problem page",
+   "statement_file": "problems/L - Longest Common Subsequence.pdf"
+  },
+  {
+   "id": 1371,
+   "letter": "M",
+   "title": "Missing Number",
+   "statement_source": "problem page",
+   "statement_file": "problems/M - Missing Number.pdf"
+  },
+  {
+   "id": 3605,
+   "letter": "N",
+   "title": "No Thanks!",
+   "statement_source": "problem page",
+   "statement_file": "problems/N - No Thanks!.pdf"
+  }
+ ]
+}

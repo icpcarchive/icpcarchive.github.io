@@ -1,0 +1,164 @@
+{
+ "id": 1997,
+ "name": "The 2021 ICPC Asia Jinan Regional Contest",
+ "url": "https://qoj.ac/contest/1997",
+ "categories": [
+  "ICPC/Regionals/Asia East Continent/Jinan",
+  "ICPC/Regionals/Asia East Continent/The 2021 ICPC Asia East Regionals"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1997&r=0"
+  },
+  {
+   "text": "Tutorials (zh-cn)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1997&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 10773,
+   "letter": "A",
+   "title": "Space Station",
+   "statement_pages": [
+    2,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Space Station.pdf"
+  },
+  {
+   "id": 10774,
+   "letter": "B",
+   "title": "Monitored Area",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Monitored Area.pdf"
+  },
+  {
+   "id": 10775,
+   "letter": "C",
+   "title": "Optimal Strategy",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Optimal Strategy.pdf"
+  },
+  {
+   "id": 10776,
+   "letter": "D",
+   "title": "Arithmetic Sequence",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Arithmetic Sequence.pdf"
+  },
+  {
+   "id": 10777,
+   "letter": "E",
+   "title": "Insidemen",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Insidemen.pdf"
+  },
+  {
+   "id": 10778,
+   "letter": "F",
+   "title": "Neural Network Counting",
+   "statement_pages": [
+    11,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Neural Network Counting.pdf"
+  },
+  {
+   "id": 10779,
+   "letter": "G",
+   "title": "Happy Alice",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Happy Alice.pdf"
+  },
+  {
+   "id": 10780,
+   "letter": "H",
+   "title": "Game Coin",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Game Coin.pdf"
+  },
+  {
+   "id": 10781,
+   "letter": "I",
+   "title": "Permutation Pair",
+   "statement_pages": [
+    16,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Permutation Pair.pdf"
+  },
+  {
+   "id": 10782,
+   "letter": "J",
+   "title": "Determinant",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Determinant.pdf"
+  },
+  {
+   "id": 10783,
+   "letter": "K",
+   "title": "Search For Mafuyu",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Search For Mafuyu.pdf"
+  },
+  {
+   "id": 10784,
+   "letter": "L",
+   "title": "Strange Series",
+   "statement_pages": [
+    20,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Strange Series.pdf"
+  },
+  {
+   "id": 10785,
+   "letter": "M",
+   "title": "Coloring Rectangles",
+   "statement_pages": [
+    21,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Coloring Rectangles.pdf"
+  }
+ ]
+}

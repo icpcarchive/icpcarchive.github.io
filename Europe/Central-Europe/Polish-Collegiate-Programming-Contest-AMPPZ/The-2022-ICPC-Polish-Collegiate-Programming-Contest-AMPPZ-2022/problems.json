@@ -1,0 +1,167 @@
+{
+ "id": 1103,
+ "name": "The 2022 ICPC Polish Collegiate Programming Contest (AMPPZ 2022)",
+ "url": "https://qoj.ac/contest/1103",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/Polish Collegiate Programming Contest (AMPPZ)"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1103&r=0"
+  },
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1103&r=1"
+  },
+  {
+   "text": "Tutorials (pl)",
+   "href": "https://www.youtube.com/watch?v=hDUIDRcxgqM&list=PLwjnzZ6Mt_IuJVZAmeaVduXnE0k69JuIc"
+  }
+ ],
+ "problems": [
+  {
+   "id": 5499,
+   "letter": "A",
+   "title": "Aliases",
+   "statement_pages": [
+    1,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Aliases.pdf"
+  },
+  {
+   "id": 5500,
+   "letter": "B",
+   "title": "Bars",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Bars.pdf"
+  },
+  {
+   "id": 5501,
+   "letter": "C",
+   "title": "Ctrl+C Ctrl+V",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Ctrl+C Ctrl+V.pdf"
+  },
+  {
+   "id": 5502,
+   "letter": "D",
+   "title": "Dazzling Mountain",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Dazzling Mountain.pdf"
+  },
+  {
+   "id": 5503,
+   "letter": "E",
+   "title": "Euclidean Algorithm",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Euclidean Algorithm.pdf"
+  },
+  {
+   "id": 5504,
+   "letter": "F",
+   "title": "Flower Garden",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Flower Garden.pdf"
+  },
+  {
+   "id": 5505,
+   "letter": "G",
+   "title": "Great Chase",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Great Chase.pdf"
+  },
+  {
+   "id": 5506,
+   "letter": "H",
+   "title": "Hyperloop",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hyperloop.pdf"
+  },
+  {
+   "id": 5507,
+   "letter": "I",
+   "title": "Investors",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Investors.pdf"
+  },
+  {
+   "id": 5508,
+   "letter": "J",
+   "title": "Job for a Hobbit",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Job for a Hobbit.pdf"
+  },
+  {
+   "id": 5509,
+   "letter": "K",
+   "title": "Kooky Tic-Tac-Toe",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Kooky Tic-Tac-Toe.pdf"
+  },
+  {
+   "id": 5510,
+   "letter": "L",
+   "title": "Line Replacements",
+   "statement_pages": [
+    23,
+    26
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Line Replacements.pdf"
+  },
+  {
+   "id": 5511,
+   "letter": "M",
+   "title": "Minor Evil",
+   "statement_pages": [
+    27,
+    28
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Minor Evil.pdf"
+  }
+ ]
+}

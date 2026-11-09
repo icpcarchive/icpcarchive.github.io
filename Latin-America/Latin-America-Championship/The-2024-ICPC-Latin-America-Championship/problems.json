@@ -1,0 +1,148 @@
+{
+ "id": 1576,
+ "name": "The 2024 ICPC Latin America Championship",
+ "url": "https://qoj.ac/contest/1576",
+ "categories": [
+  "ICPC/Regionals/Latin America"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1576&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 8505,
+   "letter": "A",
+   "title": "Almost Aligned",
+   "statement_pages": [
+    2,
+    2
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Almost Aligned.pdf"
+  },
+  {
+   "id": 8506,
+   "letter": "B",
+   "title": "Beating the Record",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Beating the Record.pdf"
+  },
+  {
+   "id": 8507,
+   "letter": "C",
+   "title": "Clever Cell Choices",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Clever Cell Choices.pdf"
+  },
+  {
+   "id": 8508,
+   "letter": "D",
+   "title": "DiviDuelo",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - DiviDuelo.pdf"
+  },
+  {
+   "id": 8509,
+   "letter": "E",
+   "title": "Expanding STACKS!",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Expanding STACKS!.pdf"
+  },
+  {
+   "id": 8510,
+   "letter": "F",
+   "title": "Fair Distribution",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fair Distribution.pdf"
+  },
+  {
+   "id": 8511,
+   "letter": "G",
+   "title": "Greek Casino",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Greek Casino.pdf"
+  },
+  {
+   "id": 8512,
+   "letter": "H",
+   "title": "Harmonic Operations",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Harmonic Operations.pdf"
+  },
+  {
+   "id": 8513,
+   "letter": "I",
+   "title": "Insects, Mathematics, Accuracy, and Efficiency",
+   "statement_pages": [
+    14,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Insects, Mathematics, Accuracy, and Efficiency.pdf"
+  },
+  {
+   "id": 8514,
+   "letter": "J",
+   "title": "Joys of Trading",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joys of Trading.pdf"
+  },
+  {
+   "id": 8515,
+   "letter": "K",
+   "title": "KMOP",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - KMOP.pdf"
+  },
+  {
+   "id": 8516,
+   "letter": "L",
+   "title": "LED Matrix",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - LED Matrix.pdf"
+  }
+ ]
+}

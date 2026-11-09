@@ -1,0 +1,156 @@
+{
+ "id": 1987,
+ "name": "The 2024 ICPC Asia Yokohama Regional Contest",
+ "url": "https://qoj.ac/contest/1987",
+ "categories": [
+  "ICPC/Regionals/Asia Pacific/Japan"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1987&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1987&r=1"
+  },
+  {
+   "text": "Summary (ja)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=1987&r=2"
+  }
+ ],
+ "problems": [
+  {
+   "id": 10474,
+   "letter": "A",
+   "title": "Ribbon on the Christmas Present",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Ribbon on the Christmas Present.pdf"
+  },
+  {
+   "id": 10475,
+   "letter": "B",
+   "title": "The Sparsest Number in Between",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - The Sparsest Number in Between.pdf"
+  },
+  {
+   "id": 10476,
+   "letter": "C",
+   "title": "Omnes Viae Yokohamam Ducunt?",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Omnes Viae Yokohamam Ducunt_.pdf"
+  },
+  {
+   "id": 10477,
+   "letter": "D",
+   "title": "Tree Generators",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Tree Generators.pdf"
+  },
+  {
+   "id": 10478,
+   "letter": "E",
+   "title": "E-Circuit Is Now on Sale!",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - E-Circuit Is Now on Sale!.pdf"
+  },
+  {
+   "id": 10479,
+   "letter": "F",
+   "title": "The Farthest Point",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - The Farthest Point.pdf"
+  },
+  {
+   "id": 10480,
+   "letter": "G",
+   "title": "Beyond the Former Explorer",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Beyond the Former Explorer.pdf"
+  },
+  {
+   "id": 10481,
+   "letter": "H",
+   "title": "Remodeling the Dungeon 2",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Remodeling the Dungeon 2.pdf"
+  },
+  {
+   "id": 10482,
+   "letter": "I",
+   "title": "Greatest of the Greatest Common Divisors",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Greatest of the Greatest Common Divisors.pdf"
+  },
+  {
+   "id": 10483,
+   "letter": "J",
+   "title": "Mixing Solutions",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Mixing Solutions.pdf"
+  },
+  {
+   "id": 10484,
+   "letter": "K",
+   "title": "Scheduling Two Meetings",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Scheduling Two Meetings.pdf"
+  },
+  {
+   "id": 10485,
+   "letter": "L",
+   "title": "Peculiar Protocol",
+   "statement_pages": [
+    23,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Peculiar Protocol.pdf"
+  }
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "id": 3683,
+ "name": "CTU Open Contest 2017",
+ "url": "https://qoj.ac/contest/3683",
+ "categories": [
+  "ICPC/Regionals/Europe/Central Europe/CTU Open Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3683&r=0"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19521,
+   "letter": "A",
+   "title": "Amusement Anticipation",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Amusement Anticipation.pdf"
+  },
+  {
+   "id": 19522,
+   "letter": "B",
+   "title": "Pond Cascade",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Pond Cascade.pdf"
+  },
+  {
+   "id": 19523,
+   "letter": "C",
+   "title": "Chessboard Dancing",
+   "statement_pages": [
+    4,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Chessboard Dancing.pdf"
+  },
+  {
+   "id": 19524,
+   "letter": "D",
+   "title": "Equinox Roller Coaster",
+   "statement_pages": [
+    6,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Equinox Roller Coaster.pdf"
+  },
+  {
+   "id": 19525,
+   "letter": "E",
+   "title": "Forest Picture",
+   "statement_pages": [
+    8,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Forest Picture.pdf"
+  },
+  {
+   "id": 19526,
+   "letter": "F",
+   "title": "Shooting Gallery",
+   "statement_pages": [
+    10,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Shooting Gallery.pdf"
+  },
+  {
+   "id": 19527,
+   "letter": "G",
+   "title": "Ice cream samples",
+   "statement_pages": [
+    12,
+    13
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Ice cream samples.pdf"
+  },
+  {
+   "id": 19528,
+   "letter": "H",
+   "title": "Dark Ride with Monsters",
+   "statement_pages": [
+    14,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Dark Ride with Monsters.pdf"
+  },
+  {
+   "id": 19529,
+   "letter": "I",
+   "title": "Go Northwest!",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Go Northwest!.pdf"
+  },
+  {
+   "id": 19530,
+   "letter": "J",
+   "title": "Punching Power",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Punching Power.pdf"
+  },
+  {
+   "id": 19531,
+   "letter": "K",
+   "title": "Treetop Walkway",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Treetop Walkway.pdf"
+  }
+ ]
+}

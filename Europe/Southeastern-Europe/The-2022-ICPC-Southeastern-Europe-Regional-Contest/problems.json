@@ -1,0 +1,174 @@
+{
+ "id": 2511,
+ "name": "The 2022 ICPC Southeastern Europe Regional Contest",
+ "url": "https://qoj.ac/contest/2511",
+ "categories": [
+  "ICPC/Regionals/Europe/Southeastern Europe"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2511&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=2511&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 14105,
+   "letter": "A",
+   "title": "AppendAppendAppend",
+   "statement_pages": [
+    1,
+    1
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - AppendAppendAppend.pdf"
+  },
+  {
+   "id": 14106,
+   "letter": "B",
+   "title": "Birthday Cake",
+   "statement_pages": [
+    2,
+    3
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Birthday Cake.pdf"
+  },
+  {
+   "id": 14107,
+   "letter": "C",
+   "title": "COVID",
+   "statement_pages": [
+    4,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - COVID.pdf"
+  },
+  {
+   "id": 14108,
+   "letter": "D",
+   "title": "Divisible by 4 Spanning Tree",
+   "statement_pages": [
+    5,
+    5
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Divisible by 4 Spanning Tree.pdf"
+  },
+  {
+   "id": 14109,
+   "letter": "E",
+   "title": "Exercise",
+   "statement_pages": [
+    6,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Exercise.pdf"
+  },
+  {
+   "id": 14110,
+   "letter": "F",
+   "title": "Fortune over Sportsmanship",
+   "statement_pages": [
+    7,
+    7
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Fortune over Sportsmanship.pdf"
+  },
+  {
+   "id": 14111,
+   "letter": "G",
+   "title": "Gears",
+   "statement_pages": [
+    8,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Gears.pdf"
+  },
+  {
+   "id": 14112,
+   "letter": "H",
+   "title": "Hanoi",
+   "statement_pages": [
+    9,
+    9
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hanoi.pdf"
+  },
+  {
+   "id": 14113,
+   "letter": "I",
+   "title": "Inadequate Operation",
+   "statement_pages": [
+    10,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Inadequate Operation.pdf"
+  },
+  {
+   "id": 14114,
+   "letter": "J",
+   "title": "Joyful Death",
+   "statement_pages": [
+    11,
+    11
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Joyful Death.pdf"
+  },
+  {
+   "id": 14115,
+   "letter": "K",
+   "title": "Knowledge Testing Problem",
+   "statement_pages": [
+    12,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Knowledge Testing Problem.pdf"
+  },
+  {
+   "id": 14116,
+   "letter": "L",
+   "title": "Level Up",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/L - Level Up.pdf"
+  },
+  {
+   "id": 14117,
+   "letter": "M",
+   "title": "Mousetrap",
+   "statement_pages": [
+    15,
+    15
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/M - Mousetrap.pdf"
+  },
+  {
+   "id": 14118,
+   "letter": "N",
+   "title": "Nusret Gökçe",
+   "statement_pages": [
+    16,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/N - Nusret Gökçe.pdf"
+  }
+ ]
+}

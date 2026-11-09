@@ -1,0 +1,141 @@
+{
+ "id": 517,
+ "name": "The 2020 Benelux Algorithm Programming Contest",
+ "url": "https://qoj.ac/contest/517",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/Benelux Algorithm Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=517&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=517&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 875,
+   "letter": "A",
+   "title": "Aquarium Arrangement",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Aquarium Arrangement.pdf"
+  },
+  {
+   "id": 3889,
+   "letter": "B",
+   "title": "Balanced Breakdown",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Balanced Breakdown.pdf"
+  },
+  {
+   "id": 3890,
+   "letter": "C",
+   "title": "Corrupted Contest",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Corrupted Contest.pdf"
+  },
+  {
+   "id": 3891,
+   "letter": "D",
+   "title": "Destabilized Drone",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Destabilized Drone.pdf"
+  },
+  {
+   "id": 3892,
+   "letter": "E",
+   "title": "Efficiently Elevated",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Efficiently Elevated.pdf"
+  },
+  {
+   "id": 3893,
+   "letter": "F",
+   "title": "Family Fares",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - Family Fares.pdf"
+  },
+  {
+   "id": 3894,
+   "letter": "G",
+   "title": "Generator Grid",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Generator Grid.pdf"
+  },
+  {
+   "id": 3895,
+   "letter": "H",
+   "title": "Hungry Henk",
+   "statement_pages": [
+    17,
+    17
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Hungry Henk.pdf"
+  },
+  {
+   "id": 3896,
+   "letter": "I",
+   "title": "Incomplete Implementation",
+   "statement_pages": [
+    18,
+    19
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Incomplete Implementation.pdf"
+  },
+  {
+   "id": 3897,
+   "letter": "J",
+   "title": "Jigsaw",
+   "statement_pages": [
+    20,
+    21
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Jigsaw.pdf"
+  },
+  {
+   "id": 877,
+   "letter": "K",
+   "title": "Xortest Path",
+   "statement_pages": [
+    22,
+    24
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/K - Xortest Path.pdf"
+  }
+ ]
+}

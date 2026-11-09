@@ -1,0 +1,130 @@
+{
+ "id": 3888,
+ "name": "The 2011 German Collegiate Programming Contest",
+ "url": "https://qoj.ac/contest/3888",
+ "categories": [
+  "ICPC/Regionals/Europe/Northwestern Europe/German Collegiate Programming Contest"
+ ],
+ "files": [
+  {
+   "text": "Statements (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3888&r=0"
+  },
+  {
+   "text": "Tutorials (en)",
+   "href": "https://qoj.ac/download.php?type=attachments&id=3888&r=1"
+  }
+ ],
+ "problems": [
+  {
+   "id": 19118,
+   "letter": "A",
+   "title": "Faculty Dividing Powers",
+   "statement_pages": [
+    3,
+    4
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/A - Faculty Dividing Powers.pdf"
+  },
+  {
+   "id": 19119,
+   "letter": "B",
+   "title": "Genetic Fraud",
+   "statement_pages": [
+    5,
+    6
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/B - Genetic Fraud.pdf"
+  },
+  {
+   "id": 19120,
+   "letter": "C",
+   "title": "Indiana Jones and the lost Soccer Cup",
+   "statement_pages": [
+    7,
+    8
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/C - Indiana Jones and the lost Soccer Cup.pdf"
+  },
+  {
+   "id": 19121,
+   "letter": "D",
+   "title": "Magic Star",
+   "statement_pages": [
+    9,
+    10
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/D - Magic Star.pdf"
+  },
+  {
+   "id": 19122,
+   "letter": "E",
+   "title": "Magical Crafting",
+   "statement_pages": [
+    11,
+    12
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/E - Magical Crafting.pdf"
+  },
+  {
+   "id": 19123,
+   "letter": "F",
+   "title": "My brother's diary",
+   "statement_pages": [
+    13,
+    14
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/F - My brother's diary.pdf"
+  },
+  {
+   "id": 19124,
+   "letter": "G",
+   "title": "Security Zone",
+   "statement_pages": [
+    15,
+    16
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/G - Security Zone.pdf"
+  },
+  {
+   "id": 19125,
+   "letter": "H",
+   "title": "Sightseeing",
+   "statement_pages": [
+    17,
+    18
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/H - Sightseeing.pdf"
+  },
+  {
+   "id": 19126,
+   "letter": "I",
+   "title": "Suiting Weavers",
+   "statement_pages": [
+    19,
+    20
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/I - Suiting Weavers.pdf"
+  },
+  {
+   "id": 19127,
+   "letter": "J",
+   "title": "Time to live",
+   "statement_pages": [
+    21,
+    22
+   ],
+   "statement_source": "statements_en.pdf",
+   "statement_file": "problems/J - Time to live.pdf"
+  }
+ ]
+}
